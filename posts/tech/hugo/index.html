@@ -53,7 +53,7 @@
 
 <meta itemprop="datePublished" content="2017-10-22T22:38:28&#43;09:00" />
 <meta itemprop="dateModified" content="2017-10-22T22:38:28&#43;09:00" />
-<meta itemprop="wordCount" content="112">
+<meta itemprop="wordCount" content="147">
 
 
 
@@ -131,7 +131,10 @@ GitHub에  <em>username</em>.github.io 리포지토리를 만들고 master branc
 
 <p>하지만 안되니깐 어떨 수 없이 소스 리포지토리와 퍼블리시된 파일들을 따로 리포지토리를 만들었다. 그러기 위해서는 설정을 변경해야 한다.</p>
 
-<h4 id="config-toml-에-publishdir-를-변경-혹은-추가-한다">config.toml 에 publishDir 를 변경(혹은 추가)한다</h4>
+<h4 id="config-toml-수정">config.toml 수정</h4>
+
+<p>config.toml 에 publishDir 를 변경(혹은 추가)한다.
+다행이도 상대경로 지정이 가능하여 상위 디렉토리에 생성</p>
 
 <pre><code>publishDir = &quot;../docs&quot;
 </code></pre>
@@ -141,6 +144,23 @@ GitHub에  <em>username</em>.github.io 리포지토리를 만들고 master branc
 <ul>
 <li>~/hugo/blog : md 파일 저장용</li>
 <li>~/hugo/docs : 자동 퍼블리싱 된 파일들</li>
+</ul>
+
+<h3 id="새-post-생성">새  post 생성</h3>
+
+<p>~/hugo/blog 에서 실행</p>
+
+<pre><code>hugo new posts/tech/hugo.md
+</code></pre>
+
+<h3 id="hugo-server-구동">hugo server 구동</h3>
+
+<pre><code>hugo server -D
+</code></pre>
+
+<ul>
+<li>브라우저로 접속 : <a href="http://localhost:1313">http://localhost:1313</a></li>
+<li>hugo.md 파일을 수정하면 즉시 로컬 사이트에 반영됨</li>
 </ul>
 
       </div>
@@ -162,15 +182,15 @@ GitHub에  <em>username</em>.github.io 리포지토리를 만들고 master branc
       
         <li class="list f5 w-100 hover-bg-white nl1">
           
-          <a href="/posts/tech/hugo/" class="link ph2 pv2 db black o-50">
-            Hugo &#43; Github으로 블로깅
+          <a href="/posts/asuschrombookflipc100pads03/" class="link ph2 pv2 db black">
+            ASUS Chrombook Flip C100PA DS03
           </a>
         </li>
       
         <li class="list f5 w-100 hover-bg-white nl1">
           
-          <a href="/posts/my-first-post/" class="link ph2 pv2 db black">
-            테스트
+          <a href="/posts/tech/hugo/" class="link ph2 pv2 db black o-50">
+            Hugo &#43; Github으로 블로깅
           </a>
         </li>
       
