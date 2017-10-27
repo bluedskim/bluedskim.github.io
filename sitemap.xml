@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://bluedskim.github.io/posts/tech/hugo/</loc>
+    <lastmod>2017-10-22T22:38:28+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://bluedskim.github.io/posts/my-first-post/</loc>
     <lastmod>2017-10-22T22:38:28+09:00</lastmod>
   </url>
