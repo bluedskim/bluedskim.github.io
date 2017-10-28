@@ -25,7 +25,9 @@
     <meta property="og:title" content="Hugo &#43; Github으로 블로깅" />
 <meta property="og:description" content="왜 Hugo인가? 원래 Jekyll 을 사용하려 했으나 Asus Flip C100pa 에 설치 실패하여 어쩔 수 없이 선택 -.-
 환경 ASUS Chromebook C100PA-DS03 &#43; Crouton &#43; Debian Stretch
-설치 sudo apt-get install hugo  GitHub에 연결 이것이 쉽지 않다. GitHub문서에 따르면 https://gohugo.io/hosting-and-deployment/hosting-on-github/ GitHub에 username.github.io 리포지토리를 만들고 master branch내에 docs 폴더를 만들면 docs폴더를 root디렉토리로 인식된다고 했는데 docs폴더를 인식하지 못하는 듯 하다. 만약 이것이 가능했다면 소스(?) 파일과 생성된 html파일들을 하나의 리포지토리에서 관리할 수 있어 편할 듯 하다." />
+설치 아래처럼 apt-get으로 설치하면 0.18 버전이 설치됨. 0.18 버전에서는 쓸 수 없는 theme 이 있어 더 최신 버전을 찾기로 함
+sudo apt-get install hugo  https://packages.debian.org/sid/armhf/hugo/download 에서 0.25.1-2 버전을 다운로드 받아. dpkg 명령으로 설치
+sudo dpkg -i hugo_0.25.1-2_armhf.deb  GitHub에 연결 이것이 쉽지 않다." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://bluedskim.github.io/posts/tech/hugo/" />
 
@@ -47,11 +49,13 @@
 <meta itemprop="name" content="Hugo &#43; Github으로 블로깅">
 <meta itemprop="description" content="왜 Hugo인가? 원래 Jekyll 을 사용하려 했으나 Asus Flip C100pa 에 설치 실패하여 어쩔 수 없이 선택 -.-
 환경 ASUS Chromebook C100PA-DS03 &#43; Crouton &#43; Debian Stretch
-설치 sudo apt-get install hugo  GitHub에 연결 이것이 쉽지 않다. GitHub문서에 따르면 https://gohugo.io/hosting-and-deployment/hosting-on-github/ GitHub에 username.github.io 리포지토리를 만들고 master branch내에 docs 폴더를 만들면 docs폴더를 root디렉토리로 인식된다고 했는데 docs폴더를 인식하지 못하는 듯 하다. 만약 이것이 가능했다면 소스(?) 파일과 생성된 html파일들을 하나의 리포지토리에서 관리할 수 있어 편할 듯 하다.">
+설치 아래처럼 apt-get으로 설치하면 0.18 버전이 설치됨. 0.18 버전에서는 쓸 수 없는 theme 이 있어 더 최신 버전을 찾기로 함
+sudo apt-get install hugo  https://packages.debian.org/sid/armhf/hugo/download 에서 0.25.1-2 버전을 다운로드 받아. dpkg 명령으로 설치
+sudo dpkg -i hugo_0.25.1-2_armhf.deb  GitHub에 연결 이것이 쉽지 않다.">
 
 
 <meta itemprop="dateModified" content="2017-10-22T22:38:28&#43;09:00" />
-<meta itemprop="wordCount" content="147">
+<meta itemprop="wordCount" content="179">
 
 
 
@@ -66,7 +70,9 @@
 <meta name="twitter:title" content="Hugo &#43; Github으로 블로깅"/>
 <meta name="twitter:description" content="왜 Hugo인가? 원래 Jekyll 을 사용하려 했으나 Asus Flip C100pa 에 설치 실패하여 어쩔 수 없이 선택 -.-
 환경 ASUS Chromebook C100PA-DS03 &#43; Crouton &#43; Debian Stretch
-설치 sudo apt-get install hugo  GitHub에 연결 이것이 쉽지 않다. GitHub문서에 따르면 https://gohugo.io/hosting-and-deployment/hosting-on-github/ GitHub에 username.github.io 리포지토리를 만들고 master branch내에 docs 폴더를 만들면 docs폴더를 root디렉토리로 인식된다고 했는데 docs폴더를 인식하지 못하는 듯 하다. 만약 이것이 가능했다면 소스(?) 파일과 생성된 html파일들을 하나의 리포지토리에서 관리할 수 있어 편할 듯 하다."/>
+설치 아래처럼 apt-get으로 설치하면 0.18 버전이 설치됨. 0.18 버전에서는 쓸 수 없는 theme 이 있어 더 최신 버전을 찾기로 함
+sudo apt-get install hugo  https://packages.debian.org/sid/armhf/hugo/download 에서 0.25.1-2 버전을 다운로드 받아. dpkg 명령으로 설치
+sudo dpkg -i hugo_0.25.1-2_armhf.deb  GitHub에 연결 이것이 쉽지 않다."/>
 
 
   </head>
@@ -126,7 +132,14 @@
 
 <h4 id="설치">설치</h4>
 
-<pre><code>sudo apt-get install hugo
+<p>아래처럼 apt-get으로 설치하면 0.18 버전이 설치됨. 0.18  버전에서는 쓸 수 없는 theme 이 있어 더 최신 버전을 찾기로 함</p>
+
+<pre><code>sudo apt-get install hugo 
+</code></pre>
+
+<p><a href="https://packages.debian.org/sid/armhf/hugo/download">https://packages.debian.org/sid/armhf/hugo/download</a> 에서 0.25.1-2 버전을 다운로드 받아. dpkg 명령으로 설치</p>
+
+<pre><code>sudo dpkg -i hugo_0.25.1-2_armhf.deb
 </code></pre>
 
 <h3 id="github에-연결">GitHub에 연결</h3>
