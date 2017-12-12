@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://bluedskim.github.io/posts/tech/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B5%AC%ED%98%84_%EB%8B%A8%EA%B3%84/</loc>
+    <lastmod>2017-12-12T22:38:28+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://bluedskim.github.io/posts/asuschrombookflipc100pads03/</loc>
     <lastmod>2017-10-22T22:38:28+09:00</lastmod>
   </url>
@@ -10,10 +15,6 @@
   <url>
     <loc>https://bluedskim.github.io/posts/tech/hugo/</loc>
     <lastmod>2017-10-22T22:38:28+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bluedskim.github.io/posts/tech/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B5%AC%ED%98%84_%EB%8B%A8%EA%B3%84/</loc>
   </url>
   
   <url>
@@ -42,7 +43,7 @@
   
   <url>
     <loc>https://bluedskim.github.io/posts/</loc>
-    <lastmod>2017-10-22T22:38:28+09:00</lastmod>
+    <lastmod>2017-12-12T22:38:28+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -54,7 +55,19 @@
   
   <url>
     <loc>https://bluedskim.github.io/</loc>
-    <lastmod>2017-10-22T22:38:28+09:00</lastmod>
+    <lastmod>2017-12-12T22:38:28+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bluedskim.github.io/tags/%EA%B5%AC%ED%98%84/</loc>
+    <lastmod>2017-12-12T22:38:28+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bluedskim.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/</loc>
+    <lastmod>2017-12-12T22:38:28+09:00</lastmod>
     <priority>0</priority>
   </url>
   

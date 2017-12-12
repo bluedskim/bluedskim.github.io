@@ -6,13 +6,24 @@
     <description>Recent content on bluedskim.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 22 Oct 2017 22:38:28 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 12 Dec 2017 22:38:28 +0900</lastBuildDate>
     
 	<atom:link href="https://bluedskim.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>ASUS Chrombook Flip C100PA DS03</title>
+      <title>소프트웨어 프로젝트-구현 단계</title>
+      <link>https://bluedskim.github.io/posts/tech/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B5%AC%ED%98%84_%EB%8B%A8%EA%B3%84/</link>
+      <pubDate>Tue, 12 Dec 2017 22:38:28 +0900</pubDate>
+      
+      <guid>https://bluedskim.github.io/posts/tech/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B5%AC%ED%98%84_%EB%8B%A8%EA%B3%84/</guid>
+      <description>SI 소프트웨어 프로젝트-구현 단계에서 발생하는 각종 이슈,상념들과 각종 S/W 개발 트렌드 들에 대한 발표자료로 모 대학 문헌정보학과 학생들을 상대로 진행한 강의 자료이다.
+https://docs.google.com/presentation/d/e/2PACX-1vTMn9Z1_5eU-_NaI7pcl0OdH_zZQAQ2Qo3yO60H3o_d9eWkcCktlArkeTP-8Y3VCbxYXPT7_FIsW09D/pub?start=false&amp;amp;loop=false&amp;amp;delayms=3000&amp;amp;slide=id.p
+ </description>
+    </item>
+    
+    <item>
+      <title>ASUS Chromebook Flip C100PA DS03</title>
       <link>https://bluedskim.github.io/posts/asuschrombookflipc100pads03/</link>
       <pubDate>Sun, 22 Oct 2017 22:38:28 +0900</pubDate>
       
@@ -33,15 +44,6 @@
 설치 아래처럼 apt-get으로 설치하면 0.18 버전이 설치됨. 0.18 버전에서는 쓸 수 없는 theme 이 있어 더 최신 버전을 찾기로 함
 sudo apt-get install hugo  https://packages.debian.org/sid/armhf/hugo/download 에서 0.25.1-2 버전을 다운로드 받아. dpkg 명령으로 설치
 sudo dpkg -i hugo_0.25.1-2_armhf.deb  GitHub에 연결 이것이 쉽지 않다.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://bluedskim.github.io/posts/tech/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B5%AC%ED%98%84_%EB%8B%A8%EA%B3%84/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://bluedskim.github.io/posts/tech/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B5%AC%ED%98%84_%EB%8B%A8%EA%B3%84/</guid>
-      <description> </description>
     </item>
     
   </channel>
