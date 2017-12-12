@@ -35,5 +35,14 @@ sudo apt-get install hugo  https://packages.debian.org/sid/armhf/hugo/download �
 sudo dpkg -i hugo_0.25.1-2_armhf.deb  GitHub에 연결 이것이 쉽지 않다.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://bluedskim.github.io/posts/tech/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B5%AC%ED%98%84_%EB%8B%A8%EA%B3%84/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bluedskim.github.io/posts/tech/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B5%AC%ED%98%84_%EB%8B%A8%EA%B3%84/</guid>
+      <description> </description>
+    </item>
+    
   </channel>
 </rss>
