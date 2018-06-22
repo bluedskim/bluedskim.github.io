@@ -6,10 +6,22 @@
     <description>Recent content in Posts on bluedskim.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 12 Dec 2017 22:38:28 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 13 Dec 2017 22:38:28 +0900</lastBuildDate>
     
 	<atom:link href="https://bluedskim.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Chromebook Flip C100P에서 사용할 Multitrack Recorder</title>
+      <link>https://bluedskim.github.io/posts/music/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C_%EC%82%AC%EC%9A%A9%ED%95%A0_dtm%EB%B9%84%EA%B5%90/</link>
+      <pubDate>Wed, 13 Dec 2017 22:38:28 +0900</pubDate>
+      
+      <guid>https://bluedskim.github.io/posts/music/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C_%EC%82%AC%EC%9A%A9%ED%95%A0_dtm%EB%B9%84%EA%B5%90/</guid>
+      <description>Chromebook Flip C100PA 에서 간단한 녹음 스케치 작업을 하는데 적합한 앱들을 비교해보고 있다.
+필수 기능  멀티트랙 녹음 메트로놈 녹음 delay 자동 보정  있으면 좋은 기능  sample stretch(warp)  웹앱 대부분 subscribe기반이라 비용 발생 함. 한번에 구입하는게 나을 수도..
+ https://www.soundtrap.com/pricing https://soundation.com/  안드로이드 앱  Stagelight   윈도우용도 있음. 비교적 싼 가격. Ableton Live 와 비슷
+녹음 기능이 좀 이상함. 5분이상 녹음 불가? 멀티트랙 레코더로 쓰기에는 별로인 듯</description>
+    </item>
     
     <item>
       <title>소프트웨어 프로젝트-구현 단계</title>
