@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://bluedskim.github.io/posts/tech/post-title/</loc>
+    <lastmod>2018-06-23T10:54:24+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://bluedskim.github.io/posts/music/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C_%EC%82%AC%EC%9A%A9%ED%95%A0_dtm%EB%B9%84%EA%B5%90/</loc>
     <lastmod>2017-12-13T22:38:28+09:00</lastmod>
   </url>
@@ -47,8 +52,14 @@
   </url>
   
   <url>
+    <loc>https://bluedskim.github.io/tags/hugo/</loc>
+    <lastmod>2018-06-23T10:54:24+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://bluedskim.github.io/posts/</loc>
-    <lastmod>2017-12-13T22:38:28+09:00</lastmod>
+    <lastmod>2018-06-23T10:54:24+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -59,8 +70,14 @@
   </url>
   
   <url>
+    <loc>https://bluedskim.github.io/tags/theme/</loc>
+    <lastmod>2018-06-23T10:54:24+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://bluedskim.github.io/</loc>
-    <lastmod>2017-12-13T22:38:28+09:00</lastmod>
+    <lastmod>2018-06-23T10:54:24+02:00</lastmod>
     <priority>0</priority>
   </url>
   
