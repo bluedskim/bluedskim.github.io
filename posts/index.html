@@ -10,7 +10,7 @@
     
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.25.1" />
+    <meta name="generator" content="Hugo 0.54.0" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -31,22 +31,14 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://bluedskim.github.io/posts/" />
 
-
-
-<meta property="og:updated_time" content="2018-06-24T10:54:24&#43;02:00"/>
-
-
-
-
-
-
-
-
-
+<meta property="og:updated_time" content="2019-03-15T22:38:28&#43;09:00"/>
 
 <meta itemprop="name" content="Posts">
 <meta itemprop="description" content="">
 
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Posts"/>
+<meta name="twitter:description" content=""/>
 
       
     
@@ -118,6 +110,29 @@
   <div class="mw8 center">
     
     <section class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100  mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/tech/hugoonpixelbook/" class="link black dim">
+        pixelbook에서 hugo 설치
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      설치 ASUS Chromebook C100PA-DS03 에 설치할 때와 마찬가지로 최신버전을 설치하려면 deb 파일을 다운 받아야 한다. 현재 최신 버전은 hugo_0.54.0-1_amd64.deb 이다. 하지만 libsass1이 필요하다고 하니 먼저 설치한다.
+다운로드 경로 https://packages.debian.org/sid/amd64/libsass1/download
+다운 받은 후 설치
+sudo dpkg -i libsass1_3.5.5-2_amd64.deb  다운로드 경로 https://packages.debian.org/sid/amd64/hugo/download
+다운 받은 후 설치
+sudo dpkg -i hugo_0.54.0-1_amd64.deb  구동 pixelbook에서는 hugo 기본 포트인 1313 으로 띄울 수 없다 https://www.reddit.com/r/Crostini/comments/aewwhf/cannot_access_penguinlinuxtestport/
+서버 띄울 때 포트 변경해줘야 한다. 제일 유명한 포트 중에 하나인 8080을 사용하면 잘 뜬다
+    </div>
+  </div>
+</div>
+
+        </div>
       
         <div class="relative w-100  mb4 bg-white">
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">
@@ -247,7 +262,7 @@ sudo dpkg -i hugo_0.25.1-2_armhf.deb  GitHub에 연결 이것이 쉽지 않다.
     <footer class="bg-near-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://bluedskim.github.io/" >
-    &copy; 2018 bluedskim.github.io
+    &copy; 2019 bluedskim.github.io
   </a>
   
 

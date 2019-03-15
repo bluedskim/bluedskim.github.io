@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>bluedskim.github.io  | pixelbook에서 hugo 설치</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.54.0" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+    
+
+    <link href='https://bluedskim.github.io/dist/main.css' rel='stylesheet' type="text/css" />
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="pixelbook에서 hugo 설치" />
+<meta property="og:description" content="설치 ASUS Chromebook C100PA-DS03 에 설치할 때와 마찬가지로 최신버전을 설치하려면 deb 파일을 다운 받아야 한다. 현재 최신 버전은 hugo_0.54.0-1_amd64.deb 이다. 하지만 libsass1이 필요하다고 하니 먼저 설치한다.
+다운로드 경로 https://packages.debian.org/sid/amd64/libsass1/download
+다운 받은 후 설치
+sudo dpkg -i libsass1_3.5.5-2_amd64.deb  다운로드 경로 https://packages.debian.org/sid/amd64/hugo/download
+다운 받은 후 설치
+sudo dpkg -i hugo_0.54.0-1_amd64.deb  구동 pixelbook에서는 hugo 기본 포트인 1313 으로 띄울 수 없다 https://www.reddit.com/r/Crostini/comments/aewwhf/cannot_access_penguinlinuxtestport/
+서버 띄울 때 포트 변경해줘야 한다. 제일 유명한 포트 중에 하나인 8080을 사용하면 잘 뜬다" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://bluedskim.github.io/posts/tech/hugoonpixelbook/" />
+<meta property="article:published_time" content="2019-03-15T22:38:28&#43;09:00"/>
+<meta property="article:modified_time" content="2019-03-15T22:38:28&#43;09:00"/>
+
+<meta itemprop="name" content="pixelbook에서 hugo 설치">
+<meta itemprop="description" content="설치 ASUS Chromebook C100PA-DS03 에 설치할 때와 마찬가지로 최신버전을 설치하려면 deb 파일을 다운 받아야 한다. 현재 최신 버전은 hugo_0.54.0-1_amd64.deb 이다. 하지만 libsass1이 필요하다고 하니 먼저 설치한다.
+다운로드 경로 https://packages.debian.org/sid/amd64/libsass1/download
+다운 받은 후 설치
+sudo dpkg -i libsass1_3.5.5-2_amd64.deb  다운로드 경로 https://packages.debian.org/sid/amd64/hugo/download
+다운 받은 후 설치
+sudo dpkg -i hugo_0.54.0-1_amd64.deb  구동 pixelbook에서는 hugo 기본 포트인 1313 으로 띄울 수 없다 https://www.reddit.com/r/Crostini/comments/aewwhf/cannot_access_penguinlinuxtestport/
+서버 띄울 때 포트 변경해줘야 한다. 제일 유명한 포트 중에 하나인 8080을 사용하면 잘 뜬다">
+
+
+<meta itemprop="datePublished" content="2019-03-15T22:38:28&#43;09:00" />
+<meta itemprop="dateModified" content="2019-03-15T22:38:28&#43;09:00" />
+<meta itemprop="wordCount" content="79">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="pixelbook에서 hugo 설치"/>
+<meta name="twitter:description" content="설치 ASUS Chromebook C100PA-DS03 에 설치할 때와 마찬가지로 최신버전을 설치하려면 deb 파일을 다운 받아야 한다. 현재 최신 버전은 hugo_0.54.0-1_amd64.deb 이다. 하지만 libsass1이 필요하다고 하니 먼저 설치한다.
+다운로드 경로 https://packages.debian.org/sid/amd64/libsass1/download
+다운 받은 후 설치
+sudo dpkg -i libsass1_3.5.5-2_amd64.deb  다운로드 경로 https://packages.debian.org/sid/amd64/hugo/download
+다운 받은 후 설치
+sudo dpkg -i hugo_0.54.0-1_amd64.deb  구동 pixelbook에서는 hugo 기본 포트인 1313 으로 띄울 수 없다 https://www.reddit.com/r/Crostini/comments/aewwhf/cannot_access_penguinlinuxtestport/
+서버 띄울 때 포트 변경해줘야 한다. 제일 유명한 포트 중에 하나인 8080을 사용하면 잘 뜬다"/>
+
+      
+    
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5002590800077159",
+    enable_page_level_ads: true
+  });
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108812986-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108812986-1');
+</script>
+
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://bluedskim.github.io/" class="f3 fw2 hover-white no-underline white-90 dib">
+      bluedskim.github.io
+    </a>
+    <div class="flex-l items-center">
+      
+      
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+    <main class="pb7" role="main">
+      
+  <div class="flex-l mt2 mw8 center">
+    <article class="center cf pv5 ph3 ph4-ns mw7">
+      <header>
+        <p class="f6 b helvetica tracked">
+          POSTS
+        </p>
+        <h1 class="f1">
+          pixelbook에서 hugo 설치
+        </h1>
+      </header>
+      <div class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray">
+        
+
+<h1 id="설치">설치</h1>
+
+<p>ASUS Chromebook C100PA-DS03 에 설치할 때와 마찬가지로 최신버전을 설치하려면 deb 파일을 다운 받아야 한다. 현재 최신 버전은 hugo_0.54.0-1_amd64.deb 이다.
+하지만 libsass1이 필요하다고 하니 먼저 설치한다.</p>
+
+<p>다운로드 경로 <a href="https://packages.debian.org/sid/amd64/libsass1/download">https://packages.debian.org/sid/amd64/libsass1/download</a></p>
+
+<p>다운 받은 후 설치</p>
+
+<pre><code>sudo dpkg -i libsass1_3.5.5-2_amd64.deb
+</code></pre>
+
+<p>다운로드 경로 <a href="https://packages.debian.org/sid/amd64/hugo/download">https://packages.debian.org/sid/amd64/hugo/download</a></p>
+
+<p>다운 받은 후 설치</p>
+
+<pre><code>sudo dpkg -i hugo_0.54.0-1_amd64.deb 
+</code></pre>
+
+<h1 id="구동">구동</h1>
+
+<p>pixelbook에서는 hugo 기본 포트인 1313 으로 띄울 수 없다
+<a href="https://www.reddit.com/r/Crostini/comments/aewwhf/cannot_access_penguinlinuxtestport/">https://www.reddit.com/r/Crostini/comments/aewwhf/cannot_access_penguinlinuxtestport/</a></p>
+
+<p>서버 띄울 때 포트 변경해줘야 한다. 제일 유명한 포트 중에 하나인 8080을 사용하면 잘 뜬다</p>
+
+<pre><code>hugo server -D -p 8080
+</code></pre>
+
+      </div>
+    </article>
+    <aside class="ph3 mt2 mt6-ns">
+      
+
+
+
+
+
+
+
+  <div class="bg-light-gray pa3">
+    <ul>
+      <li class="list b mb3">
+        6 More Posts
+      </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/posts/tech/hugoonpixelbook/" class="link ph2 pv2 db black o-50">
+            pixelbook에서 hugo 설치
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/posts/tech/method-overriding-vs-overloading/" class="link ph2 pv2 db black">
+            method overring 과  overloading 차이
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/posts/tech/post-title/" class="link ph2 pv2 db black">
+            Hugo Theme 변경 테스트
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/posts/music/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C_%EC%82%AC%EC%9A%A9%ED%95%A0_dtm%EB%B9%84%EA%B5%90/" class="link ph2 pv2 db black">
+            Chromebook Flip C100P에서 사용할 Multitrack Recorder
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/posts/tech/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B5%AC%ED%98%84_%EB%8B%A8%EA%B3%84/" class="link ph2 pv2 db black">
+            소프트웨어 프로젝트-구현 단계
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/posts/asuschrombookflipc100pads03/" class="link ph2 pv2 db black">
+            ASUS Chromebook Flip C100PA DS03
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/posts/tech/hugo/" class="link ph2 pv2 db black">
+            Hugo &#43; Github으로 블로깅
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+    </aside>
+  </div>
+
+    </main>
+    <footer class="bg-near-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://bluedskim.github.io/" >
+    &copy; 2019 bluedskim.github.io
+  </a>
+  
+
+
+
+
+
+
+
+
+  </div>
+</footer>
+
+    <script src="https://bluedskim.github.io/dist/app.bundle.js" async></script>
+
+  </body>
+</html>
