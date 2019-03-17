@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://bluedskim.github.io/posts/tech/howtoinputkorenwithcrostinionpixelbook/</loc>
+    <lastmod>2019-03-16T22:38:28+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://bluedskim.github.io/posts/tech/hugoonpixelbook/</loc>
     <lastmod>2019-03-15T22:38:28+09:00</lastmod>
   </url>
@@ -50,6 +55,12 @@
   </url>
   
   <url>
+    <loc>https://bluedskim.github.io/tags/crostini/</loc>
+    <lastmod>2019-03-16T22:38:28+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://bluedskim.github.io/tags/ds03/</loc>
     <lastmod>2017-10-22T22:38:28+09:00</lastmod>
     <priority>0</priority>
@@ -63,7 +74,7 @@
   
   <url>
     <loc>https://bluedskim.github.io/tags/hugo/</loc>
-    <lastmod>2018-06-23T10:54:24+02:00</lastmod>
+    <lastmod>2019-03-15T22:38:28+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -80,8 +91,14 @@
   </url>
   
   <url>
+    <loc>https://bluedskim.github.io/tags/pixelbook/</loc>
+    <lastmod>2019-03-16T22:38:28+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://bluedskim.github.io/posts/</loc>
-    <lastmod>2019-03-15T22:38:28+09:00</lastmod>
+    <lastmod>2019-03-16T22:38:28+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -99,7 +116,7 @@
   
   <url>
     <loc>https://bluedskim.github.io/</loc>
-    <lastmod>2019-03-15T22:38:28+09:00</lastmod>
+    <lastmod>2019-03-16T22:38:28+09:00</lastmod>
     <priority>0</priority>
   </url>
   
