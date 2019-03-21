@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>bluedskim.github.io  | method overring 과  overloading 차이</title>
+    <title>bluedskim.github.io  | 엑셀 데이터를 레드마인 테이블로 변환하는 Javascript</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     
@@ -23,27 +23,39 @@
 
     
 
-    <meta property="og:title" content="method overring 과  overloading 차이" />
-<meta property="og:description" content="객체 지향 언어에서 method overring 과  overloading 차이가 헷갈린다?" />
+    <meta property="og:title" content="엑셀 데이터를 레드마인 테이블로 변환하는 Javascript" />
+<meta property="og:description" content="레드마인에 테이블로 데이터를 보여줄 경우가 점점 많아지는데 수작업으로 하려니 너무 힘들어서 만들었다
+https://jsfiddle.net/shed/pxc93nz6/
+엑셀에서 셀들을 복사한 후 위쪽 textarea에 붙히면 알아서 변환되고 redmine 태그가 복사되는데 첫번째 줄은 header로 인식해서 bold처리 한다
+엑셀(혹은 구글 시트)에서 복사하고 
+변환한 후 redmine에 붙히면 이렇게 나온다" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://bluedskim.github.io/posts/tech/method-overriding-vs-overloading/" />
-<meta property="article:published_time" content="2018-06-24T10:54:24&#43;02:00"/>
-<meta property="article:modified_time" content="2018-06-24T10:54:24&#43;02:00"/>
+<meta property="og:url" content="https://bluedskim.github.io/posts/tech/excel-to-redmine-table/" />
+<meta property="article:published_time" content="2019-03-21T20:38:28&#43;09:00"/>
+<meta property="article:modified_time" content="2019-03-21T20:38:28&#43;09:00"/>
 
-<meta itemprop="name" content="method overring 과  overloading 차이">
-<meta itemprop="description" content="객체 지향 언어에서 method overring 과  overloading 차이가 헷갈린다?">
-
-
-<meta itemprop="datePublished" content="2018-06-24T10:54:24&#43;02:00" />
-<meta itemprop="dateModified" content="2018-06-24T10:54:24&#43;02:00" />
-<meta itemprop="wordCount" content="39">
-
+<meta itemprop="name" content="엑셀 데이터를 레드마인 테이블로 변환하는 Javascript">
+<meta itemprop="description" content="레드마인에 테이블로 데이터를 보여줄 경우가 점점 많아지는데 수작업으로 하려니 너무 힘들어서 만들었다
+https://jsfiddle.net/shed/pxc93nz6/
+엑셀에서 셀들을 복사한 후 위쪽 textarea에 붙히면 알아서 변환되고 redmine 태그가 복사되는데 첫번째 줄은 header로 인식해서 bold처리 한다
+엑셀(혹은 구글 시트)에서 복사하고 
+변환한 후 redmine에 붙히면 이렇게 나온다">
 
 
-<meta itemprop="keywords" content="overring,overloading," />
+<meta itemprop="datePublished" content="2019-03-21T20:38:28&#43;09:00" />
+<meta itemprop="dateModified" content="2019-03-21T20:38:28&#43;09:00" />
+<meta itemprop="wordCount" content="41">
+
+
+
+<meta itemprop="keywords" content="redmine," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="method overring 과  overloading 차이"/>
-<meta name="twitter:description" content="객체 지향 언어에서 method overring 과  overloading 차이가 헷갈린다?"/>
+<meta name="twitter:title" content="엑셀 데이터를 레드마인 테이블로 변환하는 Javascript"/>
+<meta name="twitter:description" content="레드마인에 테이블로 데이터를 보여줄 경우가 점점 많아지는데 수작업으로 하려니 너무 힘들어서 만들었다
+https://jsfiddle.net/shed/pxc93nz6/
+엑셀에서 셀들을 복사한 후 위쪽 textarea에 붙히면 알아서 변환되고 redmine 태그가 복사되는데 첫번째 줄은 header로 인식해서 bold처리 한다
+엑셀(혹은 구글 시트)에서 복사하고 
+변환한 후 redmine에 붙히면 이렇게 나온다"/>
 
       
     
@@ -106,23 +118,22 @@
           POSTS
         </p>
         <h1 class="f1">
-          method overring 과  overloading 차이
+          엑셀 데이터를 레드마인 테이블로 변환하는 Javascript
         </h1>
       </header>
       <div class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray">
-        
+        <p>레드마인에 테이블로 데이터를 보여줄 경우가 점점 많아지는데 수작업으로 하려니 너무 힘들어서 만들었다</p>
 
-<p>모든 객체지향 서적에서 설명은 정확하게 하고 있다.
-하지만 영어권 개발자가 아닌이상 헷갈릴 수밖에 없다.
-그러나 두 단어의 차이를 생각해 보면 이해하기 쉽다.</p>
+<p><a href="https://jsfiddle.net/shed/pxc93nz6/">https://jsfiddle.net/shed/pxc93nz6/</a></p>
 
-<h4 id="override">override</h4>
+<p>엑셀에서 셀들을 복사한 후 위쪽 textarea에 붙히면 알아서 변환되고 redmine 태그가 복사되는데
+첫번째 줄은 header로 인식해서 bold처리 한다</p>
 
-<p>덮어 씌우기 overlap. 덮어 씌우므로 메소드의 개수가 늘어나지 않는다.</p>
+<p>엑셀(혹은 구글 시트)에서 복사하고
+<a href="/images/Screenshot 2019-03-21 at 10.29.32 PM.png"><img src="/images/Screenshot 2019-03-21 at 10.29.32 PM.png" alt="터미널 스크린샷" /></a></p>
 
-<h4 id="overload">overload</h4>
-
-<p>과적하다. 과적 한 만큼 메소드가 늘어난다.</p>
+<p>변환한 후 redmine에 붙히면 이렇게 나온다
+<a href="/images/Screenshot 2019-03-21 at 10.29.14 PM.png"><img src="/images/Screenshot 2019-03-21 at 10.29.14 PM.png" alt="터미널 스크린샷" /></a></p>
 
       </div>
     </article>
@@ -143,7 +154,7 @@
       
         <li class="list f5 w-100 hover-bg-white nl1">
           
-          <a href="/posts/tech/excel-to-redmine-table/" class="link ph2 pv2 db black">
+          <a href="/posts/tech/excel-to-redmine-table/" class="link ph2 pv2 db black o-50">
             엑셀 데이터를 레드마인 테이블로 변환하는 Javascript
           </a>
         </li>
@@ -171,7 +182,7 @@
       
         <li class="list f5 w-100 hover-bg-white nl1">
           
-          <a href="/posts/tech/method-overriding-vs-overloading/" class="link ph2 pv2 db black o-50">
+          <a href="/posts/tech/method-overriding-vs-overloading/" class="link ph2 pv2 db black">
             method overring 과  overloading 차이
           </a>
         </li>
