@@ -142,7 +142,7 @@
           간단하게 터미널에서 작업 소요 시간을 체크 할 수 있는 방법들을 찾아봤는데
 https://superuser.com/questions/611538/is-there-a-way-to-display-a-countdown-or-stopwatch-timer-in-a-terminal
 terdon 이라는 분이 알려준 방법은 잘 동작하였지만 https://superuser.com/questions/611538/is-there-a-way-to-display-a-countdown-or-stopwatch-timer-in-a-terminal?answertab=active#tab-top
-~/.bashrc 파일에 함수를 추가하고 터미널에서 바로 호출해서 쓰는 방법이라 프로그램 추가 설치가 필요없다는 장점이 있다
+~/.bashrc 파일에 함수를 추가하고 터미널에서 바로 호출해서 쓰는 방법이라 프로그램 추가 설치가 필요없다는 장점이 있다.
 countdown(){ date1=$((`date +%s` + $1)); while [ &quot;$date1&quot; -ge `date +%s` ]; do ## Is this more than 24h away? days=$(($(($(( $date1 - $(date +%s))) * 1 ))/86400)) echo -ne &quot;$days day(s) and $(date -u --date @$(($date1 - `date +%s`)) +%H:%M:%S)\r&quot;; sleep 0.
         </div>
           <a href="/posts/tech/%EC%93%B8%EB%A7%8C%ED%95%9C-ubuntu%EC%9A%A9-command-line-%ED%83%80%EC%9D%B4%EB%A8%B8/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
