@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://bluedskim.github.io/posts/tech/%EC%93%B8%EB%A7%8C%ED%95%9C-ubuntu%EC%9A%A9-command-line-%ED%83%80%EC%9D%B4%EB%A8%B8/</loc>
+    <lastmod>2019-03-24T10:38:28+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://bluedskim.github.io/posts/tech/excel-to-redmine-table/</loc>
     <lastmod>2019-03-21T20:38:28+09:00</lastmod>
   </url>
@@ -114,7 +119,7 @@
   
   <url>
     <loc>https://bluedskim.github.io/posts/</loc>
-    <lastmod>2019-03-21T20:38:28+09:00</lastmod>
+    <lastmod>2019-03-24T10:38:28+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -138,7 +143,7 @@
   
   <url>
     <loc>https://bluedskim.github.io/</loc>
-    <lastmod>2019-03-21T20:38:28+09:00</lastmod>
+    <lastmod>2019-03-24T10:38:28+09:00</lastmod>
     <priority>0</priority>
   </url>
   
