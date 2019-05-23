@@ -3,8 +3,38 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://bluedskim.github.io/posts/</loc>
+    <lastmod>2019-05-15T10:14:03+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bluedskim.github.io/tags/</loc>
+    <lastmod>2019-05-15T10:14:03+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bluedskim.github.io/</loc>
+    <lastmod>2019-05-15T10:14:03+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bluedskim.github.io/tags/samba/</loc>
+    <lastmod>2019-05-15T10:14:03+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://bluedskim.github.io/posts/movie/%EC%82%BC%EB%B0%94%EC%99%80-%EC%98%81%ED%99%94%EB%A5%BC-%EC%82%AC%EB%9E%91%ED%95%98%EB%8A%94-%EB%B6%84%EB%93%A4%EC%97%90%EA%B2%8C-%EC%B6%94%EC%B2%9C%ED%95%98%EB%8A%94-%EC%98%81%ED%99%94/</loc>
     <lastmod>2019-05-15T10:14:03+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bluedskim.github.io/tags/docker/</loc>
+    <lastmod>2019-04-28T13:38:28+09:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -13,13 +43,37 @@
   </url>
   
   <url>
+    <loc>https://bluedskim.github.io/tags/pixelbook/</loc>
+    <lastmod>2019-03-24T10:38:28+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bluedskim.github.io/tags/termdown/</loc>
+    <lastmod>2019-03-24T10:38:28+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://bluedskim.github.io/posts/tech/%EC%93%B8%EB%A7%8C%ED%95%9C-ubuntu%EC%9A%A9-command-line-%ED%83%80%EC%9D%B4%EB%A8%B8/</loc>
     <lastmod>2019-03-24T10:38:28+09:00</lastmod>
   </url>
   
   <url>
+    <loc>https://bluedskim.github.io/tags/redmine/</loc>
+    <lastmod>2019-03-21T20:38:28+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://bluedskim.github.io/posts/tech/excel-to-redmine-table/</loc>
     <lastmod>2019-03-21T20:38:28+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bluedskim.github.io/tags/gear360/</loc>
+    <lastmod>2019-03-19T23:38:28+09:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -33,6 +87,18 @@
   </url>
   
   <url>
+    <loc>https://bluedskim.github.io/tags/crostini/</loc>
+    <lastmod>2019-03-16T22:38:28+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bluedskim.github.io/tags/hugo/</loc>
+    <lastmod>2019-03-15T22:38:28+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://bluedskim.github.io/posts/tech/hugoonpixelbook/</loc>
     <lastmod>2019-03-15T22:38:28+09:00</lastmod>
   </url>
@@ -43,13 +109,43 @@
   </url>
   
   <url>
+    <loc>https://bluedskim.github.io/tags/overloading/</loc>
+    <lastmod>2018-06-24T10:54:24+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bluedskim.github.io/tags/overring/</loc>
+    <lastmod>2018-06-24T10:54:24+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://bluedskim.github.io/posts/tech/post-title/</loc>
     <lastmod>2018-06-23T10:54:24+02:00</lastmod>
   </url>
   
   <url>
+    <loc>https://bluedskim.github.io/tags/theme/</loc>
+    <lastmod>2018-06-23T10:54:24+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://bluedskim.github.io/posts/music/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C_%EC%82%AC%EC%9A%A9%ED%95%A0_dtm%EB%B9%84%EA%B5%90/</loc>
     <lastmod>2017-12-13T22:38:28+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bluedskim.github.io/tags/%EA%B5%AC%ED%98%84/</loc>
+    <lastmod>2017-12-12T22:38:28+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bluedskim.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/</loc>
+    <lastmod>2017-12-12T22:38:28+09:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -59,11 +155,6 @@
   
   <url>
     <loc>https://bluedskim.github.io/posts/asuschrombookflipc100pads03/</loc>
-    <lastmod>2017-10-22T22:38:28+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bluedskim.github.io/posts/tech/hugo/</loc>
     <lastmod>2017-10-22T22:38:28+09:00</lastmod>
   </url>
   
@@ -80,18 +171,6 @@
   </url>
   
   <url>
-    <loc>https://bluedskim.github.io/tags/crostini/</loc>
-    <lastmod>2019-03-16T22:38:28+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bluedskim.github.io/tags/docker/</loc>
-    <lastmod>2019-04-28T13:38:28+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://bluedskim.github.io/tags/ds03/</loc>
     <lastmod>2017-10-22T22:38:28+09:00</lastmod>
     <priority>0</priority>
@@ -104,87 +183,8 @@
   </url>
   
   <url>
-    <loc>https://bluedskim.github.io/tags/gear360/</loc>
-    <lastmod>2019-03-19T23:38:28+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bluedskim.github.io/tags/hugo/</loc>
-    <lastmod>2019-03-15T22:38:28+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bluedskim.github.io/tags/overloading/</loc>
-    <lastmod>2018-06-24T10:54:24+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bluedskim.github.io/tags/overring/</loc>
-    <lastmod>2018-06-24T10:54:24+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bluedskim.github.io/tags/pixelbook/</loc>
-    <lastmod>2019-03-24T10:38:28+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bluedskim.github.io/posts/</loc>
-    <lastmod>2019-05-15T10:14:03+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bluedskim.github.io/tags/redmine/</loc>
-    <lastmod>2019-03-21T20:38:28+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bluedskim.github.io/tags/samba/</loc>
-    <lastmod>2019-05-15T10:14:03+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bluedskim.github.io/tags/</loc>
+    <loc>https://bluedskim.github.io/posts/tech/hugo/</loc>
     <lastmod>2017-10-22T22:38:28+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bluedskim.github.io/tags/termdown/</loc>
-    <lastmod>2019-03-24T10:38:28+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bluedskim.github.io/tags/theme/</loc>
-    <lastmod>2018-06-23T10:54:24+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bluedskim.github.io/</loc>
-    <lastmod>2019-05-15T10:14:03+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bluedskim.github.io/tags/%EA%B5%AC%ED%98%84/</loc>
-    <lastmod>2017-12-12T22:38:28+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bluedskim.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/</loc>
-    <lastmod>2017-12-12T22:38:28+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
 </urlset>

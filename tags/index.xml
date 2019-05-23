@@ -6,35 +6,17 @@
     <description>Recent content in Tags on bluedskim.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 22 Oct 2017 22:38:28 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 15 May 2019 10:14:03 +0900</lastBuildDate>
     
 	<atom:link href="https://bluedskim.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>C100pa</title>
-      <link>https://bluedskim.github.io/tags/c100pa/</link>
-      <pubDate>Sun, 22 Oct 2017 22:38:28 +0900</pubDate>
+      <title>samba</title>
+      <link>https://bluedskim.github.io/tags/samba/</link>
+      <pubDate>Wed, 15 May 2019 10:14:03 +0900</pubDate>
       
-      <guid>https://bluedskim.github.io/tags/c100pa/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Chrombook</title>
-      <link>https://bluedskim.github.io/tags/chrombook/</link>
-      <pubDate>Sun, 22 Oct 2017 22:38:28 +0900</pubDate>
-      
-      <guid>https://bluedskim.github.io/tags/chrombook/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Crostini</title>
-      <link>https://bluedskim.github.io/tags/crostini/</link>
-      <pubDate>Sat, 16 Mar 2019 22:38:28 +0900</pubDate>
-      
-      <guid>https://bluedskim.github.io/tags/crostini/</guid>
+      <guid>https://bluedskim.github.io/tags/samba/</guid>
       <description></description>
     </item>
     
@@ -48,29 +30,47 @@
     </item>
     
     <item>
-      <title>Ds03</title>
-      <link>https://bluedskim.github.io/tags/ds03/</link>
-      <pubDate>Sun, 22 Oct 2017 22:38:28 +0900</pubDate>
+      <title>pixelbook</title>
+      <link>https://bluedskim.github.io/tags/pixelbook/</link>
+      <pubDate>Sun, 24 Mar 2019 10:38:28 +0900</pubDate>
       
-      <guid>https://bluedskim.github.io/tags/ds03/</guid>
+      <guid>https://bluedskim.github.io/tags/pixelbook/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Flip</title>
-      <link>https://bluedskim.github.io/tags/flip/</link>
-      <pubDate>Sun, 22 Oct 2017 22:38:28 +0900</pubDate>
+      <title>termdown</title>
+      <link>https://bluedskim.github.io/tags/termdown/</link>
+      <pubDate>Sun, 24 Mar 2019 10:38:28 +0900</pubDate>
       
-      <guid>https://bluedskim.github.io/tags/flip/</guid>
+      <guid>https://bluedskim.github.io/tags/termdown/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Gear360</title>
+      <title>redmine</title>
+      <link>https://bluedskim.github.io/tags/redmine/</link>
+      <pubDate>Thu, 21 Mar 2019 20:38:28 +0900</pubDate>
+      
+      <guid>https://bluedskim.github.io/tags/redmine/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gear360</title>
       <link>https://bluedskim.github.io/tags/gear360/</link>
       <pubDate>Tue, 19 Mar 2019 23:38:28 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/tags/gear360/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>crostini</title>
+      <link>https://bluedskim.github.io/tags/crostini/</link>
+      <pubDate>Sat, 16 Mar 2019 22:38:28 +0900</pubDate>
+      
+      <guid>https://bluedskim.github.io/tags/crostini/</guid>
       <description></description>
     </item>
     
@@ -84,7 +84,7 @@
     </item>
     
     <item>
-      <title>Overloading</title>
+      <title>overloading</title>
       <link>https://bluedskim.github.io/tags/overloading/</link>
       <pubDate>Sun, 24 Jun 2018 10:54:24 +0200</pubDate>
       
@@ -93,47 +93,11 @@
     </item>
     
     <item>
-      <title>Overring</title>
+      <title>overring</title>
       <link>https://bluedskim.github.io/tags/overring/</link>
       <pubDate>Sun, 24 Jun 2018 10:54:24 +0200</pubDate>
       
       <guid>https://bluedskim.github.io/tags/overring/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pixelbook</title>
-      <link>https://bluedskim.github.io/tags/pixelbook/</link>
-      <pubDate>Sun, 24 Mar 2019 10:38:28 +0900</pubDate>
-      
-      <guid>https://bluedskim.github.io/tags/pixelbook/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Redmine</title>
-      <link>https://bluedskim.github.io/tags/redmine/</link>
-      <pubDate>Thu, 21 Mar 2019 20:38:28 +0900</pubDate>
-      
-      <guid>https://bluedskim.github.io/tags/redmine/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Samba</title>
-      <link>https://bluedskim.github.io/tags/samba/</link>
-      <pubDate>Wed, 15 May 2019 10:14:03 +0900</pubDate>
-      
-      <guid>https://bluedskim.github.io/tags/samba/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Termdown</title>
-      <link>https://bluedskim.github.io/tags/termdown/</link>
-      <pubDate>Sun, 24 Mar 2019 10:38:28 +0900</pubDate>
-      
-      <guid>https://bluedskim.github.io/tags/termdown/</guid>
       <description></description>
     </item>
     
@@ -161,6 +125,42 @@
       <pubDate>Tue, 12 Dec 2017 22:38:28 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C100PA</title>
+      <link>https://bluedskim.github.io/tags/c100pa/</link>
+      <pubDate>Sun, 22 Oct 2017 22:38:28 +0900</pubDate>
+      
+      <guid>https://bluedskim.github.io/tags/c100pa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Chrombook</title>
+      <link>https://bluedskim.github.io/tags/chrombook/</link>
+      <pubDate>Sun, 22 Oct 2017 22:38:28 +0900</pubDate>
+      
+      <guid>https://bluedskim.github.io/tags/chrombook/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DS03</title>
+      <link>https://bluedskim.github.io/tags/ds03/</link>
+      <pubDate>Sun, 22 Oct 2017 22:38:28 +0900</pubDate>
+      
+      <guid>https://bluedskim.github.io/tags/ds03/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Flip</title>
+      <link>https://bluedskim.github.io/tags/flip/</link>
+      <pubDate>Sun, 22 Oct 2017 22:38:28 +0900</pubDate>
+      
+      <guid>https://bluedskim.github.io/tags/flip/</guid>
       <description></description>
     </item>
     

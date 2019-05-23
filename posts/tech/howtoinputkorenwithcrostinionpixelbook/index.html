@@ -10,7 +10,7 @@
     
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.54.0" />
+    <meta name="generator" content="Hugo 0.55.5" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -52,7 +52,7 @@
 
 <meta itemprop="datePublished" content="2019-03-16T22:38:28&#43;09:00" />
 <meta itemprop="dateModified" content="2019-03-16T22:38:28&#43;09:00" />
-<meta itemprop="wordCount" content="125">
+<meta itemprop="wordCount" content="161">
 
 
 
@@ -148,12 +148,27 @@
 <p>[참고]<br />
 * <a href="https://itsze.ro/blog/2018/08/08/quick-note-on-crostini-chinese-ime.html">https://itsze.ro/blog/2018/08/08/quick-note-on-crostini-chinese-ime.html</a></p>
 
+<p>한글locale 설치</p>
+
+<pre><code>sudo apt-get install language-pack-ko
+
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+E: Unable to locate package language-pack-ko
+
+# 실패하여 모든 locale을 다 설치함 -.-
+sudo apt-get install -y locales locales-all
+</code></pre>
+
 <p>한글입력기를 설치한다</p>
 
 <pre><code>sudo apt-get install fcitx-hangul
 </code></pre>
 
 <p>fcitx-config-gtk3 도 같이 설치된다. fcitx-config-gtk3를 실행하여 한영 전환키를 취향에 맞게 설정한다</p>
+
+<p><a href="/images/Screenshot 2019-05-23 at 1.22.02 PM.png"><img src="/images/Screenshot 2019-05-23 at 1.22.02 PM.png" alt="termdown 스크린샷" /></a></p>
 
 <p>crostini에서 한글입력기를 사용하도록 설정변경 : /etc/systemd/user/cros-garcon.service.d/cros-garcon-override.conf 에 추가]</p>
 
