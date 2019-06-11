@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VLOOKUP on 하고 싶은 걸 하세요 Do What You Want</title>
+    <link>/tags/vlookup.html</link>
+    <description>Recent content in VLOOKUP on 하고 싶은 걸 하세요 Do What You Want</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 12 Dec 2007 11:59:00 +0900</lastBuildDate>
+    
+	<atom:link href="/tags/vlookup/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Excel의 VLOOKUP 함수의 첫번째 인자의 값에 ~ (tilda 물결표시)가 있는 경우 찾기오류 발생</title>
+      <link>/posts/software-engineering/excel%EC%9D%98-vlookup-%ED%95%A8%EC%88%98%EC%9D%98-%EC%B2%AB%EB%B2%88%EC%A7%B8-%EC%9D%B8%EC%9E%90%EC%9D%98-%EA%B0%92%EC%97%90-~-tilda-%EB%AC%BC%EA%B2%B0%ED%91%9C%EC%8B%9C%EA%B0%80-%EC%9E%88%EB%8A%94-%EA%B2%BD%EC%9A%B0-%EC%B0%BE%EA%B8%B0%EC%98%A4%EB%A5%98-%EB%B0%9C%EC%83%9D.html</link>
+      <pubDate>Wed, 12 Dec 2007 11:59:00 +0900</pubDate>
+      
+      <guid>/posts/software-engineering/excel%EC%9D%98-vlookup-%ED%95%A8%EC%88%98%EC%9D%98-%EC%B2%AB%EB%B2%88%EC%A7%B8-%EC%9D%B8%EC%9E%90%EC%9D%98-%EA%B0%92%EC%97%90-~-tilda-%EB%AC%BC%EA%B2%B0%ED%91%9C%EC%8B%9C%EA%B0%80-%EC%9E%88%EB%8A%94-%EA%B2%BD%EC%9A%B0-%EC%B0%BE%EA%B8%B0%EC%98%A4%EB%A5%98-%EB%B0%9C%EC%83%9D.html</guid>
+      <description>이런 경우 첫번째 인자에서 ~를 제거하거나 다른 문자로 대치하여야 제대로 동작한다 P2 의 값이 &amp;ldquo;서울~부산&amp;rdquo; 이라고 할 때 VLOOKUP( P2,구간코드,2,FALSE) 위의 함수를 아래 처럼 VLOOKUP( SUBSTITUTE(P2,&amp;rdquo;~&amp;ldquo;,&amp;rdquo;-&amp;ldquo;),구간코드,2,FALSE) 하고 &amp;ldquo;구간코드&amp;rdquo; 에 해당 하는 table_array의 값에도 ~ 를 - 로 대치해야한다. 링크 : http://www.mrexcel.com/archive2/41300/48504.htm  --
+ </description>
+    </item>
+    
+  </channel>
+</rss>

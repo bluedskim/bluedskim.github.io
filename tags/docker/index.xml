@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Docker on bluedskim.github.io</title>
-    <link>https://bluedskim.github.io/tags/docker/</link>
-    <description>Recent content in Docker on bluedskim.github.io</description>
+    <title>Docker on 하고 싶은 걸 하세요 Do What You Want</title>
+    <link>/tags/docker.html</link>
+    <description>Recent content in Docker on 하고 싶은 걸 하세요 Do What You Want</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ko-kr</language>
     <lastBuildDate>Sun, 28 Apr 2019 13:38:28 +0900</lastBuildDate>
     
-	<atom:link href="https://bluedskim.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>pixelbook에 Docker설치하기</title>
-      <link>https://bluedskim.github.io/posts/tech/pixelbook%EC%97%90-docker%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</link>
+      <link>/posts/tech/pixelbook%EC%97%90-docker%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0.html</link>
       <pubDate>Sun, 28 Apr 2019 13:38:28 +0900</pubDate>
       
-      <guid>https://bluedskim.github.io/posts/tech/pixelbook%EC%97%90-docker%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</guid>
+      <guid>/posts/tech/pixelbook%EC%97%90-docker%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0.html</guid>
       <description>인터넷에서 찾아본 자료에 의하면 docker 설치에 문제가 있다고. 하지만 고마운 누군가가 직접 binary를 수정해서 github에 공유해 주셨다.
 아래에서 스크립트를 받아서 실행하면 깔끔하게 설치된다. https://github.com/abiosoft/crostini-docker
 root 가 아닌 사용자(본인)도 쓸 수 있게 하기 위해 docker그룹에 추가하고

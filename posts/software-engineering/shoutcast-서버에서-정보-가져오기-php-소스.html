@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>하고 싶은 걸 하세요 Do What You Want  | shoutcast 서버에서 정보 가져오기 php 소스</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.55.5" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="../../dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+      <link rel="stylesheet" href="../../custom.css">
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="shoutcast 서버에서 정보 가져오기 php 소스" />
+<meta property="og:description" content="http://yoda.ih.nu/ 에 가면 shoutcast 서버에 admin.cgi를 통해 로그인 후 정보를 fetch 해오는 소스가 있는데 xml을 해석하는 방식이라서 더 깔끔하기는 한데 속도가 많이 느리고 굳이 아이디/암호로 로그인까지 할 필요도 없고 해서 아래 소스를 추천한다. 복잡하게 &lsquo;fsockopen함수를 쓰지 말고 file 함수를 쓰면 되지 않느냐?&lsquo;라고 생각할 수도 있는데 예를 들면 $htmlCodes = file(&lsquo;http://live140.impek.com:8090/&#39;); 이런식으로. 그러나 불가능하다. &ldquo;404 Resource Not Found &rdquo; 가 발생하는데 shoutcast 서버는 agent가 일반적인 브라우져가 아니면 404에러를 발생하는 듯 하다.  소스파일 다운로드 : shoutcastStatus." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/software-engineering/shoutcast-%EC%84%9C%EB%B2%84%EC%97%90%EC%84%9C-%EC%A0%95%EB%B3%B4-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0-php-%EC%86%8C%EC%8A%A4.html" />
+<meta property="article:published_time" content="2008-10-02T00:47:00&#43;09:00"/>
+<meta property="article:modified_time" content="2008-10-02T00:47:00&#43;09:00"/>
+
+<meta itemprop="name" content="shoutcast 서버에서 정보 가져오기 php 소스">
+<meta itemprop="description" content="http://yoda.ih.nu/ 에 가면 shoutcast 서버에 admin.cgi를 통해 로그인 후 정보를 fetch 해오는 소스가 있는데 xml을 해석하는 방식이라서 더 깔끔하기는 한데 속도가 많이 느리고 굳이 아이디/암호로 로그인까지 할 필요도 없고 해서 아래 소스를 추천한다. 복잡하게 &lsquo;fsockopen함수를 쓰지 말고 file 함수를 쓰면 되지 않느냐?&lsquo;라고 생각할 수도 있는데 예를 들면 $htmlCodes = file(&lsquo;http://live140.impek.com:8090/&#39;); 이런식으로. 그러나 불가능하다. &ldquo;404 Resource Not Found &rdquo; 가 발생하는데 shoutcast 서버는 agent가 일반적인 브라우져가 아니면 404에러를 발생하는 듯 하다.  소스파일 다운로드 : shoutcastStatus.">
+
+
+<meta itemprop="datePublished" content="2008-10-02T00:47:00&#43;09:00" />
+<meta itemprop="dateModified" content="2008-10-02T00:47:00&#43;09:00" />
+<meta itemprop="wordCount" content="75">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="shoutcast 서버에서 정보 가져오기 php 소스"/>
+<meta name="twitter:description" content="http://yoda.ih.nu/ 에 가면 shoutcast 서버에 admin.cgi를 통해 로그인 후 정보를 fetch 해오는 소스가 있는데 xml을 해석하는 방식이라서 더 깔끔하기는 한데 속도가 많이 느리고 굳이 아이디/암호로 로그인까지 할 필요도 없고 해서 아래 소스를 추천한다. 복잡하게 &lsquo;fsockopen함수를 쓰지 말고 file 함수를 쓰면 되지 않느냐?&lsquo;라고 생각할 수도 있는데 예를 들면 $htmlCodes = file(&lsquo;http://live140.impek.com:8090/&#39;); 이런식으로. 그러나 불가능하다. &ldquo;404 Resource Not Found &rdquo; 가 발생하는데 shoutcast 서버는 agent가 일반적인 브라우져가 아니면 404에러를 발생하는 듯 하다.  소스파일 다운로드 : shoutcastStatus."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="" class="f3 fw2 hover-white no-underline white-90 dib">
+      하고 싶은 걸 하세요 Do What You Want
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">shoutcast 서버에서 정보 가져오기 php 소스</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2008-10-02T00:47:00&#43;09:00">October 2, 2008</time>      
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p><span class="copyright_entry" style="display:block;" title="shoutcast 서버에서 정보 가져오기 php 소스@@**@@http://shed.egloos.com/1817450"></span><a href="http://yoda.ih.nu/">http://yoda.ih.nu/</a> 에 가면 shoutcast 서버에 admin.cgi를 통해 로그인 후 정보를 fetch 해오는 소스가 있는데
+<br>
+<br>xml을 해석하는 방식이라서 더 깔끔하기는 한데 속도가 많이 느리고 굳이 아이디/암호로 로그인까지 할 필요도 없고 해서 아래 소스를 추천한다.
+<br>
+<br>복잡하게 &lsquo;fsockopen함수를 쓰지 말고 file 함수를 쓰면 되지 않느냐?&lsquo;라고 생각할 수도 있는데
+<br>
+<br>예를 들면
+<br>
+<br>$htmlCodes = file(&lsquo;<a href="http://live140.impek.com:8090/'">http://live140.impek.com:8090/'</a>);
+<br>
+<br>이런식으로.
+<br>
+<br>그러나 불가능하다. &ldquo;404 Resource Not Found
+<span style="font-style: italic;"></span>&rdquo; 가 발생하는데 shoutcast 서버는 agent가 일반적인 브라우져가 아니면 404에러를 발생하는 듯 하다.
+<br>
+<ul>
+ <li>소스파일 다운로드 : <a href="http://pds10.egloos.com/pds/200810/02/82/shoutcastStatus.php.txt">shoutcastStatus.php.txt</a></li>
+</ul>
+<!--
+       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+       <rdf:Description
+            rdf:about="http://shed.egloos.com/1817450"
+            dc:identifier="http://shed.egloos.com/1817450"
+            dc:title="shoutcast 서버에서 정보 가져오기 php 소스"
+            trackback:ping="http://shed.egloos.com/tb/1817450"/>
+       </rdf:RDF>
+       --></p>
+
+<ul></ul>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+        
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="" >
+    &copy; 2019 하고 싶은 걸 하세요 Do What You Want
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="../../dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

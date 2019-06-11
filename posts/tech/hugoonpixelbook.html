@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>하고 싶은 걸 하세요 Do What You Want  | Pixelbook에서 hugo 설치</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.55.5" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="../../dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+      <link rel="stylesheet" href="../../custom.css">
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="Pixelbook에서 hugo 설치" />
+<meta property="og:description" content="설치 ASUS Chromebook C100PA-DS03 에 설치할 때와 마찬가지로 최신버전을 설치하려면 deb 파일을 다운 받아야 한다. 현재 최신 버전은 hugo_0.54.0-1_amd64.deb 이다. 하지만 libsass1이 필요하다고 하니 먼저 설치한다.
+다운로드 경로 https://packages.debian.org/sid/amd64/libsass1/download
+다운 받은 후 설치
+sudo dpkg -i libsass1_3.5.5-2_amd64.deb  다운로드 경로 https://packages.debian.org/sid/amd64/hugo/download
+다운 받은 후 설치
+sudo dpkg -i hugo_0.54.0-1_amd64.deb  구동 pixelbook에서는 hugo 기본 포트인 1313 으로 띄울 수 없으니 아래를 참고하고 https://www.reddit.com/r/Crostini/comments/aewwhf/cannot_access_penguinlinuxtestport/
+서버 띄울 때 포트 변경해줘야 한다. 제일 유명한 포트 중에 하나인 8080을 사용하면 잘 뜬다" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/tech/hugoonpixelbook.html" />
+<meta property="article:published_time" content="2019-03-15T22:38:28&#43;09:00"/>
+<meta property="article:modified_time" content="2019-03-15T22:38:28&#43;09:00"/>
+
+<meta itemprop="name" content="Pixelbook에서 hugo 설치">
+<meta itemprop="description" content="설치 ASUS Chromebook C100PA-DS03 에 설치할 때와 마찬가지로 최신버전을 설치하려면 deb 파일을 다운 받아야 한다. 현재 최신 버전은 hugo_0.54.0-1_amd64.deb 이다. 하지만 libsass1이 필요하다고 하니 먼저 설치한다.
+다운로드 경로 https://packages.debian.org/sid/amd64/libsass1/download
+다운 받은 후 설치
+sudo dpkg -i libsass1_3.5.5-2_amd64.deb  다운로드 경로 https://packages.debian.org/sid/amd64/hugo/download
+다운 받은 후 설치
+sudo dpkg -i hugo_0.54.0-1_amd64.deb  구동 pixelbook에서는 hugo 기본 포트인 1313 으로 띄울 수 없으니 아래를 참고하고 https://www.reddit.com/r/Crostini/comments/aewwhf/cannot_access_penguinlinuxtestport/
+서버 띄울 때 포트 변경해줘야 한다. 제일 유명한 포트 중에 하나인 8080을 사용하면 잘 뜬다">
+
+
+<meta itemprop="datePublished" content="2019-03-15T22:38:28&#43;09:00" />
+<meta itemprop="dateModified" content="2019-03-15T22:38:28&#43;09:00" />
+<meta itemprop="wordCount" content="81">
+
+
+
+<meta itemprop="keywords" content="Pixelbook,hugo," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Pixelbook에서 hugo 설치"/>
+<meta name="twitter:description" content="설치 ASUS Chromebook C100PA-DS03 에 설치할 때와 마찬가지로 최신버전을 설치하려면 deb 파일을 다운 받아야 한다. 현재 최신 버전은 hugo_0.54.0-1_amd64.deb 이다. 하지만 libsass1이 필요하다고 하니 먼저 설치한다.
+다운로드 경로 https://packages.debian.org/sid/amd64/libsass1/download
+다운 받은 후 설치
+sudo dpkg -i libsass1_3.5.5-2_amd64.deb  다운로드 경로 https://packages.debian.org/sid/amd64/hugo/download
+다운 받은 후 설치
+sudo dpkg -i hugo_0.54.0-1_amd64.deb  구동 pixelbook에서는 hugo 기본 포트인 1313 으로 띄울 수 없으니 아래를 참고하고 https://www.reddit.com/r/Crostini/comments/aewwhf/cannot_access_penguinlinuxtestport/
+서버 띄울 때 포트 변경해줘야 한다. 제일 유명한 포트 중에 하나인 8080을 사용하면 잘 뜬다"/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="" class="f3 fw2 hover-white no-underline white-90 dib">
+      하고 싶은 걸 하세요 Do What You Want
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">Pixelbook에서 hugo 설치</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2019-03-15T22:38:28&#43;09:00">March 15, 2019</time>      
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+
+<h1 id="설치">설치</h1>
+
+<p>ASUS Chromebook C100PA-DS03 에 설치할 때와 마찬가지로 최신버전을 설치하려면 deb 파일을 다운 받아야 한다. 현재 최신 버전은 hugo_0.54.0-1_amd64.deb 이다.
+하지만 libsass1이 필요하다고 하니 먼저 설치한다.</p>
+
+<p>다운로드 경로 <a href="https://packages.debian.org/sid/amd64/libsass1/download">https://packages.debian.org/sid/amd64/libsass1/download</a></p>
+
+<p>다운 받은 후 설치</p>
+
+<pre><code>sudo dpkg -i libsass1_3.5.5-2_amd64.deb
+</code></pre>
+
+<p>다운로드 경로 <a href="https://packages.debian.org/sid/amd64/hugo/download">https://packages.debian.org/sid/amd64/hugo/download</a></p>
+
+<p>다운 받은 후 설치</p>
+
+<pre><code>sudo dpkg -i hugo_0.54.0-1_amd64.deb 
+</code></pre>
+
+<h1 id="구동">구동</h1>
+
+<p>pixelbook에서는 hugo 기본 포트인 1313 으로 띄울 수 없으니 아래를 참고하고
+<a href="https://www.reddit.com/r/Crostini/comments/aewwhf/cannot_access_penguinlinuxtestport/">https://www.reddit.com/r/Crostini/comments/aewwhf/cannot_access_penguinlinuxtestport/</a></p>
+
+<p>서버 띄울 때 포트 변경해줘야 한다. 제일 유명한 포트 중에 하나인 8080을 사용하면 잘 뜬다</p>
+
+<pre><code>hugo server -D -p 8080
+</code></pre>
+<ul class="pa0">
+  
+   <li class="list">
+     <a href="../../tags/pixelbook.html" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Pixelbook</a>
+   </li>
+  
+   <li class="list">
+     <a href="../../tags/hugo.html" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">hugo</a>
+   </li>
+  
+</ul>
+<div class="mt6">
+        
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="" >
+    &copy; 2019 하고 싶은 걸 하세요 Do What You Want
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="../../dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>bluedskim.github.io</title>
-    <link>https://bluedskim.github.io/</link>
-    <description>Recent content on bluedskim.github.io</description>
+    <title>하고 싶은 걸 하세요 Do What You Want</title>
+    <link>/</link>
+    <description>Recent content on 하고 싶은 걸 하세요 Do What You Want</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ko-kr</language>
     <lastBuildDate>Wed, 15 May 2019 10:14:03 +0900</lastBuildDate>
     
-	<atom:link href="https://bluedskim.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>삼바와 영화를 사랑하는 분들에게 추천하는 브라질의 극영화</title>
-      <link>https://bluedskim.github.io/posts/movie/%EC%82%BC%EB%B0%94%EC%99%80-%EC%98%81%ED%99%94%EB%A5%BC-%EC%82%AC%EB%9E%91%ED%95%98%EB%8A%94-%EB%B6%84%EB%93%A4%EC%97%90%EA%B2%8C-%EC%B6%94%EC%B2%9C%ED%95%98%EB%8A%94-%EC%98%81%ED%99%94/</link>
+      <link>/posts/movie/%EC%82%BC%EB%B0%94%EC%99%80-%EC%98%81%ED%99%94%EB%A5%BC-%EC%82%AC%EB%9E%91%ED%95%98%EB%8A%94-%EB%B6%84%EB%93%A4%EC%97%90%EA%B2%8C-%EC%B6%94%EC%B2%9C%ED%95%98%EB%8A%94-%EC%98%81%ED%99%94.html</link>
       <pubDate>Wed, 15 May 2019 10:14:03 +0900</pubDate>
       
-      <guid>https://bluedskim.github.io/posts/movie/%EC%82%BC%EB%B0%94%EC%99%80-%EC%98%81%ED%99%94%EB%A5%BC-%EC%82%AC%EB%9E%91%ED%95%98%EB%8A%94-%EB%B6%84%EB%93%A4%EC%97%90%EA%B2%8C-%EC%B6%94%EC%B2%9C%ED%95%98%EB%8A%94-%EC%98%81%ED%99%94/</guid>
+      <guid>/posts/movie/%EC%82%BC%EB%B0%94%EC%99%80-%EC%98%81%ED%99%94%EB%A5%BC-%EC%82%AC%EB%9E%91%ED%95%98%EB%8A%94-%EB%B6%84%EB%93%A4%EC%97%90%EA%B2%8C-%EC%B6%94%EC%B2%9C%ED%95%98%EB%8A%94-%EC%98%81%ED%99%94.html</guid>
       <description>삼바음악을 주요 소재로 하였거나 삼바의 정서saudade가 많이 묻어나는 브라질의 극영화들이다
  Orfeu Negro(흑인 오르페) : http://www.cine21.com/movie/info/?movie_id=642  Cidade De Deus(시티 오브 갓) : http://www.cine21.com/movie/info/?movie_id=7832  Central Do Brazil(중앙역) : http://www.cine21.com/movie/info/?movie_id=1798   기타
  Woman On Top(맛을 보여드립니다) http://www.cine21.com/movie/info/?movie_id=6472 : 삼바(보사노바) 음악이 많이 삽입되었지만 장식적 요소일 뿐 딱히 삼바의 정서가 묻어나지는 않는 영화지만 노래들은 좋다.  </description>
@@ -24,10 +23,10 @@
     
     <item>
       <title>pixelbook에 Docker설치하기</title>
-      <link>https://bluedskim.github.io/posts/tech/pixelbook%EC%97%90-docker%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</link>
+      <link>/posts/tech/pixelbook%EC%97%90-docker%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0.html</link>
       <pubDate>Sun, 28 Apr 2019 13:38:28 +0900</pubDate>
       
-      <guid>https://bluedskim.github.io/posts/tech/pixelbook%EC%97%90-docker%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</guid>
+      <guid>/posts/tech/pixelbook%EC%97%90-docker%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0.html</guid>
       <description>인터넷에서 찾아본 자료에 의하면 docker 설치에 문제가 있다고. 하지만 고마운 누군가가 직접 binary를 수정해서 github에 공유해 주셨다.
 아래에서 스크립트를 받아서 실행하면 깔끔하게 설치된다. https://github.com/abiosoft/crostini-docker
 root 가 아닌 사용자(본인)도 쓸 수 있게 하기 위해 docker그룹에 추가하고
@@ -38,10 +37,10 @@ docker run hello-world  </description>
     
     <item>
       <title>각종 작업 소요시간 체크용 우분투용 command line stopwatch</title>
-      <link>https://bluedskim.github.io/posts/tech/%EC%93%B8%EB%A7%8C%ED%95%9C-ubuntu%EC%9A%A9-command-line-%ED%83%80%EC%9D%B4%EB%A8%B8/</link>
+      <link>/posts/tech/%EC%93%B8%EB%A7%8C%ED%95%9C-ubuntu%EC%9A%A9-command-line-%ED%83%80%EC%9D%B4%EB%A8%B8.html</link>
       <pubDate>Sun, 24 Mar 2019 10:38:28 +0900</pubDate>
       
-      <guid>https://bluedskim.github.io/posts/tech/%EC%93%B8%EB%A7%8C%ED%95%9C-ubuntu%EC%9A%A9-command-line-%ED%83%80%EC%9D%B4%EB%A8%B8/</guid>
+      <guid>/posts/tech/%EC%93%B8%EB%A7%8C%ED%95%9C-ubuntu%EC%9A%A9-command-line-%ED%83%80%EC%9D%B4%EB%A8%B8.html</guid>
       <description>간단하게 터미널에서 작업 소요 시간을 체크 할 수 있는 방법들을 찾아봤는데
 https://superuser.com/questions/611538/is-there-a-way-to-display-a-countdown-or-stopwatch-timer-in-a-terminal
 terdon 이라는 분이 알려준 방법은 잘 동작하였지만 https://superuser.com/questions/611538/is-there-a-way-to-display-a-countdown-or-stopwatch-timer-in-a-terminal?answertab=active#tab-top
@@ -51,10 +50,10 @@ countdown(){ date1=$((`date +%s` + $1)); while [ &amp;quot;$date1&amp;quot; -ge 
     
     <item>
       <title>엑셀 데이터를 레드마인 테이블로 변환하는 Javascript</title>
-      <link>https://bluedskim.github.io/posts/tech/excel-to-redmine-table/</link>
+      <link>/posts/tech/excel-to-redmine-table.html</link>
       <pubDate>Thu, 21 Mar 2019 20:38:28 +0900</pubDate>
       
-      <guid>https://bluedskim.github.io/posts/tech/excel-to-redmine-table/</guid>
+      <guid>/posts/tech/excel-to-redmine-table.html</guid>
       <description>레드마인에 테이블로 데이터를 보여줄 경우가 점점 많아지는데 수작업으로 하려니 너무 힘들어서 만들었다
 https://jsfiddle.net/shed/pxc93nz6/
 엑셀에서 셀들을 복사한 후 위쪽 textarea에 붙히면 알아서 변환되고 redmine 태그가 복사되는데 첫번째 줄은 header로 인식해서 bold처리 한다
@@ -64,10 +63,10 @@ https://jsfiddle.net/shed/pxc93nz6/
     
     <item>
       <title>삼성 기어360 카메라(2017) 해킹</title>
-      <link>https://bluedskim.github.io/posts/tech/%EC%82%BC%EC%84%B1-%EA%B8%B0%EC%96%B4360-%EC%B9%B4%EB%A9%94%EB%9D%BC-%ED%95%B4%ED%82%B9/</link>
+      <link>/posts/tech/%EC%82%BC%EC%84%B1-%EA%B8%B0%EC%96%B4360-%EC%B9%B4%EB%A9%94%EB%9D%BC-%ED%95%B4%ED%82%B9.html</link>
       <pubDate>Tue, 19 Mar 2019 23:38:28 +0900</pubDate>
       
-      <guid>https://bluedskim.github.io/posts/tech/%EC%82%BC%EC%84%B1-%EA%B8%B0%EC%96%B4360-%EC%B9%B4%EB%A9%94%EB%9D%BC-%ED%95%B4%ED%82%B9/</guid>
+      <guid>/posts/tech/%EC%82%BC%EC%84%B1-%EA%B8%B0%EC%96%B4360-%EC%B9%B4%EB%A9%94%EB%9D%BC-%ED%95%B4%ED%82%B9.html</guid>
       <description>삼성 기어360 카메라(2017)을 구입한 이유는 각종 공연 후에 모니터링하기 위해서이다.
 Roda de samba 공연은 빙 둘러 앉아 하게 마련인데 모든 연주자의 연주를 한 카메라에 담기에는 360 카메라가 최적이다.
  구입 전에는 몰랐는데 이 카메라는 arm 프로세서를 사용한 리눅스 기반 카메라였다.
@@ -78,10 +77,10 @@ Roda de samba 공연은 빙 둘러 앉아 하게 마련인데 모든 연주자�
     
     <item>
       <title>Pixelbook Crostini Linux앱에서 한글 입력하기</title>
-      <link>https://bluedskim.github.io/posts/tech/howtoinputkorenwithcrostinionpixelbook/</link>
+      <link>/posts/tech/howtoinputkorenwithcrostinionpixelbook.html</link>
       <pubDate>Sat, 16 Mar 2019 22:38:28 +0900</pubDate>
       
-      <guid>https://bluedskim.github.io/posts/tech/howtoinputkorenwithcrostinionpixelbook/</guid>
+      <guid>/posts/tech/howtoinputkorenwithcrostinionpixelbook.html</guid>
       <description>영어/알파벳을 쓰는 나라 사람들은 이해하기 힘든 문제가 바로 2byte 이상 문자 입출력 문제이다.
 최신 기술일수록 한글지원이 미약한 경우가 많은데
 역시나 크롬북도 예외가 아니다.
@@ -95,10 +94,10 @@ Roda de samba 공연은 빙 둘러 앉아 하게 마련인데 모든 연주자�
     
     <item>
       <title>Pixelbook에서 hugo 설치</title>
-      <link>https://bluedskim.github.io/posts/tech/hugoonpixelbook/</link>
+      <link>/posts/tech/hugoonpixelbook.html</link>
       <pubDate>Fri, 15 Mar 2019 22:38:28 +0900</pubDate>
       
-      <guid>https://bluedskim.github.io/posts/tech/hugoonpixelbook/</guid>
+      <guid>/posts/tech/hugoonpixelbook.html</guid>
       <description>설치 ASUS Chromebook C100PA-DS03 에 설치할 때와 마찬가지로 최신버전을 설치하려면 deb 파일을 다운 받아야 한다. 현재 최신 버전은 hugo_0.54.0-1_amd64.deb 이다. 하지만 libsass1이 필요하다고 하니 먼저 설치한다.
 다운로드 경로 https://packages.debian.org/sid/amd64/libsass1/download
 다운 받은 후 설치
@@ -110,10 +109,10 @@ sudo dpkg -i hugo_0.54.0-1_amd64.deb  구동 pixelbook에서는 hugo 기본 포�
     
     <item>
       <title>method overring 과  overloading 차이</title>
-      <link>https://bluedskim.github.io/posts/tech/method-overriding-vs-overloading/</link>
+      <link>/posts/tech/method-overriding-vs-overloading.html</link>
       <pubDate>Sun, 24 Jun 2018 10:54:24 +0200</pubDate>
       
-      <guid>https://bluedskim.github.io/posts/tech/method-overriding-vs-overloading/</guid>
+      <guid>/posts/tech/method-overriding-vs-overloading.html</guid>
       <description>모든 객체지향 서적에서 설명은 정확하게 하고 있다. 하지만 영어권 개발자가 아닌이상 헷갈릴 수밖에 없다. 그러나 두 단어의 차이를 생각해 보면 이해하기 쉽다.
 override 덮어 씌우기 overlap. 덮어 씌우므로 메소드의 개수가 늘어나지 않는다.
 overload 과적하다. 과적 한 만큼 메소드가 늘어난다.</description>
@@ -121,10 +120,10 @@ overload 과적하다. 과적 한 만큼 메소드가 늘어난다.</description
     
     <item>
       <title>Hugo Theme 변경 테스트</title>
-      <link>https://bluedskim.github.io/posts/tech/post-title/</link>
+      <link>/posts/tech/post-title.html</link>
       <pubDate>Sat, 23 Jun 2018 10:54:24 +0200</pubDate>
       
-      <guid>https://bluedskim.github.io/posts/tech/post-title/</guid>
+      <guid>/posts/tech/post-title.html</guid>
       <description>원래 사용하던 theme이 좀 평범한 듯 하여 다른 theme 을 테스트 하고 있다. 지금 현재 쓰는 theme 은 bleak 라는 것인데 메인화면에서 compact 하게 공간 낭비가 없다는게 좋다.
 https://github.com/Zenithar/hugo-theme-bleak
 한가지 마음에 안드는게 있는데 상세화면에서 소스 코드 보기(code태그) 가 눈에 잘 안띈다는 건데. 그래서 아래처럼 main.css를 좀 바꿨더니 볼만해졌다.
@@ -134,10 +133,10 @@ code,pre,tt{ font-family:Inconsolata,monospace; background-color:white }  하지
     
     <item>
       <title>Chromebook Flip C100P에서 사용할 Multitrack Recorder</title>
-      <link>https://bluedskim.github.io/posts/music/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C_%EC%82%AC%EC%9A%A9%ED%95%A0_dtm%EB%B9%84%EA%B5%90/</link>
+      <link>/posts/music/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C_%EC%82%AC%EC%9A%A9%ED%95%A0_dtm%EB%B9%84%EA%B5%90.html</link>
       <pubDate>Wed, 13 Dec 2017 22:38:28 +0900</pubDate>
       
-      <guid>https://bluedskim.github.io/posts/music/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C_%EC%82%AC%EC%9A%A9%ED%95%A0_dtm%EB%B9%84%EA%B5%90/</guid>
+      <guid>/posts/music/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C_%EC%82%AC%EC%9A%A9%ED%95%A0_dtm%EB%B9%84%EA%B5%90.html</guid>
       <description>Chromebook Flip C100PA 에서 간단한 녹음 스케치 작업을 하는데 적합한 앱들을 비교해보고 있다.
 필수 기능  멀티트랙 녹음 메트로놈 녹음 delay 자동 보정  있으면 좋은 기능  sample stretch(warp)  웹앱 대부분 subscribe기반이라 비용 발생 함. 한번에 구입하는게 나을 수도..
  https://www.soundtrap.com/pricing https://soundation.com/  안드로이드 앱  Stagelight   윈도우용도 있음. 비교적 싼 가격. Ableton Live 와 비슷
@@ -146,10 +145,10 @@ code,pre,tt{ font-family:Inconsolata,monospace; background-color:white }  하지
     
     <item>
       <title>소프트웨어 프로젝트-구현 단계</title>
-      <link>https://bluedskim.github.io/posts/tech/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B5%AC%ED%98%84_%EB%8B%A8%EA%B3%84/</link>
+      <link>/posts/tech/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B5%AC%ED%98%84_%EB%8B%A8%EA%B3%84.html</link>
       <pubDate>Tue, 12 Dec 2017 22:38:28 +0900</pubDate>
       
-      <guid>https://bluedskim.github.io/posts/tech/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B5%AC%ED%98%84_%EB%8B%A8%EA%B3%84/</guid>
+      <guid>/posts/tech/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B5%AC%ED%98%84_%EB%8B%A8%EA%B3%84.html</guid>
       <description>SI 소프트웨어 프로젝트-구현 단계에서 발생하는 각종 이슈,상념들과 각종 S/W 개발 트렌드 들에 대한 발표자료로 모 대학 문헌정보학과 학생들을 상대로 진행한 강의 자료이다.
 https://docs.google.com/presentation/d/e/2PACX-1vTMn9Z1_5eU-_NaI7pcl0OdH_zZQAQ2Qo3yO60H3o_d9eWkcCktlArkeTP-8Y3VCbxYXPT7_FIsW09D/pub?start=false&amp;amp;loop=false&amp;amp;delayms=3000&amp;amp;slide=id.p
  </description>
@@ -157,10 +156,10 @@ https://docs.google.com/presentation/d/e/2PACX-1vTMn9Z1_5eU-_NaI7pcl0OdH_zZQAQ2Q
     
     <item>
       <title>ASUS Chromebook Flip C100PA DS03</title>
-      <link>https://bluedskim.github.io/posts/asuschrombookflipc100pads03/</link>
+      <link>/posts/asuschrombookflipc100pads03.html</link>
       <pubDate>Sun, 22 Oct 2017 22:38:28 +0900</pubDate>
       
-      <guid>https://bluedskim.github.io/posts/asuschrombookflipc100pads03/</guid>
+      <guid>/posts/asuschrombookflipc100pads03.html</guid>
       <description> 장점 리눅스 + 싸다 + 안드로이드 앱 구동 + 긴 구동시간 + 크롬브라우저의 사용성을 극대화 시켜주는 키보드
 단점 ARM Cortex-A17 의 한계  Crouton + Linux 조합으로 x86 프로그램 구동 불가능.
  Docker 설치 불가 최신 Raspberry Pi에서는 사용가능 한듯  </description>
@@ -168,15 +167,34 @@ https://docs.google.com/presentation/d/e/2PACX-1vTMn9Z1_5eU-_NaI7pcl0OdH_zZQAQ2Q
     
     <item>
       <title>Hugo &#43; Github으로 블로깅</title>
-      <link>https://bluedskim.github.io/posts/tech/hugo/</link>
+      <link>/posts/tech/hugo.html</link>
       <pubDate>Sun, 22 Oct 2017 22:38:28 +0900</pubDate>
       
-      <guid>https://bluedskim.github.io/posts/tech/hugo/</guid>
+      <guid>/posts/tech/hugo.html</guid>
       <description>왜 Hugo인가? 원래 Jekyll 을 사용하려 했으나 Asus Flip C100pa 에 설치 실패하여 어쩔 수 없이 선택 -.-
 환경 ASUS Chromebook C100PA-DS03 + Crouton + Debian Stretch
 설치 아래처럼 apt-get으로 설치하면 0.18 버전이 설치됨. 0.18 버전에서는 쓸 수 없는 theme 이 있어 더 최신 버전을 찾기로 함
 sudo apt-get install hugo  https://packages.debian.org/sid/armhf/hugo/download 에서 0.25.1-2 버전을 다운로드 받아. dpkg 명령으로 설치
 sudo dpkg -i hugo_0.25.1-2_armhf.deb  GitHub에 연결 이것이 쉽지 않다.</description>
+    </item>
+    
+    <item>
+      <title>브라질리언 리듬 기타 워크샵</title>
+      <link>/posts/%EC%9D%8C%EC%95%85/%EB%B8%8C%EB%9D%BC%EC%A7%88%EB%A6%AC%EC%96%B8-%EB%A6%AC%EB%93%AC-%EA%B8%B0%ED%83%80-%EC%9B%8C%ED%81%AC%EC%83%B5.html</link>
+      <pubDate>Tue, 10 Feb 2015 01:03:00 +0900</pubDate>
+      
+      <guid>/posts/%EC%9D%8C%EC%95%85/%EB%B8%8C%EB%9D%BC%EC%A7%88%EB%A6%AC%EC%96%B8-%EB%A6%AC%EB%93%AC-%EA%B8%B0%ED%83%80-%EC%9B%8C%ED%81%AC%EC%83%B5.html</guid>
+      <description>제가 스스로 필요하여 보사노바/삼바 기타연주 자료를 정리하다 보니 필요한 분이 계실것 같아서&amp;nbsp;   공유하기 위해 워크샵을 만들게 되었습니다.   이 워크샵은 &amp;lsquo;입문용&amp;rsquo; 입니다 ㅎㅎ   내용은 여기서 http://goo.gl/G0uNYJ 미리 보실 수 있으니 필요하신 분은 주저마시고 신청해주세요 smile emoticon   접수방법은 아래에 나와있습니다      &amp;lt;브라질리언 리듬 기타 워크샵&amp;gt;   일시: 2015년 (상)2월14일, (하)2월28일 / 오후2시~오후4시   장소: 에스꼴라 알레그리아   (서울시 마포구 창전동 4-5번지 지하1층)   수강료: 2회 총 40,000원   접수 방법: 아래 계좌로 수강료 입금 후 확인 메일을 주세요.</description>
+    </item>
+    
+    <item>
+      <title>한국의 브라질 음악 뮤지션 2015.01.21</title>
+      <link>/posts/%EC%9D%8C%EC%95%85/%ED%95%9C%EA%B5%AD%EC%9D%98-%EB%B8%8C%EB%9D%BC%EC%A7%88-%EC%9D%8C%EC%95%85-%EB%AE%A4%EC%A7%80%EC%85%98-2015.01.21.html</link>
+      <pubDate>Wed, 21 Jan 2015 13:36:00 +0900</pubDate>
+      
+      <guid>/posts/%EC%9D%8C%EC%95%85/%ED%95%9C%EA%B5%AD%EC%9D%98-%EB%B8%8C%EB%9D%BC%EC%A7%88-%EC%9D%8C%EC%95%85-%EB%AE%A4%EC%A7%80%EC%85%98-2015.01.21.html</guid>
+      <description>https://docs.google.com/spreadsheets/d/146ddkCmWyNDNsvUBkx5PYJu0KiW2jNqyxgkbT_sWma0/edit?usp=sharing  --
+ </description>
     </item>
     
   </channel>

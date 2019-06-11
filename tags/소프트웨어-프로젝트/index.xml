@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>소프트웨어 프로젝트 on bluedskim.github.io</title>
-    <link>https://bluedskim.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/</link>
-    <description>Recent content in 소프트웨어 프로젝트 on bluedskim.github.io</description>
+    <title>소프트웨어 프로젝트 on 하고 싶은 걸 하세요 Do What You Want</title>
+    <link>/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8.html</link>
+    <description>Recent content in 소프트웨어 프로젝트 on 하고 싶은 걸 하세요 Do What You Want</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ko-kr</language>
     <lastBuildDate>Tue, 12 Dec 2017 22:38:28 +0900</lastBuildDate>
     
-	<atom:link href="https://bluedskim.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>소프트웨어 프로젝트-구현 단계</title>
-      <link>https://bluedskim.github.io/posts/tech/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B5%AC%ED%98%84_%EB%8B%A8%EA%B3%84/</link>
+      <link>/posts/tech/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B5%AC%ED%98%84_%EB%8B%A8%EA%B3%84.html</link>
       <pubDate>Tue, 12 Dec 2017 22:38:28 +0900</pubDate>
       
-      <guid>https://bluedskim.github.io/posts/tech/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B5%AC%ED%98%84_%EB%8B%A8%EA%B3%84/</guid>
+      <guid>/posts/tech/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B5%AC%ED%98%84_%EB%8B%A8%EA%B3%84.html</guid>
       <description>SI 소프트웨어 프로젝트-구현 단계에서 발생하는 각종 이슈,상념들과 각종 S/W 개발 트렌드 들에 대한 발표자료로 모 대학 문헌정보학과 학생들을 상대로 진행한 강의 자료이다.
 https://docs.google.com/presentation/d/e/2PACX-1vTMn9Z1_5eU-_NaI7pcl0OdH_zZQAQ2Qo3yO60H3o_d9eWkcCktlArkeTP-8Y3VCbxYXPT7_FIsW09D/pub?start=false&amp;amp;loop=false&amp;amp;delayms=3000&amp;amp;slide=id.p
  </description>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>하고 싶은 걸 하세요 Do What You Want  | Apache mod_rewrite</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.55.5" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="../../dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+      <link rel="stylesheet" href="../../custom.css">
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="Apache mod_rewrite" />
+<meta property="og:description" content="&lt;시나리오&gt;
+- 클라이언트가 요청시 쿼리 value 에 항상 쓰레기 값이 붙어서 넘어옴
+- 클리이언트 측 프로그램은 변경불가 Never and Ever. 어쩔 수 없이 서버쪽에서 수정해야 함 OTL&hellip;.
+&nbsp;
+&lt;httpd.conf&gt;
+====================================================================================
+
+RewriteEngine On
+RewriteMap division-handle txt:conf/rewriteMap.txt
+# 아래꺼 잘됨
+#RewriteRule /shit/([0-9]&#43;) /rewrite.php?id=$1
+# /serviceName/wapGateway?clientID=ver0.1
+&amp;phoneNo=01057401039&amp;pgmid=HW12000
+&amp;bookType=N&amp;division=100\t&amp;pageNum=2&amp;maxRowNo=10
+# 위의 URL을
+# /serviceName/wapGateway?clientID=ver0.1
+&amp;phoneNo=01057401039&amp;pgmid=HW12000
+&amp;bookType=N&amp;division=100&amp;pageNum=2&amp;maxRowNo=10
+# 이렇게 매치시켜야 함
+# fail - 아래와 같은 방식은 안됨
+#RewriteRule /serviceName/wapGateway?clientID=ver(([0-9]&#43;)|([0-9]&rdquo;.&rdquo;[0-9]&#43;))
+&amp;phoneNo=([0-9]&#43;)&amp;pgmid=HW12000&amp;bookType=([A-Z])&amp;division=([0-9]&#43;)\t
+&amp;pageNum=([0-9]&#43;)&amp;maxRowNo=([0-9]&#43;)$ /error.php" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/software-engineering/apache-mod_rewrite.html" />
+<meta property="article:published_time" content="2006-10-24T17:36:00&#43;09:00"/>
+<meta property="article:modified_time" content="2006-10-24T17:36:00&#43;09:00"/>
+
+<meta itemprop="name" content="Apache mod_rewrite">
+<meta itemprop="description" content="&lt;시나리오&gt;
+- 클라이언트가 요청시 쿼리 value 에 항상 쓰레기 값이 붙어서 넘어옴
+- 클리이언트 측 프로그램은 변경불가 Never and Ever. 어쩔 수 없이 서버쪽에서 수정해야 함 OTL&hellip;.
+&nbsp;
+&lt;httpd.conf&gt;
+====================================================================================
+
+RewriteEngine On
+RewriteMap division-handle txt:conf/rewriteMap.txt
+# 아래꺼 잘됨
+#RewriteRule /shit/([0-9]&#43;) /rewrite.php?id=$1
+# /serviceName/wapGateway?clientID=ver0.1
+&amp;phoneNo=01057401039&amp;pgmid=HW12000
+&amp;bookType=N&amp;division=100\t&amp;pageNum=2&amp;maxRowNo=10
+# 위의 URL을
+# /serviceName/wapGateway?clientID=ver0.1
+&amp;phoneNo=01057401039&amp;pgmid=HW12000
+&amp;bookType=N&amp;division=100&amp;pageNum=2&amp;maxRowNo=10
+# 이렇게 매치시켜야 함
+# fail - 아래와 같은 방식은 안됨
+#RewriteRule /serviceName/wapGateway?clientID=ver(([0-9]&#43;)|([0-9]&rdquo;.&rdquo;[0-9]&#43;))
+&amp;phoneNo=([0-9]&#43;)&amp;pgmid=HW12000&amp;bookType=([A-Z])&amp;division=([0-9]&#43;)\t
+&amp;pageNum=([0-9]&#43;)&amp;maxRowNo=([0-9]&#43;)$ /error.php">
+
+
+<meta itemprop="datePublished" content="2006-10-24T17:36:00&#43;09:00" />
+<meta itemprop="dateModified" content="2006-10-24T17:36:00&#43;09:00" />
+<meta itemprop="wordCount" content="167">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Apache mod_rewrite"/>
+<meta name="twitter:description" content="&lt;시나리오&gt;
+- 클라이언트가 요청시 쿼리 value 에 항상 쓰레기 값이 붙어서 넘어옴
+- 클리이언트 측 프로그램은 변경불가 Never and Ever. 어쩔 수 없이 서버쪽에서 수정해야 함 OTL&hellip;.
+&nbsp;
+&lt;httpd.conf&gt;
+====================================================================================
+
+RewriteEngine On
+RewriteMap division-handle txt:conf/rewriteMap.txt
+# 아래꺼 잘됨
+#RewriteRule /shit/([0-9]&#43;) /rewrite.php?id=$1
+# /serviceName/wapGateway?clientID=ver0.1
+&amp;phoneNo=01057401039&amp;pgmid=HW12000
+&amp;bookType=N&amp;division=100\t&amp;pageNum=2&amp;maxRowNo=10
+# 위의 URL을
+# /serviceName/wapGateway?clientID=ver0.1
+&amp;phoneNo=01057401039&amp;pgmid=HW12000
+&amp;bookType=N&amp;division=100&amp;pageNum=2&amp;maxRowNo=10
+# 이렇게 매치시켜야 함
+# fail - 아래와 같은 방식은 안됨
+#RewriteRule /serviceName/wapGateway?clientID=ver(([0-9]&#43;)|([0-9]&rdquo;.&rdquo;[0-9]&#43;))
+&amp;phoneNo=([0-9]&#43;)&amp;pgmid=HW12000&amp;bookType=([A-Z])&amp;division=([0-9]&#43;)\t
+&amp;pageNum=([0-9]&#43;)&amp;maxRowNo=([0-9]&#43;)$ /error.php"/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="" class="f3 fw2 hover-white no-underline white-90 dib">
+      하고 싶은 걸 하세요 Do What You Want
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">Apache mod_rewrite</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2006-10-24T17:36:00&#43;09:00">October 24, 2006</time>      
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p><span class="copyright_entry" style="display:block;" title="Apache mod_rewrite@@**@@http://shed.egloos.com/1438287"></span>
+<p>&lt;시나리오&gt;</p>
+<p>- 클라이언트가 요청시 쿼리 value 에 항상 쓰레기 값이 붙어서 넘어옴</p>
+<p>- 클리이언트 측 프로그램은 변경불가 Never and Ever<del>. 어쩔 수 없이 서버쪽에서 수정해야 함 OTL&hellip;.</p>
+<p>&nbsp;</p>
+<p>&lt;httpd.conf&gt;</p>
+<p>====================================================================================</p>
+<p></del><del></p>
+<p>RewriteEngine On</p>
+<p>RewriteMap division-handle txt:conf/rewriteMap.txt</p>
+<p># 아래꺼 잘됨<br>#RewriteRule /shit/([0-9]+) /rewrite.php?id=$1</p>
+<p><strong><span style="COLOR: #000000"># /serviceName/wapGateway?clientID=ver0.1<br></span></strong><strong><span style="COLOR: #000000">&amp;phoneNo=01057401039&amp;pgmid=HW12000<br></span></strong><strong><span style="COLOR: #000000">&amp;bookType=N&amp;division=100<span style="FONT-SIZE: 130%; COLOR: #ffffff; BACKGROUND-COLOR: #cc0000">\t</span>&amp;pageNum=2&amp;maxRowNo=10<br># 위의 URL을<br># /serviceName/wapGateway?clientID=ver0.1<br>&amp;phoneNo=01057401039&amp;pgmid=HW12000<br></span></strong><strong><span style="COLOR: #000000">&amp;bookType=N&amp;division=100&amp;pageNum=2&amp;maxRowNo=10<br># 이렇게 매치시켜야 함</span></strong></p>
+<p># fail - 아래와 같은 방식은 안됨<br>#RewriteRule /serviceName/wapGateway?clientID=ver(([0-9]+)|([0-9]<em>&rdquo;.&rdquo;[0-9]+))<br>&amp;phoneNo=([0-9]+)&amp;pgmid=HW12000&amp;bookType=([A-Z])&amp;division=([0-9]+)\t<br>&amp;pageNum=([0-9]+)&amp;maxRowNo=([0-9]+)$ /error.php</p>
+<p># fail<br>#RewriteRule /serviceName/wapGateway?clientID=([0-9]+) /error.php</p>
+<p># success<br>#RewriteRule /serviceName/wapGateway /error.php</p>
+<p># <a href="http://localhost/serviceName/wapGateway?clientID=\t&amp;phoneNo=01057401039"><a href="http://localhost/serviceName/wapGateway?clientID=t&amp;phoneNo=01057401039">http://localhost/serviceName/wapGateway?clientID=t&amp;phoneNo=01057401039</a></a><br># success<br>#RewriteCond %{QUERY_STRING} ^clientID=\t&amp;phoneNo=01057401039$ [NC]</p>
+<p># success<br>RewriteCond %{QUERY_STRING} ^clientID=ver0.1&amp;phoneNo=([0-9]+)<br>&amp;pgmid=HW12000&amp;bookType=([A-Z])&amp;division=([0-9]+)\t<br>&amp;pageNum=([0-9]+)&amp;maxRowNo=([0-9]+)$</p>
+<p>#success<br>#RewriteRule ^(.</em>)$ /error.php</p>
+<p>#success but OUT JSP SOURCE!!!<br>#RewriteRule ^(.<em>)$ /debug.jsp</p>
+<p>#success <br>RewriteRule ^(.</em>)$ <a href="http://localhost/debug.jsp">http://localhost/debug.jsp</a><br>#RewriteRule ^(.<em>)$ <a href="http://localhost/debug.jsp?clientID=ver0.1&amp;phoneNo=$1&amp;pgmid=HW12000&amp;bookType=$2&amp;division=$3&amp;pageNum=$4&amp;maxRowNo=$5"><a href="http://localhost/debug.jsp?clientID=ver0.1">http://localhost/debug.jsp?clientID=ver0.1</a><br>&amp;phoneNo=$1&amp;pgmid=HW12000&amp;bookType=$2<br>&amp;division=$3&amp;pageNum=$4&amp;maxRowNo=$5</a></p>
+<p>#success<br>#RewriteRule ^(.</em>)$ <a href="http://localhost:9090/debug.jsp">http://localhost:9090/debug.jsp</a></p>
+<p><br>#RewriteRule ^gate.php?id=([0-9]+)$ /rewrite.php?id=$1<br>#RewriteRule ^gate.php$ /error.php</p>
+<p>RewriteLog&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &ldquo;C:/APM_Setup/Server/Apache/logs/rewrite.log&rdquo;<br>RewriteLogLevel 9</p>
+<p>====================================================================================</p>
+<p>&lt;rewriteMap.txt&gt;</p>
+<p>##<br>##&nbsp; map.txt &ndash; rewriting map<br>##</p>
+<p>100\t 100&nbsp;&nbsp; # <br>200\t 200&nbsp;&nbsp; # <br></del>~<br>~~~</p>
+<p>====================================================================================</p>
+<p>&lt;참조 URL&gt;</p>
+<p>* mod_rewrite :<br>- <a href="http://www.sitepoint.com/article/guide-url-rewriting">http://www.sitepoint.com/article/guide-url-rewriting</a><br>- <a href="http://www.llstudios.net/directory/13-1">http://www.llstudios.net/directory/13-1</a><br>- <a href="http://www.llstudios.net/directory/4-1">http://www.llstudios.net/directory/4-1</a><br>- <a href="http://www.tech-faq.com/lang/ko/web-design-tutorials.shtml">http://www.tech-faq.com/lang/ko/web-design-tutorials.shtml</a><br>- <a href="http://httpd.apache.org/docs/1.3/mod/mod_rewrite.html">http://httpd.apache.org/docs/1.3/mod/mod_rewrite.html</a></p>* 정규표현식 :
+<br>
+<a href="http://kldp.org/HOWTO/html/Adv-Bash-Scr-HOWTO/x10468.html">http://kldp.org/HOWTO/html/Adv-Bash-Scr-HOWTO/x10468.html</a>
+<br>
+<br>&nbsp;
+<!--
+       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+       <rdf:Description
+            rdf:about="http://shed.egloos.com/1438287"
+            dc:identifier="http://shed.egloos.com/1438287"
+            dc:title="Apache mod_rewrite"
+            trackback:ping="http://shed.egloos.com/tb/1438287"/>
+       </rdf:RDF>
+       --></p>
+
+<ul></ul>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+        
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="" >
+    &copy; 2019 하고 싶은 걸 하세요 Do What You Want
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="../../dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

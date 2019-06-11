@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>하고 싶은 걸 하세요 Do What You Want  | java TCP Proxy</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.55.5" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="../../dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+      <link rel="stylesheet" href="../../custom.css">
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="java TCP Proxy" />
+<meta property="og:description" content="dodgyTCPProxy.zip &ndash;&gt; 다운로드 활용 시나리오는 이렇다 A사에서는 java로 구현된 sms 발송기 구축를 자사에 요청했다. sms 발송기는 A사의 머신에 탑재되어야 하며 sms 발송요청을 받을 sms 서버는 B사 의 서버이며 A사의 클라이언트용 머신과 B사의 서버용 머신은 내부네트ㅤㅇㅝㅋ으로 연결되어 있다. B사의 sms서버는 내부망의 클라이언트의 요청만 받게 되어 있다. 즉 192.168. 로 시작하는 IP의 클라이언트만 접속을 허용한다. 따라서 본인 pc에서 바로 접속이 불가능ㅤㅎㅏㄷ. 다행히도 A 사는 개발편의를 위해서 sms 클라이언트용 머신의 telnet과 ftp을 자사에 개방해주었다." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/software-engineering/java-tcp-proxy.html" />
+<meta property="article:published_time" content="2006-09-29T23:54:00&#43;09:00"/>
+<meta property="article:modified_time" content="2006-09-29T23:54:00&#43;09:00"/>
+
+<meta itemprop="name" content="java TCP Proxy">
+<meta itemprop="description" content="dodgyTCPProxy.zip &ndash;&gt; 다운로드 활용 시나리오는 이렇다 A사에서는 java로 구현된 sms 발송기 구축를 자사에 요청했다. sms 발송기는 A사의 머신에 탑재되어야 하며 sms 발송요청을 받을 sms 서버는 B사 의 서버이며 A사의 클라이언트용 머신과 B사의 서버용 머신은 내부네트ㅤㅇㅝㅋ으로 연결되어 있다. B사의 sms서버는 내부망의 클라이언트의 요청만 받게 되어 있다. 즉 192.168. 로 시작하는 IP의 클라이언트만 접속을 허용한다. 따라서 본인 pc에서 바로 접속이 불가능ㅤㅎㅏㄷ. 다행히도 A 사는 개발편의를 위해서 sms 클라이언트용 머신의 telnet과 ftp을 자사에 개방해주었다.">
+
+
+<meta itemprop="datePublished" content="2006-09-29T23:54:00&#43;09:00" />
+<meta itemprop="dateModified" content="2006-09-29T23:54:00&#43;09:00" />
+<meta itemprop="wordCount" content="156">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="java TCP Proxy"/>
+<meta name="twitter:description" content="dodgyTCPProxy.zip &ndash;&gt; 다운로드 활용 시나리오는 이렇다 A사에서는 java로 구현된 sms 발송기 구축를 자사에 요청했다. sms 발송기는 A사의 머신에 탑재되어야 하며 sms 발송요청을 받을 sms 서버는 B사 의 서버이며 A사의 클라이언트용 머신과 B사의 서버용 머신은 내부네트ㅤㅇㅝㅋ으로 연결되어 있다. B사의 sms서버는 내부망의 클라이언트의 요청만 받게 되어 있다. 즉 192.168. 로 시작하는 IP의 클라이언트만 접속을 허용한다. 따라서 본인 pc에서 바로 접속이 불가능ㅤㅎㅏㄷ. 다행히도 A 사는 개발편의를 위해서 sms 클라이언트용 머신의 telnet과 ftp을 자사에 개방해주었다."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="" class="f3 fw2 hover-white no-underline white-90 dib">
+      하고 싶은 걸 하세요 Do What You Want
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">java TCP Proxy</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2006-09-29T23:54:00&#43;09:00">September 29, 2006</time>      
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p><span class="copyright_entry" style="display:block;" title="java TCP Proxy@@**@@http://shed.egloos.com/1423324"></span>
+<a href="http://pds2.egloos.com/pds/1/200609/29/82/dodgyTCPProxy.zip" egloo="file">dodgyTCPProxy.zip &ndash;&gt; 다운로드</a>
+<br>
+<br>활용 시나리오는 이렇다
+<br>
+<br>A사에서는 java로 구현된 sms 발송기 구축를 자사에 요청했다.
+<br>
+<br>sms 발송기는 A사의 머신에 탑재되어야 하며
+<br>
+<br>sms 발송요청을 받을 sms 서버는 B사 의 서버이며
+<br>
+<br>A사의 클라이언트용 머신과 B사의 서버용 머신은 내부네트ㅤㅇㅝㅋ으로 연결되어 있다.
+<br>
+<br>B사의 sms서버는 내부망의 클라이언트의 요청만 받게 되어 있다. 즉 192.168. 로 시작하는 IP의 클라이언트만 접속을 허용한다. 따라서 본인 pc에서 바로 접속이 불가능ㅤㅎㅏㄷ.
+<br>
+<br>다행히도 A 사는 개발편의를 위해서 sms 클라이언트용 머신의 telnet과 ftp을 자사에 개방해주었다.
+<br>
+<br>그러나 개발은 본인 pc에서 진행하기 때문에 테스트를 하려면 개발소스를 A사의 클라이언트 머신에 업로드 후 진행해야 하므로 무지 불편하다.
+<br>
+<br>그래서 찾아낸 것이 바로 TCP Proxy 이다.
+<br>
+<br>TCP Proxy를 A사의 클라이언트 머신에 설치하여 본인 pc와 B사 서버사이에 proxy로 사용하여 개발을 진행하는 것이다.
+<br>
+<br>그러나 문제가 있었으니 바로 byte ordering 문제이다.
+<br>
+<br>본인 pc는 인텔기반 윈도우 머신이고 sms클라이언트용 머신은 Hp Unix였으니&hellip;
+<br>
+<br>TCP Proxy가 무용지물이라는 거다.
+<br>
+<br>
+<br>(그래서 대안으로 모든 프로토콜을 준수하는 가짜 서버를 개발하여 본인 pc에서 작업하였다. -.-&hellip; 엄청난 삽질이다. B 사는 테스트용도의 서버프로그램이 있을거 같은데 미리 제공해주면 좋지 않나?)
+<br>
+<!--
+       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+       <rdf:Description
+            rdf:about="http://shed.egloos.com/1423324"
+            dc:identifier="http://shed.egloos.com/1423324"
+            dc:title="java TCP Proxy"
+            trackback:ping="http://shed.egloos.com/tb/1423324"/>
+       </rdf:RDF>
+       --></p>
+
+<ul></ul>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+        
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="" >
+    &copy; 2019 하고 싶은 걸 하세요 Do What You Want
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="../../dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

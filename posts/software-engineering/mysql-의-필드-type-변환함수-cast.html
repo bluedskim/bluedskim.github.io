@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>하고 싶은 걸 하세요 Do What You Want  | MySQL 의 필드 type 변환함수 CAST</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.55.5" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="../../dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+      <link rel="stylesheet" href="../../custom.css">
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="MySQL 의 필드 type 변환함수 CAST" />
+<meta property="og:description" content="text 유형 필드에 들어있는 값들을 숫자값 기준으로 정렬하고자 한다면 반드시 해당 필드를 CAST함수를 이용해서 변환해야 한다. 다음 2개의 쿼리를 비교해 보자 * 쿼리 : select * from prices order by price; * 결과 : 1420 1590 1990 220 2390 2660 280 2990 3420 380 3990 4270 450 570 5700 760 850 이건 원하는 결과가 아니다. ㅠㅠ&hellip;. (애초에 테이블을 만들 때 필드를 숫자 형태로 만들었어야 한다&hellip;) CAST함수를 사용한다면, * 쿼리 : select * from prices order by CAST(price AS UNSIGNED); * 결과 : 220 280 380 450 570 760 850 1060 1420 1590 1990 2390 2660 2990 3420 3990 4270 5700 제대로 나온다." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/software-engineering/mysql-%EC%9D%98-%ED%95%84%EB%93%9C-type-%EB%B3%80%ED%99%98%ED%95%A8%EC%88%98-cast.html" />
+<meta property="article:published_time" content="2008-11-13T00:38:00&#43;09:00"/>
+<meta property="article:modified_time" content="2008-11-13T00:38:00&#43;09:00"/>
+
+<meta itemprop="name" content="MySQL 의 필드 type 변환함수 CAST">
+<meta itemprop="description" content="text 유형 필드에 들어있는 값들을 숫자값 기준으로 정렬하고자 한다면 반드시 해당 필드를 CAST함수를 이용해서 변환해야 한다. 다음 2개의 쿼리를 비교해 보자 * 쿼리 : select * from prices order by price; * 결과 : 1420 1590 1990 220 2390 2660 280 2990 3420 380 3990 4270 450 570 5700 760 850 이건 원하는 결과가 아니다. ㅠㅠ&hellip;. (애초에 테이블을 만들 때 필드를 숫자 형태로 만들었어야 한다&hellip;) CAST함수를 사용한다면, * 쿼리 : select * from prices order by CAST(price AS UNSIGNED); * 결과 : 220 280 380 450 570 760 850 1060 1420 1590 1990 2390 2660 2990 3420 3990 4270 5700 제대로 나온다.">
+
+
+<meta itemprop="datePublished" content="2008-11-13T00:38:00&#43;09:00" />
+<meta itemprop="dateModified" content="2008-11-13T00:38:00&#43;09:00" />
+<meta itemprop="wordCount" content="108">
+
+
+
+<meta itemprop="keywords" content="MySQL," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="MySQL 의 필드 type 변환함수 CAST"/>
+<meta name="twitter:description" content="text 유형 필드에 들어있는 값들을 숫자값 기준으로 정렬하고자 한다면 반드시 해당 필드를 CAST함수를 이용해서 변환해야 한다. 다음 2개의 쿼리를 비교해 보자 * 쿼리 : select * from prices order by price; * 결과 : 1420 1590 1990 220 2390 2660 280 2990 3420 380 3990 4270 450 570 5700 760 850 이건 원하는 결과가 아니다. ㅠㅠ&hellip;. (애초에 테이블을 만들 때 필드를 숫자 형태로 만들었어야 한다&hellip;) CAST함수를 사용한다면, * 쿼리 : select * from prices order by CAST(price AS UNSIGNED); * 결과 : 220 280 380 450 570 760 850 1060 1420 1590 1990 2390 2660 2990 3420 3990 4270 5700 제대로 나온다."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="" class="f3 fw2 hover-white no-underline white-90 dib">
+      하고 싶은 걸 하세요 Do What You Want
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">MySQL 의 필드 type 변환함수 CAST</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2008-11-13T00:38:00&#43;09:00">November 13, 2008</time>      
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p><span class="copyright_entry" style="display:block;" title="MySQL 의 필드 type 변환함수 CAST@@**@@http://shed.egloos.com/1835243"></span>text 유형 필드에 들어있는 값들을 숫자값 기준으로 정렬하고자 한다면
+<br>
+<br>반드시 해당 필드를 CAST함수를 이용해서 변환해야 한다.
+<br>
+<br>다음 2개의 쿼리를 비교해 보자
+<br>
+<br>* 쿼리 : select * from
+<span class="syntax"><span class="syntax_alpha syntax_alpha_identifier">prices order by </span></span>price;
+<br>* 결과 :
+<br>1420
+<br>1590
+<br>1990
+<br>220
+<br>2390
+<br>2660
+<br>280
+<br>2990
+<br>3420
+<br>380
+<br>3990
+<br>4270
+<br>450
+<br>570
+<br>5700
+<br>760
+<br>850
+<br>이건 원하는 결과가 아니다. ㅠㅠ&hellip;. (애초에 테이블을 만들 때 필드를 숫자 형태로 만들었어야 한다&hellip;)
+<br>
+<br>
+<span class="syntax"><span class="syntax_alpha syntax_alpha_identifier">CAST함수를 사용한다면,</span></span>
+<br>* 쿼리 : select * from
+<span class="syntax"><span class="syntax_alpha syntax_alpha_identifier">prices order by CAST(</span></span>price AS UNSIGNED);
+<br>* 결과 :
+<br>220
+<br>280
+<br>380
+<br>450
+<br>570
+<br>760
+<br>850
+<br>1060
+<br>1420
+<br>1590
+<br>1990
+<br>2390
+<br>2660
+<br>2990
+<br>3420
+<br>3990
+<br>4270
+<br>5700
+<br>
+<br>제대로 나온다.
+<br>
+<br>더 자세한 API는 여기에
+<a title="" href="http://dev.mysql.com/doc/refman/5.0/en/cast-functions.html"><a href="http://dev.mysql.com/doc/refman/5.0/en/cast-functions.html">http://dev.mysql.com/doc/refman/5.0/en/cast-functions.html</a></a>
+<!--
+       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+       <rdf:Description
+            rdf:about="http://shed.egloos.com/1835243"
+            dc:identifier="http://shed.egloos.com/1835243"
+            dc:title="MySQL 의 필드 type 변환함수 CAST"
+            trackback:ping="http://shed.egloos.com/tb/1835243"/>
+       </rdf:RDF>
+       --></p>
+
+<ul></ul>
+<ul class="pa0">
+  
+   <li class="list">
+     <a href="../../tags/mysql.html" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">MySQL</a>
+   </li>
+  
+</ul>
+<div class="mt6">
+        
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="" >
+    &copy; 2019 하고 싶은 걸 하세요 Do What You Want
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="../../dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

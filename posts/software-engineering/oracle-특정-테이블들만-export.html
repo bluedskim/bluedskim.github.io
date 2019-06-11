@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>하고 싶은 걸 하세요 Do What You Want  | oracle 특정 테이블들만 export</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.55.5" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="../../dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+      <link rel="stylesheet" href="../../custom.css">
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="oracle 특정 테이블들만 export" />
+<meta property="og:description" content="I:\imsi&gt;exp userid/userpasswd@sidName Export: Release 9.2.0.1.0 - Production on 목 Jun 28 16:29:50 2007 Copyright &copy; 1982, 2002, Oracle Corporation.&nbsp; All rights reserved. 다음에 접속됨: Oracle9i Enterprise Edition Release 9.2.0.1.0 - Production With the Partitioning, OLAP and Oracle Data Mining options JServer Release 9.2.0.1.0 - Production 배열 인출 버퍼 크기 입력: 4096 &gt; 엑스포트 파일: EXPDAT.DMP &gt; (2)U(사용자), 또는 (3)T(테이블): (2)U &gt; T 테이블 데이터 엑스포트 (yes/no): yes &gt; 확장 영역 압축 (yes/no): yes &gt; KO16MSWIN949 문자 설정과 AL16UTF16 NCHAR 문자 설정에서 엑스포트가 종료되었습니다 지정된 테이블을 엑스포트하려고 합니다 via 규정 경로&hellip; 엑스포트할 테이블(T) 또는 분할(T:P): (종료하려면 RETURN) &gt; ubi_adm_mst ." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/software-engineering/oracle-%ED%8A%B9%EC%A0%95-%ED%85%8C%EC%9D%B4%EB%B8%94%EB%93%A4%EB%A7%8C-export.html" />
+<meta property="article:published_time" content="2007-06-28T16:46:00&#43;09:00"/>
+<meta property="article:modified_time" content="2007-06-28T16:46:00&#43;09:00"/>
+
+<meta itemprop="name" content="oracle 특정 테이블들만 export">
+<meta itemprop="description" content="I:\imsi&gt;exp userid/userpasswd@sidName Export: Release 9.2.0.1.0 - Production on 목 Jun 28 16:29:50 2007 Copyright &copy; 1982, 2002, Oracle Corporation.&nbsp; All rights reserved. 다음에 접속됨: Oracle9i Enterprise Edition Release 9.2.0.1.0 - Production With the Partitioning, OLAP and Oracle Data Mining options JServer Release 9.2.0.1.0 - Production 배열 인출 버퍼 크기 입력: 4096 &gt; 엑스포트 파일: EXPDAT.DMP &gt; (2)U(사용자), 또는 (3)T(테이블): (2)U &gt; T 테이블 데이터 엑스포트 (yes/no): yes &gt; 확장 영역 압축 (yes/no): yes &gt; KO16MSWIN949 문자 설정과 AL16UTF16 NCHAR 문자 설정에서 엑스포트가 종료되었습니다 지정된 테이블을 엑스포트하려고 합니다 via 규정 경로&hellip; 엑스포트할 테이블(T) 또는 분할(T:P): (종료하려면 RETURN) &gt; ubi_adm_mst .">
+
+
+<meta itemprop="datePublished" content="2007-06-28T16:46:00&#43;09:00" />
+<meta itemprop="dateModified" content="2007-06-28T16:46:00&#43;09:00" />
+<meta itemprop="wordCount" content="122">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="oracle 특정 테이블들만 export"/>
+<meta name="twitter:description" content="I:\imsi&gt;exp userid/userpasswd@sidName Export: Release 9.2.0.1.0 - Production on 목 Jun 28 16:29:50 2007 Copyright &copy; 1982, 2002, Oracle Corporation.&nbsp; All rights reserved. 다음에 접속됨: Oracle9i Enterprise Edition Release 9.2.0.1.0 - Production With the Partitioning, OLAP and Oracle Data Mining options JServer Release 9.2.0.1.0 - Production 배열 인출 버퍼 크기 입력: 4096 &gt; 엑스포트 파일: EXPDAT.DMP &gt; (2)U(사용자), 또는 (3)T(테이블): (2)U &gt; T 테이블 데이터 엑스포트 (yes/no): yes &gt; 확장 영역 압축 (yes/no): yes &gt; KO16MSWIN949 문자 설정과 AL16UTF16 NCHAR 문자 설정에서 엑스포트가 종료되었습니다 지정된 테이블을 엑스포트하려고 합니다 via 규정 경로&hellip; 엑스포트할 테이블(T) 또는 분할(T:P): (종료하려면 RETURN) &gt; ubi_adm_mst ."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="" class="f3 fw2 hover-white no-underline white-90 dib">
+      하고 싶은 걸 하세요 Do What You Want
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">oracle 특정 테이블들만 export</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2007-06-28T16:46:00&#43;09:00">June 28, 2007</time>      
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p><span class="copyright_entry" style="display:block;" title="oracle 특정 테이블들만 export@@**@@http://shed.egloos.com/1593312"></span>I:\imsi&gt;exp userid/userpasswd@sidName
+<br>
+<br>Export: Release 9.2.0.1.0 - Production on 목 Jun 28 16:29:50 2007
+<br>
+<br>Copyright &copy; 1982, 2002, Oracle Corporation.&nbsp; All rights reserved.
+<br>
+<br>
+<br>다음에 접속됨: Oracle9i Enterprise Edition Release 9.2.0.1.0 - Production
+<br>With the Partitioning, OLAP and Oracle Data Mining options
+<br>JServer Release 9.2.0.1.0 - Production
+<br>배열 인출 버퍼 크기 입력: 4096 &gt;
+<br>
+<br>엑스포트 파일: EXPDAT.DMP &gt;
+<br>
+<br>(2)U(사용자), 또는 (3)T(테이블): (2)U &gt; T
+<br>
+<br>테이블 데이터 엑스포트 (yes/no): yes &gt;
+<br>
+<br>확장 영역 압축 (yes/no): yes &gt;
+<br>
+<br>KO16MSWIN949 문자 설정과 AL16UTF16 NCHAR 문자 설정에서 엑스포트가 종료되었습니다
+<br>
+<br>
+<br>지정된 테이블을 엑스포트하려고 합니다 via 규정 경로&hellip;
+<br>엑스포트할 테이블(T) 또는 분할(T:P): (종료하려면 RETURN) &gt;
+<span style="background-color: rgb(255, 204, 0);">ubi_adm_mst</span>
+<br>
+<br>. . 테이블&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UBI_ADM_MST(를)을 엑스포트 중&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2 행이 엑스
+<br>포트됨
+<br>엑스포트할 테이블(T) 또는 분할(T:P): (종료하려면 RETURN) &gt;
+<br>
+<br>엑스포트가 경고 없이 정상적으로 종료되었습니다.
+<br>
+<br>I:\imsi&gt;
+<!--
+       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+       <rdf:Description
+            rdf:about="http://shed.egloos.com/1593312"
+            dc:identifier="http://shed.egloos.com/1593312"
+            dc:title="oracle 특정 테이블들만 export"
+            trackback:ping="http://shed.egloos.com/tb/1593312"/>
+       </rdf:RDF>
+       --></p>
+
+<ul></ul>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+        
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="" >
+    &copy; 2019 하고 싶은 걸 하세요 Do What You Want
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="../../dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

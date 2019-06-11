@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software Engineering on 하고 싶은 걸 하세요 Do What You Want</title>
+    <link>/categories/software-engineering.html</link>
+    <description>Recent content in Software Engineering on 하고 싶은 걸 하세요 Do What You Want</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 17 Jul 2010 12:53:00 +0900</lastBuildDate>
+    
+	<atom:link href="/categories/software-engineering/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>잃어버린/도난당한 iPad, iPhone, iPod 를 찾기 위한 아이디어</title>
+      <link>/posts/software-engineering/%EC%9E%83%EC%96%B4%EB%B2%84%EB%A6%B0_%EB%8F%84%EB%82%9C%EB%8B%B9%ED%95%9C-ipad-iphone-ipod-%EB%A5%BC-%EC%B0%BE%EA%B8%B0-%EC%9C%84%ED%95%9C-%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4.html</link>
+      <pubDate>Sat, 17 Jul 2010 12:53:00 +0900</pubDate>
+      
+      <guid>/posts/software-engineering/%EC%9E%83%EC%96%B4%EB%B2%84%EB%A6%B0_%EB%8F%84%EB%82%9C%EB%8B%B9%ED%95%9C-ipad-iphone-ipod-%EB%A5%BC-%EC%B0%BE%EA%B8%B0-%EC%9C%84%ED%95%9C-%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4.html</guid>
+      <description>간략하게 정리하면&amp;nbsp;    iPad 에서 매시간마다 특정 웹페이지를 방문하도록 함(wget 이용)
+ 그 웹페이지는 현재 iPad의 IP 주소를 기록함 (&amp;nbsp;ipadLog.zip&amp;nbsp;)&amp;nbsp;
+참조 URL :&amp;nbsp;http://brazilflavored.com/ipadLog/logs/2010_07_16_log.txt&amp;nbsp;&amp;nbsp;
+ http://ipwhois.nic.or.kr/&amp;nbsp;에서&amp;nbsp;가장 최근의 IP 주소로 조회하면 해당&amp;nbsp;IP주소관리자 연락처를 알 수 있음
+ IP주소관리자에게&amp;nbsp;전화해서 그 시간에 그 아이피가 할당된 인터넷 모뎀의 대여자가 누구인지, 주소는 어디인지&amp;nbsp;물어본다.
+안가르쳐주면 경찰에 도난신고      ※ 위의 방법은 탈옥해야 가능   ※ php를 돌릴 수 있는 웹호스팅 필요 ※ 이런거를 쉽게 해주는 어플이 있는것으로 알고 있음   다시 상세하게     1.</description>
+    </item>
+    
+    <item>
+      <title>&#34;세상에는 두 종류의 위대한 사람이 있습니다. 하나는 직접 위대한 일을 하는 사람이고, 또 하나는 다른 사람이 위대한 일을 하게 도와주는 사람입니다. 후자도 위대한 사람입니다.&#34;</title>
+      <link>/posts/software-engineering/%EC%84%B8%EC%83%81%EC%97%90%EB%8A%94-%EB%91%90-%EC%A2%85%EB%A5%98%EC%9D%98-%EC%9C%84%EB%8C%80%ED%95%9C-%EC%82%AC%EB%9E%8C%EC%9D%B4-%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.-%ED%95%98%EB%82%98%EB%8A%94-%EC%A7%81%EC%A0%91-%EC%9C%84%EB%8C%80%ED%95%9C-%EC%9D%BC%EC%9D%84-%ED%95%98%EB%8A%94-%EC%82%AC%EB%9E%8C%EC%9D%B4%EA%B3%A0-%EB%98%90-%ED%95%98%EB%82%98%EB%8A%94-%EB%8B%A4%EB%A5%B8-%EC%82%AC%EB%9E%8C%EC%9D%B4-%EC%9C%84%EB%8C%80%ED%95%9C-%EC%9D%BC%EC%9D%84-%ED%95%98%EA%B2%8C-%EB%8F%84%EC%99%80%EC%A3%BC%EB%8A%94-%EC%82%AC%EB%9E%8C%EC%9E%85%EB%8B%88%EB%8B%A4.-%ED%9B%84%EC%9E%90%EB%8F%84-%EC%9C%84%EB%8C%80%ED%95%9C-%EC%82%AC%EB%9E%8C%EC%9E%85%EB%8B%88%EB%8B%A4..html</link>
+      <pubDate>Wed, 15 Jul 2009 12:52:00 +0900</pubDate>
+      
+      <guid>/posts/software-engineering/%EC%84%B8%EC%83%81%EC%97%90%EB%8A%94-%EB%91%90-%EC%A2%85%EB%A5%98%EC%9D%98-%EC%9C%84%EB%8C%80%ED%95%9C-%EC%82%AC%EB%9E%8C%EC%9D%B4-%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.-%ED%95%98%EB%82%98%EB%8A%94-%EC%A7%81%EC%A0%91-%EC%9C%84%EB%8C%80%ED%95%9C-%EC%9D%BC%EC%9D%84-%ED%95%98%EB%8A%94-%EC%82%AC%EB%9E%8C%EC%9D%B4%EA%B3%A0-%EB%98%90-%ED%95%98%EB%82%98%EB%8A%94-%EB%8B%A4%EB%A5%B8-%EC%82%AC%EB%9E%8C%EC%9D%B4-%EC%9C%84%EB%8C%80%ED%95%9C-%EC%9D%BC%EC%9D%84-%ED%95%98%EA%B2%8C-%EB%8F%84%EC%99%80%EC%A3%BC%EB%8A%94-%EC%82%AC%EB%9E%8C%EC%9E%85%EB%8B%88%EB%8B%A4.-%ED%9B%84%EC%9E%90%EB%8F%84-%EC%9C%84%EB%8C%80%ED%95%9C-%EC%82%AC%EB%9E%8C%EC%9E%85%EB%8B%88%EB%8B%A4..html</guid>
+      <description>&amp;ldquo;세상에는 두 종류의 위대한 사람이 있습니다. 하나는 직접 위대한 일을 하는 사람이고, 또 하나는 다른 사람이 위대한 일을 하게 도와주는 사람입니다. 후자도 위대한 사람입니다.&amp;rdquo; (&amp;rdquo; 코치는 선수가 아니다&amp;rdquo; 중 에서) 다른 사람이 위대한 일을 하게 도와주는 &amp;lsquo;관리자&amp;rsquo;를 만나고 싶다.  --
+ </description>
+    </item>
+    
+    <item>
+      <title>주목하는 블로그 리스트( &#34;써니의 一生牛步行&#34; 에서 퍼옴)</title>
+      <link>/posts/software-engineering/%EC%A3%BC%EB%AA%A9%ED%95%98%EB%8A%94-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%8D%A8%EB%8B%88%EC%9D%98-%E4%B8%80%E7%94%9F%E7%89%9B%E6%AD%A5%E8%A1%8C-%EC%97%90%EC%84%9C-%ED%8D%BC%EC%98%B4.html</link>
+      <pubDate>Mon, 29 Jun 2009 11:06:00 +0900</pubDate>
+      
+      <guid>/posts/software-engineering/%EC%A3%BC%EB%AA%A9%ED%95%98%EB%8A%94-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%8D%A8%EB%8B%88%EC%9D%98-%E4%B8%80%E7%94%9F%E7%89%9B%E6%AD%A5%E8%A1%8C-%EC%97%90%EC%84%9C-%ED%8D%BC%EC%98%B4.html</guid>
+      <description>&amp;ldquo; 써니의 一生牛步行&amp;rdquo; http://sunnykwak.egloos.com/4418486 에 유용한 IT(개발)관련 블로그 목록을 보고 opml로 만들었다. 아래는 목록이다. * All of Software * art.oriented * Channy&amp;rsquo;s Blog * Eternity&amp;rsquo;s Chit-Chat * From Business To Code * Insight.. * Intellectual Wanderlust * Life Algorithm * Me, You and Us - calmglow * My Words, Your Memory * No Karma * NWC 컨설팅 블로그 * OK 괜찮아 다 잘 될거야 * ologist`s blog2.0 * Talk about Software with hani * Toby&amp;rsquo;s Epril * Trace Forward * Trustin Lee&amp;rsquo;s GLEAMYNODE.</description>
+    </item>
+    
+    <item>
+      <title>프로그래머 계층도 - 자바 프로그래머는 자신들이 &#39;html을 프로그래밍 언어라고 주장하는 사람들&#39;보다 우월하다고 생각한다.</title>
+      <link>/posts/software-engineering/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8-%EA%B3%84%EC%B8%B5%EB%8F%84-%EC%9E%90%EB%B0%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EB%8A%94-%EC%9E%90%EC%8B%A0%EB%93%A4%EC%9D%B4-html%EC%9D%84-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%96%B8%EC%96%B4%EB%9D%BC%EA%B3%A0-%EC%A3%BC%EC%9E%A5%ED%95%98%EB%8A%94-%EC%82%AC%EB%9E%8C%EB%93%A4%EB%B3%B4%EB%8B%A4-%EC%9A%B0%EC%9B%94%ED%95%98%EB%8B%A4%EA%B3%A0-%EC%83%9D%EA%B0%81%ED%95%9C%EB%8B%A4..html</link>
+      <pubDate>Sat, 27 Jun 2009 14:40:00 +0900</pubDate>
+      
+      <guid>/posts/software-engineering/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8-%EA%B3%84%EC%B8%B5%EB%8F%84-%EC%9E%90%EB%B0%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EB%8A%94-%EC%9E%90%EC%8B%A0%EB%93%A4%EC%9D%B4-html%EC%9D%84-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%96%B8%EC%96%B4%EB%9D%BC%EA%B3%A0-%EC%A3%BC%EC%9E%A5%ED%95%98%EB%8A%94-%EC%82%AC%EB%9E%8C%EB%93%A4%EB%B3%B4%EB%8B%A4-%EC%9A%B0%EC%9B%94%ED%95%98%EB%8B%A4%EA%B3%A0-%EC%83%9D%EA%B0%81%ED%95%9C%EB%8B%A4..html</guid>
+      <description>흥분하지 말고, 그냥 재미로 보자  (원본 : http://lukewelling.com/2006/08/03/java-programmers-are-the-erotic-furries-of-programming/)  --
+ </description>
+    </item>
+    
+    <item>
+      <title>엑셀에서 셀 내용이 변경되었을 때 발생하는 이벤트 catch 하기</title>
+      <link>/posts/software-engineering/%EC%97%91%EC%85%80%EC%97%90%EC%84%9C-%EC%85%80-%EB%82%B4%EC%9A%A9%EC%9D%B4-%EB%B3%80%EA%B2%BD%EB%90%98%EC%97%88%EC%9D%84-%EB%95%8C-%EB%B0%9C%EC%83%9D%ED%95%98%EB%8A%94-%EC%9D%B4%EB%B2%A4%ED%8A%B8-catch-%ED%95%98%EA%B8%B0.html</link>
+      <pubDate>Thu, 18 Jun 2009 14:10:00 +0900</pubDate>
+      
+      <guid>/posts/software-engineering/%EC%97%91%EC%85%80%EC%97%90%EC%84%9C-%EC%85%80-%EB%82%B4%EC%9A%A9%EC%9D%B4-%EB%B3%80%EA%B2%BD%EB%90%98%EC%97%88%EC%9D%84-%EB%95%8C-%EB%B0%9C%EC%83%9D%ED%95%98%EB%8A%94-%EC%9D%B4%EB%B2%A4%ED%8A%B8-catch-%ED%95%98%EA%B8%B0.html</guid>
+      <description>엑셀에서 특정 cell이 변경되었을 때 이벤트를 잡을 수(catch)있다. &amp;lt;참고 URL&amp;gt; http://0607.tistory.com/tag/Excel http://www.eggheadcafe.com/forumarchives/Excelprogramming/Dec2005/post25592375.asp http://www.ozgrid.com/VBA/run-macros-change.htm * 엑셀예제 : catchingCellValueChangeEvent.xls  --
+ </description>
+    </item>
+    
+    <item>
+      <title>웹개발의 흐름 Web_development_timeline.png</title>
+      <link>/posts/software-engineering/%EC%9B%B9%EA%B0%9C%EB%B0%9C%EC%9D%98-%ED%9D%90%EB%A6%84-web_development_timeline.png.html</link>
+      <pubDate>Wed, 17 Jun 2009 12:50:00 +0900</pubDate>
+      
+      <guid>/posts/software-engineering/%EC%9B%B9%EA%B0%9C%EB%B0%9C%EC%9D%98-%ED%9D%90%EB%A6%84-web_development_timeline.png.html</guid>
+      <description>10년 세월이 주마등 처럼 지나간다. 인터넷이 있어서 정말 다행이다. http://upload.wikimedia.org/wikipedia/commons/e/e4/Web_development_timeline.png 출처 http://wikimedia.org/  --
+ 써니 2009/06/17 19:26 #  답글    웹으로 10년간 밥벌이 했지만... 저 기록을 다시 보니... &#39;뭐야 이거 무서워...&#39;라는 말이 저절로... 어쨋건, 링크 감사 합니다.    </description>
+    </item>
+    
+    <item>
+      <title>Xming을 이용 gnome/kde 데스크탑 띄우기</title>
+      <link>/posts/software-engineering/xming%EC%9D%84-%EC%9D%B4%EC%9A%A9-gnome_kde-%EB%8D%B0%EC%8A%A4%ED%81%AC%ED%83%91-%EB%9D%84%EC%9A%B0%EA%B8%B0.html</link>
+      <pubDate>Fri, 12 Jun 2009 15:24:00 +0900</pubDate>
+      
+      <guid>/posts/software-engineering/xming%EC%9D%84-%EC%9D%B4%EC%9A%A9-gnome_kde-%EB%8D%B0%EC%8A%A4%ED%81%AC%ED%83%91-%EB%9D%84%EC%9A%B0%EA%B8%B0.html</guid>
+      <description>http://jetzt.tistory.com/529 에 보면 잘 나와있다. 다음 첨부는 설정파일이므로 파일 설정만 바꿔도 된다. gnome-session.config.xlaunch 근데 Xming 을 어떻게 읽어야 하나? 엑스밍? 즈밍?  --
+ </description>
+    </item>
+    
+    <item>
+      <title>The Dos and Don&#39;ts of a Java Position Interview</title>
+      <link>/posts/software-engineering/the-dos-and-donts-of-a-java-position-interview.html</link>
+      <pubDate>Tue, 19 May 2009 13:22:00 +0900</pubDate>
+      
+      <guid>/posts/software-engineering/the-dos-and-donts-of-a-java-position-interview.html</guid>
+      <description>왠만해서는 copy &amp;amp; paste는 안하려고 하지만 이거는 나중에 혹시나 없어질까 봐서 해둔다.
+
+The Dos and Don&amp;rsquo;ts of a Java Position Interview
+
+By Liviu Tudor
+Go to page: 1 &amp;nbsp;2 &amp;nbsp;Next &amp;nbsp;
+
+I&amp;rsquo;m suremany of us in the Java field have been through this — the interviewthat&amp;rsquo;s going to get our next job! I&amp;rsquo;m also sure many of us have checkedthe usual places on the Net for hints about how to prepare for &amp;ldquo;theperfect interview.</description>
+    </item>
+    
+    <item>
+      <title>Portable Ubuntu 팁</title>
+      <link>/posts/software-engineering/portable-ubuntu-%ED%8C%81.html</link>
+      <pubDate>Thu, 14 May 2009 01:19:00 +0900</pubDate>
+      
+      <guid>/posts/software-engineering/portable-ubuntu-%ED%8C%81.html</guid>
+      <description>Portable Ubuntu 는 윈도우 시스템 위에서 설치 사용할 수 있는 우분투이다. 속도는 느리지만 리눅스 체험용으로는 충분하다. * 처음 설치하기 : http://www.choboweb.com/900 * 업그레이드 하기(이미지 파일 사이즈 늘이기) &amp;amp; Xming을 최신판으로 교체 하여 속도 향상하기 : http://honeyperl.tistory.com/61  C 드라이브 말고 다른 드라이브 마운트 하기
+정답은 아니다. 다른 좋은 방법이 있을 듯&amp;hellip;.
+어쨌든 /etc/portable_ubuntu/portable_ubuntu.conf 를 열어서 5째 라인의 cofs1=c:\ 를 cofs1=d:\ 로 수정
+ Tomcat 을 윈도우에서 접속하기
+8080포트를 열어야 한다.</description>
+    </item>
+    
+    <item>
+      <title>프로젝트 죽이는 101가지 방법</title>
+      <link>/posts/software-engineering/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A3%BD%EC%9D%B4%EB%8A%94-101%EA%B0%80%EC%A7%80-%EB%B0%A9%EB%B2%95.html</link>
+      <pubDate>Wed, 13 May 2009 14:45:00 +0900</pubDate>
+      
+      <guid>/posts/software-engineering/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A3%BD%EC%9D%B4%EB%8A%94-101%EA%B0%80%EC%A7%80-%EB%B0%A9%EB%B2%95.html</guid>
+      <description>PM+P 문제집(PMP 수험문제집)&amp;nbsp; 중에서 1. 일정, 원가 목표를 달성하기 힘든 프로젝트 일수록 성공하면 회사 내에서 인정받을 가능이 높다. 아무도 하지 않으려고 할 때 과감하게 지원하라. 2. 고객만족은 직원만족보다 우선이고 회사의 존재 이유이다. 고객의 요구사항은 항상 수용하라. 3. 검증되지 않은 IT에 대하여 개척자 정신을 발휘하여 과감하게 채택하라. 4. 고객은 시스템을 보고 나서 본격적인 요구사항을 제시하게 되어있다. 개발 완료 이후부터 쏟아지는 변경사항을 최대한 수용하라. 5. 계약 시에 모든 업무범위를 명확하게 하는 것은 불가능하다.</description>
+    </item>
+    
+    <item>
+      <title>Javascript의 Date.getTimezoneOffset() 오동작</title>
+      <link>/posts/software-engineering/javascript%EC%9D%98-date.gettimezoneoffset-%EC%98%A4%EB%8F%99%EC%9E%91.html</link>
+      <pubDate>Wed, 04 Feb 2009 19:59:00 +0900</pubDate>
+      
+      <guid>/posts/software-engineering/javascript%EC%9D%98-date.gettimezoneoffset-%EC%98%A4%EB%8F%99%EC%9E%91.html</guid>
+      <description>Windows 의 제어판에서 GMT를 변경했는데 Javascript의 Date.getTimezoneOffset() 리턴값이 변경되지 않는다면 Google Chrome, Firefox의 경우 리스타트를 해줘야 한다. Internet Explorer는 상관없다. &amp;lt;script type=&amp;ldquo;text/javascript&amp;rdquo;&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp; var curDateTime = new Date(); &amp;nbsp;&amp;nbsp;&amp;nbsp; var gmtOffsetHour = Math.floor(-(curDateTime.getTimezoneOffset()/60)); &amp;nbsp;&amp;nbsp;&amp;nbsp; if(curDateTime.getTimezoneOffset() &amp;gt; 0) { &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; gmtOffsetHour = Math.ceil(-(curDateTime.getTimezoneOffset()/60)); &amp;nbsp;&amp;nbsp;&amp;nbsp; } &amp;nbsp;&amp;nbsp;&amp;nbsp; var gmtOffsetMin = (-(curDateTime.getTimezoneOffset() % 60)); &amp;nbsp;&amp;nbsp;&amp;nbsp; gmtOffsetMin = Math.abs(gmtOffsetMin); &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; var gmtOffst = gmtOffsetHour + &amp;ldquo;:&amp;rdquo; + ((gmtOffsetMin == 0) ? &amp;ldquo;0&amp;rdquo; : &amp;ldquo;&amp;rdquo;) + gmtOffsetMin; &amp;nbsp;&amp;nbsp;&amp;nbsp; alert(&amp;lsquo;gmtOffst=&amp;rsquo; + gmtOffst); &amp;lt;/script&amp;gt;  --</description>
+    </item>
+    
+    <item>
+      <title>Postgre 백업파일 복원 명령</title>
+      <link>/posts/software-engineering/postgre-%EB%B0%B1%EC%97%85%ED%8C%8C%EC%9D%BC-%EB%B3%B5%EC%9B%90-%EB%AA%85%EB%A0%B9.html</link>
+      <pubDate>Fri, 16 Jan 2009 20:19:00 +0900</pubDate>
+      
+      <guid>/posts/software-engineering/postgre-%EB%B0%B1%EC%97%85%ED%8C%8C%EC%9D%BC-%EB%B3%B5%EC%9B%90-%EB%AA%85%EB%A0%B9.html</guid>
+      <description>  E:\Program Files\PostgreSQL\8.2\bin&amp;gt;psql dbName &amp;lt; E:\eclipse3.3.2\workspace\ijoin   \database\html_static_labels.backup&amp;nbsp;userId   Password for user ijoin: thePassword   --
+ </description>
+    </item>
+    
+    <item>
+      <title>이클립스에서 대응되는 괄호찾기</title>
+      <link>/posts/software-engineering/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4%EC%97%90%EC%84%9C-%EB%8C%80%EC%9D%91%EB%90%98%EB%8A%94-%EA%B4%84%ED%98%B8%EC%B0%BE%EA%B8%B0.html</link>
+      <pubDate>Sat, 20 Dec 2008 00:23:00 +0900</pubDate>
+      
+      <guid>/posts/software-engineering/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4%EC%97%90%EC%84%9C-%EB%8C%80%EC%9D%91%EB%90%98%EB%8A%94-%EA%B4%84%ED%98%B8%EC%B0%BE%EA%B8%B0.html</guid>
+      <description>&amp;rsquo;{ 혹은 (&amp;rsquo; 와 대응되는 &amp;lsquo;} 혹은 )&amp;lsquo;를 찾고 싶다면  단순히 커서를 { 다음에 놓으면 대응되는 괄호에 사각형이 씌워져서 구별할 수 있다. 커서를 { 다음에 놓은 후 Ctrl + Shift + p 를 누르면 커서가 대응되는 괄호 바로 다음으로 이동한다.. { 혹은 } 다음 위치를 더블클릭하면 블록전체가 선택된다.  어쨌거나 블록을 너무 크게 만들면 않좋다.  --
+ </description>
+    </item>
+    
+    <item>
+      <title>Apache wicket : Localization 샘플</title>
+      <link>/posts/software-engineering/apache-wicket-localization-%EC%83%98%ED%94%8C.html</link>
+      <pubDate>Thu, 11 Dec 2008 01:13:00 +0900</pubDate>
+      
+      <guid>/posts/software-engineering/apache-wicket-localization-%EC%83%98%ED%94%8C.html</guid>
+      <description>      Apache wicket의 현지화 데모화면이다.     http://www.wicket-library.com/wicket-examples/pub/     하이트 사진은 어디서 구했는지&amp;hellip;       --
+ </description>
+    </item>
+    
+    <item>
+      <title>Simple Webcam Capture - command line 지원</title>
+      <link>/posts/software-engineering/simple-webcam-capture-command-line-%EC%A7%80%EC%9B%90.html</link>
+      <pubDate>Wed, 03 Dec 2008 20:17:00 +0900</pubDate>
+      
+      <guid>/posts/software-engineering/simple-webcam-capture-command-line-%EC%A7%80%EC%9B%90.html</guid>
+      <description>http://mattcollinge.wordpress.com/software/simple-webcam-capture/      다른 캡쳐프로그램들도 많지만 이건&amp;nbsp; command line을 지원한다.      즉, &amp;ldquo;예약된 작업&amp;rdquo;에 등록하면 특정 시간 간격으로 웹캠을 자동으로 찍고      curl 같은 유틸리티를 이용해서 자동으로 서버에 업로드 할 수 있다.   (http://shed.egloos.com/1843497참고)      물론 이런 프로그램은 많이 있다.   그러나 백그라운드에서 사용자가 눈치채지 못하게 하려면 프로그램이 제일인듯하다.            command 라인에서 에러(Error processing command line options)가 발생하는 경우가 있는데      http://mattcollinge.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>하고 싶은 걸 하세요 Do What You Want  | Google &#34;Android&#34; - 자바개발자를 위한 최고의 포터블 장난감</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.55.5" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="../../dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+      <link rel="stylesheet" href="../../custom.css">
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="Google &#34;Android&#34; - 자바개발자를 위한 최고의 포터블 장난감" />
+<meta property="og:description" content="구글이 모바일(폰)쪽 사업을 준비해온지는 한참되었지만 최근(07년 11월 5일)에서야 구체적인 프로젝트명 Android를 공개하였고 바로 오늘(한국시간) 07년 11월 13일 Android SDK(프로그램 개발을 도와주는 도구)를 공개했는데 흥분되는 사실은, 그것이 자바 Java 언어를 공식 지원한다는 점이다. (대표적인 공개 프로그래밍 툴인 Eclipse를 위한 도우미 플러그인도 덤으로 제공된다) 제공되는 각종 라이브러리를 보면 java~ 로 시작하는 수많은 Oldies 라이브러리들,&nbsp; java.io, java.lang, java.math, java.net, java.nio, java.sql 외에도 org.~ 로 시작하는 착한 라이브러리들  org.apache.commons.httpclient org.w3c.dom org.xml.sax 들도 제공한다. 게다가 android 로 시작하는 저수준 라이브러리를 통해 그래픽, 오디오, 폰모듈 등 하드웨어 안쪽 깊숙히 제어할 수 도 있다." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/software-engineering/google-android-%EC%9E%90%EB%B0%94%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EC%B5%9C%EA%B3%A0%EC%9D%98-%ED%8F%AC%ED%84%B0%EB%B8%94-%EC%9E%A5%EB%82%9C%EA%B0%90.html" />
+<meta property="article:published_time" content="2007-11-14T00:15:00&#43;09:00"/>
+<meta property="article:modified_time" content="2007-11-14T00:15:00&#43;09:00"/>
+
+<meta itemprop="name" content="Google &#34;Android&#34; - 자바개발자를 위한 최고의 포터블 장난감">
+<meta itemprop="description" content="구글이 모바일(폰)쪽 사업을 준비해온지는 한참되었지만 최근(07년 11월 5일)에서야 구체적인 프로젝트명 Android를 공개하였고 바로 오늘(한국시간) 07년 11월 13일 Android SDK(프로그램 개발을 도와주는 도구)를 공개했는데 흥분되는 사실은, 그것이 자바 Java 언어를 공식 지원한다는 점이다. (대표적인 공개 프로그래밍 툴인 Eclipse를 위한 도우미 플러그인도 덤으로 제공된다) 제공되는 각종 라이브러리를 보면 java~ 로 시작하는 수많은 Oldies 라이브러리들,&nbsp; java.io, java.lang, java.math, java.net, java.nio, java.sql 외에도 org.~ 로 시작하는 착한 라이브러리들  org.apache.commons.httpclient org.w3c.dom org.xml.sax 들도 제공한다. 게다가 android 로 시작하는 저수준 라이브러리를 통해 그래픽, 오디오, 폰모듈 등 하드웨어 안쪽 깊숙히 제어할 수 도 있다.">
+
+
+<meta itemprop="datePublished" content="2007-11-14T00:15:00&#43;09:00" />
+<meta itemprop="dateModified" content="2007-11-14T00:15:00&#43;09:00" />
+<meta itemprop="wordCount" content="126">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Google &#34;Android&#34; - 자바개발자를 위한 최고의 포터블 장난감"/>
+<meta name="twitter:description" content="구글이 모바일(폰)쪽 사업을 준비해온지는 한참되었지만 최근(07년 11월 5일)에서야 구체적인 프로젝트명 Android를 공개하였고 바로 오늘(한국시간) 07년 11월 13일 Android SDK(프로그램 개발을 도와주는 도구)를 공개했는데 흥분되는 사실은, 그것이 자바 Java 언어를 공식 지원한다는 점이다. (대표적인 공개 프로그래밍 툴인 Eclipse를 위한 도우미 플러그인도 덤으로 제공된다) 제공되는 각종 라이브러리를 보면 java~ 로 시작하는 수많은 Oldies 라이브러리들,&nbsp; java.io, java.lang, java.math, java.net, java.nio, java.sql 외에도 org.~ 로 시작하는 착한 라이브러리들  org.apache.commons.httpclient org.w3c.dom org.xml.sax 들도 제공한다. 게다가 android 로 시작하는 저수준 라이브러리를 통해 그래픽, 오디오, 폰모듈 등 하드웨어 안쪽 깊숙히 제어할 수 도 있다."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="" class="f3 fw2 hover-white no-underline white-90 dib">
+      하고 싶은 걸 하세요 Do What You Want
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">Google &#34;Android&#34; - 자바개발자를 위한 최고의 포터블 장난감</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2007-11-14T00:15:00&#43;09:00">November 14, 2007</time>      
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p><span class="copyright_entry" style="display:block;" title="Google &quot;Android&quot; - 자바개발자를 위한 최고의 포터블 장난감@@**@@http://shed.egloos.com/1666537"></span>구글이 모바일(폰)쪽 사업을 준비해온지는 한참되었지만
+<br>
+<br>최근(07년 11월 5일)에서야 구체적인 프로젝트명 Android를 공개하였고
+<br>
+<br>바로 오늘(한국시간) 07년 11월 13일
+<br>
+<br>Android
+<a href="http://googlekoreablog.blogspot.com/2007/11/1000-93.html">SDK(프로그램 개발을 도와주는 도구)를 공개</a>했는데
+<br>
+<br>흥분되는 사실은, 그것이
+<span style="font-weight: bold;">자바 Java 언어를 공식 지원</span>한다는 점이다.
+<br>(대표적인 공개 프로그래밍 툴인 Eclipse를 위한 도우미 플러그인도 덤으로 제공된다)
+<br>
+<br>
+<br>제공되는 각종
+<a href="http://code.google.com/android/reference/packages.html">라이브러리</a>를 보면
+<br>
+<br>java~ 로 시작하는 수많은 Oldies 라이브러리들,&nbsp;
+<a href="http://code.google.com/android/reference/java/io/package-summary.html">java.io</a>,
+<a href="http://code.google.com/android/reference/java/lang/package-summary.html">java.lang</a>,
+<a href="http://code.google.com/android/reference/java/math/package-summary.html">java.math</a>,
+<a href="http://code.google.com/android/reference/java/net/package-summary.html">java.net</a>,
+<a href="http://code.google.com/android/reference/java/nio/package-summary.html">java.nio</a>,
+<a href="http://code.google.com/android/reference/java/sql/package-summary.html">java.sql</a> 외에도
+<br>
+<br>org.~ 로 시작하는 착한 라이브러리들
+<br>
+<ul>
+ <li><a href="http://code.google.com/android/reference/org/apache/commons/httpclient/package-summary.html">org.apache.commons.httpclient</a></li>
+ <li><a href="http://code.google.com/android/reference/org/w3c/dom/package-summary.html">org.w3c.dom</a></li>
+ <li><a href="http://code.google.com/android/reference/org/xml/sax/package-summary.html">org.xml.sax</a></li>
+</ul>들도 제공한다.
+<br>
+<br>게다가
+<br>
+<br>
+<a href="http://code.google.com/android/reference/android/package-summary.html">android</a> 로 시작하는 저수준 라이브러리를 통해 그래픽, 오디오, 폰모듈 등 하드웨어 안쪽 깊숙히 제어할 수 도 있다.
+<br>(자세한건
+<a href="http://code.google.com/android/what-is-android.html">Android 아키텍쳐</a> 참고)
+<br>
+<br>
+<a href="http://code.google.com/android/reference/android/speech/recognition/package-summary.html"></a>게다가
+<span style="font-weight: bold;">Open</span> 한다는 의지를 분명히 하고 있으니, 음&hellip; 믿어보자.
+<br>
+<br>
+<br>Android 탑재폰이 출시만 된다면 자바개발자를 의한 최강의 삽질머신이 될듯 한데
+<br>
+<br>무늬만 IT선진국에서는 상당기간 에뮬레이터 화면이나 보면서 군침삼켜야 할 듯&hellip;.
+<br>
+<br>
+<br>☞ Android 프로젝트 홈페이지 : <a href="http://code.google.com/android/index.html">http://code.google.com/android/index.html</a>
+<br>
+<br>
+<br>
+<!--
+       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+       <rdf:Description
+            rdf:about="http://shed.egloos.com/1666537"
+            dc:identifier="http://shed.egloos.com/1666537"
+            dc:title="Google &quot;Android&quot; - 자바개발자를 위한 최고의 포터블 장난감"
+            trackback:ping="http://shed.egloos.com/tb/1666537"/>
+       </rdf:RDF>
+       --></p>
+
+<ul></ul>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+        
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="" >
+    &copy; 2019 하고 싶은 걸 하세요 Do What You Want
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="../../dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

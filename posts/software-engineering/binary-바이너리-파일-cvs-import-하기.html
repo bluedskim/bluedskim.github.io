@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>하고 싶은 걸 하세요 Do What You Want  | binary 바이너리 파일 cvs import 하기</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.55.5" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="../../dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+      <link rel="stylesheet" href="../../custom.css">
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="binary 바이너리 파일 cvs import 하기" />
+<meta property="og:description" content="cvnNT에서 import 시 모든 file은 ascii 로 간주된다. binary 파일을 import 하려면 ~/CVSROOT/cvswrappers 를 편집해야 함 샘플은 아래와 같음 cvswrappers &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; # This file affects handling of files based on their names. # # The -t/-f options allow one to treat directories of files # as a single file, or to transform a file in other ways on # its way in and out of CVS. # # The -m option specifies whether CVS attempts to merge files." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/software-engineering/binary-%EB%B0%94%EC%9D%B4%EB%84%88%EB%A6%AC-%ED%8C%8C%EC%9D%BC-cvs-import-%ED%95%98%EA%B8%B0.html" />
+<meta property="article:published_time" content="2006-09-15T13:26:00&#43;09:00"/>
+<meta property="article:modified_time" content="2006-09-15T13:26:00&#43;09:00"/>
+
+<meta itemprop="name" content="binary 바이너리 파일 cvs import 하기">
+<meta itemprop="description" content="cvnNT에서 import 시 모든 file은 ascii 로 간주된다. binary 파일을 import 하려면 ~/CVSROOT/cvswrappers 를 편집해야 함 샘플은 아래와 같음 cvswrappers &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; # This file affects handling of files based on their names. # # The -t/-f options allow one to treat directories of files # as a single file, or to transform a file in other ways on # its way in and out of CVS. # # The -m option specifies whether CVS attempts to merge files.">
+
+
+<meta itemprop="datePublished" content="2006-09-15T13:26:00&#43;09:00" />
+<meta itemprop="dateModified" content="2006-09-15T13:26:00&#43;09:00" />
+<meta itemprop="wordCount" content="871">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="binary 바이너리 파일 cvs import 하기"/>
+<meta name="twitter:description" content="cvnNT에서 import 시 모든 file은 ascii 로 간주된다. binary 파일을 import 하려면 ~/CVSROOT/cvswrappers 를 편집해야 함 샘플은 아래와 같음 cvswrappers &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; # This file affects handling of files based on their names. # # The -t/-f options allow one to treat directories of files # as a single file, or to transform a file in other ways on # its way in and out of CVS. # # The -m option specifies whether CVS attempts to merge files."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="" class="f3 fw2 hover-white no-underline white-90 dib">
+      하고 싶은 걸 하세요 Do What You Want
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">binary 바이너리 파일 cvs import 하기</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2006-09-15T13:26:00&#43;09:00">September 15, 2006</time>      
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p><span class="copyright_entry" style="display:block;" title="binary 바이너리 파일 cvs import 하기@@**@@http://shed.egloos.com/1413686"></span>cvnNT에서 import 시 모든 file은 ascii 로 간주된다.
+<br>
+<br>binary 파일을 import 하려면 ~/CVSROOT/cvswrappers 를 편집해야 함
+<br>
+<br>샘플은 아래와 같음
+<br>
+<br>
+<a href="http://pds1.egloos.com/pds/1/200609/15/82/cvswrappers">cvswrappers</a>
+<br>
+<br>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;
+<br>
+<br># This file affects handling of files based on their names.
+<br>#
+<br># The -t/-f options allow one to treat directories of files
+<br># as a single file, or to transform a file in other ways on
+<br># its way in and out of CVS.
+<br>#
+<br># The -m option specifies whether CVS attempts to merge files.
+<br>#
+<br># The -k option specifies keyword expansion (e.g. -kb for binary).
+<br>#
+<br># Format of wrapper file ($CVSROOT/CVSROOT/cvswrappers or .cvswrappers)
+<br>#
+<br>#&nbsp; wildcard&nbsp;&nbsp;&nbsp; [option value][option value]&hellip;
+<br>#
+<br>#&nbsp; where option is one of
+<br>#&nbsp; -f&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; from cvs filter&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; value: path to filter
+<br>#&nbsp; -t&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; to cvs filter&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; value: path to filter
+<br>#&nbsp; -m&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; update methodology&nbsp;&nbsp;&nbsp; value: MERGE or COPY
+<br>#&nbsp; -k&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; expansion mode&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; value: b, o, kkv, &amp;c
+<br>#
+<br>#&nbsp; and value is a single-quote delimited value.
+<br># For example:
+<br><em>.AI -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.ai -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.AIFC -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.aifc -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.AIFF -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.aiff -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.au -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.AU -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.avi -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.AVI -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.bin -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.BMP -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.bmp -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.bz -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.bz2 -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.cab -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.class -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.CLASS -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.des -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.DLL -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.dll -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.doc -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.DOC -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.dra -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.DWG -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.dwg -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.DXF -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.dxf -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.ear -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.EAR -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.EPS -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.eps -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.EXE -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.exe -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.FIG -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.fig -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.FM -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.fm -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.gif -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.GIF -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.gz -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.GZ -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.HQX -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.hqx -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.ico -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.ICO -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.ief -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.JAR -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.jar -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.jpe -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.JPE -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.jpeg -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.JPEG -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.jpg -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.JPG -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.mat -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.MAT -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.mexsg64 -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.MEXSG64 -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.MEXSOL -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.mexsol -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.mid -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.MID -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.midi -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.MIDI -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.MOV -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.mov -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.mp3 -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.mpe -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.MPE -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.mpeg -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.MPEG -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.MPG -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.mpg -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.OBJ -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.obj -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.P -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.p -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.pcx -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.PCX -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.PDF -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.pdf -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.PNG -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.png -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.psd -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.PSD -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.ppt -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.PPT -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.PS -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.ps -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.QT -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.qt -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.RAM -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.ram -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.rpm -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.RPM -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.rtb -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.RTB -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.RTF -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.rtf -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.SIT -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.sit -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.srpm -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.swf -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.TAR -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.tar -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.tbz -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.tex -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.TEX -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.TGZ -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.tgz -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.tif -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.TIF -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.TIFF -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.tiff -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.TZ -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.tz -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.voc -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.VOC -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.WAR -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.war -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.WAV -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.wav -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.wmf -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.WMF -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.wpd -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.WPD -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.WPG -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.wpg -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.XBM -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.xbm -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.xls -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.XLS -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.xwd -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.XWD -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.z -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br><em>.Z -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br></em>.zip -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br>*.ZIP -k &lsquo;b&rsquo; -m &lsquo;COPY&rsquo;
+<br>
+<br>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;
+<br>
+<br>자세한건
+<br>&nbsp;<a href="http://www.idevelopment.info/data/Programming/change_management/unix_cvs/PROGRAMMING_Working_with_Binary_Files.shtml">http://www.idevelopment.info/data/Programming/change_management/unix_cvs/PROGRAMMING_Working_with_Binary_Files.shtml</a> 참조
+<br>
+<br>이걸 몰라서 생고생함. -.-&hellip;..
+<a href="http://pds1.egloos.com/pds/1/200609/15/82/cvswrappers">cvswrappers</a>
+<br>
+<!--
+       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+       <rdf:Description
+            rdf:about="http://shed.egloos.com/1413686"
+            dc:identifier="http://shed.egloos.com/1413686"
+            dc:title="binary 바이너리 파일 cvs import 하기"
+            trackback:ping="http://shed.egloos.com/tb/1413686"/>
+       </rdf:RDF>
+       --></p>
+
+<ul></ul>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+        
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="" >
+    &copy; 2019 하고 싶은 걸 하세요 Do What You Want
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="../../dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

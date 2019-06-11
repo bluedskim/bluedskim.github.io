@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo on bluedskim.github.io</title>
-    <link>https://bluedskim.github.io/tags/hugo/</link>
-    <description>Recent content in Hugo on bluedskim.github.io</description>
+    <title>hugo on 하고 싶은 걸 하세요 Do What You Want</title>
+    <link>/tags/hugo.html</link>
+    <description>Recent content in hugo on 하고 싶은 걸 하세요 Do What You Want</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ko-kr</language>
     <lastBuildDate>Fri, 15 Mar 2019 22:38:28 +0900</lastBuildDate>
     
-	<atom:link href="https://bluedskim.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Pixelbook에서 hugo 설치</title>
-      <link>https://bluedskim.github.io/posts/tech/hugoonpixelbook/</link>
+      <link>/posts/tech/hugoonpixelbook.html</link>
       <pubDate>Fri, 15 Mar 2019 22:38:28 +0900</pubDate>
       
-      <guid>https://bluedskim.github.io/posts/tech/hugoonpixelbook/</guid>
+      <guid>/posts/tech/hugoonpixelbook.html</guid>
       <description>설치 ASUS Chromebook C100PA-DS03 에 설치할 때와 마찬가지로 최신버전을 설치하려면 deb 파일을 다운 받아야 한다. 현재 최신 버전은 hugo_0.54.0-1_amd64.deb 이다. 하지만 libsass1이 필요하다고 하니 먼저 설치한다.
 다운로드 경로 https://packages.debian.org/sid/amd64/libsass1/download
 다운 받은 후 설치
@@ -28,10 +27,10 @@ sudo dpkg -i hugo_0.54.0-1_amd64.deb  구동 pixelbook에서는 hugo 기본 포�
     
     <item>
       <title>Hugo Theme 변경 테스트</title>
-      <link>https://bluedskim.github.io/posts/tech/post-title/</link>
+      <link>/posts/tech/post-title.html</link>
       <pubDate>Sat, 23 Jun 2018 10:54:24 +0200</pubDate>
       
-      <guid>https://bluedskim.github.io/posts/tech/post-title/</guid>
+      <guid>/posts/tech/post-title.html</guid>
       <description>원래 사용하던 theme이 좀 평범한 듯 하여 다른 theme 을 테스트 하고 있다. 지금 현재 쓰는 theme 은 bleak 라는 것인데 메인화면에서 compact 하게 공간 낭비가 없다는게 좋다.
 https://github.com/Zenithar/hugo-theme-bleak
 한가지 마음에 안드는게 있는데 상세화면에서 소스 코드 보기(code태그) 가 눈에 잘 안띈다는 건데. 그래서 아래처럼 main.css를 좀 바꿨더니 볼만해졌다.

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>injection on 하고 싶은 걸 하세요 Do What You Want</title>
+    <link>/tags/injection.html</link>
+    <description>Recent content in injection on 하고 싶은 걸 하세요 Do What You Want</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 29 Aug 2006 18:56:00 +0900</lastBuildDate>
+    
+	<atom:link href="/tags/injection/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sql injection &amp; Cross Site Scripting (XSS) 예방책</title>
+      <link>/posts/software-engineering/sql-injection-cross-site-scripting-xss-%EC%98%88%EB%B0%A9%EC%B1%85.html</link>
+      <pubDate>Tue, 29 Aug 2006 18:56:00 +0900</pubDate>
+      
+      <guid>/posts/software-engineering/sql-injection-cross-site-scripting-xss-%EC%98%88%EB%B0%A9%EC%B1%85.html</guid>
+      <description>&amp;lt; Sql injection&amp;nbsp;&amp;gt;
+[공격 예제]
+Java 소스의 게시판 검색 Sql 구문 코딩이 아래와 같다고 하고
+String findQuery = “select * from notice where title = &amp;lsquo;”+ keyword + “&amp;rsquo; “;
+&amp;nbsp;
+홈페이지의 게시판 검색 시 keyword에“&amp;nbsp;&amp;nbsp; any&amp;rsquo; &amp;nbsp;;&amp;nbsp; DROP TABLE NOTICE&amp;nbsp;&amp;nbsp; “&amp;nbsp; 를 넣고 검색한다면 
+&amp;nbsp;
+아래와 같은 Sql 구문이 실행되고
+SELECT * FROM notice WHERE title = &amp;lsquo;any&amp;rsquo; ;&amp;nbsp; DROP TABLE notice
+NOTICE 테이블이 삭제됩니다.
+&amp;nbsp;
+[예방법]</description>
+    </item>
+    
+  </channel>
+</rss>
