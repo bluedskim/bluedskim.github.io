@@ -2,70 +2,70 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MyWorks on Do What You Want To Do</title>
-    <link>https://example.org/categories/myworks/</link>
+    <link>/categories/myworks/</link>
     <description>Recent content in MyWorks on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <lastBuildDate>Mon, 10 Nov 2008 02:53:00 +0900</lastBuildDate>
     
-	<atom:link href="https://example.org/categories/myworks/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/myworks/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How deep is your love - The Bird and The Bee(리믹스)</title>
-      <link>https://example.org/posts/myworks/how-deep-is-your-love-the-bird-and-the-bee%EB%A6%AC%EB%AF%B9%EC%8A%A4/</link>
+      <link>/posts/myworks/how-deep-is-your-love-the-bird-and-the-bee%EB%A6%AC%EB%AF%B9%EC%8A%A4/</link>
       <pubDate>Mon, 10 Nov 2008 02:53:00 +0900</pubDate>
       
-      <guid>https://example.org/posts/myworks/how-deep-is-your-love-the-bird-and-the-bee%EB%A6%AC%EB%AF%B9%EC%8A%A4/</guid>
+      <guid>/posts/myworks/how-deep-is-your-love-the-bird-and-the-bee%EB%A6%AC%EB%AF%B9%EC%8A%A4/</guid>
       <description>How deep is your love를 리믹스해봤다. 리믹스라 하기는 뭐하지만&amp;hellip;  아래는 원곡이다.   --
  </description>
     </item>
     
     <item>
       <title>Dennis Kim Best</title>
-      <link>https://example.org/posts/myworks/dennis-kim-best/</link>
+      <link>/posts/myworks/dennis-kim-best/</link>
       <pubDate>Thu, 28 Aug 2008 03:02:00 +0900</pubDate>
       
-      <guid>https://example.org/posts/myworks/dennis-kim-best/</guid>
+      <guid>/posts/myworks/dennis-kim-best/</guid>
       <description>   --
  </description>
     </item>
     
     <item>
       <title>So Long</title>
-      <link>https://example.org/posts/myworks/so-long/</link>
+      <link>/posts/myworks/so-long/</link>
       <pubDate>Sat, 03 Mar 2007 12:41:00 +0900</pubDate>
       
-      <guid>https://example.org/posts/myworks/so-long/</guid>
+      <guid>/posts/myworks/so-long/</guid>
       <description>  --
  </description>
     </item>
     
     <item>
       <title>Moon River 060223</title>
-      <link>https://example.org/posts/myworks/moon-river-060223/</link>
+      <link>/posts/myworks/moon-river-060223/</link>
       <pubDate>Sun, 26 Feb 2006 11:25:00 +0900</pubDate>
       
-      <guid>https://example.org/posts/myworks/moon-river-060223/</guid>
+      <guid>/posts/myworks/moon-river-060223/</guid>
       <description>Moon_River-060223.mp3 이노래는 왜 질리지 않는걸까? - Moon River - Moon River, wider than a mile Im crossing you in style, some day &amp;lt;br&amp;gt; &amp;lt;br&amp;gt;Oh dream maker, you heart breaker &amp;lt;br&amp;gt; &amp;lt;br&amp;gt;Wherever youre goin, Im goinyour way &amp;lt;br&amp;gt; &amp;lt;br&amp;gt;Two drifters, off to see the world &amp;lt;br&amp;gt; &amp;lt;br&amp;gt;Theres such a lot of world to see Were after the same rainbows end &amp;lt;br&amp;gt; &amp;lt;br&amp;gt;Waitin `round the bend My Huckleberry friend Moon River, and me!</description>
     </item>
     
     <item>
       <title>Green Sleeves 060220</title>
-      <link>https://example.org/posts/myworks/green-sleeves-060220/</link>
+      <link>/posts/myworks/green-sleeves-060220/</link>
       <pubDate>Mon, 20 Feb 2006 23:49:00 +0900</pubDate>
       
-      <guid>https://example.org/posts/myworks/green-sleeves-060220/</guid>
+      <guid>/posts/myworks/green-sleeves-060220/</guid>
       <description> Green_Sleeves-060220.mp3  --
  </description>
     </item>
     
     <item>
       <title>Fly me to the moon</title>
-      <link>https://example.org/posts/myworks/fly-me-to-the-moon/</link>
+      <link>/posts/myworks/fly-me-to-the-moon/</link>
       <pubDate>Mon, 30 Jan 2006 14:27:00 +0900</pubDate>
       
-      <guid>https://example.org/posts/myworks/fly-me-to-the-moon/</guid>
+      <guid>/posts/myworks/fly-me-to-the-moon/</guid>
       <description>Fly me to the moon Music by Bart Howard
 편곡 : 이정선(Finger Jazz Guitar. p.46 이정선음악사)
 Fly me to the moon Let me sing among those stars Let me see what spring is like On Jupiter and mars In other words, hold my hand In other words, baby kiss me Fill my heart with song Let me sing forever more You are all I long for All I worship and adore In other words, please be true In other words, I love you 기타 : Dexter SJCM Custom  --</description>
@@ -73,20 +73,20 @@ Fly me to the moon Let me sing among those stars Let me see what spring is like 
     
     <item>
       <title>[Blues] 이별의 종착역</title>
-      <link>https://example.org/posts/myworks/blues-%EC%9D%B4%EB%B3%84%EC%9D%98-%EC%A2%85%EC%B0%A9%EC%97%AD/</link>
+      <link>/posts/myworks/blues-%EC%9D%B4%EB%B3%84%EC%9D%98-%EC%A2%85%EC%B0%A9%EC%97%AD/</link>
       <pubDate>Sat, 26 Nov 2005 22:50:00 +0900</pubDate>
       
-      <guid>https://example.org/posts/myworks/blues-%EC%9D%B4%EB%B3%84%EC%9D%98-%EC%A2%85%EC%B0%A9%EC%97%AD/</guid>
+      <guid>/posts/myworks/blues-%EC%9D%B4%EB%B3%84%EC%9D%98-%EC%A2%85%EC%B0%A9%EC%97%AD/</guid>
       <description> - 보컬 : 장재혁 - Acoustic 기타 : 장재혁 - Elec 기타 : 김동석  --
  </description>
     </item>
     
     <item>
       <title>[House] Test5 (051126)</title>
-      <link>https://example.org/posts/myworks/house-test5-051126/</link>
+      <link>/posts/myworks/house-test5-051126/</link>
       <pubDate>Sat, 26 Nov 2005 22:33:00 +0900</pubDate>
       
-      <guid>https://example.org/posts/myworks/house-test5-051126/</guid>
+      <guid>/posts/myworks/house-test5-051126/</guid>
       <description>&amp;nbsp; http://pds2.egloos.com/pds/1/200511/26/82/testing5-02_SHED_051126.mp3  점점 발전하는구나. ㅋㅋㅋ 베이스 음색도 바꾸야 하고..  --
  </description>
     </item>

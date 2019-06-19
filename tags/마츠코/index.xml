@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>마츠코 on Do What You Want To Do</title>
-    <link>https://example.org/tags/%EB%A7%88%EC%B8%A0%EC%BD%94/</link>
+    <link>/tags/%EB%A7%88%EC%B8%A0%EC%BD%94/</link>
     <description>Recent content in 마츠코 on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <lastBuildDate>Fri, 23 Nov 2007 14:47:00 +0900</lastBuildDate>
     
-	<atom:link href="https://example.org/tags/%EB%A7%88%EC%B8%A0%EC%BD%94/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/%EB%A7%88%EC%B8%A0%EC%BD%94/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>[방구석영화제]삶에 대한 영화 - NOLF. No One Lives Forever. 누구나 알고 있는 사실입니다.</title>
-      <link>https://example.org/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D%EC%98%81%ED%99%94%EC%A0%9C%EC%82%B6%EC%97%90-%EB%8C%80%ED%95%9C-%EC%98%81%ED%99%94-nolf.-no-one-lives-forever.-%EB%88%84%EA%B5%AC%EB%82%98-%EC%95%8C%EA%B3%A0-%EC%9E%88%EB%8A%94-%EC%82%AC%EC%8B%A4%EC%9E%85%EB%8B%88%EB%8B%A4./</link>
+      <link>/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D%EC%98%81%ED%99%94%EC%A0%9C%EC%82%B6%EC%97%90-%EB%8C%80%ED%95%9C-%EC%98%81%ED%99%94-nolf.-no-one-lives-forever.-%EB%88%84%EA%B5%AC%EB%82%98-%EC%95%8C%EA%B3%A0-%EC%9E%88%EB%8A%94-%EC%82%AC%EC%8B%A4%EC%9E%85%EB%8B%88%EB%8B%A4./</link>
       <pubDate>Fri, 23 Nov 2007 14:47:00 +0900</pubDate>
       
-      <guid>https://example.org/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D%EC%98%81%ED%99%94%EC%A0%9C%EC%82%B6%EC%97%90-%EB%8C%80%ED%95%9C-%EC%98%81%ED%99%94-nolf.-no-one-lives-forever.-%EB%88%84%EA%B5%AC%EB%82%98-%EC%95%8C%EA%B3%A0-%EC%9E%88%EB%8A%94-%EC%82%AC%EC%8B%A4%EC%9E%85%EB%8B%88%EB%8B%A4./</guid>
+      <guid>/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D%EC%98%81%ED%99%94%EC%A0%9C%EC%82%B6%EC%97%90-%EB%8C%80%ED%95%9C-%EC%98%81%ED%99%94-nolf.-no-one-lives-forever.-%EB%88%84%EA%B5%AC%EB%82%98-%EC%95%8C%EA%B3%A0-%EC%9E%88%EB%8A%94-%EC%82%AC%EC%8B%A4%EC%9E%85%EB%8B%88%EB%8B%A4./</guid>
       <description>NOLF. No One Lives Forever. 누구나 알고 있는 사실입니다. 하지만 문제는 언제 죽을지 모른다는 거죠. 그런데 죽을날을 알수 있다면 어떨까요? 어떤이는 100년을 살 수도 있을 것이고 어떤이는 20년 밖에 못살 수도 있지만 S/W 프로젝트를 진행하듯 각자의 종료일에 맞춰서 To-Do와 일정계획을 만드는 겁니다. 어느 누구도 인생을 낭비하지 않을거라 상상해봅니다. 저는 70살까지 살것으로 예상하고 진행중입니다. 이제 35년 살았으니 생의 반을 쓴것이죠. 중간평가를 해보면 80점 정도 줄 수 있을 것 같습니다. 남은 반평생동안은, 35년간 했던 실수를 절대 다시 하지 않을겁니다.</description>
     </item>
     

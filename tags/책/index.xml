@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>책 on Do What You Want To Do</title>
-    <link>https://example.org/tags/%EC%B1%85/</link>
+    <link>/tags/%EC%B1%85/</link>
     <description>Recent content in 책 on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <lastBuildDate>Fri, 25 Nov 2005 12:52:00 +0900</lastBuildDate>
     
-	<atom:link href="https://example.org/tags/%EC%B1%85/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/%EC%B1%85/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>책사자</title>
-      <link>https://example.org/posts/%EB%A9%94%EB%AA%A8/%EC%B1%85%EC%82%AC%EC%9E%90/</link>
+      <link>/posts/%EB%A9%94%EB%AA%A8/%EC%B1%85%EC%82%AC%EC%9E%90/</link>
       <pubDate>Fri, 25 Nov 2005 12:52:00 +0900</pubDate>
       
-      <guid>https://example.org/posts/%EB%A9%94%EB%AA%A8/%EC%B1%85%EC%82%AC%EC%9E%90/</guid>
+      <guid>/posts/%EB%A9%94%EB%AA%A8/%EC%B1%85%EC%82%AC%EC%9E%90/</guid>
       <description>교양으로읽어야할절대지식
 http://www.ypbooks.co.kr/ypbooks/WebHome/specdm/specdm.jsp?p_isbn=1927500049
 피터 게더스의 고양이 3부작

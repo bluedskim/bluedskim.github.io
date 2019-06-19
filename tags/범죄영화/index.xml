@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>범죄영화 on Do What You Want To Do</title>
-    <link>https://example.org/tags/%EB%B2%94%EC%A3%84%EC%98%81%ED%99%94/</link>
+    <link>/tags/%EB%B2%94%EC%A3%84%EC%98%81%ED%99%94/</link>
     <description>Recent content in 범죄영화 on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <lastBuildDate>Tue, 31 Jul 2007 23:59:00 +0900</lastBuildDate>
     
-	<atom:link href="https://example.org/tags/%EB%B2%94%EC%A3%84%EC%98%81%ED%99%94/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/%EB%B2%94%EC%A3%84%EC%98%81%ED%99%94/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>[방구석 영화제] 추천 범죄/스릴러 영화</title>
-      <link>https://example.org/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9C-%EC%B6%94%EC%B2%9C-%EB%B2%94%EC%A3%84_%EC%8A%A4%EB%A6%B4%EB%9F%AC-%EC%98%81%ED%99%94/</link>
+      <link>/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9C-%EC%B6%94%EC%B2%9C-%EB%B2%94%EC%A3%84_%EC%8A%A4%EB%A6%B4%EB%9F%AC-%EC%98%81%ED%99%94/</link>
       <pubDate>Tue, 31 Jul 2007 23:59:00 +0900</pubDate>
       
-      <guid>https://example.org/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9C-%EC%B6%94%EC%B2%9C-%EB%B2%94%EC%A3%84_%EC%8A%A4%EB%A6%B4%EB%9F%AC-%EC%98%81%ED%99%94/</guid>
+      <guid>/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9C-%EC%B6%94%EC%B2%9C-%EB%B2%94%EC%A3%84_%EC%8A%A4%EB%A6%B4%EB%9F%AC-%EC%98%81%ED%99%94/</guid>
       <description>+ 미스터 브룩스. Mr Brooks : &amp;ldquo;그럴수도 있겠군&amp;hellip;&amp;ldquo;하며 머리를 끄덕이게 만드는 영화는 의외로 적다. 시나리오가 탄탄하기는 하지만 행맨과 브룩스가 우연히 만나는 장면에서는 작가(혹은 감독)도 머쓱했는지 &amp;ldquo;놀라움이 없다면 인생이 어떻게 될까?(What would life be&amp;hellip; without surprises!)&amp;rdquo; 하며 동의를 구해온다. 그래, 그럴수도 있지. 이해한다. 영화니까. 그리고 인생은 정말 놀랍다. + 프리즈 프레임 : 과거 억울한 혐의를 받은 적있는 남자가 결백을 증명하기위해 10년동안 자신을 24시간 녹화하는데&amp;hellip;어느날 5년 전 발생한 살인사건의 용의자로 지목 되고&amp;hellip; 그러나 당시의 무죄를 증명할 비디오테이프가 사라졌다!</description>
     </item>
     

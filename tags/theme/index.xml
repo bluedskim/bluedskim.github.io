@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Theme on Do What You Want To Do</title>
-    <link>https://example.org/tags/theme/</link>
+    <link>/tags/theme/</link>
     <description>Recent content in Theme on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <lastBuildDate>Sat, 23 Jun 2018 10:54:24 +0200</lastBuildDate>
     
-	<atom:link href="https://example.org/tags/theme/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/theme/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hugo Theme 변경 테스트</title>
-      <link>https://example.org/posts/tech/post-title/</link>
+      <link>/posts/tech/post-title/</link>
       <pubDate>Sat, 23 Jun 2018 10:54:24 +0200</pubDate>
       
-      <guid>https://example.org/posts/tech/post-title/</guid>
+      <guid>/posts/tech/post-title/</guid>
       <description>원래 사용하던 theme이 좀 평범한 듯 하여 다른 theme 을 테스트 하고 있다. 지금 현재 쓰는 theme 은 bleak 라는 것인데 메인화면에서 compact 하게 공간 낭비가 없다는게 좋다.
 https://github.com/Zenithar/hugo-theme-bleak
 한가지 마음에 안드는게 있는데 상세화면에서 소스 코드 보기(code태그) 가 눈에 잘 안띈다는 건데. 그래서 아래처럼 main.css를 좀 바꿨더니 볼만해졌다.

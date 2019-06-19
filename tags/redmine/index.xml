@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>redmine on Do What You Want To Do</title>
-    <link>https://example.org/tags/redmine/</link>
+    <link>/tags/redmine/</link>
     <description>Recent content in redmine on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <lastBuildDate>Thu, 21 Mar 2019 20:38:28 +0900</lastBuildDate>
     
-	<atom:link href="https://example.org/tags/redmine/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/redmine/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>엑셀 데이터를 레드마인 테이블로 변환하는 Javascript</title>
-      <link>https://example.org/posts/tech/excel-to-redmine-table/</link>
+      <link>/posts/tech/excel-to-redmine-table/</link>
       <pubDate>Thu, 21 Mar 2019 20:38:28 +0900</pubDate>
       
-      <guid>https://example.org/posts/tech/excel-to-redmine-table/</guid>
+      <guid>/posts/tech/excel-to-redmine-table/</guid>
       <description>레드마인에 테이블로 데이터를 보여줄 경우가 점점 많아지는데 수작업으로 하려니 너무 힘들어서 만들었다
 https://jsfiddle.net/shed/pxc93nz6/
 엑셀에서 셀들을 복사한 후 위쪽 textarea에 붙히면 알아서 변환되고 redmine 태그가 복사되는데 첫번째 줄은 header로 인식해서 bold처리 한다

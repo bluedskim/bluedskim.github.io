@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pixelbook on Do What You Want To Do</title>
-    <link>https://example.org/tags/pixelbook/</link>
+    <link>/tags/pixelbook/</link>
     <description>Recent content in Pixelbook on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <lastBuildDate>Sun, 24 Mar 2019 10:38:28 +0900</lastBuildDate>
     
-	<atom:link href="https://example.org/tags/pixelbook/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/pixelbook/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>각종 작업 소요시간 체크용 우분투용 command line stopwatch</title>
-      <link>https://example.org/posts/tech/%EC%93%B8%EB%A7%8C%ED%95%9C-ubuntu%EC%9A%A9-command-line-%ED%83%80%EC%9D%B4%EB%A8%B8/</link>
+      <link>/posts/tech/%EC%93%B8%EB%A7%8C%ED%95%9C-ubuntu%EC%9A%A9-command-line-%ED%83%80%EC%9D%B4%EB%A8%B8/</link>
       <pubDate>Sun, 24 Mar 2019 10:38:28 +0900</pubDate>
       
-      <guid>https://example.org/posts/tech/%EC%93%B8%EB%A7%8C%ED%95%9C-ubuntu%EC%9A%A9-command-line-%ED%83%80%EC%9D%B4%EB%A8%B8/</guid>
+      <guid>/posts/tech/%EC%93%B8%EB%A7%8C%ED%95%9C-ubuntu%EC%9A%A9-command-line-%ED%83%80%EC%9D%B4%EB%A8%B8/</guid>
       <description>간단하게 터미널에서 작업 소요 시간을 체크 할 수 있는 방법들을 찾아봤는데
 https://superuser.com/questions/611538/is-there-a-way-to-display-a-countdown-or-stopwatch-timer-in-a-terminal
 terdon 이라는 분이 알려준 방법은 잘 동작하였지만 https://superuser.com/questions/611538/is-there-a-way-to-display-a-countdown-or-stopwatch-timer-in-a-terminal?answertab=active#tab-top
@@ -26,10 +26,10 @@ countdown(){ date1=$((`date +%s` + $1)); while [ &amp;quot;$date1&amp;quot; -ge 
     
     <item>
       <title>Pixelbook Crostini Linux앱에서 한글 입력하기</title>
-      <link>https://example.org/posts/tech/howtoinputkorenwithcrostinionpixelbook/</link>
+      <link>/posts/tech/howtoinputkorenwithcrostinionpixelbook/</link>
       <pubDate>Sat, 16 Mar 2019 22:38:28 +0900</pubDate>
       
-      <guid>https://example.org/posts/tech/howtoinputkorenwithcrostinionpixelbook/</guid>
+      <guid>/posts/tech/howtoinputkorenwithcrostinionpixelbook/</guid>
       <description>영어/알파벳을 쓰는 나라 사람들은 이해하기 힘든 문제가 바로 2byte 이상 문자 입출력 문제이다.
 최신 기술일수록 한글지원이 미약한 경우가 많은데
 역시나 크롬북도 예외가 아니다.
@@ -43,10 +43,10 @@ countdown(){ date1=$((`date +%s` + $1)); while [ &amp;quot;$date1&amp;quot; -ge 
     
     <item>
       <title>Pixelbook에서 hugo 설치</title>
-      <link>https://example.org/posts/tech/hugoonpixelbook/</link>
+      <link>/posts/tech/hugoonpixelbook/</link>
       <pubDate>Fri, 15 Mar 2019 22:38:28 +0900</pubDate>
       
-      <guid>https://example.org/posts/tech/hugoonpixelbook/</guid>
+      <guid>/posts/tech/hugoonpixelbook/</guid>
       <description>설치 ASUS Chromebook C100PA-DS03 에 설치할 때와 마찬가지로 최신버전을 설치하려면 deb 파일을 다운 받아야 한다. 현재 최신 버전은 hugo_0.54.0-1_amd64.deb 이다. 하지만 libsass1이 필요하다고 하니 먼저 설치한다.
 다운로드 경로 https://packages.debian.org/sid/amd64/libsass1/download
 다운 받은 후 설치

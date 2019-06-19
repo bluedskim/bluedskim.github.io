@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>wget on Do What You Want To Do</title>
-    <link>https://example.org/tags/wget/</link>
+    <link>/tags/wget/</link>
     <description>Recent content in wget on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <lastBuildDate>Fri, 30 Nov 2007 15:30:00 +0900</lastBuildDate>
     
-	<atom:link href="https://example.org/tags/wget/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/wget/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>wget 활용 - 헤더정보 보기, 파일을 다운로드 하여 특정이름으로 저장</title>
-      <link>https://example.org/posts/software-engineering/wget-%ED%99%9C%EC%9A%A9-%ED%97%A4%EB%8D%94%EC%A0%95%EB%B3%B4-%EB%B3%B4%EA%B8%B0-%ED%8C%8C%EC%9D%BC%EC%9D%84-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-%ED%95%98%EC%97%AC-%ED%8A%B9%EC%A0%95%EC%9D%B4%EB%A6%84%EC%9C%BC%EB%A1%9C-%EC%A0%80%EC%9E%A5/</link>
+      <link>/posts/software-engineering/wget-%ED%99%9C%EC%9A%A9-%ED%97%A4%EB%8D%94%EC%A0%95%EB%B3%B4-%EB%B3%B4%EA%B8%B0-%ED%8C%8C%EC%9D%BC%EC%9D%84-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-%ED%95%98%EC%97%AC-%ED%8A%B9%EC%A0%95%EC%9D%B4%EB%A6%84%EC%9C%BC%EB%A1%9C-%EC%A0%80%EC%9E%A5/</link>
       <pubDate>Fri, 30 Nov 2007 15:30:00 +0900</pubDate>
       
-      <guid>https://example.org/posts/software-engineering/wget-%ED%99%9C%EC%9A%A9-%ED%97%A4%EB%8D%94%EC%A0%95%EB%B3%B4-%EB%B3%B4%EA%B8%B0-%ED%8C%8C%EC%9D%BC%EC%9D%84-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-%ED%95%98%EC%97%AC-%ED%8A%B9%EC%A0%95%EC%9D%B4%EB%A6%84%EC%9C%BC%EB%A1%9C-%EC%A0%80%EC%9E%A5/</guid>
+      <guid>/posts/software-engineering/wget-%ED%99%9C%EC%9A%A9-%ED%97%A4%EB%8D%94%EC%A0%95%EB%B3%B4-%EB%B3%B4%EA%B8%B0-%ED%8C%8C%EC%9D%BC%EC%9D%84-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-%ED%95%98%EC%97%AC-%ED%8A%B9%EC%A0%95%EC%9D%B4%EB%A6%84%EC%9C%BC%EB%A1%9C-%EC%A0%80%EC%9E%A5/</guid>
       <description>* 윈도우용 wget : wget.exe C:&amp;amp;gt; wget &amp;ndash;spider -S http://www.naver.com&amp;ndash;&amp;gt; 헤더정보를 console에 뿌린다. &amp;ndash;15:04:28&amp;ndash;&amp;nbsp; http://www.naver.com/ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; =&amp;gt; index.html&#39; &amp;lt;br&amp;gt;Resolving www.naver.com... done. &amp;lt;br&amp;gt;Connecting to www.naver.com[202.131.30.82]:80... connected.&amp;amp;nbsp; &amp;lt;span style=&amp;quot;background-color: rgb(255, 255, 255); color: rgb(51, 102, 255); font-weight: bold; font-family: &#39;바탕&#39;,&#39;Batang&#39;;&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;background-color: rgb(255, 255, 255); color: rgb(51, 204, 0);&amp;quot;&amp;gt;--&amp;amp;gt; IP는 &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;background-color: rgb(255, 255, 255); color: rgb(51, 204, 0);&amp;quot;&amp;gt;202.131.30.82 &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;background-color: rgb(255, 255, 255); color: rgb(51, 204, 0);&amp;quot;&amp;gt;다.&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;br&amp;gt;HTTP request sent, awaiting response... &amp;lt;br&amp;gt;&amp;amp;nbsp;1 HTTP/1.</description>
     </item>
     

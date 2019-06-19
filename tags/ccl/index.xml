@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ccl on Do What You Want To Do</title>
-    <link>https://example.org/tags/ccl/</link>
+    <link>/tags/ccl/</link>
     <description>Recent content in ccl on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <lastBuildDate>Wed, 26 Dec 2007 14:31:00 +0900</lastBuildDate>
     
-	<atom:link href="https://example.org/tags/ccl/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/ccl/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>조PD Free Music2 : CC Korea Hope Day 에서 조PD가 새 노래를 발표했습니다.</title>
-      <link>https://example.org/posts/%EC%9D%8C%EC%95%85/%EC%A1%B0pd-free-music2-cc-korea-hope-day-%EC%97%90%EC%84%9C-%EC%A1%B0pd%EA%B0%80-%EC%83%88-%EB%85%B8%EB%9E%98%EB%A5%BC-%EB%B0%9C%ED%91%9C%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4./</link>
+      <link>/posts/%EC%9D%8C%EC%95%85/%EC%A1%B0pd-free-music2-cc-korea-hope-day-%EC%97%90%EC%84%9C-%EC%A1%B0pd%EA%B0%80-%EC%83%88-%EB%85%B8%EB%9E%98%EB%A5%BC-%EB%B0%9C%ED%91%9C%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4./</link>
       <pubDate>Wed, 26 Dec 2007 14:31:00 +0900</pubDate>
       
-      <guid>https://example.org/posts/%EC%9D%8C%EC%95%85/%EC%A1%B0pd-free-music2-cc-korea-hope-day-%EC%97%90%EC%84%9C-%EC%A1%B0pd%EA%B0%80-%EC%83%88-%EB%85%B8%EB%9E%98%EB%A5%BC-%EB%B0%9C%ED%91%9C%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4./</guid>
+      <guid>/posts/%EC%9D%8C%EC%95%85/%EC%A1%B0pd-free-music2-cc-korea-hope-day-%EC%97%90%EC%84%9C-%EC%A1%B0pd%EA%B0%80-%EC%83%88-%EB%85%B8%EB%9E%98%EB%A5%BC-%EB%B0%9C%ED%91%9C%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4./</guid>
       <description>CC(Creative Commons)&amp;nbsp;Korea Hope Day 에서 조PD가 새 노래를 발표했습니다.
 주제는 Creative Commons 입니다.
 

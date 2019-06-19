@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>개발자 on Do What You Want To Do</title>
-    <link>https://example.org/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90/</link>
+    <link>/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90/</link>
     <description>Recent content in 개발자 on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <lastBuildDate>Wed, 12 Nov 2008 04:07:00 +0900</lastBuildDate>
     
-	<atom:link href="https://example.org/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>개발자의 자질이라고 한다.</title>
-      <link>https://example.org/posts/software-engineering/%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%9D%98-%EC%9E%90%EC%A7%88%EC%9D%B4%EB%9D%BC%EA%B3%A0-%ED%95%9C%EB%8B%A4./</link>
+      <link>/posts/software-engineering/%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%9D%98-%EC%9E%90%EC%A7%88%EC%9D%B4%EB%9D%BC%EA%B3%A0-%ED%95%9C%EB%8B%A4./</link>
       <pubDate>Wed, 12 Nov 2008 04:07:00 +0900</pubDate>
       
-      <guid>https://example.org/posts/software-engineering/%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%9D%98-%EC%9E%90%EC%A7%88%EC%9D%B4%EB%9D%BC%EA%B3%A0-%ED%95%9C%EB%8B%A4./</guid>
+      <guid>/posts/software-engineering/%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%9D%98-%EC%9E%90%EC%A7%88%EC%9D%B4%EB%9D%BC%EA%B3%A0-%ED%95%9C%EB%8B%A4./</guid>
       <description>해외의 어떤 회사의 구인광고에서 따왔다. 리크루터가 &amp;lsquo;당신의 장점을 말해보세요&amp;rsquo; 라 하면 다음 단어를 잘 조합하면 되겠다. * Accurate * Eye for quality/details * Client focused * Team player * Entrepreneurial mentality * Analytical * Independent * Problem solving * Self starting * Fast learning  --
  </description>
     </item>
