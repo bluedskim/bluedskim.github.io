@@ -1,12 +1,26 @@
 .nested-img img {
-    width: unset;
-    height: unset;
+	width: unset;
+	height: unset;
 }
 
 .comment_gravatar img {
-    width: 30px;
+	width: 30px;
 }
 
-.comment_item , .comment_reply {
-    font-size: 0.8rem;
+.comment_item,
+.comment_reply,
+.comment_writer_info {
+	font-size: 0.8rem;
+}
+
+pre {
+	background-color: #222;
+}
+
+pre code {
+	display: block;
+	padding: 1.5em;
+	font-size: .875rem;
+	liNe-height: 2;
+	color: #ddd;
 }

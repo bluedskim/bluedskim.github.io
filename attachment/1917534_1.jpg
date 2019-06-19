@@ -336,7 +336,7 @@ var logAjax = {
 		});	
 	}
 };
-logAjax.init({ sessionId : '9FQdFS8AOogsJLhiaa2xKd3lHZ46sBCPKNVKhxAVTZY9JFOGUs1yR5YFAGOKR3IV.enswasb01_servlet_engine1', hmpId : 'error', hmpMnuSno : '' , tmpUrl :location.href , bfUrl :'' });
+logAjax.init({ sessionId : 'adoZCjUJiBectO2toPSj7HaBwkzf1fpquWfBh7J2TQ0OWJMvyEGdbx4mUVYLSwDG.enswasb02_servlet_engine2', hmpId : 'error', hmpMnuSno : '' , tmpUrl :location.href , bfUrl :'' });
 </script>
 
 <script type="text/javascript">

@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>war on 하고 싶은 걸 하세요 Do What You Want</title>
-    <link>/tags/war.html</link>
-    <description>Recent content in war on 하고 싶은 걸 하세요 Do What You Want</description>
+    <title>war on Do What You Want To Do</title>
+    <link>https://example.org/tags/war/</link>
+    <description>Recent content in war on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
     <lastBuildDate>Mon, 22 Oct 2007 22:51:00 +0900</lastBuildDate>
     
-	<atom:link href="/tags/war/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.org/tags/war/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>[방구석 영화제]Lord Of War</title>
-      <link>/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9Clord-of-war.html</link>
+      <link>https://example.org/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9Clord-of-war/</link>
       <pubDate>Mon, 22 Oct 2007 22:51:00 +0900</pubDate>
       
-      <guid>/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9Clord-of-war.html</guid>
+      <guid>https://example.org/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9Clord-of-war/</guid>
       <description>사람을 쉽게 많이 죽이기 위한 도구. 너무도 당연한 사실임에도, 그것들을 공장에서 찍어낸다는 생각을 해본적이 없었다. 그렇게 만들어진 총알이 지구를 반바퀴나 돌아서 누군가의 머리를 뚫을 때 방아쇠를 당긴 자만이 살인자가 아니라는 것을 영화는 말하고 싶은거다.  [Lord of War - Openning &amp;amp; The life of a bullet] &amp;ldquo;전세계적으로 5억5천만정 이상의 화기가 유통되고 있어. 열두명 당 한명 꼴이지 문제는, 나머지 열한명을 어떻게 무장시키냐는 거야.&amp;rdquo; 그 무기들이 어떻게 사용되나 더 살펴보자. - 블러드 다이아몬드 (Blood Diamond, 2007) - 시티 오브 갓 (City Of God, Cidade De Deus, 2002)  --</description>
     </item>
     

@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>MySQL on 하고 싶은 걸 하세요 Do What You Want</title>
-    <link>/tags/mysql.html</link>
-    <description>Recent content in MySQL on 하고 싶은 걸 하세요 Do What You Want</description>
+    <title>MySQL on Do What You Want To Do</title>
+    <link>https://example.org/tags/mysql/</link>
+    <description>Recent content in MySQL on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
     <lastBuildDate>Thu, 13 Nov 2008 00:38:00 +0900</lastBuildDate>
     
-	<atom:link href="/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.org/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>MySQL 의 필드 type 변환함수 CAST</title>
-      <link>/posts/software-engineering/mysql-%EC%9D%98-%ED%95%84%EB%93%9C-type-%EB%B3%80%ED%99%98%ED%95%A8%EC%88%98-cast.html</link>
+      <link>https://example.org/posts/software-engineering/mysql-%EC%9D%98-%ED%95%84%EB%93%9C-type-%EB%B3%80%ED%99%98%ED%95%A8%EC%88%98-cast/</link>
       <pubDate>Thu, 13 Nov 2008 00:38:00 +0900</pubDate>
       
-      <guid>/posts/software-engineering/mysql-%EC%9D%98-%ED%95%84%EB%93%9C-type-%EB%B3%80%ED%99%98%ED%95%A8%EC%88%98-cast.html</guid>
+      <guid>https://example.org/posts/software-engineering/mysql-%EC%9D%98-%ED%95%84%EB%93%9C-type-%EB%B3%80%ED%99%98%ED%95%A8%EC%88%98-cast/</guid>
       <description>text 유형 필드에 들어있는 값들을 숫자값 기준으로 정렬하고자 한다면 반드시 해당 필드를 CAST함수를 이용해서 변환해야 한다. 다음 2개의 쿼리를 비교해 보자 * 쿼리 : select * from prices order by price; * 결과 : 1420 1590 1990 220 2390 2660 280 2990 3420 380 3990 4270 450 570 5700 760 850 이건 원하는 결과가 아니다. ㅠㅠ&amp;hellip;. (애초에 테이블을 만들 때 필드를 숫자 형태로 만들었어야 한다&amp;hellip;) CAST함수를 사용한다면, * 쿼리 : select * from prices order by CAST(price AS UNSIGNED); * 결과 : 220 280 380 450 570 760 850 1060 1420 1590 1990 2390 2660 2990 3420 3990 4270 5700 제대로 나온다.</description>
     </item>
     

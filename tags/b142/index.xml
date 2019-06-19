@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>b142 on 하고 싶은 걸 하세요 Do What You Want</title>
-    <link>/tags/b142.html</link>
-    <description>Recent content in b142 on 하고 싶은 걸 하세요 Do What You Want</description>
+    <title>b142 on Do What You Want To Do</title>
+    <link>https://example.org/tags/b142/</link>
+    <description>Recent content in b142 on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
     <lastBuildDate>Sun, 14 Jan 2007 11:21:00 +0900</lastBuildDate>
     
-	<atom:link href="/tags/b142/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.org/tags/b142/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>후지쯔 B142 분해하기</title>
-      <link>/posts/software-engineering/%ED%9B%84%EC%A7%80%EC%AF%94-b142-%EB%B6%84%ED%95%B4%ED%95%98%EA%B8%B0.html</link>
+      <link>https://example.org/posts/software-engineering/%ED%9B%84%EC%A7%80%EC%AF%94-b142-%EB%B6%84%ED%95%B4%ED%95%98%EA%B8%B0/</link>
       <pubDate>Sun, 14 Jan 2007 11:21:00 +0900</pubDate>
       
-      <guid>/posts/software-engineering/%ED%9B%84%EC%A7%80%EC%AF%94-b142-%EB%B6%84%ED%95%B4%ED%95%98%EA%B8%B0.html</guid>
+      <guid>https://example.org/posts/software-engineering/%ED%9B%84%EC%A7%80%EC%AF%94-b142-%EB%B6%84%ED%95%B4%ED%95%98%EA%B8%B0/</guid>
       <description>분해는 http://sandbox.cz/~covex/hw/b112/ 를 참고하면 되는데 (혹은 http://pds4.egloos.com/pds/200701/14/82/fujitsu%20lifebook%20b112_b142%20disassembly.zip) 원본글에 대한 보충설명을 하겠다. 원본글을 반드시 먼저 읽어보시길. 원본글처럼 나사를 모두 풀면 키보드가 분리되는데 본체와 키보드 케이블을 본체 커넥터에서분리해야 한다. 케이블을 잡고 살며시 당기면 빠진다. 반드시 케이블의 뿌리부분을 잡고 당겨야 한다. 아니면 케이블이 끊어질 수 있다. [케이블을 빼는 모습] 다시 넣을때는 잘 안들어간다. 왜냐하면 커넥터가 잠김상태이기 때문이다. [잠긴 모습] 커넥터의 레버를 위로 올려서 &amp;lsquo;풀림&amp;rsquo;상태로 해줘야 한다. [잠김이 풀린 모습] &amp;ndash;&amp;gt; 위의 사진 2개를 비교해 보면 이해될 것임.</description>
     </item>
     
