@@ -1,0 +1,50 @@
+<HTML>
+<HEAD>
+<meta name = "viewport" content="width=device-width">
+<META HTTP-EQUIV=\"expires\" CONTENT=\"-1\">
+<META HTTP-EQUIV=\"Progma\" content=\"no-cache\">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<title>ipTIME NAS</title>
+<link rel="StyleSheet" type="text/css" href="/css/style.1.4.12.css">
+</head>
+
+<BODY STYLE="vertical-align:top;padding:13px;">
+
+<TABLE WIDTH=400 BORDER=0 CELLPADDING=0 CELLSPACING=0 STYLE="table-layout:auto;" ALIGN=left>
+	<TR>
+		<TD WIDTH=400 HEIGHT=78>
+			<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH="100%" HEIGHT="100%" STYLE="border:#D2D2D2 1px solid;">
+			<TR HEIGHT="35">
+				<TD WIDTH="11"></TD>
+				<TD WIDTH="19"><IMG SRC="/image/icon_warning.gif"></TD>
+				<TD STYLE="position:relative;top:2px;"><B>경고</B></TD>
+			</TR>
+			<TR HEIGHT="35">
+				<TD></TD>
+				<TD COLSPAN="2" STYLE="vertical-align:top;line-height:16px;">
+					잘못된 URL 입니다.<BR>
+					올바른 주소를 사용하여 접속하시기 바랍니다.
+				</TD>
+			</TR>
+			<TR><TD COLSPAN="3"></TD></TR>
+			</TABLE>
+		</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT=20 STYLE="vertical-align:bottom;">
+			<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 STYLE="cursor:pointer;" ONCLICK="parent.document.location.href = '/login.cgi?act=logout'">
+			<TR>
+				<TD WIDTH="11"></TD>
+				<TD WIDTH="19"><IMG SRC="/image/icon_return_black.gif"></TD>
+				<TD STYLE="position:relative;top:2px;"><B>로그인화면 돌아가기</B></TD>
+			</TR>
+			</TABLE>
+		</TD>
+	</TR>
+</TABLE>
+
+</BODY>
+
+</HTML>

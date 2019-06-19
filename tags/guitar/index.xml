@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>guitar on Do What You Want To Do</title>
+    <link>https://example.org/tags/guitar/</link>
+    <description>Recent content in guitar on Do What You Want To Do</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <lastBuildDate>Tue, 10 Feb 2015 01:03:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/guitar/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>브라질리언 리듬 기타 워크샵</title>
+      <link>https://example.org/posts/%EC%9D%8C%EC%95%85/%EB%B8%8C%EB%9D%BC%EC%A7%88%EB%A6%AC%EC%96%B8-%EB%A6%AC%EB%93%AC-%EA%B8%B0%ED%83%80-%EC%9B%8C%ED%81%AC%EC%83%B5/</link>
+      <pubDate>Tue, 10 Feb 2015 01:03:00 +0900</pubDate>
+      
+      <guid>https://example.org/posts/%EC%9D%8C%EC%95%85/%EB%B8%8C%EB%9D%BC%EC%A7%88%EB%A6%AC%EC%96%B8-%EB%A6%AC%EB%93%AC-%EA%B8%B0%ED%83%80-%EC%9B%8C%ED%81%AC%EC%83%B5/</guid>
+      <description>제가 스스로 필요하여 보사노바/삼바 기타연주 자료를 정리하다 보니 필요한 분이 계실것 같아서&amp;nbsp;   공유하기 위해 워크샵을 만들게 되었습니다.   이 워크샵은 &amp;lsquo;입문용&amp;rsquo; 입니다 ㅎㅎ   내용은 여기서 http://goo.gl/G0uNYJ 미리 보실 수 있으니 필요하신 분은 주저마시고 신청해주세요 smile emoticon   접수방법은 아래에 나와있습니다      &amp;lt;브라질리언 리듬 기타 워크샵&amp;gt;   일시: 2015년 (상)2월14일, (하)2월28일 / 오후2시~오후4시   장소: 에스꼴라 알레그리아   (서울시 마포구 창전동 4-5번지 지하1층)   수강료: 2회 총 40,000원   접수 방법: 아래 계좌로 수강료 입금 후 확인 메일을 주세요.</description>
+    </item>
+    
+  </channel>
+</rss>

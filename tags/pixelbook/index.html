@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta property="og:title" content="Pixelbook" />
+<meta property="og:description" content="bluedskim@gmail.com" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://example.org/tags/pixelbook/" />
+
+<meta property="og:updated_time" content="2019-03-24T10:38:28&#43;09:00"/>
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Pixelbook"/>
+<meta name="twitter:description" content="bluedskim@gmail.com"/>
+<meta name="generator" content="Hugo 0.55.5" />
+
+
+    
+      
+    
+
+    <link rel="canonical" href="https://example.org/tags/pixelbook/">
+
+    <title>Do What You Want To Do</title>
+
+    
+    <!-- combined, minified CSS -->
+    <link href="https://example.org/css/style.css" rel="stylesheet" integrity="sha384-G5B34w7DFTumWTswxYzTX7NWfbvQEg1HbFFEg6ItN03uTAAoS2qkPS/fu3LhuuSA" crossorigin="anonymous">
+    
+
+    <!-- RSS 2.0 feed -->
+    <link rel="alternate" type="application/rss+xml" href="https://example.org/tags/pixelbook/index.xml" title="Do What You Want To Do" />
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-108812986-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    
+
+    
+	<link rel="stylesheet" href="https://example.org/custom.css">
+
+
+  </head>
+
+  <body>
+
+    
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="nav blog-nav">
+          <a class="nav-link " href="https://example.org/">Home</a>
+          
+          <a class="nav-link" href="/tags/samba/" title="">Samba</a>
+          
+          
+          <a class="nav-link" href="/categories/%EC%9D%8C%EC%95%85/" title="">음악</a>
+          
+          
+          <a class="nav-link" href="/categories/%EC%9D%BC%EC%83%81%EC%82%AC/" title="">일상사</a>
+          
+        </nav>
+      </div>
+    </div>
+    
+
+    
+    
+    <header class="blog-header">
+      <div class="container">
+        <h1 class="blog-title" dir="auto"><a href="https://example.org/" rel="home">Do What You Want To Do</a></h1>
+        <p class="lead blog-description" dir="auto">bluedskim@gmail.com</p>
+      </div>
+    </header>
+    
+    
+
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+
+          
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="https://example.org/posts/tech/%EC%93%B8%EB%A7%8C%ED%95%9C-ubuntu%EC%9A%A9-command-line-%ED%83%80%EC%9D%B4%EB%A8%B8/">각종 작업 소요시간 체크용 우분투용 command line stopwatch</a></h2>
+    <p class="blog-post-meta"><time datetime="2019-03-24T10:38:28&#43;09:00">2019-03-24</time> by Dennis in 
+
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/pixelbook" rel="tag">pixelbook</a>, <a href="/tags/termdown" rel="tag">termdown</a>
+
+</p>
+  </header>
+  간단하게 터미널에서 작업 소요 시간을 체크 할 수 있는 방법들을 찾아봤는데
+https://superuser.com/questions/611538/is-there-a-way-to-display-a-countdown-or-stopwatch-timer-in-a-terminal
+terdon 이라는 분이 알려준 방법은 잘 동작하였지만 https://superuser.com/questions/611538/is-there-a-way-to-display-a-countdown-or-stopwatch-timer-in-a-terminal?answertab=active#tab-top
+~/.bashrc 파일에 함수를 추가하고 터미널에서 바로 호출해서 쓰는 방법이라 프로그램 추가 설치가 필요없다는 장점이 있다.
+countdown(){ date1=$((`date +%s` + $1)); while [ &quot;$date1&quot; -ge `date +%s` ]; do ## Is this more than 24h away? days=$(($(($(( $date1 - $(date +%s))) * 1 ))/86400)) echo -ne &quot;$days day(s) and $(date -u --date @$(($date1 - `date +%s`)) +%H:%M:%S)\r&quot;; sleep 0.
+  <a href='https://example.org/posts/tech/%EC%93%B8%EB%A7%8C%ED%95%9C-ubuntu%EC%9A%A9-command-line-%ED%83%80%EC%9D%B4%EB%A8%B8/'>Read more →</a>
+</article> 
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="https://example.org/posts/tech/howtoinputkorenwithcrostinionpixelbook/">Pixelbook Crostini Linux앱에서 한글 입력하기</a></h2>
+    <p class="blog-post-meta"><time datetime="2019-03-16T22:38:28&#43;09:00">2019-03-16</time> by Dennis in 
+
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/pixelbook" rel="tag">Pixelbook</a>, <a href="/tags/crostini" rel="tag">crostini</a>
+
+</p>
+  </header>
+  영어/알파벳을 쓰는 나라 사람들은 이해하기 힘든 문제가 바로 2byte 이상 문자 입출력 문제이다.
+최신 기술일수록 한글지원이 미약한 경우가 많은데
+역시나 크롬북도 예외가 아니다.
+크롬북은 리눅스 기반이며 그래서 구글에서는 대부분의 크롬북에서 리눅스 프로그램 설치를 지원해주는데
+이것이 바로 프로젝트 Crostini다.
+구글답게 멋지게 구현하였는데 역시나 한글 입력 문제가 있다.
+크롬북의 한글전환 단축키가 리눅스앱에서는 동작하지 않는다는 점이다
+여러 아시아 2byte이상 문자권의 사용자들이 구글에 요구를 해왔던 것 같은데
+구글이 공식 지원해주기 전에 유저들이 방법을 찾아냈다.
+  <a href='https://example.org/posts/tech/howtoinputkorenwithcrostinionpixelbook/'>Read more →</a>
+</article> 
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="https://example.org/posts/tech/hugoonpixelbook/">Pixelbook에서 hugo 설치</a></h2>
+    <p class="blog-post-meta"><time datetime="2019-03-15T22:38:28&#43;09:00">2019-03-15</time> by Dennis in 
+
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/pixelbook" rel="tag">Pixelbook</a>, <a href="/tags/hugo" rel="tag">hugo</a>
+
+</p>
+  </header>
+  설치 ASUS Chromebook C100PA-DS03 에 설치할 때와 마찬가지로 최신버전을 설치하려면 deb 파일을 다운 받아야 한다. 현재 최신 버전은 hugo_0.54.0-1_amd64.deb 이다. 하지만 libsass1이 필요하다고 하니 먼저 설치한다.
+다운로드 경로 https://packages.debian.org/sid/amd64/libsass1/download
+다운 받은 후 설치
+sudo dpkg -i libsass1_3.5.5-2_amd64.deb  다운로드 경로 https://packages.debian.org/sid/amd64/hugo/download
+다운 받은 후 설치
+sudo dpkg -i hugo_0.54.0-1_amd64.deb  구동 pixelbook에서는 hugo 기본 포트인 1313 으로 띄울 수 없으니 아래를 참고하고 https://www.reddit.com/r/Crostini/comments/aewwhf/cannot_access_penguinlinuxtestport/
+서버 띄울 때 포트 변경해줘야 한다. 제일 유명한 포트 중에 하나인 8080을 사용하면 잘 뜬다
+  <a href='https://example.org/posts/tech/hugoonpixelbook/'>Read more →</a>
+</article> 
+
+
+
+
+
+
+
+
+        </div> <!-- /.blog-main -->
+
+        <aside class="col-sm-3 ml-auto blog-sidebar">
+  
+  <section class="sidebar-module sidebar-module-inset">
+    <h4>About</h4>
+    <p dir="auto">잡다한것들을 기록합니다. something to remember</p>
+  </section>
+  
+
+  
+        <section class="sidebar-module">
+    <h4>Recent Posts</h4>
+    <ol class="list-unstyled">
+
+
+<li><a href="/posts/movie/%EC%82%BC%EB%B0%94%EC%99%80-%EC%98%81%ED%99%94%EB%A5%BC-%EC%82%AC%EB%9E%91%ED%95%98%EB%8A%94-%EB%B6%84%EB%93%A4%EC%97%90%EA%B2%8C-%EC%B6%94%EC%B2%9C%ED%95%98%EB%8A%94-%EC%98%81%ED%99%94/">삼바와 영화를 사랑하는 분들에게 추천하는 브라질의 극영화</a></li>
+
+<li><a href="/posts/tech/pixelbook%EC%97%90-docker%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/">pixelbook에 Docker설치하기</a></li>
+
+<li><a href="/posts/tech/%EC%93%B8%EB%A7%8C%ED%95%9C-ubuntu%EC%9A%A9-command-line-%ED%83%80%EC%9D%B4%EB%A8%B8/">각종 작업 소요시간 체크용 우분투용 command line stopwatch</a></li>
+
+<li><a href="/posts/tech/excel-to-redmine-table/">엑셀 데이터를 레드마인 테이블로 변환하는 Javascript</a></li>
+
+<li><a href="/posts/tech/%EC%82%BC%EC%84%B1-%EA%B8%B0%EC%96%B4360-%EC%B9%B4%EB%A9%94%EB%9D%BC-%ED%95%B4%ED%82%B9/">삼성 기어360 카메라(2017) 해킹</a></li>
+
+    </ol>
+  </section>
+
+  
+
+  
+  <section class="sidebar-module">
+    <h4>Links</h4>
+    <ol class="list-unstyled">
+      
+      <li><a href="http://bohemia.band">Bohemia</a></li>
+      
+      <li><a href="https://www.instagram.com/bluedskim/">instagram</a></li>
+      
+    </ol>
+  </section>
+  
+</aside>
+
+
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+    
+
+    
+    <footer class="blog-footer">
+      <p dir="auto">
+      
+      Blog template created by <a href="https://twitter.com/mdo">@mdo</a>, ported to Hugo by <a href='https://twitter.com/mralanorth'>@mralanorth</a>.
+      
+      </p>
+      <p>
+      <a href="#">Back to top</a>
+      </p>
+    </footer>
+    
+
+  </body>
+
+</html>

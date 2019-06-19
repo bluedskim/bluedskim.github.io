@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta property="og:title" content="java TCP Proxy" />
+<meta property="og:description" content="dodgyTCPProxy.zip &ndash;&gt; 다운로드 활용 시나리오는 이렇다 A사에서는 java로 구현된 sms 발송기 구축를 자사에 요청했다. sms 발송기는 A사의 머신에 탑재되어야 하며 sms 발송요청을 받을 sms 서버는 B사 의 서버이며 A사의 클라이언트용 머신과 B사의 서버용 머신은 내부네트ㅤㅇㅝㅋ으로 연결되어 있다. B사의 sms서버는 내부망의 클라이언트의 요청만 받게 되어 있다. 즉 192.168. 로 시작하는 IP의 클라이언트만 접속을 허용한다. 따라서 본인 pc에서 바로 접속이 불가능ㅤㅎㅏㄷ. 다행히도 A 사는 개발편의를 위해서 sms 클라이언트용 머신의 telnet과 ftp을 자사에 개방해주었다." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.org/posts/software-engineering/java-tcp-proxy/" />
+<meta property="article:published_time" content="2006-09-29T23:54:00&#43;09:00"/>
+<meta property="article:modified_time" content="2006-09-29T23:54:00&#43;09:00"/>
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="java TCP Proxy"/>
+<meta name="twitter:description" content="dodgyTCPProxy.zip &ndash;&gt; 다운로드 활용 시나리오는 이렇다 A사에서는 java로 구현된 sms 발송기 구축를 자사에 요청했다. sms 발송기는 A사의 머신에 탑재되어야 하며 sms 발송요청을 받을 sms 서버는 B사 의 서버이며 A사의 클라이언트용 머신과 B사의 서버용 머신은 내부네트ㅤㅇㅝㅋ으로 연결되어 있다. B사의 sms서버는 내부망의 클라이언트의 요청만 받게 되어 있다. 즉 192.168. 로 시작하는 IP의 클라이언트만 접속을 허용한다. 따라서 본인 pc에서 바로 접속이 불가능ㅤㅎㅏㄷ. 다행히도 A 사는 개발편의를 위해서 sms 클라이언트용 머신의 telnet과 ftp을 자사에 개방해주었다."/>
+<meta name="generator" content="Hugo 0.55.5" />
+
+
+    
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "java TCP Proxy",
+  "url": "https://example.org/posts/software-engineering/java-tcp-proxy/",
+  "wordCount": "156",
+  "datePublished": "2006-09-29T23:54:00&#43;09:00",
+  "dateModified": "2006-09-29T23:54:00&#43;09:00",
+  "author": {
+    "@type": "Person",
+    "name": "Dennis"
+  },
+  "keywords": "Software Engineering"
+}
+</script>
+
+
+
+    <link rel="canonical" href="https://example.org/posts/software-engineering/java-tcp-proxy/">
+
+    <title>java TCP Proxy | Do What You Want To Do</title>
+
+    
+    <!-- combined, minified CSS -->
+    <link href="https://example.org/css/style.css" rel="stylesheet" integrity="sha384-G5B34w7DFTumWTswxYzTX7NWfbvQEg1HbFFEg6ItN03uTAAoS2qkPS/fu3LhuuSA" crossorigin="anonymous">
+    
+
+    <!-- RSS 2.0 feed -->
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-108812986-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    
+
+    
+	<link rel="stylesheet" href="https://example.org/custom.css">
+
+
+  </head>
+
+  <body>
+
+    
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="nav blog-nav">
+          <a class="nav-link " href="https://example.org/">Home</a>
+          
+          <a class="nav-link" href="/tags/samba/" title="">Samba</a>
+          
+          
+          <a class="nav-link" href="/categories/%EC%9D%8C%EC%95%85/" title="">음악</a>
+          
+          
+          <a class="nav-link" href="/categories/%EC%9D%BC%EC%83%81%EC%82%AC/" title="">일상사</a>
+          
+        </nav>
+      </div>
+    </div>
+    
+
+    
+    
+    <header class="blog-header">
+      <div class="container">
+        <h1 class="blog-title" dir="auto"><a href="https://example.org/" rel="home">Do What You Want To Do</a></h1>
+        <p class="lead blog-description" dir="auto">bluedskim@gmail.com</p>
+      </div>
+    </header>
+    
+    
+
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+
+          
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="https://example.org/posts/software-engineering/java-tcp-proxy/">java TCP Proxy</a></h2>
+    <p class="blog-post-meta"><time datetime="2006-09-29T23:54:00&#43;09:00">2006-09-29</time> by Dennis in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/software-engineering" rel="category tag">Software Engineering</a>
+
+
+</p>
+  </header>
+  <p><span class="copyright_entry" style="display:block;" title="java TCP Proxy@@**@@http://shed.egloos.com/1423324"></span>
+<a href="http://pds2.egloos.com/pds/1/200609/29/82/dodgyTCPProxy.zip" egloo="file">dodgyTCPProxy.zip &ndash;&gt; 다운로드</a>
+<br>
+<br>활용 시나리오는 이렇다
+<br>
+<br>A사에서는 java로 구현된 sms 발송기 구축를 자사에 요청했다.
+<br>
+<br>sms 발송기는 A사의 머신에 탑재되어야 하며
+<br>
+<br>sms 발송요청을 받을 sms 서버는 B사 의 서버이며
+<br>
+<br>A사의 클라이언트용 머신과 B사의 서버용 머신은 내부네트ㅤㅇㅝㅋ으로 연결되어 있다.
+<br>
+<br>B사의 sms서버는 내부망의 클라이언트의 요청만 받게 되어 있다. 즉 192.168. 로 시작하는 IP의 클라이언트만 접속을 허용한다. 따라서 본인 pc에서 바로 접속이 불가능ㅤㅎㅏㄷ.
+<br>
+<br>다행히도 A 사는 개발편의를 위해서 sms 클라이언트용 머신의 telnet과 ftp을 자사에 개방해주었다.
+<br>
+<br>그러나 개발은 본인 pc에서 진행하기 때문에 테스트를 하려면 개발소스를 A사의 클라이언트 머신에 업로드 후 진행해야 하므로 무지 불편하다.
+<br>
+<br>그래서 찾아낸 것이 바로 TCP Proxy 이다.
+<br>
+<br>TCP Proxy를 A사의 클라이언트 머신에 설치하여 본인 pc와 B사 서버사이에 proxy로 사용하여 개발을 진행하는 것이다.
+<br>
+<br>그러나 문제가 있었으니 바로 byte ordering 문제이다.
+<br>
+<br>본인 pc는 인텔기반 윈도우 머신이고 sms클라이언트용 머신은 Hp Unix였으니&hellip;
+<br>
+<br>TCP Proxy가 무용지물이라는 거다.
+<br>
+<br>
+<br>(그래서 대안으로 모든 프로토콜을 준수하는 가짜 서버를 개발하여 본인 pc에서 작업하였다. -.-&hellip; 엄청난 삽질이다. B 사는 테스트용도의 서버프로그램이 있을거 같은데 미리 제공해주면 좋지 않나?)
+<br>
+<!--
+       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+       <rdf:Description
+            rdf:about="http://shed.egloos.com/1423324"
+            dc:identifier="http://shed.egloos.com/1423324"
+            dc:title="java TCP Proxy"
+            trackback:ping="http://shed.egloos.com/tb/1423324"/>
+       </rdf:RDF>
+       --></p>
+
+<ul></ul>
+
+
+  
+
+  
+  <hr>
+  <footer>
+
+  
+    <section>
+    <h4>Share</h4>
+    <nav class="nav sharing-icons">
+      <a class="nav-item" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fexample.org%2fposts%2fsoftware-engineering%2fjava-tcp-proxy%2f" title="Share on Facebook"><span class="fa fa-facebook fa-2x" aria-hidden="true"></span></a>
+      <a class="nav-item" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fexample.org%2fposts%2fsoftware-engineering%2fjava-tcp-proxy%2f" title="Share on LinkedIn"><span class="fa fa-linkedin fa-2x" aria-hidden="true"></span></a>
+      <a class="nav-item" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fexample.org%2fposts%2fsoftware-engineering%2fjava-tcp-proxy%2f&amp;text=java%20TCP%20Proxy" title="Tweet this"><span class="fa fa-twitter fa-2x"></span></a>
+    </nav>
+  </section>
+
+  
+
+  
+  </footer>
+  
+
+</article> 
+
+
+
+        </div> <!-- /.blog-main -->
+
+        <aside class="col-sm-3 ml-auto blog-sidebar">
+  
+  <section class="sidebar-module sidebar-module-inset">
+    <h4>About</h4>
+    <p dir="auto">잡다한것들을 기록합니다. something to remember</p>
+  </section>
+  
+
+  
+        <section class="sidebar-module">
+    <h4>Recent Posts</h4>
+    <ol class="list-unstyled">
+
+
+<li><a href="/posts/movie/%EC%82%BC%EB%B0%94%EC%99%80-%EC%98%81%ED%99%94%EB%A5%BC-%EC%82%AC%EB%9E%91%ED%95%98%EB%8A%94-%EB%B6%84%EB%93%A4%EC%97%90%EA%B2%8C-%EC%B6%94%EC%B2%9C%ED%95%98%EB%8A%94-%EC%98%81%ED%99%94/">삼바와 영화를 사랑하는 분들에게 추천하는 브라질의 극영화</a></li>
+
+<li><a href="/posts/tech/pixelbook%EC%97%90-docker%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/">pixelbook에 Docker설치하기</a></li>
+
+<li><a href="/posts/tech/%EC%93%B8%EB%A7%8C%ED%95%9C-ubuntu%EC%9A%A9-command-line-%ED%83%80%EC%9D%B4%EB%A8%B8/">각종 작업 소요시간 체크용 우분투용 command line stopwatch</a></li>
+
+<li><a href="/posts/tech/excel-to-redmine-table/">엑셀 데이터를 레드마인 테이블로 변환하는 Javascript</a></li>
+
+<li><a href="/posts/tech/%EC%82%BC%EC%84%B1-%EA%B8%B0%EC%96%B4360-%EC%B9%B4%EB%A9%94%EB%9D%BC-%ED%95%B4%ED%82%B9/">삼성 기어360 카메라(2017) 해킹</a></li>
+
+    </ol>
+  </section>
+
+  
+
+  
+  <section class="sidebar-module">
+    <h4>Links</h4>
+    <ol class="list-unstyled">
+      
+      <li><a href="http://bohemia.band">Bohemia</a></li>
+      
+      <li><a href="https://www.instagram.com/bluedskim/">instagram</a></li>
+      
+    </ol>
+  </section>
+  
+</aside>
+
+
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+    
+
+    
+    <footer class="blog-footer">
+      <p dir="auto">
+      
+      Blog template created by <a href="https://twitter.com/mdo">@mdo</a>, ported to Hugo by <a href='https://twitter.com/mralanorth'>@mralanorth</a>.
+      
+      </p>
+      <p>
+      <a href="#">Back to top</a>
+      </p>
+    </footer>
+    
+
+  </body>
+
+</html>
