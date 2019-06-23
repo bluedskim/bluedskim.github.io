@@ -17,11 +17,7 @@
       <pubDate>Sun, 24 Mar 2019 10:38:28 +0900</pubDate>
       
       <guid>/posts/tech/%EC%93%B8%EB%A7%8C%ED%95%9C-ubuntu%EC%9A%A9-command-line-%ED%83%80%EC%9D%B4%EB%A8%B8/</guid>
-      <description>간단하게 터미널에서 작업 소요 시간을 체크 할 수 있는 방법들을 찾아봤는데
-https://superuser.com/questions/611538/is-there-a-way-to-display-a-countdown-or-stopwatch-timer-in-a-terminal
-terdon 이라는 분이 알려준 방법은 잘 동작하였지만 https://superuser.com/questions/611538/is-there-a-way-to-display-a-countdown-or-stopwatch-timer-in-a-terminal?answertab=active#tab-top
-~/.bashrc 파일에 함수를 추가하고 터미널에서 바로 호출해서 쓰는 방법이라 프로그램 추가 설치가 필요없다는 장점이 있다.
-countdown(){ date1=$((`date +%s` + $1)); while [ &amp;quot;$date1&amp;quot; -ge `date +%s` ]; do ## Is this more than 24h away? days=$(($(($(( $date1 - $(date +%s))) * 1 ))/86400)) echo -ne &amp;quot;$days day(s) and $(date -u --date @$(($date1 - `date +%s`)) +%H:%M:%S)\r&amp;quot;; sleep 0.</description>
+      <description>간단하게 터미널에서 작업 소요 시간을 체크 할 수 있는 방법들을 찾아봤는데 https://superuser.com/questions/611538/is-there-a-way-to-display-a-countdown-or-stopwatch-timer-in-a-terminal terdon 이라는 분이 알려준 방법은 잘 동작하였지만 https://superuser.com/questions/611538/is-there-a-way-to-display-a-countdown-or-stopwatch-timer-in-a-terminal?answertab=active#tab-top ~/.bashrc 파일에 함수를 추가하고 터미널에서 바로</description>
     </item>
     
     <item>
@@ -30,15 +26,7 @@ countdown(){ date1=$((`date +%s` + $1)); while [ &amp;quot;$date1&amp;quot; -ge 
       <pubDate>Sat, 16 Mar 2019 22:38:28 +0900</pubDate>
       
       <guid>/posts/tech/howtoinputkorenwithcrostinionpixelbook/</guid>
-      <description>영어/알파벳을 쓰는 나라 사람들은 이해하기 힘든 문제가 바로 2byte 이상 문자 입출력 문제이다.
-최신 기술일수록 한글지원이 미약한 경우가 많은데
-역시나 크롬북도 예외가 아니다.
-크롬북은 리눅스 기반이며 그래서 구글에서는 대부분의 크롬북에서 리눅스 프로그램 설치를 지원해주는데
-이것이 바로 프로젝트 Crostini다.
-구글답게 멋지게 구현하였는데 역시나 한글 입력 문제가 있다.
-크롬북의 한글전환 단축키가 리눅스앱에서는 동작하지 않는다는 점이다
-여러 아시아 2byte이상 문자권의 사용자들이 구글에 요구를 해왔던 것 같은데
-구글이 공식 지원해주기 전에 유저들이 방법을 찾아냈다.</description>
+      <description>영어/알파벳을 쓰는 나라 사람들은 이해하기 힘든 문제가 바로 2byte 이상 문자 입출력 문제이다. 최신 기술일수록 한글지원이 미약한 경우가 많은데 역시나 크롬북도 예외가</description>
     </item>
     
     <item>
@@ -47,13 +35,7 @@ countdown(){ date1=$((`date +%s` + $1)); while [ &amp;quot;$date1&amp;quot; -ge 
       <pubDate>Fri, 15 Mar 2019 22:38:28 +0900</pubDate>
       
       <guid>/posts/tech/hugoonpixelbook/</guid>
-      <description>설치 ASUS Chromebook C100PA-DS03 에 설치할 때와 마찬가지로 최신버전을 설치하려면 deb 파일을 다운 받아야 한다. 현재 최신 버전은 hugo_0.54.0-1_amd64.deb 이다. 하지만 libsass1이 필요하다고 하니 먼저 설치한다.
-다운로드 경로 https://packages.debian.org/sid/amd64/libsass1/download
-다운 받은 후 설치
-sudo dpkg -i libsass1_3.5.5-2_amd64.deb  다운로드 경로 https://packages.debian.org/sid/amd64/hugo/download
-다운 받은 후 설치
-sudo dpkg -i hugo_0.54.0-1_amd64.deb  구동 pixelbook에서는 hugo 기본 포트인 1313 으로 띄울 수 없으니 아래를 참고하고 https://www.reddit.com/r/Crostini/comments/aewwhf/cannot_access_penguinlinuxtestport/
-서버 띄울 때 포트 변경해줘야 한다. 제일 유명한 포트 중에 하나인 8080을 사용하면 잘 뜬다</description>
+      <description>설치 ASUS Chromebook C100PA-DS03 에 설치할 때와 마찬가지로 최신버전을 설치하려면 deb 파일을 다운 받아야 한다. 현재 최신 버전은 hugo_0.54.0-1_amd64.deb 이다. 하지만 libsass1이 필요하다고 하니 먼저</description>
     </item>
     
   </channel>

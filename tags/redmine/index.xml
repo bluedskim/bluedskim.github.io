@@ -17,11 +17,7 @@
       <pubDate>Thu, 21 Mar 2019 20:38:28 +0900</pubDate>
       
       <guid>/posts/tech/excel-to-redmine-table/</guid>
-      <description>레드마인에 테이블로 데이터를 보여줄 경우가 점점 많아지는데 수작업으로 하려니 너무 힘들어서 만들었다
-https://jsfiddle.net/shed/pxc93nz6/
-엑셀에서 셀들을 복사한 후 위쪽 textarea에 붙히면 알아서 변환되고 redmine 태그가 복사되는데 첫번째 줄은 header로 인식해서 bold처리 한다
-엑셀(혹은 구글 시트)에서 복사하고 
-변환한 후 redmine에 붙히면 이렇게 나온다</description>
+      <description>레드마인에 테이블로 데이터를 보여줄 경우가 점점 많아지는데 수작업으로 하려니 너무 힘들어서 만들었다 https://jsfiddle.net/shed/pxc93nz6/ 엑셀에서 셀들을 복사한 후 위쪽 textarea에 붙히면</description>
     </item>
     
   </channel>

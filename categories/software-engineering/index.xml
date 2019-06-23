@@ -17,12 +17,7 @@
       <pubDate>Sat, 17 Jul 2010 12:53:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/%EC%9E%83%EC%96%B4%EB%B2%84%EB%A6%B0_%EB%8F%84%EB%82%9C%EB%8B%B9%ED%95%9C-ipad-iphone-ipod-%EB%A5%BC-%EC%B0%BE%EA%B8%B0-%EC%9C%84%ED%95%9C-%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4/</guid>
-      <description>간략하게 정리하면&amp;nbsp;    iPad 에서 매시간마다 특정 웹페이지를 방문하도록 함(wget 이용)
- 그 웹페이지는 현재 iPad의 IP 주소를 기록함 (&amp;nbsp;ipadLog.zip&amp;nbsp;)&amp;nbsp;
-참조 URL :&amp;nbsp;http://brazilflavored.com/ipadLog/logs/2010_07_16_log.txt&amp;nbsp;&amp;nbsp;
- http://ipwhois.nic.or.kr/&amp;nbsp;에서&amp;nbsp;가장 최근의 IP 주소로 조회하면 해당&amp;nbsp;IP주소관리자 연락처를 알 수 있음
- IP주소관리자에게&amp;nbsp;전화해서 그 시간에 그 아이피가 할당된 인터넷 모뎀의 대여자가 누구인지, 주소는 어디인지&amp;nbsp;물어본다.
-안가르쳐주면 경찰에 도난신고      ※ 위의 방법은 탈옥해야 가능   ※ php를 돌릴 수 있는 웹호스팅 필요 ※ 이런거를 쉽게 해주는 어플이 있는것으로 알고 있음   다시 상세하게     1.</description>
+      <description>간략하게 정리하면&amp;nbsp; iPad 에서 매시간마다 특정 웹페이지를 방문하도록 함(wget 이용) 그 웹페이지는 현재 iPad의 IP 주소를 기록함 (&amp;nbsp;ipadLog.zip&amp;nbsp;)&amp;nbsp; 참조 URL :&amp;nbsp;http://brazilflavored.com/ipadLog/logs/2010_07_16_log.txt&amp;nbsp;&amp;nbsp; ht</description>
     </item>
     
     <item>
@@ -31,8 +26,7 @@
       <pubDate>Wed, 15 Jul 2009 12:52:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/%EC%84%B8%EC%83%81%EC%97%90%EB%8A%94-%EB%91%90-%EC%A2%85%EB%A5%98%EC%9D%98-%EC%9C%84%EB%8C%80%ED%95%9C-%EC%82%AC%EB%9E%8C%EC%9D%B4-%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.-%ED%95%98%EB%82%98%EB%8A%94-%EC%A7%81%EC%A0%91-%EC%9C%84%EB%8C%80%ED%95%9C-%EC%9D%BC%EC%9D%84-%ED%95%98%EB%8A%94-%EC%82%AC%EB%9E%8C%EC%9D%B4%EA%B3%A0-%EB%98%90-%ED%95%98%EB%82%98%EB%8A%94-%EB%8B%A4%EB%A5%B8-%EC%82%AC%EB%9E%8C%EC%9D%B4-%EC%9C%84%EB%8C%80%ED%95%9C-%EC%9D%BC%EC%9D%84-%ED%95%98%EA%B2%8C-%EB%8F%84%EC%99%80%EC%A3%BC%EB%8A%94-%EC%82%AC%EB%9E%8C%EC%9E%85%EB%8B%88%EB%8B%A4.-%ED%9B%84%EC%9E%90%EB%8F%84-%EC%9C%84%EB%8C%80%ED%95%9C-%EC%82%AC%EB%9E%8C%EC%9E%85%EB%8B%88%EB%8B%A4./</guid>
-      <description>&amp;ldquo;세상에는 두 종류의 위대한 사람이 있습니다. 하나는 직접 위대한 일을 하는 사람이고, 또 하나는 다른 사람이 위대한 일을 하게 도와주는 사람입니다. 후자도 위대한 사람입니다.&amp;rdquo; (&amp;rdquo; 코치는 선수가 아니다&amp;rdquo; 중 에서) 다른 사람이 위대한 일을 하게 도와주는 &amp;lsquo;관리자&amp;rsquo;를 만나고 싶다.  --
- </description>
+      <description>&amp;ldquo;세상에는 두 종류의 위대한 사람이 있습니다. 하나는 직접 위대한 일을 하는 사람이고, 또 하나는 다른 사람이 위대한 일을 하게 도와주는 사람입니다. 후</description>
     </item>
     
     <item>
@@ -41,7 +35,7 @@
       <pubDate>Mon, 29 Jun 2009 11:06:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/%EC%A3%BC%EB%AA%A9%ED%95%98%EB%8A%94-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%8D%A8%EB%8B%88%EC%9D%98-%E4%B8%80%E7%94%9F%E7%89%9B%E6%AD%A5%E8%A1%8C-%EC%97%90%EC%84%9C-%ED%8D%BC%EC%98%B4/</guid>
-      <description>&amp;ldquo; 써니의 一生牛步行&amp;rdquo; http://sunnykwak.egloos.com/4418486 에 유용한 IT(개발)관련 블로그 목록을 보고 opml로 만들었다. 아래는 목록이다. * All of Software * art.oriented * Channy&amp;rsquo;s Blog * Eternity&amp;rsquo;s Chit-Chat * From Business To Code * Insight.. * Intellectual Wanderlust * Life Algorithm * Me, You and Us - calmglow * My Words, Your Memory * No Karma * NWC 컨설팅 블로그 * OK 괜찮아 다 잘 될거야 * ologist`s blog2.0 * Talk about Software with hani * Toby&amp;rsquo;s Epril * Trace Forward * Trustin Lee&amp;rsquo;s GLEAMYNODE.</description>
+      <description>&amp;ldquo; 써니의 一生牛步行&amp;rdquo; http://sunnykwak.egloos.com/4418486 에 유용한 IT(개발)관련 블로그 목록을 보고 opml로 만들었다. 아래는 목록이다. * All of Software * art.oriented * Channy&amp;rsquo;s Blog * Eternity&amp;rsquo;s Chit-Chat * From Business</description>
     </item>
     
     <item>
@@ -50,8 +44,7 @@
       <pubDate>Sat, 27 Jun 2009 14:40:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8-%EA%B3%84%EC%B8%B5%EB%8F%84-%EC%9E%90%EB%B0%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EB%8A%94-%EC%9E%90%EC%8B%A0%EB%93%A4%EC%9D%B4-html%EC%9D%84-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%96%B8%EC%96%B4%EB%9D%BC%EA%B3%A0-%EC%A3%BC%EC%9E%A5%ED%95%98%EB%8A%94-%EC%82%AC%EB%9E%8C%EB%93%A4%EB%B3%B4%EB%8B%A4-%EC%9A%B0%EC%9B%94%ED%95%98%EB%8B%A4%EA%B3%A0-%EC%83%9D%EA%B0%81%ED%95%9C%EB%8B%A4./</guid>
-      <description>흥분하지 말고, 그냥 재미로 보자  (원본 : http://lukewelling.com/2006/08/03/java-programmers-are-the-erotic-furries-of-programming/)  --
- </description>
+      <description>흥분하지 말고, 그냥 재미로 보자 (원본 : http://lukewelling.com/2006/08/03/java-programmers-are-the-erotic-furries-of-programming/) --</description>
     </item>
     
     <item>
@@ -60,8 +53,7 @@
       <pubDate>Thu, 18 Jun 2009 14:10:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/%EC%97%91%EC%85%80%EC%97%90%EC%84%9C-%EC%85%80-%EB%82%B4%EC%9A%A9%EC%9D%B4-%EB%B3%80%EA%B2%BD%EB%90%98%EC%97%88%EC%9D%84-%EB%95%8C-%EB%B0%9C%EC%83%9D%ED%95%98%EB%8A%94-%EC%9D%B4%EB%B2%A4%ED%8A%B8-catch-%ED%95%98%EA%B8%B0/</guid>
-      <description>엑셀에서 특정 cell이 변경되었을 때 이벤트를 잡을 수(catch)있다. &amp;lt;참고 URL&amp;gt; http://0607.tistory.com/tag/Excel http://www.eggheadcafe.com/forumarchives/Excelprogramming/Dec2005/post25592375.asp http://www.ozgrid.com/VBA/run-macros-change.htm * 엑셀예제 : catchingCellValueChangeEvent.xls  --
- </description>
+      <description>엑셀에서 특정 cell이 변경되었을 때 이벤트를 잡을 수(catch)있다. &amp;lt;참고 URL&amp;gt; http://0607.tistory.com/tag/Excel http://www.eggheadcafe.com/forumarchives/Excelprogramming/Dec2005/post25592375.asp http://www.ozgrid.com/VBA/run-macros-change.htm * 엑셀예제 : catchingCellValueChangeEvent.xls --</description>
     </item>
     
     <item>
@@ -70,8 +62,7 @@
       <pubDate>Wed, 17 Jun 2009 12:50:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/%EC%9B%B9%EA%B0%9C%EB%B0%9C%EC%9D%98-%ED%9D%90%EB%A6%84-web_development_timeline.png/</guid>
-      <description>10년 세월이 주마등 처럼 지나간다. 인터넷이 있어서 정말 다행이다. http://upload.wikimedia.org/wikipedia/commons/e/e4/Web_development_timeline.png 출처 http://wikimedia.org/  --
- 써니 2009/06/17 19:26 #  답글    웹으로 10년간 밥벌이 했지만... 저 기록을 다시 보니... &#39;뭐야 이거 무서워...&#39;라는 말이 저절로... 어쨋건, 링크 감사 합니다.    </description>
+      <description>10년 세월이 주마등 처럼 지나간다. 인터넷이 있어서 정말 다행이다. http://upload.wikimedia.org/wikipedia/commons/e/e4/Web_development_timeline.png 출처 http://wikimedia.org/ -- 써니 2009/06/17 19:26 # 답글 웹으로 10년간 밥벌이 했지만... 저 기록을 다시 보니... &#39;</description>
     </item>
     
     <item>
@@ -80,8 +71,7 @@
       <pubDate>Fri, 12 Jun 2009 15:24:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/xming%EC%9D%84-%EC%9D%B4%EC%9A%A9-gnome_kde-%EB%8D%B0%EC%8A%A4%ED%81%AC%ED%83%91-%EB%9D%84%EC%9A%B0%EA%B8%B0/</guid>
-      <description>http://jetzt.tistory.com/529 에 보면 잘 나와있다. 다음 첨부는 설정파일이므로 파일 설정만 바꿔도 된다. gnome-session.config.xlaunch 근데 Xming 을 어떻게 읽어야 하나? 엑스밍? 즈밍?  --
- </description>
+      <description>http://jetzt.tistory.com/529 에 보면 잘 나와있다. 다음 첨부는 설정파일이므로 파일 설정만 바꿔도 된다. gnome-session.config.xlaunch 근데 Xming 을 어떻게 읽어야 하나? 엑스밍? 즈밍? --</description>
     </item>
     
     <item>
@@ -90,14 +80,7 @@
       <pubDate>Tue, 19 May 2009 13:22:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/the-dos-and-donts-of-a-java-position-interview/</guid>
-      <description>왠만해서는 copy &amp;amp; paste는 안하려고 하지만 이거는 나중에 혹시나 없어질까 봐서 해둔다.
-
-The Dos and Don&amp;rsquo;ts of a Java Position Interview
-
-By Liviu Tudor
-Go to page: 1 &amp;nbsp;2 &amp;nbsp;Next &amp;nbsp;
-
-I&amp;rsquo;m suremany of us in the Java field have been through this — the interviewthat&amp;rsquo;s going to get our next job! I&amp;rsquo;m also sure many of us have checkedthe usual places on the Net for hints about how to prepare for &amp;ldquo;theperfect interview.</description>
+      <description>왠만해서는 copy &amp;amp; paste는 안하려고 하지만 이거는 나중에 혹시나 없어질까 봐서 해둔다. The Dos and Don&amp;rsquo;ts of a Java Position Interview By Liviu Tudor Go to page: 1 &amp;nbsp;2 &amp;nbsp;Next &amp;nbsp; I&amp;rsquo;m suremany of us in the Java field have been through this</description>
     </item>
     
     <item>
@@ -106,11 +89,7 @@ I&amp;rsquo;m suremany of us in the Java field have been through this — the in
       <pubDate>Thu, 14 May 2009 01:19:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/portable-ubuntu-%ED%8C%81/</guid>
-      <description>Portable Ubuntu 는 윈도우 시스템 위에서 설치 사용할 수 있는 우분투이다. 속도는 느리지만 리눅스 체험용으로는 충분하다. * 처음 설치하기 : http://www.choboweb.com/900 * 업그레이드 하기(이미지 파일 사이즈 늘이기) &amp;amp; Xming을 최신판으로 교체 하여 속도 향상하기 : http://honeyperl.tistory.com/61  C 드라이브 말고 다른 드라이브 마운트 하기
-정답은 아니다. 다른 좋은 방법이 있을 듯&amp;hellip;.
-어쨌든 /etc/portable_ubuntu/portable_ubuntu.conf 를 열어서 5째 라인의 cofs1=c:\ 를 cofs1=d:\ 로 수정
- Tomcat 을 윈도우에서 접속하기
-8080포트를 열어야 한다.</description>
+      <description>Portable Ubuntu 는 윈도우 시스템 위에서 설치 사용할 수 있는 우분투이다. 속도는 느리지만 리눅스 체험용으로는 충분하다. * 처음 설치하기 : http://www.choboweb.com/900 * 업그레이드 하기(이미지 파일</description>
     </item>
     
     <item>
@@ -119,7 +98,7 @@ I&amp;rsquo;m suremany of us in the Java field have been through this — the in
       <pubDate>Wed, 13 May 2009 14:45:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A3%BD%EC%9D%B4%EB%8A%94-101%EA%B0%80%EC%A7%80-%EB%B0%A9%EB%B2%95/</guid>
-      <description>PM+P 문제집(PMP 수험문제집)&amp;nbsp; 중에서 1. 일정, 원가 목표를 달성하기 힘든 프로젝트 일수록 성공하면 회사 내에서 인정받을 가능이 높다. 아무도 하지 않으려고 할 때 과감하게 지원하라. 2. 고객만족은 직원만족보다 우선이고 회사의 존재 이유이다. 고객의 요구사항은 항상 수용하라. 3. 검증되지 않은 IT에 대하여 개척자 정신을 발휘하여 과감하게 채택하라. 4. 고객은 시스템을 보고 나서 본격적인 요구사항을 제시하게 되어있다. 개발 완료 이후부터 쏟아지는 변경사항을 최대한 수용하라. 5. 계약 시에 모든 업무범위를 명확하게 하는 것은 불가능하다.</description>
+      <description>PM+P 문제집(PMP 수험문제집)&amp;nbsp; 중에서 1. 일정, 원가 목표를 달성하기 힘든 프로젝트 일수록 성공하면 회사 내에서 인정받을 가능이 높다. 아무도 하지 않</description>
     </item>
     
     <item>
@@ -128,7 +107,7 @@ I&amp;rsquo;m suremany of us in the Java field have been through this — the in
       <pubDate>Wed, 04 Feb 2009 19:59:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/javascript%EC%9D%98-date.gettimezoneoffset-%EC%98%A4%EB%8F%99%EC%9E%91/</guid>
-      <description>Windows 의 제어판에서 GMT를 변경했는데 Javascript의 Date.getTimezoneOffset() 리턴값이 변경되지 않는다면 Google Chrome, Firefox의 경우 리스타트를 해줘야 한다. Internet Explorer는 상관없다. &amp;lt;script type=&amp;ldquo;text/javascript&amp;rdquo;&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp; var curDateTime = new Date(); &amp;nbsp;&amp;nbsp;&amp;nbsp; var gmtOffsetHour = Math.floor(-(curDateTime.getTimezoneOffset()/60)); &amp;nbsp;&amp;nbsp;&amp;nbsp; if(curDateTime.getTimezoneOffset() &amp;gt; 0) { &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; gmtOffsetHour = Math.ceil(-(curDateTime.getTimezoneOffset()/60)); &amp;nbsp;&amp;nbsp;&amp;nbsp; } &amp;nbsp;&amp;nbsp;&amp;nbsp; var gmtOffsetMin = (-(curDateTime.getTimezoneOffset() % 60)); &amp;nbsp;&amp;nbsp;&amp;nbsp; gmtOffsetMin = Math.abs(gmtOffsetMin); &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; var gmtOffst = gmtOffsetHour + &amp;ldquo;:&amp;rdquo; + ((gmtOffsetMin == 0) ? &amp;ldquo;0&amp;rdquo; : &amp;ldquo;&amp;rdquo;) + gmtOffsetMin; &amp;nbsp;&amp;nbsp;&amp;nbsp; alert(&amp;lsquo;gmtOffst=&amp;rsquo; + gmtOffst); &amp;lt;/script&amp;gt;  --</description>
+      <description>Windows 의 제어판에서 GMT를 변경했는데 Javascript의 Date.getTimezoneOffset() 리턴값이 변경되지 않는다면 Google Chrome, Firefox의 경우 리스타트를 해줘야 한다. Internet Explor</description>
     </item>
     
     <item>
@@ -137,8 +116,7 @@ I&amp;rsquo;m suremany of us in the Java field have been through this — the in
       <pubDate>Fri, 16 Jan 2009 20:19:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/postgre-%EB%B0%B1%EC%97%85%ED%8C%8C%EC%9D%BC-%EB%B3%B5%EC%9B%90-%EB%AA%85%EB%A0%B9/</guid>
-      <description>  E:\Program Files\PostgreSQL\8.2\bin&amp;gt;psql dbName &amp;lt; E:\eclipse3.3.2\workspace\ijoin   \database\html_static_labels.backup&amp;nbsp;userId   Password for user ijoin: thePassword   --
- </description>
+      <description>E:\Program Files\PostgreSQL\8.2\bin&amp;gt;psql dbName &amp;lt; E:\eclipse3.3.2\workspace\ijoin \database\html_static_labels.backup&amp;nbsp;userId Password for user ijoin: thePassword --</description>
     </item>
     
     <item>
@@ -147,8 +125,7 @@ I&amp;rsquo;m suremany of us in the Java field have been through this — the in
       <pubDate>Sat, 20 Dec 2008 00:23:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4%EC%97%90%EC%84%9C-%EB%8C%80%EC%9D%91%EB%90%98%EB%8A%94-%EA%B4%84%ED%98%B8%EC%B0%BE%EA%B8%B0/</guid>
-      <description>&amp;rsquo;{ 혹은 (&amp;rsquo; 와 대응되는 &amp;lsquo;} 혹은 )&amp;lsquo;를 찾고 싶다면  단순히 커서를 { 다음에 놓으면 대응되는 괄호에 사각형이 씌워져서 구별할 수 있다. 커서를 { 다음에 놓은 후 Ctrl + Shift + p 를 누르면 커서가 대응되는 괄호 바로 다음으로 이동한다.. { 혹은 } 다음 위치를 더블클릭하면 블록전체가 선택된다.  어쨌거나 블록을 너무 크게 만들면 않좋다.  --
- </description>
+      <description>&amp;rsquo;{ 혹은 (&amp;rsquo; 와 대응되는 &amp;lsquo;} 혹은 )&amp;lsquo;를 찾고 싶다면 단순히 커서를 { 다음에 놓으면 대응되는 괄호에 사각형이 씌워져서 구별할 수 있다. 커서를 { 다음에 놓은</description>
     </item>
     
     <item>
@@ -157,8 +134,7 @@ I&amp;rsquo;m suremany of us in the Java field have been through this — the in
       <pubDate>Thu, 11 Dec 2008 01:13:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/apache-wicket-localization-%EC%83%98%ED%94%8C/</guid>
-      <description>      Apache wicket의 현지화 데모화면이다.     http://www.wicket-library.com/wicket-examples/pub/     하이트 사진은 어디서 구했는지&amp;hellip;       --
- </description>
+      <description>Apache wicket의 현지화 데모화면이다. http://www.wicket-library.com/wicket-examples/pub/ 하이트 사진은 어디서 구했는지&amp;hellip; --</description>
     </item>
     
     <item>
@@ -167,7 +143,7 @@ I&amp;rsquo;m suremany of us in the Java field have been through this — the in
       <pubDate>Wed, 03 Dec 2008 20:17:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/simple-webcam-capture-command-line-%EC%A7%80%EC%9B%90/</guid>
-      <description>http://mattcollinge.wordpress.com/software/simple-webcam-capture/      다른 캡쳐프로그램들도 많지만 이건&amp;nbsp; command line을 지원한다.      즉, &amp;ldquo;예약된 작업&amp;rdquo;에 등록하면 특정 시간 간격으로 웹캠을 자동으로 찍고      curl 같은 유틸리티를 이용해서 자동으로 서버에 업로드 할 수 있다.   (http://shed.egloos.com/1843497참고)      물론 이런 프로그램은 많이 있다.   그러나 백그라운드에서 사용자가 눈치채지 못하게 하려면 프로그램이 제일인듯하다.            command 라인에서 에러(Error processing command line options)가 발생하는 경우가 있는데      http://mattcollinge.</description>
+      <description>http://mattcollinge.wordpress.com/software/simple-webcam-capture/ 다른 캡쳐프로그램들도 많지만 이건&amp;nbsp; command line을 지원한다. 즉, &amp;ldquo;예약된 작업&amp;rdquo;에 등록하면 특정 시간 간격으로 웹캠을</description>
     </item>
     
     <item>
@@ -176,8 +152,7 @@ I&amp;rsquo;m suremany of us in the Java field have been through this — the in
       <pubDate>Tue, 02 Dec 2008 22:37:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/windows-desktop-screen-logger/</guid>
-      <description>제목은 거창하지만     사실은,      윈도우 데스크탑의 화면을 일정 시간 간격으로 웹서버에 업로드하는 일종의 솔류션(?), 아니 프로그램 묶음이라고 할 수 있겠다.      왜 이런걸 하게 되었나?    노트북 도난 방지
- 그냥 내가 뭘했었는지 궁금해서   그런데 이걸 쓴다고 해서 노트북 도난 방지가 될까?     안된다. -.-&amp;hellip;     대신 도난된 노트북을 찾는데 결정적 증거가 될 수 있다.</description>
+      <description>제목은 거창하지만 사실은, 윈도우 데스크탑의 화면을 일정 시간 간격으로 웹서버에 업로드하는 일종의 솔류션(?), 아니 프로그램 묶음이라고 할 수 있겠다. 왜 이런</description>
     </item>
     
     <item>
@@ -186,7 +161,7 @@ I&amp;rsquo;m suremany of us in the Java field have been through this — the in
       <pubDate>Thu, 13 Nov 2008 00:38:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/mysql-%EC%9D%98-%ED%95%84%EB%93%9C-type-%EB%B3%80%ED%99%98%ED%95%A8%EC%88%98-cast/</guid>
-      <description>text 유형 필드에 들어있는 값들을 숫자값 기준으로 정렬하고자 한다면 반드시 해당 필드를 CAST함수를 이용해서 변환해야 한다. 다음 2개의 쿼리를 비교해 보자 * 쿼리 : select * from prices order by price; * 결과 : 1420 1590 1990 220 2390 2660 280 2990 3420 380 3990 4270 450 570 5700 760 850 이건 원하는 결과가 아니다. ㅠㅠ&amp;hellip;. (애초에 테이블을 만들 때 필드를 숫자 형태로 만들었어야 한다&amp;hellip;) CAST함수를 사용한다면, * 쿼리 : select * from prices order by CAST(price AS UNSIGNED); * 결과 : 220 280 380 450 570 760 850 1060 1420 1590 1990 2390 2660 2990 3420 3990 4270 5700 제대로 나온다.</description>
+      <description>text 유형 필드에 들어있는 값들을 숫자값 기준으로 정렬하고자 한다면 반드시 해당 필드를 CAST함수를 이용해서 변환해야 한다. 다음 2개의 쿼리를 비교해 보자 * 쿼리</description>
     </item>
     
     <item>
@@ -195,8 +170,7 @@ I&amp;rsquo;m suremany of us in the Java field have been through this — the in
       <pubDate>Wed, 12 Nov 2008 04:07:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%9D%98-%EC%9E%90%EC%A7%88%EC%9D%B4%EB%9D%BC%EA%B3%A0-%ED%95%9C%EB%8B%A4./</guid>
-      <description>해외의 어떤 회사의 구인광고에서 따왔다. 리크루터가 &amp;lsquo;당신의 장점을 말해보세요&amp;rsquo; 라 하면 다음 단어를 잘 조합하면 되겠다. * Accurate * Eye for quality/details * Client focused * Team player * Entrepreneurial mentality * Analytical * Independent * Problem solving * Self starting * Fast learning  --
- </description>
+      <description>해외의 어떤 회사의 구인광고에서 따왔다. 리크루터가 &amp;lsquo;당신의 장점을 말해보세요&amp;rsquo; 라 하면 다음 단어를 잘 조합하면 되겠다. * Accurate * Eye for</description>
     </item>
     
     <item>
@@ -205,8 +179,7 @@ I&amp;rsquo;m suremany of us in the Java field have been through this — the in
       <pubDate>Tue, 11 Nov 2008 18:38:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/%EC%95%84%EC%9D%BC%EB%9E%9C%EB%93%9C%EC%9D%98-%EB%8C%80%ED%91%9C%EC%A0%81-isp%EC%9D%B8-%EC%97%90%EC%9D%B4%EB%A0%88%EC%BD%A4%EC%9D%98-wep-%ED%82%A4-%EC%A0%9C%EB%84%88%EB%A0%88%EC%9D%B4%ED%84%B0/</guid>
-      <description>아일랜드의 대표적 ISP인 에이레콤 의 경우 무선공유기에 디폴트로 세팅된 SSID를 통해서 WEP키를 해킹할수 있는 어이없는 경우가 있다. 해킹툴은 java로 만들어졌다. WEP_MIDP.zip -&amp;gt;&amp;nbsp; MIDP 플랫폼용 WEP_platformIndependent.zip -&amp;gt; 플랫폼 인디펜던트(그러나 Swing package필요)  --
- </description>
+      <description>아일랜드의 대표적 ISP인 에이레콤 의 경우 무선공유기에 디폴트로 세팅된 SSID를 통해서 WEP키를 해킹할수 있는 어이없는 경우가 있다. 해킹툴은 java로</description>
     </item>
     
     <item>
@@ -215,7 +188,7 @@ I&amp;rsquo;m suremany of us in the Java field have been through this — the in
       <pubDate>Thu, 02 Oct 2008 00:47:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/shoutcast-%EC%84%9C%EB%B2%84%EC%97%90%EC%84%9C-%EC%A0%95%EB%B3%B4-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0-php-%EC%86%8C%EC%8A%A4/</guid>
-      <description>http://yoda.ih.nu/ 에 가면 shoutcast 서버에 admin.cgi를 통해 로그인 후 정보를 fetch 해오는 소스가 있는데 xml을 해석하는 방식이라서 더 깔끔하기는 한데 속도가 많이 느리고 굳이 아이디/암호로 로그인까지 할 필요도 없고 해서 아래 소스를 추천한다. 복잡하게 &amp;lsquo;fsockopen함수를 쓰지 말고 file 함수를 쓰면 되지 않느냐?&amp;lsquo;라고 생각할 수도 있는데 예를 들면 $htmlCodes = file(&amp;lsquo;http://live140.impek.com:8090/&#39;); 이런식으로. 그러나 불가능하다. &amp;ldquo;404 Resource Not Found &amp;rdquo; 가 발생하는데 shoutcast 서버는 agent가 일반적인 브라우져가 아니면 404에러를 발생하는 듯 하다.  소스파일 다운로드 : shoutcastStatus.</description>
+      <description>http://yoda.ih.nu/ 에 가면 shoutcast 서버에 admin.cgi를 통해 로그인 후 정보를 fetch 해오는 소스가 있는데 xml을 해석하는 방식이라서 더 깔끔하기는 한데 속도가 많이 느리고 굳이 아이</description>
     </item>
     
     <item>
@@ -224,8 +197,7 @@ I&amp;rsquo;m suremany of us in the Java field have been through this — the in
       <pubDate>Sun, 28 Sep 2008 05:44:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/clickjacking-%EB%B0%A9%EC%A7%80%EC%B1%85/</guid>
-      <description>http://www.breakingpointsystems.com/community/blog/clickjacking 와 http://www.planb-security.net/notclickjacking/iframetrick.html 여기에 demo가 있군요. 데모에 의하면 Clickjacking는 브라우저 혹은 pc를 공격하여 무력화 하는것이 목적이 아니라 타 사이트에 저장된 사용자 정보를 빼내기 위한 목적으로 사용된다고 합니다. 무심코 하는 클릭이 자신이 모르는 사이에 form submit이 될수 있다는 내용이군요. Token을 이용해서 유효한 submit인지 체크하면 방지할 수 있을것 같습니다. 자세한건 여기에 http://phpsec.org/projects/guide/2.html html 쓰기 가능한 게시판에서 게시물에 심어져 있는 악의적 자바스크립트가 실행되는 해킹(Cross Site Scripting)하고 비슷한것 같습니다.  --
- </description>
+      <description>http://www.breakingpointsystems.com/community/blog/clickjacking 와 http://www.planb-security.net/notclickjacking/iframetrick.html 여기에 demo가 있군요. 데모에 의하면 Clickjacking는 브라우저 혹은 pc를 공격하여 무력화 하는것이 목적이 아니라 타 사이트에 저장된 사용</description>
     </item>
     
     <item>
@@ -234,8 +206,7 @@ I&amp;rsquo;m suremany of us in the Java field have been through this — the in
       <pubDate>Tue, 23 Sep 2008 00:47:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/%EB%84%A4%EB%8D%9C%EB%9E%80%EB%93%9C-java-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%97%B0%EB%B4%89/</guid>
-      <description>http://www.xpatjobs.com 에 의하면 €40 - €50k (junior). €50 - €60k (team lead). up to to €80k (architect) 현재 환율로 계산하면 6635만원 - 8294만원(junior). 8294만원 - 9953만원 (team lead). 13271만원 (architect) 2008년 9월 기준이다.  --
- </description>
+      <description>http://www.xpatjobs.com 에 의하면 €40 - €50k (junior). €50 - €60k (team lead). up to to €80k (architect) 현재 환율로 계산하면 6635만원 - 8294만원(junior). 8294만원 -</description>
     </item>
     
     <item>
@@ -244,8 +215,7 @@ I&amp;rsquo;m suremany of us in the Java field have been through this — the in
       <pubDate>Thu, 18 Sep 2008 22:11:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/%ED%97%89-google-%ED%81%AC%EB%A1%AC%EC%9D%B4-%EB%8B%A4%EC%9A%B4%EB%90%98%EC%97%88%EC%8A%B5%EB%8B%88%EB%8B%A4./</guid>
-      <description>구글에서 만든 브라우져 로딩속도가 상당히 빨라서 인터넷 환경이 나쁜 곳에서 특히 유용하다. 그런데 보안에 버그가 있다고 한다(위험한 파일을 무작정 다운로드 한다고 하는데 직접 겪어보지는 못했다) 다운되었을 때는 요런 메시지가 뜬다. 역시 구글다운 메시지   구글 크롬으로 orkut 을 쓰면 저런 메세지가 뜬다.   탭중의 하나가 응답이 없을 때 이런 메세지가 뜬다. (근데 저 정겨운 그림은 누가 그렸는지&amp;hellip;)      --
- </description>
+      <description>구글에서 만든 브라우져 로딩속도가 상당히 빨라서 인터넷 환경이 나쁜 곳에서 특히 유용하다. 그런데 보안에 버그가 있다고 한다(위험한 파일을 무작정 다운로드 한다고</description>
     </item>
     
     <item>
@@ -254,7 +224,7 @@ I&amp;rsquo;m suremany of us in the Java field have been through this — the in
       <pubDate>Sat, 23 Feb 2008 14:03:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/sharp-zaurus-c1000%EC%97%90-milkytracker-0.90.50-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</guid>
-      <description>음악 신디사이저, 샘플러, 작곡 프로그램인 milky tracker 설치법입니다. (자세한 정보는 tracker.net/?ABOUT) target=_blank&amp;gt;http://www.milkytracker.net/?ABOUT) www.milky tracker.net 에서 다운로드 받은 ipk만 설치해서는 동작하지 않습니다. (SL5500용이라서 그렇다고 하는데 5500에서도 동작하지 않더군요) 문제는 1. 화면이 뒤집혀서 실행됨 : 강제로 rotation 시켜 해결 2. 화면이 뜨는 순간 자우루스 다운됨 : 설치시 같이 제공되는 libSDL 문제인듯. Dosbox(zaurus 용) 설치시 같이 제공되는 libSDL 사용하여 해결. &amp;lt;설치환경&amp;gt; - Rom : NYMPH Zaurus Qtopia ROM 060801600 - Zaurus C1000 &amp;lt;설치 순서&amp;gt; 1.</description>
+      <description>음악 신디사이저, 샘플러, 작곡 프로그램인 milky tracker 설치법입니다. (자세한 정보는 tracker.net/?ABOUT) target=_blank&amp;gt;http://www.milkytracker.net/?ABOUT) www.milky tracker.net 에서 다운로드 받은 ipk만 설치해서는 동작하지 않습니다. (SL55</description>
     </item>
     
     <item>
@@ -263,15 +233,7 @@ I&amp;rsquo;m suremany of us in the Java field have been through this — the in
       <pubDate>Wed, 09 Jan 2008 19:40:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EC%97%90%EA%B2%8C-%EA%B8%B0%EB%8C%80%EB%90%98%EB%8A%94-%ED%92%88%EC%84%B1%EA%B3%BC-%EB%8A%A5%EB%A0%A5/</guid>
-      <description>/st1:date들어가며/o:p
-이 글은IT업계로 뛰어드는 후배들에게 하고 싶은 이야기일 뿐 아니라본인 스스로에게 다짐하고자 하는 목적으로 쓰는 글입니다.
-최근IT업계에서 엔지니어들에 대한 부당한 대우가 이슈가 많이 되고있습니다.
-그 원인이 엔지니어에게 있다고 말하려는 것은 아닙니다. 또한 그 ‘환경’에대한 논의는 다음 기회에 하겠습니다.
-다만 제가 제기하고 싶은 것은 ‘열악한 외부의 요인 때문에 자질기준을 스스로 깍아내려도 되는가?’라는 것입니다.
- &amp;nbsp; /o:p
-SE 는누구인가?
-
-l&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 프로그래머, 개발자, 소프트웨어 엔지니어프로그래머나 개발자라는 말 대신 ‘소프트웨어 엔지니어’란 용어를 쓰는 것은, 개인적으로&amp;lsquo;엔지니어&amp;lsquo;라는단어를 좋아하기도 하거니와&amp;lsquo;프로그래머&amp;lsquo;나&amp;lsquo;개발자&amp;lsquo;라고 할 때는&amp;lsquo;코더&amp;lsquo;라는 좁은 의미로 사용되는 경우가 많기 때문입니다.</description>
+      <description>/st1:date들어가며/o:p 이 글은IT업계로 뛰어드는 후배들에게 하고 싶은 이야기일 뿐 아니라본인 스스로에게 다짐하고자 하는 목적으로 쓰는 글입니다</description>
     </item>
     
     <item>
@@ -290,8 +252,7 @@ l&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 프로그래머, �
       <pubDate>Wed, 12 Dec 2007 11:59:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/excel%EC%9D%98-vlookup-%ED%95%A8%EC%88%98%EC%9D%98-%EC%B2%AB%EB%B2%88%EC%A7%B8-%EC%9D%B8%EC%9E%90%EC%9D%98-%EA%B0%92%EC%97%90-~-tilda-%EB%AC%BC%EA%B2%B0%ED%91%9C%EC%8B%9C%EA%B0%80-%EC%9E%88%EB%8A%94-%EA%B2%BD%EC%9A%B0-%EC%B0%BE%EA%B8%B0%EC%98%A4%EB%A5%98-%EB%B0%9C%EC%83%9D/</guid>
-      <description>이런 경우 첫번째 인자에서 ~를 제거하거나 다른 문자로 대치하여야 제대로 동작한다 P2 의 값이 &amp;ldquo;서울~부산&amp;rdquo; 이라고 할 때 VLOOKUP( P2,구간코드,2,FALSE) 위의 함수를 아래 처럼 VLOOKUP( SUBSTITUTE(P2,&amp;rdquo;~&amp;ldquo;,&amp;rdquo;-&amp;ldquo;),구간코드,2,FALSE) 하고 &amp;ldquo;구간코드&amp;rdquo; 에 해당 하는 table_array의 값에도 ~ 를 - 로 대치해야한다. 링크 : http://www.mrexcel.com/archive2/41300/48504.htm  --
- </description>
+      <description>이런 경우 첫번째 인자에서 ~를 제거하거나 다른 문자로 대치하여야 제대로 동작한다 P2 의 값이 &amp;ldquo;서울~부산&amp;rdquo; 이라고 할 때 VLOOKUP( P2,구간코</description>
     </item>
     
     <item>
@@ -300,13 +261,7 @@ l&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 프로그래머, �
       <pubDate>Mon, 10 Dec 2007 09:01:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/%EB%B6%88%EB%B2%95%EB%B3%B5%EC%A0%9C%EB%8A%94-%EB%AC%B8%EC%A0%9C%EA%B0%80-%EC%95%84%EB%8B%88%EB%8B%A4.-%EB%AC%B8%EC%A0%9C%EB%8A%94-%EB%AC%B4%EB%AA%85%EC%9C%BC%EB%A1%9C-%EB%82%A8%EB%8A%94-%EA%B2%83%EC%9D%B4%EB%8B%A4-by-cory-doctorow.-%EC%9C%84%ED%82%A4%EB%85%B8%EB%AF%B9%EC%8A%A421%EC%84%B8%EA%B8%B0%EB%B6%81%EC%8A%A4-%EC%A4%91%EC%97%90%EC%84%9C/</guid>
-      <description>인터넷이 아니었다면 어떻게 저 소년을 만났겠는가?  Oh Danny boy, the pipes, the pipes are calling
-From glen to glen, and down the mountain side
-The summer&amp;rsquo;s gone, and all the flowers are dying
-&amp;lsquo;tis you, &amp;lsquo;tis you must go and I must bide.
-But come you back when summer&amp;rsquo;s in the meadow
-Or when the valley&amp;rsquo;s hushed and white with snow
-&amp;lsquo;tis I&amp;rsquo;ll be there in sunshine or in shadow</description>
+      <description>인터넷이 아니었다면 어떻게 저 소년을 만났겠는가? Oh Danny boy, the pipes, the pipes are calling From glen to glen, and down the mountain side The summer&amp;rsquo;s gone, and all the flowers are dying &amp;lsquo;tis you, &amp;lsquo;tis you must go and I must bide. But come you back when summer&amp;rsquo;s in the meadow Or when</description>
     </item>
     
     <item>
@@ -315,8 +270,7 @@ Or when the valley&amp;rsquo;s hushed and white with snow
       <pubDate>Thu, 06 Dec 2007 10:51:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/%EC%9B%B9-%EA%B8%B0%EC%88%A0-%EA%B0%80%EA%B3%84%EB%8F%84-modernlifeisrubbish.co.uk/</guid>
-      <description> 출처 : http://www.modernlifeisrubbish.co.uk/article/web-tech-family-tree  --
- </description>
+      <description>출처 : http://www.modernlifeisrubbish.co.uk/article/web-tech-family-tree --</description>
     </item>
     
     <item>
@@ -325,7 +279,7 @@ Or when the valley&amp;rsquo;s hushed and white with snow
       <pubDate>Fri, 30 Nov 2007 15:30:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/wget-%ED%99%9C%EC%9A%A9-%ED%97%A4%EB%8D%94%EC%A0%95%EB%B3%B4-%EB%B3%B4%EA%B8%B0-%ED%8C%8C%EC%9D%BC%EC%9D%84-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-%ED%95%98%EC%97%AC-%ED%8A%B9%EC%A0%95%EC%9D%B4%EB%A6%84%EC%9C%BC%EB%A1%9C-%EC%A0%80%EC%9E%A5/</guid>
-      <description>* 윈도우용 wget : wget.exe C:&amp;amp;gt; wget &amp;ndash;spider -S http://www.naver.com&amp;ndash;&amp;gt; 헤더정보를 console에 뿌린다. &amp;ndash;15:04:28&amp;ndash;&amp;nbsp; http://www.naver.com/ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; =&amp;gt; index.html&#39; &amp;lt;br&amp;gt;Resolving www.naver.com... done. &amp;lt;br&amp;gt;Connecting to www.naver.com[202.131.30.82]:80... connected.&amp;amp;nbsp; &amp;lt;span style=&amp;quot;background-color: rgb(255, 255, 255); color: rgb(51, 102, 255); font-weight: bold; font-family: &#39;바탕&#39;,&#39;Batang&#39;;&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;background-color: rgb(255, 255, 255); color: rgb(51, 204, 0);&amp;quot;&amp;gt;--&amp;amp;gt; IP는 &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;background-color: rgb(255, 255, 255); color: rgb(51, 204, 0);&amp;quot;&amp;gt;202.131.30.82 &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;background-color: rgb(255, 255, 255); color: rgb(51, 204, 0);&amp;quot;&amp;gt;다.&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;br&amp;gt;HTTP request sent, awaiting response... &amp;lt;br&amp;gt;&amp;amp;nbsp;1 HTTP/1.</description>
+      <description>* 윈도우용 wget : wget.exe C:&amp;amp;gt; wget &amp;ndash;spider -S http://www.naver.com&amp;ndash;&amp;gt; 헤더정보를 console에 뿌린다. &amp;ndash;15:04:28&amp;ndash;&amp;nbsp; http://www.naver.com/ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; =&amp;gt; index.html&#39; &amp;lt;br&amp;gt;Resolving www.naver.com... done. &amp;lt;br&amp;gt;Connecting to www.naver.com[202.131.30.82]:80... connected.&amp;amp;nbsp; &amp;lt;span style=&amp;quot;background-color: rgb(255, 255, 255); color: rgb(51, 102, 255); font-weight: bold; font-family: &#39;바탕&#39;,&#39;Batang&#39;;&amp;q</description>
     </item>
     
     <item>
@@ -334,8 +288,7 @@ Or when the valley&amp;rsquo;s hushed and white with snow
       <pubDate>Thu, 15 Nov 2007 09:48:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/olpc%EC%9D%98-xo%EC%BB%B4%ED%93%A8%ED%84%B0-%EB%93%9C%EB%94%94%EC%96%B4-%EB%B3%B8%EA%B2%A9%EC%A0%81%EC%9C%BC%EB%A1%9C-%EB%B0%B0%ED%8F%AC%ED%95%98%EB%8A%94-%EB%93%AF/</guid>
-      <description> OLPC 창설자이자 의장인 니콜라스 네그로폰테 는 최근 까지 MIT 교수였고 현재 모토롤라의 임원이기도 하다. 95년 &amp;lsquo;디지털이다-Being Digital&amp;rsquo; 이라는 책도 썼었고 당시에는 미래학 필독서였던것으로 기억한다 당연히 그는 먹고사는데 지장없고 사회적 명예도 충분한데 이런 일을 하는 이유는 뭘까? &amp;ldquo;제3세계 빈곤의 악순환을 해결하려면 빵만으로는 부족하다&amp;rdquo; 온라인에서 아프리카 오지의 어린이들을 만날날을 기대해본다.  --
- </description>
+      <description>OLPC 창설자이자 의장인 니콜라스 네그로폰테 는 최근 까지 MIT 교수였고 현재 모토롤라의 임원이기도 하다. 95년 &amp;lsquo;디지털이다-Being Digital&amp;rsquo; 이라는 책도</description>
     </item>
     
     <item>
@@ -344,7 +297,7 @@ Or when the valley&amp;rsquo;s hushed and white with snow
       <pubDate>Wed, 14 Nov 2007 00:15:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/google-android-%EC%9E%90%EB%B0%94%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EC%B5%9C%EA%B3%A0%EC%9D%98-%ED%8F%AC%ED%84%B0%EB%B8%94-%EC%9E%A5%EB%82%9C%EA%B0%90/</guid>
-      <description>구글이 모바일(폰)쪽 사업을 준비해온지는 한참되었지만 최근(07년 11월 5일)에서야 구체적인 프로젝트명 Android를 공개하였고 바로 오늘(한국시간) 07년 11월 13일 Android SDK(프로그램 개발을 도와주는 도구)를 공개했는데 흥분되는 사실은, 그것이 자바 Java 언어를 공식 지원한다는 점이다. (대표적인 공개 프로그래밍 툴인 Eclipse를 위한 도우미 플러그인도 덤으로 제공된다) 제공되는 각종 라이브러리를 보면 java~ 로 시작하는 수많은 Oldies 라이브러리들,&amp;nbsp; java.io, java.lang, java.math, java.net, java.nio, java.sql 외에도 org.~ 로 시작하는 착한 라이브러리들  org.apache.commons.httpclient org.w3c.dom org.xml.sax 들도 제공한다. 게다가 android 로 시작하는 저수준 라이브러리를 통해 그래픽, 오디오, 폰모듈 등 하드웨어 안쪽 깊숙히 제어할 수 도 있다.</description>
+      <description>구글이 모바일(폰)쪽 사업을 준비해온지는 한참되었지만 최근(07년 11월 5일)에서야 구체적인 프로젝트명 Android를 공개하였고 바로 오늘(한국시</description>
     </item>
     
     <item>
@@ -353,8 +306,7 @@ Or when the valley&amp;rsquo;s hushed and white with snow
       <pubDate>Thu, 08 Nov 2007 09:11:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/%EC%95%84%EC%9D%BC%EB%9E%9C%EB%93%9C-%EB%8D%94%EB%B8%94%EB%A6%B0%EC%97%90-java-%EC%9D%B8%EB%A0%A5%EC%9D%B4-%EA%B7%80%ED%95%9C%EA%B0%80-%EB%B3%B4%EB%8B%A4./</guid>
-      <description>아일랜드 헤드헌터의 하소연 &amp;ldquo;Java Jobs - Where have all the developers gone&amp;rdquo; http://www.dubjug.org/node/23 &amp;ldquo;Seriously guys - Java is a problem&amp;rdquo; http://www.dubjug.org/node/27  --
- </description>
+      <description>아일랜드 헤드헌터의 하소연 &amp;ldquo;Java Jobs - Where have all the developers gone&amp;rdquo; http://www.dubjug.org/node/23 &amp;ldquo;Seriously guys - Java is a problem&amp;rdquo; http://www.dubjug.org/node/27 --</description>
     </item>
     
     <item>
@@ -363,8 +315,7 @@ Or when the valley&amp;rsquo;s hushed and white with snow
       <pubDate>Wed, 07 Nov 2007 21:21:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/%EC%9D%BC%EC%A0%95%EC%B6%94%EC%A0%95%EC%9D%98-%EC%96%B4%EB%A0%A4%EC%9B%80/</guid>
-      <description>&amp;ldquo;캐나다 워털루 대학교 연구팀은 37명의 4학년생들에게 자신의 학부졸업논문을 작성하는데 몇일이나 소요될지 예측하게 하였다. 평균 대답은 33.9일이었다. 이들 중 자신이 예측한 시간 내에 논문을 제출한 사람은 겨우 30%에 불과했다. 실제로 논문을 제출하는데 걸린 시간은 평균 55.5일이었다.&amp;rdquo; - [나를 바꾸는 심리학의 지혜. 프레임(최인철)] 중에서 추정/예측만큼 어려운것이 또 있겠는가?  --
- </description>
+      <description>&amp;ldquo;캐나다 워털루 대학교 연구팀은 37명의 4학년생들에게 자신의 학부졸업논문을 작성하는데 몇일이나 소요될지 예측하게 하였다. 평균 대답은 33.</description>
     </item>
     
     <item>
@@ -373,8 +324,7 @@ Or when the valley&amp;rsquo;s hushed and white with snow
       <pubDate>Fri, 02 Nov 2007 16:52:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/javascript%EB%A1%9C-%ED%95%B4%EB%8B%B9-html-%EB%82%B4%EB%B6%80%EC%9D%98-%EB%AA%A8%EB%93%A0-%EB%A7%81%ED%81%AC-%EB%AA%A9%EB%A1%9D-%EB%BD%91%EC%95%84%EB%82%B4%EA%B8%B0/</guid>
-      <description>아래 코드를 &amp;lt;/body&amp;gt; 앞에 삽입한 후 브라우저로 불러보면 제일 아래쪽에 링크들 목록이 뜬다. &amp;lt;script&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp; for(i = 0 ; i &amp;lt; document.links.length ; i++ ) { &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; document.write(&amp;rsquo;&amp;lt;xmp&amp;gt;&amp;rsquo;); &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; document.write(&amp;rsquo;[&amp;rsquo; + (i+1) + &amp;lsquo;]번째 링크 : &amp;lsquo; + document.links[i].href + &amp;lsquo; ☞ &amp;rsquo; + document.links[i].innerHTML); &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; document.write(&amp;rsquo;&amp;lt;/xmp&amp;gt;&amp;rsquo;); &amp;nbsp;&amp;nbsp;&amp;nbsp; } &amp;lt;/script&amp;gt;  --
- 이혜영 2007/11/02 17:28 #  삭제 답글    하이~ 오랜만에 와 봤는데,,, 새 단장 하셨네요?</description>
+      <description>아래 코드를 &amp;lt;/body&amp;gt; 앞에 삽입한 후 브라우저로 불러보면 제일 아래쪽에 링크들 목록이 뜬다. &amp;lt;script&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp; for(i = 0 ; i &amp;lt; document.links.length ; i++ ) { &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; document.write(&amp;rsquo;&amp;lt;xmp&amp;gt;&amp;rsquo;); &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; document.write(&amp;rsquo;[&amp;rsquo; + (i+1) + &amp;lsquo;]번째 링크</description>
     </item>
     
     <item>
@@ -383,8 +333,7 @@ Or when the valley&amp;rsquo;s hushed and white with snow
       <pubDate>Thu, 01 Nov 2007 17:46:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/ftp-script-%EC%83%98%ED%94%8C/</guid>
-      <description>암호 중간에 스페이스 문자가 있을 때 아래와 같이 한다. #!/bin/sh HOST=&amp;lsquo;ftp.somehost.com&amp;rsquo; USER=&amp;lsquo;loginid&amp;rsquo; PASSWD=&amp;lsquo;pass word&amp;rsquo; ftp -v -n $HOST &amp;lt;&amp;lt;END_SCRIPT quote USER $USER quote PASS $PASSWD passive pwd quit END_SCRIPT exit 0  --
- </description>
+      <description>암호 중간에 스페이스 문자가 있을 때 아래와 같이 한다. #!/bin/sh HOST=&amp;lsquo;ftp.somehost.com&amp;rsquo; USER=&amp;lsquo;loginid&amp;rsquo; PASSWD=&amp;lsquo;pass word&amp;rsquo; ftp -v -n $HOST &amp;lt;&amp;lt;END_SCRIPT quote USER $USER quote PASS $PASSWD passive pwd quit END_SCRIPT exit 0 --</description>
     </item>
     
     <item>
@@ -393,8 +342,7 @@ Or when the valley&amp;rsquo;s hushed and white with snow
       <pubDate>Mon, 15 Oct 2007 13:36:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/%EB%AA%85%EB%A0%B9-%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8%EC%97%90%EC%84%9C-%EC%9C%88%EB%8F%84%EC%9A%B0%EA%B3%84%EC%A0%95%EC%B6%94%EA%B0%80-cvs%EA%B3%84%EC%A0%95%EC%B6%94%EA%B0%80/</guid>
-      <description>윈도우서버에 접근방법이 telnet밖에 없을 때 콘솔에서 작업할 수도 있다. ###### 윈도우 계정 추가 : 계정 -&amp;gt; mrnam&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 암호&amp;nbsp; -&amp;gt;&amp;nbsp; qweruiop NET USER mrnam qweruiop /add /EXPIRES:NEVER ###### mrnam 계정에 administrators권한 추가 net localgroup administrators mrnam /add ###### cvs 계정 mrnam을 만들면서 윈도우의 mrnam 계정에 연결 cvs passwd -a -r mrnam mrnam  --
- </description>
+      <description>윈도우서버에 접근방법이 telnet밖에 없을 때 콘솔에서 작업할 수도 있다. ###### 윈도우 계정 추가 : 계정 -&amp;gt; mrnam&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 암호&amp;nbsp; -&amp;gt;&amp;nbsp; qweruiop NET USER mrnam qweruiop /add /EXPIRES:NEVER ###### mrnam 계정에 ad</description>
     </item>
     
     <item>
@@ -403,8 +351,7 @@ Or when the valley&amp;rsquo;s hushed and white with snow
       <pubDate>Tue, 02 Oct 2007 15:19:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/2007-jco-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-%EC%BB%A8%ED%8D%BC%EB%9F%B0%EC%8A%A4/</guid>
-      <description>간만에 재미있을거 같은 컨퍼런스~   --
- </description>
+      <description>간만에 재미있을거 같은 컨퍼런스~ --</description>
     </item>
     
     <item>
@@ -413,8 +360,7 @@ Or when the valley&amp;rsquo;s hushed and white with snow
       <pubDate>Tue, 07 Aug 2007 17:59:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/%ED%8C%8C%EC%9D%B4%ED%94%84%EB%A1%9C-grep-%EC%97%AC%EB%9F%AC-%EB%B2%88-%EC%8B%A4%ED%96%89-%ED%9B%84-%EA%B2%B0%EA%B3%BC%EB%A5%BC-txt-%ED%8C%8C%EC%9D%BC%EB%A1%9C-%EC%A0%80%EC%9E%A5/</guid>
-      <description>grep &amp;ldquo;/gateway&amp;rdquo; access.log_*2007 | grep &amp;ldquo;01046184971&amp;rdquo; | grep &amp;ldquo;bookDiv&amp;rdquo; &amp;gt; ~/grepResult01046184971.txt regular expression 을 쓰는것이 더 우아한 방법이겠으나&amp;hellip; ㅠㅠ  --
- </description>
+      <description>grep &amp;ldquo;/gateway&amp;rdquo; access.log_*2007 | grep &amp;ldquo;01046184971&amp;rdquo; | grep &amp;ldquo;bookDiv&amp;rdquo; &amp;gt; ~/grepResult01046184971.txt regular expression 을 쓰는것이 더 우아한 방법이겠으나&amp;hellip; ㅠㅠ --</description>
     </item>
     
     <item>
@@ -423,8 +369,7 @@ Or when the valley&amp;rsquo;s hushed and white with snow
       <pubDate>Mon, 23 Jul 2007 09:00:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/ora-01653-the_table_name-%ED%85%8C%EC%9D%B4%EB%B8%94%EC%9D%84-4%EC%9C%BC%EB%A1%9C-pf_dat-%ED%85%8C%EC%9D%B4%EB%B8%94%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%97%90%EC%84%9C-%ED%99%95%EC%9E%A5%ED%95%A0-%EC%88%98-%EC%97%86%EC%8A%B5%EB%8B%88%EB%8B%A4/</guid>
-      <description>ORA-01653: THE_TABLE_NAME 테이블을 4(으)로 PF_DAT 테이블스페이스에서 확장할 수 없습니다 1. 테이블 스페이스를 늘려준다. alter database datafile &amp;lsquo;c:\oracle\oradata\ora92\test_02.dbf&amp;rsquo; resize 5M; 2. 테이블 스페이스를 자동으로 사이즈가 늘어날 수 있도록 한다. alter database datafile &amp;lsquo;c:\oracle\oradata\ora92\test_02.dbf&amp;rsquo; autoextend on next 1M  --
- </description>
+      <description>ORA-01653: THE_TABLE_NAME 테이블을 4(으)로 PF_DAT 테이블스페이스에서 확장할 수 없습니다 1. 테이블 스페이스를 늘려준다. alter database datafile &amp;lsquo;c:\oracle\oradata\ora92\test_02.dbf&amp;rsquo; resize 5M; 2. 테이블 스페이스를 자동으로 사이즈가 늘어날 수</description>
     </item>
     
     <item>
@@ -433,7 +378,7 @@ Or when the valley&amp;rsquo;s hushed and white with snow
       <pubDate>Thu, 05 Jul 2007 07:54:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/html-%EC%9D%98-form-%EC%9D%98-enctype%EC%9D%84-javascript%EB%A1%9C-%EB%B3%80%EA%B2%BD/</guid>
-      <description>html 의 form 의 enctype을 명시적으로 지정하지 않으면 기본은 application/x-www-form-urlencoded 이다. 이것을 javascrtip로 변경하는 샘플이다. 주의할 점은 javascript로 참조할 때는 enctype이 아니라 encoding 이라는 점이다. &amp;lt;html&amp;gt; &amp;lt;script&amp;gt; function changeEnctype() { &amp;nbsp;&amp;nbsp; &amp;nbsp;myform = document.form1; &amp;nbsp;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp; &amp;nbsp;alert(&amp;lsquo;원래의 enctype: &amp;lsquo; + myform. encoding); &amp;nbsp;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp; &amp;nbsp;myform. encoding=&amp;ldquo;application/x-www-form-urlencoded&amp;rdquo;;&amp;nbsp;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp; &amp;nbsp;alert(&amp;lsquo;디폴트로 변경 enctype: &amp;lsquo; + myform. encoding); &amp;nbsp;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp; &amp;nbsp;myform. encoding=&amp;ldquo;multipart/form-data&amp;rdquo;; &amp;nbsp;&amp;nbsp; &amp;nbsp;alert(&amp;lsquo;원래대로 변경 enctype: &amp;lsquo; + myform. encoding); } &amp;lt;/script&amp;gt; &amp;lt;body&amp;gt; &amp;lt;form name=form1 method=&amp;ldquo;post&amp;rdquo; enctype=&amp;ldquo;multipart/form-data&amp;rdquo;&amp;gt; &amp;lt;input type=&amp;ldquo;button&amp;rdquo; value=&amp;ldquo;enctype확인&amp;rdquo; onClick=&amp;ldquo;changeEnctype()&amp;rdquo;&amp;gt; &amp;lt;/form&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;  --</description>
+      <description>html 의 form 의 enctype을 명시적으로 지정하지 않으면 기본은 application/x-www-form-urlencoded 이다. 이것을 javascrtip로 변경하는 샘플이다. 주의할 점은 javascript로</description>
     </item>
     
     <item>
@@ -442,7 +387,7 @@ Or when the valley&amp;rsquo;s hushed and white with snow
       <pubDate>Thu, 28 Jun 2007 16:46:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/oracle-%ED%8A%B9%EC%A0%95-%ED%85%8C%EC%9D%B4%EB%B8%94%EB%93%A4%EB%A7%8C-export/</guid>
-      <description>I:\imsi&amp;gt;exp userid/userpasswd@sidName Export: Release 9.2.0.1.0 - Production on 목 Jun 28 16:29:50 2007 Copyright &amp;copy; 1982, 2002, Oracle Corporation.&amp;nbsp; All rights reserved. 다음에 접속됨: Oracle9i Enterprise Edition Release 9.2.0.1.0 - Production With the Partitioning, OLAP and Oracle Data Mining options JServer Release 9.2.0.1.0 - Production 배열 인출 버퍼 크기 입력: 4096 &amp;gt; 엑스포트 파일: EXPDAT.DMP &amp;gt; (2)U(사용자), 또는 (3)T(테이블): (2)U &amp;gt; T 테이블 데이터 엑스포트 (yes/no): yes &amp;gt; 확장 영역 압축 (yes/no): yes &amp;gt; KO16MSWIN949 문자 설정과 AL16UTF16 NCHAR 문자 설정에서 엑스포트가 종료되었습니다 지정된 테이블을 엑스포트하려고 합니다 via 규정 경로&amp;hellip; 엑스포트할 테이블(T) 또는 분할(T:P): (종료하려면 RETURN) &amp;gt; ubi_adm_mst .</description>
+      <description>I:\imsi&amp;gt;exp userid/userpasswd@sidName Export: Release 9.2.0.1.0 - Production on 목 Jun 28 16:29:50 2007 Copyright &amp;copy; 1982, 2002, Oracle Corporation.&amp;nbsp; All rights reserved. 다음에 접속됨: Oracle9i Enterprise Edition Release 9.2.0.1.0 - Production With the Partitioning, OLAP and Oracle Data Mining options JServer Release 9.2.0.1.0 - Production 배열 인출 버퍼 크기 입력: 4096 &amp;gt; 엑스포트 파일:</description>
     </item>
     
     <item>
@@ -451,8 +396,7 @@ Or when the valley&amp;rsquo;s hushed and white with snow
       <pubDate>Wed, 20 Jun 2007 15:05:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/jeus-3.3-%EC%97%90%EC%84%9C-file_realm.xml-%ED%8E%B8%EC%A7%91%ED%95%98%EC%97%AC-%EA%B4%80%EB%A6%AC%EC%9E%90-%EC%95%84%EC%9D%B4%EB%94%94-%EB%B3%80%EA%B2%BD%EA%B4%80%EB%A6%AC%EC%9E%90-%EC%B6%94%EA%B0%80/</guid>
-      <description>~/(제우스디렉토리)/config/(hostname) 폴더 아래에 file_realm.xml 를 열어보면 제일 아래에 사용자 정의 부분이 있음 &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;!&amp;ndash; User Definition &amp;ndash;&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;User&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;Username&amp;gt;administrator&amp;lt;/Username&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;Password&amp;gt;암호&amp;lt;/Password&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;Rolename&amp;gt;system&amp;lt;/Rolename&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;/User&amp;gt; 위의 코드에서 바로 administrator 를 바꾸면 안됨 그래서 아래를 추가하니 잘됨. ㅠㅠ &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;!&amp;ndash; User Definition &amp;ndash;&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;User&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;Username&amp;gt; anotheruser&amp;lt;/Username&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;Password&amp;gt;암호&amp;lt;/Password&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;Rolename&amp;gt;system&amp;lt;/Rolename&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;/User&amp;gt;  --
- </description>
+      <description>~/(제우스디렉토리)/config/(hostname) 폴더 아래에 file_realm.xml 를 열어보면 제일 아래에 사용자 정의 부분이 있음 &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;!&amp;ndash; User Definition &amp;ndash;&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;User&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;Username&amp;gt;administrator&amp;lt;/Username&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;P</description>
     </item>
     
     <item>
@@ -461,7 +405,7 @@ Or when the valley&amp;rsquo;s hushed and white with snow
       <pubDate>Sat, 12 May 2007 12:26:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/zaurus-c1000-milkytracker-%EC%84%A4%EC%B9%98/</guid>
-      <description>음악 신디사이저, 샘플러, 작곡 프로그램인 milkytracker 설치법입니다. (자세한 정보는 http://www.milkytracker.net/?ABOUT) www.milkytracker.net 에서 다운로드 받은 ipk만 설치해서는 동작하지 않습니다. (SL5500용이라서 그렇다고 하는데 5500에서도 동작하지 않더군요) 문제는 1. 화면이 뒤집혀서 실행됨 : 강제로 rotation 시켜 해결 2. 화면이 뜨는 순간 자우루스 다운됨 : 설치시 같이 제공되는 libSDL 문제인듯. Dosbox(zaurus 용) 설치시 같이 제공되는 libSDL 사용하여 해결. &amp;lt;설치환경&amp;gt; - Rom : NYMPH Zaurus Qtopia ROM 060801600 - Zaurus C1000 &amp;lt;설치 순서&amp;gt; 1. 첨부한 milkytracker_0.</description>
+      <description>음악 신디사이저, 샘플러, 작곡 프로그램인 milkytracker 설치법입니다. (자세한 정보는 http://www.milkytracker.net/?ABOUT) www.milkytracker.net 에서 다운로드 받은 ipk만 설치해서는 동작하지 않습니다. (SL5500용</description>
     </item>
     
     <item>
@@ -470,7 +414,7 @@ Or when the valley&amp;rsquo;s hushed and white with snow
       <pubDate>Fri, 04 May 2007 08:18:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/freshmeat.net-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%96%B8%EC%96%B4%EB%B3%84-%EB%93%B1%EB%A1%9D%EB%90%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%88%98/</guid>
-      <description>유닉스, cross-platform 용 software 디렉토리 서비스 사이트인 freshmeat.net 에 보면 언어별로 등록된 프로젝트 수를 알 수 있다. 순위가 큰 의미가 있겠냐만 만약 새로운 언어를 선택해야 한다면 참고가 될 수 있을 듯. 순위가 높으면 reference가 많다는 의미로 볼 수는 있으니&amp;hellip; http://freshmeat.net/browse/160/&amp;nbsp;    NO. 언어 프로젝트 수  1 C 8593  2 Java 5481  3 C++ 4627  4 PHP 4125  5 Perl 3739  6 Python 2744  7 JavaScript 976  8 Unix Shell 971  9 SQL 541  10 Tcl 492  11 Ruby 404  12 Objective C 365  13 C# 289  14 Other 280  15 Assembly 248  16 Other Scripting Engines 153  17 Scheme 143  18 PL/SQL 94  19 Lisp 88  20 Fortran 85  21 Delphi 84  22 OCaml 79  23 Haskell 74  24 Ada&amp;nbsp; 68  25 Common Lisp 64  26 Pascal 61  27 Emacs-Lisp 60  28 Awk 52  29 Zope 49  30 ASP 47  31 Visual Basic 46  32 Lua 36  33 Basic 35  34 Eiffel 34  35 ML 31  36 Smalltalk 30  37 YACC 29  38 Forth 28  39 Cold Fusion 25  40 Erlang 23  41 Object Pascal 22  42 Prolog 22  43 Pike 14  44 Rexx 12  45 Groovy 9  46 REALbasic 9  47 Modula 8  48 D 7  49 Gambas 6  50 Logo 6  51 Euphoria 5  52 PROGRESS 4  53 APL 3  54 Dylan 2  55 Rebol 2  56 Euler 1  57 Pliant 1  58 Simula 1  59 XBasic 1  60 Clipper 0     --</description>
+      <description>유닉스, cross-platform 용 software 디렉토리 서비스 사이트인 freshmeat.net 에 보면 언어별로 등록된 프로젝트 수를 알 수 있다. 순위가 큰 의미가 있겠냐만 만약 새로운 언어를 선택해야 한다면 참고가 될</description>
     </item>
     
     <item>
@@ -479,8 +423,7 @@ Or when the valley&amp;rsquo;s hushed and white with snow
       <pubDate>Wed, 25 Apr 2007 15:17:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/jsp-%EC%97%90%EC%84%9C-request-header-%EB%AA%A8%EB%91%90-%EC%B0%8D%EC%96%B4%EB%B3%B4%EA%B8%B0/</guid>
-      <description>아래코드를 그대로 copy &amp;amp; paste 하면 됨 Enumeration em = request.getHeaderNames(); while (em.hasMoreElements()){ &amp;nbsp;&amp;nbsp; &amp;nbsp;String s = (String)em.nextElement(); &amp;nbsp;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp; &amp;nbsp;out.println(s +&amp;rdquo; : &amp;ldquo;); &amp;nbsp;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp; &amp;nbsp;out.println(request.getHeader(s)+&amp;rdquo;&amp;lt;br&amp;gt;&amp;rdquo;); }  --
- </description>
+      <description>아래코드를 그대로 copy &amp;amp; paste 하면 됨 Enumeration em = request.getHeaderNames(); while (em.hasMoreElements()){ &amp;nbsp;&amp;nbsp; &amp;nbsp;String s = (String)em.nextElement(); &amp;nbsp;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp; &amp;nbsp;out.println(s +&amp;rdquo; : &amp;ldquo;); &amp;nbsp;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp; &amp;nbsp;out.println(request.getHeader(s)+&amp;rdquo;&amp;lt;br&amp;gt;&amp;rdquo;); } --</description>
     </item>
     
     <item>
@@ -489,10 +432,7 @@ Or when the valley&amp;rsquo;s hushed and white with snow
       <pubDate>Mon, 12 Feb 2007 19:32:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/%EC%BB%B4%ED%93%A8%ED%84%B0%EB%8A%94%EC%9A%94-%EC%A0%88%EB%8C%80%EB%A1%9C-%EA%B1%B0%EC%A7%93%EB%A7%90%EC%9D%84-%EC%95%88%ED%95%A9%EB%8B%88%EB%8B%A4./</guid>
-      <description>  한국 최초의 컴퓨터 종합지인 월간컴퓨터학습 창간호 (1983년 11월) 에 실린 기사.
-나중에 잡지 이름을 마이컴(MyCom)이라는 이름으로 개명하게 됩니다.
-http://agorabbs3.media.daum.net/griffin/do/kin/read?bbsId=K153&amp;amp;articleId=13551&amp;amp;pageIndex=1&amp;amp;searchKey=&amp;amp;searchValue= 에서 퍼옴  --
- </description>
+      <description>한국 최초의 컴퓨터 종합지인 월간컴퓨터학습 창간호 (1983년 11월) 에 실린 기사. 나중에 잡지 이름을 마이컴(MyCom)이라는 이름으로 개명하게 됩니다</description>
     </item>
     
     <item>
@@ -501,8 +441,7 @@ http://agorabbs3.media.daum.net/griffin/do/kin/read?bbsId=K153&amp;amp;articleId
       <pubDate>Tue, 06 Feb 2007 20:25:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/google-2084/</guid>
-      <description>http://www.nytimes.com/imagepages/2005/10/10/opinion/1010opart.html 조지오웰의 1984 보다 100년 후.  --
- </description>
+      <description>http://www.nytimes.com/imagepages/2005/10/10/opinion/1010opart.html 조지오웰의 1984 보다 100년 후. --</description>
     </item>
     
     <item>
@@ -511,12 +450,7 @@ http://agorabbs3.media.daum.net/griffin/do/kin/read?bbsId=K153&amp;amp;articleId
       <pubDate>Sat, 03 Feb 2007 09:58:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/%ED%98%84%EC%9E%AC-%ED%8F%B4%EB%8D%94%EC%97%90%EC%84%9C-%ED%95%98%EC%9C%84-%ED%8F%B4%EB%8D%94%EA%B9%8C%EC%A7%80-%EB%AA%A8%EB%93%A0-%ED%8C%8C%EC%9D%BC%EB%AA%A9%EB%A1%9D-dir-_on-_b-_a-d-_s-list.txt/</guid>
-      <description>list.txt@@**@@http://shed.egloos.com/1502810&amp;quot;&amp;gt;도스 명령어임.  현재 폴더에서 하위 폴더까지 모든 파일목록 : dir /on /b /a-d /s &amp;gt; list.txt
-(list.txt 라는 파일이 생긴다.)
- 현재 폴더에서 하위 폴더까지 모든 폴더목록(트리형태) : tree &amp;gt; tree.txt
-(tree.txt 라는 파일이 생긴다.)
-   --
- </description>
+      <description>list.txt@@**@@http://shed.egloos.com/1502810&amp;quot;&amp;gt;도스 명령어임. 현재 폴더에서 하위 폴</description>
     </item>
     
     <item>
@@ -525,8 +459,7 @@ http://agorabbs3.media.daum.net/griffin/do/kin/read?bbsId=K153&amp;amp;articleId
       <pubDate>Thu, 01 Feb 2007 19:53:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/java-ee-5%EB%A5%BC-%EC%9D%B4%EB%A3%A8%EB%8A%94-%EC%8B%A0%EA%B8%B0%EC%88%A0%EB%93%A4/</guid>
-      <description>출처 http://www.zdnet.co.kr/builder/dev/java/0,39031622,39153447,00.htm   --
- </description>
+      <description>출처 http://www.zdnet.co.kr/builder/dev/java/0,39031622,39153447,00.htm --</description>
     </item>
     
     <item>
@@ -535,8 +468,7 @@ http://agorabbs3.media.daum.net/griffin/do/kin/read?bbsId=K153&amp;amp;articleId
       <pubDate>Tue, 30 Jan 2007 13:17:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/%EC%9B%B9%EC%B1%84%ED%8C%85-http__www.lingr.com_/</guid>
-      <description>http://www.hatena.co.kr/ 에서 얻어온 정보다. http://www.lingr.com/ Ajax를 쓰는거 같기는 한데&amp;hellip; Server 에서 Client로 채팅메시지를 push 해주는 방식이라면 정말 대단함. 그렇지 않다면 &amp;hellip;. 다른 Ajax 채팅과 틀린게 없는거지.  --
- 행인 2007/04/25 15:33 #  삭제 답글    여타 Ajax채팅과 다를게 없어보입니다. 간단히 해결할수 있는 버퍼링조차 안되는건 많이 허접해보이네요... 클라이언트를 2개정도 띄어놓고 0에서 9까지 아주 빠른 속도로 두세번입력해보면 압니다. 간단한 자바스크립으로 버퍼링 알고리즘만 구현해놔도 해결할수 있는 문제인것을... 기술자체는 예전 국내에 있던 매스팅이란 Ajax채팅 엔진만 못해보이는듯.</description>
+      <description>http://www.hatena.co.kr/ 에서 얻어온 정보다. http://www.lingr.com/ Ajax를 쓰는거 같기는 한데&amp;hellip; Server 에서 Client로 채팅메시지를 push 해주는 방식이라면 정말 대단함. 그렇지 않다면 &amp;hellip;.</description>
     </item>
     
     <item>
@@ -545,8 +477,7 @@ http://agorabbs3.media.daum.net/griffin/do/kin/read?bbsId=K153&amp;amp;articleId
       <pubDate>Wed, 24 Jan 2007 14:27:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/%EC%BD%94%EB%94%A9%EC%A4%91-%EB%AC%B8%EB%93%9D-%EC%83%9D%EA%B0%81%EB%82%9C-%EC%98%81%ED%99%94-%EC%96%B4%EB%8C%91%ED%85%8C%EC%9D%B4%EC%85%98-adaptation/</guid>
-      <description>참으로 두뇌활동이란 불가사의하다. 예전에 구축했던 java 소스코드를 수정하다 문득 생각난 영화 Adaptation. 이게 코딩과 무슨 상관 있겠는가? 사실 classcasting 관련 고민을 하고 있던 순간이었기는 하다. adapt 와 cast라&amp;hellip; 비슷한 단어이기는 한데&amp;hellip; adapt에 &amp;lsquo;개조&amp;rsquo;, &amp;lsquo;개작&amp;rsquo; 이란 뜻도 있구나&amp;hellip;  --
- </description>
+      <description>참으로 두뇌활동이란 불가사의하다. 예전에 구축했던 java 소스코드를 수정하다 문득 생각난 영화 Adaptation. 이게 코딩과 무슨 상관 있겠는가? 사실 classcasting 관련 고민을 하고 있던 순간이</description>
     </item>
     
     <item>
@@ -555,8 +486,7 @@ http://agorabbs3.media.daum.net/griffin/do/kin/read?bbsId=K153&amp;amp;articleId
       <pubDate>Tue, 23 Jan 2007 13:11:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/%EB%AC%B4%EB%A3%8C-%EB%B0%94%EC%9D%B4%EB%9F%AC%EC%8A%A4-%EB%B0%8F-%EC%8A%A4%ED%8C%8C%EC%9D%B4%EC%9B%A8%EC%96%B4-%EA%B2%80%EC%82%AC/</guid>
-      <description> http://onecare.live.com/site/ko-KR/default.htm?s_cid=sah http://www.activevirusshield.com/antivirus/freeav/  --
- </description>
+      <description>http://onecare.live.com/site/ko-KR/default.htm?s_cid=sah http://www.activevirusshield.com/antivirus/freeav/ --</description>
     </item>
     
     <item>
@@ -565,13 +495,7 @@ http://agorabbs3.media.daum.net/griffin/do/kin/read?bbsId=K153&amp;amp;articleId
       <pubDate>Tue, 23 Jan 2007 13:07:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/%EC%BD%94%EB%94%A9%ED%95%98%EB%8D%98-%EB%85%B8%EC%9D%B8/</guid>
-      <description>from &amp;lsquo;http://okjsp.pe.kr/seq/84327&#39; 코딩하던 노인 원작 : 尹五榮의 &amp;lsquo;방망이 깎던 노인&amp;rsquo;
-벌써 3-4년 전이다. 내가 갓 취업 한 지 얼마 안 돼서 구로공단에서 일 하던 때다.
-이른 아침. 찜질방에서 잔 뒤 출근 하러가는 길에, 게임한판 하고 가기위해 근처 PC방으로 향했다.
-리듬안마 맞은편 PC방에 구석에 앉아 비쥬얼 스튜디오를 들여다 보는 노인이 있었다.
-밤새 잡히지 않는 버그에 대한 조언도 구할겸 소스를 봐달라고 부탁을 했다.
-값을 굉장히 비싸게 부르는 것 같았다.
-“좀 싸게 해줄 수 없습니까?</description>
+      <description>from &amp;lsquo;http://okjsp.pe.kr/seq/84327&#39; 코딩하던 노인 원작 : 尹五榮의 &amp;lsquo;방망이 깎던 노인&amp;rsquo; 벌써 3-4년 전이다. 내가 갓 취업 한 지 얼마 안 돼서 구로공단에서 일 하던 때다.</description>
     </item>
     
     <item>
@@ -580,8 +504,7 @@ http://agorabbs3.media.daum.net/griffin/do/kin/read?bbsId=K153&amp;amp;articleId
       <pubDate>Thu, 18 Jan 2007 16:42:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/%EC%B1%85%EC%9D%BD%EC%96%B4%EC%A3%BC%EB%8A%94-%EB%8F%84%EC%84%9C%EA%B4%80-%EC%A0%84%EC%9A%A9%ED%8F%B0-wipi-%ED%99%94%EB%A9%B4/</guid>
-      <description>책읽어주는 도서관 전용폰-wipi 화면  img_0282.jpg  --
- </description>
+      <description>책읽어주는 도서관 전용폰-wipi 화면 img_0282.jpg --</description>
     </item>
     
     <item>
@@ -590,7 +513,7 @@ http://agorabbs3.media.daum.net/griffin/do/kin/read?bbsId=K153&amp;amp;articleId
       <pubDate>Sun, 14 Jan 2007 11:21:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/%ED%9B%84%EC%A7%80%EC%AF%94-b142-%EB%B6%84%ED%95%B4%ED%95%98%EA%B8%B0/</guid>
-      <description>분해는 http://sandbox.cz/~covex/hw/b112/ 를 참고하면 되는데 (혹은 http://pds4.egloos.com/pds/200701/14/82/fujitsu%20lifebook%20b112_b142%20disassembly.zip) 원본글에 대한 보충설명을 하겠다. 원본글을 반드시 먼저 읽어보시길. 원본글처럼 나사를 모두 풀면 키보드가 분리되는데 본체와 키보드 케이블을 본체 커넥터에서분리해야 한다. 케이블을 잡고 살며시 당기면 빠진다. 반드시 케이블의 뿌리부분을 잡고 당겨야 한다. 아니면 케이블이 끊어질 수 있다. [케이블을 빼는 모습] 다시 넣을때는 잘 안들어간다. 왜냐하면 커넥터가 잠김상태이기 때문이다. [잠긴 모습] 커넥터의 레버를 위로 올려서 &amp;lsquo;풀림&amp;rsquo;상태로 해줘야 한다. [잠김이 풀린 모습] &amp;ndash;&amp;gt; 위의 사진 2개를 비교해 보면 이해될 것임.</description>
+      <description>분해는 http://sandbox.cz/~covex/hw/b112/ 를 참고하면 되는데 (혹은 http://pds4.egloos.com/pds/200701/14/82/fujitsu%20lifebook%20b112_b142%20disassembly.zip) 원본글에 대한 보충설명을 하겠다. 원본글을 반드시 먼저 읽어보시길. 원본글처럼 나사를 모두 풀면 키보드가 분리되는데 본체와</description>
     </item>
     
     <item>
@@ -599,8 +522,7 @@ http://agorabbs3.media.daum.net/griffin/do/kin/read?bbsId=K153&amp;amp;articleId
       <pubDate>Wed, 27 Dec 2006 02:24:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/java-&#43;-oracle-xmltype-insert-%EC%8B%9C-%EB%AC%B8%EC%A0%9C-non-supported-character-set-oracle-character-set-840/</guid>
-      <description>1. 해결책[1] JDBC&amp;nbsp;Driver가&amp;nbsp;한글&amp;nbsp;지원을&amp;nbsp;하지&amp;nbsp;않아서&amp;nbsp;나는&amp;nbsp;에러입니다. JDBC&amp;nbsp;Driver중에&amp;nbsp;한글&amp;nbsp;패치가&amp;nbsp;된&amp;nbsp;드라이버가&amp;nbsp;있습니다. 만약&amp;nbsp;없다면&amp;nbsp;classes12.zip과&amp;nbsp;더불어&amp;nbsp;제공되는&amp;nbsp;nls_charset12.zip을&amp;nbsp;클래스패스에&amp;nbsp;추가해&amp;nbsp;주면&amp;nbsp;해결&amp;nbsp;될겁니다. 패치된&amp;nbsp;JDBC&amp;nbsp;Driver는&amp;nbsp;classes12_1.zip이라는&amp;nbsp;이름으로&amp;nbsp;웹&amp;nbsp;자료실에서&amp;nbsp;배포되는&amp;nbsp;곳이&amp;nbsp;있을겁니다.&amp;nbsp;한번&amp;nbsp;찾아보세요. 출처 : http://www.javajigi.net/servlet/JMBoard?tablename=xml_qna&amp;amp;mode=view&amp;amp;boardpage=16&amp;amp;searchword=&amp;amp;searchscope=&amp;amp;category=&amp;amp;no=2 2. 해결책[2]
- Looks like you got wrong JDBC drivers loaded by the JVM - for 1.4 try ojdbc14.jar (and they better be 9.2.0.2.) and verify that no other drivers are on CLASSPATH. (클래스패스에 다른 jdbc 드라이버가 있는지 확인해라.) 그런데 ~/jre/lib/ext/ 는 디폴트 classpath이므로 여기도 반드시 확인해야 한다. 시스템의 ~/jre/lib/ext/에 classes12.jar 가 있었다. ~/jre/lib/ext/의 classes12.jar 를 없애면 해결할 수 있지만 다른 java 어플이 사용하고 있을수도 있기 때문에 삭제하지 않았고 ~/jre/lib/ext/ 에 nls_charset12.</description>
+      <description>1. 해결책[1] JDBC&amp;nbsp;Driver가&amp;nbsp;한글&amp;nbsp;지원을&amp;nbsp;하지&amp;nbsp;않아서&amp;nbsp;나는&amp;nbs</description>
     </item>
     
     <item>
@@ -609,8 +531,7 @@ http://agorabbs3.media.daum.net/griffin/do/kin/read?bbsId=K153&amp;amp;articleId
       <pubDate>Fri, 15 Dec 2006 13:31:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/%ED%95%B4%EB%B3%80%EC%9D%98-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8/</guid>
-      <description>출처 http://okjsp.pe.kr/seq/81311 눈가에 맺히는 습기를 주체할 수 없습니다. ㅠㅠ   --
- 오리대마왕 2006/12/15 18:28 #  답글    프로그래머라고 보기 어려운 것 같아요. 배가 안나왔거든요 :)    </description>
+      <description>출처 http://okjsp.pe.kr/seq/81311 눈가에 맺히는 습기를 주체할 수 없습니다. ㅠㅠ -- 오리대마왕 2006/12/15 18:28 # 답글 프로그래머라고 보기 어려운 것 같아요. 배가 안나왔거든요 :)</description>
     </item>
     
     <item>
@@ -619,8 +540,7 @@ http://agorabbs3.media.daum.net/griffin/do/kin/read?bbsId=K153&amp;amp;articleId
       <pubDate>Fri, 15 Dec 2006 13:26:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/%ED%8C%80%EC%9B%A4/</guid>
-      <description>출처 http://okjsp.pe.kr/seq/81379   --
- </description>
+      <description>출처 http://okjsp.pe.kr/seq/81379 --</description>
     </item>
     
     <item>
@@ -629,8 +549,7 @@ http://agorabbs3.media.daum.net/griffin/do/kin/read?bbsId=K153&amp;amp;articleId
       <pubDate>Sat, 25 Nov 2006 20:20:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/eclipse%EC%97%90%EC%84%9C-word-wrap-%ED%95%98%EA%B8%B0/</guid>
-      <description>http://www.brajeshwar.com/archives/2006/08/word-wrap-in-eclipse/ 좌우 스크롤바 이젠 안녕~ 그러나 이클립스 화면 반응이 느려짐. ㅠㅠ 필요할 때만 써야 할듯&amp;hellip;  --
- </description>
+      <description>http://www.brajeshwar.com/archives/2006/08/word-wrap-in-eclipse/ 좌우 스크롤바 이젠 안녕~ 그러나 이클립스 화면 반응이 느려짐. ㅠㅠ 필요할 때만 써야 할듯&amp;hellip; --</description>
     </item>
     
     <item>
@@ -639,29 +558,7 @@ http://agorabbs3.media.daum.net/griffin/do/kin/read?bbsId=K153&amp;amp;articleId
       <pubDate>Tue, 24 Oct 2006 17:36:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/apache-mod_rewrite/</guid>
-      <description>&amp;lt;시나리오&amp;gt;
-- 클라이언트가 요청시 쿼리 value 에 항상 쓰레기 값이 붙어서 넘어옴
-- 클리이언트 측 프로그램은 변경불가 Never and Ever. 어쩔 수 없이 서버쪽에서 수정해야 함 OTL&amp;hellip;.
-&amp;nbsp;
-&amp;lt;httpd.conf&amp;gt;
-====================================================================================
-
-RewriteEngine On
-RewriteMap division-handle txt:conf/rewriteMap.txt
-# 아래꺼 잘됨
-#RewriteRule /shit/([0-9]+) /rewrite.php?id=$1
-# /serviceName/wapGateway?clientID=ver0.1
-&amp;amp;phoneNo=01057401039&amp;amp;pgmid=HW12000
-&amp;amp;bookType=N&amp;amp;division=100\t&amp;amp;pageNum=2&amp;amp;maxRowNo=10
-# 위의 URL을
-# /serviceName/wapGateway?clientID=ver0.1
-&amp;amp;phoneNo=01057401039&amp;amp;pgmid=HW12000
-&amp;amp;bookType=N&amp;amp;division=100&amp;amp;pageNum=2&amp;amp;maxRowNo=10
-# 이렇게 매치시켜야 함
-# fail - 아래와 같은 방식은 안됨
-#RewriteRule /serviceName/wapGateway?clientID=ver(([0-9]+)|([0-9]&amp;rdquo;.&amp;rdquo;[0-9]+))
-&amp;amp;phoneNo=([0-9]+)&amp;amp;pgmid=HW12000&amp;amp;bookType=([A-Z])&amp;amp;division=([0-9]+)\t
-&amp;amp;pageNum=([0-9]+)&amp;amp;maxRowNo=([0-9]+)$ /error.php</description>
+      <description>&amp;lt;시나리오&amp;gt; - 클라이언트가 요청시 쿼리 value 에 항상 쓰레기 값이 붙어서 넘어옴 - 클리이언트 측 프로그램은 변경불가 Never and Ever. 어쩔 수 없이 서버쪽에서 수정</description>
     </item>
     
     <item>
@@ -670,7 +567,7 @@ RewriteMap division-handle txt:conf/rewriteMap.txt
       <pubDate>Fri, 29 Sep 2006 23:54:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/java-tcp-proxy/</guid>
-      <description>dodgyTCPProxy.zip &amp;ndash;&amp;gt; 다운로드 활용 시나리오는 이렇다 A사에서는 java로 구현된 sms 발송기 구축를 자사에 요청했다. sms 발송기는 A사의 머신에 탑재되어야 하며 sms 발송요청을 받을 sms 서버는 B사 의 서버이며 A사의 클라이언트용 머신과 B사의 서버용 머신은 내부네트ㅤㅇㅝㅋ으로 연결되어 있다. B사의 sms서버는 내부망의 클라이언트의 요청만 받게 되어 있다. 즉 192.168. 로 시작하는 IP의 클라이언트만 접속을 허용한다. 따라서 본인 pc에서 바로 접속이 불가능ㅤㅎㅏㄷ. 다행히도 A 사는 개발편의를 위해서 sms 클라이언트용 머신의 telnet과 ftp을 자사에 개방해주었다.</description>
+      <description>dodgyTCPProxy.zip &amp;ndash;&amp;gt; 다운로드 활용 시나리오는 이렇다 A사에서는 java로 구현된 sms 발송기 구축를 자사에 요청했다. sms 발송기는 A사의 머신에 탑재되어야 하며 sms 발송요청을 받을</description>
     </item>
     
     <item>
@@ -679,9 +576,7 @@ RewriteMap division-handle txt:conf/rewriteMap.txt
       <pubDate>Wed, 20 Sep 2006 19:09:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/python-computer-programming-for-everybody/</guid>
-      <description>(http://bioinfo.sarang.net/wiki/AboutPython 에서 일부 발췌)
- [Python]과 WikiWiki의 관계   WikiWiki가 모두 Python으로 구현되었다든지 하는 관계를 말하는 것은 아니다. 물론, 파이썬으로 구현된 WikiWiki도 존재한다. (정확히는 WikiClone이라고 부른다) 양자의 관계는 구체적 기술 차원이라기보다는 좀 더 &amp;ldquo;사회적&amp;ldquo;인 면에서 그 의미를 찾을 수 있다. 
-파이썬과 WikiWiki가 추구하는 가치의 공통점은 결국 &amp;ldquo;대중에게 힘을&amp;rdquo;(Power to the people)에서 찾을 수 있을 것이다. WikiWiki나 파이썬이나 모두 이미 기존의 시스템이 거의 전권을 독점적으로 소유한 상태에서 이것을 사용자들에게 나눠줄 수 있도록 하는 노력으로 볼 수 있다.</description>
+      <description>(http://bioinfo.sarang.net/wiki/AboutPython 에서 일부 발췌) [Python]과 WikiWiki의 관계 WikiWiki가 모두 Python으로 구현되었다든지 하는 관계를 말하는 것은 아니다. 물론</description>
     </item>
     
     <item>
@@ -690,7 +585,7 @@ RewriteMap division-handle txt:conf/rewriteMap.txt
       <pubDate>Fri, 15 Sep 2006 13:26:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/binary-%EB%B0%94%EC%9D%B4%EB%84%88%EB%A6%AC-%ED%8C%8C%EC%9D%BC-cvs-import-%ED%95%98%EA%B8%B0/</guid>
-      <description>cvnNT에서 import 시 모든 file은 ascii 로 간주된다. binary 파일을 import 하려면 ~/CVSROOT/cvswrappers 를 편집해야 함 샘플은 아래와 같음 cvswrappers &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash; # This file affects handling of files based on their names. # # The -t/-f options allow one to treat directories of files # as a single file, or to transform a file in other ways on # its way in and out of CVS. # # The -m option specifies whether CVS attempts to merge files.</description>
+      <description>cvnNT에서 import 시 모든 file은 ascii 로 간주된다. binary 파일을 import 하려면 ~/CVSROOT/cvswrappers 를 편집해야 함 샘플은 아래와 같음 cvswrappers &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash; # This file affects handling of files based on their names. # # The -t/-f options allow one to treat directories of</description>
     </item>
     
     <item>
@@ -699,8 +594,7 @@ RewriteMap division-handle txt:conf/rewriteMap.txt
       <pubDate>Tue, 12 Sep 2006 21:48:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/sed-%EC%82%AC%EC%9A%A9%ED%95%9C-find-and-replace-%EC%83%98%ED%94%8C/</guid>
-      <description>sed s/=&amp;ldquo;..//=&amp;rdquo;//g develop_view.htm &amp;gt; develop_view2.htm 이런식으로 하면 develop_view.htm의 소스에서 =../ 를 =/ 로 바꿔서 develop_view2.htm 로 저장함  --
- </description>
+      <description>sed s/=&amp;ldquo;..//=&amp;rdquo;//g develop_view.htm &amp;gt; develop_view2.htm 이런식으로 하면 develop_view.htm의 소스에서 =../ 를 =/ 로 바꿔서 develop_view2.htm 로 저장함 --</description>
     </item>
     
     <item>
@@ -709,8 +603,7 @@ RewriteMap division-handle txt:conf/rewriteMap.txt
       <pubDate>Fri, 08 Sep 2006 00:11:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/ip-%EB%A1%9C-%ED%95%B4%EB%8B%B9%EA%B5%AD%EA%B0%80-%EC%95%8C%EC%95%84%EB%82%B4%EA%B8%B0/</guid>
-      <description>http://software77.net/cgi-bin/ip-country/geo-ip.pl 에서 IpToCountry.csv.gz 를 공.짜.로 나눠주고 있음  http://www.private.org.il/IP2geo.html 에서 허락없이 퍼옴 How do I find the geographical location of a host, given its IP address ? In general, it is impossible - IP addresses are allocated arbitrarily, as there&amp;rsquo;s no inherent connection between an IP address and it&amp;rsquo;s physical location, and there&amp;rsquo;s no reliable method to do the trick.
-Yet, doing some detective work could help. Try following methods :</description>
+      <description>http://software77.net/cgi-bin/ip-country/geo-ip.pl 에서 IpToCountry.csv.gz 를 공.짜.로 나눠주고 있음 http://www.private.org.il/IP2geo.html 에서 허락없이 퍼옴 How do I find the geographical location of a host, given its IP address ? In general, it is impossible - IP addresses are allocated arbitrarily, as there&amp;rsquo;s no inherent connection between an IP address and it&amp;rsquo;s physical location, and there&amp;rsquo;s no reliable method to</description>
     </item>
     
     <item>
@@ -719,8 +612,7 @@ Yet, doing some detective work could help. Try following methods :</description>
       <pubDate>Thu, 31 Aug 2006 01:11:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/%EC%9D%B8%ED%84%B0%EB%84%B7-%EC%9D%B5%EC%8A%A4%ED%94%8C%EB%A1%9C%EB%9F%AC-6.0%EC%97%90%EC%84%9C-html-%EC%97%98%EB%A6%AC%EB%A8%BC%ED%8A%B8%EB%A5%BC-java-script%EC%97%90%EC%84%9C-%EC%B0%B8%EC%A1%B0%ED%95%98%EC%A7%80-%EB%AA%BB%ED%95%98%EB%8A%94-%EA%B2%BD%EC%9A%B0-%EC%9E%88%EC%9D%8C/</guid>
-      <description>드림위버(버전은 모름, 현재 최신 버전인듯)에서 html 편집을 할 때 아래와 같이 자동으로 코딩되는 부분이 있음 &amp;lt;!DOCTYPE html PUBLIC &amp;ldquo;-//W3C//DTD XHTML 1.0 Transitional//EN&amp;rdquo; &amp;ldquo;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&amp;quot;&amp;gt; &amp;lt;html xmlns=&amp;ldquo;http://www.w3.org/1999/xhtml&amp;quot;&amp;gt; 이 때 인터넷 익스플로러 6.0에서 html 엘리먼트를 java script에서 참조하지 못하는 경우 있음 예를 들어 document.body 를 참조하지 못함!!!!!!! 위의 코드를 &amp;lt;html&amp;gt; 로 변경하니 잘됨. IE의 문제로 보여짐 썅. 6시간 까먹음  --
- </description>
+      <description>드림위버(버전은 모름, 현재 최신 버전인듯)에서 html 편집을 할 때 아래와 같이 자동으로 코딩되는 부분이 있음 &amp;lt;!DOCTYPE html PUBLIC &amp;ldquo;-//W3C//DTD XHTML 1.0 Transitional//EN&amp;rdquo; &amp;ldquo;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&amp;quot;&amp;gt; &amp;lt;html xmlns=&amp;ldquo;http://www.w3.org/1999/xhtml&amp;quot;&amp;gt; 이 때 인터넷 익스플로러 6.0에</description>
     </item>
     
     <item>
@@ -729,7 +621,7 @@ Yet, doing some detective work could help. Try following methods :</description>
       <pubDate>Tue, 29 Aug 2006 20:21:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/%EC%B6%94%EC%96%B5%EC%9D%98-ip/</guid>
-      <description>지금 다니는 회사는 인터넷 공유기를 사용해서 직원들에게 공인 IP가 지급되지 않지만 첫직장에서는 공인아이피를 지급했었다. 지금도 가끔 집에서 회사pc로 VNC 접속하려고 할 때 습관적으로 예전 직장의 IP로 접속하려 할 때가 많다. 어이없음에 피식 웃고 말지만 지금 생각해보니 그 아이피가 단순한 숫자가 아니었다는 생각이 든다. 마치 고향집 전화번호 같다. 나와 contact 할 수 있는(있었던 ^^) 기호. &amp;rdquo; 처음 뵙겠습니다. ^^&amp;nbsp; 저는 아이피 xxx.xxx.15.42를 쓰는 김동석입니다. 하하~ 아이피 번호가 어떻게 되시죠? 혹시 FTP나 웹서버 돌리고 계신가요?</description>
+      <description>지금 다니는 회사는 인터넷 공유기를 사용해서 직원들에게 공인 IP가 지급되지 않지만 첫직장에서는 공인아이피를 지급했었다. 지금도 가끔 집에서 회사pc로 VNC 접속</description>
     </item>
     
     <item>
@@ -738,18 +630,7 @@ Yet, doing some detective work could help. Try following methods :</description>
       <pubDate>Tue, 29 Aug 2006 18:56:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/sql-injection-cross-site-scripting-xss-%EC%98%88%EB%B0%A9%EC%B1%85/</guid>
-      <description>&amp;lt; Sql injection&amp;nbsp;&amp;gt;
-[공격 예제]
-Java 소스의 게시판 검색 Sql 구문 코딩이 아래와 같다고 하고
-String findQuery = “select * from notice where title = &amp;lsquo;”+ keyword + “&amp;rsquo; “;
-&amp;nbsp;
-홈페이지의 게시판 검색 시 keyword에“&amp;nbsp;&amp;nbsp; any&amp;rsquo; &amp;nbsp;;&amp;nbsp; DROP TABLE NOTICE&amp;nbsp;&amp;nbsp; “&amp;nbsp; 를 넣고 검색한다면 
-&amp;nbsp;
-아래와 같은 Sql 구문이 실행되고
-SELECT * FROM notice WHERE title = &amp;lsquo;any&amp;rsquo; ;&amp;nbsp; DROP TABLE notice
-NOTICE 테이블이 삭제됩니다.
-&amp;nbsp;
-[예방법]</description>
+      <description>&amp;lt; Sql injection&amp;nbsp;&amp;gt; [공격 예제] Java 소스의 게시판 검색 Sql 구문 코딩이 아래와 같다고 하고 String findQuery = “select * from notice where title = &amp;lsquo;”+ keyword + “&amp;rsquo; “; &amp;nbsp;</description>
     </item>
     
     <item>
@@ -758,8 +639,7 @@ NOTICE 테이블이 삭제됩니다.
       <pubDate>Fri, 25 Aug 2006 19:05:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/ruby-%EC%96%B8%EC%96%B4%EC%9A%A9-%EC%9B%B9-%EC%9D%B8%ED%84%B0%ED%94%84%EB%A6%AC%ED%84%B0/</guid>
-      <description>http://tryruby.hobix.com/ javascript로 Ruby 인터프리터를 구현한줄 알았는데 서버에서 명령실행 결과를 가져오는 거 같다. 그래도 대단함! 역시 스크립트언어! Python이나 다시 공부해볼까?  --
- </description>
+      <description>http://tryruby.hobix.com/ javascript로 Ruby 인터프리터를 구현한줄 알았는데 서버에서 명령실행 결과를 가져오는 거 같다. 그래도 대단함! 역시 스크립트언어! Python이나</description>
     </item>
     
     <item>
@@ -768,8 +648,7 @@ NOTICE 테이블이 삭제됩니다.
       <pubDate>Mon, 21 Aug 2006 13:08:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%97%85%EB%AC%B4-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%EB%8F%84/</guid>
-      <description>땜빵정신, 씁쓸&amp;hellip; . http://blog.naver.com/nextman0 에서 퍼옴   --
- </description>
+      <description>땜빵정신, 씁쓸&amp;hellip; . http://blog.naver.com/nextman0 에서 퍼옴 --</description>
     </item>
     
     <item>
@@ -778,8 +657,7 @@ NOTICE 테이블이 삭제됩니다.
       <pubDate>Mon, 21 Aug 2006 13:06:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/%EB%AC%B4%EC%A0%81%EC%95%BC%EA%B7%BC%EB%B6%80%EB%8C%80/</guid>
-      <description>씁쓸&amp;hellip;.. http://blog.naver.com/nextman0&amp;nbsp;에서 퍼옴 http://blog.naver.com/nextman0/120027958191   --
- </description>
+      <description>씁쓸&amp;hellip;.. http://blog.naver.com/nextman0&amp;nbsp;에서 퍼옴 http://blog.naver.com/nextman0/120027958191 --</description>
     </item>
     
     <item>
@@ -788,20 +666,7 @@ NOTICE 테이블이 삭제됩니다.
       <pubDate>Mon, 21 Aug 2006 12:57:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%86%8D%EB%8B%B4/</guid>
-      <description>가는 소스가 고와야 오는 파일에 바이러스 없다.
-잦은 Warning 에 Error 날줄 모른다.
-영업은 상사 편이다.
-디자이너는 프로그래머 편이다.
-프린터 밑에 누워 소스 떨어지기만을 기다린다.
-printf 도 디버깅에 쓸려면 에러난다.
-에러 무서워서 코딩 못 할까
-소스가 한 박스라도 코딩을 해야 프로그램이다.
-코더도 타이핑하는 재주는 있다!!
-길고 짧은 것은 strlen을 써봐야 안다.
-소스도 먼저 코딩하는 놈이 낫다.
-믿는 팀장에 발등 찍힌다.
-개발실 청소 아줌마 삼 년에 디버깅 한다.
-보기 좋은 코드가 디버깅 하기 좋다.</description>
+      <description>가는 소스가 고와야 오는 파일에 바이러스 없다. 잦은 Warning 에 Error 날줄 모른다. 영업은 상사 편이다. 디자이너는 프로그래머 편이다. 프린터 밑에 누워 소스 떨어지기만을 기</description>
     </item>
     
     <item>
@@ -810,8 +675,7 @@ printf 도 디버깅에 쓸려면 에러난다.
       <pubDate>Fri, 11 Aug 2006 22:35:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/eclipse-&#43;-cvsnt-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-syncronize-%EC%8B%9C-problems-reported-while-synchronizing-cvs-workspace.../</guid>
-      <description>- cvsNT 2.0.4 - Eclipse 3.1.0 에서 발생함. cvsNT의 문제임 repository path 에 드라이브문자가 들어가면 안됨 cvsNT 설청창에서 &amp;lsquo;repository prefix&amp;rsquo;를 사용할것 예를들어&amp;nbsp;repository가 &amp;lsquo;/cvs/repository&amp;rsquo; 이런식으로 되도록 함 &amp;nbsp;  --
- </description>
+      <description>- cvsNT 2.0.4 - Eclipse 3.1.0 에서 발생함. cvsNT의 문제임 repository path 에 드라이브문자가 들어가면 안됨 cvsNT 설청창에서 &amp;lsquo;repository prefix&amp;rsquo;를 사용할것 예를들어&amp;nbs</description>
     </item>
     
     <item>
@@ -820,7 +684,7 @@ printf 도 디버깅에 쓸려면 에러난다.
       <pubDate>Fri, 11 Aug 2006 20:40:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/%EB%A1%AC%EB%B3%B4%EC%A6%88%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4%EC%97%90%EC%84%9C-%EC%9E%90%EB%8F%99%EC%BB%B4%ED%8C%8C%EC%9D%BC%EC%9D%B4-%EC%95%88%EB%90%98%EB%8A%94-%ED%98%84%EC%83%81-%ED%95%B4%EA%B2%B0/</guid>
-      <description>특정 java 파일 수정 후 저장시 자동 컴파일이 안됨. 이 때 톰캣이 class를 리로드도 실패함. 그래서 톰캣 리스타트&amp;nbsp;했더니 &amp;lsquo;load-on-startup&amp;rsquo; 으로 지정된 서블릿 실행이 안되서 /WEB-INF/classes를 봤더니 ~.class 파일이 모두 사라짐. 귀신이 곡할 노릇 이 때 ~.java 파일 하나를 수정해주면 ~.class파일을 제대로 생성함 이걸 몰라서 예전에는 이클립스 프로젝트를 새로 만들었음  위의 방법으로 안된다면 외부 java 라이브러리를 아무거나 추가하면 모두 다시 컴파일 함. (추가 후 컴파일 완료되었으면 추가한 라이브러리를 제거해도 됨)    그래도 안되면&amp;hellip; 그냥 프로젝트를 새로 만든다.</description>
+      <description>특정 java 파일 수정 후 저장시 자동 컴파일이 안됨. 이 때 톰캣이 class를 리로드도 실패함. 그래서 톰캣 리스타트&amp;nbsp;했더니 &amp;lsquo;load-on-startup&amp;rsquo; 으로 지정된 서블릿 실행이 안</description>
     </item>
     
     <item>
@@ -829,8 +693,7 @@ printf 도 디버깅에 쓸려면 에러난다.
       <pubDate>Mon, 23 Jan 2006 09:20:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%92%88%EC%A7%88%EC%9D%98-%EC%9A%94%EC%86%8C/</guid>
-      <description> 소프트웨어 공학의 선구자 로버트 L. 글래스 선생의 정의이다. 기억하자.기억하자.기억하자. 1.&amp;nbsp;Portability 2.&amp;nbsp;Reliability 3.&amp;nbsp;Efficiency 4.&amp;nbsp;Usability 5.&amp;nbsp;Testability 6.&amp;nbsp;Understandability 7.&amp;nbsp;Modifiability 예전에 로버트 L. 글래스 선생이  IEEE에 기고 했던 글 원문 보기 http://www2.computer.org/portal/web/buildyourcareer/fa035  --
- </description>
+      <description>소프트웨어 공학의 선구자 로버트 L. 글래스 선생의 정의이다. 기억하자.기억하자.기억하자. 1.&amp;nbsp;Portability 2.&amp;nbsp;Reliability 3.&amp;nbsp;Efficiency 4.&amp;nbsp;Usability 5.&amp;nbsp;Testability 6.&amp;nbsp;Understandability 7.&amp;nbsp;Modifiability 예전에 로버트 L. 글래스 선생이 IEEE에 기고 했던</description>
     </item>
     
     <item>
@@ -839,8 +702,7 @@ printf 도 디버깅에 쓸려면 에러난다.
       <pubDate>Fri, 16 Dec 2005 13:16:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/ego-oriented-programming/</guid>
-      <description>말 그대로 ‘자아를 내세우지 않는 프로그램(egoless programming)’ 컴퓨터 소프트웨어 공학 용어라고 할 수 있는데&amp;hellip;. egoless 로 하면 좋다는 얘기&amp;hellip; 그러나~~~~ 나는 이때까지 ‘ego-oriented programming&amp;rsquo; 을 해왔더란다~ 반면 어떤이는 &amp;lsquo;예술로서 컴퓨터 프로그래밍&amp;rsquo; 을 주장하기도 했는데 그 논리가 정말 장난 아니다. ( 혹시 관심 있다면&amp;hellip;. http://wiki.kldp.org/wiki.php/ComputerProgrammingAsAnArt  ) 예술도 좋지만 굶고는 못사는 법. -.-&amp;hellip;.. egoless ! egoless ! egoless ! egoless !  --
- </description>
+      <description>말 그대로 ‘자아를 내세우지 않는 프로그램(egoless programming)’ 컴퓨터 소프트웨어 공학 용어라고 할 수 있는데&amp;hellip;. egoless 로 하</description>
     </item>
     
   </channel>

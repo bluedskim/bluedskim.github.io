@@ -6,29 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <meta property="og:title" content="Apache mod_rewrite" />
-<meta property="og:description" content="&lt;시나리오&gt;
-- 클라이언트가 요청시 쿼리 value 에 항상 쓰레기 값이 붙어서 넘어옴
-- 클리이언트 측 프로그램은 변경불가 Never and Ever. 어쩔 수 없이 서버쪽에서 수정해야 함 OTL&hellip;.
-&nbsp;
-&lt;httpd.conf&gt;
-====================================================================================
-
-RewriteEngine On
-RewriteMap division-handle txt:conf/rewriteMap.txt
-# 아래꺼 잘됨
-#RewriteRule /shit/([0-9]&#43;) /rewrite.php?id=$1
-# /serviceName/wapGateway?clientID=ver0.1
-&amp;phoneNo=01057401039&amp;pgmid=HW12000
-&amp;bookType=N&amp;division=100\t&amp;pageNum=2&amp;maxRowNo=10
-# 위의 URL을
-# /serviceName/wapGateway?clientID=ver0.1
-&amp;phoneNo=01057401039&amp;pgmid=HW12000
-&amp;bookType=N&amp;division=100&amp;pageNum=2&amp;maxRowNo=10
-# 이렇게 매치시켜야 함
-# fail - 아래와 같은 방식은 안됨
-#RewriteRule /serviceName/wapGateway?clientID=ver(([0-9]&#43;)|([0-9]&rdquo;.&rdquo;[0-9]&#43;))
-&amp;phoneNo=([0-9]&#43;)&amp;pgmid=HW12000&amp;bookType=([A-Z])&amp;division=([0-9]&#43;)\t
-&amp;pageNum=([0-9]&#43;)&amp;maxRowNo=([0-9]&#43;)$ /error.php" />
+<meta property="og:description" content="&lt;시나리오&gt; - 클라이언트가 요청시 쿼리 value 에 항상 쓰레기 값이 붙어서 넘어옴 - 클리이언트 측 프로그램은 변경불가 Never and Ever. 어쩔 수 없이 서버쪽에서 수정" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/posts/software-engineering/apache-mod_rewrite/" />
 <meta property="article:published_time" content="2006-10-24T17:36:00&#43;09:00"/>
@@ -36,29 +14,7 @@ RewriteMap division-handle txt:conf/rewriteMap.txt
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Apache mod_rewrite"/>
-<meta name="twitter:description" content="&lt;시나리오&gt;
-- 클라이언트가 요청시 쿼리 value 에 항상 쓰레기 값이 붙어서 넘어옴
-- 클리이언트 측 프로그램은 변경불가 Never and Ever. 어쩔 수 없이 서버쪽에서 수정해야 함 OTL&hellip;.
-&nbsp;
-&lt;httpd.conf&gt;
-====================================================================================
-
-RewriteEngine On
-RewriteMap division-handle txt:conf/rewriteMap.txt
-# 아래꺼 잘됨
-#RewriteRule /shit/([0-9]&#43;) /rewrite.php?id=$1
-# /serviceName/wapGateway?clientID=ver0.1
-&amp;phoneNo=01057401039&amp;pgmid=HW12000
-&amp;bookType=N&amp;division=100\t&amp;pageNum=2&amp;maxRowNo=10
-# 위의 URL을
-# /serviceName/wapGateway?clientID=ver0.1
-&amp;phoneNo=01057401039&amp;pgmid=HW12000
-&amp;bookType=N&amp;division=100&amp;pageNum=2&amp;maxRowNo=10
-# 이렇게 매치시켜야 함
-# fail - 아래와 같은 방식은 안됨
-#RewriteRule /serviceName/wapGateway?clientID=ver(([0-9]&#43;)|([0-9]&rdquo;.&rdquo;[0-9]&#43;))
-&amp;phoneNo=([0-9]&#43;)&amp;pgmid=HW12000&amp;bookType=([A-Z])&amp;division=([0-9]&#43;)\t
-&amp;pageNum=([0-9]&#43;)&amp;maxRowNo=([0-9]&#43;)$ /error.php"/>
+<meta name="twitter:description" content="&lt;시나리오&gt; - 클라이언트가 요청시 쿼리 value 에 항상 쓰레기 값이 붙어서 넘어옴 - 클리이언트 측 프로그램은 변경불가 Never and Ever. 어쩔 수 없이 서버쪽에서 수정"/>
 <meta name="generator" content="Hugo 0.55.5" />
 
 
@@ -69,7 +25,7 @@ RewriteMap division-handle txt:conf/rewriteMap.txt
   "@type": "BlogPosting",
   "headline": "Apache mod_rewrite",
   "url": "/posts/software-engineering/apache-mod_rewrite/",
-  "wordCount": "167",
+  "wordCount": "242",
   "datePublished": "2006-10-24T17:36:00&#43;09:00",
   "dateModified": "2006-10-24T17:36:00&#43;09:00",
   "author": {
