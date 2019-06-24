@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docker on Do What You Want To Do</title>
-    <link>/tags/docker/</link>
+    <link>http://bluedskim.github.com/tags/docker/</link>
     <description>Recent content in Docker on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <lastBuildDate>Sun, 28 Apr 2019 13:38:28 +0900</lastBuildDate>
     
-	<atom:link href="/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://bluedskim.github.com/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>pixelbook에 Docker설치하기</title>
-      <link>/posts/tech/pixelbook%EC%97%90-docker%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</link>
+      <link>http://bluedskim.github.com/posts/tech/pixelbook%EC%97%90-docker%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</link>
       <pubDate>Sun, 28 Apr 2019 13:38:28 +0900</pubDate>
       
-      <guid>/posts/tech/pixelbook%EC%97%90-docker%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</guid>
+      <guid>http://bluedskim.github.com/posts/tech/pixelbook%EC%97%90-docker%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</guid>
       <description>인터넷에서 찾아본 자료에 의하면 docker 설치에 문제가 있다고. 하지만 고마운 누군가가 직접 binary를 수정해서 github에 공유해 주셨다. 아래에서 스크립트</description>
     </item>
     

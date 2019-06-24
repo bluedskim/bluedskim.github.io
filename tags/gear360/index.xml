@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>gear360 on Do What You Want To Do</title>
-    <link>/tags/gear360/</link>
+    <link>http://bluedskim.github.com/tags/gear360/</link>
     <description>Recent content in gear360 on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <lastBuildDate>Tue, 19 Mar 2019 23:38:28 +0900</lastBuildDate>
     
-	<atom:link href="/tags/gear360/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://bluedskim.github.com/tags/gear360/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>삼성 기어360 카메라(2017) 해킹</title>
-      <link>/posts/tech/%EC%82%BC%EC%84%B1-%EA%B8%B0%EC%96%B4360-%EC%B9%B4%EB%A9%94%EB%9D%BC-%ED%95%B4%ED%82%B9/</link>
+      <link>http://bluedskim.github.com/posts/tech/%EC%82%BC%EC%84%B1-%EA%B8%B0%EC%96%B4360-%EC%B9%B4%EB%A9%94%EB%9D%BC-%ED%95%B4%ED%82%B9/</link>
       <pubDate>Tue, 19 Mar 2019 23:38:28 +0900</pubDate>
       
-      <guid>/posts/tech/%EC%82%BC%EC%84%B1-%EA%B8%B0%EC%96%B4360-%EC%B9%B4%EB%A9%94%EB%9D%BC-%ED%95%B4%ED%82%B9/</guid>
+      <guid>http://bluedskim.github.com/posts/tech/%EC%82%BC%EC%84%B1-%EA%B8%B0%EC%96%B4360-%EC%B9%B4%EB%A9%94%EB%9D%BC-%ED%95%B4%ED%82%B9/</guid>
       <description>삼성 기어360 카메라(2017)을 구입한 이유는 각종 공연 후에 모니터링하기 위해서이다. Roda de samba 공연은 빙 둘러 앉아 하게 마련인데 모든 연주자의 연주를 한 카메</description>
     </item>
     

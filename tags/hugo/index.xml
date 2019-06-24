@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hugo on Do What You Want To Do</title>
-    <link>/tags/hugo/</link>
+    <link>http://bluedskim.github.com/tags/hugo/</link>
     <description>Recent content in hugo on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <lastBuildDate>Fri, 15 Mar 2019 22:38:28 +0900</lastBuildDate>
     
-	<atom:link href="/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://bluedskim.github.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Pixelbook에서 hugo 설치</title>
-      <link>/posts/tech/hugoonpixelbook/</link>
+      <link>http://bluedskim.github.com/posts/tech/hugoonpixelbook/</link>
       <pubDate>Fri, 15 Mar 2019 22:38:28 +0900</pubDate>
       
-      <guid>/posts/tech/hugoonpixelbook/</guid>
+      <guid>http://bluedskim.github.com/posts/tech/hugoonpixelbook/</guid>
       <description>설치 ASUS Chromebook C100PA-DS03 에 설치할 때와 마찬가지로 최신버전을 설치하려면 deb 파일을 다운 받아야 한다. 현재 최신 버전은 hugo_0.54.0-1_amd64.deb 이다. 하지만 libsass1이 필요하다고 하니 먼저</description>
     </item>
     
     <item>
       <title>Hugo Theme 변경 테스트</title>
-      <link>/posts/tech/post-title/</link>
+      <link>http://bluedskim.github.com/posts/tech/post-title/</link>
       <pubDate>Sat, 23 Jun 2018 10:54:24 +0200</pubDate>
       
-      <guid>/posts/tech/post-title/</guid>
+      <guid>http://bluedskim.github.com/posts/tech/post-title/</guid>
       <description>원래 사용하던 theme이 좀 평범한 듯 하여 다른 theme 을 테스트 하고 있다. 지금 현재 쓰는 theme 은 bleak 라는 것인데 메인화면에서 compact 하게 공간 낭비가 없다는게 좋다. https://github.com/Zenithar/hugo-theme-bleak 한가지</description>
     </item>
     

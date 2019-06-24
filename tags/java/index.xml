@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Java on Do What You Want To Do</title>
-    <link>/tags/java/</link>
+    <link>http://bluedskim.github.com/tags/java/</link>
     <description>Recent content in Java on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <lastBuildDate>Tue, 11 Nov 2008 18:38:00 +0900</lastBuildDate>
     
-	<atom:link href="/tags/java/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://bluedskim.github.com/tags/java/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>아일랜드의 대표적 ISP인 에이레콤의 WEP 키 제너레이터</title>
-      <link>/posts/software-engineering/%EC%95%84%EC%9D%BC%EB%9E%9C%EB%93%9C%EC%9D%98-%EB%8C%80%ED%91%9C%EC%A0%81-isp%EC%9D%B8-%EC%97%90%EC%9D%B4%EB%A0%88%EC%BD%A4%EC%9D%98-wep-%ED%82%A4-%EC%A0%9C%EB%84%88%EB%A0%88%EC%9D%B4%ED%84%B0/</link>
+      <link>http://bluedskim.github.com/posts/software-engineering/%EC%95%84%EC%9D%BC%EB%9E%9C%EB%93%9C%EC%9D%98-%EB%8C%80%ED%91%9C%EC%A0%81-isp%EC%9D%B8-%EC%97%90%EC%9D%B4%EB%A0%88%EC%BD%A4%EC%9D%98-wep-%ED%82%A4-%EC%A0%9C%EB%84%88%EB%A0%88%EC%9D%B4%ED%84%B0/</link>
       <pubDate>Tue, 11 Nov 2008 18:38:00 +0900</pubDate>
       
-      <guid>/posts/software-engineering/%EC%95%84%EC%9D%BC%EB%9E%9C%EB%93%9C%EC%9D%98-%EB%8C%80%ED%91%9C%EC%A0%81-isp%EC%9D%B8-%EC%97%90%EC%9D%B4%EB%A0%88%EC%BD%A4%EC%9D%98-wep-%ED%82%A4-%EC%A0%9C%EB%84%88%EB%A0%88%EC%9D%B4%ED%84%B0/</guid>
+      <guid>http://bluedskim.github.com/posts/software-engineering/%EC%95%84%EC%9D%BC%EB%9E%9C%EB%93%9C%EC%9D%98-%EB%8C%80%ED%91%9C%EC%A0%81-isp%EC%9D%B8-%EC%97%90%EC%9D%B4%EB%A0%88%EC%BD%A4%EC%9D%98-wep-%ED%82%A4-%EC%A0%9C%EB%84%88%EB%A0%88%EC%9D%B4%ED%84%B0/</guid>
       <description>아일랜드의 대표적 ISP인 에이레콤 의 경우 무선공유기에 디폴트로 세팅된 SSID를 통해서 WEP키를 해킹할수 있는 어이없는 경우가 있다. 해킹툴은 java로</description>
     </item>
     

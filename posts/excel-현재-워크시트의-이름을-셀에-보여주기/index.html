@@ -8,7 +8,7 @@
 <meta property="og:title" content="[Excel] 현재 워크시트의 이름을 셀에 보여주기" />
 <meta property="og:description" content="이렇게 해준다. =RIGHT(CELL(&ldquo;filename&rdquo;, A1), LEN(CELL(&ldquo;filename&rdquo;, A1))-FIND(&ldquo;]&rdquo;, CELL(&ldquo;filename&rdquo;, A1))) http://www.ozgrid.com/VBA/return-sheet-name.htm 에도 예제가 있다. =MID(CELL(&ldquo;filename&rdquo;,A1),FIND(&ldquo;]&rdquo;,CELL(&ldquo;filename&rdquo;,A1))&#43;1,256) 이런 예제도 있다. 셀에 현재 Excel 파일 이름, 경로 또는 워크시트 삽입&nbsp; ( http://office.microsoft.com/ko-kr/excel/HA101030101042.aspx ) --" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/posts/excel-%ED%98%84%EC%9E%AC-%EC%9B%8C%ED%81%AC%EC%8B%9C%ED%8A%B8%EC%9D%98-%EC%9D%B4%EB%A6%84%EC%9D%84-%EC%85%80%EC%97%90-%EB%B3%B4%EC%97%AC%EC%A3%BC%EA%B8%B0/" />
+<meta property="og:url" content="http://bluedskim.github.com/posts/excel-%ED%98%84%EC%9E%AC-%EC%9B%8C%ED%81%AC%EC%8B%9C%ED%8A%B8%EC%9D%98-%EC%9D%B4%EB%A6%84%EC%9D%84-%EC%85%80%EC%97%90-%EB%B3%B4%EC%97%AC%EC%A3%BC%EA%B8%B0/" />
 <meta property="article:published_time" content="2009-06-11T09:41:00&#43;09:00"/>
 <meta property="article:modified_time" content="2009-06-11T09:41:00&#43;09:00"/>
 
@@ -24,7 +24,7 @@
   "@context": "http://schema.org",
   "@type": "BlogPosting",
   "headline": "[Excel] 현재 워크시트의 이름을 셀에 보여주기",
-  "url": "/posts/excel-%ED%98%84%EC%9E%AC-%EC%9B%8C%ED%81%AC%EC%8B%9C%ED%8A%B8%EC%9D%98-%EC%9D%B4%EB%A6%84%EC%9D%84-%EC%85%80%EC%97%90-%EB%B3%B4%EC%97%AC%EC%A3%BC%EA%B8%B0/",
+  "url": "http://bluedskim.github.com/posts/excel-%ED%98%84%EC%9E%AC-%EC%9B%8C%ED%81%AC%EC%8B%9C%ED%8A%B8%EC%9D%98-%EC%9D%B4%EB%A6%84%EC%9D%84-%EC%85%80%EC%97%90-%EB%B3%B4%EC%97%AC%EC%A3%BC%EA%B8%B0/",
   "wordCount": "61",
   "datePublished": "2009-06-11T09:41:00&#43;09:00",
   "dateModified": "2009-06-11T09:41:00&#43;09:00",
@@ -38,13 +38,13 @@
 
 
 
-    <link rel="canonical" href="/posts/excel-%ED%98%84%EC%9E%AC-%EC%9B%8C%ED%81%AC%EC%8B%9C%ED%8A%B8%EC%9D%98-%EC%9D%B4%EB%A6%84%EC%9D%84-%EC%85%80%EC%97%90-%EB%B3%B4%EC%97%AC%EC%A3%BC%EA%B8%B0/">
+    <link rel="canonical" href="http://bluedskim.github.com/posts/excel-%ED%98%84%EC%9E%AC-%EC%9B%8C%ED%81%AC%EC%8B%9C%ED%8A%B8%EC%9D%98-%EC%9D%B4%EB%A6%84%EC%9D%84-%EC%85%80%EC%97%90-%EB%B3%B4%EC%97%AC%EC%A3%BC%EA%B8%B0/">
 
     <title>[Excel] 현재 워크시트의 이름을 셀에 보여주기 | Do What You Want To Do</title>
 
     
     <!-- combined, minified CSS -->
-    <link href="/css/style.css" rel="stylesheet" integrity="sha384-G5B34w7DFTumWTswxYzTX7NWfbvQEg1HbFFEg6ItN03uTAAoS2qkPS/fu3LhuuSA" crossorigin="anonymous">
+    <link href="http://bluedskim.github.comcss/style.css" rel="stylesheet" integrity="sha384-G5B34w7DFTumWTswxYzTX7NWfbvQEg1HbFFEg6ItN03uTAAoS2qkPS/fu3LhuuSA" crossorigin="anonymous">
     
 
     <!-- RSS 2.0 feed -->
@@ -64,7 +64,7 @@ if (!doNotTrack) {
     
 
     
-	<link rel="stylesheet" href="/custom.css">
+	<link rel="stylesheet" href="http://bluedskim.github.comcustom.css">
 
 
   </head>
@@ -75,7 +75,7 @@ if (!doNotTrack) {
     <div class="blog-masthead">
       <div class="container">
         <nav class="nav blog-nav">
-          <a class="nav-link " href="/">Home</a>
+          <a class="nav-link " href="http://bluedskim.github.com">Home</a>
           
           <a class="nav-link" href="/tags/samba/" title="">Samba</a>
           
@@ -94,7 +94,7 @@ if (!doNotTrack) {
     
     <header class="blog-header">
       <div class="container">
-        <h1 class="blog-title" dir="auto"><a href="/" rel="home">Do What You Want To Do</a></h1>
+        <h1 class="blog-title" dir="auto"><a href="http://bluedskim.github.com" rel="home">Do What You Want To Do</a></h1>
         <p class="lead blog-description" dir="auto">bluedskim@gmail.com</p>
       </div>
     </header>
@@ -111,7 +111,7 @@ if (!doNotTrack) {
 
 <article class="blog-post">
   <header>
-    <h2 class="blog-post-title" dir="auto"><a href="/posts/excel-%ED%98%84%EC%9E%AC-%EC%9B%8C%ED%81%AC%EC%8B%9C%ED%8A%B8%EC%9D%98-%EC%9D%B4%EB%A6%84%EC%9D%84-%EC%85%80%EC%97%90-%EB%B3%B4%EC%97%AC%EC%A3%BC%EA%B8%B0/">[Excel] 현재 워크시트의 이름을 셀에 보여주기</a></h2>
+    <h2 class="blog-post-title" dir="auto"><a href="http://bluedskim.github.com/posts/excel-%ED%98%84%EC%9E%AC-%EC%9B%8C%ED%81%AC%EC%8B%9C%ED%8A%B8%EC%9D%98-%EC%9D%B4%EB%A6%84%EC%9D%84-%EC%85%80%EC%97%90-%EB%B3%B4%EC%97%AC%EC%A3%BC%EA%B8%B0/">[Excel] 현재 워크시트의 이름을 셀에 보여주기</a></h2>
     <p class="blog-post-meta"><time datetime="2009-06-11T09:41:00&#43;09:00">2009-06-11</time> by Dennis in 
 <i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/" rel="category tag"></a>
 
