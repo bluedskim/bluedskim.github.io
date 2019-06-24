@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Do What You Want To Do</title>
+    <title>Categories on Do What You Want To Do</title>
     <link>/categories/</link>
-    <description>Recent content on Do What You Want To Do</description>
+    <description>Recent content in Categories on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <lastBuildDate>Tue, 10 Feb 2015 01:03:00 +0900</lastBuildDate>
@@ -12,211 +12,66 @@
     
     
     <item>
-      <title>[Bossa Nova]Crazy - Lisa Ono</title>
-      <link>/posts/bossa-novacrazy-lisa-ono/</link>
-      <pubDate>Thu, 17 Jan 2013 00:26:00 +0900</pubDate>
+      <title></title>
+      <link>/categories/</link>
+      <pubDate>Tue, 10 Feb 2015 01:03:00 +0900</pubDate>
       
-      <guid>/posts/bossa-novacrazy-lisa-ono/</guid>
-      <description>미친짓이야 외로워서 나는 미친거지 미친거야 슬퍼서 나는 미친거지 너가 필요한 그만큼만 너는 나를 사랑했지 그래서 멀지않아 너는 딴 놈 찾아 떠나겠지 조바심은 하필, 나</description>
+      <guid>/categories/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>리비아 전장 한복판에 ‘기타치는 영웅’ 등장</title>
-      <link>/posts/%EB%A6%AC%EB%B9%84%EC%95%84-%EC%A0%84%EC%9E%A5-%ED%95%9C%EB%B3%B5%ED%8C%90%EC%97%90-%EA%B8%B0%ED%83%80%EC%B9%98%EB%8A%94-%EC%98%81%EC%9B%85-%EB%93%B1%EC%9E%A5/</link>
-      <pubDate>Wed, 12 Oct 2011 23:40:00 +0900</pubDate>
+      <title>음악</title>
+      <link>/categories/%EC%9D%8C%EC%95%85/</link>
+      <pubDate>Tue, 10 Feb 2015 01:03:00 +0900</pubDate>
       
-      <guid>/posts/%EB%A6%AC%EB%B9%84%EC%95%84-%EC%A0%84%EC%9E%A5-%ED%95%9C%EB%B3%B5%ED%8C%90%EC%97%90-%EA%B8%B0%ED%83%80%EC%B9%98%EB%8A%94-%EC%98%81%EC%9B%85-%EB%93%B1%EC%9E%A5/</guid>
-      <description>http://media.daum.net/cplist/view.html?cateid=100000&amp;amp;cpid=33&amp;amp;newsid=20111012174152590&amp;amp;p=seoul&amp;amp;RIGHT_TOPIC=R3 --</description>
+      <guid>/categories/%EC%9D%8C%EC%95%85/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>Primavera 사진</title>
-      <link>/posts/primavera-%EC%82%AC%EC%A7%84/</link>
-      <pubDate>Tue, 21 Jun 2011 23:38:00 +0900</pubDate>
+      <title>일상사</title>
+      <link>/categories/%EC%9D%BC%EC%83%81%EC%82%AC/</link>
+      <pubDate>Sat, 22 Jun 2013 15:01:00 +0900</pubDate>
       
-      <guid>/posts/primavera-%EC%82%AC%EC%A7%84/</guid>
-      <description>--</description>
+      <guid>/categories/%EC%9D%BC%EC%83%81%EC%82%AC/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>트위터봇 만들기</title>
-      <link>/posts/%ED%8A%B8%EC%9C%84%ED%84%B0%EB%B4%87-%EB%A7%8C%EB%93%A4%EA%B8%B0/</link>
-      <pubDate>Mon, 11 Oct 2010 00:11:00 +0900</pubDate>
+      <title>Software Engineering</title>
+      <link>/categories/software-engineering/</link>
+      <pubDate>Sat, 17 Jul 2010 12:53:00 +0900</pubDate>
       
-      <guid>/posts/%ED%8A%B8%EC%9C%84%ED%84%B0%EB%B4%87-%EB%A7%8C%EB%93%A4%EA%B8%B0/</guid>
-      <description>트위터 api 인증 정책 바뀐이후로 쉽지 않다. http://dev.twitter.com/pages/libraries#php http://www.sitehis.com/spb3/sboard3/read.php?db=talk&amp;amp;uid=69&amp;amp;cateuid=12 http://blog.yesyo.com/entry/twitter-API-for-PHP http://redacacia.wordpress.com/2010/08/05/a-twitbot-using-oauth/ 매시마다 야옹거리는 트위터 시계 http://twitter.com/nyangclock --</description>
+      <guid>/categories/software-engineering/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>Nokia의 스마트폰 XpressMusic 5800 에서 iPad로 bluetooth 테더링 하기</title>
-      <link>/posts/nokia%EC%9D%98-%EC%8A%A4%EB%A7%88%ED%8A%B8%ED%8F%B0-xpressmusic-5800-%EC%97%90%EC%84%9C-ipad%EB%A1%9C-bluetooth-%ED%85%8C%EB%8D%94%EB%A7%81-%ED%95%98%EA%B8%B0/</link>
-      <pubDate>Sun, 26 Sep 2010 15:45:00 +0900</pubDate>
+      <title>MyWorks</title>
+      <link>/categories/myworks/</link>
+      <pubDate>Mon, 10 Nov 2008 02:53:00 +0900</pubDate>
       
-      <guid>/posts/nokia%EC%9D%98-%EC%8A%A4%EB%A7%88%ED%8A%B8%ED%8F%B0-xpressmusic-5800-%EC%97%90%EC%84%9C-ipad%EB%A1%9C-bluetooth-%ED%85%8C%EB%8D%94%EB%A7%81-%ED%95%98%EA%B8%B0/</guid>
-      <description>아이패드 wifi버전 사용 중 이동 중 인터넷을 위해 Nokia의 스마트폰 XpressMusic 5800에 Joikuspot&amp;nbsp;설치하여 테더링(WIFI hotsp</description>
+      <guid>/categories/myworks/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>[Bossa Nova]Wanda Sá</title>
-      <link>/posts/bossa-novawanda-s%C3%A1/</link>
-      <pubDate>Sun, 22 Aug 2010 00:15:00 +0900</pubDate>
+      <title>방명록</title>
+      <link>/categories/%EB%B0%A9%EB%AA%85%EB%A1%9D/</link>
+      <pubDate>Thu, 28 Feb 2008 23:04:00 +0900</pubDate>
       
-      <guid>/posts/bossa-novawanda-s%C3%A1/</guid>
-      <description>브라질 출신. 1964년 19살에 데뷔 초기에 Tom Jobim, Edú Lobo, Francis Hime, Marcos Valle 의 곡을 불렀음 Sérgio Mendes의 Brasil &amp;lsquo;65 에서 활동 1969 에서 1982 까지 휴식 80년대 후반 컴</description>
+      <guid>/categories/%EB%B0%A9%EB%AA%85%EB%A1%9D/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>팔자 좋은 칠복군</title>
-      <link>/posts/%ED%8C%94%EC%9E%90-%EC%A2%8B%EC%9D%80-%EC%B9%A0%EB%B3%B5%EA%B5%B0/</link>
-      <pubDate>Sun, 31 Jan 2010 21:03:00 +0900</pubDate>
+      <title>메모</title>
+      <link>/categories/%EB%A9%94%EB%AA%A8/</link>
+      <pubDate>Sat, 10 Nov 2007 15:35:00 +0900</pubDate>
       
-      <guid>/posts/%ED%8C%94%EC%9E%90-%EC%A2%8B%EC%9D%80-%EC%B9%A0%EB%B3%B5%EA%B5%B0/</guid>
-      <description>노키아 5800 → pixelpipe.com → posterous.com → egloos.com --</description>
-    </item>
-    
-    <item>
-      <title>서울속의 더블린</title>
-      <link>/posts/%EC%84%9C%EC%9A%B8%EC%86%8D%EC%9D%98-%EB%8D%94%EB%B8%94%EB%A6%B0/</link>
-      <pubDate>Sat, 23 Jan 2010 14:11:00 +0900</pubDate>
-      
-      <guid>/posts/%EC%84%9C%EC%9A%B8%EC%86%8D%EC%9D%98-%EB%8D%94%EB%B8%94%EB%A6%B0/</guid>
-      <description>그러나 이름만 더블린 ㅡ.ㅡ 글치만 글씨체는 제대로인듯 Posted via email from bluedskim&amp;rsquo;s posterous --</description>
-    </item>
-    
-    <item>
-      <title>서울속의 더블린</title>
-      <link>/posts/%EC%84%9C%EC%9A%B8%EC%86%8D%EC%9D%98-%EB%8D%94%EB%B8%94%EB%A6%B0_1/</link>
-      <pubDate>Sat, 23 Jan 2010 14:11:00 +0900</pubDate>
-      
-      <guid>/posts/%EC%84%9C%EC%9A%B8%EC%86%8D%EC%9D%98-%EB%8D%94%EB%B8%94%EB%A6%B0_1/</guid>
-      <description>쌀국수는 뭥미? Posted via email from bluedskim&amp;rsquo;s posterous --</description>
-    </item>
-    
-    <item>
-      <title>[Excel] 현재 워크시트의 이름을 셀에 보여주기</title>
-      <link>/posts/excel-%ED%98%84%EC%9E%AC-%EC%9B%8C%ED%81%AC%EC%8B%9C%ED%8A%B8%EC%9D%98-%EC%9D%B4%EB%A6%84%EC%9D%84-%EC%85%80%EC%97%90-%EB%B3%B4%EC%97%AC%EC%A3%BC%EA%B8%B0/</link>
-      <pubDate>Thu, 11 Jun 2009 09:41:00 +0900</pubDate>
-      
-      <guid>/posts/excel-%ED%98%84%EC%9E%AC-%EC%9B%8C%ED%81%AC%EC%8B%9C%ED%8A%B8%EC%9D%98-%EC%9D%B4%EB%A6%84%EC%9D%84-%EC%85%80%EC%97%90-%EB%B3%B4%EC%97%AC%EC%A3%BC%EA%B8%B0/</guid>
-      <description>이렇게 해준다. =RIGHT(CELL(&amp;ldquo;filename&amp;rdquo;, A1), LEN(CELL(&amp;ldquo;filename&amp;rdquo;, A1))-FIND(&amp;ldquo;]&amp;rdquo;, CELL(&amp;ldquo;filename&amp;rdquo;, A1))) http://www.ozgrid.com/VBA/return-sheet-name.htm 에도 예제가 있다. =MID(CELL(&amp;ldquo;filename&amp;rdquo;,A1),FIND(&amp;ldquo;]&amp;rdquo;,CELL(&amp;ldquo;filename&amp;rdquo;,A1))+1,256) 이런 예제도 있다. 셀에 현재 Excel 파일 이름, 경로 또는 워크시트 삽입&amp;nbsp; ( http://office.microsoft.com/ko-kr/excel/HA101030101042.aspx ) --</description>
-    </item>
-    
-    <item>
-      <title>브라질에서 유명한 것들</title>
-      <link>/posts/%EB%B8%8C%EB%9D%BC%EC%A7%88%EC%97%90%EC%84%9C-%EC%9C%A0%EB%AA%85%ED%95%9C-%EA%B2%83%EB%93%A4/</link>
-      <pubDate>Mon, 22 Dec 2008 16:56:00 +0900</pubDate>
-      
-      <guid>/posts/%EB%B8%8C%EB%9D%BC%EC%A7%88%EC%97%90%EC%84%9C-%EC%9C%A0%EB%AA%85%ED%95%9C-%EA%B2%83%EB%93%A4/</guid>
-      <description>* José Mauro de Vasconcelos * Paulo Coelho 파울루 코엘류 --</description>
-    </item>
-    
-    <item>
-      <title>http://s.freedomz.co.kr/tb/1c023243c870</title>
-      <link>/posts/http__s.freedomz.co.kr_tb_1c023243c870/</link>
-      <pubDate>Wed, 28 Nov 2007 08:59:00 +0900</pubDate>
-      
-      <guid>/posts/http__s.freedomz.co.kr_tb_1c023243c870/</guid>
-      <description> http://s.freedomz.co.kr/tb/1c023243c870  --
- </description>
-    </item>
-    
-    <item>
-      <title>[방구석 영화제]칠드런 오브 맨</title>
-      <link>/posts/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9C%EC%B9%A0%EB%93%9C%EB%9F%B0-%EC%98%A4%EB%B8%8C-%EB%A7%A8/</link>
-      <pubDate>Wed, 05 Sep 2007 00:08:00 +0900</pubDate>
-      
-      <guid>/posts/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9C%EC%B9%A0%EB%93%9C%EB%9F%B0-%EC%98%A4%EB%B8%8C-%EB%A7%A8/</guid>
-      <description>국내 미개봉작이죠. 국내의 무슨 영화제에 상영된 적이 있었다고 합니다. &amp;nbsp; &amp;nbsp; 해리 포터와 아즈카반의 죄수&amp;nbsp; ,&amp;nbsp;&amp;nbsp; 이 투 마마&amp;nbsp;등을 감독한 멕시코</description>
-    </item>
-    
-    <item>
-      <title>엔터 더 김정남 / 충직한 고양이 / 김정남 곤잘레스 게레로</title>
-      <link>/posts/%EC%97%94%ED%84%B0-%EB%8D%94-%EA%B9%80%EC%A0%95%EB%82%A8-_-%EC%B6%A9%EC%A7%81%ED%95%9C-%EA%B3%A0%EC%96%91%EC%9D%B4-_-%EA%B9%80%EC%A0%95%EB%82%A8-%EA%B3%A4%EC%9E%98%EB%A0%88%EC%8A%A4-%EA%B2%8C%EB%A0%88%EB%A1%9C/</link>
-      <pubDate>Thu, 15 Mar 2007 13:07:00 +0900</pubDate>
-      
-      <guid>/posts/%EC%97%94%ED%84%B0-%EB%8D%94-%EA%B9%80%EC%A0%95%EB%82%A8-_-%EC%B6%A9%EC%A7%81%ED%95%9C-%EA%B3%A0%EC%96%91%EC%9D%B4-_-%EA%B9%80%EC%A0%95%EB%82%A8-%EA%B3%A4%EC%9E%98%EB%A0%88%EC%8A%A4-%EA%B2%8C%EB%A0%88%EB%A1%9C/</guid>
-      <description>http://comicmall.naver.com/webtoon.do?m=list&amp;amp;contentId=20853 &amp;ldquo;마음의 소리&amp;rdquo; 불펌함 냥이 키우는 분들은 한번 쯤 겪었을&amp;hellip; 칠복아 미안하다. 사실 나는 니 어미가 아니란다&amp;hell</description>
-    </item>
-    
-    <item>
-      <title>칠복~</title>
-      <link>/posts/%EC%B9%A0%EB%B3%B5~/</link>
-      <pubDate>Fri, 12 Jan 2007 13:29:00 +0900</pubDate>
-      
-      <guid>/posts/%EC%B9%A0%EB%B3%B5~/</guid>
-      <description>스페샬 땡스 투 여대리~ --</description>
-    </item>
-    
-    <item>
-      <title>javadoc 에서 한글이 깨지는 경우</title>
-      <link>/posts/javadoc-%EC%97%90%EC%84%9C-%ED%95%9C%EA%B8%80%EC%9D%B4-%EA%B9%A8%EC%A7%80%EB%8A%94-%EA%B2%BD%EC%9A%B0/</link>
-      <pubDate>Mon, 04 Dec 2006 14:35:00 +0900</pubDate>
-      
-      <guid>/posts/javadoc-%EC%97%90%EC%84%9C-%ED%95%9C%EA%B8%80%EC%9D%B4-%EA%B9%A8%EC%A7%80%EB%8A%94-%EA%B2%BD%EC%9A%B0/</guid>
-      <description>(http://openframework.or.kr/blog/?p=177 에서 발췌) utf-8로 인코딩된 java 파일의 javadoc을 만들 때는 javadoc.exe의 인수로 -locale ko_KR -encoding UTF-8 -charset UTF-8 -docencoding UTF-8 넘겨줌 &amp;lt;메모리가 모자랄 때</description>
-    </item>
-    
-    <item>
-      <title>고양이 CF</title>
-      <link>/posts/%EA%B3%A0%EC%96%91%EC%9D%B4-cf/</link>
-      <pubDate>Sun, 24 Sep 2006 15:14:00 +0900</pubDate>
-      
-      <guid>/posts/%EA%B3%A0%EC%96%91%EC%9D%B4-cf/</guid>
-      <description>--</description>
-    </item>
-    
-    <item>
-      <title>&#34;개발자는 왜 밤을 세는가?&#34; -&gt; 절대 공감</title>
-      <link>/posts/%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%8A%94-%EC%99%9C-%EB%B0%A4%EC%9D%84-%EC%84%B8%EB%8A%94%EA%B0%80-%EC%A0%88%EB%8C%80-%EA%B3%B5%EA%B0%90/</link>
-      <pubDate>Mon, 21 Aug 2006 13:19:00 +0900</pubDate>
-      
-      <guid>/posts/%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%8A%94-%EC%99%9C-%EB%B0%A4%EC%9D%84-%EC%84%B8%EB%8A%94%EA%B0%80-%EC%A0%88%EB%8C%80-%EA%B3%B5%EA%B0%90/</guid>
-      <description>절대 공감@@**@@http://shed.egloos.com/1396049&amp;quot;&amp;gt;http://www.mediamob.</description>
-    </item>
-    
-    <item>
-      <title>http://www.freebgm.net/ 공짜 mp3라...</title>
-      <link>/posts/http__www.freebgm.net_-%EA%B3%B5%EC%A7%9C-mp3%EB%9D%BC.../</link>
-      <pubDate>Fri, 27 Jan 2006 18:37:00 +0900</pubDate>
-      
-      <guid>/posts/http__www.freebgm.net_-%EA%B3%B5%EC%A7%9C-mp3%EB%9D%BC.../</guid>
-      <description>http://www.freebgm.net/ --</description>
-    </item>
-    
-    <item>
-      <title>태터 툴즈 테스트 중...</title>
-      <link>/posts/%ED%83%9C%ED%84%B0-%ED%88%B4%EC%A6%88-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%A4%91.../</link>
-      <pubDate>Fri, 27 Jan 2006 17:52:00 +0900</pubDate>
-      
-      <guid>/posts/%ED%83%9C%ED%84%B0-%ED%88%B4%EC%A6%88-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%A4%91.../</guid>
-      <description>http://babyoilband.com/tt/ --</description>
-    </item>
-    
-    <item>
-      <title>여자는 마음이 이뻐야</title>
-      <link>/posts/%EC%97%AC%EC%9E%90%EB%8A%94-%EB%A7%88%EC%9D%8C%EC%9D%B4-%EC%9D%B4%EB%BB%90%EC%95%BC/</link>
-      <pubDate>Wed, 04 Jan 2006 22:27:00 +0900</pubDate>
-      
-      <guid>/posts/%EC%97%AC%EC%9E%90%EB%8A%94-%EB%A7%88%EC%9D%8C%EC%9D%B4-%EC%9D%B4%EB%BB%90%EC%95%BC/</guid>
-      <description>--</description>
-    </item>
-    
-    <item>
-      <title>사무실에서 연애질 하면...솔로부대의 응징(펌)</title>
-      <link>/posts/%EC%82%AC%EB%AC%B4%EC%8B%A4%EC%97%90%EC%84%9C-%EC%97%B0%EC%95%A0%EC%A7%88-%ED%95%98%EB%A9%B4...%EC%86%94%EB%A1%9C%EB%B6%80%EB%8C%80%EC%9D%98-%EC%9D%91%EC%A7%95%ED%8E%8C/</link>
-      <pubDate>Wed, 04 Jan 2006 22:21:00 +0900</pubDate>
-      
-      <guid>/posts/%EC%82%AC%EB%AC%B4%EC%8B%A4%EC%97%90%EC%84%9C-%EC%97%B0%EC%95%A0%EC%A7%88-%ED%95%98%EB%A9%B4...%EC%86%94%EB%A1%9C%EB%B6%80%EB%8C%80%EC%9D%98-%EC%9D%91%EC%A7%95%ED%8E%8C/</guid>
-      <description>--</description>
-    </item>
-    
-    <item>
-      <title>검색어 사랑(으)로 기본검색하여 총 5,427권 검색되었습니다.</title>
-      <link>/posts/%EA%B2%80%EC%83%89%EC%96%B4-%EC%82%AC%EB%9E%91%EC%9C%BC%EB%A1%9C-%EA%B8%B0%EB%B3%B8%EA%B2%80%EC%83%89%ED%95%98%EC%97%AC-%EC%B4%9D-5427%EA%B6%8C-%EA%B2%80%EC%83%89%EB%90%98%EC%97%88%EC%8A%B5%EB%8B%88%EB%8B%A4./</link>
-      <pubDate>Tue, 03 Jan 2006 02:20:00 +0900</pubDate>
-      
-      <guid>/posts/%EA%B2%80%EC%83%89%EC%96%B4-%EC%82%AC%EB%9E%91%EC%9C%BC%EB%A1%9C-%EA%B8%B0%EB%B3%B8%EA%B2%80%EC%83%89%ED%95%98%EC%97%AC-%EC%B4%9D-5427%EA%B6%8C-%EA%B2%80%EC%83%89%EB%90%98%EC%97%88%EC%8A%B5%EB%8B%88%EB%8B%A4./</guid>
-      <description>http://www.kyobobook.co.kr/cgi-bin/KorBookCommonSearch.cgi?PRE_QUERY=&amp;amp;REQUERY_CHECK=N&amp;amp;PAGENUM=START&amp;amp;PAGE_CLICK=N&amp;amp;INITIAL=&amp;amp;INITIAL_CLICK=N&amp;amp;INITIAL_QUERY=&amp;amp;TOTAL_CHECK=Y&amp;amp;SORT_FIELD=&amp;amp;DETAIL_SEARCH=N&amp;amp;firstQuery=&amp;amp;secondQuery=&amp;amp;query=&amp;amp;TOTAL=KOR&amp;amp;QUERY=%BB%E7%B6%FB 썅. 더럽게 많네 --</description>
+      <guid>/categories/%EB%A9%94%EB%AA%A8/</guid>
+      <description></description>
     </item>
     
   </channel>
