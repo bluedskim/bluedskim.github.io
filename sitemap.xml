@@ -116,14 +116,14 @@
   </url>
   
   <url>
-    <loc>/tags/hugo/</loc>
+    <loc>/posts/tech/hugoonpixelbook/</loc>
     <lastmod>2019-03-15T22:38:28+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/posts/tech/hugoonpixelbook/</loc>
+    <loc>/tags/hugo/</loc>
     <lastmod>2019-03-15T22:38:28+09:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
