@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>overring on Do What You Want To Do</title>
-    <link>http://bluedskim.github.com/tags/overring/</link>
+    <link>/tags/overring/</link>
     <description>Recent content in overring on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <lastBuildDate>Sun, 24 Jun 2018 10:54:24 +0200</lastBuildDate>
     
-	<atom:link href="http://bluedskim.github.com/tags/overring/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/overring/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>method overring 과  overloading 차이</title>
-      <link>http://bluedskim.github.com/posts/tech/method-overriding-vs-overloading/</link>
+      <link>/posts/tech/method-overriding-vs-overloading/</link>
       <pubDate>Sun, 24 Jun 2018 10:54:24 +0200</pubDate>
       
-      <guid>http://bluedskim.github.com/posts/tech/method-overriding-vs-overloading/</guid>
+      <guid>/posts/tech/method-overriding-vs-overloading/</guid>
       <description>모든 객체지향 서적에서 설명은 정확하게 하고 있다. 하지만 영어권 개발자가 아닌이상 헷갈릴 수밖에 없다. 그러나 두 단어의 차이를 생각해 보면 이해하기 쉽다. override 덮어</description>
     </item>
     

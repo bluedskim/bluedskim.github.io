@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DS03 on Do What You Want To Do</title>
-    <link>http://bluedskim.github.com/tags/ds03/</link>
+    <link>/tags/ds03/</link>
     <description>Recent content in DS03 on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <lastBuildDate>Sun, 22 Oct 2017 22:38:28 +0900</lastBuildDate>
     
-	<atom:link href="http://bluedskim.github.com/tags/ds03/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/ds03/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ASUS Chromebook Flip C100PA DS03</title>
-      <link>http://bluedskim.github.com/posts/asuschrombookflipc100pads03/</link>
+      <link>/posts/asuschrombookflipc100pads03/</link>
       <pubDate>Sun, 22 Oct 2017 22:38:28 +0900</pubDate>
       
-      <guid>http://bluedskim.github.com/posts/asuschrombookflipc100pads03/</guid>
+      <guid>/posts/asuschrombookflipc100pads03/</guid>
       <description>장점 리눅스 + 싸다 + 안드로이드 앱 구동 + 긴 구동시간 + 크롬브라우저의 사용성을 극대화 시켜주는 키보드 단점 ARM Cortex-A17 의 한계 Crouton + Linux 조합으로 x86 프로그램 구동 불가능.</description>
     </item>
     
