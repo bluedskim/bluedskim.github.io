@@ -6,10 +6,19 @@
     <description>Recent content on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Sun, 23 Jun 2019 16:36:35 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jul 2019 17:24:26 +0900</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Pixelbook에서 Reaper사용하기</title>
+      <link>/posts/%EC%9D%8C%EC%95%85/pixelbook%EC%97%90%EC%84%9C-reaper%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link>
+      <pubDate>Wed, 10 Jul 2019 17:24:26 +0900</pubDate>
+      
+      <guid>/posts/%EC%9D%8C%EC%95%85/pixelbook%EC%97%90%EC%84%9C-reaper%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid>
+      <description>크롬북 리눅스 앱에서 오디오 재생을 지원한것은 얼마되지 않았다. (OS버전 74부터 지원) 주위에서 리눅스를 쓰는 사람도 없지만 쓴다고 해도 오디오 편집까지 하는</description>
+    </item>
     
     <item>
       <title>이글루스 블로그 이사완료</title>
@@ -103,10 +112,10 @@
     
     <item>
       <title>Chromebook Flip C100P에서 사용할 Multitrack Recorder</title>
-      <link>/posts/music/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C_%EC%82%AC%EC%9A%A9%ED%95%A0_dtm%EB%B9%84%EA%B5%90/</link>
+      <link>/posts/%EC%9D%8C%EC%95%85/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C_%EC%82%AC%EC%9A%A9%ED%95%A0_dtm%EB%B9%84%EA%B5%90/</link>
       <pubDate>Wed, 13 Dec 2017 22:38:28 +0900</pubDate>
       
-      <guid>/posts/music/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C_%EC%82%AC%EC%9A%A9%ED%95%A0_dtm%EB%B9%84%EA%B5%90/</guid>
+      <guid>/posts/%EC%9D%8C%EC%95%85/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C_%EC%82%AC%EC%9A%A9%ED%95%A0_dtm%EB%B9%84%EA%B5%90/</guid>
       <description>Chromebook Flip C100PA 에서 간단한 녹음 스케치 작업을 하는데 적합한 앱들을 비교해보고 있다. 필수 기능 멀티트랙 녹음 메트로놈 녹음 delay 자동 보정 있으면 좋은 기능 sample stretch(warp) 웹앱 대부분 su</description>
     </item>
     

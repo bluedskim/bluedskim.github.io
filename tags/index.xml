@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Sun, 23 Jun 2019 16:36:35 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jul 2019 17:24:26 +0900</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>pixelbook</title>
+      <link>/tags/pixelbook/</link>
+      <pubDate>Wed, 10 Jul 2019 17:24:26 +0900</pubDate>
+      
+      <guid>/tags/pixelbook/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reaper</title>
+      <link>/tags/reaper/</link>
+      <pubDate>Wed, 10 Jul 2019 17:24:26 +0900</pubDate>
+      
+      <guid>/tags/reaper/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>이글루스</title>
@@ -53,15 +71,6 @@
       <pubDate>Sun, 28 Apr 2019 13:38:28 +0900</pubDate>
       
       <guid>/tags/docker/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pixelbook</title>
-      <link>/tags/pixelbook/</link>
-      <pubDate>Sun, 24 Mar 2019 10:38:28 +0900</pubDate>
-      
-      <guid>/tags/pixelbook/</guid>
       <description></description>
     </item>
     
