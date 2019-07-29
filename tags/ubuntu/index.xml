@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ubuntu on Do What You Want To Do</title>
+    <link>/tags/ubuntu/</link>
+    <description>Recent content in ubuntu on Do What You Want To Do</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <lastBuildDate>Mon, 29 Jul 2019 16:49:45 +0900</lastBuildDate>
+    
+	<atom:link href="/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>우분투 command line에서 모든 레드마인 이슈를 하나의 pdf 로 내려받기</title>
+      <link>/posts/tech/redminetopdffull/</link>
+      <pubDate>Mon, 29 Jul 2019 16:49:45 +0900</pubDate>
+      
+      <guid>/posts/tech/redminetopdffull/</guid>
+      <description>레드마인에서 공식적으로 이 기능을 지원하지는 않고 있다. 이것을 위한 3rd party 플러그인은 있는데 동작하지 않았다. https://github.com/brunoqs/pdf_export_redmine Proxy Error가 발생하였는데 아마도 Apach</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -3,19 +3,48 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/categories/</loc>
-    <lastmod>2019-07-10T17:24:26+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-    <lastmod>2019-07-10T17:24:26+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/</loc>
+    <lastmod>2019-07-29T16:49:45+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/</loc>
+    <lastmod>2019-07-29T16:49:45+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2019-07-29T16:49:45+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/redmine/</loc>
+    <lastmod>2019-07-29T16:49:45+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/ubuntu/</loc>
+    <lastmod>2019-07-29T16:49:45+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/tech/redminetopdffull/</loc>
+    <lastmod>2019-07-29T16:49:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2019-07-10T17:24:26+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
     <lastmod>2019-07-10T17:24:26+09:00</lastmod>
     <priority>0</priority>
   </url>
@@ -23,18 +52,6 @@
   <url>
     <loc>/posts/%EC%9D%8C%EC%95%85/pixelbook%EC%97%90%EC%84%9C-reaper%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</loc>
     <lastmod>2019-07-10T17:24:26+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/posts/</loc>
-    <lastmod>2019-07-10T17:24:26+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2019-07-10T17:24:26+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -112,12 +129,6 @@
   </url>
   
   <url>
-    <loc>/tags/redmine/</loc>
-    <lastmod>2019-03-21T20:38:28+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/posts/tech/excel-to-redmine-table/</loc>
     <lastmod>2019-03-21T20:38:28+09:00</lastmod>
   </url>
@@ -145,14 +156,14 @@
   </url>
   
   <url>
-    <loc>/tags/hugo/</loc>
+    <loc>/posts/tech/hugoonpixelbook/</loc>
     <lastmod>2019-03-15T22:38:28+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/posts/tech/hugoonpixelbook/</loc>
+    <loc>/tags/hugo/</loc>
     <lastmod>2019-03-15T22:38:28+09:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
