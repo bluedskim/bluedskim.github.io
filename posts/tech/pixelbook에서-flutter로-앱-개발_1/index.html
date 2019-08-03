@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta property="og:title" content="Pixelbook에서 Flutter로 앱 개발" />
+<meta property="og:description" content="픽셀북으로 안드로이드 개발을 편하게 할 수 있다고 해서 시도하고 있는데 편하다고 하는 이유는 픽셀북에서 바로 안드로이드 앱 화면을 띄울 수 있기 때문인것 같다. 그러나" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/tech/pixelbook%EC%97%90%EC%84%9C-flutter%EB%A1%9C-%EC%95%B1-%EA%B0%9C%EB%B0%9C_1/" />
+<meta property="article:published_time" content="2019-07-31T15:14:43&#43;09:00"/>
+<meta property="article:modified_time" content="2019-07-31T15:14:43&#43;09:00"/>
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Pixelbook에서 Flutter로 앱 개발"/>
+<meta name="twitter:description" content="픽셀북으로 안드로이드 개발을 편하게 할 수 있다고 해서 시도하고 있는데 편하다고 하는 이유는 픽셀북에서 바로 안드로이드 앱 화면을 띄울 수 있기 때문인것 같다. 그러나"/>
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+    
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Pixelbook에서 Flutter로 앱 개발",
+  "url": "/posts/tech/pixelbook%EC%97%90%EC%84%9C-flutter%EB%A1%9C-%EC%95%B1-%EA%B0%9C%EB%B0%9C_1/",
+  "wordCount": "1580",
+  "datePublished": "2019-07-31T15:14:43&#43;09:00",
+  "dateModified": "2019-07-31T15:14:43&#43;09:00",
+  "author": {
+    "@type": "Person",
+    "name": "Dennis"
+  },
+  "keywords": "Pixelbook, Flutter, Visual Studio Code"
+}
+</script>
+
+
+
+    <link rel="canonical" href="/posts/tech/pixelbook%EC%97%90%EC%84%9C-flutter%EB%A1%9C-%EC%95%B1-%EA%B0%9C%EB%B0%9C_1/">
+
+    <title>Pixelbook에서 Flutter로 앱 개발 | Do What You Want To Do</title>
+
+    
+    <!-- combined, minified CSS -->
+    <link href="/css/style.css" rel="stylesheet" integrity="sha384-G5B34w7DFTumWTswxYzTX7NWfbvQEg1HbFFEg6ItN03uTAAoS2qkPS/fu3LhuuSA" crossorigin="anonymous">
+    
+
+    <!-- RSS 2.0 feed -->
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-108812986-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    
+
+    
+	<link rel="stylesheet" href="/custom.css">
+
+
+  </head>
+
+  <body>
+
+    
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="nav blog-nav">
+          <a class="nav-link " href="/">Home</a>
+          
+          <a class="nav-link" href="/tags/samba/" title="">Samba</a>
+          
+          
+          <a class="nav-link" href="/categories/%EC%9D%8C%EC%95%85/" title="">음악</a>
+          
+          
+          <a class="nav-link" href="/categories/%EC%9D%BC%EC%83%81%EC%82%AC/" title="">일상사</a>
+          
+        </nav>
+      </div>
+    </div>
+    
+
+    
+    
+    <header class="blog-header">
+      <div class="container">
+        <h1 class="blog-title" dir="auto"><a href="/" rel="home">Do What You Want To Do</a></h1>
+        <p class="lead blog-description" dir="auto">bluedskim@gmail.com</p>
+      </div>
+    </header>
+    
+    
+
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+
+          
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="/posts/tech/pixelbook%EC%97%90%EC%84%9C-flutter%EB%A1%9C-%EC%95%B1-%EA%B0%9C%EB%B0%9C_1/">Pixelbook에서 Flutter로 앱 개발</a></h2>
+    <p class="blog-post-meta"><time datetime="2019-07-31T15:14:43&#43;09:00">2019-07-31</time> by Dennis in 
+
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/pixelbook" rel="tag">Pixelbook</a>, <a href="/tags/flutter" rel="tag">Flutter</a>, <a href="/tags/visual-studio-code" rel="tag">Visual Studio Code</a>
+
+</p>
+  </header>
+  
+
+<p>픽셀북으로 안드로이드 개발을 편하게 할 수 있다고 해서 시도하고 있는데
+편하다고 하는 이유는 픽셀북에서 바로 안드로이드 앱 화면을 띄울 수 있기 때문인것 같다.
+그러나 그러기 위해서는 픽셀북을 Developer Mode 로 변경해야 하는데 이렇게 하면 3가지 문제가 있다.</p>
+
+<ol>
+<li>보안이 해제된다 : <em>무섭다</em></li>
+<li>시스템이 불안해진다 : <em>짜증 나다가 화가 나다가 최신 노트북 가격을 비교 하고 있는 나를 발견하면 구글이 미워지기 시작한다</em></li>
+<li>cold 부팅 시 마다 Developer Mode 로 진입해줘야 한다 : <em>귀찮다</em></li>
+</ol>
+
+<p>그래서 약간(?) 불편하지만 실제 폰으로 테스트 하는 방법을 쓰기로 했다.</p>
+
+<ul>
+<li>참고 : <a href="https://flutter.dev/docs/get-started/install/linux">https://flutter.dev/docs/get-started/install/linux</a></li>
+<li>참고 : <a href="https://medium.com/snapp-mobile/turning-the-pixelbook-into-a-great-flutter-development-laptop-db29105cc789">https://medium.com/snapp-mobile/turning-the-pixelbook-into-a-great-flutter-development-laptop-db29105cc789</a></li>
+</ul>
+
+<h2 id="전제조건">전제조건</h2>
+
+<ul>
+<li>픽셀북에 Linux Apps 활성화(모든 명령어들은 리눅스 터미널에서 실행)</li>
+<li>픽셀북과 같은 네트워크에 wifi로 접속된 안드로이드 폰(개발자모드 활성화 필수)</li>
+<li>끝까지 한번 읽어보시고 작업하세요.</li>
+</ul>
+
+<h2 id="순서">순서</h2>
+
+<ol>
+<li>Flutter 설치</li>
+<li>Android SDK Tools 와 Android SDK 설치</li>
+<li>안드로이드 폰과 adb로 연결</li>
+<li>Visual Studio Code 와 Flutter extensions 설치</li>
+</ol>
+
+<h2 id="flutter-설치">flutter 설치</h2>
+
+<ol>
+<li>최신 SDK 다운로드  : <a href="https://flutter.dev/docs/development/tools/sdk/releases?tab=linux">https://flutter.dev/docs/development/tools/sdk/releases?tab=linux</a></li>
+
+<li><p>적당한 위치에 압축 해제</p>
+
+<pre><code>$ cd ~/dev
+$ tar xf ~/Downloads/flutter_linux_v1.7.8+hotfix.4-stable.tar.xz
+</code></pre></li>
+
+<li><p>flutter 경로를 path에 추가 : ~/.bashrc파일에 아래의 라인을 추가하는 것이 편하다</p>
+
+<pre><code>export PATH=&quot;$PATH:/home/My/dev/flutter/bin&quot;
+</code></pre></li>
+</ol>
+
+<ul>
+<li>가이드에 의하면 flutter설치 후 바로 각종 추가 파일들을 다운로드pre-download 하라고 하는데 필요할 때 알아서 다운로드 하므로 미리 할 필요 없을 듯</li>
+</ul>
+
+<h2 id="java-설치">Java 설치</h2>
+
+<p>왜 Java가 필요하냐고? Android sdkmanager 가 Java인 듯 -.- 어차피 설치할 Java라면 지금 설치하자.</p>
+
+<p>최신 Java를 설치해도 되지만 나는 1.8 버전이면  충분하기 때문에 1.8을 설치하겠다. 그리고 OpenJDK보다 OracleJDK가 빠르다고 하니 OracleJDK를 설치하겠다.</p>
+
+<p>Tharanga 란 분이 Github에 설치 스크립트를 공유해 주셔서 이것을 사용하려 한다. uninstall 스크립트도 제공해준다고 좋지 아니한가</p>
+
+<p><a href="https://github.com/chrishantha/install-java">https://github.com/chrishantha/install-java</a></p>
+
+<ol>
+<li><p>설치 스크립트 다운로드</p>
+
+<pre><code>$ wget https://raw.githubusercontent.com/chrishantha/install-java/master/install-java.sh
+</code></pre></li>
+
+<li><p>JDK 다운로드</p>
+
+<p>jdk-8u212-linux-x64.tar.gz를 여기에서 다운로드 받자.
+<a href="https://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8u211-later-5573849.html">https://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8u211-later-5573849.html</a></p></li>
+
+<li><p>암호화 확장 기능 다운로드</p>
+
+<p>암호화 확장 기능은 Java 개발시에만 필요한 기능이지만 Pixelbook에서 Java개발에 필요할거 같아 가이 설치했다.
+jce_policy-8.zip 는 여기에서 다운로드 한다.
+<a href="https://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html">https://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html</a></p></li>
+
+<li><p>설치 스크립트 실행</p>
+
+<p>다운로드한 3개의 파일은 모두 하나의 폴더에 있어야 한다.</p>
+
+<p>설치 중 선택사항을 물어보는데 모두 Y로 했다.</p>
+
+<pre><code>$ sudo ./install-java.sh -f ./jdk-8u212-linux-x64.tar.gz
+</code></pre></li>
+</ol>
+
+<h2 id="android-sdk-tools-와-android-sdk-설치">Android SDK Tools 와 Android SDK 설치</h2>
+
+<ol>
+<li><p>Android SDK 용 폴더 생성</p>
+
+<pre><code>$ mkdir ~/dev/android-sdk
+$ cd ~/dev/android-sdk
+</code></pre></li>
+
+<li><p>명령행 툴 받기 : <a href="https://developer.android.com/studio/#downloads">https://developer.android.com/studio/#downloads</a> 에서  “Command line tools only” 의 리눅스 버전을 받거나  &lsquo;19.08.02 현재 최신버전을 wget으로 받을 수 있다.</p>
+
+<pre><code>$ wget https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
+</code></pre></li>
+
+<li><p>압축을 해제 한다.</p>
+
+<pre><code>$ unzip android-studio-ide-182.5264788-linux.zip
+</code></pre></li>
+
+<li><p>~/.bashrc파일에 path 추가</p>
+
+<pre><code>export PATH=&quot;$PATH:/home/My/dev/android-sdk/tools/bin&quot;
+</code></pre></li>
+
+<li><p>sdkmanager 로  필요한  SDK 받기 : 각각의 버전 번호는 &lsquo;19.08.02 현재 최신 버전인데 버전업 될 수 있으니 확인 후 최신버전을 받자.</p>
+
+<pre><code>$ sdkmanager &quot;build-tools;29.0.1&quot; &quot;tools&quot; &quot;platform-tools&quot; &quot;platforms;android-29&quot; &quot;extras;google;google_play_services&quot; &quot;extras;google;webdriver&quot; &quot;system-images;android-29;google_apis_playstore;x86_64&quot;
+</code></pre>
+
+<p>sdk목록과 버전 확인 방법</p>
+
+<pre><code>$ sdkmanager --list
+</code></pre></li>
+
+<li><p>~/.bashrc파일에 path 추가</p>
+
+<pre><code>export PATH=&quot;$PATH:~/Utils/android-sdk/platform-tools&quot;
+</code></pre></li>
+
+<li><p>~/.bashrc파일에  ANDROID_HOME 시스템 변수 추가</p>
+
+<pre><code>export ANDROID_HOME=&quot;/home/bluedskim/Utils/android-sdk&quot;
+</code></pre></li>
+
+<li><p>지금까지 설정한 시스템 변수를 적용한다</p>
+
+<pre><code>$ . ~/.bashrc
+</code></pre></li>
+
+<li><p>Android 라이센스 동의</p>
+
+<pre><code>$ flutter doctor --android-licenses
+</code></pre></li>
+</ol>
+
+<h2 id="lib32stdc-6-설치">lib32stdc++6 설치</h2>
+
+<p>여기까지 하고 flutter doctor 를 실행해보면 &ldquo;Downloaded executables cannot execute on host&rdquo; 라면서 불평을 한다. lib32stdc++6를 설치하자.</p>
+
+<pre><code>$ sudo apt-get install lib32stdc++6
+</code></pre>
+
+<h2 id="안드로이드-폰과-연결">안드로이드 폰과 연결</h2>
+
+<p>우리는 픽셀북을 개발자모드를 켜지 않았다. 그래서 픽셀북에서 바로 안드로이드 앱을 테스트 할 수 없고 실제 안드로이드 폰에 adb로 연결 후 디버깅할 것이다.
+그러기 위해서는 usb케이블로 폰을 연결하던지 wifi와 adb를 이용해서 연결 하는 방법이 있다.
+케이블 없는 개발을 위해 wifi와 adb를 이용해서 폰에 연결하도록 한다.</p>
+
+<ul>
+<li><p>해당 폰을 wifi로 디버깅 가능하도록 설정변경</p>
+
+<p>최소 한번은 해당 폰과 usb로 연결해야 한다. 연결 후 다음 명령을 실행한다.</p>
+
+<pre><code>$ adb tcpip 5555
+</code></pre>
+
+<p><a href="/images/IMG_20190803_105402.jpg"><img src="/images/IMG_20190803_105402.jpg" alt="최소 한번은 해당 폰과 usb로 연결해야 한다" /></a></p></li>
+
+<li><p>adb over wifi 연결</p>
+
+<pre><code>$ adb connect 해당폰의_내부ip:5554
+</code></pre>
+
+<p>연결된 기기 목록을 조회하면 해당 폰 정보가 뜬다.</p>
+
+<pre><code>$ adb devices -l
+List of devices attached
+해당폰의_내부ip:5554      device product:kltektt model:SM_G900K device:kltektt transport_id:1
+</code></pre></li>
+</ul>
+
+<h2 id="visual-studio-code-와-flutter-extensions-설치">Visual Studio Code 와 Flutter extensions 설치</h2>
+
+<p>여기서 다운로드 하자 <a href="https://code.visualstudio.com/docs/?dv=linux64_deb">https://code.visualstudio.com/docs/?dv=linux64_deb</a></p>
+
+<p>리눅스 터미널에서 설치하거나</p>
+
+<pre><code>$ sudo apt install ./code_1.36.1-1562627527_amd64.deb
+</code></pre>
+
+<p>탐색기에서 더블클릭하면 바로 설치할 수도 있다</p>
+
+<p>설치가 끝나면 터미널에서 실행하자. 실행 명령어는 code</p>
+
+<pre><code>$ code
+</code></pre>
+
+<p>혹은 바로가기를 클릭한다.</p>
+
+<p>실행 후에는 공식가이드에 따라 Flutter extensions을 설치한다
+<a href="https://flutter.dev/docs/get-started/editor?tab=vscode">https://flutter.dev/docs/get-started/editor?tab=vscode</a></p>
+
+<p>설치 후에는 테스트용 앱을 띄워보자
+<a href="https://flutter.dev/docs/get-started/test-drive?tab=vscode">https://flutter.dev/docs/get-started/test-drive?tab=vscode</a></p>
+
+<p><a href="/images/IMG_20190802_120659_410.jpg"><img src="/images/IMG_20190802_120659_410.jpg" alt="vs code" /></a></p>
+
+
+  
+
+  
+  <hr>
+  <footer>
+
+  
+
+  
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bluedskim" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  
+  </footer>
+  
+
+</article> 
+
+
+
+        </div> <!-- /.blog-main -->
+
+        <aside class="col-sm-3 ml-auto blog-sidebar">
+  
+  <section class="sidebar-module sidebar-module-inset">
+    <h4>About</h4>
+    <p dir="auto">잡다한것들을 기록합니다. something to remember</p>
+  </section>
+  
+
+  
+        <section class="sidebar-module">
+    <h4>Recent Posts</h4>
+    <ol class="list-unstyled">
+
+
+<li><a href="/posts/tech/pixelbook%EC%97%90%EC%84%9C-flutter%EB%A1%9C-%EC%95%B1-%EA%B0%9C%EB%B0%9C_1/">Pixelbook에서 Flutter로 앱 개발</a></li>
+
+<li><a href="/posts/tech/redminetopdffull/">우분투 command line에서 모든 레드마인 이슈를 하나의 pdf 로 내려받기</a></li>
+
+<li><a href="/posts/%EC%9D%8C%EC%95%85/pixelbook%EC%97%90%EC%84%9C-reaper%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/">Pixelbook에서 Reaper사용하기</a></li>
+
+<li><a href="/posts/tech/%EC%9D%B4%EA%B8%80%EB%A3%A8%EC%8A%A4%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%9D%B4%EC%82%AC%EC%99%84%EB%A3%8C/">이글루스 블로그 이사완료</a></li>
+
+<li><a href="/posts/movie/%EC%82%BC%EB%B0%94%EC%99%80-%EC%98%81%ED%99%94%EB%A5%BC-%EC%82%AC%EB%9E%91%ED%95%98%EB%8A%94-%EB%B6%84%EB%93%A4%EC%97%90%EA%B2%8C-%EC%B6%94%EC%B2%9C%ED%95%98%EB%8A%94-%EC%98%81%ED%99%94/">삼바와 영화를 사랑하는 분들에게 추천하는 브라질의 극영화</a></li>
+
+    </ol>
+  </section>
+
+  
+
+  
+  <section class="sidebar-module">
+    <h4>Links</h4>
+    <ol class="list-unstyled">
+      
+      <li><a href="http://bohemia.band">Bohemia</a></li>
+      
+      <li><a href="https://www.instagram.com/bluedskim/">instagram</a></li>
+      
+    </ol>
+  </section>
+  
+</aside>
+
+
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+    
+
+    
+    <footer class="blog-footer">
+      <p dir="auto">
+      
+      Blog template created by <a href="https://twitter.com/mdo">@mdo</a>, ported to Hugo by <a href='https://twitter.com/mralanorth'>@mralanorth</a>.
+      
+      </p>
+      <p>
+      <a href="#">Back to top</a>
+      </p>
+    </footer>
+    
+
+  </body>
+
+</html>

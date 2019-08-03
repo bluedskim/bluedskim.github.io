@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>MySQL on Do What You Want To Do</title>
+    <title>Mysql on Do What You Want To Do</title>
     <link>/tags/mysql/</link>
-    <description>Recent content in MySQL on Do What You Want To Do</description>
+    <description>Recent content in Mysql on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <lastBuildDate>Thu, 13 Nov 2008 00:38:00 +0900</lastBuildDate>
