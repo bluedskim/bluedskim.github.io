@@ -93,6 +93,15 @@
     </item>
     
     <item>
+      <title>Chromebook</title>
+      <link>/tags/chromebook/</link>
+      <pubDate>Tue, 13 Aug 2019 18:28:39 +0900</pubDate>
+      
+      <guid>/tags/chromebook/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Crostini</title>
       <link>/tags/crostini/</link>
       <pubDate>Sat, 16 Mar 2019 22:38:28 +0900</pubDate>
@@ -161,6 +170,15 @@
       <pubDate>Tue, 19 Mar 2019 23:38:28 +0900</pubDate>
       
       <guid>/tags/gear360/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google</title>
+      <link>/tags/google/</link>
+      <pubDate>Wed, 14 Aug 2019 09:26:56 +0900</pubDate>
+      
+      <guid>/tags/google/</guid>
       <description></description>
     </item>
     
@@ -248,9 +266,18 @@
     <item>
       <title>Pixelbook</title>
       <link>/tags/pixelbook/</link>
-      <pubDate>Wed, 31 Jul 2019 15:14:43 +0900</pubDate>
+      <pubDate>Wed, 14 Aug 2019 09:26:56 +0900</pubDate>
       
       <guid>/tags/pixelbook/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Quake</title>
+      <link>/tags/quake/</link>
+      <pubDate>Tue, 13 Aug 2019 18:28:39 +0900</pubDate>
+      
+      <guid>/tags/quake/</guid>
       <description></description>
     </item>
     
@@ -341,6 +368,15 @@
       <pubDate>Mon, 22 Oct 2007 22:51:00 +0900</pubDate>
       
       <guid>/tags/war/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Webgl</title>
+      <link>/tags/webgl/</link>
+      <pubDate>Tue, 13 Aug 2019 18:28:39 +0900</pubDate>
+      
+      <guid>/tags/webgl/</guid>
       <description></description>
     </item>
     

@@ -6,10 +6,28 @@
     <description>Recent content in Pixelbook on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Wed, 31 Jul 2019 15:14:43 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 14 Aug 2019 09:26:56 +0900</lastBuildDate>
     
 	<atom:link href="/tags/pixelbook/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>주위에 크롬북을 추천하시겠습니까?</title>
+      <link>/posts/tech/%EC%A3%BC%EC%9C%84%EC%97%90-%ED%81%AC%EB%A1%AC%EB%B6%81%EC%9D%84-%EC%B6%94%EC%B2%9C%ED%95%98%EA%B2%A0%EC%8A%B5%EB%8B%88%EA%B9%8C/</link>
+      <pubDate>Wed, 14 Aug 2019 09:26:56 +0900</pubDate>
+      
+      <guid>/posts/tech/%EC%A3%BC%EC%9C%84%EC%97%90-%ED%81%AC%EB%A1%AC%EB%B6%81%EC%9D%84-%EC%B6%94%EC%B2%9C%ED%95%98%EA%B2%A0%EC%8A%B5%EB%8B%88%EA%B9%8C/</guid>
+      <description>구글에서 설문 메일이 왔다. 혹시나 사은품으로 픽셀북2 줄까 해서 응답했지만 그럴리가 없겠지. &amp;ldquo;주위에 크롬북을 추천하시겠습니까?&amp;rdquo</description>
+    </item>
+    
+    <item>
+      <title>픽셀북(모든 크롬북?)에서 Quake게임 실행하기</title>
+      <link>/posts/tech/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C-quake%EA%B2%8C%EC%9E%84-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/</link>
+      <pubDate>Tue, 13 Aug 2019 18:28:39 +0900</pubDate>
+      
+      <guid>/posts/tech/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C-quake%EA%B2%8C%EC%9E%84-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/</guid>
+      <description>Pixelbook은 상당히 사양이 괜찮은 노트북이지만 즐길 수 있는 적당한 FPS게임이 없다. 안드로이드용 FPS는 있지만 뭔가 부족한 느낌이다. 키보드 지원</description>
+    </item>
     
     <item>
       <title>Pixelbook에서 Flutter로 앱 개발</title>
