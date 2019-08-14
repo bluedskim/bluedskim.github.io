@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Sun, 14 Jan 2007 11:21:00 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 15 Aug 2019 00:00:34 +0900</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Android</title>
+      <link>/tags/android/</link>
+      <pubDate>Thu, 15 Aug 2019 00:00:34 +0900</pubDate>
+      
+      <guid>/tags/android/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>B142</title>
@@ -314,6 +323,15 @@
       <pubDate>Tue, 29 Aug 2006 18:56:00 +0900</pubDate>
       
       <guid>/tags/sql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tablet</title>
+      <link>/tags/tablet/</link>
+      <pubDate>Thu, 15 Aug 2019 00:00:34 +0900</pubDate>
+      
+      <guid>/tags/tablet/</guid>
       <description></description>
     </item>
     

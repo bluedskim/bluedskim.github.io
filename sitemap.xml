@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/posts/tech/1908%ED%98%84%EC%9E%AC-%EC%93%B8%EB%A7%8C%ED%95%9C-%EC%A0%80%EA%B0%80-8%EC%9D%B8%EC%B9%98-%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%ED%83%9C%EB%B8%94%EB%A6%BF-lg-g-pad3-8.0-v425/</loc>
+    <lastmod>2019-08-15T00:00:34+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/posts/tech/%EC%A3%BC%EC%9C%84%EC%97%90-%ED%81%AC%EB%A1%AC%EB%B6%81%EC%9D%84-%EC%B6%94%EC%B2%9C%ED%95%98%EA%B2%A0%EC%8A%B5%EB%8B%88%EA%B9%8C/</loc>
     <lastmod>2019-08-14T09:26:56+09:00</lastmod>
   </url>
@@ -2914,6 +2919,12 @@
   </url>
   
   <url>
+    <loc>/tags/android/</loc>
+    <lastmod>2019-08-15T00:00:34+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/b142/</loc>
     <lastmod>2007-01-14T11:21:00+09:00</lastmod>
     <priority>0</priority>
@@ -2993,7 +3004,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-08-14T09:26:56+09:00</lastmod>
+    <lastmod>2019-08-15T00:00:34+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3107,7 +3118,7 @@
   
   <url>
     <loc>/posts/</loc>
-    <lastmod>2019-08-14T09:26:56+09:00</lastmod>
+    <lastmod>2019-08-15T00:00:34+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3148,8 +3159,14 @@
   </url>
   
   <url>
+    <loc>/tags/tablet/</loc>
+    <lastmod>2019-08-15T00:00:34+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/</loc>
-    <lastmod>2007-01-14T11:21:00+09:00</lastmod>
+    <lastmod>2019-08-15T00:00:34+09:00</lastmod>
     <priority>0</priority>
   </url>
   
