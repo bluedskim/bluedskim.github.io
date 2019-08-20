@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/posts/myworks/%EB%B3%B4%ED%97%A4%EB%AF%B8%EC%95%84-%EA%B3%B5%EC%97%B0-%EB%A7%A8%EC%85%98%EB%82%98%EC%9D%B8-190907/</loc>
+    <lastmod>2019-08-20T17:25:01+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/tech/ffmpeg%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%8F%99%EC%98%81%EC%83%81-%ED%8E%B8%EC%A7%91-%EC%83%98%ED%94%8C-%EB%AA%87%EA%B0%9C/</loc>
+    <lastmod>2019-08-20T17:06:05+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EA%B3%A0%EC%96%91%EC%9D%B4%EB%AA%A8%EB%9E%98-%EB%A8%BC%EC%A7%80%EB%82%A0%EB%A6%AC%EC%A7%80-%EC%95%8A%EA%B2%8C-%ED%86%B5%EC%97%90-%EB%B6%80%EC%96%B4%EB%84%A3%EA%B8%B0/</loc>
     <lastmod>2019-08-15T13:32:43+09:00</lastmod>
   </url>
@@ -3009,7 +3019,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-08-15T13:32:43+09:00</lastmod>
+    <lastmod>2019-08-20T17:25:01+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3028,6 +3038,12 @@
   <url>
     <loc>/tags/excel/</loc>
     <lastmod>2007-12-12T11:59:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/ffmpeg/</loc>
+    <lastmod>2019-08-20T17:06:05+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3105,7 +3121,7 @@
   
   <url>
     <loc>/categories/myworks/</loc>
-    <lastmod>2008-11-10T02:53:00+09:00</lastmod>
+    <lastmod>2019-08-20T17:25:01+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3129,7 +3145,7 @@
   
   <url>
     <loc>/posts/</loc>
-    <lastmod>2019-08-15T13:32:43+09:00</lastmod>
+    <lastmod>2019-08-20T17:25:01+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3183,7 +3199,7 @@
   
   <url>
     <loc>/categories/tech/</loc>
-    <lastmod>2019-08-15T00:00:34+09:00</lastmod>
+    <lastmod>2019-08-20T17:06:05+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3298,6 +3314,12 @@
   <url>
     <loc>/tags/%EB%B2%94%EC%A3%84%EC%98%81%ED%99%94/</loc>
     <lastmod>2007-07-31T23:59:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%EB%B3%B4%ED%97%A4%EB%AF%B8%EC%95%84/</loc>
+    <lastmod>2019-08-20T17:25:01+09:00</lastmod>
     <priority>0</priority>
   </url>
   
