@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta property="og:title" content="픽셀북에서 쓸만한 리눅스용 이미지 뷰어 &amp; Image Annotation Tool 비교 중" />
+<meta property="og:description" content="이미지 뷰어 ristretto : 적당히 가볍고 무난하다. thumbnail 크기만 더 크게 할 수 있으면 좋은데 -.- feh : 가장 가볍다. 하지만 GUI가 없어(?) 불편 Image Annotation Tool shutter : 캡쳐를 전제로 한 프로" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/tech/%ED%94%BD%EC%85%80%EB%B6%81%EC%97%90%EC%84%9C-%EC%93%B8%EB%A7%8C%ED%95%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B7%B0%EC%96%B4_image-annotation-tool/" />
+<meta property="article:published_time" content="2019-09-04T13:25:00&#43;09:00"/>
+<meta property="article:modified_time" content="2019-09-04T13:25:00&#43;09:00"/>
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="픽셀북에서 쓸만한 리눅스용 이미지 뷰어 &amp; Image Annotation Tool 비교 중"/>
+<meta name="twitter:description" content="이미지 뷰어 ristretto : 적당히 가볍고 무난하다. thumbnail 크기만 더 크게 할 수 있으면 좋은데 -.- feh : 가장 가볍다. 하지만 GUI가 없어(?) 불편 Image Annotation Tool shutter : 캡쳐를 전제로 한 프로"/>
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+    
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "픽셀북에서 쓸만한 리눅스용 이미지 뷰어 &amp; Image Annotation Tool 비교 중",
+  "url": "/posts/tech/%ED%94%BD%EC%85%80%EB%B6%81%EC%97%90%EC%84%9C-%EC%93%B8%EB%A7%8C%ED%95%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B7%B0%EC%96%B4_image-annotation-tool/",
+  "wordCount": "171",
+  "datePublished": "2019-09-04T13:25:00&#43;09:00",
+  "dateModified": "2019-09-04T13:25:00&#43;09:00",
+  "author": {
+    "@type": "Person",
+    "name": "Dennis"
+  },
+  "keywords": "tech, Pixelbook"
+}
+</script>
+
+
+
+    <link rel="canonical" href="/posts/tech/%ED%94%BD%EC%85%80%EB%B6%81%EC%97%90%EC%84%9C-%EC%93%B8%EB%A7%8C%ED%95%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B7%B0%EC%96%B4_image-annotation-tool/">
+
+    <title>픽셀북에서 쓸만한 리눅스용 이미지 뷰어 &amp; Image Annotation Tool 비교 중 | Do What You Want To Do</title>
+
+    
+    <!-- combined, minified CSS -->
+    <link href="/css/style.css" rel="stylesheet" integrity="sha384-G5B34w7DFTumWTswxYzTX7NWfbvQEg1HbFFEg6ItN03uTAAoS2qkPS/fu3LhuuSA" crossorigin="anonymous">
+    
+
+    <!-- RSS 2.0 feed -->
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-108812986-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    
+
+    
+	<link rel="stylesheet" href="/custom.css">
+
+
+  </head>
+
+  <body>
+
+    
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="nav blog-nav">
+          <a class="nav-link " href="/">Home</a>
+          
+          <a class="nav-link" href="/tags/samba/" title="">Samba</a>
+          
+          
+          <a class="nav-link" href="/categories/%EC%9D%8C%EC%95%85/" title="">음악</a>
+          
+          
+          <a class="nav-link" href="/categories/%EC%9D%BC%EC%83%81%EC%82%AC/" title="">일상사</a>
+          
+        </nav>
+      </div>
+    </div>
+    
+
+    
+    
+    <header class="blog-header">
+      <div class="container">
+        <h1 class="blog-title" dir="auto"><a href="/" rel="home">Do What You Want To Do</a></h1>
+        <p class="lead blog-description" dir="auto">bluedskim@gmail.com</p>
+      </div>
+    </header>
+    
+    
+
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+
+          
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="/posts/tech/%ED%94%BD%EC%85%80%EB%B6%81%EC%97%90%EC%84%9C-%EC%93%B8%EB%A7%8C%ED%95%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B7%B0%EC%96%B4_image-annotation-tool/">픽셀북에서 쓸만한 리눅스용 이미지 뷰어 &amp; Image Annotation Tool 비교 중</a></h2>
+    <p class="blog-post-meta"><time datetime="2019-09-04T13:25:00&#43;09:00">2019-09-04</time> by Dennis in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/tech" rel="category tag">tech</a>
+
+
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/pixelbook" rel="tag">Pixelbook</a>
+
+</p>
+  </header>
+  
+
+<h5 id="이미지-뷰어">이미지 뷰어</h5>
+
+<ul>
+<li>ristretto : 적당히 가볍고 무난하다. thumbnail 크기만 더 크게 할 수 있으면 좋은데 -.-</li>
+<li>feh : 가장 가볍다. 하지만 GUI가 없어(?) 불편</li>
+</ul>
+
+<h5 id="image-annotation-tool">Image Annotation Tool</h5>
+
+<ul>
+<li>shutter : 캡쳐를 전제로 한 프로그램이라 편집은 불편하지만 한글 입력가능하고 annotation위주로 사용한다면 쓸만하다</li>
+<li>gnome-paint : text 추가 기능 없음</li>
+<li>mtPaint : 의존성 문제로 설치 실패</li>
+<li>gpaint : 한글입력 불가 -.-</li>
+<li>Snap Markup : 한글입력 불가 -.-</li>
+<li>image magic : 뭔가 기능은 강력한것 같은데 쓰기 불편</li>
+</ul>
+
+
+  
+
+  
+  <hr>
+  <footer>
+
+  
+
+  
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bluedskim" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  
+  </footer>
+  
+
+</article> 
+
+
+
+        </div> <!-- /.blog-main -->
+
+        <aside class="col-sm-3 ml-auto blog-sidebar">
+  
+  <section class="sidebar-module sidebar-module-inset">
+    <h4>About</h4>
+    <p dir="auto">잡다한것들을 기록합니다. something to remember</p>
+  </section>
+  
+
+  
+        <section class="sidebar-module">
+    <h4>Recent Posts</h4>
+    <ol class="list-unstyled">
+
+
+<li><a href="/posts/tech/%ED%94%BD%EC%85%80%EB%B6%81%EC%97%90%EC%84%9C-%EC%93%B8%EB%A7%8C%ED%95%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B7%B0%EC%96%B4_image-annotation-tool/">픽셀북에서 쓸만한 리눅스용 이미지 뷰어 &amp; Image Annotation Tool 비교 중</a></li>
+
+<li><a href="/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%A7%8C%EB%82%98%EC%9E%90-%ED%95%98%EC%98%80%EC%9C%BC%EB%82%98-%EC%84%A0%EB%AF%B8%EB%8A%94-%EA%B1%B0%EC%A0%88%ED%96%88%EB%8B%A4/">만나자 하였으나 선미는 거절했고 우리는 등을 돌렸다</a></li>
+
+<li><a href="/posts/myworks/%EB%B3%B4%ED%97%A4%EB%AF%B8%EC%95%84-%EA%B3%B5%EC%97%B0-%EB%A7%A8%EC%85%98%EB%82%98%EC%9D%B8-190907/">보헤미아 공연 맨션나인 190907</a></li>
+
+<li><a href="/posts/tech/ffmpeg%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%8F%99%EC%98%81%EC%83%81-%ED%8E%B8%EC%A7%91-%EC%83%98%ED%94%8C-%EB%AA%87%EA%B0%9C/">ffmpeg를 이용한 동영상 편집 샘플 몇개</a></li>
+
+<li><a href="/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EA%B3%A0%EC%96%91%EC%9D%B4%EB%AA%A8%EB%9E%98-%EB%A8%BC%EC%A7%80%EB%82%A0%EB%A6%AC%EC%A7%80-%EC%95%8A%EA%B2%8C-%ED%86%B5%EC%97%90-%EB%B6%80%EC%96%B4%EB%84%A3%EA%B8%B0/">냥이와의 동거 15년은 모래와의 전쟁이었다</a></li>
+
+    </ol>
+  </section>
+
+  
+
+  
+  <section class="sidebar-module">
+    <h4>Links</h4>
+    <ol class="list-unstyled">
+      
+      <li><a href="http://bohemia.band">Bohemia</a></li>
+      
+      <li><a href="https://www.instagram.com/bluedskim/">instagram</a></li>
+      
+    </ol>
+  </section>
+  
+</aside>
+
+
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+    
+
+    
+    <footer class="blog-footer">
+      <p dir="auto">
+      
+      Blog template created by <a href="https://twitter.com/mdo">@mdo</a>, ported to Hugo by <a href='https://twitter.com/mralanorth'>@mralanorth</a>.
+      
+      </p>
+      <p>
+      <a href="#">Back to top</a>
+      </p>
+    </footer>
+    
+
+  </body>
+
+</html>
