@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Samba on Do What You Want To Do</title>
+    <title>samba on Do What You Want To Do</title>
     <link>/tags/samba/</link>
-    <description>Recent content in Samba on Do What You Want To Do</description>
+    <description>Recent content in samba on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <lastBuildDate>Wed, 15 May 2019 10:14:03 +0900</lastBuildDate>

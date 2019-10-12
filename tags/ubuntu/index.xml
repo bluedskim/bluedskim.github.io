@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ubuntu on Do What You Want To Do</title>
+    <title>ubuntu on Do What You Want To Do</title>
     <link>/tags/ubuntu/</link>
-    <description>Recent content in Ubuntu on Do What You Want To Do</description>
+    <description>Recent content in ubuntu on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <lastBuildDate>Mon, 29 Jul 2019 16:49:45 +0900</lastBuildDate>
