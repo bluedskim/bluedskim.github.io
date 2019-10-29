@@ -3,27 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/</loc>
+    <lastmod>2019-10-29T21:42:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/mirroring/</loc>
+    <lastmod>2019-10-29T21:42:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/tech/mirroring-with-wget/</loc>
+    <lastmod>2019-10-29T21:42:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/</loc>
+    <lastmod>2019-10-29T21:42:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2019-10-29T21:42:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/wget/</loc>
+    <lastmod>2019-10-29T21:42:39+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
     <lastmod>2019-09-04T13:25:00+09:00</lastmod>
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2019-09-04T13:25:00+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/pixelbook/</loc>
-    <lastmod>2019-09-04T13:25:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/posts/</loc>
-    <lastmod>2019-09-04T13:25:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2019-09-04T13:25:00+09:00</lastmod>
   </url>
   
@@ -2185,11 +2200,6 @@
   <url>
     <loc>/tags/%EB%B8%8C%EC%9D%B4%ED%8F%AC%EB%B2%A4%EB%8D%B0%ED%83%80/</loc>
     <lastmod>2007-12-02T09:06:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/wget/</loc>
-    <lastmod>2007-11-30T15:30:00+09:00</lastmod>
   </url>
   
   <url>
