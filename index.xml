@@ -6,10 +6,19 @@
     <description>Recent content on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Tue, 29 Oct 2019 21:42:39 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 29 Oct 2019 22:53:26 +0900</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Special Thanks to Ubuntu</title>
+      <link>/posts/tech/special-thanks-to-ubuntu/</link>
+      <pubDate>Tue, 29 Oct 2019 22:53:26 +0900</pubDate>
+      
+      <guid>/posts/tech/special-thanks-to-ubuntu/</guid>
+      <description>고맙다 우분투. 내 너를 반드시 업데이트 한다. Welcome to Ubuntu 14.04.5 LTS (GNU/Linux 3.8.13.16 armv7l) * Documentation: https://help.ubuntu.com/ 564 packages can be updated. 500 updates are security updates. New release &#39;16.04.6 LTS&#39; available. Run &#39;do-release-upgrade&#39; to upgrade to it. Last login: Tue Oct 29 22:49:04 2019 from 8f30cba7c16415127f3b667a5db841d3.local</description>
+    </item>
     
     <item>
       <title>Mirroring With Wget</title>
