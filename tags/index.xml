@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Tue, 29 Oct 2019 22:53:26 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 02 Nov 2019 02:14:20 +0900</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title>linux</title>
       <link>/tags/linux/</link>
-      <pubDate>Tue, 29 Oct 2019 22:53:26 +0900</pubDate>
+      <pubDate>Sat, 02 Nov 2019 02:14:20 +0900</pubDate>
       
       <guid>/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sparkylinux</title>
+      <link>/tags/sparkylinux/</link>
+      <pubDate>Sat, 02 Nov 2019 02:14:20 +0900</pubDate>
+      
+      <guid>/tags/sparkylinux/</guid>
       <description></description>
     </item>
     
