@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta property="og:title" content="Pixelbook에서 Kdenlive로 동영상 편집하기" />
+<meta property="og:description" content="최근 크롬북 리눅스 앱에서 gpu 가속을 지원하면서 GUI프로그램을 사용하기 쾌적해졌다. 특히 게임과 동영상 편집 프로그램을 비롯한 gpu를 많이 사용하는 프로그램" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/tech/run-kdenlive-on-pixelbook/" />
+<meta property="article:published_time" content="2020-04-18T14:22:37+09:00" />
+<meta property="article:modified_time" content="2020-04-18T14:22:37+09:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Pixelbook에서 Kdenlive로 동영상 편집하기"/>
+<meta name="twitter:description" content="최근 크롬북 리눅스 앱에서 gpu 가속을 지원하면서 GUI프로그램을 사용하기 쾌적해졌다. 특히 게임과 동영상 편집 프로그램을 비롯한 gpu를 많이 사용하는 프로그램"/>
+<meta name="generator" content="Hugo 0.58.3" />
+
+
+    
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Pixelbook에서 Kdenlive로 동영상 편집하기",
+  "url": "\/posts\/tech\/run-kdenlive-on-pixelbook\/",
+  "wordCount": "274",
+  "datePublished": "2020-04-18T14:22:37\x2b09:00",
+  "dateModified": "2020-04-18T14:22:37\x2b09:00",
+  "author": {
+    "@type": "Person",
+    "name": "Dennis"
+  }
+}
+</script>
+
+
+
+    <link rel="canonical" href="/posts/tech/run-kdenlive-on-pixelbook/">
+
+    <title>Pixelbook에서 Kdenlive로 동영상 편집하기 | Do What You Want To Do</title>
+
+    
+    <!-- combined, minified CSS -->
+    <link href="/css/style.css" rel="stylesheet" integrity="sha384-G5B34w7DFTumWTswxYzTX7NWfbvQEg1HbFFEg6ItN03uTAAoS2qkPS/fu3LhuuSA" crossorigin="anonymous">
+    
+
+    <!-- RSS 2.0 feed -->
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-108812986-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    
+
+    
+	<link rel="stylesheet" href="/custom.css">
+
+
+  </head>
+
+  <body>
+
+    
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="nav blog-nav">
+          <a class="nav-link " href="/">Home</a>
+          
+          <a class="nav-link" href="/tags/samba/" title="">Samba</a>
+          
+          
+          <a class="nav-link" href="/categories/%EC%9D%8C%EC%95%85/" title="">음악</a>
+          
+          
+          <a class="nav-link" href="/categories/%EC%9D%BC%EC%83%81%EC%82%AC/" title="">일상사</a>
+          
+        </nav>
+      </div>
+    </div>
+    
+
+    
+    
+    <header class="blog-header">
+      <div class="container">
+        <h1 class="blog-title" dir="auto"><a href="/" rel="home">Do What You Want To Do</a></h1>
+        <p class="lead blog-description" dir="auto">bluedskim@gmail.com</p>
+      </div>
+    </header>
+    
+    
+
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+
+          
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="/posts/tech/run-kdenlive-on-pixelbook/">Pixelbook에서 Kdenlive로 동영상 편집하기</a></h2>
+    <p class="blog-post-meta"><time datetime="2020-04-18T14:22:37&#43;09:00">2020-04-18</time> by Dennis</p>
+  </header>
+  <p>최근 크롬북 리눅스 앱에서 gpu 가속을 지원하면서 GUI프로그램을 사용하기 쾌적해졌다.</p>
+
+<p>특히 게임과 동영상 편집 프로그램을 비롯한 gpu를 많이 사용하는 프로그램들을 쓰기가 편해졌다.</p>
+
+<p>유튜브에 올릴 동영상들을 합칠 필요가 있었는데 ffmpeg를 비롯한 명령행 프로그램들로 이어 붙히는데 문제가 있어(각각 동영상들을 해상도가 틀린 문제) 대표적인 리눅스용 동영상 프로그램인 kdenlive를 설치해서 써봤는데</p>
+
+<p>결론은, 쓸만하다</p>
+
+<p>단, 작업을 마치고 렌더링을 하는데 시간이 실제 동영상 시간의 3배 정도 걸린다.
+아무 이펙트 없이 렌더링하는데 이정도 걸린다면 각종 이펙트를 쓴 동영상 렌더링에는 시간이 훨씬 많이 걸릴 듯</p>
+
+<p>[kdenlive 렌더링 옵션]
+<a href="/images/Screenshot 2020-04-18 at 2.16.09 PM.png"><img src="/images/Screenshot 2020-04-18 at 2.16.09 PM.png" alt="터미널 스크린샷" /></a></p>
+
+
+  
+
+  
+  <hr>
+  <footer>
+
+  
+
+  
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bluedskim" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  
+  </footer>
+  
+
+</article> 
+
+
+
+        </div> <!-- /.blog-main -->
+
+        <aside class="col-sm-3 ml-auto blog-sidebar">
+  
+  <section class="sidebar-module sidebar-module-inset">
+    <h4>About</h4>
+    <p dir="auto">잡다한것들을 기록합니다. something to remember</p>
+  </section>
+  
+
+  
+        <section class="sidebar-module">
+    <h4>Recent Posts</h4>
+    <ol class="list-unstyled">
+
+
+<li><a href="/posts/tech/run-kdenlive-on-pixelbook/">Pixelbook에서 Kdenlive로 동영상 편집하기</a></li>
+
+<li><a href="/posts/tech/%EC%A0%80%EC%82%AC%EC%96%91-pc%EC%97%90-%EA%B0%95%EC%B6%94-%EB%A6%AC%EB%88%85%EC%8A%A4-sparky-linux/">저사양 Pc에 강추 리눅스 Sparky Linux</a></li>
+
+<li><a href="/posts/tech/special-thanks-to-ubuntu/">Special Thanks to Ubuntu</a></li>
+
+<li><a href="/posts/tech/mirroring-with-wget/">Mirroring With Wget</a></li>
+
+<li><a href="/posts/tech/%ED%94%BD%EC%85%80%EB%B6%81%EC%97%90%EC%84%9C-%EC%93%B8%EB%A7%8C%ED%95%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B7%B0%EC%96%B4_image-annotation-tool/">픽셀북에서 쓸만한 리눅스용 이미지 뷰어 &amp; Image Annotation Tool 비교 중</a></li>
+
+    </ol>
+  </section>
+
+  
+
+  
+  <section class="sidebar-module">
+    <h4>Links</h4>
+    <ol class="list-unstyled">
+      
+      <li><a href="http://bohemia.band">Bohemia</a></li>
+      
+      <li><a href="https://www.instagram.com/bluedskim/">instagram</a></li>
+      
+    </ol>
+  </section>
+  
+</aside>
+
+
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+    
+
+    
+    <footer class="blog-footer">
+      <p dir="auto">
+      
+      Blog template created by <a href="https://twitter.com/mdo">@mdo</a>, ported to Hugo by <a href='https://twitter.com/mralanorth'>@mralanorth</a>.
+      
+      </p>
+      <p>
+      <a href="#">Back to top</a>
+      </p>
+    </footer>
+    
+
+  </body>
+
+</html>
