@@ -4,7 +4,32 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-04-18T14:22:37+09:00</lastmod>
+    <lastmod>2020-04-19T21:44:58+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/</loc>
+    <lastmod>2020-04-19T21:44:58+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-04-19T21:44:58+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/%EA%B0%9C%EB%B0%9C/</loc>
+    <lastmod>2020-04-19T21:44:58+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4/</loc>
+    <lastmod>2020-04-19T21:44:58+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/tech/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B5%AC%ED%98%84-%EB%8B%A8%EA%B3%84-overview/</loc>
+    <lastmod>2020-04-19T21:44:58+09:00</lastmod>
   </url>
   
   <url>
@@ -13,7 +38,12 @@
   </url>
   
   <url>
-    <loc>/posts/</loc>
+    <loc>/tags/%EB%A6%AC%EB%88%85%EC%8A%A4/</loc>
+    <lastmod>2020-04-18T14:22:37+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/%ED%94%BD%EC%85%80%EB%B6%81/</loc>
     <lastmod>2020-04-18T14:22:37+09:00</lastmod>
   </url>
   
@@ -29,11 +59,6 @@
   
   <url>
     <loc>/tags/sparkylinux/</loc>
-    <lastmod>2019-11-02T02:14:20+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2019-11-02T02:14:20+09:00</lastmod>
   </url>
   
