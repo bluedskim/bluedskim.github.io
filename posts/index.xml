@@ -6,10 +6,28 @@
     <description>Recent content in Posts on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Sun, 19 Apr 2020 21:44:58 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 19 Apr 2020 22:34:15 +0900</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>&#39;Samba in Seoul&#39; by Jair Martins De Miranda</title>
+      <link>/posts/%EC%9D%8C%EC%95%85/samba-in-seoul-by-jair-martins-de-miranda/</link>
+      <pubDate>Sun, 19 Apr 2020 22:34:15 +0900</pubDate>
+      
+      <guid>/posts/%EC%9D%8C%EC%95%85/samba-in-seoul-by-jair-martins-de-miranda/</guid>
+      <description>상파울루 주립대학의 인류학 교수 Jair Martins De Miranda 가 2014년 즈음 한국의 브라질리언 뮤지션들을 촬영한 다큐이다. 그 당시 활동하던 거의 모든 브라질리언 뮤지션들을 촬영</description>
+    </item>
+    
+    <item>
+      <title>다큐멘터리 Sambistas 삼비스타</title>
+      <link>/posts/%EC%9D%8C%EC%95%85/%EB%8B%A4%ED%81%90sambistas/</link>
+      <pubDate>Sun, 19 Apr 2020 22:16:37 +0900</pubDate>
+      
+      <guid>/posts/%EC%9D%8C%EC%95%85/%EB%8B%A4%ED%81%90sambistas/</guid>
+      <description>판데믹 이전 시대의 낭만. 우리는 돌아갈 수 있을까? https://filmfreeway.com/SAMBISTAS 바치뉴는 본인이 삼비스타라고 불리는 것을 싫어했다. 하지만 삼비스타라는 제목은 한국의 &amp;lsquo;미래</description>
+    </item>
     
     <item>
       <title>소프트웨어 프로젝트  &#39;구현&#39; 단계 Overview</title>
