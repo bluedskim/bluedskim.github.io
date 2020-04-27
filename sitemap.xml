@@ -3,17 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/posts/%EC%9D%8C%EC%95%85/samba-in-seoul-by-jair-martins-de-miranda/</loc>
-    <lastmod>2020-04-19T22:34:15+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/</loc>
-    <lastmod>2020-04-19T22:34:15+09:00</lastmod>
+    <lastmod>2020-04-27T21:26:43+09:00</lastmod>
   </url>
   
   <url>
     <loc>/posts/</loc>
+    <lastmod>2020-04-27T21:26:43+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/tech/spring-boot-&#43;-jpa-&#43;-rest-&#43;-hateoas-with-lombok/</loc>
+    <lastmod>2020-04-27T21:26:43+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/%EC%9D%8C%EC%95%85/samba-in-seoul-by-jair-martins-de-miranda/</loc>
     <lastmod>2020-04-19T22:34:15+09:00</lastmod>
   </url>
   

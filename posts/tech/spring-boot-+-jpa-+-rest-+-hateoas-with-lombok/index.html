@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta property="og:title" content="Spring Boot &#43; JPA &#43; REST &#43; HATEOAS &#43; Lombok 그리고 VS code 환경에서 getter()를 찾지 못하는 문제" />
+<meta property="og:description" content="증상은 제목과 같다. 아래 소스코드에서 보듯 @Data 어노테이션이 있는데도 불구하고 api 호출 결과에 word 변수의 값이 출력되지 않는다 Java소스 1 2 3 4 5 6 7 8 9 10 11" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/tech/spring-boot-&#43;-jpa-&#43;-rest-&#43;-hateoas-with-lombok/" />
+<meta property="article:published_time" content="2020-04-27T21:26:43+09:00" />
+<meta property="article:modified_time" content="2020-04-27T21:26:43+09:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Spring Boot &#43; JPA &#43; REST &#43; HATEOAS &#43; Lombok 그리고 VS code 환경에서 getter()를 찾지 못하는 문제"/>
+<meta name="twitter:description" content="증상은 제목과 같다. 아래 소스코드에서 보듯 @Data 어노테이션이 있는데도 불구하고 api 호출 결과에 word 변수의 값이 출력되지 않는다 Java소스 1 2 3 4 5 6 7 8 9 10 11"/>
+<meta name="generator" content="Hugo 0.58.3" />
+
+
+    
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Spring Boot \x2b JPA \x2b REST \x2b HATEOAS \x2b Lombok 그리고 VS code 환경에서 getter()를 찾지 못하는 문제",
+  "url": "\/posts\/tech\/spring-boot-\x2b-jpa-\x2b-rest-\x2b-hateoas-with-lombok\/",
+  "wordCount": "303",
+  "datePublished": "2020-04-27T21:26:43\x2b09:00",
+  "dateModified": "2020-04-27T21:26:43\x2b09:00",
+  "author": {
+    "@type": "Person",
+    "name": "Dennis"
+  }
+}
+</script>
+
+
+
+    <link rel="canonical" href="/posts/tech/spring-boot-&#43;-jpa-&#43;-rest-&#43;-hateoas-with-lombok/">
+
+    <title>Spring Boot &#43; JPA &#43; REST &#43; HATEOAS &#43; Lombok 그리고 VS code 환경에서 getter()를 찾지 못하는 문제 | Do What You Want To Do</title>
+
+    
+    <!-- combined, minified CSS -->
+    <link href="/css/style.css" rel="stylesheet" integrity="sha384-G5B34w7DFTumWTswxYzTX7NWfbvQEg1HbFFEg6ItN03uTAAoS2qkPS/fu3LhuuSA" crossorigin="anonymous">
+    
+
+    <!-- RSS 2.0 feed -->
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-108812986-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    
+
+    
+	<link rel="stylesheet" href="/custom.css">
+
+
+  </head>
+
+  <body>
+
+    
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="nav blog-nav">
+          <a class="nav-link " href="/">Home</a>
+          
+          <a class="nav-link" href="/tags/samba/" title="">Samba</a>
+          
+          
+          <a class="nav-link" href="/categories/%EC%9D%8C%EC%95%85/" title="">음악</a>
+          
+          
+          <a class="nav-link" href="/categories/%EC%9D%BC%EC%83%81%EC%82%AC/" title="">일상사</a>
+          
+        </nav>
+      </div>
+    </div>
+    
+
+    
+    
+    <header class="blog-header">
+      <div class="container">
+        <h1 class="blog-title" dir="auto"><a href="/" rel="home">Do What You Want To Do</a></h1>
+        <p class="lead blog-description" dir="auto">bluedskim@gmail.com</p>
+      </div>
+    </header>
+    
+    
+
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+
+          
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="/posts/tech/spring-boot-&#43;-jpa-&#43;-rest-&#43;-hateoas-with-lombok/">Spring Boot + JPA + REST + HATEOAS + Lombok 그리고 VS code 환경에서 getter()를 찾지 못하는 문제</a></h2>
+    <p class="blog-post-meta"><time datetime="2020-04-27T21:26:43&#43;09:00">2020-04-27</time> by Dennis</p>
+  </header>
+  
+
+<p>증상은 제목과 같다.</p>
+
+<p>아래 소스코드에서 보듯 @Data 어노테이션이 있는데도 불구하고 api 호출 결과에 word 변수의 값이 출력되지 않는다</p>
+
+<h5 id="java소스">Java소스</h5>
+
+<p><div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span></span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span></span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@Entity</span>
+<span style="display:block;width:100%;background-color:#3c3d38"><span style="color:#a6e22e">@Data</span>
+</span><span style="color:#a6e22e">@Table</span>(name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;first_word&#34;</span>)
+<span style="color:#a6e22e">@NamedQuery</span>(name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;FirstWord.findAll&#34;</span>, query<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;SELECT e FROM FirstWord e&#34;</span>)
+<span style="color:#66d9ef">public</span> <span style="color:#a6e22e">class</span> FirstWord <span style="color:#a6e22e">extends</span> BaseEntity <span style="color:#a6e22e">implements</span> Serializable {
+	<span style="color:#66d9ef">private</span> <span style="color:#a6e22e">static</span> <span style="color:#66d9ef">final</span> <span style="color:#a6e22e">long</span> serialVersionUID <span style="color:#f92672">=</span> 1L;
+
+	<span style="color:#a6e22e">@Id</span> <span style="color:#a6e22e">@GeneratedValue</span>(strategy<span style="color:#f92672">=</span>GenerationType.<span style="color:#a6e22e">IDENTITY</span>)
+	<span style="color:#a6e22e">@Column</span>(name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;seq&#34;</span>)
+	<span style="color:#a6e22e">@Description</span>(<span style="color:#e6db74">&#34;순번&#34;</span>)
+	<span style="color:#66d9ef">private</span> <span style="color:#a6e22e">Long</span> seq;
+
+	<span style="color:#a6e22e">@Column</span>(name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;word&#34;</span>)
+	<span style="color:#a6e22e">@Description</span>(<span style="color:#e6db74">&#34;단어&#34;</span>)
+<span style="display:block;width:100%;background-color:#3c3d38">	<span style="color:#66d9ef">private</span> <span style="color:#a6e22e">String</span> word;
+</span>}</code></pre></td></tr></table>
+</div>
+</div>
+<br/></p>
+
+<h5 id="api호출결과-json">API호출결과 Json</h5>
+
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span></span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+  <span style="color:#f92672">&#34;_embedded&#34;</span> : {
+<span style="display:block;width:100%;background-color:#3c3d38">    <span style="color:#f92672">&#34;firstWords&#34;</span> : [ {
+</span><span style="display:block;width:100%;background-color:#3c3d38">      <span style="color:#f92672">&#34;_links&#34;</span> : {
+</span><span style="display:block;width:100%;background-color:#3c3d38">        <span style="color:#f92672">&#34;self&#34;</span> : {
+</span><span style="display:block;width:100%;background-color:#3c3d38">          <span style="color:#f92672">&#34;href&#34;</span> : <span style="color:#e6db74">&#34;http://penguin.termina.linux.test:8081/firstWords/1&#34;</span>
+</span><span style="display:block;width:100%;background-color:#3c3d38">        },
+</span><span style="display:block;width:100%;background-color:#3c3d38">        <span style="color:#f92672">&#34;firstWord&#34;</span> : {
+</span><span style="display:block;width:100%;background-color:#3c3d38">          <span style="color:#f92672">&#34;href&#34;</span> : <span style="color:#e6db74">&#34;http://penguin.termina.linux.test:8081/firstWords/1&#34;</span>
+</span><span style="display:block;width:100%;background-color:#3c3d38">        }
+</span>      }
+    }, {</code></pre></td></tr></table>
+</div>
+</div>
+
+<p></br>
+VS code 에서 SpringBootApplication의 main 메소드를 바로 run실행했을 때 발생하는데</p>
+
+<p><a href="/images/SambandoApplication java - sambando - Code - OSS.png"><img src="/images/SambandoApplication java - sambando - Code - OSS.png" alt="SambandoApplication java - sambando - Code - OSS" /></a></p>
+
+<p>문제는 일관성이 없다는 점이다. Entity에 @Data 어노테이션을 뺐다가 다시 넣었을 때 정상 동작하기도 한다 -.-</p>
+
+
+  
+
+  
+  <hr>
+  <footer>
+
+  
+
+  
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bluedskim" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  
+  </footer>
+  
+
+</article> 
+
+
+
+        </div> <!-- /.blog-main -->
+
+        <aside class="col-sm-3 ml-auto blog-sidebar">
+  
+  <section class="sidebar-module sidebar-module-inset">
+    <h4>About</h4>
+    <p dir="auto">잡다한것들을 기록합니다. something to remember</p>
+  </section>
+  
+
+  
+        <section class="sidebar-module">
+    <h4>Recent Posts</h4>
+    <ol class="list-unstyled">
+
+
+<li><a href="/posts/tech/spring-boot-&#43;-jpa-&#43;-rest-&#43;-hateoas-with-lombok/">Spring Boot + JPA + REST + HATEOAS + Lombok 그리고 VS code 환경에서 getter()를 찾지 못하는 문제</a></li>
+
+<li><a href="/posts/%EC%9D%8C%EC%95%85/samba-in-seoul-by-jair-martins-de-miranda/">&lsquo;Samba in Seoul&rsquo; by Jair Martins De Miranda</a></li>
+
+<li><a href="/posts/%EC%9D%8C%EC%95%85/%EB%8B%A4%ED%81%90sambistas/">다큐멘터리 Sambistas 삼비스타</a></li>
+
+<li><a href="/posts/tech/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B5%AC%ED%98%84-%EB%8B%A8%EA%B3%84-overview/">소프트웨어 프로젝트  &lsquo;구현&rsquo; 단계 Overview</a></li>
+
+<li><a href="/posts/tech/run-kdenlive-on-pixelbook/">Pixelbook에서 Kdenlive로 동영상 편집하기</a></li>
+
+    </ol>
+  </section>
+
+  
+
+  
+  <section class="sidebar-module">
+    <h4>Links</h4>
+    <ol class="list-unstyled">
+      
+      <li><a href="http://bohemia.band">Bohemia</a></li>
+      
+      <li><a href="https://www.instagram.com/bluedskim/">instagram</a></li>
+      
+    </ol>
+  </section>
+  
+</aside>
+
+
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+    
+
+    
+    <footer class="blog-footer">
+      <p dir="auto">
+      
+      Blog template created by <a href="https://twitter.com/mdo">@mdo</a>, ported to Hugo by <a href='https://twitter.com/mralanorth'>@mralanorth</a>.
+      
+      </p>
+      <p>
+      <a href="#">Back to top</a>
+      </p>
+    </footer>
+    
+
+  </body>
+
+</html>
