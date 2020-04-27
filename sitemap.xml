@@ -8,12 +8,32 @@
   </url>
   
   <url>
+    <loc>/tags/jpa/</loc>
+    <lastmod>2020-04-27T21:26:43+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/posts/</loc>
     <lastmod>2020-04-27T21:26:43+09:00</lastmod>
   </url>
   
   <url>
+    <loc>/tags/spring-boot/</loc>
+    <lastmod>2020-04-27T21:26:43+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/posts/tech/spring-boot-&#43;-jpa-&#43;-rest-&#43;-hateoas-with-lombok/</loc>
+    <lastmod>2020-04-27T21:26:43+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-04-27T21:26:43+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/vs-code/</loc>
     <lastmod>2020-04-27T21:26:43+09:00</lastmod>
   </url>
   
@@ -24,11 +44,6 @@
   
   <url>
     <loc>/tags/samba/</loc>
-    <lastmod>2020-04-19T22:34:15+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2020-04-19T22:34:15+09:00</lastmod>
   </url>
   
