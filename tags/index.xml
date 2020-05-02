@@ -6,10 +6,37 @@
     <description>Recent content in Tags on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Mon, 27 Apr 2020 21:26:43 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 01 May 2020 12:03:18 +0900</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>android</title>
+      <link>/tags/android/</link>
+      <pubDate>Fri, 01 May 2020 12:03:18 +0900</pubDate>
+      
+      <guid>/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>qwerty phone</title>
+      <link>/tags/qwerty-phone/</link>
+      <pubDate>Fri, 01 May 2020 12:03:18 +0900</pubDate>
+      
+      <guid>/tags/qwerty-phone/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sony Xperia Pro</title>
+      <link>/tags/sony-xperia-pro/</link>
+      <pubDate>Fri, 01 May 2020 12:03:18 +0900</pubDate>
+      
+      <guid>/tags/sony-xperia-pro/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>JPA</title>
@@ -170,15 +197,6 @@
       <pubDate>Thu, 15 Aug 2019 13:32:43 +0900</pubDate>
       
       <guid>/tags/%EA%B3%A0%EC%96%91%EC%9D%B4/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>android</title>
-      <link>/tags/android/</link>
-      <pubDate>Thu, 15 Aug 2019 00:00:34 +0900</pubDate>
-      
-      <guid>/tags/android/</guid>
       <description></description>
     </item>
     

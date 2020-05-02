@@ -3,17 +3,52 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/</loc>
-    <lastmod>2020-04-27T21:26:43+09:00</lastmod>
+    <loc>/tags/android/</loc>
+    <lastmod>2020-05-01T12:03:18+09:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/jpa/</loc>
-    <lastmod>2020-04-27T21:26:43+09:00</lastmod>
+    <loc>/categories/</loc>
+    <lastmod>2020-05-01T12:03:18+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-05-01T12:03:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/posts/</loc>
+    <lastmod>2020-05-01T12:03:18+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/qwerty-phone/</loc>
+    <lastmod>2020-05-01T12:03:18+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sony-xperia-pro/</loc>
+    <lastmod>2020-05-01T12:03:18+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/tech/sony-xperia-proiyokan-2011-%EB%B6%80%ED%99%9C/</loc>
+    <lastmod>2020-05-01T12:03:18+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-05-01T12:03:18+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/tech/</loc>
+    <lastmod>2020-05-01T12:03:18+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/jpa/</loc>
     <lastmod>2020-04-27T21:26:43+09:00</lastmod>
   </url>
   
@@ -24,11 +59,6 @@
   
   <url>
     <loc>/posts/tech/spring-boot-&#43;-jpa-&#43;-rest-&#43;-hateoas-with-lombok/</loc>
-    <lastmod>2020-04-27T21:26:43+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2020-04-27T21:26:43+09:00</lastmod>
   </url>
   
@@ -83,22 +113,12 @@
   </url>
   
   <url>
-    <loc>/categories/</loc>
-    <lastmod>2019-11-02T02:14:20+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/linux/</loc>
     <lastmod>2019-11-02T02:14:20+09:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/sparkylinux/</loc>
-    <lastmod>2019-11-02T02:14:20+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/tech/</loc>
     <lastmod>2019-11-02T02:14:20+09:00</lastmod>
   </url>
   
@@ -194,11 +214,6 @@
   
   <url>
     <loc>/posts/tech/1908%ED%98%84%EC%9E%AC-%EC%93%B8%EB%A7%8C%ED%95%9C-%EC%A0%80%EA%B0%80-8%EC%9D%B8%EC%B9%98-%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%ED%83%9C%EB%B8%94%EB%A6%BF-lg-g-pad3-8.0-v425/</loc>
-    <lastmod>2019-08-15T00:00:34+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/android/</loc>
     <lastmod>2019-08-15T00:00:34+09:00</lastmod>
   </url>
   

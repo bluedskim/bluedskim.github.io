@@ -6,10 +6,19 @@
     <description>Recent content on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Mon, 27 Apr 2020 21:26:43 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 01 May 2020 12:03:18 +0900</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Sony Xperia Pro(iyokan) 2011 부활 프로젝트</title>
+      <link>/posts/tech/sony-xperia-proiyokan-2011-%EB%B6%80%ED%99%9C/</link>
+      <pubDate>Fri, 01 May 2020 12:03:18 +0900</pubDate>
+      
+      <guid>/posts/tech/sony-xperia-proiyokan-2011-%EB%B6%80%ED%99%9C/</guid>
+      <description>미니 slide out qwerty 디바이스에 대한 로망은 식지 않는다. 하지만 대세는 터치 인터페이스라 더 이상 이런 스타일의 기기는 구할래야 구할 수가 없다. 그렇다면 서랍속에서 곤히 잠</description>
+    </item>
     
     <item>
       <title>Spring Boot &#43; JPA &#43; REST &#43; HATEOAS &#43; Lombok 그리고 VS code 환경에서 getter()를 찾지 못하는 문제</title>
