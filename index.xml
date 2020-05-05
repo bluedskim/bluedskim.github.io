@@ -6,10 +6,19 @@
     <description>Recent content on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Fri, 01 May 2020 12:03:18 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 05 May 2020 21:58:18 +0900</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ReactJS &amp; Material UI를 이용한 빌라 이름 생성기</title>
+      <link>/posts/tech/reactjs-material-ui%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%B9%8C%EB%9D%BC%EC%9D%B4%EB%A6%84-%EC%83%9D%EC%84%B1%EA%B8%B0/</link>
+      <pubDate>Tue, 05 May 2020 21:58:18 +0900</pubDate>
+      
+      <guid>/posts/tech/reactjs-material-ui%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%B9%8C%EB%9D%BC%EC%9D%B4%EB%A6%84-%EC%83%9D%EC%84%B1%EA%B8%B0/</guid>
+      <description>Bootstrap + ReactJS 기반 예쁜 템플리트도 많지만 실제 업무에서 사용하려면 힘든 경우가 많다. 이런 템플리트류들은 기능성보다는 시각적 만족에 촛점을 맞추기 때문이라 생각. 막상</description>
+    </item>
     
     <item>
       <title>Sony Xperia Pro(iyokan) 2011 부활 프로젝트</title>
