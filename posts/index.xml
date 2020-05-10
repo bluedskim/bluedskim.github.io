@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Tue, 05 May 2020 21:58:18 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 10 May 2020 21:23:09 +0900</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Certbot을 이용해 Iptime DDNS 도메인용 인증서 발급</title>
+      <link>/posts/tech/certbot%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-iptime-ddns-%EB%8F%84%EB%A9%94%EC%9D%B8%EC%9A%A9-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EB%B0%9C%EA%B8%89/</link>
+      <pubDate>Sun, 10 May 2020 21:23:09 +0900</pubDate>
+      
+      <guid>/posts/tech/certbot%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-iptime-ddns-%EB%8F%84%EB%A9%94%EC%9D%B8%EC%9A%A9-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EB%B0%9C%EA%B8%89/</guid>
+      <description>발급될지 살짝 의심했었지만 발급 안될 이유가 없더라. 환경은 다음과 같다. iptime 공유기 A104(version 10.03.8) Odroid Ubuntu 14.04 python 2.7 : 혹자는 3.6 이상 버전이 필요하다고 하지만 2.7에서도 정상 동</description>
+    </item>
     
     <item>
       <title>ReactJS &amp; Material UI를 이용한 빌라 이름 생성기</title>
