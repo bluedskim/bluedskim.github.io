@@ -6,10 +6,19 @@
     <description>Recent content in linux on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Sat, 02 Nov 2019 02:14:20 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2020 17:49:41 +0900</lastBuildDate>
     
 	<atom:link href="/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Chromebook crostini에 SSH접속하기</title>
+      <link>/posts/tech/chromebook%EC%97%90-ssh%EC%A0%91%EC%86%8D%ED%95%98%EA%B8%B0/</link>
+      <pubDate>Sat, 16 May 2020 17:49:41 +0900</pubDate>
+      
+      <guid>/posts/tech/chromebook%EC%97%90-ssh%EC%A0%91%EC%86%8D%ED%95%98%EA%B8%B0/</guid>
+      <description>&amp;lsquo;굳이 뭐 이런것까지&amp;rsquo; 라고 생각할 사람도 있을지 모르겠지만 요긴할 때가 있다(sftp로 파일 전송, 부하 모니터링 등등&amp;helli</description>
+    </item>
     
     <item>
       <title>저사양 Pc에 강추 리눅스 Sparky Linux</title>

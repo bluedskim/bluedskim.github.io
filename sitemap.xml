@@ -3,6 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/tags/chromebook/</loc>
+    <lastmod>2020-05-16T17:49:41+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/tech/chromebook%EC%97%90-ssh%EC%A0%91%EC%86%8D%ED%95%98%EA%B8%B0/</loc>
+    <lastmod>2020-05-16T17:49:41+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-05-16T17:49:41+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/linux/</loc>
+    <lastmod>2020-05-16T17:49:41+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/</loc>
+    <lastmod>2020-05-16T17:49:41+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-05-16T17:49:41+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/certbot/</loc>
     <lastmod>2020-05-10T21:23:09+09:00</lastmod>
   </url>
@@ -13,22 +43,7 @@
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2020-05-10T21:23:09+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/posts/</loc>
-    <lastmod>2020-05-10T21:23:09+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/spring-boot/</loc>
-    <lastmod>2020-05-10T21:23:09+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2020-05-10T21:23:09+09:00</lastmod>
   </url>
   
@@ -135,11 +150,6 @@
   <url>
     <loc>/tags/%ED%94%BD%EC%85%80%EB%B6%81/</loc>
     <lastmod>2020-04-18T14:22:37+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/linux/</loc>
-    <lastmod>2019-11-02T02:14:20+09:00</lastmod>
   </url>
   
   <url>
@@ -255,11 +265,6 @@
   <url>
     <loc>/posts/tech/%EC%A3%BC%EC%9C%84%EC%97%90-%ED%81%AC%EB%A1%AC%EB%B6%81%EC%9D%84-%EC%B6%94%EC%B2%9C%ED%95%98%EA%B2%A0%EC%8A%B5%EB%8B%88%EA%B9%8C/</loc>
     <lastmod>2019-08-14T09:26:56+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/chromebook/</loc>
-    <lastmod>2019-08-13T18:28:39+09:00</lastmod>
   </url>
   
   <url>
