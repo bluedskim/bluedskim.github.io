@@ -9,13 +9,13 @@
 <meta property="og:description" content="증상은 제목과 같다. 아래 소스코드에서 보듯 @Data 어노테이션이 있는데도 불구하고 api 호출 결과에 word 변수의 값이 출력되지 않는다 Java소스 1 2 3 4 5 6 7 8 9 10 11" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/posts/tech/spring-boot-&#43;-jpa-&#43;-rest-&#43;-hateoas-with-lombok/" />
-<meta property="article:published_time" content="2020-04-27T21:26:43+09:00" />
-<meta property="article:modified_time" content="2020-04-27T21:26:43+09:00" />
+<meta property="article:published_time" content="2020-04-27T21:26:43&#43;09:00"/>
+<meta property="article:modified_time" content="2020-04-27T21:26:43&#43;09:00"/>
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Spring Boot &#43; JPA &#43; REST &#43; HATEOAS &#43; Lombok 그리고 VS code 환경에서 getter()를 찾지 못하는 문제"/>
 <meta name="twitter:description" content="증상은 제목과 같다. 아래 소스코드에서 보듯 @Data 어노테이션이 있는데도 불구하고 api 호출 결과에 word 변수의 값이 출력되지 않는다 Java소스 1 2 3 4 5 6 7 8 9 10 11"/>
-<meta name="generator" content="Hugo 0.58.3" />
+<meta name="generator" content="Hugo 0.54.0" />
 
 
     
@@ -23,11 +23,11 @@
 {
   "@context": "http://schema.org",
   "@type": "BlogPosting",
-  "headline": "Spring Boot \x2b JPA \x2b REST \x2b HATEOAS \x2b Lombok 그리고 VS code 환경에서 getter()를 찾지 못하는 문제",
-  "url": "\/posts\/tech\/spring-boot-\x2b-jpa-\x2b-rest-\x2b-hateoas-with-lombok\/",
+  "headline": "Spring Boot &#43; JPA &#43; REST &#43; HATEOAS &#43; Lombok 그리고 VS code 환경에서 getter()를 찾지 못하는 문제",
+  "url": "/posts/tech/spring-boot-&#43;-jpa-&#43;-rest-&#43;-hateoas-with-lombok/",
   "wordCount": "303",
-  "datePublished": "2020-04-27T21:26:43\x2b09:00",
-  "dateModified": "2020-04-27T21:26:43\x2b09:00",
+  "datePublished": "2020-04-27T21:26:43&#43;09:00",
+  "dateModified": "2020-04-27T21:26:43&#43;09:00",
   "author": {
     "@type": "Person",
     "name": "Dennis"
@@ -131,40 +131,40 @@ if (!doNotTrack) {
 
 <p><div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span></span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span></span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2
+</span></span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">14
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">15
+</span></span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">16
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@Entity</span>
 <span style="display:block;width:100%;background-color:#3c3d38"><span style="color:#a6e22e">@Data</span>
-</span><span style="color:#a6e22e">@Table</span>(name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;first_word&#34;</span>)
-<span style="color:#a6e22e">@NamedQuery</span>(name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;FirstWord.findAll&#34;</span>, query<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;SELECT e FROM FirstWord e&#34;</span>)
-<span style="color:#66d9ef">public</span> <span style="color:#a6e22e">class</span> FirstWord <span style="color:#a6e22e">extends</span> BaseEntity <span style="color:#a6e22e">implements</span> Serializable {
-	<span style="color:#66d9ef">private</span> <span style="color:#a6e22e">static</span> <span style="color:#66d9ef">final</span> <span style="color:#a6e22e">long</span> serialVersionUID <span style="color:#f92672">=</span> 1L;
+</span><span style="color:#a6e22e">@Table</span><span style="color:#f92672">(</span>name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;first_word&#34;</span><span style="color:#f92672">)</span>
+<span style="color:#a6e22e">@NamedQuery</span><span style="color:#f92672">(</span>name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;FirstWord.findAll&#34;</span><span style="color:#f92672">,</span> query<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;SELECT e FROM FirstWord e&#34;</span><span style="color:#f92672">)</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FirstWord</span> <span style="color:#66d9ef">extends</span> BaseEntity <span style="color:#66d9ef">implements</span> Serializable <span style="color:#f92672">{</span>
+	<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">long</span> serialVersionUID <span style="color:#f92672">=</span> 1L<span style="color:#f92672">;</span>
 
-	<span style="color:#a6e22e">@Id</span> <span style="color:#a6e22e">@GeneratedValue</span>(strategy<span style="color:#f92672">=</span>GenerationType.<span style="color:#a6e22e">IDENTITY</span>)
-	<span style="color:#a6e22e">@Column</span>(name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;seq&#34;</span>)
-	<span style="color:#a6e22e">@Description</span>(<span style="color:#e6db74">&#34;순번&#34;</span>)
-	<span style="color:#66d9ef">private</span> <span style="color:#a6e22e">Long</span> seq;
+	<span style="color:#a6e22e">@Id</span> <span style="color:#a6e22e">@GeneratedValue</span><span style="color:#f92672">(</span>strategy<span style="color:#f92672">=</span>GenerationType<span style="color:#f92672">.</span><span style="color:#a6e22e">IDENTITY</span><span style="color:#f92672">)</span>
+	<span style="color:#a6e22e">@Column</span><span style="color:#f92672">(</span>name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;seq&#34;</span><span style="color:#f92672">)</span>
+	<span style="color:#a6e22e">@Description</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;순번&#34;</span><span style="color:#f92672">)</span>
+	<span style="color:#66d9ef">private</span> Long seq<span style="color:#f92672">;</span>
 
-	<span style="color:#a6e22e">@Column</span>(name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;word&#34;</span>)
-	<span style="color:#a6e22e">@Description</span>(<span style="color:#e6db74">&#34;단어&#34;</span>)
-<span style="display:block;width:100%;background-color:#3c3d38">	<span style="color:#66d9ef">private</span> <span style="color:#a6e22e">String</span> word;
-</span>}</code></pre></td></tr></table>
+	<span style="color:#a6e22e">@Column</span><span style="color:#f92672">(</span>name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;word&#34;</span><span style="color:#f92672">)</span>
+	<span style="color:#a6e22e">@Description</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;단어&#34;</span><span style="color:#f92672">)</span>
+<span style="display:block;width:100%;background-color:#3c3d38">	<span style="color:#66d9ef">private</span> String word<span style="color:#f92672">;</span>
+</span><span style="color:#f92672">}</span></code></pre></td></tr></table>
 </div>
 </div>
 <br/></p>
@@ -173,18 +173,18 @@ if (!doNotTrack) {
 
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span></span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3
+</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4
+</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5
+</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6
+</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7
+</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8
+</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9
+</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">10
+</span></span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">12
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{

@@ -6,44 +6,26 @@
     <description>Recent content in Categories on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Fri, 01 May 2020 12:03:18 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 17 Jan 2013 00:26:00 +0900</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>tech</title>
-      <link>/categories/tech/</link>
-      <pubDate>Fri, 01 May 2020 12:03:18 +0900</pubDate>
+      <title></title>
+      <link>/categories/</link>
+      <pubDate>Thu, 17 Jan 2013 00:26:00 +0900</pubDate>
       
-      <guid>/categories/tech/</guid>
+      <guid>/categories/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>일상사</title>
-      <link>/categories/%EC%9D%BC%EC%83%81%EC%82%AC/</link>
-      <pubDate>Thu, 22 Aug 2019 13:22:37 +0900</pubDate>
-      
-      <guid>/categories/%EC%9D%BC%EC%83%81%EC%82%AC/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>MyWorks</title>
+      <title>Myworks</title>
       <link>/categories/myworks/</link>
       <pubDate>Tue, 20 Aug 2019 17:25:01 +0900</pubDate>
       
       <guid>/categories/myworks/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>음악</title>
-      <link>/categories/%EC%9D%8C%EC%95%85/</link>
-      <pubDate>Wed, 10 Jul 2019 17:24:26 +0900</pubDate>
-      
-      <guid>/categories/%EC%9D%8C%EC%95%85/</guid>
       <description></description>
     </item>
     
@@ -57,11 +39,11 @@
     </item>
     
     <item>
-      <title>방명록</title>
-      <link>/categories/%EB%B0%A9%EB%AA%85%EB%A1%9D/</link>
-      <pubDate>Thu, 28 Feb 2008 23:04:00 +0900</pubDate>
+      <title>Tech</title>
+      <link>/categories/tech/</link>
+      <pubDate>Fri, 01 May 2020 12:03:18 +0900</pubDate>
       
-      <guid>/categories/%EB%B0%A9%EB%AA%85%EB%A1%9D/</guid>
+      <guid>/categories/tech/</guid>
       <description></description>
     </item>
     
@@ -71,6 +53,33 @@
       <pubDate>Sat, 10 Nov 2007 15:35:00 +0900</pubDate>
       
       <guid>/categories/%EB%A9%94%EB%AA%A8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>방명록</title>
+      <link>/categories/%EB%B0%A9%EB%AA%85%EB%A1%9D/</link>
+      <pubDate>Thu, 28 Feb 2008 23:04:00 +0900</pubDate>
+      
+      <guid>/categories/%EB%B0%A9%EB%AA%85%EB%A1%9D/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>음악</title>
+      <link>/categories/%EC%9D%8C%EC%95%85/</link>
+      <pubDate>Wed, 10 Jul 2019 17:24:26 +0900</pubDate>
+      
+      <guid>/categories/%EC%9D%8C%EC%95%85/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>일상사</title>
+      <link>/categories/%EC%9D%BC%EC%83%81%EC%82%AC/</link>
+      <pubDate>Thu, 22 Aug 2019 13:22:37 +0900</pubDate>
+      
+      <guid>/categories/%EC%9D%BC%EC%83%81%EC%82%AC/</guid>
       <description></description>
     </item>
     

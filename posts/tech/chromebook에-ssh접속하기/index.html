@@ -9,13 +9,13 @@
 <meta property="og:description" content="&lsquo;굳이 뭐 이런것까지&rsquo; 라고 생각할 사람도 있을지 모르겠지만 요긴할 때가 있다(sftp로 파일 전송, 부하 모니터링 등등&helli" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/posts/tech/chromebook%EC%97%90-ssh%EC%A0%91%EC%86%8D%ED%95%98%EA%B8%B0/" />
-<meta property="article:published_time" content="2020-05-16T17:49:41+09:00" />
-<meta property="article:modified_time" content="2020-05-16T17:49:41+09:00" />
+<meta property="article:published_time" content="2020-05-16T17:49:41&#43;09:00"/>
+<meta property="article:modified_time" content="2020-05-16T17:49:41&#43;09:00"/>
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Chromebook crostini에 SSH접속하기"/>
 <meta name="twitter:description" content="&lsquo;굳이 뭐 이런것까지&rsquo; 라고 생각할 사람도 있을지 모르겠지만 요긴할 때가 있다(sftp로 파일 전송, 부하 모니터링 등등&helli"/>
-<meta name="generator" content="Hugo 0.58.3" />
+<meta name="generator" content="Hugo 0.54.0" />
 
 
     
@@ -24,10 +24,10 @@
   "@context": "http://schema.org",
   "@type": "BlogPosting",
   "headline": "Chromebook crostini에 SSH접속하기",
-  "url": "\/posts\/tech\/chromebook%EC%97%90-ssh%EC%A0%91%EC%86%8D%ED%95%98%EA%B8%B0\/",
-  "wordCount": "767",
-  "datePublished": "2020-05-16T17:49:41\x2b09:00",
-  "dateModified": "2020-05-16T17:49:41\x2b09:00",
+  "url": "/posts/tech/chromebook%EC%97%90-ssh%EC%A0%91%EC%86%8D%ED%95%98%EA%B8%B0/",
+  "wordCount": "951",
+  "datePublished": "2020-05-16T17:49:41&#43;09:00",
+  "dateModified": "2020-05-16T17:49:41&#43;09:00",
   "author": {
     "@type": "Person",
     "name": "Dennis"
@@ -204,6 +204,35 @@ Last login: Sat May 16 20:46:05 2020 from ::1
 </ol>
 
 <p>이런 방법으로 crostini내의 모든 서비스에 다른 기기에서 접속가능하다.</p>
+
+<h4 id="trouble-shoot">Trouble shoot</h4>
+
+<p>픽셀북을 초기화 하고 다시 sshd를 설치했는데 ssh 접속이 불가능하였다. 그래서  ssh status를 확인해 봤더니</p>
+
+<pre><code>penguin:~/.ssh$ sudo service ssh status
+● ssh.service - OpenBSD Secure Shell server
+   Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enabled)
+   Active: inactive (dead)
+Condition: start condition failed at Sat 2020-09-12 13:14:45 KST; 14s ago
+           └─ ConditionPathExists=!/etc/ssh/sshd_not_to_be_run was not met
+     Docs: man:sshd(8)
+           man:sshd_config(5)
+
+Sep 12 12:23:07 penguin systemd[1]: Condition check resulted in OpenBSD Secure Shell server being skipped.
+Sep 12 13:11:09 penguin systemd[1]: Condition check resulted in OpenBSD Secure Shell server being skipped.
+Sep 12 13:14:45 penguin systemd[1]: Condition check resulted in OpenBSD Secure Shell server being skipped.
+</code></pre>
+
+<p>이런 문제가 있다고 알려준다.</p>
+
+<pre><code>ConditionPathExists=!/etc/ssh/sshd_not_to_be_run was not met
+</code></pre>
+
+<p>이 때는 /etc/ssh/sshd_not_to_be_run 파일을 삭제하고 다시 기동하면 된다.</p>
+
+<pre><code>penguin:~$ sudo rm /etc/ssh/sshd_not_to_be_run
+penguin:~$ sudo service ssh restart
+</code></pre>
 
 
   
