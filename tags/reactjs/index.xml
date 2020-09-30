@@ -6,10 +6,19 @@
     <description>Recent content in Reactjs on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Tue, 05 May 2020 21:58:18 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2020 12:37:16 +0900</lastBuildDate>
     
 	<atom:link href="/tags/reactjs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>PM2 - Production Process Manager for Node</title>
+      <link>/posts/tech/pm2-production-process-manager-for-node.js/</link>
+      <pubDate>Wed, 30 Sep 2020 12:37:16 +0900</pubDate>
+      
+      <guid>/posts/tech/pm2-production-process-manager-for-node.js/</guid>
+      <description>ReactJS 로 Single-page application을 개발한다면 일반적으로 build를 하고 build를 deploy하는 방식을 사용한다. 최근 진행했던 프로젝트에서도 역시</description>
+    </item>
     
     <item>
       <title>ReactJS &amp; Material UI를 이용한 빌라 이름 생성기</title>
