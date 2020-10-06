@@ -6,10 +6,19 @@
     <description>Recent content on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Sun, 04 Oct 2020 21:13:35 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2020 23:09:54 +0900</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>VS Code에서 Spring Java &#43; Gradle 프로젝트 리프레시 하기</title>
+      <link>/posts/tech/vs-code-spring-java-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A6%AC%ED%94%84%EB%A0%88%EC%8B%9C-%ED%95%98%EA%B8%B0/</link>
+      <pubDate>Tue, 06 Oct 2020 23:09:54 +0900</pubDate>
+      
+      <guid>/posts/tech/vs-code-spring-java-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A6%AC%ED%94%84%EB%A0%88%EC%8B%9C-%ED%95%98%EA%B8%B0/</guid>
+      <description>VS code에서 Java 개발은 아직 갈 길이 먼듯. 가령 Tomcat 기반의 MVC 어플리케이션 개발 시 불편한 점이 많다. 제대로 된 플러그인이 없기 때문 -.- 반면 Spring Boot 기반이라면 웹 MVC</description>
+    </item>
     
     <item>
       <title>함께 자라기(김창준) 메모</title>
