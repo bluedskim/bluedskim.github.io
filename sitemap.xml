@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/posts/tech/jboss%EC%9D%98-modeshape%EB%A1%9C-%EC%98%81%EB%8B%A8%EC%96%B4%EB%A5%BC-%EB%B3%B5%EC%88%98%ED%98%95%EB%8B%A8%EC%88%98%ED%98%95%EC%9C%BC%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/</loc>
+    <lastmod>2020-10-11T21:39:37+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/posts/tech/vs-code-spring-java-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A6%AC%ED%94%84%EB%A0%88%EC%8B%9C-%ED%95%98%EA%B8%B0/</loc>
     <lastmod>2020-10-06T23:09:54+09:00</lastmod>
   </url>
@@ -3110,7 +3115,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-10-06T23:09:54+09:00</lastmod>
+    <lastmod>2020-10-11T21:39:37+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3182,7 +3187,7 @@
   
   <url>
     <loc>/tags/java/</loc>
-    <lastmod>2020-10-06T23:09:54+09:00</lastmod>
+    <lastmod>2020-10-11T21:39:37+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3260,7 +3265,7 @@
   
   <url>
     <loc>/posts/</loc>
-    <lastmod>2020-10-06T23:09:54+09:00</lastmod>
+    <lastmod>2020-10-11T21:39:37+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3344,7 +3349,7 @@
   
   <url>
     <loc>/categories/tech/</loc>
-    <lastmod>2020-10-06T23:09:54+09:00</lastmod>
+    <lastmod>2020-10-11T21:39:37+09:00</lastmod>
     <priority>0</priority>
   </url>
   

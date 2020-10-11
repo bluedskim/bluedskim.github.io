@@ -6,10 +6,19 @@
     <description>Recent content in Java on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Tue, 06 Oct 2020 23:09:54 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 11 Oct 2020 21:39:37 +0900</lastBuildDate>
     
 	<atom:link href="/tags/java/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Jboss의 Modeshape로 영단어를 복수형 혹은 단수형으로 변환하기</title>
+      <link>/posts/tech/jboss%EC%9D%98-modeshape%EB%A1%9C-%EC%98%81%EB%8B%A8%EC%96%B4%EB%A5%BC-%EB%B3%B5%EC%88%98%ED%98%95%EB%8B%A8%EC%88%98%ED%98%95%EC%9C%BC%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/</link>
+      <pubDate>Sun, 11 Oct 2020 21:39:37 +0900</pubDate>
+      
+      <guid>/posts/tech/jboss%EC%9D%98-modeshape%EB%A1%9C-%EC%98%81%EB%8B%A8%EC%96%B4%EB%A5%BC-%EB%B3%B5%EC%88%98%ED%98%95%EB%8B%A8%EC%88%98%ED%98%95%EC%9C%BC%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/</guid>
+      <description>java 프로젝트를 진행할 때 단수 영단어를 복수로 변환하거나 반대로 복수 영단어를 단수로 변환해야 하는 경우가 있다. Jboss에서 제공하는 Modeshape의 Inflector</description>
+    </item>
     
     <item>
       <title>VS Code에서 Spring Java &#43; Gradle 프로젝트 리프레시 하기</title>
