@@ -1,16 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Bullet on Do What You Want To Do</title>
+    <title>bullet on Do What You Want To Do</title>
     <link>/tags/bullet/</link>
-    <description>Recent content in Bullet on Do What You Want To Do</description>
+    <description>Recent content in bullet on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Mon, 22 Oct 2007 22:51:00 +0900</lastBuildDate>
-    
-	<atom:link href="/tags/bullet/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 22 Oct 2007 22:51:00 +0900</lastBuildDate><atom:link href="/tags/bullet/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[방구석 영화제]Lord Of War</title>
       <link>/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9Clord-of-war/</link>

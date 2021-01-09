@@ -6,16 +6,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <meta property="og:title" content="Portable Ubuntu 팁" />
-<meta property="og:description" content="Portable Ubuntu 는 윈도우 시스템 위에서 설치 사용할 수 있는 우분투이다. 속도는 느리지만 리눅스 체험용으로는 충분하다. * 처음 설치하기 : http://www.choboweb.com/900 * 업그레이드 하기(이미지 파일" />
+<meta property="og:description" content="Portable Ubuntu 는 윈도우 시스템 위에서 설치 사용할 수 있는 우분투이다. 속도는 느리지만 리눅스 체험용으로는 충분하다. * 처음 설치하기 : http://www.choboweb.com/900* 업그레이드 하기(이미지 파일 사" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/posts/software-engineering/portable-ubuntu-%ED%8C%81/" />
-<meta property="article:published_time" content="2009-05-14T01:19:00&#43;09:00"/>
-<meta property="article:modified_time" content="2009-05-14T01:19:00&#43;09:00"/>
+<meta property="article:published_time" content="2009-05-14T01:19:00+09:00" />
+<meta property="article:modified_time" content="2009-05-14T01:19:00+09:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Portable Ubuntu 팁"/>
-<meta name="twitter:description" content="Portable Ubuntu 는 윈도우 시스템 위에서 설치 사용할 수 있는 우분투이다. 속도는 느리지만 리눅스 체험용으로는 충분하다. * 처음 설치하기 : http://www.choboweb.com/900 * 업그레이드 하기(이미지 파일"/>
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="twitter:description" content="Portable Ubuntu 는 윈도우 시스템 위에서 설치 사용할 수 있는 우분투이다. 속도는 느리지만 리눅스 체험용으로는 충분하다. * 처음 설치하기 : http://www.choboweb.com/900* 업그레이드 하기(이미지 파일 사"/>
+<meta name="generator" content="Hugo 0.76.5" />
 
 
     
@@ -24,10 +24,10 @@
   "@context": "http://schema.org",
   "@type": "BlogPosting",
   "headline": "Portable Ubuntu 팁",
-  "url": "/posts/software-engineering/portable-ubuntu-%ED%8C%81/",
-  "wordCount": "207",
-  "datePublished": "2009-05-14T01:19:00&#43;09:00",
-  "dateModified": "2009-05-14T01:19:00&#43;09:00",
+  "url": "\/posts\/software-engineering\/portable-ubuntu-%ED%8C%81\/",
+  "wordCount": "100",
+  "datePublished": "2009-05-14T01:19:00\u002b09:00",
+  "dateModified": "2009-05-14T01:19:00\u002b09:00",
   "author": {
     "@type": "Person",
     "name": "Dennis"
@@ -98,7 +98,7 @@ if (!doNotTrack) {
     <header class="blog-header">
       <div class="container">
         <h1 class="blog-title" dir="auto"><a href="/" rel="home">Do What You Want To Do</a></h1>
-        <p class="lead blog-description" dir="auto">bluedskim@gmail.com</p>
+        <p class="lead blog-description" dir="auto"><a href="mailto:bluedskim@gmail.com">bluedskim@gmail.com</a></p>
       </div>
     </header>
     
@@ -121,38 +121,17 @@ if (!doNotTrack) {
 
 </p>
   </header>
-  <p><span class="copyright_entry" style="display:block;" title="Portable Ubuntu 팁@@**@@http://shed.egloos.com/1905465"></span>Portable Ubuntu 는 윈도우 시스템 위에서 설치 사용할 수 있는 우분투이다.
-<br>속도는 느리지만 리눅스 체험용으로는 충분하다.
-<br>
-<br>* 처음 설치하기 :
-<a href="http://www.choboweb.com/900">http://www.choboweb.com/900</a>
-<br>* 업그레이드 하기(이미지 파일 사이즈 늘이기) &amp; Xming을 최신판으로 교체 하여 속도 향상하기 :
-<a href="http://honeyperl.tistory.com/61">http://honeyperl.tistory.com/61</a>
-<br>
-<br>
-<ol>
- <li><span style="text-decoration: underline;">C 드라이브 말고 다른 드라이브 마운트 하기</span><br>정답은 아니다. 다른 좋은 방법이 있을 듯&hellip;.<br><br>어쨌든 /etc/portable_ubuntu/portable_ubuntu.conf 를 열어서 <br>5째 라인의 cofs1=<span style="font-weight: bold;">c</span>:\ 를 cofs1=<span style="font-weight: bold;">d</span>:\ 로 수정<br><br></li>
- <li><span style="text-decoration: underline;">Tomcat 을 윈도우에서 접속하기</span><br>8080포트를 열어야 한다.<br>/etc/portable_ubuntu/portable_ubuntu.conf 를 열어서<br>eth0=slirp,00:ff:75:39:D3:C1,tcp:22:22 를 찾아서 <br>아래처럼 고친다<br>eth0=slirp,00:ff:75:39:D3:C1,tcp:22:22<span style="font-weight: bold;">/tcp:8080:8080</span><br></li>
-</ol>
-<br>
-<div style="text-align:center">
- <img class="image_mid" border="0" onmouseover="this.style.cursor='pointer'" alt="" src="/attachment/1905465_1.jpg" width="600" height="198.529411765" onclick="Control.Modal.openDialog(this, event, 'http://pds15.egloos.com/pds/200905/14/82/a0003782_4a0af2ff5539c.jpg', 2720, 900);">
-</div>
-<br>
-<br>
-<!--
-       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-            xmlns:dc="http://purl.org/dc/elements/1.1/"
-            xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
-       <rdf:Description
-            rdf:about="http://shed.egloos.com/1905465"
-            dc:identifier="http://shed.egloos.com/1905465"
-            dc:title="Portable Ubuntu 팁"
-            trackback:ping="http://shed.egloos.com/tb/1905465"/>
-       </rdf:RDF>
-       --></p>
-
-<ul></ul>
+  <p><!-- raw HTML omitted --><!-- raw HTML omitted -->Portable Ubuntu 는 윈도우 시스템 위에서 설치 사용할 수 있는 우분투이다.
+<!-- raw HTML omitted -->속도는 느리지만 리눅스 체험용으로는 충분하다.
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->* 처음 설치하기 :
+<!-- raw HTML omitted --><a href="http://www.choboweb.com/900">http://www.choboweb.com/900</a><!-- raw HTML omitted -->
+<!-- raw HTML omitted -->* 업그레이드 하기(이미지 파일 사이즈 늘이기) &amp; Xming을 최신판으로 교체 하여 속도 향상하기 :
+<!-- raw HTML omitted --><a href="http://honeyperl.tistory.com/61">http://honeyperl.tistory.com/61</a><!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 
 
   
@@ -208,6 +187,8 @@ if (!doNotTrack) {
     <ol class="list-unstyled">
 
 
+<li><a href="/posts/tech/karate%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%8D%B0%EB%AA%A8/">Karate 테스트 데모</a></li>
+
 <li><a href="/posts/tech/jboss%EC%9D%98-modeshape%EB%A1%9C-%EC%98%81%EB%8B%A8%EC%96%B4%EB%A5%BC-%EB%B3%B5%EC%88%98%ED%98%95%EB%8B%A8%EC%88%98%ED%98%95%EC%9C%BC%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/">Jboss의 Modeshape로 영단어를 복수형 혹은 단수형으로 변환하기</a></li>
 
 <li><a href="/posts/tech/vs-code-spring-java-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A6%AC%ED%94%84%EB%A0%88%EC%8B%9C-%ED%95%98%EA%B8%B0/">VS Code에서 Spring Java + Gradle 프로젝트 리프레시 하기</a></li>
@@ -215,8 +196,6 @@ if (!doNotTrack) {
 <li><a href="/posts/tech/%ED%95%A8%EA%BB%98-%EC%9E%90%EB%9D%BC%EA%B8%B0_%EA%B9%80%EC%B0%BD%EC%A4%80_%EB%A9%94%EB%AA%A8/">함께 자라기(김창준) 메모</a></li>
 
 <li><a href="/posts/tech/pm2-production-process-manager-for-node.js/">PM2 - Production Process Manager for Node</a></li>
-
-<li><a href="/posts/tech/chromebook%EC%97%90-ssh%EC%A0%91%EC%86%8D%ED%95%98%EA%B8%B0/">Chromebook crostini에 SSH접속하기</a></li>
 
     </ol>
   </section>

@@ -9,13 +9,13 @@
 <meta property="og:description" content="text 유형 필드에 들어있는 값들을 숫자값 기준으로 정렬하고자 한다면 반드시 해당 필드를 CAST함수를 이용해서 변환해야 한다. 다음 2개의 쿼리를 비교해 보자 * 쿼리" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/posts/software-engineering/mysql-%EC%9D%98-%ED%95%84%EB%93%9C-type-%EB%B3%80%ED%99%98%ED%95%A8%EC%88%98-cast/" />
-<meta property="article:published_time" content="2008-11-13T00:38:00&#43;09:00"/>
-<meta property="article:modified_time" content="2008-11-13T00:38:00&#43;09:00"/>
+<meta property="article:published_time" content="2008-11-13T00:38:00+09:00" />
+<meta property="article:modified_time" content="2008-11-13T00:38:00+09:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="MySQL 의 필드 type 변환함수 CAST"/>
 <meta name="twitter:description" content="text 유형 필드에 들어있는 값들을 숫자값 기준으로 정렬하고자 한다면 반드시 해당 필드를 CAST함수를 이용해서 변환해야 한다. 다음 2개의 쿼리를 비교해 보자 * 쿼리"/>
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.76.5" />
 
 
     
@@ -24,10 +24,10 @@
   "@context": "http://schema.org",
   "@type": "BlogPosting",
   "headline": "MySQL 의 필드 type 변환함수 CAST",
-  "url": "/posts/software-engineering/mysql-%EC%9D%98-%ED%95%84%EB%93%9C-type-%EB%B3%80%ED%99%98%ED%95%A8%EC%88%98-cast/",
-  "wordCount": "225",
-  "datePublished": "2008-11-13T00:38:00&#43;09:00",
-  "dateModified": "2008-11-13T00:38:00&#43;09:00",
+  "url": "\/posts\/software-engineering\/mysql-%EC%9D%98-%ED%95%84%EB%93%9C-type-%EB%B3%80%ED%99%98%ED%95%A8%EC%88%98-cast\/",
+  "wordCount": "224",
+  "datePublished": "2008-11-13T00:38:00\u002b09:00",
+  "dateModified": "2008-11-13T00:38:00\u002b09:00",
   "author": {
     "@type": "Person",
     "name": "Dennis"
@@ -98,7 +98,7 @@ if (!doNotTrack) {
     <header class="blog-header">
       <div class="container">
         <h1 class="blog-title" dir="auto"><a href="/" rel="home">Do What You Want To Do</a></h1>
-        <p class="lead blog-description" dir="auto">bluedskim@gmail.com</p>
+        <p class="lead blog-description" dir="auto"><a href="mailto:bluedskim@gmail.com">bluedskim@gmail.com</a></p>
       </div>
     </header>
     
@@ -123,75 +123,65 @@ if (!doNotTrack) {
 
 </p>
   </header>
-  <p><span class="copyright_entry" style="display:block;" title="MySQL 의 필드 type 변환함수 CAST@@**@@http://shed.egloos.com/1835243"></span>text 유형 필드에 들어있는 값들을 숫자값 기준으로 정렬하고자 한다면
-<br>
-<br>반드시 해당 필드를 CAST함수를 이용해서 변환해야 한다.
-<br>
-<br>다음 2개의 쿼리를 비교해 보자
-<br>
-<br>* 쿼리 : select * from
-<span class="syntax"><span class="syntax_alpha syntax_alpha_identifier">prices order by </span></span>price;
-<br>* 결과 :
-<br>1420
-<br>1590
-<br>1990
-<br>220
-<br>2390
-<br>2660
-<br>280
-<br>2990
-<br>3420
-<br>380
-<br>3990
-<br>4270
-<br>450
-<br>570
-<br>5700
-<br>760
-<br>850
-<br>이건 원하는 결과가 아니다. ㅠㅠ&hellip;. (애초에 테이블을 만들 때 필드를 숫자 형태로 만들었어야 한다&hellip;)
-<br>
-<br>
-<span class="syntax"><span class="syntax_alpha syntax_alpha_identifier">CAST함수를 사용한다면,</span></span>
-<br>* 쿼리 : select * from
-<span class="syntax"><span class="syntax_alpha syntax_alpha_identifier">prices order by CAST(</span></span>price AS UNSIGNED);
-<br>* 결과 :
-<br>220
-<br>280
-<br>380
-<br>450
-<br>570
-<br>760
-<br>850
-<br>1060
-<br>1420
-<br>1590
-<br>1990
-<br>2390
-<br>2660
-<br>2990
-<br>3420
-<br>3990
-<br>4270
-<br>5700
-<br>
-<br>제대로 나온다.
-<br>
-<br>더 자세한 API는 여기에
-<a title="" href="http://dev.mysql.com/doc/refman/5.0/en/cast-functions.html"><a href="http://dev.mysql.com/doc/refman/5.0/en/cast-functions.html">http://dev.mysql.com/doc/refman/5.0/en/cast-functions.html</a></a>
-<!--
-       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-            xmlns:dc="http://purl.org/dc/elements/1.1/"
-            xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
-       <rdf:Description
-            rdf:about="http://shed.egloos.com/1835243"
-            dc:identifier="http://shed.egloos.com/1835243"
-            dc:title="MySQL 의 필드 type 변환함수 CAST"
-            trackback:ping="http://shed.egloos.com/tb/1835243"/>
-       </rdf:RDF>
-       --></p>
-
-<ul></ul>
+  <p><!-- raw HTML omitted --><!-- raw HTML omitted -->text 유형 필드에 들어있는 값들을 숫자값 기준으로 정렬하고자 한다면
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->반드시 해당 필드를 CAST함수를 이용해서 변환해야 한다.
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->다음 2개의 쿼리를 비교해 보자
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->* 쿼리 : select * from
+<!-- raw HTML omitted --><!-- raw HTML omitted -->prices order by <!-- raw HTML omitted --><!-- raw HTML omitted -->price;
+<!-- raw HTML omitted -->* 결과 :
+<!-- raw HTML omitted -->1420
+<!-- raw HTML omitted -->1590
+<!-- raw HTML omitted -->1990
+<!-- raw HTML omitted -->220
+<!-- raw HTML omitted -->2390
+<!-- raw HTML omitted -->2660
+<!-- raw HTML omitted -->280
+<!-- raw HTML omitted -->2990
+<!-- raw HTML omitted -->3420
+<!-- raw HTML omitted -->380
+<!-- raw HTML omitted -->3990
+<!-- raw HTML omitted -->4270
+<!-- raw HTML omitted -->450
+<!-- raw HTML omitted -->570
+<!-- raw HTML omitted -->5700
+<!-- raw HTML omitted -->760
+<!-- raw HTML omitted -->850
+<!-- raw HTML omitted -->이건 원하는 결과가 아니다. ㅠㅠ&hellip;. (애초에 테이블을 만들 때 필드를 숫자 형태로 만들었어야 한다&hellip;)
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted --><!-- raw HTML omitted -->CAST함수를 사용한다면,<!-- raw HTML omitted --><!-- raw HTML omitted -->
+<!-- raw HTML omitted -->* 쿼리 : select * from
+<!-- raw HTML omitted --><!-- raw HTML omitted -->prices order by CAST(<!-- raw HTML omitted --><!-- raw HTML omitted -->price AS UNSIGNED);
+<!-- raw HTML omitted -->* 결과 :
+<!-- raw HTML omitted -->220
+<!-- raw HTML omitted -->280
+<!-- raw HTML omitted -->380
+<!-- raw HTML omitted -->450
+<!-- raw HTML omitted -->570
+<!-- raw HTML omitted -->760
+<!-- raw HTML omitted -->850
+<!-- raw HTML omitted -->1060
+<!-- raw HTML omitted -->1420
+<!-- raw HTML omitted -->1590
+<!-- raw HTML omitted -->1990
+<!-- raw HTML omitted -->2390
+<!-- raw HTML omitted -->2660
+<!-- raw HTML omitted -->2990
+<!-- raw HTML omitted -->3420
+<!-- raw HTML omitted -->3990
+<!-- raw HTML omitted -->4270
+<!-- raw HTML omitted -->5700
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->제대로 나온다.
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->더 자세한 API는 여기에
+<!-- raw HTML omitted --><a href="http://dev.mysql.com/doc/refman/5.0/en/cast-functions.html">http://dev.mysql.com/doc/refman/5.0/en/cast-functions.html</a><!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 
 
   
@@ -247,6 +237,8 @@ if (!doNotTrack) {
     <ol class="list-unstyled">
 
 
+<li><a href="/posts/tech/karate%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%8D%B0%EB%AA%A8/">Karate 테스트 데모</a></li>
+
 <li><a href="/posts/tech/jboss%EC%9D%98-modeshape%EB%A1%9C-%EC%98%81%EB%8B%A8%EC%96%B4%EB%A5%BC-%EB%B3%B5%EC%88%98%ED%98%95%EB%8B%A8%EC%88%98%ED%98%95%EC%9C%BC%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/">Jboss의 Modeshape로 영단어를 복수형 혹은 단수형으로 변환하기</a></li>
 
 <li><a href="/posts/tech/vs-code-spring-java-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A6%AC%ED%94%84%EB%A0%88%EC%8B%9C-%ED%95%98%EA%B8%B0/">VS Code에서 Spring Java + Gradle 프로젝트 리프레시 하기</a></li>
@@ -254,8 +246,6 @@ if (!doNotTrack) {
 <li><a href="/posts/tech/%ED%95%A8%EA%BB%98-%EC%9E%90%EB%9D%BC%EA%B8%B0_%EA%B9%80%EC%B0%BD%EC%A4%80_%EB%A9%94%EB%AA%A8/">함께 자라기(김창준) 메모</a></li>
 
 <li><a href="/posts/tech/pm2-production-process-manager-for-node.js/">PM2 - Production Process Manager for Node</a></li>
-
-<li><a href="/posts/tech/chromebook%EC%97%90-ssh%EC%A0%91%EC%86%8D%ED%95%98%EA%B8%B0/">Chromebook crostini에 SSH접속하기</a></li>
 
     </ol>
   </section>

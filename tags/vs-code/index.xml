@@ -1,16 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Vs Code on Do What You Want To Do</title>
+    <title>VS code on Do What You Want To Do</title>
     <link>/tags/vs-code/</link>
-    <description>Recent content in Vs Code on Do What You Want To Do</description>
+    <description>Recent content in VS code on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Tue, 06 Oct 2020 23:09:54 +0900</lastBuildDate>
-    
-	<atom:link href="/tags/vs-code/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 06 Oct 2020 23:09:54 +0900</lastBuildDate><atom:link href="/tags/vs-code/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>VS Code에서 Spring Java &#43; Gradle 프로젝트 리프레시 하기</title>
       <link>/posts/tech/vs-code-spring-java-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A6%AC%ED%94%84%EB%A0%88%EC%8B%9C-%ED%95%98%EA%B8%B0/</link>

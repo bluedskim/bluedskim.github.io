@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>브라질 on Do What You Want To Do</title>
@@ -6,11 +6,7 @@
     <description>Recent content in 브라질 on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Fri, 21 Dec 2007 20:08:00 +0900</lastBuildDate>
-    
-	<atom:link href="/tags/%EB%B8%8C%EB%9D%BC%EC%A7%88/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 21 Dec 2007 20:08:00 +0900</lastBuildDate><atom:link href="/tags/%EB%B8%8C%EB%9D%BC%EC%A7%88/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Saludos Amigos 중 Aquarela do Brasil : 도날드 덕의 브라질 삼바 영접기</title>
       <link>/posts/%EC%9D%8C%EC%95%85/saludos-amigos-%EC%A4%91-aquarela-do-brasil-%EB%8F%84%EB%82%A0%EB%93%9C-%EB%8D%95%EC%9D%98-%EB%B8%8C%EB%9D%BC%EC%A7%88-%EC%82%BC%EB%B0%94-%EC%98%81%EC%A0%91%EA%B8%B0/</link>

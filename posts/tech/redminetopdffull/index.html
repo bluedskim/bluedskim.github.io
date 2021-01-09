@@ -9,13 +9,13 @@
 <meta property="og:description" content="레드마인에서 공식적으로 이 기능을 지원하지는 않고 있다. 이것을 위한 3rd party 플러그인은 있는데 동작하지 않았다. https://github.com/brunoqs/pdf_export_redmine Proxy Error가 발생하였는데 아마도 Apach" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/posts/tech/redminetopdffull/" />
-<meta property="article:published_time" content="2019-07-29T16:49:45&#43;09:00"/>
-<meta property="article:modified_time" content="2019-07-29T16:49:45&#43;09:00"/>
+<meta property="article:published_time" content="2019-07-29T16:49:45+09:00" />
+<meta property="article:modified_time" content="2019-07-29T16:49:45+09:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="우분투 command line에서 모든 레드마인 이슈를 하나의 pdf 로 내려받기"/>
 <meta name="twitter:description" content="레드마인에서 공식적으로 이 기능을 지원하지는 않고 있다. 이것을 위한 3rd party 플러그인은 있는데 동작하지 않았다. https://github.com/brunoqs/pdf_export_redmine Proxy Error가 발생하였는데 아마도 Apach"/>
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.76.5" />
 
 
     
@@ -24,10 +24,10 @@
   "@context": "http://schema.org",
   "@type": "BlogPosting",
   "headline": "우분투 command line에서 모든 레드마인 이슈를 하나의 pdf 로 내려받기",
-  "url": "/posts/tech/redminetopdffull/",
+  "url": "\/posts\/tech\/redminetopdffull\/",
   "wordCount": "708",
-  "datePublished": "2019-07-29T16:49:45&#43;09:00",
-  "dateModified": "2019-07-29T16:49:45&#43;09:00",
+  "datePublished": "2019-07-29T16:49:45\u002b09:00",
+  "dateModified": "2019-07-29T16:49:45\u002b09:00",
   "author": {
     "@type": "Person",
     "name": "Dennis"
@@ -98,7 +98,7 @@ if (!doNotTrack) {
     <header class="blog-header">
       <div class="container">
         <h1 class="blog-title" dir="auto"><a href="/" rel="home">Do What You Want To Do</a></h1>
-        <p class="lead blog-description" dir="auto">bluedskim@gmail.com</p>
+        <p class="lead blog-description" dir="auto"><a href="mailto:bluedskim@gmail.com">bluedskim@gmail.com</a></p>
       </div>
     </header>
     
@@ -123,33 +123,20 @@ if (!doNotTrack) {
 
 </p>
   </header>
-  
-
-<p>레드마인에서 공식적으로 이 기능을 지원하지는 않고 있다.
+  <p>레드마인에서 공식적으로 이 기능을 지원하지는 않고 있다.
 이것을 위한 3rd party 플러그인은 있는데 동작하지 않았다.</p>
-
 <p><a href="https://github.com/brunoqs/pdf_export_redmine">https://github.com/brunoqs/pdf_export_redmine</a></p>
-
 <p>Proxy Error가 발생하였는데 아마도 Apache에서 timeout이 발생한것 같았다. 레드마인 커뮤니티에서 해결방법을 찾아봤는데 원인도 정확히 밝혀지지 않은 듯 -.-</p>
-
 <p>그래서 이슈별로 하나씩 pdf 로 받은 다음 병합하는 방법으로 해결하였다.</p>
-
 <h3 id="redmine-api-key-생성">Redmine Api Key 생성</h3>
-
 <p>http://레드마인서버/redmine/my/api_key 에서 생성</p>
-
 <h3 id="이슈-목록을-csv로-다운-받기">이슈 목록을 csv로 다운 받기</h3>
-
 <pre><code>curl --remote-name &quot;http://api키:1234@레드마인서버주소/redmine/projects/프로젝트id/issues.csv&quot;
 </code></pre>
-
 <h3 id="csv에서-이슈번호-추출">csv에서 이슈번호 추출</h3>
-
 <p>JDK1.8에서 쓸 수 있는 Javascript 인터프리터 <a href="https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jjs.html">jjs</a>가 있어서 사용해봤다.
 (이런 간단한 작업을 하는데 class 컴파일까지 하는건 과한 듯)</p>
-
 <p>Java 랑 JavaScript를 섞어쓰니 느낌이 묘하다.</p>
-
 <pre><code>var curlCmds = [];
 
 var FileReader=Java.type(&quot;java.io.FileReader&quot;);
@@ -176,20 +163,13 @@ fw.write(curlCmds.join(&quot;\n&quot;));
 fw.write(&quot;\n&quot;);
 fw.close();  // forgetting to close it results in a truncated file
 </code></pre>
-
 <h3 id="각각의-이슈를-pdf로-다운-받기">각각의 이슈를 pdf로 다운 받기</h3>
-
 <p>위의 작업을 수행하면 downloadPdf.sh 가 생성된다. 이 shell파일을 수행하면 pdf 를 다운로드 한다.</p>
-
 <h3 id="각각의-pdf를-하나의-pdf-로-합치기">각각의 pdf를 하나의 pdf 로 합치기</h3>
-
 <p>pdfunite가 좋다고 하여 사용해봤는데 메모리 문제(&ldquo;Bogus memory allocation size&rdquo;) 발생하여 동작하지 않았다.</p>
-
 <p>qpdf 라는 유틸리티를 써보니 잘 동작했다.</p>
-
-<pre><code>qpdf --empty --pages $(ls -vr *.pdf) -- issues.pdf  #이름기준 역순descending으로 정렬됨(최신 이슈가 위로)
+<pre><code>qpdf --empty --pages $(ls -vr *.pdf) -- issues.pdf	#이름기준 역순descending으로 정렬됨(최신 이슈가 위로)
 </code></pre>
-
 <p>이 방법의 단점은 페이지 번호가 제대로 출력되지 않는 다는 점이다.</p>
 
 
@@ -246,6 +226,8 @@ fw.close();  // forgetting to close it results in a truncated file
     <ol class="list-unstyled">
 
 
+<li><a href="/posts/tech/karate%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%8D%B0%EB%AA%A8/">Karate 테스트 데모</a></li>
+
 <li><a href="/posts/tech/jboss%EC%9D%98-modeshape%EB%A1%9C-%EC%98%81%EB%8B%A8%EC%96%B4%EB%A5%BC-%EB%B3%B5%EC%88%98%ED%98%95%EB%8B%A8%EC%88%98%ED%98%95%EC%9C%BC%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/">Jboss의 Modeshape로 영단어를 복수형 혹은 단수형으로 변환하기</a></li>
 
 <li><a href="/posts/tech/vs-code-spring-java-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A6%AC%ED%94%84%EB%A0%88%EC%8B%9C-%ED%95%98%EA%B8%B0/">VS Code에서 Spring Java + Gradle 프로젝트 리프레시 하기</a></li>
@@ -253,8 +235,6 @@ fw.close();  // forgetting to close it results in a truncated file
 <li><a href="/posts/tech/%ED%95%A8%EA%BB%98-%EC%9E%90%EB%9D%BC%EA%B8%B0_%EA%B9%80%EC%B0%BD%EC%A4%80_%EB%A9%94%EB%AA%A8/">함께 자라기(김창준) 메모</a></li>
 
 <li><a href="/posts/tech/pm2-production-process-manager-for-node.js/">PM2 - Production Process Manager for Node</a></li>
-
-<li><a href="/posts/tech/chromebook%EC%97%90-ssh%EC%A0%91%EC%86%8D%ED%95%98%EA%B8%B0/">Chromebook crostini에 SSH접속하기</a></li>
 
     </ol>
   </section>

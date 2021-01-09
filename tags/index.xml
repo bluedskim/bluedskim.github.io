@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Do What You Want To Do</title>
@@ -6,233 +6,13 @@
     <description>Recent content in Tags on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Fri, 01 May 2020 12:03:18 +0900</lastBuildDate>
-    
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 09 Jan 2021 22:59:55 +0900</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Android</title>
-      <link>/tags/android/</link>
-      <pubDate>Fri, 01 May 2020 12:03:18 +0900</pubDate>
+      <title>프로그래밍</title>
+      <link>/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/</link>
+      <pubDate>Sat, 09 Jan 2021 22:59:55 +0900</pubDate>
       
-      <guid>/tags/android/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>B142</title>
-      <link>/tags/b142/</link>
-      <pubDate>Sun, 14 Jan 2007 11:21:00 +0900</pubDate>
-      
-      <guid>/tags/b142/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Bossa</title>
-      <link>/tags/bossa/</link>
-      <pubDate>Mon, 07 Jan 2008 22:25:00 +0900</pubDate>
-      
-      <guid>/tags/bossa/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Bossanova</title>
-      <link>/tags/bossanova/</link>
-      <pubDate>Mon, 07 Jan 2008 22:25:00 +0900</pubDate>
-      
-      <guid>/tags/bossanova/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Brazil</title>
-      <link>/tags/brazil/</link>
-      <pubDate>Wed, 21 Nov 2007 14:02:00 +0900</pubDate>
-      
-      <guid>/tags/brazil/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Bullet</title>
-      <link>/tags/bullet/</link>
-      <pubDate>Mon, 22 Oct 2007 22:51:00 +0900</pubDate>
-      
-      <guid>/tags/bullet/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>C100pa</title>
-      <link>/tags/c100pa/</link>
-      <pubDate>Sun, 22 Oct 2017 22:38:28 +0900</pubDate>
-      
-      <guid>/tags/c100pa/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Cashback</title>
-      <link>/tags/cashback/</link>
-      <pubDate>Sun, 30 Sep 2007 14:04:00 +0900</pubDate>
-      
-      <guid>/tags/cashback/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ccl</title>
-      <link>/tags/ccl/</link>
-      <pubDate>Wed, 26 Dec 2007 14:31:00 +0900</pubDate>
-      
-      <guid>/tags/ccl/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Certbot</title>
-      <link>/tags/certbot/</link>
-      <pubDate>Sun, 10 May 2020 21:23:09 +0900</pubDate>
-      
-      <guid>/tags/certbot/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Chrombook</title>
-      <link>/tags/chrombook/</link>
-      <pubDate>Sun, 22 Oct 2017 22:38:28 +0900</pubDate>
-      
-      <guid>/tags/chrombook/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Chromebook</title>
-      <link>/tags/chromebook/</link>
-      <pubDate>Sat, 16 May 2020 17:49:41 +0900</pubDate>
-      
-      <guid>/tags/chromebook/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Crostini</title>
-      <link>/tags/crostini/</link>
-      <pubDate>Sat, 16 Mar 2019 22:38:28 +0900</pubDate>
-      
-      <guid>/tags/crostini/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Dannyboy</title>
-      <link>/tags/dannyboy/</link>
-      <pubDate>Mon, 10 Dec 2007 09:01:00 +0900</pubDate>
-      
-      <guid>/tags/dannyboy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Docker</title>
-      <link>/tags/docker/</link>
-      <pubDate>Sun, 28 Apr 2019 13:38:28 +0900</pubDate>
-      
-      <guid>/tags/docker/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ds03</title>
-      <link>/tags/ds03/</link>
-      <pubDate>Sun, 22 Oct 2017 22:38:28 +0900</pubDate>
-      
-      <guid>/tags/ds03/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Excel</title>
-      <link>/tags/excel/</link>
-      <pubDate>Wed, 12 Dec 2007 11:59:00 +0900</pubDate>
-      
-      <guid>/tags/excel/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ffmpeg</title>
-      <link>/tags/ffmpeg/</link>
-      <pubDate>Tue, 20 Aug 2019 17:06:05 +0900</pubDate>
-      
-      <guid>/tags/ffmpeg/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Flip</title>
-      <link>/tags/flip/</link>
-      <pubDate>Sun, 22 Oct 2017 22:38:28 +0900</pubDate>
-      
-      <guid>/tags/flip/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Flutter</title>
-      <link>/tags/flutter/</link>
-      <pubDate>Wed, 31 Jul 2019 15:14:43 +0900</pubDate>
-      
-      <guid>/tags/flutter/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Gear360</title>
-      <link>/tags/gear360/</link>
-      <pubDate>Tue, 19 Mar 2019 23:38:28 +0900</pubDate>
-      
-      <guid>/tags/gear360/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Google</title>
-      <link>/tags/google/</link>
-      <pubDate>Wed, 14 Aug 2019 09:26:56 +0900</pubDate>
-      
-      <guid>/tags/google/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Guitar</title>
-      <link>/tags/guitar/</link>
-      <pubDate>Tue, 10 Feb 2015 01:03:00 +0900</pubDate>
-      
-      <guid>/tags/guitar/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>/tags/hugo/</link>
-      <pubDate>Fri, 15 Mar 2019 22:38:28 +0900</pubDate>
-      
-      <guid>/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Injection</title>
-      <link>/tags/injection/</link>
-      <pubDate>Tue, 29 Aug 2006 18:56:00 +0900</pubDate>
-      
-      <guid>/tags/injection/</guid>
+      <guid>/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/</guid>
       <description></description>
     </item>
     
@@ -246,371 +26,11 @@
     </item>
     
     <item>
-      <title>Jpa</title>
-      <link>/tags/jpa/</link>
-      <pubDate>Mon, 27 Apr 2020 21:26:43 +0900</pubDate>
-      
-      <guid>/tags/jpa/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Larafabian</title>
-      <link>/tags/larafabian/</link>
-      <pubDate>Sat, 15 Dec 2007 15:04:00 +0900</pubDate>
-      
-      <guid>/tags/larafabian/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Life Hack</title>
-      <link>/tags/life-hack/</link>
-      <pubDate>Thu, 15 Aug 2019 13:32:43 +0900</pubDate>
-      
-      <guid>/tags/life-hack/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linux</title>
-      <link>/tags/linux/</link>
-      <pubDate>Sat, 16 May 2020 17:49:41 +0900</pubDate>
-      
-      <guid>/tags/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Material Ui</title>
-      <link>/tags/material-ui/</link>
-      <pubDate>Tue, 05 May 2020 21:58:18 +0900</pubDate>
-      
-      <guid>/tags/material-ui/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mirroring</title>
-      <link>/tags/mirroring/</link>
-      <pubDate>Tue, 29 Oct 2019 21:42:39 +0900</pubDate>
-      
-      <guid>/tags/mirroring/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mysql</title>
-      <link>/tags/mysql/</link>
-      <pubDate>Thu, 13 Nov 2008 00:38:00 +0900</pubDate>
-      
-      <guid>/tags/mysql/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Node</title>
-      <link>/tags/node/</link>
-      <pubDate>Wed, 30 Sep 2020 12:37:16 +0900</pubDate>
-      
-      <guid>/tags/node/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Overloading</title>
-      <link>/tags/overloading/</link>
-      <pubDate>Sun, 24 Jun 2018 10:54:24 +0200</pubDate>
-      
-      <guid>/tags/overloading/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Overring</title>
-      <link>/tags/overring/</link>
-      <pubDate>Sun, 24 Jun 2018 10:54:24 +0200</pubDate>
-      
-      <guid>/tags/overring/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pixelbook</title>
-      <link>/tags/pixelbook/</link>
-      <pubDate>Wed, 04 Sep 2019 13:25:00 +0900</pubDate>
-      
-      <guid>/tags/pixelbook/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Quake</title>
-      <link>/tags/quake/</link>
-      <pubDate>Tue, 13 Aug 2019 18:28:39 +0900</pubDate>
-      
-      <guid>/tags/quake/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Qwerty Phone</title>
-      <link>/tags/qwerty-phone/</link>
-      <pubDate>Fri, 01 May 2020 12:03:18 +0900</pubDate>
-      
-      <guid>/tags/qwerty-phone/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Reactjs</title>
-      <link>/tags/reactjs/</link>
-      <pubDate>Wed, 30 Sep 2020 12:37:16 +0900</pubDate>
-      
-      <guid>/tags/reactjs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Reaper</title>
-      <link>/tags/reaper/</link>
-      <pubDate>Wed, 10 Jul 2019 17:24:26 +0900</pubDate>
-      
-      <guid>/tags/reaper/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Redmine</title>
-      <link>/tags/redmine/</link>
-      <pubDate>Mon, 29 Jul 2019 16:49:45 +0900</pubDate>
-      
-      <guid>/tags/redmine/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Samba</title>
-      <link>/tags/samba/</link>
-      <pubDate>Sun, 19 Apr 2020 22:34:15 +0900</pubDate>
-      
-      <guid>/tags/samba/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Sony Xperia Pro</title>
-      <link>/tags/sony-xperia-pro/</link>
-      <pubDate>Fri, 01 May 2020 12:03:18 +0900</pubDate>
-      
-      <guid>/tags/sony-xperia-pro/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Sparkylinux</title>
-      <link>/tags/sparkylinux/</link>
-      <pubDate>Sat, 02 Nov 2019 02:14:20 +0900</pubDate>
-      
-      <guid>/tags/sparkylinux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Spring Boot</title>
-      <link>/tags/spring-boot/</link>
-      <pubDate>Sun, 10 May 2020 21:23:09 +0900</pubDate>
-      
-      <guid>/tags/spring-boot/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Sql</title>
-      <link>/tags/sql/</link>
-      <pubDate>Tue, 29 Aug 2006 18:56:00 +0900</pubDate>
-      
-      <guid>/tags/sql/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tablet</title>
-      <link>/tags/tablet/</link>
-      <pubDate>Thu, 15 Aug 2019 00:00:34 +0900</pubDate>
-      
-      <guid>/tags/tablet/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Termdown</title>
-      <link>/tags/termdown/</link>
-      <pubDate>Sun, 24 Mar 2019 10:38:28 +0900</pubDate>
-      
-      <guid>/tags/termdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Theme</title>
-      <link>/tags/theme/</link>
-      <pubDate>Sat, 23 Jun 2018 10:54:24 +0200</pubDate>
-      
-      <guid>/tags/theme/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ubuntu</title>
-      <link>/tags/ubuntu/</link>
-      <pubDate>Tue, 29 Oct 2019 22:53:26 +0900</pubDate>
-      
-      <guid>/tags/ubuntu/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Visual Studio Code</title>
-      <link>/tags/visual-studio-code/</link>
-      <pubDate>Wed, 31 Jul 2019 15:14:43 +0900</pubDate>
-      
-      <guid>/tags/visual-studio-code/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Vlookup</title>
-      <link>/tags/vlookup/</link>
-      <pubDate>Wed, 12 Dec 2007 11:59:00 +0900</pubDate>
-      
-      <guid>/tags/vlookup/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Vs Code</title>
+      <title>VS code</title>
       <link>/tags/vs-code/</link>
       <pubDate>Tue, 06 Oct 2020 23:09:54 +0900</pubDate>
       
       <guid>/tags/vs-code/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>War</title>
-      <link>/tags/war/</link>
-      <pubDate>Mon, 22 Oct 2007 22:51:00 +0900</pubDate>
-      
-      <guid>/tags/war/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Webgl</title>
-      <link>/tags/webgl/</link>
-      <pubDate>Tue, 13 Aug 2019 18:28:39 +0900</pubDate>
-      
-      <guid>/tags/webgl/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Wget</title>
-      <link>/tags/wget/</link>
-      <pubDate>Tue, 29 Oct 2019 21:42:39 +0900</pubDate>
-      
-      <guid>/tags/wget/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>개발</title>
-      <link>/tags/%EA%B0%9C%EB%B0%9C/</link>
-      <pubDate>Sun, 19 Apr 2020 21:44:58 +0900</pubDate>
-      
-      <guid>/tags/%EA%B0%9C%EB%B0%9C/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>개발자</title>
-      <link>/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90/</link>
-      <pubDate>Wed, 12 Nov 2008 04:07:00 +0900</pubDate>
-      
-      <guid>/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>격언</title>
-      <link>/tags/%EA%B2%A9%EC%96%B8/</link>
-      <pubDate>Fri, 18 Jan 2008 15:23:00 +0900</pubDate>
-      
-      <guid>/tags/%EA%B2%A9%EC%96%B8/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>고양이</title>
-      <link>/tags/%EA%B3%A0%EC%96%91%EC%9D%B4/</link>
-      <pubDate>Thu, 15 Aug 2019 13:32:43 +0900</pubDate>
-      
-      <guid>/tags/%EA%B3%A0%EC%96%91%EC%9D%B4/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>구현</title>
-      <link>/tags/%EA%B5%AC%ED%98%84/</link>
-      <pubDate>Tue, 12 Dec 2017 22:38:28 +0900</pubDate>
-      
-      <guid>/tags/%EA%B5%AC%ED%98%84/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>더블린</title>
-      <link>/tags/%EB%8D%94%EB%B8%94%EB%A6%B0/</link>
-      <pubDate>Sun, 02 Dec 2007 17:47:00 +0900</pubDate>
-      
-      <guid>/tags/%EB%8D%94%EB%B8%94%EB%A6%B0/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>돌고래</title>
-      <link>/tags/%EB%8F%8C%EA%B3%A0%EB%9E%98/</link>
-      <pubDate>Fri, 25 Nov 2005 12:52:00 +0900</pubDate>
-      
-      <guid>/tags/%EB%8F%8C%EA%B3%A0%EB%9E%98/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>리눅스</title>
-      <link>/tags/%EB%A6%AC%EB%88%85%EC%8A%A4/</link>
-      <pubDate>Sat, 18 Apr 2020 14:22:37 +0900</pubDate>
-      
-      <guid>/tags/%EB%A6%AC%EB%88%85%EC%8A%A4/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>마츠코</title>
-      <link>/tags/%EB%A7%88%EC%B8%A0%EC%BD%94/</link>
-      <pubDate>Fri, 23 Nov 2007 14:47:00 +0900</pubDate>
-      
-      <guid>/tags/%EB%A7%88%EC%B8%A0%EC%BD%94/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>모리</title>
-      <link>/tags/%EB%AA%A8%EB%A6%AC/</link>
-      <pubDate>Fri, 23 Nov 2007 14:47:00 +0900</pubDate>
-      
-      <guid>/tags/%EB%AA%A8%EB%A6%AC/</guid>
       <description></description>
     </item>
     
@@ -624,65 +44,128 @@
     </item>
     
     <item>
-      <title>범죄영화</title>
-      <link>/tags/%EB%B2%94%EC%A3%84%EC%98%81%ED%99%94/</link>
-      <pubDate>Tue, 31 Jul 2007 23:59:00 +0900</pubDate>
+      <title>애자일</title>
+      <link>/tags/%EC%95%A0%EC%9E%90%EC%9D%BC/</link>
+      <pubDate>Sun, 04 Oct 2020 21:13:35 +0900</pubDate>
       
-      <guid>/tags/%EB%B2%94%EC%A3%84%EC%98%81%ED%99%94/</guid>
+      <guid>/tags/%EC%95%A0%EC%9E%90%EC%9D%BC/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>보헤미아</title>
-      <link>/tags/%EB%B3%B4%ED%97%A4%EB%AF%B8%EC%95%84/</link>
-      <pubDate>Tue, 20 Aug 2019 17:25:01 +0900</pubDate>
+      <title>Node</title>
+      <link>/tags/node/</link>
+      <pubDate>Wed, 30 Sep 2020 12:37:16 +0900</pubDate>
       
-      <guid>/tags/%EB%B3%B4%ED%97%A4%EB%AF%B8%EC%95%84/</guid>
+      <guid>/tags/node/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>브라질</title>
-      <link>/tags/%EB%B8%8C%EB%9D%BC%EC%A7%88/</link>
-      <pubDate>Fri, 21 Dec 2007 20:08:00 +0900</pubDate>
+      <title>ReactJS</title>
+      <link>/tags/reactjs/</link>
+      <pubDate>Wed, 30 Sep 2020 12:37:16 +0900</pubDate>
       
-      <guid>/tags/%EB%B8%8C%EB%9D%BC%EC%A7%88/</guid>
+      <guid>/tags/reactjs/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>브이포벤데타</title>
-      <link>/tags/%EB%B8%8C%EC%9D%B4%ED%8F%AC%EB%B2%A4%EB%8D%B0%ED%83%80/</link>
-      <pubDate>Sun, 02 Dec 2007 09:06:00 +0900</pubDate>
+      <title>chromebook</title>
+      <link>/tags/chromebook/</link>
+      <pubDate>Sat, 16 May 2020 17:49:41 +0900</pubDate>
       
-      <guid>/tags/%EB%B8%8C%EC%9D%B4%ED%8F%AC%EB%B2%A4%EB%8D%B0%ED%83%80/</guid>
+      <guid>/tags/chromebook/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>블로그축제</title>
-      <link>/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%B6%95%EC%A0%9C/</link>
-      <pubDate>Sat, 01 Mar 2008 10:13:00 +0900</pubDate>
+      <title>linux</title>
+      <link>/tags/linux/</link>
+      <pubDate>Sat, 16 May 2020 17:49:41 +0900</pubDate>
       
-      <guid>/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%B6%95%EC%A0%9C/</guid>
+      <guid>/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>사랑</title>
-      <link>/tags/%EC%82%AC%EB%9E%91/</link>
-      <pubDate>Fri, 25 Nov 2005 12:52:00 +0900</pubDate>
+      <title>certbot</title>
+      <link>/tags/certbot/</link>
+      <pubDate>Sun, 10 May 2020 21:23:09 +0900</pubDate>
       
-      <guid>/tags/%EC%82%AC%EB%9E%91/</guid>
+      <guid>/tags/certbot/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>삼바</title>
-      <link>/tags/%EC%82%BC%EB%B0%94/</link>
-      <pubDate>Fri, 21 Dec 2007 20:08:00 +0900</pubDate>
+      <title>Spring Boot</title>
+      <link>/tags/spring-boot/</link>
+      <pubDate>Sun, 10 May 2020 21:23:09 +0900</pubDate>
       
-      <guid>/tags/%EC%82%BC%EB%B0%94/</guid>
+      <guid>/tags/spring-boot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Material-UI</title>
+      <link>/tags/material-ui/</link>
+      <pubDate>Tue, 05 May 2020 21:58:18 +0900</pubDate>
+      
+      <guid>/tags/material-ui/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>android</title>
+      <link>/tags/android/</link>
+      <pubDate>Fri, 01 May 2020 12:03:18 +0900</pubDate>
+      
+      <guid>/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>qwerty phone</title>
+      <link>/tags/qwerty-phone/</link>
+      <pubDate>Fri, 01 May 2020 12:03:18 +0900</pubDate>
+      
+      <guid>/tags/qwerty-phone/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sony Xperia Pro</title>
+      <link>/tags/sony-xperia-pro/</link>
+      <pubDate>Fri, 01 May 2020 12:03:18 +0900</pubDate>
+      
+      <guid>/tags/sony-xperia-pro/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JPA</title>
+      <link>/tags/jpa/</link>
+      <pubDate>Mon, 27 Apr 2020 21:26:43 +0900</pubDate>
+      
+      <guid>/tags/jpa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>samba</title>
+      <link>/tags/samba/</link>
+      <pubDate>Sun, 19 Apr 2020 22:34:15 +0900</pubDate>
+      
+      <guid>/tags/samba/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>개발</title>
+      <link>/tags/%EA%B0%9C%EB%B0%9C/</link>
+      <pubDate>Sun, 19 Apr 2020 21:44:58 +0900</pubDate>
+      
+      <guid>/tags/%EA%B0%9C%EB%B0%9C/</guid>
       <description></description>
     </item>
     
@@ -696,47 +179,173 @@
     </item>
     
     <item>
-      <title>소프트웨어 프로젝트</title>
-      <link>/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/</link>
-      <pubDate>Tue, 12 Dec 2017 22:38:28 +0900</pubDate>
+      <title>리눅스</title>
+      <link>/tags/%EB%A6%AC%EB%88%85%EC%8A%A4/</link>
+      <pubDate>Sat, 18 Apr 2020 14:22:37 +0900</pubDate>
       
-      <guid>/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/</guid>
+      <guid>/tags/%EB%A6%AC%EB%88%85%EC%8A%A4/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>심리학</title>
-      <link>/tags/%EC%8B%AC%EB%A6%AC%ED%95%99/</link>
-      <pubDate>Wed, 24 Oct 2007 23:49:00 +0900</pubDate>
+      <title>픽셀북</title>
+      <link>/tags/%ED%94%BD%EC%85%80%EB%B6%81/</link>
+      <pubDate>Sat, 18 Apr 2020 14:22:37 +0900</pubDate>
       
-      <guid>/tags/%EC%8B%AC%EB%A6%AC%ED%95%99/</guid>
+      <guid>/tags/%ED%94%BD%EC%85%80%EB%B6%81/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>아일랜드</title>
-      <link>/tags/%EC%95%84%EC%9D%BC%EB%9E%9C%EB%93%9C/</link>
-      <pubDate>Sun, 02 Dec 2007 17:47:00 +0900</pubDate>
+      <title>sparkylinux</title>
+      <link>/tags/sparkylinux/</link>
+      <pubDate>Sat, 02 Nov 2019 02:14:20 +0900</pubDate>
       
-      <guid>/tags/%EC%95%84%EC%9D%BC%EB%9E%9C%EB%93%9C/</guid>
+      <guid>/tags/sparkylinux/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>애자일</title>
-      <link>/tags/%EC%95%A0%EC%9E%90%EC%9D%BC/</link>
-      <pubDate>Sun, 04 Oct 2020 21:13:35 +0900</pubDate>
+      <title>ubuntu</title>
+      <link>/tags/ubuntu/</link>
+      <pubDate>Tue, 29 Oct 2019 22:53:26 +0900</pubDate>
       
-      <guid>/tags/%EC%95%A0%EC%9E%90%EC%9D%BC/</guid>
+      <guid>/tags/ubuntu/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>영웅</title>
-      <link>/tags/%EC%98%81%EC%9B%85/</link>
-      <pubDate>Sun, 16 Dec 2007 20:51:00 +0900</pubDate>
+      <title>Mirroring</title>
+      <link>/tags/mirroring/</link>
+      <pubDate>Tue, 29 Oct 2019 21:42:39 +0900</pubDate>
       
-      <guid>/tags/%EC%98%81%EC%9B%85/</guid>
+      <guid>/tags/mirroring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wget</title>
+      <link>/tags/wget/</link>
+      <pubDate>Tue, 29 Oct 2019 21:42:39 +0900</pubDate>
+      
+      <guid>/tags/wget/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pixelbook</title>
+      <link>/tags/pixelbook/</link>
+      <pubDate>Wed, 04 Sep 2019 13:25:00 +0900</pubDate>
+      
+      <guid>/tags/pixelbook/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>보헤미아</title>
+      <link>/tags/%EB%B3%B4%ED%97%A4%EB%AF%B8%EC%95%84/</link>
+      <pubDate>Tue, 20 Aug 2019 17:25:01 +0900</pubDate>
+      
+      <guid>/tags/%EB%B3%B4%ED%97%A4%EB%AF%B8%EC%95%84/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ffmpeg</title>
+      <link>/tags/ffmpeg/</link>
+      <pubDate>Tue, 20 Aug 2019 17:06:05 +0900</pubDate>
+      
+      <guid>/tags/ffmpeg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>life hack</title>
+      <link>/tags/life-hack/</link>
+      <pubDate>Thu, 15 Aug 2019 13:32:43 +0900</pubDate>
+      
+      <guid>/tags/life-hack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>고양이</title>
+      <link>/tags/%EA%B3%A0%EC%96%91%EC%9D%B4/</link>
+      <pubDate>Thu, 15 Aug 2019 13:32:43 +0900</pubDate>
+      
+      <guid>/tags/%EA%B3%A0%EC%96%91%EC%9D%B4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tablet</title>
+      <link>/tags/tablet/</link>
+      <pubDate>Thu, 15 Aug 2019 00:00:34 +0900</pubDate>
+      
+      <guid>/tags/tablet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google</title>
+      <link>/tags/google/</link>
+      <pubDate>Wed, 14 Aug 2019 09:26:56 +0900</pubDate>
+      
+      <guid>/tags/google/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>quake</title>
+      <link>/tags/quake/</link>
+      <pubDate>Tue, 13 Aug 2019 18:28:39 +0900</pubDate>
+      
+      <guid>/tags/quake/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WebGL</title>
+      <link>/tags/webgl/</link>
+      <pubDate>Tue, 13 Aug 2019 18:28:39 +0900</pubDate>
+      
+      <guid>/tags/webgl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Flutter</title>
+      <link>/tags/flutter/</link>
+      <pubDate>Wed, 31 Jul 2019 15:14:43 +0900</pubDate>
+      
+      <guid>/tags/flutter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Visual Studio Code</title>
+      <link>/tags/visual-studio-code/</link>
+      <pubDate>Wed, 31 Jul 2019 15:14:43 +0900</pubDate>
+      
+      <guid>/tags/visual-studio-code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>redmine</title>
+      <link>/tags/redmine/</link>
+      <pubDate>Mon, 29 Jul 2019 16:49:45 +0900</pubDate>
+      
+      <guid>/tags/redmine/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reaper</title>
+      <link>/tags/reaper/</link>
+      <pubDate>Wed, 10 Jul 2019 17:24:26 +0900</pubDate>
+      
+      <guid>/tags/reaper/</guid>
       <description></description>
     </item>
     
@@ -768,11 +377,236 @@
     </item>
     
     <item>
+      <title>Docker</title>
+      <link>/tags/docker/</link>
+      <pubDate>Sun, 28 Apr 2019 13:38:28 +0900</pubDate>
+      
+      <guid>/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>termdown</title>
+      <link>/tags/termdown/</link>
+      <pubDate>Sun, 24 Mar 2019 10:38:28 +0900</pubDate>
+      
+      <guid>/tags/termdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gear360</title>
+      <link>/tags/gear360/</link>
+      <pubDate>Tue, 19 Mar 2019 23:38:28 +0900</pubDate>
+      
+      <guid>/tags/gear360/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>crostini</title>
+      <link>/tags/crostini/</link>
+      <pubDate>Sat, 16 Mar 2019 22:38:28 +0900</pubDate>
+      
+      <guid>/tags/crostini/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>/tags/hugo/</link>
+      <pubDate>Fri, 15 Mar 2019 22:38:28 +0900</pubDate>
+      
+      <guid>/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>overloading</title>
+      <link>/tags/overloading/</link>
+      <pubDate>Sun, 24 Jun 2018 10:54:24 +0200</pubDate>
+      
+      <guid>/tags/overloading/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>overring</title>
+      <link>/tags/overring/</link>
+      <pubDate>Sun, 24 Jun 2018 10:54:24 +0200</pubDate>
+      
+      <guid>/tags/overring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Theme</title>
+      <link>/tags/theme/</link>
+      <pubDate>Sat, 23 Jun 2018 10:54:24 +0200</pubDate>
+      
+      <guid>/tags/theme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>구현</title>
+      <link>/tags/%EA%B5%AC%ED%98%84/</link>
+      <pubDate>Tue, 12 Dec 2017 22:38:28 +0900</pubDate>
+      
+      <guid>/tags/%EA%B5%AC%ED%98%84/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>소프트웨어 프로젝트</title>
+      <link>/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/</link>
+      <pubDate>Tue, 12 Dec 2017 22:38:28 +0900</pubDate>
+      
+      <guid>/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C100PA</title>
+      <link>/tags/c100pa/</link>
+      <pubDate>Sun, 22 Oct 2017 22:38:28 +0900</pubDate>
+      
+      <guid>/tags/c100pa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Chrombook</title>
+      <link>/tags/chrombook/</link>
+      <pubDate>Sun, 22 Oct 2017 22:38:28 +0900</pubDate>
+      
+      <guid>/tags/chrombook/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DS03</title>
+      <link>/tags/ds03/</link>
+      <pubDate>Sun, 22 Oct 2017 22:38:28 +0900</pubDate>
+      
+      <guid>/tags/ds03/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Flip</title>
+      <link>/tags/flip/</link>
+      <pubDate>Sun, 22 Oct 2017 22:38:28 +0900</pubDate>
+      
+      <guid>/tags/flip/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>guitar</title>
+      <link>/tags/guitar/</link>
+      <pubDate>Tue, 10 Feb 2015 01:03:00 +0900</pubDate>
+      
+      <guid>/tags/guitar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MySQL</title>
+      <link>/tags/mysql/</link>
+      <pubDate>Thu, 13 Nov 2008 00:38:00 +0900</pubDate>
+      
+      <guid>/tags/mysql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>개발자</title>
+      <link>/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90/</link>
+      <pubDate>Wed, 12 Nov 2008 04:07:00 +0900</pubDate>
+      
+      <guid>/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>블로그축제</title>
+      <link>/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%B6%95%EC%A0%9C/</link>
+      <pubDate>Sat, 01 Mar 2008 10:13:00 +0900</pubDate>
+      
+      <guid>/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%B6%95%EC%A0%9C/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>인생</title>
       <link>/tags/%EC%9D%B8%EC%83%9D/</link>
       <pubDate>Sun, 10 Feb 2008 09:46:00 +0900</pubDate>
       
       <guid>/tags/%EC%9D%B8%EC%83%9D/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>격언</title>
+      <link>/tags/%EA%B2%A9%EC%96%B8/</link>
+      <pubDate>Fri, 18 Jan 2008 15:23:00 +0900</pubDate>
+      
+      <guid>/tags/%EA%B2%A9%EC%96%B8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bossa</title>
+      <link>/tags/bossa/</link>
+      <pubDate>Mon, 07 Jan 2008 22:25:00 +0900</pubDate>
+      
+      <guid>/tags/bossa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bossanova</title>
+      <link>/tags/bossanova/</link>
+      <pubDate>Mon, 07 Jan 2008 22:25:00 +0900</pubDate>
+      
+      <guid>/tags/bossanova/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ccl</title>
+      <link>/tags/ccl/</link>
+      <pubDate>Wed, 26 Dec 2007 14:31:00 +0900</pubDate>
+      
+      <guid>/tags/ccl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>브라질</title>
+      <link>/tags/%EB%B8%8C%EB%9D%BC%EC%A7%88/</link>
+      <pubDate>Fri, 21 Dec 2007 20:08:00 +0900</pubDate>
+      
+      <guid>/tags/%EB%B8%8C%EB%9D%BC%EC%A7%88/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>삼바</title>
+      <link>/tags/%EC%82%BC%EB%B0%94/</link>
+      <pubDate>Fri, 21 Dec 2007 20:08:00 +0900</pubDate>
+      
+      <guid>/tags/%EC%82%BC%EB%B0%94/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>영웅</title>
+      <link>/tags/%EC%98%81%EC%9B%85/</link>
+      <pubDate>Sun, 16 Dec 2007 20:51:00 +0900</pubDate>
+      
+      <guid>/tags/%EC%98%81%EC%9B%85/</guid>
       <description></description>
     </item>
     
@@ -786,29 +620,38 @@
     </item>
     
     <item>
-      <title>책</title>
-      <link>/tags/%EC%B1%85/</link>
-      <pubDate>Fri, 25 Nov 2005 12:52:00 +0900</pubDate>
+      <title>LARAFABIAN</title>
+      <link>/tags/larafabian/</link>
+      <pubDate>Sat, 15 Dec 2007 15:04:00 +0900</pubDate>
       
-      <guid>/tags/%EC%B1%85/</guid>
+      <guid>/tags/larafabian/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>칠드런오브맨</title>
-      <link>/tags/%EC%B9%A0%EB%93%9C%EB%9F%B0%EC%98%A4%EB%B8%8C%EB%A7%A8/</link>
-      <pubDate>Wed, 05 Sep 2007 00:08:00 +0900</pubDate>
+      <title>excel</title>
+      <link>/tags/excel/</link>
+      <pubDate>Wed, 12 Dec 2007 11:59:00 +0900</pubDate>
       
-      <guid>/tags/%EC%B9%A0%EB%93%9C%EB%9F%B0%EC%98%A4%EB%B8%8C%EB%A7%A8/</guid>
+      <guid>/tags/excel/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>캐쉬백</title>
-      <link>/tags/%EC%BA%90%EC%89%AC%EB%B0%B1/</link>
-      <pubDate>Sun, 30 Sep 2007 14:04:00 +0900</pubDate>
+      <title>VLOOKUP</title>
+      <link>/tags/vlookup/</link>
+      <pubDate>Wed, 12 Dec 2007 11:59:00 +0900</pubDate>
       
-      <guid>/tags/%EC%BA%90%EC%89%AC%EB%B0%B1/</guid>
+      <guid>/tags/vlookup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dannyboy</title>
+      <link>/tags/dannyboy/</link>
+      <pubDate>Mon, 10 Dec 2007 09:01:00 +0900</pubDate>
+      
+      <guid>/tags/dannyboy/</guid>
       <description></description>
     </item>
     
@@ -822,11 +665,47 @@
     </item>
     
     <item>
-      <title>프레임</title>
-      <link>/tags/%ED%94%84%EB%A0%88%EC%9E%84/</link>
-      <pubDate>Wed, 24 Oct 2007 23:49:00 +0900</pubDate>
+      <title>더블린</title>
+      <link>/tags/%EB%8D%94%EB%B8%94%EB%A6%B0/</link>
+      <pubDate>Sun, 02 Dec 2007 17:47:00 +0900</pubDate>
       
-      <guid>/tags/%ED%94%84%EB%A0%88%EC%9E%84/</guid>
+      <guid>/tags/%EB%8D%94%EB%B8%94%EB%A6%B0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>아일랜드</title>
+      <link>/tags/%EC%95%84%EC%9D%BC%EB%9E%9C%EB%93%9C/</link>
+      <pubDate>Sun, 02 Dec 2007 17:47:00 +0900</pubDate>
+      
+      <guid>/tags/%EC%95%84%EC%9D%BC%EB%9E%9C%EB%93%9C/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>브이포벤데타</title>
+      <link>/tags/%EB%B8%8C%EC%9D%B4%ED%8F%AC%EB%B2%A4%EB%8D%B0%ED%83%80/</link>
+      <pubDate>Sun, 02 Dec 2007 09:06:00 +0900</pubDate>
+      
+      <guid>/tags/%EB%B8%8C%EC%9D%B4%ED%8F%AC%EB%B2%A4%EB%8D%B0%ED%83%80/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>마츠코</title>
+      <link>/tags/%EB%A7%88%EC%B8%A0%EC%BD%94/</link>
+      <pubDate>Fri, 23 Nov 2007 14:47:00 +0900</pubDate>
+      
+      <guid>/tags/%EB%A7%88%EC%B8%A0%EC%BD%94/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>모리</title>
+      <link>/tags/%EB%AA%A8%EB%A6%AC/</link>
+      <pubDate>Fri, 23 Nov 2007 14:47:00 +0900</pubDate>
+      
+      <guid>/tags/%EB%AA%A8%EB%A6%AC/</guid>
       <description></description>
     </item>
     
@@ -840,11 +719,137 @@
     </item>
     
     <item>
-      <title>픽셀북</title>
-      <link>/tags/%ED%94%BD%EC%85%80%EB%B6%81/</link>
-      <pubDate>Sat, 18 Apr 2020 14:22:37 +0900</pubDate>
+      <title>Brazil</title>
+      <link>/tags/brazil/</link>
+      <pubDate>Wed, 21 Nov 2007 14:02:00 +0900</pubDate>
       
-      <guid>/tags/%ED%94%BD%EC%85%80%EB%B6%81/</guid>
+      <guid>/tags/brazil/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>심리학</title>
+      <link>/tags/%EC%8B%AC%EB%A6%AC%ED%95%99/</link>
+      <pubDate>Wed, 24 Oct 2007 23:49:00 +0900</pubDate>
+      
+      <guid>/tags/%EC%8B%AC%EB%A6%AC%ED%95%99/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>프레임</title>
+      <link>/tags/%ED%94%84%EB%A0%88%EC%9E%84/</link>
+      <pubDate>Wed, 24 Oct 2007 23:49:00 +0900</pubDate>
+      
+      <guid>/tags/%ED%94%84%EB%A0%88%EC%9E%84/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bullet</title>
+      <link>/tags/bullet/</link>
+      <pubDate>Mon, 22 Oct 2007 22:51:00 +0900</pubDate>
+      
+      <guid>/tags/bullet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>war</title>
+      <link>/tags/war/</link>
+      <pubDate>Mon, 22 Oct 2007 22:51:00 +0900</pubDate>
+      
+      <guid>/tags/war/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cashback</title>
+      <link>/tags/cashback/</link>
+      <pubDate>Sun, 30 Sep 2007 14:04:00 +0900</pubDate>
+      
+      <guid>/tags/cashback/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>캐쉬백</title>
+      <link>/tags/%EC%BA%90%EC%89%AC%EB%B0%B1/</link>
+      <pubDate>Sun, 30 Sep 2007 14:04:00 +0900</pubDate>
+      
+      <guid>/tags/%EC%BA%90%EC%89%AC%EB%B0%B1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>칠드런오브맨</title>
+      <link>/tags/%EC%B9%A0%EB%93%9C%EB%9F%B0%EC%98%A4%EB%B8%8C%EB%A7%A8/</link>
+      <pubDate>Wed, 05 Sep 2007 00:08:00 +0900</pubDate>
+      
+      <guid>/tags/%EC%B9%A0%EB%93%9C%EB%9F%B0%EC%98%A4%EB%B8%8C%EB%A7%A8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>범죄영화</title>
+      <link>/tags/%EB%B2%94%EC%A3%84%EC%98%81%ED%99%94/</link>
+      <pubDate>Tue, 31 Jul 2007 23:59:00 +0900</pubDate>
+      
+      <guid>/tags/%EB%B2%94%EC%A3%84%EC%98%81%ED%99%94/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>b142</title>
+      <link>/tags/b142/</link>
+      <pubDate>Sun, 14 Jan 2007 11:21:00 +0900</pubDate>
+      
+      <guid>/tags/b142/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>injection</title>
+      <link>/tags/injection/</link>
+      <pubDate>Tue, 29 Aug 2006 18:56:00 +0900</pubDate>
+      
+      <guid>/tags/injection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sql</title>
+      <link>/tags/sql/</link>
+      <pubDate>Tue, 29 Aug 2006 18:56:00 +0900</pubDate>
+      
+      <guid>/tags/sql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>돌고래</title>
+      <link>/tags/%EB%8F%8C%EA%B3%A0%EB%9E%98/</link>
+      <pubDate>Fri, 25 Nov 2005 12:52:00 +0900</pubDate>
+      
+      <guid>/tags/%EB%8F%8C%EA%B3%A0%EB%9E%98/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>사랑</title>
+      <link>/tags/%EC%82%AC%EB%9E%91/</link>
+      <pubDate>Fri, 25 Nov 2005 12:52:00 +0900</pubDate>
+      
+      <guid>/tags/%EC%82%AC%EB%9E%91/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>책</title>
+      <link>/tags/%EC%B1%85/</link>
+      <pubDate>Fri, 25 Nov 2005 12:52:00 +0900</pubDate>
+      
+      <guid>/tags/%EC%B1%85/</guid>
       <description></description>
     </item>
     

@@ -1,16 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sparkylinux on Do What You Want To Do</title>
+    <title>sparkylinux on Do What You Want To Do</title>
     <link>/tags/sparkylinux/</link>
-    <description>Recent content in Sparkylinux on Do What You Want To Do</description>
+    <description>Recent content in sparkylinux on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Sat, 02 Nov 2019 02:14:20 +0900</lastBuildDate>
-    
-	<atom:link href="/tags/sparkylinux/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 02 Nov 2019 02:14:20 +0900</lastBuildDate><atom:link href="/tags/sparkylinux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>저사양 Pc에 강추 리눅스 Sparky Linux</title>
       <link>/posts/tech/%EC%A0%80%EC%82%AC%EC%96%91-pc%EC%97%90-%EA%B0%95%EC%B6%94-%EB%A6%AC%EB%88%85%EC%8A%A4-sparky-linux/</link>

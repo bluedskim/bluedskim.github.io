@@ -9,13 +9,13 @@
 <meta property="og:description" content="reddit에 의하면 Chromeos 72 이상에서 docker-ce 최신 버전 설치에 문제가 없다고 한다(참고 : https://www.reddit.com/r/Crostini/comments/aoc9i7/docker_working_now/) 여기 가이드대로 진행하면 문제없이 설치되는데 https://docs.docker.com/install/linux/docker-ce/debian/ 한가지 주의사항이 있다. add-apt-repository" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/posts/tech/pixelbook%EC%97%90-docker%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/" />
-<meta property="article:published_time" content="2019-04-28T13:38:28&#43;09:00"/>
-<meta property="article:modified_time" content="2019-04-28T13:38:28&#43;09:00"/>
+<meta property="article:published_time" content="2019-04-28T13:38:28+09:00" />
+<meta property="article:modified_time" content="2019-04-28T13:38:28+09:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="pixelbook에 Docker설치하기"/>
 <meta name="twitter:description" content="reddit에 의하면 Chromeos 72 이상에서 docker-ce 최신 버전 설치에 문제가 없다고 한다(참고 : https://www.reddit.com/r/Crostini/comments/aoc9i7/docker_working_now/) 여기 가이드대로 진행하면 문제없이 설치되는데 https://docs.docker.com/install/linux/docker-ce/debian/ 한가지 주의사항이 있다. add-apt-repository"/>
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.76.5" />
 
 
     
@@ -24,10 +24,10 @@
   "@context": "http://schema.org",
   "@type": "BlogPosting",
   "headline": "pixelbook에 Docker설치하기",
-  "url": "/posts/tech/pixelbook%EC%97%90-docker%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/",
+  "url": "\/posts\/tech\/pixelbook%EC%97%90-docker%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0\/",
   "wordCount": "137",
-  "datePublished": "2019-04-28T13:38:28&#43;09:00",
-  "dateModified": "2019-04-28T13:38:28&#43;09:00",
+  "datePublished": "2019-04-28T13:38:28\u002b09:00",
+  "dateModified": "2019-04-28T13:38:28\u002b09:00",
   "author": {
     "@type": "Person",
     "name": "Dennis"
@@ -98,7 +98,7 @@ if (!doNotTrack) {
     <header class="blog-header">
       <div class="container">
         <h1 class="blog-title" dir="auto"><a href="/" rel="home">Do What You Want To Do</a></h1>
-        <p class="lead blog-description" dir="auto">bluedskim@gmail.com</p>
+        <p class="lead blog-description" dir="auto"><a href="mailto:bluedskim@gmail.com">bluedskim@gmail.com</a></p>
       </div>
     </header>
     
@@ -122,38 +122,16 @@ if (!doNotTrack) {
 </p>
   </header>
   <p>reddit에 의하면 Chromeos 72 이상에서 docker-ce 최신 버전 설치에 문제가 없다고 한다(참고 : <a href="https://www.reddit.com/r/Crostini/comments/aoc9i7/docker_working_now/">https://www.reddit.com/r/Crostini/comments/aoc9i7/docker_working_now/</a>)</p>
-
 <p>여기 가이드대로 진행하면 문제없이 설치되는데  <a href="https://docs.docker.com/install/linux/docker-ce/debian/">https://docs.docker.com/install/linux/docker-ce/debian/</a></p>
-
 <p>한가지 주의사항이 있다. add-apt-repository 할 때 lsb-core가 없어서 오류가 발생한다. 그래서  아래처럼 lsb-core 를 설치하던가</p>
-
 <pre><code>sudo apt-get install lsb-core
 </code></pre>
-
 <p>add-apt-repository 구문을 아래처럼 변경하면 된다.</p>
-
 <pre><code>$ sudo add-apt-repository &quot;deb [arch=amd64] https://download.docker.com/linux/debian stretch stable&quot;
 </code></pre>
-
 <p>Docker 만세!</p>
-
-<!---
-인터넷에서 찾아본 자료에 의하면 docker 설치에 문제가 있다고.  
-하지만 고마운 누군가가 직접 binary를 수정해서 github에 공유해 주셨다.
-
-아래에서 스크립트를 받아서 실행하면 깔끔하게 설치된다.
-https://github.com/abiosoft/crostini-docker
-
-root 가 아닌 사용자(본인)도 쓸 수 있게 하기 위해 docker그룹에 추가하고
-
-    sudo usermod -a -G docker $USER
-
-터미널만 리스타트 하면 된다고 하는데 그렇게 되지는 않았고 픽셀북을 껐다 켜야 한다.
-
-이후에 아래 명령이 잘 동작하는지 확인한다.
-
-    docker run hello-world
--->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 
 
   
@@ -209,6 +187,8 @@ root 가 아닌 사용자(본인)도 쓸 수 있게 하기 위해 docker그룹�
     <ol class="list-unstyled">
 
 
+<li><a href="/posts/tech/karate%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%8D%B0%EB%AA%A8/">Karate 테스트 데모</a></li>
+
 <li><a href="/posts/tech/jboss%EC%9D%98-modeshape%EB%A1%9C-%EC%98%81%EB%8B%A8%EC%96%B4%EB%A5%BC-%EB%B3%B5%EC%88%98%ED%98%95%EB%8B%A8%EC%88%98%ED%98%95%EC%9C%BC%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/">Jboss의 Modeshape로 영단어를 복수형 혹은 단수형으로 변환하기</a></li>
 
 <li><a href="/posts/tech/vs-code-spring-java-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A6%AC%ED%94%84%EB%A0%88%EC%8B%9C-%ED%95%98%EA%B8%B0/">VS Code에서 Spring Java + Gradle 프로젝트 리프레시 하기</a></li>
@@ -216,8 +196,6 @@ root 가 아닌 사용자(본인)도 쓸 수 있게 하기 위해 docker그룹�
 <li><a href="/posts/tech/%ED%95%A8%EA%BB%98-%EC%9E%90%EB%9D%BC%EA%B8%B0_%EA%B9%80%EC%B0%BD%EC%A4%80_%EB%A9%94%EB%AA%A8/">함께 자라기(김창준) 메모</a></li>
 
 <li><a href="/posts/tech/pm2-production-process-manager-for-node.js/">PM2 - Production Process Manager for Node</a></li>
-
-<li><a href="/posts/tech/chromebook%EC%97%90-ssh%EC%A0%91%EC%86%8D%ED%95%98%EA%B8%B0/">Chromebook crostini에 SSH접속하기</a></li>
 
     </ol>
   </section>

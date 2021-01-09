@@ -9,13 +9,13 @@
 <meta property="og:description" content="발급될지 잠시 의심했었지만 발급 안될 이유가 없더라. 환경은 다음과 같다. iptime 공유기 A104(version 10.03.8) : 80포트는 외부에서 접속가능하도록 반드시 port forwarding해" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/posts/tech/certbot%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-iptime-ddns-%EB%8F%84%EB%A9%94%EC%9D%B8%EC%9A%A9-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EB%B0%9C%EA%B8%89/" />
-<meta property="article:published_time" content="2020-05-10T21:23:09&#43;09:00"/>
-<meta property="article:modified_time" content="2020-05-10T21:23:09&#43;09:00"/>
+<meta property="article:published_time" content="2020-05-10T21:23:09+09:00" />
+<meta property="article:modified_time" content="2020-05-10T21:23:09+09:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Certbot을 이용해 Iptime DDNS 도메인용 인증서 발급"/>
 <meta name="twitter:description" content="발급될지 잠시 의심했었지만 발급 안될 이유가 없더라. 환경은 다음과 같다. iptime 공유기 A104(version 10.03.8) : 80포트는 외부에서 접속가능하도록 반드시 port forwarding해"/>
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.76.5" />
 
 
     
@@ -24,10 +24,10 @@
   "@context": "http://schema.org",
   "@type": "BlogPosting",
   "headline": "Certbot을 이용해 Iptime DDNS 도메인용 인증서 발급",
-  "url": "/posts/tech/certbot%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-iptime-ddns-%EB%8F%84%EB%A9%94%EC%9D%B8%EC%9A%A9-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EB%B0%9C%EA%B8%89/",
-  "wordCount": "561",
-  "datePublished": "2020-05-10T21:23:09&#43;09:00",
-  "dateModified": "2020-05-10T21:23:09&#43;09:00",
+  "url": "\/posts\/tech\/certbot%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-iptime-ddns-%EB%8F%84%EB%A9%94%EC%9D%B8%EC%9A%A9-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EB%B0%9C%EA%B8%89\/",
+  "wordCount": "664",
+  "datePublished": "2020-05-10T21:23:09\u002b09:00",
+  "dateModified": "2020-05-10T21:23:09\u002b09:00",
   "author": {
     "@type": "Person",
     "name": "Dennis"
@@ -98,7 +98,7 @@ if (!doNotTrack) {
     <header class="blog-header">
       <div class="container">
         <h1 class="blog-title" dir="auto"><a href="/" rel="home">Do What You Want To Do</a></h1>
-        <p class="lead blog-description" dir="auto">bluedskim@gmail.com</p>
+        <p class="lead blog-description" dir="auto"><a href="mailto:bluedskim@gmail.com">bluedskim@gmail.com</a></p>
       </div>
     </header>
     
@@ -121,31 +121,22 @@ if (!doNotTrack) {
 
 </p>
   </header>
-  
-
-<p>발급될지 잠시 의심했었지만 발급 안될 이유가 없더라.</p>
-
+  <p>발급될지 잠시 의심했었지만 발급 안될 이유가 없더라.</p>
 <p>환경은 다음과 같다.</p>
-
 <ul>
 <li>iptime 공유기 A104(version 10.03.8) : 80포트는 외부에서 접속가능하도록 반드시 <strong>port forwarding</strong>해야 한다.</li>
 <li>ODROID-U3(Ubuntu 14.04) : Spring Boot2 어플리케이션이 기동될 서버
-
 <ul>
 <li>python 2.7 : 혹자는 3.6 이상 버전이 필요하다고 하지만 2.7에서도 정상 동작하였다</li>
 <li>Spring Boot 2</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h5 id="certbot-설치">certbot 설치</h5>
-
 <pre><code>$ git clone https://github.com/certbot/certbot
 </code></pre>
-
 <h5 id="certbot-인증서-발행">certbot 인증서 발행</h5>
-
 <p>이 때 80 port에 서비스가 있다면 잠시 내려두자. 인증을 위해 certbot이 잠시 이 포트를 사용할 것이기 때문이다(인증서 갱신시에는 80포트가 불필요 하다)</p>
-
 <pre><code>$ sudo ./certbot-auto certonly \
 -a standalone -d samba.iptime.org
 
@@ -165,14 +156,10 @@ IMPORTANT NOTES:
     Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
     Donating to EFF:                    https://eff.org/donate-le 
 </code></pre>
-
 <p>여기 경로에(/etc/letsencrypt/live/samba.iptime.org) 인증서 파일이 잘 생성되었다.</p>
-
 <h4 id="pkcs12-생성">PKCS12 생성</h4>
-
 <p>Spring Boot2 Backe-end 에서는 pkcs12 형식의 인증서가 필요하다(고 한다. 보안쪽은 잘 모르므로 패스 -.-)
 여기서 지정한 암호는 SpringBoot설정파일에 넣을 것이므로 잘 메모해 두자.</p>
-
 <pre><code>$ sudo openssl pkcs12 -export \
 -in /etc/letsencrypt/live/samba.iptime.org/fullchain.pem \
 -inkey /etc/letsencrypt/live/samba.iptime.org/privkey.pem \
@@ -180,9 +167,7 @@ IMPORTANT NOTES:
 -CAfile /etc/letsencrypt/live/samba.iptime.org/chain.pem \
 -caname root -password pass:암호를지정하셔요
 </code></pre>
-
-<h5 id="springboot2-설정-yaml파일">SpringBoot2 설정(yaml파일)</h5>
-
+<h5 id="springboot2-설정yaml파일">SpringBoot2 설정(yaml파일)</h5>
 <pre><code>server:
   port: 8082
   ssl:
@@ -190,11 +175,8 @@ IMPORTANT NOTES:
     key-store-password: 지정한_암호를_넣는다
     keyStoreType: PKCS12 
 </code></pre>
-
 <p>SpringBoot을 기동한 후 인증서 정보를 확인해보자</p>
-
-<p><a href="/images/Certbot을 이용해 Iptime DDNS 도메인용 인증서 발급.png"><img src="/images/Certbot을 이용해 Iptime DDNS 도메인용 인증서 발급.png" alt="Certbot을 이용해 Iptime DDNS 도메인용 인증서 발급.png" /></a></p>
-
+<p>[![Certbot을 이용해 Iptime DDNS 도메인용 인증서 발급.png](/images/Certbot을 이용해 Iptime DDNS 도메인용 인증서 발급.png)](/images/Certbot을 이용해 Iptime DDNS 도메인용 인증서 발급.png)</p>
 <p>만세! iptime의 top level domain 이지만 뭔가 신뢰가 간다.</p>
 
 
@@ -251,6 +233,8 @@ IMPORTANT NOTES:
     <ol class="list-unstyled">
 
 
+<li><a href="/posts/tech/karate%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%8D%B0%EB%AA%A8/">Karate 테스트 데모</a></li>
+
 <li><a href="/posts/tech/jboss%EC%9D%98-modeshape%EB%A1%9C-%EC%98%81%EB%8B%A8%EC%96%B4%EB%A5%BC-%EB%B3%B5%EC%88%98%ED%98%95%EB%8B%A8%EC%88%98%ED%98%95%EC%9C%BC%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/">Jboss의 Modeshape로 영단어를 복수형 혹은 단수형으로 변환하기</a></li>
 
 <li><a href="/posts/tech/vs-code-spring-java-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A6%AC%ED%94%84%EB%A0%88%EC%8B%9C-%ED%95%98%EA%B8%B0/">VS Code에서 Spring Java + Gradle 프로젝트 리프레시 하기</a></li>
@@ -258,8 +242,6 @@ IMPORTANT NOTES:
 <li><a href="/posts/tech/%ED%95%A8%EA%BB%98-%EC%9E%90%EB%9D%BC%EA%B8%B0_%EA%B9%80%EC%B0%BD%EC%A4%80_%EB%A9%94%EB%AA%A8/">함께 자라기(김창준) 메모</a></li>
 
 <li><a href="/posts/tech/pm2-production-process-manager-for-node.js/">PM2 - Production Process Manager for Node</a></li>
-
-<li><a href="/posts/tech/chromebook%EC%97%90-ssh%EC%A0%91%EC%86%8D%ED%95%98%EA%B8%B0/">Chromebook crostini에 SSH접속하기</a></li>
 
     </ol>
   </section>

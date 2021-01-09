@@ -1,23 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Dannyboy on Do What You Want To Do</title>
+    <title>dannyboy on Do What You Want To Do</title>
     <link>/tags/dannyboy/</link>
-    <description>Recent content in Dannyboy on Do What You Want To Do</description>
+    <description>Recent content in dannyboy on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Mon, 10 Dec 2007 09:01:00 +0900</lastBuildDate>
-    
-	<atom:link href="/tags/dannyboy/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 10 Dec 2007 09:01:00 +0900</lastBuildDate><atom:link href="/tags/dannyboy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>&#34;불법복제는 문제가 아니다. 문제는 무명으로 남는 것이다&#34; by Cory Doctorow. 위키노믹스(21세기북스) 중에서</title>
       <link>/posts/software-engineering/%EB%B6%88%EB%B2%95%EB%B3%B5%EC%A0%9C%EB%8A%94-%EB%AC%B8%EC%A0%9C%EA%B0%80-%EC%95%84%EB%8B%88%EB%8B%A4.-%EB%AC%B8%EC%A0%9C%EB%8A%94-%EB%AC%B4%EB%AA%85%EC%9C%BC%EB%A1%9C-%EB%82%A8%EB%8A%94-%EA%B2%83%EC%9D%B4%EB%8B%A4-by-cory-doctorow.-%EC%9C%84%ED%82%A4%EB%85%B8%EB%AF%B9%EC%8A%A421%EC%84%B8%EA%B8%B0%EB%B6%81%EC%8A%A4-%EC%A4%91%EC%97%90%EC%84%9C/</link>
       <pubDate>Mon, 10 Dec 2007 09:01:00 +0900</pubDate>
       
       <guid>/posts/software-engineering/%EB%B6%88%EB%B2%95%EB%B3%B5%EC%A0%9C%EB%8A%94-%EB%AC%B8%EC%A0%9C%EA%B0%80-%EC%95%84%EB%8B%88%EB%8B%A4.-%EB%AC%B8%EC%A0%9C%EB%8A%94-%EB%AC%B4%EB%AA%85%EC%9C%BC%EB%A1%9C-%EB%82%A8%EB%8A%94-%EA%B2%83%EC%9D%B4%EB%8B%A4-by-cory-doctorow.-%EC%9C%84%ED%82%A4%EB%85%B8%EB%AF%B9%EC%8A%A421%EC%84%B8%EA%B8%B0%EB%B6%81%EC%8A%A4-%EC%A4%91%EC%97%90%EC%84%9C/</guid>
-      <description>인터넷이 아니었다면 어떻게 저 소년을 만났겠는가? Oh Danny boy, the pipes, the pipes are calling From glen to glen, and down the mountain side The summer&amp;rsquo;s gone, and all the flowers are dying &amp;lsquo;tis you, &amp;lsquo;tis you must go and I must bide. But come you back when summer&amp;rsquo;s in the meadow Or when</description>
+      <description>인터넷이 아니었다면 어떻게 저 소년을 만났겠는가?</description>
     </item>
     
   </channel>

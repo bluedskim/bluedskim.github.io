@@ -9,13 +9,13 @@
 <meta property="og:description" content="Pixelbook은 상당히 사양이 괜찮은 노트북이지만 즐길 수 있는 적당한 FPS게임이 없다. 안드로이드용 FPS는 있지만 뭔가 부족한 느낌이다. 키보드 지원" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/posts/tech/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C-quake%EA%B2%8C%EC%9E%84-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/" />
-<meta property="article:published_time" content="2019-08-13T18:28:39&#43;09:00"/>
-<meta property="article:modified_time" content="2019-08-13T18:28:39&#43;09:00"/>
+<meta property="article:published_time" content="2019-08-13T18:28:39+09:00" />
+<meta property="article:modified_time" content="2019-08-13T18:28:39+09:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="픽셀북(모든 크롬북?)에서 Quake게임 실행하기"/>
 <meta name="twitter:description" content="Pixelbook은 상당히 사양이 괜찮은 노트북이지만 즐길 수 있는 적당한 FPS게임이 없다. 안드로이드용 FPS는 있지만 뭔가 부족한 느낌이다. 키보드 지원"/>
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.76.5" />
 
 
     
@@ -24,10 +24,10 @@
   "@context": "http://schema.org",
   "@type": "BlogPosting",
   "headline": "픽셀북(모든 크롬북?)에서 Quake게임 실행하기",
-  "url": "/posts/tech/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C-quake%EA%B2%8C%EC%9E%84-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/",
-  "wordCount": "567",
-  "datePublished": "2019-08-13T18:28:39&#43;09:00",
-  "dateModified": "2019-08-13T18:28:39&#43;09:00",
+  "url": "\/posts\/tech\/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C-quake%EA%B2%8C%EC%9E%84-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0\/",
+  "wordCount": "758",
+  "datePublished": "2019-08-13T18:28:39\u002b09:00",
+  "dateModified": "2019-08-13T18:28:39\u002b09:00",
   "author": {
     "@type": "Person",
     "name": "Dennis"
@@ -98,7 +98,7 @@ if (!doNotTrack) {
     <header class="blog-header">
       <div class="container">
         <h1 class="blog-title" dir="auto"><a href="/" rel="home">Do What You Want To Do</a></h1>
-        <p class="lead blog-description" dir="auto">bluedskim@gmail.com</p>
+        <p class="lead blog-description" dir="auto"><a href="mailto:bluedskim@gmail.com">bluedskim@gmail.com</a></p>
       </div>
     </header>
     
@@ -123,78 +123,66 @@ if (!doNotTrack) {
 
 </p>
   </header>
-  
-
-<p>Pixelbook은 상당히 사양이 괜찮은 노트북이지만 즐길 수 있는 적당한 FPS게임이 없다. 안드로이드용  FPS는 있지만 뭔가 부족한 느낌이다.
+  <p>Pixelbook은 상당히 사양이 괜찮은 노트북이지만 즐길 수 있는 적당한 FPS게임이 없다. 안드로이드용  FPS는 있지만 뭔가 부족한 느낌이다.
 키보드 지원이 미비하다는게 그 이유 일 듯. 외형상 일반 노트북과 동일한 크롬북에는 클래식 FPS게임이 가장 적당한데 크롬OS용 FPS게임은 들어 본적이 없다.</p>
-
 <p>Quake 소스가 공개된 후로 Webgl로 포팅한 프로젝트가 있어 시도해봤는데 환상적이다.</p>
-
 <h3 id="webgl">WebGL?</h3>
-
 <p>브라우저에서 OpenGL ES 를 이용할 수 있게해주는 API</p>
-
 <h3 id="quake">Quake?</h3>
-
 <p>1인칭 슈팅 게임. 현재는 소스가 오픈되어 있어 많은 개발자들이 이것을 이용해서 각종 변종들을 만들고 있다.</p>
-
 <h3 id="일단-맛을-보자">일단 맛을 보자</h3>
-
 <ul>
-<li><a href="http://nadako.github.io/HaxeQuake/Client/WebQuake.htm">http://nadako.github.io/HaxeQuake/Client/WebQuake.htm</a></li>
-
-<li><p>크롬 익스텐션으로 맛보기 : <a href="https://chrome.google.com/webstore/detail/web-quake/ibkbfanmkmadbbgggonficloplenbefh?hl=en">https://chrome.google.com/webstore/detail/web-quake/ibkbfanmkmadbbgggonficloplenbefh?hl=en</a></p>
-
-<p>(그러나 이 extension으로는 shareware 버전만 가능)</p></li>
+<li>
+<p><a href="http://nadako.github.io/HaxeQuake/Client/WebQuake.htm">http://nadako.github.io/HaxeQuake/Client/WebQuake.htm</a></p>
+</li>
+<li>
+<p>크롬 익스텐션으로 맛보기 : <a href="https://chrome.google.com/webstore/detail/web-quake/ibkbfanmkmadbbgggonficloplenbefh?hl=en">https://chrome.google.com/webstore/detail/web-quake/ibkbfanmkmadbbgggonficloplenbefh?hl=en</a></p>
+<p>(그러나 이 extension으로는 shareware 버전만 가능)</p>
+</li>
 </ul>
-
 <h3 id="제약사항">제약사항</h3>
-
 <ul>
 <li>최신 mod 구동 불가 : 소스 공개 후 각종 변종들이 나왔는데 이것들에 기반한 mod들은 돌릴 수 없다</li>
 <li>Internet Explorer에서 동작하지 않음(IE에 뭔가 기대하지 말자)</li>
 <li>스테레오 음향이 지원되지 않는 듯. 모노로 출력된다</li>
 </ul>
-
 <h3 id="설치-순서">설치 순서</h3>
-
 <ol>
 <li>WebQuake 다운로드</li>
 <li>web 서버  extension 설치</li>
 </ol>
-
 <h4 id="webquake-다운로드">WebQuake 다운로드</h4>
-
 <ol>
-<li><p>링크 : <a href="https://github.com/Triang3l/WebQuake/archive/master.zip">https://github.com/Triang3l/WebQuake/archive/master.zip</a></p>
-
-<p><a href="/images/Screenshot 2019-08-14 at 10.53.04 AM.png"><img src="/images/Screenshot 2019-08-14 at 10.53.04 AM.png" alt="master.zip" /></a></p></li>
-
-<li><p>압축해제 후 (설치 폴더)/WebQuake-master/Client 아래에 게임데이터용 폴더 id1 생성</p>
-
-<p><a href="/images/Screenshot 2019-08-14 at 10.54.25 AM.png"><img src="/images/Screenshot 2019-08-14 at 10.54.25 AM.png" alt="압축해제 후 ~/WebQuake-master/Client 아래에 게임데이터용 폴더 id1 생성" /></a></p>
-
-<p><a href="/images/Screenshot 2019-08-14 at 10.55.08 AM.png"><img src="/images/Screenshot 2019-08-14 at 10.55.08 AM.png" alt="압축해제 후 ~/WebQuake-master/Client 아래에 게임데이터용 폴더 id1 생성" /></a></p></li>
-
-<li><p>id1폴더에 quake shareware에서 추출한 pak0.pak 다운로드 :  <a href="http://nadako.github.io/HaxeQuake/Client/id1/pak0.pak">http://nadako.github.io/HaxeQuake/Client/id1/pak0.pak</a></p>
-
-<p>(혹은 <a href="https://github.com/rictorres/quake-ktx-server/raw/master/id1/pak0.pak">https://github.com/rictorres/quake-ktx-server/raw/master/id1/pak0.pak</a>)</p></li>
-
-<li><p>id1폴더에 <a href="/posts/tech/%ed%81%ac%eb%a1%ac%eb%b6%81%ec%97%90%ec%84%9c%20quake%ea%b2%8c%ec%9e%84%20%ec%8b%a4%ed%96%89%ed%95%98%ea%b8%b0.files/autoexec.cfg">autoexec.cfg</a> 다운로드 (mouse look, crosshair 활성화하기 위해 필요)</p></li>
+<li>
+<p>링크 : <a href="https://github.com/Triang3l/WebQuake/archive/master.zip">https://github.com/Triang3l/WebQuake/archive/master.zip</a></p>
+<p>[![master.zip](/images/Screenshot 2019-08-14 at 10.53.04 AM.png)](/images/Screenshot 2019-08-14 at 10.53.04 AM.png)</p>
+</li>
+<li>
+<p>압축해제 후 (설치 폴더)/WebQuake-master/Client 아래에 게임데이터용 폴더 id1 생성</p>
+<p>[![압축해제 후 ~/WebQuake-master/Client 아래에 게임데이터용 폴더 id1 생성](/images/Screenshot 2019-08-14 at 10.54.25 AM.png)](/images/Screenshot 2019-08-14 at 10.54.25 AM.png)</p>
+<p>[![압축해제 후 ~/WebQuake-master/Client 아래에 게임데이터용 폴더 id1 생성](/images/Screenshot 2019-08-14 at 10.55.08 AM.png)](/images/Screenshot 2019-08-14 at 10.55.08 AM.png)</p>
+</li>
+<li>
+<p>id1폴더에 quake shareware에서 추출한 pak0.pak 다운로드 :  <a href="http://nadako.github.io/HaxeQuake/Client/id1/pak0.pak">http://nadako.github.io/HaxeQuake/Client/id1/pak0.pak</a></p>
+<p>(혹은 <a href="https://github.com/rictorres/quake-ktx-server/raw/master/id1/pak0.pak">https://github.com/rictorres/quake-ktx-server/raw/master/id1/pak0.pak</a>)</p>
+</li>
+<li>
+<p>id1폴더에 <a href="/posts/tech/%ed%81%ac%eb%a1%ac%eb%b6%81%ec%97%90%ec%84%9c%20quake%ea%b2%8c%ec%9e%84%20%ec%8b%a4%ed%96%89%ed%95%98%ea%b8%b0.files/autoexec.cfg">autoexec.cfg</a> 다운로드 (mouse look, crosshair 활성화하기 위해 필요)</p>
+</li>
 </ol>
-
-<h4 id="web-서버-extension-설치">web 서버  extension 설치</h4>
-
+<h4 id="web-서버--extension-설치">web 서버  extension 설치</h4>
 <ol>
-<li>설치 : <a href="https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en">https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en</a></li>
-
-<li><p>설정 :  &ldquo;CHOOSE FOLDER&rdquo; 클릭 후 (설치 폴더)/WebQuake-master/Client 선택</p>
-
-<p><a href="/images/Screenshot 2019-08-14 at 12.20.12 PM.png"><img src="/images/Screenshot 2019-08-14 at 12.20.12 PM.png" alt="설정 :  &quot;CHOOSE FOLDER&quot; 클릭 후 (설치 폴더)/WebQuake-master/Client 선택" /></a></p></li>
-
-<li><p><a href="http://127.0.0.1:8887/index.htm">http://127.0.0.1:8887/index.htm</a> 로 이동하면 게임이 뜬다.</p>
-
-<p><a href="/images/Screenshot 2019-08-14 at 12.24.45 PM.png"><img src="/images/Screenshot 2019-08-14 at 12.24.45 PM.png" alt="in game" /></a></p></li>
+<li>
+<p>설치 : <a href="https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en">https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en</a></p>
+</li>
+<li>
+<p>설정 :  &ldquo;CHOOSE FOLDER&rdquo; 클릭 후 (설치 폴더)/WebQuake-master/Client 선택</p>
+<p>[![설정 :  &ldquo;CHOOSE FOLDER&rdquo; 클릭 후 (설치 폴더)/WebQuake-master/Client 선택](/images/Screenshot 2019-08-14 at 12.20.12 PM.png)](/images/Screenshot 2019-08-14 at 12.20.12 PM.png)</p>
+</li>
+<li>
+<p>http://127.0.0.1:8887/index.htm 로 이동하면 게임이 뜬다.</p>
+<p>[![in game](/images/Screenshot 2019-08-14 at 12.24.45 PM.png)](/images/Screenshot 2019-08-14 at 12.24.45 PM.png)</p>
+</li>
 </ol>
 
 
@@ -251,6 +239,8 @@ if (!doNotTrack) {
     <ol class="list-unstyled">
 
 
+<li><a href="/posts/tech/karate%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%8D%B0%EB%AA%A8/">Karate 테스트 데모</a></li>
+
 <li><a href="/posts/tech/jboss%EC%9D%98-modeshape%EB%A1%9C-%EC%98%81%EB%8B%A8%EC%96%B4%EB%A5%BC-%EB%B3%B5%EC%88%98%ED%98%95%EB%8B%A8%EC%88%98%ED%98%95%EC%9C%BC%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/">Jboss의 Modeshape로 영단어를 복수형 혹은 단수형으로 변환하기</a></li>
 
 <li><a href="/posts/tech/vs-code-spring-java-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A6%AC%ED%94%84%EB%A0%88%EC%8B%9C-%ED%95%98%EA%B8%B0/">VS Code에서 Spring Java + Gradle 프로젝트 리프레시 하기</a></li>
@@ -258,8 +248,6 @@ if (!doNotTrack) {
 <li><a href="/posts/tech/%ED%95%A8%EA%BB%98-%EC%9E%90%EB%9D%BC%EA%B8%B0_%EA%B9%80%EC%B0%BD%EC%A4%80_%EB%A9%94%EB%AA%A8/">함께 자라기(김창준) 메모</a></li>
 
 <li><a href="/posts/tech/pm2-production-process-manager-for-node.js/">PM2 - Production Process Manager for Node</a></li>
-
-<li><a href="/posts/tech/chromebook%EC%97%90-ssh%EC%A0%91%EC%86%8D%ED%95%98%EA%B8%B0/">Chromebook crostini에 SSH접속하기</a></li>
 
     </ol>
   </section>

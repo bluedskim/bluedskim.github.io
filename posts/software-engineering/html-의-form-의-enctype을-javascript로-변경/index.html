@@ -9,13 +9,13 @@
 <meta property="og:description" content="html 의 form 의 enctype을 명시적으로 지정하지 않으면 기본은 application/x-www-form-urlencoded 이다. 이것을 javascrtip로 변경하는 샘플이다. 주의할 점은 javascript로" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/posts/software-engineering/html-%EC%9D%98-form-%EC%9D%98-enctype%EC%9D%84-javascript%EB%A1%9C-%EB%B3%80%EA%B2%BD/" />
-<meta property="article:published_time" content="2007-07-05T07:54:00&#43;09:00"/>
-<meta property="article:modified_time" content="2007-07-05T07:54:00&#43;09:00"/>
+<meta property="article:published_time" content="2007-07-05T07:54:00+09:00" />
+<meta property="article:modified_time" content="2007-07-05T07:54:00+09:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="html 의 form 의 enctype을 javascript로 변경"/>
 <meta name="twitter:description" content="html 의 form 의 enctype을 명시적으로 지정하지 않으면 기본은 application/x-www-form-urlencoded 이다. 이것을 javascrtip로 변경하는 샘플이다. 주의할 점은 javascript로"/>
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.76.5" />
 
 
     
@@ -24,10 +24,10 @@
   "@context": "http://schema.org",
   "@type": "BlogPosting",
   "headline": "html 의 form 의 enctype을 javascript로 변경",
-  "url": "/posts/software-engineering/html-%EC%9D%98-form-%EC%9D%98-enctype%EC%9D%84-javascript%EB%A1%9C-%EB%B3%80%EA%B2%BD/",
-  "wordCount": "249",
-  "datePublished": "2007-07-05T07:54:00&#43;09:00",
-  "dateModified": "2007-07-05T07:54:00&#43;09:00",
+  "url": "\/posts\/software-engineering\/html-%EC%9D%98-form-%EC%9D%98-enctype%EC%9D%84-javascript%EB%A1%9C-%EB%B3%80%EA%B2%BD\/",
+  "wordCount": "224",
+  "datePublished": "2007-07-05T07:54:00\u002b09:00",
+  "dateModified": "2007-07-05T07:54:00\u002b09:00",
   "author": {
     "@type": "Person",
     "name": "Dennis"
@@ -98,7 +98,7 @@ if (!doNotTrack) {
     <header class="blog-header">
       <div class="container">
         <h1 class="blog-title" dir="auto"><a href="/" rel="home">Do What You Want To Do</a></h1>
-        <p class="lead blog-description" dir="auto">bluedskim@gmail.com</p>
+        <p class="lead blog-description" dir="auto"><a href="mailto:bluedskim@gmail.com">bluedskim@gmail.com</a></p>
       </div>
     </header>
     
@@ -121,56 +121,46 @@ if (!doNotTrack) {
 
 </p>
   </header>
-  <p><span class="copyright_entry" style="display:block;" title="html 의 form 의 enctype을 javascript로 변경@@**@@http://shed.egloos.com/1597101"></span>html 의 form 의 enctype을 명시적으로 지정하지 않으면 기본은 application/x-www-form-urlencoded 이다.
-<br>
-<br>이것을 javascrtip로 변경하는 샘플이다.
-<br>
-<br>주의할 점은 javascript로 참조할 때는
-<span style="background-color: rgb(102, 204, 204);">enctype</span>이 아니라
-<span style="background-color: rgb(255, 153, 0);">encoding</span> 이라는 점이다.
-<br>
-<br>&lt;html&gt;
-<br>&lt;script&gt;
-<br>
-<br>function changeEnctype() {
-<br>&nbsp;&nbsp; &nbsp;myform = document.form1;
-<br>&nbsp;&nbsp; &nbsp;
-<br>&nbsp;&nbsp; &nbsp;alert(&lsquo;원래의 enctype: &lsquo; + myform.
-<span style="background-color: rgb(255, 153, 0);">encoding</span>);
-<br>&nbsp;&nbsp; &nbsp;
-<br>&nbsp;&nbsp; &nbsp;myform.
-<span style="background-color: rgb(255, 153, 0);">encoding</span>=&ldquo;application/x-www-form-urlencoded&rdquo;;&nbsp;&nbsp; &nbsp;
-<br>&nbsp;&nbsp; &nbsp;alert(&lsquo;디폴트로 변경 enctype: &lsquo; + myform.
-<span style="background-color: rgb(255, 153, 0);">encoding</span>);
-<br>&nbsp;&nbsp; &nbsp;
-<br>&nbsp;&nbsp; &nbsp;myform.
-<span style="background-color: rgb(255, 153, 0);">encoding</span>=&ldquo;multipart/form-data&rdquo;;
-<br>&nbsp;&nbsp; &nbsp;alert(&lsquo;원래대로 변경 enctype: &lsquo; + myform.
-<span style="background-color: rgb(255, 153, 0);">encoding</span>);
-<br>}
-<br>&lt;/script&gt;
-<br>&lt;body&gt;
-<br>&lt;form name=form1 method=&ldquo;post&rdquo;
-<span style="background-color: rgb(102, 204, 204);">enctype</span>=&ldquo;multipart/form-data&rdquo;&gt;
-<br>&lt;input type=&ldquo;button&rdquo; value=&ldquo;enctype확인&rdquo; onClick=&ldquo;changeEnctype()&rdquo;&gt;
-<br>&lt;/form&gt;
-<br>&lt;/body&gt;
-<br>&lt;/html&gt;
-<br>
-<br>
-<!--
-       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-            xmlns:dc="http://purl.org/dc/elements/1.1/"
-            xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
-       <rdf:Description
-            rdf:about="http://shed.egloos.com/1597101"
-            dc:identifier="http://shed.egloos.com/1597101"
-            dc:title="html 의 form 의 enctype을 javascript로 변경"
-            trackback:ping="http://shed.egloos.com/tb/1597101"/>
-       </rdf:RDF>
-       --></p>
-
-<ul></ul>
+  <p><!-- raw HTML omitted --><!-- raw HTML omitted -->html 의 form 의 enctype을 명시적으로 지정하지 않으면 기본은 application/x-www-form-urlencoded 이다.
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->이것을 javascrtip로 변경하는 샘플이다.
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->주의할 점은 javascript로 참조할 때는
+<!-- raw HTML omitted -->enctype<!-- raw HTML omitted -->이 아니라
+<!-- raw HTML omitted -->encoding<!-- raw HTML omitted --> 이라는 점이다.
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->&lt;html&gt;
+<!-- raw HTML omitted -->&lt;script&gt;
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->function changeEnctype() {
+<!-- raw HTML omitted -->    myform = document.form1;
+<!-- raw HTML omitted -->    
+<!-- raw HTML omitted -->    alert(&lsquo;원래의 enctype: ' + myform.
+<!-- raw HTML omitted -->encoding<!-- raw HTML omitted -->);
+<!-- raw HTML omitted -->    
+<!-- raw HTML omitted -->    myform.
+<!-- raw HTML omitted -->encoding<!-- raw HTML omitted -->=&ldquo;application/x-www-form-urlencoded&rdquo;;    
+<!-- raw HTML omitted -->    alert(&lsquo;디폴트로 변경 enctype: ' + myform.
+<!-- raw HTML omitted -->encoding<!-- raw HTML omitted -->);
+<!-- raw HTML omitted -->    
+<!-- raw HTML omitted -->    myform.
+<!-- raw HTML omitted -->encoding<!-- raw HTML omitted -->=&ldquo;multipart/form-data&rdquo;;
+<!-- raw HTML omitted -->    alert(&lsquo;원래대로 변경 enctype: ' + myform.
+<!-- raw HTML omitted -->encoding<!-- raw HTML omitted -->);
+<!-- raw HTML omitted -->}
+<!-- raw HTML omitted -->&lt;/script&gt;
+<!-- raw HTML omitted -->&lt;body&gt;
+<!-- raw HTML omitted -->&lt;form name=form1 method=&ldquo;post&rdquo;
+<!-- raw HTML omitted -->enctype<!-- raw HTML omitted -->=&ldquo;multipart/form-data&rdquo;&gt;
+<!-- raw HTML omitted -->&lt;input type=&ldquo;button&rdquo; value=&ldquo;enctype확인&rdquo; onClick=&ldquo;changeEnctype()&quot;&gt;
+<!-- raw HTML omitted -->&lt;/form&gt;
+<!-- raw HTML omitted -->&lt;/body&gt;
+<!-- raw HTML omitted -->&lt;/html&gt;
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 
 
   
@@ -226,6 +216,8 @@ if (!doNotTrack) {
     <ol class="list-unstyled">
 
 
+<li><a href="/posts/tech/karate%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%8D%B0%EB%AA%A8/">Karate 테스트 데모</a></li>
+
 <li><a href="/posts/tech/jboss%EC%9D%98-modeshape%EB%A1%9C-%EC%98%81%EB%8B%A8%EC%96%B4%EB%A5%BC-%EB%B3%B5%EC%88%98%ED%98%95%EB%8B%A8%EC%88%98%ED%98%95%EC%9C%BC%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/">Jboss의 Modeshape로 영단어를 복수형 혹은 단수형으로 변환하기</a></li>
 
 <li><a href="/posts/tech/vs-code-spring-java-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A6%AC%ED%94%84%EB%A0%88%EC%8B%9C-%ED%95%98%EA%B8%B0/">VS Code에서 Spring Java + Gradle 프로젝트 리프레시 하기</a></li>
@@ -233,8 +225,6 @@ if (!doNotTrack) {
 <li><a href="/posts/tech/%ED%95%A8%EA%BB%98-%EC%9E%90%EB%9D%BC%EA%B8%B0_%EA%B9%80%EC%B0%BD%EC%A4%80_%EB%A9%94%EB%AA%A8/">함께 자라기(김창준) 메모</a></li>
 
 <li><a href="/posts/tech/pm2-production-process-manager-for-node.js/">PM2 - Production Process Manager for Node</a></li>
-
-<li><a href="/posts/tech/chromebook%EC%97%90-ssh%EC%A0%91%EC%86%8D%ED%95%98%EA%B8%B0/">Chromebook crostini에 SSH접속하기</a></li>
 
     </ol>
   </section>

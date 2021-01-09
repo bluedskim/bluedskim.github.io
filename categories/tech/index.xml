@@ -1,15 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tech on Do What You Want To Do</title>
+    <title>tech on Do What You Want To Do</title>
     <link>/categories/tech/</link>
-    <description>Recent content in Tech on Do What You Want To Do</description>
+    <description>Recent content in tech on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Sun, 11 Oct 2020 21:39:37 +0900</lastBuildDate>
-    
-	<atom:link href="/categories/tech/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Sat, 09 Jan 2021 22:59:55 +0900</lastBuildDate><atom:link href="/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Karate 테스트 데모</title>
+      <link>/posts/tech/karate%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%8D%B0%EB%AA%A8/</link>
+      <pubDate>Sat, 09 Jan 2021 22:59:55 +0900</pubDate>
+      
+      <guid>/posts/tech/karate%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%8D%B0%EB%AA%A8/</guid>
+      <description>&amp;ldquo;美 IT업계서 45년 일한 어느 개발자의 여섯가지 조언&amp;rdquo;이라는 기사의 다섯번째 조언은 바로 &amp;lsquo;테스트 자동화&amp;rsqu</description>
+    </item>
     
     <item>
       <title>Jboss의 Modeshape로 영단어를 복수형 혹은 단수형으로 변환하기</title>
@@ -116,7 +121,7 @@
       <pubDate>Wed, 14 Aug 2019 09:26:56 +0900</pubDate>
       
       <guid>/posts/tech/%EC%A3%BC%EC%9C%84%EC%97%90-%ED%81%AC%EB%A1%AC%EB%B6%81%EC%9D%84-%EC%B6%94%EC%B2%9C%ED%95%98%EA%B2%A0%EC%8A%B5%EB%8B%88%EA%B9%8C/</guid>
-      <description>구글에서 설문 메일이 왔다. 혹시나 사은품으로 픽셀북2 줄까 해서 응답했지만 그럴리가 없겠지. &amp;ldquo;주위에 크롬북을 추천하시겠습니까?&amp;ldquo</description>
+      <description>구글에서 설문 메일이 왔다. 혹시나 사은품으로 픽셀북2 줄까 해서 응답했지만 그럴리가 없겠지. &amp;ldquo;주위에 크롬북을 추천하시겠습니까?&amp;rdquo</description>
     </item>
     
     <item>

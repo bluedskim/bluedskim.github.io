@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>방명록 on Do What You Want To Do</title>
@@ -6,18 +6,14 @@
     <description>Recent content in 방명록 on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Thu, 28 Feb 2008 23:04:00 +0900</lastBuildDate>
-    
-	<atom:link href="/categories/%EB%B0%A9%EB%AA%85%EB%A1%9D/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 28 Feb 2008 23:04:00 +0900</lastBuildDate><atom:link href="/categories/%EB%B0%A9%EB%AA%85%EB%A1%9D/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>방명록을 덧글로 달아주셔요.</title>
       <link>/posts/%EB%B0%A9%EB%AA%85%EB%A1%9D/%EB%B0%A9%EB%AA%85%EB%A1%9D%EC%9D%84-%EB%8D%A7%EA%B8%80%EB%A1%9C-%EB%8B%AC%EC%95%84%EC%A3%BC%EC%85%94%EC%9A%94./</link>
       <pubDate>Thu, 28 Feb 2008 23:04:00 +0900</pubDate>
       
       <guid>/posts/%EB%B0%A9%EB%AA%85%EB%A1%9D/%EB%B0%A9%EB%AA%85%EB%A1%9D%EC%9D%84-%EB%8D%A7%EA%B8%80%EB%A1%9C-%EB%8B%AC%EC%95%84%EC%A3%BC%EC%85%94%EC%9A%94./</guid>
-      <description>이글루스는 방명록을 제공하지 않아요. 흔적을 남기실 분이 계신다면 아래쪽에 덧글로 달아주시면 감사하겠습니다. -- 아카나사아 2008/03/12 21:54 # 삭제 답글 사랑하는 동석이에</description>
+      <description>이글루스는 방명록을 제공하지 않아요. 흔적을 남기실 분이 계신다면 아래쪽에 덧글로 달아주시면 감사하겠습니다.</description>
     </item>
     
   </channel>

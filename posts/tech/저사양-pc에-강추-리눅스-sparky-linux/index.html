@@ -9,13 +9,13 @@
 <meta property="og:description" content="32bit 노트북에 SparkyLinux 설치 설치한 모델은 MSI vr420x이다. 11년 전에 구입한 모델 Intel Pentium Dual Core T2330 (1.6GHz / 1MB / FSB 533MHz) 2GB DDR2 667Mhz 이 노트북에 설치한 리눅스 OS중에 가장 쾌적하다." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/posts/tech/%EC%A0%80%EC%82%AC%EC%96%91-pc%EC%97%90-%EA%B0%95%EC%B6%94-%EB%A6%AC%EB%88%85%EC%8A%A4-sparky-linux/" />
-<meta property="article:published_time" content="2019-11-02T02:14:20&#43;09:00"/>
-<meta property="article:modified_time" content="2019-11-02T02:14:20&#43;09:00"/>
+<meta property="article:published_time" content="2019-11-02T02:14:20+09:00" />
+<meta property="article:modified_time" content="2019-11-02T02:14:20+09:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="저사양 Pc에 강추 리눅스 Sparky Linux"/>
 <meta name="twitter:description" content="32bit 노트북에 SparkyLinux 설치 설치한 모델은 MSI vr420x이다. 11년 전에 구입한 모델 Intel Pentium Dual Core T2330 (1.6GHz / 1MB / FSB 533MHz) 2GB DDR2 667Mhz 이 노트북에 설치한 리눅스 OS중에 가장 쾌적하다."/>
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.76.5" />
 
 
     
@@ -24,10 +24,10 @@
   "@context": "http://schema.org",
   "@type": "BlogPosting",
   "headline": "저사양 Pc에 강추 리눅스 Sparky Linux",
-  "url": "/posts/tech/%EC%A0%80%EC%82%AC%EC%96%91-pc%EC%97%90-%EA%B0%95%EC%B6%94-%EB%A6%AC%EB%88%85%EC%8A%A4-sparky-linux/",
+  "url": "\/posts\/tech\/%EC%A0%80%EC%82%AC%EC%96%91-pc%EC%97%90-%EA%B0%95%EC%B6%94-%EB%A6%AC%EB%88%85%EC%8A%A4-sparky-linux\/",
   "wordCount": "292",
-  "datePublished": "2019-11-02T02:14:20&#43;09:00",
-  "dateModified": "2019-11-02T02:14:20&#43;09:00",
+  "datePublished": "2019-11-02T02:14:20\u002b09:00",
+  "dateModified": "2019-11-02T02:14:20\u002b09:00",
   "author": {
     "@type": "Person",
     "name": "Dennis"
@@ -98,7 +98,7 @@ if (!doNotTrack) {
     <header class="blog-header">
       <div class="container">
         <h1 class="blog-title" dir="auto"><a href="/" rel="home">Do What You Want To Do</a></h1>
-        <p class="lead blog-description" dir="auto">bluedskim@gmail.com</p>
+        <p class="lead blog-description" dir="auto"><a href="mailto:bluedskim@gmail.com">bluedskim@gmail.com</a></p>
       </div>
     </header>
     
@@ -123,57 +123,39 @@ if (!doNotTrack) {
 
 </p>
   </header>
-  
-
-<h2 id="32bit-노트북에-sparkylinux-설치">32bit 노트북에 SparkyLinux 설치</h2>
-
+  <h2 id="32bit-노트북에-sparkylinux-설치">32bit 노트북에 SparkyLinux 설치</h2>
 <p>설치한 모델은 MSI vr420x이다. 11년 전에 구입한 모델</p>
-
 <ul>
 <li>Intel Pentium Dual Core T2330 (1.6GHz / 1MB / FSB 533MHz)</li>
 <li>2GB DDR2 667Mhz</li>
 </ul>
-
 <p>이 노트북에 설치한 리눅스  OS중에 가장 쾌적하다.</p>
-
-<p><a href="/images/screenShootvr420.png"><img src="/images/screenShootvr420.png" alt="screenShootvr420.png" /></a></p>
-
+<p><a href="/images/screenShootvr420.png"><img src="/images/screenShootvr420.png" alt="screenShootvr420.png"></a></p>
 <h3 id="hibernate-후-resume-안될-때-참고">hibernate 후 resume 안될 때 참고</h3>
-
 <p><a href="https://unix.stackexchange.com/a/410971/380108">https://unix.stackexchange.com/a/410971/380108</a></p>
-
 <p>하여 GRUB_CMDLINE_LINUX_DEFAULT 의 제일 마지막에 nokaslr 옵션을 추가하고</p>
-
 <pre><code>#GRUB_CMDLINE_LINUX_DEFAULT=&quot;quiet splash resume=UUID=9449b1a5-f2c1-4116-a1f3-6b10e63728ef&quot;
 GRUB_CMDLINE_LINUX_DEFAULT=&quot;quiet splash resume=UUID=9449b1a5-f2c1-4116-a1f3-6b10e63728ef nokaslr&quot;
 </code></pre>
-
 <p>update-grub 하면 잘 된다.</p>
-
 <pre><code>sudo update-grub 
 </code></pre>
-
 <h2 id="winbook-tw801에-sparkylinux-설치">Winbook TW801에 SparkyLinux 설치</h2>
-
 <p>노트북에 설치할 때와 방식은 동일하다.</p>
-
 <ul>
 <li>usb에 설치 성공</li>
 <li>SD카드에 설치 후 부팅 실패.</li>
 <li>내장 MMC에 설치하려 했으나 파티션 생성 실패 -.- 윈도우 설치 파티션을 줄이고 리눅스파티션을 만드려고 했으나 2.7g 밖에 확보 못했다.
 다른 툴을 쓰면 가능하다고 하는데 굳이 그렇게까지 하고싶지는 않아서</li>
 </ul>
-
 <p>안되는 것들</p>
-
 <ul>
 <li>bluetooth 안됨</li>
 <li>battery 상태 확인 불가</li>
 <li>hibernate 안됨</li>
 <li>화면에서 터치로 마우스 오른쪽 클릭 안됨. 왼쪽 클릭, 드래그는 됨</li>
 </ul>
-
-<p><a href="/images/screenShotTW801.png"><img src="/images/screenShotTW801.png" alt="screenShotTW801.png" /></a></p>
+<p><a href="/images/screenShotTW801.png"><img src="/images/screenShotTW801.png" alt="screenShotTW801.png"></a></p>
 
 
   
@@ -229,6 +211,8 @@ GRUB_CMDLINE_LINUX_DEFAULT=&quot;quiet splash resume=UUID=9449b1a5-f2c1-4116-a1f
     <ol class="list-unstyled">
 
 
+<li><a href="/posts/tech/karate%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%8D%B0%EB%AA%A8/">Karate 테스트 데모</a></li>
+
 <li><a href="/posts/tech/jboss%EC%9D%98-modeshape%EB%A1%9C-%EC%98%81%EB%8B%A8%EC%96%B4%EB%A5%BC-%EB%B3%B5%EC%88%98%ED%98%95%EB%8B%A8%EC%88%98%ED%98%95%EC%9C%BC%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/">Jboss의 Modeshape로 영단어를 복수형 혹은 단수형으로 변환하기</a></li>
 
 <li><a href="/posts/tech/vs-code-spring-java-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A6%AC%ED%94%84%EB%A0%88%EC%8B%9C-%ED%95%98%EA%B8%B0/">VS Code에서 Spring Java + Gradle 프로젝트 리프레시 하기</a></li>
@@ -236,8 +220,6 @@ GRUB_CMDLINE_LINUX_DEFAULT=&quot;quiet splash resume=UUID=9449b1a5-f2c1-4116-a1f
 <li><a href="/posts/tech/%ED%95%A8%EA%BB%98-%EC%9E%90%EB%9D%BC%EA%B8%B0_%EA%B9%80%EC%B0%BD%EC%A4%80_%EB%A9%94%EB%AA%A8/">함께 자라기(김창준) 메모</a></li>
 
 <li><a href="/posts/tech/pm2-production-process-manager-for-node.js/">PM2 - Production Process Manager for Node</a></li>
-
-<li><a href="/posts/tech/chromebook%EC%97%90-ssh%EC%A0%91%EC%86%8D%ED%95%98%EA%B8%B0/">Chromebook crostini에 SSH접속하기</a></li>
 
     </ol>
   </section>
