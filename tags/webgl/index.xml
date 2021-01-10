@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>WebGL on Do What You Want To Do</title>
-    <link>/tags/webgl/</link>
+    <link>https://bluedskim.github.io/tags/webgl/</link>
     <description>Recent content in WebGL on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Tue, 13 Aug 2019 18:28:39 +0900</lastBuildDate><atom:link href="/tags/webgl/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Aug 2019 18:28:39 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/tags/webgl/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>픽셀북(모든 크롬북?)에서 Quake게임 실행하기</title>
-      <link>/posts/tech/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C-quake%EA%B2%8C%EC%9E%84-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/</link>
+      <link>https://bluedskim.github.io/posts/tech/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C-quake%EA%B2%8C%EC%9E%84-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/</link>
       <pubDate>Tue, 13 Aug 2019 18:28:39 +0900</pubDate>
       
-      <guid>/posts/tech/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C-quake%EA%B2%8C%EC%9E%84-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/</guid>
+      <guid>https://bluedskim.github.io/posts/tech/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C-quake%EA%B2%8C%EC%9E%84-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/</guid>
       <description>Pixelbook은 상당히 사양이 괜찮은 노트북이지만 즐길 수 있는 적당한 FPS게임이 없다. 안드로이드용 FPS는 있지만 뭔가 부족한 느낌이다. 키보드 지원</description>
     </item>
     

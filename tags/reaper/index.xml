@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>reaper on Do What You Want To Do</title>
-    <link>/tags/reaper/</link>
+    <link>https://bluedskim.github.io/tags/reaper/</link>
     <description>Recent content in reaper on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Wed, 10 Jul 2019 17:24:26 +0900</lastBuildDate><atom:link href="/tags/reaper/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Jul 2019 17:24:26 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/tags/reaper/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pixelbook에서 Reaper사용하기</title>
-      <link>/posts/%EC%9D%8C%EC%95%85/pixelbook%EC%97%90%EC%84%9C-reaper%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link>
+      <link>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/pixelbook%EC%97%90%EC%84%9C-reaper%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link>
       <pubDate>Wed, 10 Jul 2019 17:24:26 +0900</pubDate>
       
-      <guid>/posts/%EC%9D%8C%EC%95%85/pixelbook%EC%97%90%EC%84%9C-reaper%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid>
+      <guid>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/pixelbook%EC%97%90%EC%84%9C-reaper%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid>
       <description>크롬북 리눅스 앱에서 오디오 재생을 지원한것은 얼마되지 않았다. (OS버전 74부터 지원) 주위에서 리눅스를 쓰는 사람도 없지만 쓴다고 해도 오디오 편집까지 하는</description>
     </item>
     

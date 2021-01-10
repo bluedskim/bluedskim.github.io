@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Java on Do What You Want To Do</title>
-    <link>/tags/java/</link>
+    <link>https://bluedskim.github.io/tags/java/</link>
     <description>Recent content in Java on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Sun, 11 Oct 2020 21:39:37 +0900</lastBuildDate><atom:link href="/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 11 Oct 2020 21:39:37 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Jboss의 Modeshape로 영단어를 복수형 혹은 단수형으로 변환하기</title>
-      <link>/posts/tech/jboss%EC%9D%98-modeshape%EB%A1%9C-%EC%98%81%EB%8B%A8%EC%96%B4%EB%A5%BC-%EB%B3%B5%EC%88%98%ED%98%95%EB%8B%A8%EC%88%98%ED%98%95%EC%9C%BC%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/</link>
+      <link>https://bluedskim.github.io/posts/tech/jboss%EC%9D%98-modeshape%EB%A1%9C-%EC%98%81%EB%8B%A8%EC%96%B4%EB%A5%BC-%EB%B3%B5%EC%88%98%ED%98%95%EB%8B%A8%EC%88%98%ED%98%95%EC%9C%BC%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/</link>
       <pubDate>Sun, 11 Oct 2020 21:39:37 +0900</pubDate>
       
-      <guid>/posts/tech/jboss%EC%9D%98-modeshape%EB%A1%9C-%EC%98%81%EB%8B%A8%EC%96%B4%EB%A5%BC-%EB%B3%B5%EC%88%98%ED%98%95%EB%8B%A8%EC%88%98%ED%98%95%EC%9C%BC%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/</guid>
+      <guid>https://bluedskim.github.io/posts/tech/jboss%EC%9D%98-modeshape%EB%A1%9C-%EC%98%81%EB%8B%A8%EC%96%B4%EB%A5%BC-%EB%B3%B5%EC%88%98%ED%98%95%EB%8B%A8%EC%88%98%ED%98%95%EC%9C%BC%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/</guid>
       <description>java 프로젝트를 진행할 때 단수 영단어를 복수로 변환하거나 반대로 복수 영단어를 단수로 변환해야 하는 경우가 있다. Jboss에서 제공하는 Modeshape의 Inflector</description>
     </item>
     
     <item>
       <title>VS Code에서 Spring Java &#43; Gradle 프로젝트 리프레시 하기</title>
-      <link>/posts/tech/vs-code-spring-java-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A6%AC%ED%94%84%EB%A0%88%EC%8B%9C-%ED%95%98%EA%B8%B0/</link>
+      <link>https://bluedskim.github.io/posts/tech/vs-code-spring-java-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A6%AC%ED%94%84%EB%A0%88%EC%8B%9C-%ED%95%98%EA%B8%B0/</link>
       <pubDate>Tue, 06 Oct 2020 23:09:54 +0900</pubDate>
       
-      <guid>/posts/tech/vs-code-spring-java-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A6%AC%ED%94%84%EB%A0%88%EC%8B%9C-%ED%95%98%EA%B8%B0/</guid>
+      <guid>https://bluedskim.github.io/posts/tech/vs-code-spring-java-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A6%AC%ED%94%84%EB%A0%88%EC%8B%9C-%ED%95%98%EA%B8%B0/</guid>
       <description>VS code에서 Java 개발은 아직 갈 길이 먼듯. 가령 Tomcat 기반의 MVC 어플리케이션 개발 시 불편한 점이 많다. 제대로 된 플러그인이 없기 때문 -.- 반면 Spring Boot 기반이라면 웹 MVC</description>
     </item>
     
     <item>
       <title>아일랜드의 대표적 ISP인 에이레콤의 WEP 키 제너레이터</title>
-      <link>/posts/software-engineering/%EC%95%84%EC%9D%BC%EB%9E%9C%EB%93%9C%EC%9D%98-%EB%8C%80%ED%91%9C%EC%A0%81-isp%EC%9D%B8-%EC%97%90%EC%9D%B4%EB%A0%88%EC%BD%A4%EC%9D%98-wep-%ED%82%A4-%EC%A0%9C%EB%84%88%EB%A0%88%EC%9D%B4%ED%84%B0/</link>
+      <link>https://bluedskim.github.io/posts/software-engineering/%EC%95%84%EC%9D%BC%EB%9E%9C%EB%93%9C%EC%9D%98-%EB%8C%80%ED%91%9C%EC%A0%81-isp%EC%9D%B8-%EC%97%90%EC%9D%B4%EB%A0%88%EC%BD%A4%EC%9D%98-wep-%ED%82%A4-%EC%A0%9C%EB%84%88%EB%A0%88%EC%9D%B4%ED%84%B0/</link>
       <pubDate>Tue, 11 Nov 2008 18:38:00 +0900</pubDate>
       
-      <guid>/posts/software-engineering/%EC%95%84%EC%9D%BC%EB%9E%9C%EB%93%9C%EC%9D%98-%EB%8C%80%ED%91%9C%EC%A0%81-isp%EC%9D%B8-%EC%97%90%EC%9D%B4%EB%A0%88%EC%BD%A4%EC%9D%98-wep-%ED%82%A4-%EC%A0%9C%EB%84%88%EB%A0%88%EC%9D%B4%ED%84%B0/</guid>
+      <guid>https://bluedskim.github.io/posts/software-engineering/%EC%95%84%EC%9D%BC%EB%9E%9C%EB%93%9C%EC%9D%98-%EB%8C%80%ED%91%9C%EC%A0%81-isp%EC%9D%B8-%EC%97%90%EC%9D%B4%EB%A0%88%EC%BD%A4%EC%9D%98-wep-%ED%82%A4-%EC%A0%9C%EB%84%88%EB%A0%88%EC%9D%B4%ED%84%B0/</guid>
       <description>아일랜드의 대표적 ISP인 에이레콤 의 경우 무선공유기에 디폴트로 세팅된 SSID를 통해서 WEP키를 해킹할수 있는 어이없는 경우가 있다. 해킹툴은 java로</description>
     </item>
     

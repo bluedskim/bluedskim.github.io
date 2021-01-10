@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>개발 on Do What You Want To Do</title>
-    <link>/tags/%EA%B0%9C%EB%B0%9C/</link>
+    <link>https://bluedskim.github.io/tags/%EA%B0%9C%EB%B0%9C/</link>
     <description>Recent content in 개발 on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Sun, 19 Apr 2020 21:44:58 +0900</lastBuildDate><atom:link href="/tags/%EA%B0%9C%EB%B0%9C/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Apr 2020 21:44:58 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/tags/%EA%B0%9C%EB%B0%9C/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>소프트웨어 프로젝트  &#39;구현&#39; 단계 Overview</title>
-      <link>/posts/tech/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B5%AC%ED%98%84-%EB%8B%A8%EA%B3%84-overview/</link>
+      <link>https://bluedskim.github.io/posts/tech/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B5%AC%ED%98%84-%EB%8B%A8%EA%B3%84-overview/</link>
       <pubDate>Sun, 19 Apr 2020 21:44:58 +0900</pubDate>
       
-      <guid>/posts/tech/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B5%AC%ED%98%84-%EB%8B%A8%EA%B3%84-overview/</guid>
+      <guid>https://bluedskim.github.io/posts/tech/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B5%AC%ED%98%84-%EB%8B%A8%EA%B3%84-overview/</guid>
       <description>모 대학 문헌정보학과 학생들을 위한 특강 자료. 소프트웨어 프로젝트의 단계 중 가장 중요한 단계라고 할 수 있는 &amp;lsquo;구현&amp;rsquo; 단계에 대한 흥미위</description>
     </item>
     

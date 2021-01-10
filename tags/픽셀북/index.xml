@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>픽셀북 on Do What You Want To Do</title>
-    <link>/tags/%ED%94%BD%EC%85%80%EB%B6%81/</link>
+    <link>https://bluedskim.github.io/tags/%ED%94%BD%EC%85%80%EB%B6%81/</link>
     <description>Recent content in 픽셀북 on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Sat, 18 Apr 2020 14:22:37 +0900</lastBuildDate><atom:link href="/tags/%ED%94%BD%EC%85%80%EB%B6%81/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Apr 2020 14:22:37 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/tags/%ED%94%BD%EC%85%80%EB%B6%81/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pixelbook에서 Kdenlive로 동영상 편집하기</title>
-      <link>/posts/tech/run-kdenlive-on-pixelbook/</link>
+      <link>https://bluedskim.github.io/posts/tech/run-kdenlive-on-pixelbook/</link>
       <pubDate>Sat, 18 Apr 2020 14:22:37 +0900</pubDate>
       
-      <guid>/posts/tech/run-kdenlive-on-pixelbook/</guid>
+      <guid>https://bluedskim.github.io/posts/tech/run-kdenlive-on-pixelbook/</guid>
       <description>최근 크롬북 리눅스 앱에서 gpu 가속을 지원하면서 GUI프로그램을 사용하기 쾌적해졌다. 특히 게임과 동영상 편집 프로그램을 비롯한 gpu를 많이 사용하는 프로그램</description>
     </item>
     

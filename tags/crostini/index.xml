@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>crostini on Do What You Want To Do</title>
-    <link>/tags/crostini/</link>
+    <link>https://bluedskim.github.io/tags/crostini/</link>
     <description>Recent content in crostini on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Sat, 16 Mar 2019 22:38:28 +0900</lastBuildDate><atom:link href="/tags/crostini/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Mar 2019 22:38:28 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/tags/crostini/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pixelbook Crostini Linux앱에서 한글 입력하기</title>
-      <link>/posts/tech/howtoinputkorenwithcrostinionpixelbook/</link>
+      <link>https://bluedskim.github.io/posts/tech/howtoinputkorenwithcrostinionpixelbook/</link>
       <pubDate>Sat, 16 Mar 2019 22:38:28 +0900</pubDate>
       
-      <guid>/posts/tech/howtoinputkorenwithcrostinionpixelbook/</guid>
+      <guid>https://bluedskim.github.io/posts/tech/howtoinputkorenwithcrostinionpixelbook/</guid>
       <description>영어/알파벳을 쓰는 나라 사람들은 이해하기 힘든 문제가 바로 2byte 이상 문자 입출력 문제이다. 최신 기술일수록 한글지원이 미약한 경우가 많은데 역시나 크롬북도 예외가</description>
     </item>
     

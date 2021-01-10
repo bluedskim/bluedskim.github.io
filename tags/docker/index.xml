@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docker on Do What You Want To Do</title>
-    <link>/tags/docker/</link>
+    <link>https://bluedskim.github.io/tags/docker/</link>
     <description>Recent content in Docker on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Sun, 28 Apr 2019 13:38:28 +0900</lastBuildDate><atom:link href="/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Apr 2019 13:38:28 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>pixelbook에 Docker설치하기</title>
-      <link>/posts/tech/pixelbook%EC%97%90-docker%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</link>
+      <link>https://bluedskim.github.io/posts/tech/pixelbook%EC%97%90-docker%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</link>
       <pubDate>Sun, 28 Apr 2019 13:38:28 +0900</pubDate>
       
-      <guid>/posts/tech/pixelbook%EC%97%90-docker%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</guid>
+      <guid>https://bluedskim.github.io/posts/tech/pixelbook%EC%97%90-docker%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</guid>
       <description>reddit에 의하면 Chromeos 72 이상에서 docker-ce 최신 버전 설치에 문제가 없다고 한다(참고 : https://www.reddit.com/r/Crostini/comments/aoc9i7/docker_working_now/) 여기 가이드대로 진행하면 문제없이 설치되는데 https://docs.docker.com/install/linux/docker-ce/debian/ 한가지 주의사항이 있다. add-apt-repository</description>
     </item>
     
