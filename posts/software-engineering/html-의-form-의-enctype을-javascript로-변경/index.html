@@ -25,7 +25,7 @@
   "@type": "BlogPosting",
   "headline": "html 의 form 의 enctype을 javascript로 변경",
   "url": "https:\/\/bluedskim.github.io\/posts\/software-engineering\/html-%EC%9D%98-form-%EC%9D%98-enctype%EC%9D%84-javascript%EB%A1%9C-%EB%B3%80%EA%B2%BD\/",
-  "wordCount": "224",
+  "wordCount": "218",
   "datePublished": "2007-07-05T07:54:00\u002b09:00",
   "dateModified": "2007-07-05T07:54:00\u002b09:00",
   "author": {
@@ -121,47 +121,55 @@ if (!doNotTrack) {
 
 </p>
   </header>
-  <p><!-- raw HTML omitted --><!-- raw HTML omitted -->html 의 form 의 enctype을 명시적으로 지정하지 않으면 기본은 application/x-www-form-urlencoded 이다.
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->이것을 javascrtip로 변경하는 샘플이다.
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->주의할 점은 javascript로 참조할 때는
-<!-- raw HTML omitted -->enctype<!-- raw HTML omitted -->이 아니라
-<!-- raw HTML omitted -->encoding<!-- raw HTML omitted --> 이라는 점이다.
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->&lt;html&gt;
-<!-- raw HTML omitted -->&lt;script&gt;
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->function changeEnctype() {
-<!-- raw HTML omitted -->    myform = document.form1;
-<!-- raw HTML omitted -->    
-<!-- raw HTML omitted -->    alert(&lsquo;원래의 enctype: ' + myform.
-<!-- raw HTML omitted -->encoding<!-- raw HTML omitted -->);
-<!-- raw HTML omitted -->    
-<!-- raw HTML omitted -->    myform.
-<!-- raw HTML omitted -->encoding<!-- raw HTML omitted -->=&ldquo;application/x-www-form-urlencoded&rdquo;;    
-<!-- raw HTML omitted -->    alert(&lsquo;디폴트로 변경 enctype: ' + myform.
-<!-- raw HTML omitted -->encoding<!-- raw HTML omitted -->);
-<!-- raw HTML omitted -->    
-<!-- raw HTML omitted -->    myform.
-<!-- raw HTML omitted -->encoding<!-- raw HTML omitted -->=&ldquo;multipart/form-data&rdquo;;
-<!-- raw HTML omitted -->    alert(&lsquo;원래대로 변경 enctype: ' + myform.
-<!-- raw HTML omitted -->encoding<!-- raw HTML omitted -->);
-<!-- raw HTML omitted -->}
-<!-- raw HTML omitted -->&lt;/script&gt;
-<!-- raw HTML omitted -->&lt;body&gt;
-<!-- raw HTML omitted -->&lt;form name=form1 method=&ldquo;post&rdquo;
-<!-- raw HTML omitted -->enctype<!-- raw HTML omitted -->=&ldquo;multipart/form-data&rdquo;&gt;
-<!-- raw HTML omitted -->&lt;input type=&ldquo;button&rdquo; value=&ldquo;enctype확인&rdquo; onClick=&ldquo;changeEnctype()&quot;&gt;
-<!-- raw HTML omitted -->&lt;/form&gt;
-<!-- raw HTML omitted -->&lt;/body&gt;
-<!-- raw HTML omitted -->&lt;/html&gt;
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted --></p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-
+  <p><span class="copyright_entry" style="display:block;" title="html 의 form 의 enctype을 javascript로 변경@@**@@http://shed.egloos.com/1597101"></span>html 의 form 의 enctype을 명시적으로 지정하지 않으면 기본은 application/x-www-form-urlencoded 이다.
+<br>
+<br>이것을 javascrtip로 변경하는 샘플이다.
+<br>
+<br>주의할 점은 javascript로 참조할 때는
+<span style="background-color: rgb(102, 204, 204);">enctype</span>이 아니라
+<span style="background-color: rgb(255, 153, 0);">encoding</span> 이라는 점이다.
+<br>
+<br>&lt;html&gt;
+<br>&lt;script&gt;
+<br>
+<br>function changeEnctype() {
+<br>    myform = document.form1;
+<br>    
+<br>    alert(&lsquo;원래의 enctype: ' + myform.
+<span style="background-color: rgb(255, 153, 0);">encoding</span>);
+<br>    
+<br>    myform.
+<span style="background-color: rgb(255, 153, 0);">encoding</span>=&ldquo;application/x-www-form-urlencoded&rdquo;;    
+<br>    alert(&lsquo;디폴트로 변경 enctype: ' + myform.
+<span style="background-color: rgb(255, 153, 0);">encoding</span>);
+<br>    
+<br>    myform.
+<span style="background-color: rgb(255, 153, 0);">encoding</span>=&ldquo;multipart/form-data&rdquo;;
+<br>    alert(&lsquo;원래대로 변경 enctype: ' + myform.
+<span style="background-color: rgb(255, 153, 0);">encoding</span>);
+<br>}
+<br>&lt;/script&gt;
+<br>&lt;body&gt;
+<br>&lt;form name=form1 method=&ldquo;post&rdquo;
+<span style="background-color: rgb(102, 204, 204);">enctype</span>=&ldquo;multipart/form-data&rdquo;&gt;
+<br>&lt;input type=&ldquo;button&rdquo; value=&ldquo;enctype확인&rdquo; onClick=&ldquo;changeEnctype()&quot;&gt;
+<br>&lt;/form&gt;
+<br>&lt;/body&gt;
+<br>&lt;/html&gt;
+<br>
+<br></p>
+<!--
+       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		    xmlns:dc="http://purl.org/dc/elements/1.1/"
+		    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+       <rdf:Description
+	        rdf:about="http://shed.egloos.com/1597101"
+	        dc:identifier="http://shed.egloos.com/1597101"
+	        dc:title="html 의 form 의 enctype을 javascript로 변경"
+	        trackback:ping="http://shed.egloos.com/tb/1597101"/>
+       </rdf:RDF>
+       -->
+<ul></ul>
 
   
 

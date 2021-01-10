@@ -25,7 +25,7 @@
   "@type": "BlogPosting",
   "headline": "Mirroring With Wget",
   "url": "https:\/\/bluedskim.github.io\/posts\/tech\/mirroring-with-wget\/",
-  "wordCount": "290",
+  "wordCount": "223",
   "datePublished": "2019-10-29T21:42:39\u002b09:00",
   "dateModified": "2019-10-29T21:42:39\u002b09:00",
   "author": {
@@ -126,11 +126,11 @@ if (!doNotTrack) {
   <p>볼만한 하둡 pdf 자료가 없어서 공식 홈페이지의 document를 다운받기로 했다.</p>
 <p>웹사이트 미러링에는 wget 관련 자료가 가장 많다.</p>
 <p>사용한 옵션을 정리해보자</p>
-<p>&ndash;mirror : 해당 사이트의 link를 follow하면서 미러링을 한다.<!-- raw HTML omitted -->
-&ndash;convert-links : 링크가 로컬에서도 동작하도록 변환한다.<!-- raw HTML omitted -->
-&ndash;html-extension : 디렉토리 형태의 주소를 저장할 때 html 확장자를 붙혀준다. 로컬에서 조회할 때 필수~!<!-- raw HTML omitted -->
-&ndash;wait=2 : 서버 부하를 줄여주기 위해 2초간 쉰다.<!-- raw HTML omitted -->
-&ndash;no-parent : 상위 경로는 받아오지 않는다.<!-- raw HTML omitted -->
+<p>&ndash;mirror : 해당 사이트의 link를 follow하면서 미러링을 한다.<br/>
+&ndash;convert-links : 링크가 로컬에서도 동작하도록 변환한다.<br/>
+&ndash;html-extension : 디렉토리 형태의 주소를 저장할 때 html 확장자를 붙혀준다. 로컬에서 조회할 때 필수~!<br/>
+&ndash;wait=2 : 서버 부하를 줄여주기 위해 2초간 쉰다.<br/>
+&ndash;no-parent : 상위 경로는 받아오지 않는다.<br/>
 -o log : log라는 이름으로 로그를 저장한다.</p>
 <pre><code>wget --mirror            \
      --convert-links     \

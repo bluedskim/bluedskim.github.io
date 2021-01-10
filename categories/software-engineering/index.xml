@@ -13,7 +13,7 @@
       <pubDate>Sat, 17 Jul 2010 12:53:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/%EC%9E%83%EC%96%B4%EB%B2%84%EB%A6%B0_%EB%8F%84%EB%82%9C%EB%8B%B9%ED%95%9C-ipad-iphone-ipod-%EB%A5%BC-%EC%B0%BE%EA%B8%B0-%EC%9C%84%ED%95%9C-%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4/</guid>
-      <description></description>
+      <description>간략하게 정리하면&amp;nbsp; iPad 에서 매시간마다 특정 웹페이지를 방문하도록 함(wget 이용) 그 웹페이지는 현재 iPad의 IP 주소를 기록함 (&amp;nbsp;ipadLog.zip&amp;nbsp;)&amp;nbsp; 참조 URL :&amp;nbsp;http://brazilflavored.com/ipadLog/logs/2010_07_16_log.txt&amp;nbsp;&amp;nbsp; ht</description>
     </item>
     
     <item>
@@ -31,7 +31,7 @@
       <pubDate>Mon, 29 Jun 2009 11:06:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/%EC%A3%BC%EB%AA%A9%ED%95%98%EB%8A%94-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%8D%A8%EB%8B%88%EC%9D%98-%E4%B8%80%E7%94%9F%E7%89%9B%E6%AD%A5%E8%A1%8C-%EC%97%90%EC%84%9C-%ED%8D%BC%EC%98%B4/</guid>
-      <description>&amp;quot; 써니의 一生牛步行&amp;quot; http://sunnykwak.egloos.com/4418486에 유용한 IT(개발)관련 블로그 목록을 보고</description>
+      <description>&amp;quot; 써니의 一生牛步行&amp;quot; http://sunnykwak.egloos.com/4418486 에 유용한 IT(개발)관련 블로그 목록을 보고 opml로 만들었다. 아래는 목록이다. * All of Software * art.oriented * Channy&amp;rsquo;s Blog * Eternity&amp;rsquo;s Chit-Chat * From Business To</description>
     </item>
     
     <item>
@@ -40,7 +40,7 @@
       <pubDate>Sat, 27 Jun 2009 14:40:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8-%EA%B3%84%EC%B8%B5%EB%8F%84-%EC%9E%90%EB%B0%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EB%8A%94-%EC%9E%90%EC%8B%A0%EB%93%A4%EC%9D%B4-html%EC%9D%84-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%96%B8%EC%96%B4%EB%9D%BC%EA%B3%A0-%EC%A3%BC%EC%9E%A5%ED%95%98%EB%8A%94-%EC%82%AC%EB%9E%8C%EB%93%A4%EB%B3%B4%EB%8B%A4-%EC%9A%B0%EC%9B%94%ED%95%98%EB%8B%A4%EA%B3%A0-%EC%83%9D%EA%B0%81%ED%95%9C%EB%8B%A4./</guid>
-      <description>흥분하지 말고, 그냥 재미로 보자</description>
+      <description>흥분하지 말고, 그냥 재미로 보자 (원본 : http://lukewelling.com/2006/08/03/java-programmers-are-the-erotic-furries-of-programming/) --</description>
     </item>
     
     <item>
@@ -49,7 +49,7 @@
       <pubDate>Thu, 18 Jun 2009 14:10:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/%EC%97%91%EC%85%80%EC%97%90%EC%84%9C-%EC%85%80-%EB%82%B4%EC%9A%A9%EC%9D%B4-%EB%B3%80%EA%B2%BD%EB%90%98%EC%97%88%EC%9D%84-%EB%95%8C-%EB%B0%9C%EC%83%9D%ED%95%98%EB%8A%94-%EC%9D%B4%EB%B2%A4%ED%8A%B8-catch-%ED%95%98%EA%B8%B0/</guid>
-      <description>엑셀에서 특정 cell이 변경되었을 때 이벤트를 잡을 수(catch)있다. &amp;lt;참고 URL&amp;gt; http://0607.tistory.com/tag/Excel http://www.eggheadcafe.com/forumarchives/Excelprogramming/Dec2005/post25592375.asp http://www.ozgrid.com/VBA/run-macros-change.htm * 엑셀예제 : catchingCellValueChangeEvent.xls</description>
+      <description>엑셀에서 특정 cell이 변경되었을 때 이벤트를 잡을 수(catch)있다. &amp;lt;참고 URL&amp;gt; http://0607.tistory.com/tag/Excel http://www.eggheadcafe.com/forumarchives/Excelprogramming/Dec2005/post25592375.asp http://www.ozgrid.com/VBA/run-macros-change.htm * 엑셀예제 : catchingCellValueChangeEvent.xls --</description>
     </item>
     
     <item>
@@ -58,7 +58,7 @@
       <pubDate>Wed, 17 Jun 2009 12:50:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/%EC%9B%B9%EA%B0%9C%EB%B0%9C%EC%9D%98-%ED%9D%90%EB%A6%84-web_development_timeline.png/</guid>
-      <description>10년 세월이 주마등 처럼 지나간다. 인터넷이 있어서 정말 다행이다. http://upload.wikimedia.org/wikipedia/co</description>
+      <description>10년 세월이 주마등 처럼 지나간다. 인터넷이 있어서 정말 다행이다. http://upload.wikimedia.org/wikipedia/commons/e/e4/Web_development_timeline.png 출처 http://wikimedia.org/ -- 써니 2009/06/17 19:26 # 답글 웹으로 10년간 밥벌이 했지만... 저 기록을 다시 보니... &#39;</description>
     </item>
     
     <item>
@@ -67,7 +67,7 @@
       <pubDate>Fri, 12 Jun 2009 15:24:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/xming%EC%9D%84-%EC%9D%B4%EC%9A%A9-gnome_kde-%EB%8D%B0%EC%8A%A4%ED%81%AC%ED%83%91-%EB%9D%84%EC%9A%B0%EA%B8%B0/</guid>
-      <description>http://jetzt.tistory.com/529 에 보면 잘 나와있다. 다음 첨부는 설정파일이므로 파일 설정만 바꿔도 된다. gnome-session.config.xlaunch근데 Xming 을 어떻게 읽어</description>
+      <description>http://jetzt.tistory.com/529 에 보면 잘 나와있다. 다음 첨부는 설정파일이므로 파일 설정만 바꿔도 된다. gnome-session.config.xlaunch 근데 Xming 을 어떻게 읽어야 하나? 엑스밍? 즈밍? --</description>
     </item>
     
     <item>
@@ -76,7 +76,7 @@
       <pubDate>Tue, 19 May 2009 13:22:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/the-dos-and-donts-of-a-java-position-interview/</guid>
-      <description></description>
+      <description>왠만해서는 copy &amp;amp; paste는 안하려고 하지만 이거는 나중에 혹시나 없어질까 봐서 해둔다. The Dos and Don&#39;ts of a Java Position Interview By Liviu Tudor Go to page: 1 &amp;nbsp;2 &amp;nbsp;Next &amp;nbsp; I&#39;m suremany of us in the Java field have been through this</description>
     </item>
     
     <item>
@@ -85,7 +85,7 @@
       <pubDate>Thu, 14 May 2009 01:19:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/portable-ubuntu-%ED%8C%81/</guid>
-      <description>Portable Ubuntu 는 윈도우 시스템 위에서 설치 사용할 수 있는 우분투이다. 속도는 느리지만 리눅스 체험용으로는 충분하다. * 처음 설치하기 : http://www.choboweb.com/900* 업그레이드 하기(이미지 파일 사</description>
+      <description>Portable Ubuntu 는 윈도우 시스템 위에서 설치 사용할 수 있는 우분투이다. 속도는 느리지만 리눅스 체험용으로는 충분하다. * 처음 설치하기 : http://www.choboweb.com/900 * 업그레이드 하기(이미지 파일</description>
     </item>
     
     <item>
@@ -112,7 +112,7 @@
       <pubDate>Fri, 16 Jan 2009 20:19:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/postgre-%EB%B0%B1%EC%97%85%ED%8C%8C%EC%9D%BC-%EB%B3%B5%EC%9B%90-%EB%AA%85%EB%A0%B9/</guid>
-      <description></description>
+      <description>E:\Program Files\PostgreSQL\8.2\bin&amp;gt;psql dbName &amp;lt; E:\eclipse3.3.2\workspace\ijoin \database\html_static_labels.backup&amp;nbsp;userId Password for user ijoin: thePassword --</description>
     </item>
     
     <item>
@@ -121,7 +121,7 @@
       <pubDate>Sat, 20 Dec 2008 00:23:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4%EC%97%90%EC%84%9C-%EB%8C%80%EC%9D%91%EB%90%98%EB%8A%94-%EA%B4%84%ED%98%B8%EC%B0%BE%EA%B8%B0/</guid>
-      <description>&#39;{ 혹은 (&#39; 와 대응되는 &amp;lsquo;} 혹은 )&amp;lsquo;를 찾고 싶다면</description>
+      <description>&#39;{ 혹은 (&#39; 와 대응되는 &amp;lsquo;} 혹은 )&amp;lsquo;를 찾고 싶다면 단순히 커서를 { 다음에 놓으면 대응되는 괄호에 사각형이 씌워져서 구별할 수 있다. 커서를 { 다음에 놓은</description>
     </item>
     
     <item>
@@ -130,7 +130,7 @@
       <pubDate>Thu, 11 Dec 2008 01:13:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/apache-wicket-localization-%EC%83%98%ED%94%8C/</guid>
-      <description></description>
+      <description>Apache wicket의 현지화 데모화면이다. http://www.wicket-library.com/wicket-examples/pub/ 하이트 사진은 어디서 구했는지... --</description>
     </item>
     
     <item>
@@ -139,7 +139,7 @@
       <pubDate>Wed, 03 Dec 2008 20:17:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/simple-webcam-capture-command-line-%EC%A7%80%EC%9B%90/</guid>
-      <description>http://mattcollinge.wordpress.com/software/simple-webcam-capture/</description>
+      <description>http://mattcollinge.wordpress.com/software/simple-webcam-capture/ 다른 캡쳐프로그램들도 많지만 이건&amp;nbsp; command line을 지원한다. 즉, &#34;예약된 작업&#34;에 등록하면 특정 시간 간격으로 웹캠을 자동으로 찍고 curl 같은 유틸리</description>
     </item>
     
     <item>
@@ -148,7 +148,7 @@
       <pubDate>Tue, 02 Dec 2008 22:37:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/windows-desktop-screen-logger/</guid>
-      <description>제목은 거창하지만</description>
+      <description>제목은 거창하지만 사실은, 윈도우 데스크탑의 화면을 일정 시간 간격으로 웹서버에 업로드하는 일종의 솔류션(?), 아니 프로그램 묶음이라고 할 수 있겠다. 왜 이런</description>
     </item>
     
     <item>
@@ -220,7 +220,7 @@
       <pubDate>Sat, 23 Feb 2008 14:03:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/sharp-zaurus-c1000%EC%97%90-milkytracker-0.90.50-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</guid>
-      <description>음악 신디사이저, 샘플러, 작곡 프로그램인 milky tracker설치법입니다. (자세한 정보는 tracker.net/?ABOUT) target=_blank&amp;gt;http://www.milkytracker.net/?ABOUT)www.milky tracker.net 에서 다운로드 받은 ipk만 설치해서는 동작하지 않습니다.</description>
+      <description>음악 신디사이저, 샘플러, 작곡 프로그램인 milky tracker 설치법입니다. (자세한 정보는 tracker.net/?ABOUT) target=_blank&amp;gt;http://www.milkytracker.net/?ABOUT) www.milky tracker.net 에서 다운로드 받은 ipk만 설치해서는 동작하지 않습니다. (SL55</description>
     </item>
     
     <item>
@@ -229,7 +229,7 @@
       <pubDate>Wed, 09 Jan 2008 19:40:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EC%97%90%EA%B2%8C-%EA%B8%B0%EB%8C%80%EB%90%98%EB%8A%94-%ED%92%88%EC%84%B1%EA%B3%BC-%EB%8A%A5%EB%A0%A5/</guid>
-      <description></description>
+      <description>들어가며 이 글은IT업계로 뛰어드는 후배들에게 하고 싶은 이야기일 뿐 아니라본인 스스로에게 다짐하고자 하는 목적으로 쓰는 글입니다. 최근IT업계에서 엔지니어</description>
     </item>
     
     <item>
@@ -238,7 +238,7 @@
       <pubDate>Wed, 09 Jan 2008 17:21:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/127.0.0.1/</guid>
-      <description>from http://kldp.org/node/89896 from http://katejlogan.blogspot.com/2007/10/thinkgeek-theres-no-place-like-127001.html from http://www.thinkgeek.com/homeoffice/gear/6806/ from http://www.teeshirtsdevon.co.uk/cart/product.php?productid=21 from http://board.gulli.com/thread/124187-so-erffnet-ihr-euren-eigenen-ftp-server/15/ </description>
+      <description> from http://kldp.org/node/89896 from http://katejlogan.blogspot.com/2007/10/thinkgeek-theres-no-place-like-127001.html from http://www.thinkgeek.com/homeoffice/gear/6806/ from http://www.teeshirtsdevon.co.uk/cart/product.php?productid=21 from http://board.gulli.com/thread/124187-so-erffnet-ihr-euren-eigenen-ftp-server/15/  -- </description>
     </item>
     
     <item>
@@ -256,7 +256,7 @@
       <pubDate>Mon, 10 Dec 2007 09:01:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/%EB%B6%88%EB%B2%95%EB%B3%B5%EC%A0%9C%EB%8A%94-%EB%AC%B8%EC%A0%9C%EA%B0%80-%EC%95%84%EB%8B%88%EB%8B%A4.-%EB%AC%B8%EC%A0%9C%EB%8A%94-%EB%AC%B4%EB%AA%85%EC%9C%BC%EB%A1%9C-%EB%82%A8%EB%8A%94-%EA%B2%83%EC%9D%B4%EB%8B%A4-by-cory-doctorow.-%EC%9C%84%ED%82%A4%EB%85%B8%EB%AF%B9%EC%8A%A421%EC%84%B8%EA%B8%B0%EB%B6%81%EC%8A%A4-%EC%A4%91%EC%97%90%EC%84%9C/</guid>
-      <description>인터넷이 아니었다면 어떻게 저 소년을 만났겠는가?</description>
+      <description>인터넷이 아니었다면 어떻게 저 소년을 만났겠는가? Oh Danny boy, the pipes, the pipes are calling From glen to glen, and down the mountain side The summer&#39;s gone, and all the flowers are dying &#39;tis you, &#39;tis you must go and I must bide. But come you back when summer&#39;s in the meadow Or when</description>
     </item>
     
     <item>
@@ -265,7 +265,7 @@
       <pubDate>Thu, 06 Dec 2007 10:51:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/%EC%9B%B9-%EA%B8%B0%EC%88%A0-%EA%B0%80%EA%B3%84%EB%8F%84-modernlifeisrubbish.co.uk/</guid>
-      <description>출처 : http://www.modernlifeisrubbish.co.uk/article/web-tech-family-tree</description>
+      <description>출처 : http://www.modernlifeisrubbish.co.uk/article/web-tech-family-tree --</description>
     </item>
     
     <item>
@@ -274,7 +274,7 @@
       <pubDate>Fri, 30 Nov 2007 15:30:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/wget-%ED%99%9C%EC%9A%A9-%ED%97%A4%EB%8D%94%EC%A0%95%EB%B3%B4-%EB%B3%B4%EA%B8%B0-%ED%8C%8C%EC%9D%BC%EC%9D%84-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-%ED%95%98%EC%97%AC-%ED%8A%B9%EC%A0%95%EC%9D%B4%EB%A6%84%EC%9C%BC%EB%A1%9C-%EC%A0%80%EC%9E%A5/</guid>
-      <description>* 윈도우용 wget : wget.exeC:&amp;amp;gt; wget &amp;ndash;spider -S http://www.naver.com&amp;ndash;&amp;gt; 헤더정보를 console에 뿌린다.&amp;ndash;15:04:28&amp;ndash; http://www.naver.com/ =&amp;gt; index.html&#39; &amp;lt;br&amp;gt;Resolving www.naver.com... done. &amp;lt;br&amp;gt;Connecting to www.naver.com[202.131.30.82]:80... connected.&amp;amp;nbsp; &amp;lt;span style=&amp;quot;background-color: rgb(255, 255, 255); color: rgb(51, 102, 255);</description>
+      <description>* 윈도우용 wget : wget.exe C:&amp;amp;gt; wget &amp;ndash;spider -S http://www.naver.com&amp;ndash;&amp;gt; 헤더정보를 console에 뿌린다. &amp;ndash;15:04:28&amp;ndash; http://www.naver.com/ =&amp;gt; index.html&#39; &amp;lt;br&amp;gt;Resolving www.naver.com... done. &amp;lt;br&amp;gt;Connecting to www.naver.com[202.131.30.82]:80... connected.&amp;amp;nbsp; &amp;lt;span style=&amp;quot;background-color: rgb(255, 255, 255); color: rgb(51, 102, 255); font-weight: bold; font-family: &#39;바탕&#39;,&#39;Batang&#39;;&amp;qu</description>
     </item>
     
     <item>
@@ -283,7 +283,7 @@
       <pubDate>Thu, 15 Nov 2007 09:48:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/olpc%EC%9D%98-xo%EC%BB%B4%ED%93%A8%ED%84%B0-%EB%93%9C%EB%94%94%EC%96%B4-%EB%B3%B8%EA%B2%A9%EC%A0%81%EC%9C%BC%EB%A1%9C-%EB%B0%B0%ED%8F%AC%ED%95%98%EB%8A%94-%EB%93%AF/</guid>
-      <description>OLPC창설자이자 의장인 니콜라스 네그로폰테는 최근 까지 MIT 교수였고 현재 모토롤라의 임원이기도 하다. 95년 &amp;lsquo;디지털이다-Being Digital&amp;rsquo; 이라</description>
+      <description>OLPC 창설자이자 의장인 니콜라스 네그로폰테 는 최근 까지 MIT 교수였고 현재 모토롤라의 임원이기도 하다. 95년 &amp;lsquo;디지털이다-Being Digital&amp;rsquo; 이라는 책도</description>
     </item>
     
     <item>
@@ -301,7 +301,7 @@
       <pubDate>Thu, 08 Nov 2007 09:11:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/%EC%95%84%EC%9D%BC%EB%9E%9C%EB%93%9C-%EB%8D%94%EB%B8%94%EB%A6%B0%EC%97%90-java-%EC%9D%B8%EB%A0%A5%EC%9D%B4-%EA%B7%80%ED%95%9C%EA%B0%80-%EB%B3%B4%EB%8B%A4./</guid>
-      <description>아일랜드 헤드헌터의 하소연 &amp;ldquo;Java Jobs - Where have all the developers gone&amp;rdquo; http://www.dubjug.org/node/23 &amp;ldquo;Seriously guys - Java is a problem&amp;rdquo; http://www.dubjug.org/node/27</description>
+      <description>아일랜드 헤드헌터의 하소연 &amp;ldquo;Java Jobs - Where have all the developers gone&amp;rdquo; http://www.dubjug.org/node/23 &amp;ldquo;Seriously guys - Java is a problem&amp;rdquo; http://www.dubjug.org/node/27 --</description>
     </item>
     
     <item>
@@ -328,7 +328,7 @@
       <pubDate>Thu, 01 Nov 2007 17:46:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/ftp-script-%EC%83%98%ED%94%8C/</guid>
-      <description>암호 중간에 스페이스 문자가 있을 때 아래와 같이 한다. #!/bin/sh HOST=&amp;lsquo;ftp.somehost.com&amp;rsquo; USER=&amp;lsquo;loginid&amp;rsquo; PASSWD=&amp;lsquo;pass word&amp;rsquo;ftp -v -n $HOST &amp;lt;&amp;lt;END_SCRIPT quote USER $USER quote PASS $PASSWD passive pwd quit END_SCRIPT exit 0</description>
+      <description>암호 중간에 스페이스 문자가 있을 때 아래와 같이 한다. #!/bin/sh HOST=&amp;lsquo;ftp.somehost.com&amp;rsquo; USER=&amp;lsquo;loginid&amp;rsquo; PASSWD=&amp;lsquo;pass word&amp;rsquo; ftp -v -n $HOST &amp;lt;&amp;lt;END_SCRIPT quote USER $USER quote PASS $PASSWD passive pwd quit END_SCRIPT exit 0 --</description>
     </item>
     
     <item>
@@ -346,7 +346,7 @@
       <pubDate>Tue, 02 Oct 2007 15:19:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/2007-jco-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-%EC%BB%A8%ED%8D%BC%EB%9F%B0%EC%8A%A4/</guid>
-      <description>간만에 재미있을거 같은 컨퍼런스~</description>
+      <description>간만에 재미있을거 같은 컨퍼런스~ --</description>
     </item>
     
     <item>
@@ -355,7 +355,7 @@
       <pubDate>Tue, 07 Aug 2007 17:59:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/%ED%8C%8C%EC%9D%B4%ED%94%84%EB%A1%9C-grep-%EC%97%AC%EB%9F%AC-%EB%B2%88-%EC%8B%A4%ED%96%89-%ED%9B%84-%EA%B2%B0%EA%B3%BC%EB%A5%BC-txt-%ED%8C%8C%EC%9D%BC%EB%A1%9C-%EC%A0%80%EC%9E%A5/</guid>
-      <description>grep &amp;ldquo;/gateway&amp;rdquo; access.log_*2007 | grep &amp;ldquo;01046184971&amp;rdquo; | grep &amp;ldquo;bookDiv&amp;rdquo; &amp;gt; ~/grepResult01046184971.txt regular expression을 쓰는것이 더 우아한 방법이겠으나&amp;hellip; ㅠㅠ</description>
+      <description>grep &amp;ldquo;/gateway&amp;rdquo; access.log_*2007 | grep &amp;ldquo;01046184971&amp;rdquo; | grep &amp;ldquo;bookDiv&amp;rdquo; &amp;gt; ~/grepResult01046184971.txt regular expression 을 쓰는것이 더 우아한 방법이겠으나&amp;hellip; ㅠㅠ --</description>
     </item>
     
     <item>
@@ -418,7 +418,7 @@
       <pubDate>Wed, 25 Apr 2007 15:17:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/jsp-%EC%97%90%EC%84%9C-request-header-%EB%AA%A8%EB%91%90-%EC%B0%8D%EC%96%B4%EB%B3%B4%EA%B8%B0/</guid>
-      <description>아래코드를 그대로 copy &amp;amp; paste 하면 됨 Enumeration em = request.getHeaderNames(); while (em.hasMoreElements()){ String s = (String)em.nextElement(); out.println(s +&amp;quot; : &amp;ldquo;); out.println(request.getHeader(s)+&amp;quot;&amp;lt;br&amp;gt;&amp;quot;); }</description>
+      <description>아래코드를 그대로 copy &amp;amp; paste 하면 됨 Enumeration em = request.getHeaderNames(); while (em.hasMoreElements()){ String s = (String)em.nextElement(); out.println(s +&amp;quot; : &amp;ldquo;); out.println(request.getHeader(s)+&amp;quot;&amp;lt;br&amp;gt;&amp;quot;); } --</description>
     </item>
     
     <item>
@@ -427,7 +427,7 @@
       <pubDate>Mon, 12 Feb 2007 19:32:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/%EC%BB%B4%ED%93%A8%ED%84%B0%EB%8A%94%EC%9A%94-%EC%A0%88%EB%8C%80%EB%A1%9C-%EA%B1%B0%EC%A7%93%EB%A7%90%EC%9D%84-%EC%95%88%ED%95%A9%EB%8B%88%EB%8B%A4./</guid>
-      <description></description>
+      <description>한국 최초의 컴퓨터 종합지인 월간컴퓨터학습 창간호 (1983년 11월) 에 실린 기사. 나중에 잡지 이름을 마이컴(MyCom)이라는 이름으로 개명하게 됩니다</description>
     </item>
     
     <item>
@@ -436,7 +436,7 @@
       <pubDate>Tue, 06 Feb 2007 20:25:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/google-2084/</guid>
-      <description>http://www.nytimes.com/imagepages/2005/10/10/opinion/1010opart.html 조지오웰의 1984 보다 100년 후.</description>
+      <description>http://www.nytimes.com/imagepages/2005/10/10/opinion/1010opart.html 조지오웰의 1984 보다 100년 후. --</description>
     </item>
     
     <item>
@@ -445,7 +445,7 @@
       <pubDate>Sat, 03 Feb 2007 09:58:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/%ED%98%84%EC%9E%AC-%ED%8F%B4%EB%8D%94%EC%97%90%EC%84%9C-%ED%95%98%EC%9C%84-%ED%8F%B4%EB%8D%94%EA%B9%8C%EC%A7%80-%EB%AA%A8%EB%93%A0-%ED%8C%8C%EC%9D%BC%EB%AA%A9%EB%A1%9D-dir-_on-_b-_a-d-_s-list.txt/</guid>
-      <description>도스 명령어임.</description>
+      <description>list.txt@@**@@http://shed.egloos.com/1502810&#34;도스 명령어임. 현재 폴더에서 하위 폴더까지 모든 파일목록</description>
     </item>
     
     <item>
@@ -454,7 +454,7 @@
       <pubDate>Thu, 01 Feb 2007 19:53:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/java-ee-5%EB%A5%BC-%EC%9D%B4%EB%A3%A8%EB%8A%94-%EC%8B%A0%EA%B8%B0%EC%88%A0%EB%93%A4/</guid>
-      <description>출처 http://www.zdnet.co.kr/builder/dev/java/0,39031622,39153447,00.htm</description>
+      <description>출처 http://www.zdnet.co.kr/builder/dev/java/0,39031622,39153447,00.htm --</description>
     </item>
     
     <item>
@@ -481,7 +481,7 @@
       <pubDate>Tue, 23 Jan 2007 13:11:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/%EB%AC%B4%EB%A3%8C-%EB%B0%94%EC%9D%B4%EB%9F%AC%EC%8A%A4-%EB%B0%8F-%EC%8A%A4%ED%8C%8C%EC%9D%B4%EC%9B%A8%EC%96%B4-%EA%B2%80%EC%82%AC/</guid>
-      <description>http://onecare.live.com/site/ko-KR/default.htm?s_cid=sahhttp://www.activevirusshield.com/antivirus/freeav/</description>
+      <description>http://onecare.live.com/site/ko-KR/default.htm?s_cid=sah http://www.activevirusshield.com/antivirus/freeav/ --</description>
     </item>
     
     <item>
@@ -490,7 +490,7 @@
       <pubDate>Tue, 23 Jan 2007 13:07:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/%EC%BD%94%EB%94%A9%ED%95%98%EB%8D%98-%EB%85%B8%EC%9D%B8/</guid>
-      <description>from &amp;lsquo;http://okjsp.pe.kr/seq/84327&#39; 코딩하던 노인</description>
+      <description>from &amp;lsquo;http://okjsp.pe.kr/seq/84327&#39; 코딩하던 노인 원작 : 尹五榮의 &#39;방망이 깎던 노인&#39; 벌써 3-4년 전이다. 내가 갓 취업 한 지 얼마 안 돼서 구로공단에서 일 하던 때다. 이른 아침. 찜질방에서 잔 뒤</description>
     </item>
     
     <item>
@@ -499,7 +499,7 @@
       <pubDate>Thu, 18 Jan 2007 16:42:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/%EC%B1%85%EC%9D%BD%EC%96%B4%EC%A3%BC%EB%8A%94-%EB%8F%84%EC%84%9C%EA%B4%80-%EC%A0%84%EC%9A%A9%ED%8F%B0-wipi-%ED%99%94%EB%A9%B4/</guid>
-      <description>책읽어주는 도서관 전용폰-wipi 화면</description>
+      <description>책읽어주는 도서관 전용폰-wipi 화면 img_0282.jpg --</description>
     </item>
     
     <item>
@@ -508,7 +508,7 @@
       <pubDate>Sun, 14 Jan 2007 11:21:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/%ED%9B%84%EC%A7%80%EC%AF%94-b142-%EB%B6%84%ED%95%B4%ED%95%98%EA%B8%B0/</guid>
-      <description>분해는 http://sandbox.cz/~covex/hw/b112/ 를 참고하면 되는데 (혹은 http://pds4.egloos.com/pds/200701/14/82/fujitsu%20lifebook%20b112_b142%20disassembly.zip) 원본글에 대한 보충설명을 하겠다. 원본글을 반드시 먼저 읽어보시길.원본글처럼 나사를 모두 풀면 키보드가 분리되는데 본체와</description>
+      <description>분해는 http://sandbox.cz/~covex/hw/b112/ 를 참고하면 되는데 (혹은 http://pds4.egloos.com/pds/200701/14/82/fujitsu%20lifebook%20b112_b142%20disassembly.zip) 원본글에 대한 보충설명을 하겠다. 원본글을 반드시 먼저 읽어보시길. 원본글처럼 나사를 모두 풀면 키보드가 분리되는데 본체와</description>
     </item>
     
     <item>
@@ -517,7 +517,7 @@
       <pubDate>Wed, 27 Dec 2006 02:24:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/java-&#43;-oracle-xmltype-insert-%EC%8B%9C-%EB%AC%B8%EC%A0%9C-non-supported-character-set-oracle-character-set-840/</guid>
-      <description>1. 해결책[1]JDBC Driver가 한글 지원을 하지 않아서 나는 에러입니다. JDBC Driver중에 한글 패치가 된 드라이버가 있습니다. 만약 없다면 clas</description>
+      <description>1. 해결책[1] JDBC Driver가 한글 지원을 하지 않아서 나는 에러입니다. JDBC Driver중에 한글 패치가 된 드라이버가 있습니다. 만약 없다면 classes</description>
     </item>
     
     <item>
@@ -526,7 +526,7 @@
       <pubDate>Fri, 15 Dec 2006 13:31:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/%ED%95%B4%EB%B3%80%EC%9D%98-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8/</guid>
-      <description>출처 http://okjsp.pe.kr/seq/81311 눈가에 맺히는 습기를 주체할 수 없습니다. ㅠㅠ</description>
+      <description>출처 http://okjsp.pe.kr/seq/81311 눈가에 맺히는 습기를 주체할 수 없습니다. ㅠㅠ -- 오리대마왕 2006/12/15 18:28 # 답글 프로그래머라고 보기 어려운 것 같아요. 배가 안나왔거든요 :)</description>
     </item>
     
     <item>
@@ -535,7 +535,7 @@
       <pubDate>Fri, 15 Dec 2006 13:26:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/%ED%8C%80%EC%9B%A4/</guid>
-      <description>출처 http://okjsp.pe.kr/seq/81379</description>
+      <description>출처 http://okjsp.pe.kr/seq/81379 --</description>
     </item>
     
     <item>
@@ -544,7 +544,7 @@
       <pubDate>Sat, 25 Nov 2006 20:20:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/eclipse%EC%97%90%EC%84%9C-word-wrap-%ED%95%98%EA%B8%B0/</guid>
-      <description>http://www.brajeshwar.com/archives/2006/08/word-wrap-in-eclipse/ 좌우 스크롤바 이젠 안녕~ 그러나 이클립스 화면 반응이 느려짐. ㅠㅠ 필요할 때만 써야 할듯&amp;hellip;</description>
+      <description>http://www.brajeshwar.com/archives/2006/08/word-wrap-in-eclipse/ 좌우 스크롤바 이젠 안녕~ 그러나 이클립스 화면 반응이 느려짐. ㅠㅠ 필요할 때만 써야 할듯&amp;hellip; --</description>
     </item>
     
     <item>
@@ -553,7 +553,7 @@
       <pubDate>Tue, 24 Oct 2006 17:36:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/apache-mod_rewrite/</guid>
-      <description></description>
+      <description>&amp;lt;시나리오&amp;gt; - 클라이언트가 요청시 쿼리 value 에 항상 쓰레기 값이 붙어서 넘어옴 - 클리이언트 측 프로그램은 변경불가 Never and Ever~~. 어쩔 수 없이 서버쪽에서 수정</description>
     </item>
     
     <item>
@@ -562,7 +562,7 @@
       <pubDate>Fri, 29 Sep 2006 23:54:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/java-tcp-proxy/</guid>
-      <description>dodgyTCPProxy.zip &amp;ndash;&amp;gt; 다운로드활용 시나리오는 이렇다 A사에서는 java로 구현된 sms 발송기 구축를 자사에 요청했다. sms 발송기는 A사의 머신에 탑재되어야 하며 sms 발송요청을 받을</description>
+      <description>dodgyTCPProxy.zip &amp;ndash;&amp;gt; 다운로드 활용 시나리오는 이렇다 A사에서는 java로 구현된 sms 발송기 구축를 자사에 요청했다. sms 발송기는 A사의 머신에 탑재되어야 하며 sms 발송요청을 받을</description>
     </item>
     
     <item>
@@ -571,7 +571,7 @@
       <pubDate>Wed, 20 Sep 2006 19:09:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/python-computer-programming-for-everybody/</guid>
-      <description></description>
+      <description>(http://bioinfo.sarang.net/wiki/AboutPython 에서 일부 발췌) [Python]과 WikiWiki의 관계 WikiWiki가 모두 Python으로 구현되었다든지 하는 관계를 말하는 것은 아니다. 물론</description>
     </item>
     
     <item>
@@ -580,7 +580,7 @@
       <pubDate>Fri, 15 Sep 2006 13:26:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/binary-%EB%B0%94%EC%9D%B4%EB%84%88%EB%A6%AC-%ED%8C%8C%EC%9D%BC-cvs-import-%ED%95%98%EA%B8%B0/</guid>
-      <description>cvnNT에서 import 시 모든 file은 ascii 로 간주된다. binary 파일을 import 하려면 ~/CVSROOT/cvswrappers 를 편집해야 함 샘플은 아래와 같음 cvswrappers&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash; # This file affects handling of files based on their names. # # The -t/-f options allow one to treat directories of files</description>
+      <description>cvnNT에서 import 시 모든 file은 ascii 로 간주된다. binary 파일을 import 하려면 ~/CVSROOT/cvswrappers 를 편집해야 함 샘플은 아래와 같음 cvswrappers &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash; # This file affects handling of files based on their names. # # The -t/-f options allow one to treat directories of</description>
     </item>
     
     <item>
@@ -589,7 +589,7 @@
       <pubDate>Tue, 12 Sep 2006 21:48:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/sed-%EC%82%AC%EC%9A%A9%ED%95%9C-find-and-replace-%EC%83%98%ED%94%8C/</guid>
-      <description>sed s/=&amp;quot;..//=&amp;quot;//g develop_view.htm &amp;gt; develop_view2.htm 이런식으로 하면 develop_view.htm의 소스에서 =../ 를 =/ 로 바꿔서 develop_view2.htm 로 저장함</description>
+      <description>sed s/=&amp;quot;..//=&amp;quot;//g develop_view.htm &amp;gt; develop_view2.htm 이런식으로 하면 develop_view.htm의 소스에서 =../ 를 =/ 로 바꿔서 develop_view2.htm 로 저장함 --</description>
     </item>
     
     <item>
@@ -598,7 +598,7 @@
       <pubDate>Fri, 08 Sep 2006 00:11:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/ip-%EB%A1%9C-%ED%95%B4%EB%8B%B9%EA%B5%AD%EA%B0%80-%EC%95%8C%EC%95%84%EB%82%B4%EA%B8%B0/</guid>
-      <description>http://software77.net/cgi-bin/ip-country/geo-ip.pl 에서 IpToCountry.csv.gz를 공.짜.로 나눠주고 있음</description>
+      <description>http://software77.net/cgi-bin/ip-country/geo-ip.pl 에서 IpToCountry.csv.gz 를 공.짜.로 나눠주고 있음 http://www.private.org.il/IP2geo.html 에서 허락없이 퍼옴 How do I find the geographical location of a host, given its IP address ? In general, it is impossible - IP addresses are allocated arbitrarily, as there&#39;s no inherent connection between an IP address and it&#39;s physical location, and there&#39;s no reliable method to</description>
     </item>
     
     <item>
@@ -625,7 +625,7 @@
       <pubDate>Tue, 29 Aug 2006 18:56:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/sql-injection-cross-site-scripting-xss-%EC%98%88%EB%B0%A9%EC%B1%85/</guid>
-      <description></description>
+      <description>&amp;lt; Sql injection&amp;nbsp;&amp;gt; [공격 예제] Java 소스의 게시판 검색 Sql 구문 코딩이 아래와 같다고 하고 String findQuery = “select * from notice where title = &#39;”+ keyword + “&#39; “; &amp;nbsp; 홈페이지의 게시판 검색 시 k</description>
     </item>
     
     <item>
@@ -643,7 +643,7 @@
       <pubDate>Mon, 21 Aug 2006 13:08:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%97%85%EB%AC%B4-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%EB%8F%84/</guid>
-      <description>땜빵정신, 씁쓸&amp;hellip; . http://blog.naver.com/nextman0 에서 퍼옴</description>
+      <description>땜빵정신, 씁쓸&amp;hellip; . http://blog.naver.com/nextman0 에서 퍼옴 --</description>
     </item>
     
     <item>
@@ -652,7 +652,7 @@
       <pubDate>Mon, 21 Aug 2006 13:06:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/%EB%AC%B4%EC%A0%81%EC%95%BC%EA%B7%BC%EB%B6%80%EB%8C%80/</guid>
-      <description>씁쓸&amp;hellip;.. http://blog.naver.com/nextman0에서 퍼옴 http://blog.naver.com/nextman0/120027958191</description>
+      <description>씁쓸&amp;hellip;.. http://blog.naver.com/nextman0 에서 퍼옴 http://blog.naver.com/nextman0/120027958191 --</description>
     </item>
     
     <item>
@@ -661,7 +661,7 @@
       <pubDate>Mon, 21 Aug 2006 12:57:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%86%8D%EB%8B%B4/</guid>
-      <description></description>
+      <description>가는 소스가 고와야 오는 파일에 바이러스 없다. 잦은 Warning 에 Error 날줄 모른다. 영업은 상사 편이다. 디자이너는 프로그래머 편이다. 프린터 밑에 누워 소스 떨어지기만을 기</description>
     </item>
     
     <item>
@@ -688,7 +688,7 @@
       <pubDate>Mon, 23 Jan 2006 09:20:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%92%88%EC%A7%88%EC%9D%98-%EC%9A%94%EC%86%8C/</guid>
-      <description>소프트웨어 공학의 선구자 로버트 L. 글래스선생의 정의이다. 기억하자.기억하자.기억하자. 1. Portability 2. Reliability 3. Efficiency 4. Usability 5. Testability 6. Understandability 7. Modifiability 예전에 로버트 L. 글래스선생이 IE</description>
+      <description>소프트웨어 공학의 선구자 로버트 L. 글래스 선생의 정의이다. 기억하자.기억하자.기억하자. 1. Portability 2. Reliability 3. Efficiency 4. Usability 5. Testability 6. Understandability 7. Modifiability 예전에 로버트 L. 글래스 선생이 IE</description>
     </item>
     
     <item>

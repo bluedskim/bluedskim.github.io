@@ -13,7 +13,7 @@
       <pubDate>Tue, 29 Aug 2006 18:56:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/sql-injection-cross-site-scripting-xss-%EC%98%88%EB%B0%A9%EC%B1%85/</guid>
-      <description></description>
+      <description>&amp;lt; Sql injection&amp;nbsp;&amp;gt; [공격 예제] Java 소스의 게시판 검색 Sql 구문 코딩이 아래와 같다고 하고 String findQuery = “select * from notice where title = &#39;”+ keyword + “&#39; “; &amp;nbsp; 홈페이지의 게시판 검색 시 k</description>
     </item>
     
   </channel>
