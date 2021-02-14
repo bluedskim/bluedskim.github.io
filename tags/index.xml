@@ -6,22 +6,31 @@
     <description>Recent content in Tags on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Sat, 09 Jan 2021 22:59:55 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Feb 2021 00:16:55 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Karate</title>
-      <link>https://bluedskim.github.io/tags/karate/</link>
-      <pubDate>Sat, 09 Jan 2021 22:59:55 +0900</pubDate>
+      <title>Taurus</title>
+      <link>https://bluedskim.github.io/tags/taurus/</link>
+      <pubDate>Mon, 15 Feb 2021 00:16:55 +0900</pubDate>
       
-      <guid>https://bluedskim.github.io/tags/karate/</guid>
+      <guid>https://bluedskim.github.io/tags/taurus/</guid>
       <description></description>
     </item>
     
     <item>
       <title>프로그래밍</title>
       <link>https://bluedskim.github.io/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/</link>
-      <pubDate>Sat, 09 Jan 2021 22:59:55 +0900</pubDate>
+      <pubDate>Mon, 15 Feb 2021 00:16:55 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Karate</title>
+      <link>https://bluedskim.github.io/tags/karate/</link>
+      <pubDate>Sat, 09 Jan 2021 22:59:55 +0900</pubDate>
+      
+      <guid>https://bluedskim.github.io/tags/karate/</guid>
       <description></description>
     </item>
     

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta property="og:title" content="Taurus 부하 테스트 툴 데모" />
+<meta property="og:description" content="간단하게 사용할 수 있는 RESTful API 부하 테스트 툴을 찾던 중 괜찮은 툴을 발견해서 테스트해본 기록을 남긴다. 부하 테스트 툴 선정 기준 쉬운 설정 가벼운 실행환경 확장성, 다양" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://bluedskim.github.io/posts/tech/taurus-%EB%B6%80%ED%95%98-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%88%B4-%EB%8D%B0%EB%AA%A8/" />
+<meta property="article:published_time" content="2021-02-15T00:16:55+09:00" />
+<meta property="article:modified_time" content="2021-02-15T00:16:55+09:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Taurus 부하 테스트 툴 데모"/>
+<meta name="twitter:description" content="간단하게 사용할 수 있는 RESTful API 부하 테스트 툴을 찾던 중 괜찮은 툴을 발견해서 테스트해본 기록을 남긴다. 부하 테스트 툴 선정 기준 쉬운 설정 가벼운 실행환경 확장성, 다양"/>
+<meta name="generator" content="Hugo 0.76.5" />
+
+
+    
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Taurus 부하 테스트 툴 데모",
+  "url": "https:\/\/bluedskim.github.io\/posts\/tech\/taurus-%EB%B6%80%ED%95%98-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%88%B4-%EB%8D%B0%EB%AA%A8\/",
+  "wordCount": "1267",
+  "datePublished": "2021-02-15T00:16:55\u002b09:00",
+  "dateModified": "2021-02-15T00:16:55\u002b09:00",
+  "author": {
+    "@type": "Person",
+    "name": "Dennis"
+  },
+  "keywords": "tech, 프로그래밍, Taurus"
+}
+</script>
+
+
+
+    <link rel="canonical" href="https://bluedskim.github.io/posts/tech/taurus-%EB%B6%80%ED%95%98-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%88%B4-%EB%8D%B0%EB%AA%A8/">
+
+    <title>Taurus 부하 테스트 툴 데모 | Do What You Want To Do</title>
+
+    
+    <!-- combined, minified CSS -->
+    <link href="https://bluedskim.github.io/css/style.css" rel="stylesheet" integrity="sha384-G5B34w7DFTumWTswxYzTX7NWfbvQEg1HbFFEg6ItN03uTAAoS2qkPS/fu3LhuuSA" crossorigin="anonymous">
+    
+
+    <!-- RSS 2.0 feed -->
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-108812986-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    
+
+    
+	<link rel="stylesheet" href="https://bluedskim.github.io/custom.css">
+
+
+  </head>
+
+  <body>
+
+    
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="nav blog-nav">
+          <a class="nav-link " href="https://bluedskim.github.io/">Home</a>
+          
+          <a class="nav-link" href="/tags/samba/" title="">Samba</a>
+          
+          
+          <a class="nav-link" href="/categories/tech/" title="">Tech</a>
+          
+          
+          <a class="nav-link" href="/categories/%EC%9D%8C%EC%95%85/" title="">음악</a>
+          
+          
+          <a class="nav-link" href="/categories/%EC%9D%BC%EC%83%81%EC%82%AC/" title="">일상사</a>
+          
+        </nav>
+      </div>
+    </div>
+    
+
+    
+    
+    <header class="blog-header">
+      <div class="container">
+        <h1 class="blog-title" dir="auto"><a href="https://bluedskim.github.io/" rel="home">Do What You Want To Do</a></h1>
+        <p class="lead blog-description" dir="auto"><a href="mailto:bluedskim@gmail.com">bluedskim@gmail.com</a></p>
+      </div>
+    </header>
+    
+    
+
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+
+          
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="https://bluedskim.github.io/posts/tech/taurus-%EB%B6%80%ED%95%98-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%88%B4-%EB%8D%B0%EB%AA%A8/">Taurus 부하 테스트 툴 데모</a></h2>
+    <p class="blog-post-meta"><time datetime="2021-02-15T00:16:55&#43;09:00">2021-02-15</time> by Dennis in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/tech" rel="category tag">tech</a>
+
+
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D" rel="tag">프로그래밍</a>, <a href="/tags/taurus" rel="tag">Taurus</a>
+
+</p>
+  </header>
+  <p>간단하게 사용할 수 있는 RESTful API 부하 테스트 툴을 찾던 중 괜찮은 툴을 발견해서 테스트해본 기록을 남긴다.</p>
+<h3 id="부하-테스트-툴-선정-기준">부하 테스트 툴 선정 기준</h3>
+<ol>
+<li>쉬운 설정</li>
+<li>가벼운 실행환경</li>
+<li>확장성, 다양한 플러그인</li>
+</ol>
+<h3 id="taurus-의-특징">Taurus 의 특징</h3>
+<ol>
+<li>온라인 기반 테스팅 플랫폼 BlazeMeter에서 공개한 오픈소스 프로젝트. 그래서 BlazeMeter와 통합이 되어 있음. 하지만 독립적으로도 사용가능하다.</li>
+<li>python3 기반 터미널 cli</li>
+<li>쉬운 설정(다른 툴들에 비해서)</li>
+<li>다양한 테스트 툴 연동 지원(기본 Executor로 Jmeter를 내부적으로 사용).
+<ul>
+<li>지원 Executor목록 👉 <a href="https://gettaurus.org/docs/ExecutionSettings/#Executor-Types">https://gettaurus.org/docs/ExecutionSettings/#Executor-Types</a></li>
+</ul>
+</li>
+</ol>
+<h3 id="taurus-사용">Taurus 사용</h3>
+<p>Docker를 이용하면 설치 없이 사용가능하다</p>
+<ul>
+<li>Docker image : <a href="https://hub.docker.com/r/blazemeter/taurus">https://hub.docker.com/r/blazemeter/taurus</a>)</li>
+</ul>
+<p>혹은 아래를 참고하여 설치를 진행한다.</p>
+<h4 id="구동-환경">구동 환경</h4>
+<ol>
+<li>python3(추가로 pip 필요)</li>
+<li>Java8 이상(내부적으로 Jmeter를 자동으로 다운로드 하여 실행 함)</li>
+</ol>
+<p>윈도우 환경에서는 WSL(Windows Subsystem for Linux)로 Ubuntu를 설치하여 사용하는 것으로 가정한다.</p>
+<p>(윈도우에서 파이썬 설치 후 사용하려면 &lsquo;Microsoft Visual C++&lsquo;이 필요한데 설치에 2GB 정도 추가 공간이 필요. 그래서 WSL + Ubuntu로 사용할 것을 추천)</p>
+<h4 id="설치">설치</h4>
+<p>아래 명령들로 파이썬과 필요 dependency 그리고 taurus를 설치한다.</p>
+<pre><code>sudo apt update
+sudo apt install python3 default-jre-headless python3-tk python3-pip python3-dev \
+  libxml2-dev libxslt-dev zlib1g-dev net-tools
+sudo python3 -m pip install bzt
+</code></pre>
+<h4 id="설치-확인">설치 확인</h4>
+<p>아래 명령을 실행하여 blazedemo.com 에 대해서 부하테스트 실행해본다. 진행 상황은 터미널 혹은 자동으로 뜨는 브라우저에서 확인 가능하다. 아무 옵션 없이 실행하게 되면 기본 설정 값들로 테스트가 진행 된다.
+(blazedemo.com 은 부하테스트용으로 blazemeter에서 만든 사이트이다. 맘껏 테스트 해도 된다. 아마도&hellip;)</p>
+<pre><code>bzt http://blazedemo.com/ -report
+</code></pre>
+<h4 id="설정-파일-샘플">설정 파일 샘플</h4>
+<p>아래 설정파일은 yml형식이지만 JSON 포맷도 지원한다. 👉 <a href="https://gettaurus.org/docs/ConfigSyntax/#YAML-JSON-Format-for-Config-Files">https://gettaurus.org/docs/ConfigSyntax/#YAML-JSON-Format-for-Config-Files</a></p>
+<pre><code>---
+execution:
+# 시나리오별로 프로파일을 다르게 설정할 수 있습니다.
+- scenario: webViewTests
+  # 동시 사용자 수
+  concurrency: 50
+  #ramp-up: 1m
+  #동시 사용자 수 수치까지 증가하는데 소요될 시간
+  ramp-up: 10s
+  #hold-for: 1m30s
+  # 동시 사용자 수 유지 시간
+  hold-for: 10s  
+- scenario: apiTests
+  concurrency: 50
+  #동시 사용자 수 수치까지 증가하는데 소요될 시간
+  #ramp-up: 1m
+  ramp-up: 10s
+  #hold-for: 1m30s
+  # 동시 사용자 수 유지 시간
+  hold-for: 10s
+
+scenarios:
+  # 화면 테스트 시나리오
+  webViewTests:
+    #요청 사이의 시간간격
+    think-time: 0.75
+    #브라우저 캐시 흉내내기. 기본값은 true
+    store-cache: true
+    #브라우저 쿠키 저장기능 흉내내기 . 기본값은 true
+    store-cookie: true
+    default-address: http://localhost:9090
+    #화면에 삽입된 리소스를 모두 로드 할 것인지 여부. true로 했을 때는 외부 리소스의 로딩시간에 영향을 받습니다.
+    retrieve-resources: true
+    requests:
+      - url: '/'
+      - url: '/board/list'
+      - url: '/event/search'
+  # api 테스트 시나리오
+  apiTests:
+    timeout: 5s
+    default-address: http://localhost:9090
+    #해당 시나리오 전체에 적용될 헤더
+    headers:
+      User-Agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36'
+      Accept-Encoding: 'gzip, deflate, sdch'
+    requests:
+       # 신규 구인 목록
+      - url: '/newHire'
+       # 탐색
+      - url: '/board/boards'
+       # 신규 사용자 등록
+      - url: '/employees'
+        method: POST
+        #해당 리퀘스트에 적용될 헤더
+        headers:
+          Content-Type: application/json
+        body:
+          name: 'userName'
+          email: '1@2.com'
+          phoneNumber: '010-1234-5678'
+</code></pre>
+<p>(<strong><em>시나리오나 리퀘스트가 순차적으로 진행되지 않고 동시에 진행된다. 즉, 시나리오기반 기능테스트 용도로는 부적합하다</em></strong>)</p>
+<p>설정파일을 test.yml로 저장하고 터미널에서 다음 명령을 실행한다.</p>
+<pre><code>bzt test.yml -report
+</code></pre>
+<p>시스템의 기본 브라우저에 자동으로 보고서 웹화면이 뜬다.</p>
+<p><img src="https://i.ibb.co/Fq9QzhJ/Execution.png" alt=""></p>
+<p>(<strong><em>이 화면은 7일 후 자동 삭제 된다. 유지하려면 BlazeMeter에 회원가입을 해야 한다</em></strong>)</p>
+<p>테스트 중 터미널 화면</p>
+<img src="https://i.ibb.co/Z1PgnD6/Screenshot-from-2021-01-09-14-45-10.png">
+<p>완료 후  터미널 화면</p>
+<p><img src="https://i.ibb.co/Rcz659m/Screenshot-from-2021-01-09-14-45-58.png" alt=""></p>
+<h3 id="결론">결론</h3>
+<ul>
+<li>쉽게 사용할 수 있어 진입장벽(?)을 낮은 부하 테스트 툴</li>
+<li>Jmeter를 기반으로 하고 있기 때문에 세밀한 설정도 가능</li>
+<li>웹기반 리포트는 blazemeter의 기능을 사용하기 때문에 무료계정의 경우 기능제약이 있다.</li>
+</ul>
+
+
+  
+
+  
+  <hr>
+  <footer>
+
+  
+
+  
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bluedskim" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  
+  </footer>
+  
+
+</article> 
+
+
+
+        </div> <!-- /.blog-main -->
+
+        <aside class="col-sm-3 ml-auto blog-sidebar">
+  
+  <section class="sidebar-module sidebar-module-inset">
+    <h4>About</h4>
+    <p dir="auto">잡다한것들을 기록합니다. something to remember</p>
+  </section>
+  
+
+  
+        <section class="sidebar-module">
+    <h4>Recent Posts</h4>
+    <ol class="list-unstyled">
+
+
+<li><a href="/posts/tech/taurus-%EB%B6%80%ED%95%98-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%88%B4-%EB%8D%B0%EB%AA%A8/">Taurus 부하 테스트 툴 데모</a></li>
+
+<li><a href="/posts/tech/karate-restful-api-%EC%8B%9C%EB%82%98%EB%A6%AC%EC%98%A4%EA%B8%B0%EB%B0%98-%EC%9E%90%EB%8F%99%ED%99%94-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%8D%B0%EB%AA%A8/">Karate, RESTful API 시나리오기반 자동화 테스트 데모</a></li>
+
+<li><a href="/posts/tech/jboss%EC%9D%98-modeshape%EB%A1%9C-%EC%98%81%EB%8B%A8%EC%96%B4%EB%A5%BC-%EB%B3%B5%EC%88%98%ED%98%95%EB%8B%A8%EC%88%98%ED%98%95%EC%9C%BC%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/">Jboss의 Modeshape로 영단어를 복수형 혹은 단수형으로 변환하기</a></li>
+
+<li><a href="/posts/tech/vs-code-spring-java-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A6%AC%ED%94%84%EB%A0%88%EC%8B%9C-%ED%95%98%EA%B8%B0/">VS Code에서 Spring Java + Gradle 프로젝트 리프레시 하기</a></li>
+
+<li><a href="/posts/tech/%ED%95%A8%EA%BB%98-%EC%9E%90%EB%9D%BC%EA%B8%B0_%EA%B9%80%EC%B0%BD%EC%A4%80_%EB%A9%94%EB%AA%A8/">함께 자라기(김창준) 메모</a></li>
+
+    </ol>
+  </section>
+
+  
+
+  
+  <section class="sidebar-module">
+    <h4>Links</h4>
+    <ol class="list-unstyled">
+      
+      <li><a href="http://bohemia.band">Bohemia</a></li>
+      
+      <li><a href="https://www.instagram.com/bluedskim/">Instagram</a></li>
+      
+      <li><a href="https://soundcloud.com/bluedskim">Sound Cloud</a></li>
+      
+      <li><a href="https://www.youtube.com/user/bluedskim/videos">Youtube Channel</a></li>
+      
+    </ol>
+  </section>
+  
+</aside>
+
+
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+    
+
+    
+    <footer class="blog-footer">
+      <p dir="auto">
+      
+      Blog template created by <a href="https://twitter.com/mdo">@mdo</a>, ported to Hugo by <a href='https://twitter.com/mralanorth'>@mralanorth</a>.
+      
+      </p>
+      <p>
+      <a href="#">Back to top</a>
+      </p>
+    </footer>
+    
+
+  </body>
+
+</html>
