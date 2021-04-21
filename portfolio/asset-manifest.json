@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.f5497eb8.chunk.css",
-    "main.js": "/static/js/main.a3d23e01.chunk.js",
-    "main.js.map": "/static/js/main.a3d23e01.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.554504a0.js",
-    "runtime-main.js.map": "/static/js/runtime-main.554504a0.js.map",
-    "static/js/2.992c44dd.chunk.js": "/static/js/2.992c44dd.chunk.js",
-    "static/js/2.992c44dd.chunk.js.map": "/static/js/2.992c44dd.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.060667fbfe21f94b3e5b8dcd5f333593.js": "/precache-manifest.060667fbfe21f94b3e5b8dcd5f333593.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.f5497eb8.chunk.css.map": "/static/css/main.f5497eb8.chunk.css.map",
-    "static/js/2.992c44dd.chunk.js.LICENSE.txt": "/static/js/2.992c44dd.chunk.js.LICENSE.txt",
-    "static/media/finmart1.png": "/static/media/finmart1.bc324fd0.png",
-    "static/media/finmartLogo2.png": "/static/media/finmartLogo2.418a11d0.png",
-    "static/media/kclLogo.png": "/static/media/kclLogo.6cbf91c4.png",
-    "static/media/kcl_togo1.png": "/static/media/kcl_togo1.0b26f5d3.png",
-    "static/media/resume.pdf": "/static/media/resume.9d3da0e2.pdf",
-    "static/media/내얼굴 일러스트.jpeg": "/static/media/내얼굴 일러스트.79ea67d3.jpeg"
+    "main.css": "/portfolio/static/css/main.f5497eb8.chunk.css",
+    "main.js": "/portfolio/static/js/main.075a4354.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.075a4354.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.75c69042.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.75c69042.js.map",
+    "static/js/2.992c44dd.chunk.js": "/portfolio/static/js/2.992c44dd.chunk.js",
+    "static/js/2.992c44dd.chunk.js.map": "/portfolio/static/js/2.992c44dd.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.6cd165fa67998d8d60d3e6393028776f.js": "/portfolio/precache-manifest.6cd165fa67998d8d60d3e6393028776f.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.f5497eb8.chunk.css.map": "/portfolio/static/css/main.f5497eb8.chunk.css.map",
+    "static/js/2.992c44dd.chunk.js.LICENSE.txt": "/portfolio/static/js/2.992c44dd.chunk.js.LICENSE.txt",
+    "static/media/finmart1.png": "/portfolio/static/media/finmart1.bc324fd0.png",
+    "static/media/finmartLogo2.png": "/portfolio/static/media/finmartLogo2.418a11d0.png",
+    "static/media/kclLogo.png": "/portfolio/static/media/kclLogo.6cbf91c4.png",
+    "static/media/kcl_togo1.png": "/portfolio/static/media/kcl_togo1.0b26f5d3.png",
+    "static/media/resume.pdf": "/portfolio/static/media/resume.9d3da0e2.pdf",
+    "static/media/내얼굴 일러스트.jpeg": "/portfolio/static/media/내얼굴 일러스트.79ea67d3.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.554504a0.js",
+    "static/js/runtime-main.75c69042.js",
     "static/js/2.992c44dd.chunk.js",
     "static/css/main.f5497eb8.chunk.css",
-    "static/js/main.a3d23e01.chunk.js"
+    "static/js/main.075a4354.chunk.js"
   ]
 }
