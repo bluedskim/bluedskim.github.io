@@ -25,7 +25,7 @@
   "@type": "BlogPosting",
   "headline": "삼성 기어360 카메라(2017) 해킹",
   "url": "https:\/\/bluedskim.github.io\/posts\/tech\/%EC%82%BC%EC%84%B1-%EA%B8%B0%EC%96%B4360-%EC%B9%B4%EB%A9%94%EB%9D%BC-%ED%95%B4%ED%82%B9\/",
-  "wordCount": "333",
+  "wordCount": "764",
   "datePublished": "2019-03-19T23:38:28\u002b09:00",
   "dateModified": "2019-03-19T23:38:28\u002b09:00",
   "author": {
@@ -124,23 +124,77 @@ if (!doNotTrack) {
   <p>삼성 기어360 카메라(2017)을 구입한 이유는 각종 공연 후에 모니터링하기 위해서이다.</p>
 <p>Roda de samba 공연은 빙 둘러 앉아 하게 마련인데 모든 연주자의 연주를 한 카메라에 담기에는 360 카메라가 최적이다.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_MPBkJ9ZZ8Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<p>구입 전에는 몰랐는데 이 카메라는 arm 프로세서를 사용한 리눅스 기반 카메라였다.</p>
-<p>해킹은 의외로 단순한데 SD카드에 파일만 넣으면 알아서 telnet과 web server가 기동된다.</p>
+<p>구입 전에는 몰랐는데 이 카메라는 arm 프로세서를 사용한 리눅스 기반 카메라다. OS 버전은 SAMSUNG LINUX PLATFORM Tizen release 2.2.0</p>
+<pre><code>[root@drime5 ~]# cat /etc/tizen-release 
+Tizen release 2.2.0 (Magnolia)
+
+# cat /etc/issue
+************************************************************
+*                 SAMSUNG LINUX PLATFORM                   *
+************************************************************
+</code></pre>
+<p>CPU는 ARMv7 이다</p>
+<pre><code># cat /proc/cpuinfo 
+Processor       : ARMv7 Processor rev 1 (v7l)
+BogoMIPS        : 1594.16
+Features        : swp half thumb fastmult vfp edsp neon vfpv3 tls 
+CPU implementer : 0x41
+CPU architecture: 7
+CPU variant     : 0x4
+CPU part        : 0xc09
+CPU revision    : 1
+
+Hardware        : Samsung-DRIMe5-ES
+Revision        : 0000
+Serial          : 0000000000000000
+</code></pre>
+<p>커널 버전은 상당히 낮다</p>
+<pre><code># uname -a
+Linux drime5 3.5.0 #29 PREEMPT Mon Oct 23 20:03:43 KST 2017 armv7l GNU/Linux
+</code></pre>
+<p>busybox를 이용한 해킹은 의외로 단순한데 SD카드에 파일만 넣으면 알아서 telnet과 web server가 기동된다.</p>
 <p>자세한 설명은 아래 링크</p>
 <ul>
 <li><a href="http://vitor.io/gear-360-remote-interval-timelapse">http://vitor.io/gear-360-remote-interval-timelapse</a></li>
 </ul>
 <p>기동 후 설정에서 &ldquo;connect to ios&rdquo; 하면 Gear 360으로 시작하는 Access Point가 뜨고
-컴퓨터에서 이 access point 로 접속하면 telnet으로 접근할 수 있고 모든 컨트롤을 터미널에서 할 수 있다.
-(그런데 이 AP에는 한 대의 기기 밖에 접속 안되는 듯 하다)</p>
-<p>[터미널 스크린샷]
-[![터미널 스크린샷](/images/Screenshot 2019-03-21 at 9.28.40 PM.png)](/images/Screenshot 2019-03-21 at 9.28.40 PM.png)</p>
+컴퓨터에서 이 access point 로 접속하면 telnet으로 접근하여 모든 컨트롤을 터미널에서 할 수 있다
+(그런데 이 AP에는 한 대의 기기 밖에 접속 안되는 듯 하다).</p>
+<p>기어360이 공유기에 접속할 수 있으면 해킹이 쉬울것 같아서 방법을 찾아봤지만 찾지는 못했다.
+일단 wifi스캔 명령어(iwlist)와 wifi접속 명령어(iwconfig)가 기기 내부에 없어 시도자체를 할 수 없었다.</p>
+<p>wl이라는 명령어가 wifi관련 작업을 수행하는 듯 하지만</p>
+<pre><code>[root@drime5 bin]# wl ssid
+Current SSID: &quot;Gear 360(EE6D)&quot;
+</code></pre>
+<p>막혀있는 듯</p>
+<pre><code>[root@drime5 bin]# wl join samba2
+wl: Unsupported
+</code></pre>
+<p>ARMv7용으로 컴파일된 php binary 가 있어서 다운받아서 실행해 봤으나 실행 불가.
+<a href="https://github.com/LeverylTeam/PHP7-Binaries/blob/master/PHP-7.0.14_ARMv7.14.xz">https://github.com/LeverylTeam/PHP7-Binaries/blob/master/PHP-7.0.14_ARMv7.14.xz</a></p>
+<pre><code># ./PHP-7.0.14_ARMv7.14 
+Illegal instruction
+</code></pre>
+<p>이놈을 뭔가 다른 용도로 쓰는것은 나의 실력으로는 불가능할 듯 -.-</p>
+<p>vitorio의 <a href="https://github.com/vitorio/gear360-2017-mods">mod</a>를 fork해서 한가지 기능을 추가했다.</p>
+<ul>
+<li>git : <a href="https://github.com/bluedskim/gear360-2017-mods">https://github.com/bluedskim/gear360-2017-mods</a></li>
+</ul>
+<p>추가된 기능은 미리보기와 다운로드 기능이다.</p>
+<p>웹에서 미리보기가 가능하고 클릭시 파일을 다운로드 받을 수 있다.</p>
+<p><img src="https://raw.githubusercontent.com/bluedskim/gear360-2017-mods/master/photo_preview_screenshot.png" alt="미리보기 화면">
+<em>Gear360에 저장되어 있는 사진을 화면에 출력해주고 클릭시 다운로드 한다</em></p>
 <p>[그 외 해킹관련]</p>
 <ul>
 <li><a href="https://github.com/ottokiksmaler/gear360_modding">https://github.com/ottokiksmaler/gear360_modding</a></li>
 <li><a href="https://github.com/vitorio/gear360-2017-mods">https://github.com/vitorio/gear360-2017-mods</a></li>
 <li><a href="https://github.com/baardove/osc/">https://github.com/baardove/osc/</a></li>
 <li><a href="https://github.com/ultramango/gear360reveng">https://github.com/ultramango/gear360reveng</a></li>
+</ul>
+<p>[기타]</p>
+<ul>
+<li>온라인에서 stitch하기 : <a href="https://nadirpatch.com/gear360stitching/">https://nadirpatch.com/gear360stitching/</a></li>
+<li>웹기반 360뷰어 만들기 : <a href="https://www.marzipano.net/tool/">https://www.marzipano.net/tool/</a></li>
 </ul>
 
 
