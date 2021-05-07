@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Mon, 15 Feb 2021 00:16:55 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 May 2021 12:13:37 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java Design Pattern - Singleton</title>
+      <link>https://bluedskim.github.io/posts/tech/javadesignpattern-singleton/</link>
+      <pubDate>Fri, 07 May 2021 12:13:37 +0900</pubDate>
+      
+      <guid>https://bluedskim.github.io/posts/tech/javadesignpattern-singleton/</guid>
+      <description>(Java 디자인 패턴 스터디 모집 중 : https://github.com/bluedskim/javaDesignPatterns) Singleton 패턴(김동석) (출처 : refactoring.guru : Singleton pattern) 해결하려는 문제 공유된 자원은 대체로 한정적이다. 이 자원을 무분별하게 사용하는 경우 쉽게 고</description>
+    </item>
+    
     <item>
       <title>Taurus 부하 테스트 툴 데모</title>
       <link>https://bluedskim.github.io/posts/tech/taurus-%EB%B6%80%ED%95%98-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%88%B4-%EB%8D%B0%EB%AA%A8/</link>
