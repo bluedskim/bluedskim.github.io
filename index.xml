@@ -6,7 +6,16 @@
     <description>Recent content on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Fri, 07 May 2021 12:13:37 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 May 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java Design Pattern - Factory</title>
+      <link>https://bluedskim.github.io/posts/tech/javadesignpattern-factory/</link>
+      <pubDate>Tue, 11 May 2021 00:00:00 +0900</pubDate>
+      
+      <guid>https://bluedskim.github.io/posts/tech/javadesignpattern-factory/</guid>
+      <description>Factory Method 패턴 (출처:Abstract Factory Design Pattern in C#) 해결하려는 문제 생성자를 직접 호출해서 객체를 생성하는 경우 해당 객체와 클라이언트가 강하게 결합되게 되어 확정성</description>
+    </item>
+    
     <item>
       <title>Java Design Pattern - Singleton</title>
       <link>https://bluedskim.github.io/posts/tech/javadesignpattern-singleton/</link>
