@@ -8,21 +8,21 @@
     <language>ko-KR</language>
     <lastBuildDate>Tue, 11 May 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Java Design Pattern - Factory</title>
+      <title>Java Design Pattern-02.Factory</title>
       <link>https://bluedskim.github.io/posts/tech/javadesignpattern-factory/</link>
       <pubDate>Tue, 11 May 2021 00:00:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/tech/javadesignpattern-factory/</guid>
-      <description>Factory Method 패턴 (출처:Abstract Factory Design Pattern in C#) 해결하려는 문제 생성자를 직접 호출해서 객체를 생성하는 경우 해당 객체와 클라이언트가 강하게 결합되게 되어 확정성</description>
+      <description>(Java 디자인 패턴 스터디 모집 중 : https://github.com/bluedskim/javaDesignPatterns) Factory Method 패턴 (출처:Abstract Factory Design Pattern in C#) 해결하려는 문제 생성자를 직접 호출해서 객체를 생성하는 경우 해당 객체와 클라이언</description>
     </item>
     
     <item>
-      <title>Java Design Pattern - Singleton</title>
+      <title>Java Design Pattern-01.Singleton</title>
       <link>https://bluedskim.github.io/posts/tech/javadesignpattern-singleton/</link>
       <pubDate>Fri, 07 May 2021 12:13:37 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/tech/javadesignpattern-singleton/</guid>
-      <description>(Java 디자인 패턴 스터디 모집 중 : https://github.com/bluedskim/javaDesignPatterns) Singleton 패턴(김동석) (출처 : refactoring.guru : Singleton pattern) 해결하려는 문제 공유된 자원은 대체로 한정적이다. 이 자원을 무분별하게 사용하는 경우 쉽게 고</description>
+      <description>(Java 디자인 패턴 스터디 모집 중 : https://github.com/bluedskim/javaDesignPatterns) Singleton 패턴 (출처 : refactoring.guru : Singleton pattern) 해결하려는 문제 공유된 자원은 대체로 한정적이다. 이 자원을 무분별하게 사용하는 경우 쉽게 고갈될 수 있다</description>
     </item>
     
     <item>
