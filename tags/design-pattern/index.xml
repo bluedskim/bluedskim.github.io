@@ -6,9 +6,18 @@
     <description>Recent content in Design Pattern on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Fri, 14 May 2021 08:57:45 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/tags/design-pattern/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 May 2021 12:23:26 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/tags/design-pattern/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Java Design Pattern-03.Iterators</title>
+      <title>Java Design Pattern-05.Proxy</title>
+      <link>https://bluedskim.github.io/posts/tech/javadesignpattern-05.proxy/</link>
+      <pubDate>Tue, 18 May 2021 12:23:26 +0900</pubDate>
+      
+      <guid>https://bluedskim.github.io/posts/tech/javadesignpattern-05.proxy/</guid>
+      <description>(Java 디자인 패턴 스터디 모집 중 : https://github.com/bluedskim/javaDesignPatterns) Proxy 패턴 패턴 다이어그램 &amp;ldquo;특정 클래스 대신 그 클래스와 동일한 인터페이스를 구현한 래퍼 wrapper 클래스 Proxy 를 이용한다&amp;rd</description>
+    </item>
+    
+    <item>
+      <title>Java Design Pattern-04.Iterators</title>
       <link>https://bluedskim.github.io/posts/tech/javadesignpattern-04.iterators/</link>
       <pubDate>Fri, 14 May 2021 08:57:45 +0900</pubDate>
       

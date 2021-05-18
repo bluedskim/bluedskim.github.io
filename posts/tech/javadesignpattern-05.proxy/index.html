@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta property="og:title" content="Java Design Pattern-05.Proxy" />
+<meta property="og:description" content="(Java 디자인 패턴 스터디 모집 중 : https://github.com/bluedskim/javaDesignPatterns) Proxy 패턴 패턴 다이어그램 &ldquo;특정 클래스 대신 그 클래스와 동일한 인터페이스를 구현한 래퍼 wrapper 클래스 Proxy 를 이용한다&rd" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://bluedskim.github.io/posts/tech/javadesignpattern-05.proxy/" />
+<meta property="article:published_time" content="2021-05-18T12:23:26+09:00" />
+<meta property="article:modified_time" content="2021-05-18T12:23:26+09:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Java Design Pattern-05.Proxy"/>
+<meta name="twitter:description" content="(Java 디자인 패턴 스터디 모집 중 : https://github.com/bluedskim/javaDesignPatterns) Proxy 패턴 패턴 다이어그램 &ldquo;특정 클래스 대신 그 클래스와 동일한 인터페이스를 구현한 래퍼 wrapper 클래스 Proxy 를 이용한다&rd"/>
+<meta name="generator" content="Hugo 0.76.5" />
+
+
+    
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Java Design Pattern-05.Proxy",
+  "url": "https:\/\/bluedskim.github.io\/posts\/tech\/javadesignpattern-05.proxy\/",
+  "wordCount": "1245",
+  "datePublished": "2021-05-18T12:23:26\u002b09:00",
+  "dateModified": "2021-05-18T12:23:26\u002b09:00",
+  "author": {
+    "@type": "Person",
+    "name": "Dennis"
+  },
+  "keywords": "tech, java, Design Pattern"
+}
+</script>
+
+
+
+    <link rel="canonical" href="https://bluedskim.github.io/posts/tech/javadesignpattern-05.proxy/">
+
+    <title>Java Design Pattern-05.Proxy | Do What You Want To Do</title>
+
+    
+    <!-- combined, minified CSS -->
+    <link href="https://bluedskim.github.io/css/style.css" rel="stylesheet" integrity="sha384-G5B34w7DFTumWTswxYzTX7NWfbvQEg1HbFFEg6ItN03uTAAoS2qkPS/fu3LhuuSA" crossorigin="anonymous">
+    
+
+    <!-- RSS 2.0 feed -->
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-108812986-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    
+
+    
+	<link rel="stylesheet" href="https://bluedskim.github.io/custom.css">
+
+
+  </head>
+
+  <body>
+
+    
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="nav blog-nav">
+          <a class="nav-link " href="https://bluedskim.github.io/">Home</a>
+          
+          <a class="nav-link" href="/tags/samba/" title="">Samba</a>
+          
+          
+          <a class="nav-link" href="/categories/tech/" title="">Tech</a>
+          
+          
+          <a class="nav-link" href="/categories/%EC%9D%8C%EC%95%85/" title="">음악</a>
+          
+          
+          <a class="nav-link" href="/categories/%EC%9D%BC%EC%83%81%EC%82%AC/" title="">일상사</a>
+          
+        </nav>
+      </div>
+    </div>
+    
+
+    
+    
+    <header class="blog-header">
+      <div class="container">
+        <h1 class="blog-title" dir="auto"><a href="https://bluedskim.github.io/" rel="home">Do What You Want To Do</a></h1>
+        <p class="lead blog-description" dir="auto"><a href="mailto:bluedskim@gmail.com">bluedskim@gmail.com</a></p>
+      </div>
+    </header>
+    
+    
+
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+
+          
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="https://bluedskim.github.io/posts/tech/javadesignpattern-05.proxy/">Java Design Pattern-05.Proxy</a></h2>
+    <p class="blog-post-meta"><time datetime="2021-05-18T12:23:26&#43;09:00">2021-05-18</time> by Dennis in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/tech" rel="category tag">tech</a>
+
+
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/java" rel="tag">java</a>, <a href="/tags/design-pattern" rel="tag">Design Pattern</a>
+
+</p>
+  </header>
+  <p>(<em>Java 디자인 패턴 스터디 모집 중 : <a href="https://github.com/bluedskim/javaDesignPatterns">https://github.com/bluedskim/javaDesignPatterns</a></em>)</p>
+<h1 id="proxy-패턴">Proxy 패턴</h1>
+<h2 id="패턴-다이어그램">패턴 다이어그램</h2>
+<p><img src="https://refactoring.guru/images/patterns/content/proxy/proxy-2x.png?id=fb3d14e21c210a758d47" alt="Proxy" title="Proxy"></p>
+<p>&ldquo;특정 클래스 대신 그 클래스와 동일한 인터페이스를 구현한 래퍼 <em>wrapper</em> 클래스 <em>Proxy</em> 를 이용한다&rdquo; (<a href="https://refactoring.guru/design-patterns/proxy">출처:https://refactoring.guru/design-patterns/proxy</a>)</p>
+<h2 id="해결하려는-문제">해결하려는 문제</h2>
+<ol>
+<li>특정 객체에 대한 접근을 통제할 수 있는 일관된 방법이 필요할 때(보안, 권한 체크).</li>
+<li>네트워크 접속, 메모리에 탑재된 대형 객체, 파일, 그 외 생성에 큰 비용이 발생하거나 복제가 불가능한 리소스들 등에 대한 캐시가 필요할 때.</li>
+</ol>
+<h2 id="특징용도">특징/용도</h2>
+<ol>
+<li>proxy클래스는 client의 요청을 subject에 단순히 전달하는 목적으로 사용하거나 subject의 메소드를 호출하기 이전, 이후에 특정 로직을 추가고자 할 때 사용한다.</li>
+<li>client입장에서는 proxy를 사용하든 subject를 사용하든 기능상 차이는 없다(black box).</li>
+<li>지연된 초기화 Lazy initialization (virtual proxy) : 클래스 생성시 초기화 하는 것이 아니라 해당 객체의 메소드를 호출 할 때 초기화 하도록 함</li>
+</ol>
+<h2 id="고려사항">고려사항</h2>
+<ol>
+<li>유사한 패턴과 비교
+<ul>
+<li>어댑터 패턴은 subject와는 다른 인터페이스를 제공하는 반면 프록시는 동일한 인터페이스을 제공한다. 데코레이터 패턴은 subject보다 향상된(기능 추가) 인터페이스를 제공한다.</li>
+<li>파사드 패턴은 복잡한 엔티티들의 초기화에 대한 버퍼를 제공한다는 점에서 proxy패턴과 유사하다. 하지만 프록시는 동일한 인터페이스을 제공한다는 점에서 차이가 있다.</li>
+<li>데코레이터 패턴과 프록시 패턴은 복합 <em>composition</em> 을 사용한다는 점에서는 동일하지만 프록시 패턴은 subject 에 대한 라이프 사이클을 proxy내부에서 관리하는 반면 데코레이터 패턴에서는 클라이언트가 대상의 라이프사이클을 관리한다는 차이가 있다.</li>
+</ul>
+</li>
+<li>Proxy내에서 클라이언트 목록을 관리할 수도 있다. 사용하는 클라이언트가 없다면 리소스를 해제하는 등의 처리작업 수행하고자 할 때 유용하다.</li>
+</ol>
+<h2 id="클래스-다이어그램">클래스 다이어그램</h2>
+<p><img src="https://www.plantuml.com/plantuml/png/bP71IiD048RFxbCC1MbxQ78l8ZruwALGr1VOPAVDQZORTYR1e892RWhYKL3F7XMy-4erVGUt1Ymj23gduPzlvfzXHiJISM5Ic3fxLi7ozcLPl_SM7rUVTmzD_TGN8j4A0KtE5HWq4JhQb3YnYeHWpId-EYL1gT11mfpJC0pdcfCY2c9hmYWjKD6fDk69BEK1afvdKycCBYCnizOdq3pVD_LRS_EuUBs6NIKPUvtAHp2P14freJiU3utf-6M5pdp3JCO8XqYsS3uv5pjv4QKwXYDsEfj3xcoCHBs-k1GYJYKHZ56MrRywsal_J1uZyOekhLOhg5LQxCTtxo88DbVPgdsF4gtrO7yB5MkZWI-kzH5coh_u2m00" alt="Proxy 패턴(김동석)" title="Proxy 패턴(김동석)"></p>
+<h2 id="소스">소스</h2>
+<ol>
+<li>Proxy : Subject를 대체하고자 하는 객체(Proxy.java)
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> net.dskim.desingpattern.proxy.solution<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> lombok.extern.slf4j.Slf4j<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> net.dskim.desingpattern.proxy.HeavyResource<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> net.dskim.desingpattern.proxy.Resource<span style="color:#f92672">;</span>
+
+<span style="color:#75715e">/**
+</span><span style="color:#75715e"> * Proxy객체도 역시 Resource 인터페이스를 구현해야 한다.
+</span><span style="color:#75715e"> */</span>
+<span style="color:#a6e22e">@Slf4j</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Proxy</span> <span style="color:#66d9ef">implements</span> Resource <span style="color:#f92672">{</span>
+	<span style="color:#75715e">/**
+</span><span style="color:#75715e">	 * Proxy객체가 다루어야 할 Subject객체
+</span><span style="color:#75715e">	 */</span>
+	<span style="color:#66d9ef">private</span> HeavyResource heavyResource<span style="color:#f92672">;</span>
+
+	<span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Proxy</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">super</span><span style="color:#f92672">();</span>
+		log<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Proxy 생성 완료&#34;</span><span style="color:#f92672">);</span>
+	<span style="color:#f92672">}</span>
+
+	<span style="color:#75715e">/**
+</span><span style="color:#75715e">	 * 처리 메소드를 호출 시
+</span><span style="color:#75715e">	 * 지연된 초기화Lazy initialize 하도록 한다.
+</span><span style="color:#75715e">	 */</span>
+	<span style="color:#a6e22e">@Override</span>
+	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">process</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#75715e">// null check 하여 불필요한 초기화를 피한다.
+</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>heavyResource <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+			<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">heavyResource</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HeavyResource<span style="color:#f92672">();</span>
+		<span style="color:#f92672">}</span>
+		<span style="color:#66d9ef">return</span> heavyResource<span style="color:#f92672">.</span><span style="color:#a6e22e">process</span><span style="color:#f92672">();</span>
+	<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>Subject : 숨기고자 하는 객체(HeavyResource.java)
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> net.dskim.desingpattern.proxy<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> lombok.extern.slf4j.Slf4j<span style="color:#f92672">;</span>
+
+<span style="color:#75715e">/**
+</span><span style="color:#75715e"> * Subject 객체
+</span><span style="color:#75715e"> * 
+</span><span style="color:#75715e"> */</span>
+<span style="color:#a6e22e">@Slf4j</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">HeavyResource</span> <span style="color:#66d9ef">implements</span> Resource <span style="color:#f92672">{</span>
+	<span style="color:#75715e">/**
+</span><span style="color:#75715e">	 * 생성자 호출시 초기화에 많은 시간과 자원이 소모된다고 가정한다.
+</span><span style="color:#75715e">	 */</span>	
+	<span style="color:#66d9ef">public</span> <span style="color:#a6e22e">HeavyResource</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">super</span><span style="color:#f92672">();</span>
+		log<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;HeavyResource 초기화 중...&#34;</span><span style="color:#f92672">);</span>
+		log<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;HeavyResource 초기화 완료&#34;</span><span style="color:#f92672">);</span>
+	<span style="color:#f92672">}</span>
+
+	<span style="color:#75715e">/**
+</span><span style="color:#75715e">	 * 실제 어떤 처리를 하는 메소드
+</span><span style="color:#75715e">	 */</span>
+	<span style="color:#a6e22e">@Override</span>
+	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">process</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		log<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;processing...&#34;</span><span style="color:#f92672">);</span>
+		<span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;processed&#34;</span><span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+
+<span style="color:#f92672">}</span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>Resource : proxy와 subject가 구현해야 하는 인터페이스(Resource.java)
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> net.dskim.desingpattern.proxy<span style="color:#f92672">;</span>
+
+<span style="color:#75715e">/**
+</span><span style="color:#75715e"> * 모든 리소스가 구현해야 하는 인터페이스
+</span><span style="color:#75715e"> */</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">Resource</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">process</span><span style="color:#f92672">();</span>
+<span style="color:#f92672">}</span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+<h2 id="참고">참고</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Proxy_pattern">wikipedia : Proxy pattern</a></li>
+<li><a href="https://refactoring.guru/design-patterns/proxy">refactoring.guru : Design Patterns / Structural Patterns / Proxy</a></li>
+<li><a href="https://www.tutorialspoint.com/design_pattern/proxy_pattern.htm">tutorialspoint : Design Patterns - Proxy Pattern</a></li>
+<li><a href="https://www.baeldung.com/java-proxy-pattern">baeldung : The Proxy Pattern in Java</a></li>
+</ul>
+
+
+  
+
+  
+  <hr>
+  <footer>
+
+  
+
+  
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bluedskim" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  
+  </footer>
+  
+
+</article> 
+
+
+
+        </div> <!-- /.blog-main -->
+
+        <aside class="col-sm-3 ml-auto blog-sidebar">
+  
+  <section class="sidebar-module sidebar-module-inset">
+    <h4>About</h4>
+    <p dir="auto">잡다한것들을 기록합니다. something to remember</p>
+  </section>
+  
+
+  
+        <section class="sidebar-module">
+    <h4>Recent Posts</h4>
+    <ol class="list-unstyled">
+
+
+<li><a href="/posts/tech/javadesignpattern-05.proxy/">Java Design Pattern-05.Proxy</a></li>
+
+<li><a href="/posts/tech/javadesignpattern-04.iterators/">Java Design Pattern-04.Iterators</a></li>
+
+<li><a href="/posts/tech/javadesignpattern-03.command/">Java Design Pattern-03.Command</a></li>
+
+<li><a href="/posts/tech/javadesignpattern-factory/">Java Design Pattern-02.Factory</a></li>
+
+<li><a href="/posts/tech/javadesignpattern-singleton/">Java Design Pattern-01.Singleton</a></li>
+
+    </ol>
+  </section>
+
+  
+
+  
+  <section class="sidebar-module">
+    <h4>Links</h4>
+    <ol class="list-unstyled">
+      
+      <li><a href="http://bohemia.band">- Bohemia</a></li>
+      
+      <li><a href="https://github.com/bluedskim">- Github</a></li>
+      
+      <li><a href="https://www.instagram.com/bluedskim/">- Instagram</a></li>
+      
+      <li><a href="https://soundcloud.com/bluedskim">- Sound Cloud</a></li>
+      
+      <li><a href="https://www.youtube.com/user/bluedskim/videos">- Youtube Channel</a></li>
+      
+    </ol>
+  </section>
+  
+</aside>
+
+
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+    
+
+    
+    <footer class="blog-footer">
+      <p dir="auto">
+      
+      Blog template created by <a href="https://twitter.com/mdo">@mdo</a>, ported to Hugo by <a href='https://twitter.com/mralanorth'>@mralanorth</a>.
+      
+      </p>
+      <p>
+      <a href="#">Back to top</a>
+      </p>
+    </footer>
+    
+
+  </body>
+
+</html>
