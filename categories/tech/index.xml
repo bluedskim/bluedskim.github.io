@@ -6,7 +6,16 @@
     <description>Recent content in tech on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Fri, 21 May 2021 00:00:37 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 May 2021 08:46:28 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java 디자인 패턴-07.State</title>
+      <link>https://bluedskim.github.io/posts/tech/javadesignpattern-07.state/</link>
+      <pubDate>Mon, 24 May 2021 08:46:28 +0900</pubDate>
+      
+      <guid>https://bluedskim.github.io/posts/tech/javadesignpattern-07.state/</guid>
+      <description>패턴 다이어그램 &amp;ldquo;어떤 객체의 상태에 따라 행위가 변경되는 경우 유용한 패턴&amp;rdquo; (출처:https://refactoring.g</description>
+    </item>
+    
     <item>
       <title>Perl스크립트로 Http Get 요청하고 응답출력하기</title>
       <link>https://bluedskim.github.io/posts/tech/perl%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%A1%9C-http-get-%EC%9A%94%EC%B2%AD%ED%95%98%EA%B3%A0-%EC%9D%91%EB%8B%B5%EC%B6%9C%EB%A0%A5/</link>
