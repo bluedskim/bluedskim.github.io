@@ -6,14 +6,23 @@
     <description>Recent content in tech on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Mon, 24 May 2021 08:46:28 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 May 2021 12:17:16 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java 디자인 패턴-08.Facade</title>
+      <link>https://bluedskim.github.io/posts/tech/javadesignpattern-08.facade/</link>
+      <pubDate>Tue, 25 May 2021 12:17:16 +0900</pubDate>
+      
+      <guid>https://bluedskim.github.io/posts/tech/javadesignpattern-08.facade/</guid>
+      <description>(Java 디자인 패턴 스터디 모집 중 : https://github.com/bluedskim/javaDesignPatterns) Facade 패턴 다이어그램 (출처:https://www.geeksforgeeks.org/facade-design-</description>
+    </item>
+    
     <item>
       <title>Java 디자인 패턴-07.State</title>
       <link>https://bluedskim.github.io/posts/tech/javadesignpattern-07.state/</link>
       <pubDate>Mon, 24 May 2021 08:46:28 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/tech/javadesignpattern-07.state/</guid>
-      <description>패턴 다이어그램 &amp;ldquo;어떤 객체의 상태에 따라 행위가 변경되는 경우 유용한 패턴&amp;rdquo; (출처:https://refactoring.g</description>
+      <description>(Java 디자인 패턴 스터디 모집 중 : https://github.com/bluedskim/javaDesignPatterns) 패턴 다이어그램 &amp;ldquo;어떤 객체의 상태에 따라 행위가 변경되는 경우 유용한 패턴&amp;rdquo; (출처:https:/</description>
     </item>
     
     <item>
