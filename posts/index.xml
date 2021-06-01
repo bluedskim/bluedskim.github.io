@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Fri, 28 May 2021 21:36:41 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Jun 2021 16:12:55 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java 디자인 패턴-10.Adapter</title>
+      <link>https://bluedskim.github.io/posts/tech/javadesignpattern-10.adapter/</link>
+      <pubDate>Tue, 01 Jun 2021 16:12:55 +0900</pubDate>
+      
+      <guid>https://bluedskim.github.io/posts/tech/javadesignpattern-10.adapter/</guid>
+      <description>(Java 디자인 패턴 스터디 모집 중 : https://github.com/bluedskim/javaDesignPatterns) Adapter(적응) 패턴 (출처:https://educationinaction.org/water-roc</description>
+    </item>
+    
     <item>
       <title>Java 디자인 패턴-09.Observer</title>
       <link>https://bluedskim.github.io/posts/tech/javadesignpattern-09.observer/</link>

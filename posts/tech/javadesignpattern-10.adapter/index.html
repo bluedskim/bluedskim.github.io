@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta property="og:title" content="Java 디자인 패턴-10.Adapter" />
+<meta property="og:description" content="(Java 디자인 패턴 스터디 모집 중 : https://github.com/bluedskim/javaDesignPatterns) Adapter(적응) 패턴 (출처:https://educationinaction.org/water-roc" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://bluedskim.github.io/posts/tech/javadesignpattern-10.adapter/" />
+<meta property="article:published_time" content="2021-06-01T16:12:55+09:00" />
+<meta property="article:modified_time" content="2021-06-01T16:12:55+09:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Java 디자인 패턴-10.Adapter"/>
+<meta name="twitter:description" content="(Java 디자인 패턴 스터디 모집 중 : https://github.com/bluedskim/javaDesignPatterns) Adapter(적응) 패턴 (출처:https://educationinaction.org/water-roc"/>
+<meta name="generator" content="Hugo 0.76.5" />
+
+
+    
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Java 디자인 패턴-10.Adapter",
+  "url": "https:\/\/bluedskim.github.io\/posts\/tech\/javadesignpattern-10.adapter\/",
+  "wordCount": "650",
+  "datePublished": "2021-06-01T16:12:55\u002b09:00",
+  "dateModified": "2021-06-01T16:12:55\u002b09:00",
+  "author": {
+    "@type": "Person",
+    "name": "Dennis"
+  },
+  "keywords": "tech, java, Design Pattern"
+}
+</script>
+
+
+
+    <link rel="canonical" href="https://bluedskim.github.io/posts/tech/javadesignpattern-10.adapter/">
+
+    <title>Java 디자인 패턴-10.Adapter | Do What You Want To Do</title>
+
+    
+    <!-- combined, minified CSS -->
+    <link href="https://bluedskim.github.io/css/style.css" rel="stylesheet" integrity="sha384-G5B34w7DFTumWTswxYzTX7NWfbvQEg1HbFFEg6ItN03uTAAoS2qkPS/fu3LhuuSA" crossorigin="anonymous">
+    
+
+    <!-- RSS 2.0 feed -->
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-108812986-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    
+
+    
+	<link rel="stylesheet" href="https://bluedskim.github.io/custom.css">
+
+
+  </head>
+
+  <body>
+
+    
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="nav blog-nav">
+          <a class="nav-link " href="https://bluedskim.github.io/">Home</a>
+          
+          <a class="nav-link" href="/tags/samba/" title="">Samba</a>
+          
+          
+          <a class="nav-link" href="/categories/tech/" title="">Tech</a>
+          
+          
+          <a class="nav-link" href="/categories/%EC%9D%8C%EC%95%85/" title="">음악</a>
+          
+          
+          <a class="nav-link" href="/categories/%EC%9D%BC%EC%83%81%EC%82%AC/" title="">일상사</a>
+          
+        </nav>
+      </div>
+    </div>
+    
+
+    
+    
+    <header class="blog-header">
+      <div class="container">
+        <h1 class="blog-title" dir="auto"><a href="https://bluedskim.github.io/" rel="home">Do What You Want To Do</a></h1>
+        <p class="lead blog-description" dir="auto"><a href="mailto:bluedskim@gmail.com">bluedskim@gmail.com</a></p>
+      </div>
+    </header>
+    
+    
+
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+
+          
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="https://bluedskim.github.io/posts/tech/javadesignpattern-10.adapter/">Java 디자인 패턴-10.Adapter</a></h2>
+    <p class="blog-post-meta"><time datetime="2021-06-01T16:12:55&#43;09:00">2021-06-01</time> by Dennis in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/tech" rel="category tag">tech</a>
+
+
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/java" rel="tag">java</a>, <a href="/tags/design-pattern" rel="tag">Design Pattern</a>
+
+</p>
+  </header>
+  <p>(<em>Java 디자인 패턴 스터디 모집 중 : <a href="https://github.com/bluedskim/javaDesignPatterns">https://github.com/bluedskim/javaDesignPatterns</a></em>)</p>
+<h2 id="adapter적응-패턴">Adapter(적응) 패턴</h2>
+<p><img src="https://static.spacecrafted.com/b849f747e16744a5be3537c67cbb5770/i/f4d8c0d7559a4f02861ae4d67e55ceb2/1/GCuCv726gZycFxatRCb7iU/Adaptation.jpg" alt="숲속의 곰이 북극에 적응하기" title="숲속의 곰이 북극에 적응하기"></p>
+<p>(출처:<a href="https://educationinaction.org/water-rocks-vocabulary/adaptation">https://educationinaction.org/water-rocks-vocabulary/adaptation</a>)</p>
+<h2 id="해결하려는-문제">해결하려는 문제</h2>
+<ol>
+<li>인터페이스의 불일치 해결.</li>
+</ol>
+<h2 id="용도목적">용도/목적</h2>
+<ol>
+<li>구조적Structural 패턴</li>
+<li>어떤 인터페이스를 다른 목적의 인터페이스로 만드는 패턴.</li>
+<li>클라이언트 소스 수정이 불가능한 경우 유용하다.</li>
+</ol>
+<h2 id="구성요소">구성요소</h2>
+<ol>
+<li>adapter(wrapper) : adaptee의 interface를 클라이언트가 원하는 target의 인터페이스로 변경하는 객체</li>
+<li>adaptee : 변경대상이 되는 객체</li>
+<li>target : 클라이언트가 원하는 인터페이스를 가지고 있는 객체</li>
+<li>클라이언트 : target으로 변경된 adaptee를 사용하는 객체</li>
+</ol>
+<h2 id="고려사항">고려사항</h2>
+<p>다른 유사한 패턴과 비교해보자 <a href="https://en.wikipedia.org/wiki/Adapter_pattern#Usage">https://en.wikipedia.org/wiki/Adapter_pattern#Usage</a></p>
+<ol>
+<li>Decorator : 원래의 소스를 감싸는 방식으로 인터페이스에 동적으로 기능을 추가한다.</li>
+<li>Delegation : 상속을 통한 조합</li>
+<li>Facade : 단순화된 인터페이스 제공</li>
+</ol>
+<h2 id="클래스-다이어그램">클래스 다이어그램</h2>
+<p><img src="https://www.plantuml.com/plantuml/png/hLFBIWCn55qtNn4AqkcYC_iYOi551Gi5wmTa9hUJw2GPaaoXgA3GdOAu5DIrImKt_bAT_eFfaqvjYmMpkxdtd7Dp3ZaqbcYRYGGtA4ajQ3owVniDFhtXryttmrC-UAaYn3W532ArVIn0XA1DySeoHGr2bji4jl0m8DGrcBMfgGT1p2tBGZzI8WYJ3AYvu28u9pro18R7iasiev46TPKQy-MlZ_dW8xzx7hxVuZrAB7ZblZj-g-LJMi6LPhCkHDcjYxXqW2w909_mc5d9PTncIWA-HALJgrs9DKICw1YyAYhr5ASuCx0OTfVNoomj7cbrPiA_aCndfnnHGep1n-dkwbDaGr8zxk-kkQ3hg7bxdemZIpNlEGTnbqkIhBgK54fKsapbRKLM_t7f3XYxneL2Cbun9x5SJKHMjjs_ylrPDgW8dNGsBxDkUfRKaiXluskrWnMljurFdZo65DGGEWH9tOVz0G00" alt="Adapter 패턴(김동석)" title="Adapter 패턴(김동석)"></p>
+<h2 id="소스">소스</h2>
+<ol>
+<li>adapter : LightningToMicroUsbAdapter.java
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> net.dskim.desingpattern.adapter<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> lombok.extern.slf4j.Slf4j<span style="color:#f92672">;</span>
+
+<span style="color:#a6e22e">@Slf4j</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">LightningToMicroUsbAdapter</span> <span style="color:#66d9ef">implements</span> MicroUsbPhone <span style="color:#f92672">{</span>
+	<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">final</span> LightningPhone lightningPhone<span style="color:#f92672">;</span>
+
+	<span style="color:#66d9ef">public</span> <span style="color:#a6e22e">LightningToMicroUsbAdapter</span><span style="color:#f92672">(</span>LightningPhone lightningPhone<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">lightningPhone</span> <span style="color:#f92672">=</span> lightningPhone<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+
+	<span style="color:#a6e22e">@Override</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">useMicroUsb</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		log<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;MicroUsb connected&#34;</span><span style="color:#f92672">);</span>
+		lightningPhone<span style="color:#f92672">.</span><span style="color:#a6e22e">useLightning</span><span style="color:#f92672">();</span>
+	<span style="color:#f92672">}</span>
+
+	<span style="color:#a6e22e">@Override</span>
+	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">recharge</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">return</span> lightningPhone<span style="color:#f92672">.</span><span style="color:#a6e22e">recharge</span><span style="color:#f92672">();</span>
+	<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>adaptee : LightningPhone.java
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> net.dskim.desingpattern.adapter<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">LightningPhone</span> <span style="color:#f92672">{</span>
+	String <span style="color:#a6e22e">recharge</span><span style="color:#f92672">();</span>
+	<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">useLightning</span><span style="color:#f92672">();</span>
+<span style="color:#f92672">}</span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>target : MicroUsbPhone.java
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> net.dskim.desingpattern.adapter<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">MicroUsbPhone</span> <span style="color:#f92672">{</span>
+	String <span style="color:#a6e22e">recharge</span><span style="color:#f92672">();</span>
+	<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">useMicroUsb</span><span style="color:#f92672">();</span>
+<span style="color:#f92672">}</span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>클라이언트 : LightningToMicroUsbAdapterTest.java
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> net.dskim.desingpattern.adapter<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import static</span> org.junit.jupiter.api.Assertions.assertEquals<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.junit.jupiter.api.Test<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> lombok.extern.slf4j.Slf4j<span style="color:#f92672">;</span>
+
+<span style="color:#a6e22e">@Slf4j</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">LightningToMicroUsbAdapterTest</span> <span style="color:#f92672">{</span>
+	<span style="color:#75715e">// MicroUsbPhone 충전전용 메소드를 반드시 써야 한다고 가정한다.
+</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">rechargeMicroUsbPhone</span><span style="color:#f92672">(</span>MicroUsbPhone microUsbPhone<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		microUsbPhone<span style="color:#f92672">.</span><span style="color:#a6e22e">useMicroUsb</span><span style="color:#f92672">();</span>
+		<span style="color:#66d9ef">return</span> microUsbPhone<span style="color:#f92672">.</span><span style="color:#a6e22e">recharge</span><span style="color:#f92672">();</span>
+	<span style="color:#f92672">}</span>
+
+	<span style="color:#a6e22e">@Test</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">lightningToMicroUsbAdapterTest</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        Android android <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Android<span style="color:#f92672">();</span>
+		String androidRechargeResult <span style="color:#f92672">=</span> rechargeMicroUsbPhone<span style="color:#f92672">(</span>android<span style="color:#f92672">);</span>
+		log<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;androidRechargeResult={}&#34;</span><span style="color:#f92672">,</span> androidRechargeResult<span style="color:#f92672">);</span>
+		assertEquals<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Recharge finished&#34;</span><span style="color:#f92672">,</span> androidRechargeResult<span style="color:#f92672">);</span>
+
+        Iphone iPhone <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Iphone<span style="color:#f92672">();</span>
+		<span style="color:#75715e">//rechargeMicroUsbPhone(iPhone); //iPhone에서 micro usb를 쓰려한다면 compile 에러 발생
+</span><span style="color:#75715e"></span>		String iphoneWithMicroUsbRechargeResult <span style="color:#f92672">=</span> rechargeMicroUsbPhone<span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> LightningToMicroUsbAdapter<span style="color:#f92672">(</span>iPhone<span style="color:#f92672">));</span>
+		log<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;iphoneWithMicroUsbRechargeResult={}&#34;</span><span style="color:#f92672">,</span> iphoneWithMicroUsbRechargeResult<span style="color:#f92672">);</span>
+		assertEquals<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Recharge finished&#34;</span><span style="color:#f92672">,</span> iphoneWithMicroUsbRechargeResult<span style="color:#f92672">);</span>
+	<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+<h2 id="참고">참고</h2>
+<ul>
+<li><a href="https://refactoring.guru/design-patterns/adapter">refactoring.guru : Adapter pattern</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Adapter_pattern">wikipedia : Adapter pattern</a></li>
+<li><a href="https://www.baeldung.com/java-adapter-pattern#:~:text=An%20Adapter%20pattern%20acts%20as,compatible%20with%20the%20client's%20interface.">baeldung : The Adapter Pattern in Java</a></li>
+</ul>
+
+
+  
+
+  
+  <hr>
+  <footer>
+
+  
+
+  
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bluedskim" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  
+  </footer>
+  
+
+</article> 
+
+
+
+        </div> <!-- /.blog-main -->
+
+        <aside class="col-sm-3 ml-auto blog-sidebar">
+  
+  <section class="sidebar-module sidebar-module-inset">
+    <h4>About</h4>
+    <p dir="auto">잡다한것들을 기록합니다. something to remember</p>
+  </section>
+  
+
+  
+        <section class="sidebar-module">
+    <h4>Recent Posts</h4>
+    <ol class="list-unstyled">
+
+
+<li><a href="/posts/tech/javadesignpattern-10.adapter/">Java 디자인 패턴-10.Adapter</a></li>
+
+<li><a href="/posts/tech/javadesignpattern-09.observer/">Java 디자인 패턴-09.Observer</a></li>
+
+<li><a href="/posts/tech/javadesignpattern-08.facade/">Java 디자인 패턴-08.Facade</a></li>
+
+<li><a href="/posts/tech/javadesignpattern-07.state/">Java 디자인 패턴-07.State</a></li>
+
+<li><a href="/posts/tech/perl%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%A1%9C-http-get-%EC%9A%94%EC%B2%AD%ED%95%98%EA%B3%A0-%EC%9D%91%EB%8B%B5%EC%B6%9C%EB%A0%A5/">Perl스크립트로 Http Get 요청하고 응답출력하기</a></li>
+
+    </ol>
+  </section>
+
+  
+
+  
+  <section class="sidebar-module">
+    <h4>Links</h4>
+    <ol class="list-unstyled">
+      
+      <li><a href="http://bohemia.band">- Bohemia</a></li>
+      
+      <li><a href="https://github.com/bluedskim">- Github</a></li>
+      
+      <li><a href="https://www.instagram.com/bluedskim/">- Instagram</a></li>
+      
+      <li><a href="https://soundcloud.com/bluedskim">- Sound Cloud</a></li>
+      
+      <li><a href="https://www.youtube.com/user/bluedskim/videos">- Youtube Channel</a></li>
+      
+    </ol>
+  </section>
+  
+</aside>
+
+
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+    
+
+    
+    <footer class="blog-footer">
+      <p dir="auto">
+      
+      Blog template created by <a href="https://twitter.com/mdo">@mdo</a>, ported to Hugo by <a href='https://twitter.com/mralanorth'>@mralanorth</a>.
+      
+      </p>
+      <p>
+      <a href="#">Back to top</a>
+      </p>
+    </footer>
+    
+
+  </body>
+
+</html>
