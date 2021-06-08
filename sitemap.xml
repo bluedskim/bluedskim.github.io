@@ -4,16 +4,46 @@
   
   <url>
     <loc>https://bluedskim.github.io/categories/</loc>
-    <lastmod>2021-06-03T22:31:58+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bluedskim.github.io/tags/design-pattern/</loc>
-    <lastmod>2021-06-03T22:31:58+09:00</lastmod>
+    <lastmod>2021-06-08T22:20:30+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/</loc>
+    <lastmod>2021-06-08T22:20:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bluedskim.github.io/posts/</loc>
+    <lastmod>2021-06-08T22:20:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bluedskim.github.io/tags/</loc>
+    <lastmod>2021-06-08T22:20:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bluedskim.github.io/categories/tech/</loc>
+    <lastmod>2021-06-08T22:20:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bluedskim.github.io/tags/ubuntu/</loc>
+    <lastmod>2021-06-08T22:20:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bluedskim.github.io/posts/tech/ubuntu_vs-code-%EC%97%90%EC%84%9C-%ED%95%9C%EA%B8%80-%EC%9E%85%EB%A0%A5-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/</loc>
+    <lastmod>2021-06-08T22:20:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bluedskim.github.io/tags/vs-code/</loc>
+    <lastmod>2021-06-08T22:20:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bluedskim.github.io/tags/design-pattern/</loc>
     <lastmod>2021-06-03T22:31:58+09:00</lastmod>
   </url>
   
@@ -24,21 +54,6 @@
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/javadesignpattern-11.decorator/</loc>
-    <lastmod>2021-06-03T22:31:58+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bluedskim.github.io/posts/</loc>
-    <lastmod>2021-06-03T22:31:58+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bluedskim.github.io/tags/</loc>
-    <lastmod>2021-06-03T22:31:58+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bluedskim.github.io/categories/tech/</loc>
     <lastmod>2021-06-03T22:31:58+09:00</lastmod>
   </url>
   
@@ -130,11 +145,6 @@
   <url>
     <loc>https://bluedskim.github.io/posts/tech/jboss%EC%9D%98-modeshape%EB%A1%9C-%EC%98%81%EB%8B%A8%EC%96%B4%EB%A5%BC-%EB%B3%B5%EC%88%98%ED%98%95%EB%8B%A8%EC%88%98%ED%98%95%EC%9C%BC%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/</loc>
     <lastmod>2020-10-11T21:39:37+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bluedskim.github.io/tags/vs-code/</loc>
-    <lastmod>2020-10-06T23:09:54+09:00</lastmod>
   </url>
   
   <url>
@@ -299,11 +309,6 @@
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/special-thanks-to-ubuntu/</loc>
-    <lastmod>2019-10-29T22:53:26+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bluedskim.github.io/tags/ubuntu/</loc>
     <lastmod>2019-10-29T22:53:26+09:00</lastmod>
   </url>
   
