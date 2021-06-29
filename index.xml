@@ -6,7 +6,16 @@
     <description>Recent content on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Sat, 12 Jun 2021 10:38:46 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Jun 2021 22:47:34 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java 디자인 패턴-12.Composite</title>
+      <link>https://bluedskim.github.io/posts/tech/javadesignpattern-12.composite/</link>
+      <pubDate>Tue, 29 Jun 2021 22:47:34 +0900</pubDate>
+      
+      <guid>https://bluedskim.github.io/posts/tech/javadesignpattern-12.composite/</guid>
+      <description>Composite 패턴 &amp;ldquo;하나의 주문은 여러 상품으로 구성될 수 있다. 이 상품들은 여러 개의 다른 박스에 담길 수 있으며 이 박스들 역시 더 큰 박스에 담길 수 있다. 이런 구조</description>
+    </item>
+    
     <item>
       <title>추천 Redmine Agile플러그인과 PurpleMine2 테마</title>
       <link>https://bluedskim.github.io/posts/tech/%EC%B6%94%EC%B2%9C-redmine-agile%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8%EA%B3%BC-purplemine-2-%ED%85%8C%EB%A7%88/</link>

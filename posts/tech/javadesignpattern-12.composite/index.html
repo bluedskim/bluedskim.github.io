@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta property="og:title" content="Java 디자인 패턴-12.Composite" />
+<meta property="og:description" content="Composite 패턴 &ldquo;하나의 주문은 여러 상품으로 구성될 수 있다. 이 상품들은 여러 개의 다른 박스에 담길 수 있으며 이 박스들 역시 더 큰 박스에 담길 수 있다. 이런 구조" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://bluedskim.github.io/posts/tech/javadesignpattern-12.composite/" />
+<meta property="article:published_time" content="2021-06-29T22:47:34+09:00" />
+<meta property="article:modified_time" content="2021-06-29T22:47:34+09:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Java 디자인 패턴-12.Composite"/>
+<meta name="twitter:description" content="Composite 패턴 &ldquo;하나의 주문은 여러 상품으로 구성될 수 있다. 이 상품들은 여러 개의 다른 박스에 담길 수 있으며 이 박스들 역시 더 큰 박스에 담길 수 있다. 이런 구조"/>
+<meta name="generator" content="Hugo 0.76.5" />
+
+
+    
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Java 디자인 패턴-12.Composite",
+  "url": "https:\/\/bluedskim.github.io\/posts\/tech\/javadesignpattern-12.composite\/",
+  "wordCount": "667",
+  "datePublished": "2021-06-29T22:47:34\u002b09:00",
+  "dateModified": "2021-06-29T22:47:34\u002b09:00",
+  "author": {
+    "@type": "Person",
+    "name": "Dennis"
+  },
+  "keywords": "tech, java, Design Pattern"
+}
+</script>
+
+
+
+    <link rel="canonical" href="https://bluedskim.github.io/posts/tech/javadesignpattern-12.composite/">
+
+    <title>Java 디자인 패턴-12.Composite | Do What You Want To Do</title>
+
+    
+    <!-- combined, minified CSS -->
+    <link href="https://bluedskim.github.io/css/style.css" rel="stylesheet" integrity="sha384-G5B34w7DFTumWTswxYzTX7NWfbvQEg1HbFFEg6ItN03uTAAoS2qkPS/fu3LhuuSA" crossorigin="anonymous">
+    
+
+    <!-- RSS 2.0 feed -->
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-108812986-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    
+
+    
+	<link rel="stylesheet" href="https://bluedskim.github.io/custom.css">
+
+
+  </head>
+
+  <body>
+
+    
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="nav blog-nav">
+          <a class="nav-link " href="https://bluedskim.github.io/">Home</a>
+          
+          <a class="nav-link" href="/tags/samba/" title="">Samba</a>
+          
+          
+          <a class="nav-link" href="/categories/tech/" title="">Tech</a>
+          
+          
+          <a class="nav-link" href="/categories/%EC%9D%8C%EC%95%85/" title="">음악</a>
+          
+          
+          <a class="nav-link" href="/categories/%EC%9D%BC%EC%83%81%EC%82%AC/" title="">일상사</a>
+          
+        </nav>
+      </div>
+    </div>
+    
+
+    
+    
+    <header class="blog-header">
+      <div class="container">
+        <h1 class="blog-title" dir="auto"><a href="https://bluedskim.github.io/" rel="home">Do What You Want To Do</a></h1>
+        <p class="lead blog-description" dir="auto"><a href="mailto:bluedskim@gmail.com">bluedskim@gmail.com</a></p>
+      </div>
+    </header>
+    
+    
+
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+
+          
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="https://bluedskim.github.io/posts/tech/javadesignpattern-12.composite/">Java 디자인 패턴-12.Composite</a></h2>
+    <p class="blog-post-meta"><time datetime="2021-06-29T22:47:34&#43;09:00">2021-06-29</time> by Dennis in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/tech" rel="category tag">tech</a>
+
+
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/java" rel="tag">java</a>, <a href="/tags/design-pattern" rel="tag">Design Pattern</a>
+
+</p>
+  </header>
+  <h2 id="composite-패턴">Composite 패턴</h2>
+<p><img src="https://refactoring.guru/images/patterns/diagrams/composite/problem-en-2x.png?id=5c7d443ccce3e46c4308" alt="n order might comprise various products, packaged in boxes, which are packaged in bigger boxes and so on. The whole structure looks like an upside down tree." title="n order might comprise various products, packaged in boxes, which are packaged in bigger boxes and so on. The whole structure looks like an upside down tree."></p>
+<p>&ldquo;하나의 주문은 여러 상품으로 구성될 수 있다. 이 상품들은 여러 개의 다른 박스에 담길 수 있으며 이 박스들 역시 더 큰 박스에 담길 수 있다. 이런 구조는 뒤집힌 트리형태와 같다.&rdquo;
+(출처:<a href="https://refactoring.guru/design-patterns/composite">https://refactoring.guru/design-patterns/composite</a>)</p>
+<h2 id="해결하려는-문제">해결하려는 문제</h2>
+<ol>
+<li>클라이언트는 트리tree구조의 자료구조에 접근할 때 부모 노드와 leaf노드를 접근하는 api가 틀리다면 소스가 복잡해진다. 부모와 노드를 일관된 방법으로 접근할 수 있다면 클라이언트 구현,변경,테스트,재사용이 쉬워진다.</li>
+</ol>
+<h2 id="특징용도">특징/용도</h2>
+<ol>
+<li>트리tree구조의 자료구조에만 적용가능하다.</li>
+<li>Composite 객체는 요청을 자식객체들에게 순차적으로 전달forward한다.</li>
+</ol>
+<h2 id="클래스-다이어그램">클래스 다이어그램</h2>
+<p><img src="https://www.plantuml.com/plantuml/png/ZL9DIyCm63wRNn46ikxGzZw7JFGmmSbG_q3Ql6kZJLEIjuEXWi9k2k9HKCyU5RpubsRt7qox3LQ_M0uXUV8yx_D-f6kGQSnbGlSHD4EbwUpsPJPvTwOVLvzt3yNagKL8B3XGa1cEgGGPW3Pr26F53I4eC06wgsIcZ43u9L8CZ8EcCM9cshuV2Oppm0kLz8Ca1sxEXFHFsOZjWH5HEc1eaqeD6Ifb3xHulYycRyNDu_JrccvoXk0qndPv_Rx7UPCsUxssb0sRC16f5GnP2BGFQKxFoKQM1ua8gNsW4U10Yn2SrXQvNENkH966oCRz9XefmIdZl8ITwatQRQuE4sOCFLIAszh_zPapZoom3kyOS9d5WJ3OAI_RbQ_vKxn-lijfdu31qg9IX8l92PMMkDCg-PMyS-6wzUuiSSzRrBu2b2MIUYyhV54I8JLtrzskXlGJhHkIBgJS_jGl" alt="Iterator 패턴(김동석)" title="Iterator 패턴(김동석)"></p>
+<h2 id="소스">소스</h2>
+<ol>
+<li>Component : 공통 인터페이스로 leaf와 composition이 구현해야 할 메소드가 선언되어 있음
+<ul>
+<li>Menu.java
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> net.dskim.desingpattern.composite<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">Menu</span> <span style="color:#f92672">{</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">getPrice</span><span style="color:#f92672">();</span>
+<span style="color:#f92672">}</span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>AggregateMenu.java
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> net.dskim.desingpattern.composite<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">AggregateMenu</span> <span style="color:#66d9ef">extends</span> Menu <span style="color:#f92672">{</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">addMenu</span><span style="color:#f92672">(</span>Menu menu<span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+<li>Leaf : 트리의 기본 요소로 하위 요소를 가지고 있지 않는다.
+<ul>
+<li>Noodle.java
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> net.dskim.desingpattern.composite<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> lombok.extern.slf4j.Slf4j<span style="color:#f92672">;</span>
+
+<span style="color:#a6e22e">@Slf4j</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Noodle</span> <span style="color:#66d9ef">implements</span> Menu <span style="color:#f92672">{</span>
+	<span style="color:#66d9ef">int</span> price<span style="color:#f92672">;</span>
+	
+	<span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Noodle</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> price<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">price</span> <span style="color:#f92672">=</span> price<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+
+	<span style="color:#a6e22e">@Override</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">getPrice</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		log<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;price=={}&#34;</span><span style="color:#f92672">,</span> price<span style="color:#f92672">);</span>
+		<span style="color:#66d9ef">return</span> price<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>Rice.java
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> net.dskim.desingpattern.composite<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> lombok.extern.slf4j.Slf4j<span style="color:#f92672">;</span>
+
+<span style="color:#a6e22e">@Slf4j</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Rice</span> <span style="color:#66d9ef">implements</span> Menu <span style="color:#f92672">{</span>
+	<span style="color:#66d9ef">int</span> price<span style="color:#f92672">;</span>
+	
+	<span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Rice</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> price<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">price</span> <span style="color:#f92672">=</span> price<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+
+	<span style="color:#a6e22e">@Override</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">getPrice</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		log<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;price=={}&#34;</span><span style="color:#f92672">,</span> price<span style="color:#f92672">);</span>
+		<span style="color:#66d9ef">return</span> price<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+<li>Composite : Component를 구현implement. leaf의 container역할
+<ul>
+<li>SetMenu.java
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> net.dskim.desingpattern.composite<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.util.ArrayList<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.util.List<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> lombok.extern.slf4j.Slf4j<span style="color:#f92672">;</span>
+
+<span style="color:#a6e22e">@Slf4j</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SetMenu</span> <span style="color:#66d9ef">implements</span> AggregateMenu <span style="color:#f92672">{</span>
+	List<span style="color:#f92672">&lt;</span>Menu<span style="color:#f92672">&gt;</span> menus <span style="color:#f92672">;</span>
+	
+	<span style="color:#66d9ef">public</span> <span style="color:#a6e22e">SetMenu</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		menus <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span>
+	<span style="color:#f92672">}</span>
+
+	<span style="color:#a6e22e">@Override</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">addMenu</span><span style="color:#f92672">(</span>Menu menu<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		menus<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>menu<span style="color:#f92672">);</span>
+	<span style="color:#f92672">}</span>
+
+	<span style="color:#a6e22e">@Override</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">getPrice</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">int</span> price <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+		<span style="color:#66d9ef">for</span><span style="color:#f92672">(</span>Menu menu <span style="color:#f92672">:</span> menus<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+			price <span style="color:#f92672">+=</span> menu<span style="color:#f92672">.</span><span style="color:#a6e22e">getPrice</span><span style="color:#f92672">();</span>
+		<span style="color:#f92672">}</span>
+		log<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;price=={}&#34;</span><span style="color:#f92672">,</span> price<span style="color:#f92672">);</span>
+		<span style="color:#66d9ef">return</span> price<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+</ol>
+<h2 id="참고">참고</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Composite_pattern">wikipedia : Composite pattern</a></li>
+<li><a href="https://refactoring.guru/design-patterns/composite">refactoring.guru : Design Patterns / Structural Patterns / Composite</a></li>
+</ul>
+
+
+  
+
+  
+  <hr>
+  <footer>
+
+  
+
+  
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bluedskim" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  
+  </footer>
+  
+
+</article> 
+
+
+
+        </div> <!-- /.blog-main -->
+
+        <aside class="col-sm-3 ml-auto blog-sidebar">
+  
+  <section class="sidebar-module sidebar-module-inset">
+    <h4>About</h4>
+    <p dir="auto">잡다한것들을 기록합니다. something to remember</p>
+  </section>
+  
+
+  
+        <section class="sidebar-module">
+    <h4>Recent Posts</h4>
+    <ol class="list-unstyled">
+
+
+<li><a href="/posts/tech/javadesignpattern-12.composite/">Java 디자인 패턴-12.Composite</a></li>
+
+<li><a href="/posts/tech/%EC%B6%94%EC%B2%9C-redmine-agile%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8%EA%B3%BC-purplemine-2-%ED%85%8C%EB%A7%88/">추천 Redmine Agile플러그인과 PurpleMine2 테마</a></li>
+
+<li><a href="/posts/tech/ubuntu_vs-code-%EC%97%90%EC%84%9C-%ED%95%9C%EA%B8%80-%EC%9E%85%EB%A0%A5-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/">Ubuntu 20.04 + VS Code 1.56.2에서 한글 입력 문제 해결하기</a></li>
+
+<li><a href="/posts/tech/javadesignpattern-11.decorator/">Java 디자인 패턴-11.Decorator</a></li>
+
+<li><a href="/posts/tech/javadesignpattern-10.adapter/">Java 디자인 패턴-10.Adapter</a></li>
+
+    </ol>
+  </section>
+
+  
+
+  
+  <section class="sidebar-module">
+    <h4>Links</h4>
+    <ol class="list-unstyled">
+      
+      <li><a href="http://bohemia.band">- Bohemia</a></li>
+      
+      <li><a href="https://github.com/bluedskim">- Github</a></li>
+      
+      <li><a href="https://www.instagram.com/bluedskim/">- Instagram</a></li>
+      
+      <li><a href="https://soundcloud.com/bluedskim">- Sound Cloud</a></li>
+      
+      <li><a href="https://www.youtube.com/user/bluedskim/videos">- Youtube Channel</a></li>
+      
+    </ol>
+  </section>
+  
+</aside>
+
+
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+    
+
+    
+    <footer class="blog-footer">
+      <p dir="auto">
+      
+      Blog template created by <a href="https://twitter.com/mdo">@mdo</a>, ported to Hugo by <a href='https://twitter.com/mralanorth'>@mralanorth</a>.
+      
+      </p>
+      <p>
+      <a href="#">Back to top</a>
+      </p>
+    </footer>
+    
+
+  </body>
+
+</html>
