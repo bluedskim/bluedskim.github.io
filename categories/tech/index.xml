@@ -6,7 +6,16 @@
     <description>Recent content in tech on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Tue, 29 Jun 2021 22:47:34 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 14 Jul 2021 23:59:28 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker로 Oracle12 설치하기</title>
+      <link>https://bluedskim.github.io/posts/tech/oracleondocker/</link>
+      <pubDate>Wed, 14 Jul 2021 23:59:28 +0900</pubDate>
+      
+      <guid>https://bluedskim.github.io/posts/tech/oracleondocker/</guid>
+      <description>oracle 12 enterprise 버전 설치에 대한 글이다. 다른 버전 설치는 이렇게 복잡하지 않은 듯. 아래 링크 참조 Docker로 Oracle xe 11g 설치 : https://romeoh.tistory.com/entry/Oracle-docker%EC%97%90-Oracle-11g-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0 [Docker] Oracle DB(Oracle 12c) 구성하기 : https://gomguk.tistory.com/69 Docker를 어</description>
+    </item>
+    
     <item>
       <title>Java 디자인 패턴-12.Composite</title>
       <link>https://bluedskim.github.io/posts/tech/javadesignpattern-12.composite/</link>
