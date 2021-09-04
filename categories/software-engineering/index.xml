@@ -6,7 +6,11 @@
     <description>Recent content in Software Engineering on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Sat, 17 Jul 2010 12:53:00 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/categories/software-engineering/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 17 Jul 2010 12:53:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://bluedskim.github.io/categories/software-engineering/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>잃어버린/도난당한 iPad, iPhone, iPod 를 찾기 위한 아이디어</title>
       <link>https://bluedskim.github.io/posts/software-engineering/%EC%9E%83%EC%96%B4%EB%B2%84%EB%A6%B0_%EB%8F%84%EB%82%9C%EB%8B%B9%ED%95%9C-ipad-iphone-ipod-%EB%A5%BC-%EC%B0%BE%EA%B8%B0-%EC%9C%84%ED%95%9C-%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4/</link>
@@ -22,7 +26,7 @@
       <pubDate>Wed, 15 Jul 2009 12:52:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/%EC%84%B8%EC%83%81%EC%97%90%EB%8A%94-%EB%91%90-%EC%A2%85%EB%A5%98%EC%9D%98-%EC%9C%84%EB%8C%80%ED%95%9C-%EC%82%AC%EB%9E%8C%EC%9D%B4-%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.-%ED%95%98%EB%82%98%EB%8A%94-%EC%A7%81%EC%A0%91-%EC%9C%84%EB%8C%80%ED%95%9C-%EC%9D%BC%EC%9D%84-%ED%95%98%EB%8A%94-%EC%82%AC%EB%9E%8C%EC%9D%B4%EA%B3%A0-%EB%98%90-%ED%95%98%EB%82%98%EB%8A%94-%EB%8B%A4%EB%A5%B8-%EC%82%AC%EB%9E%8C%EC%9D%B4-%EC%9C%84%EB%8C%80%ED%95%9C-%EC%9D%BC%EC%9D%84-%ED%95%98%EA%B2%8C-%EB%8F%84%EC%99%80%EC%A3%BC%EB%8A%94-%EC%82%AC%EB%9E%8C%EC%9E%85%EB%8B%88%EB%8B%A4.-%ED%9B%84%EC%9E%90%EB%8F%84-%EC%9C%84%EB%8C%80%ED%95%9C-%EC%82%AC%EB%9E%8C%EC%9E%85%EB%8B%88%EB%8B%A4./</guid>
-      <description>&amp;ldquo;세상에는 두 종류의 위대한 사람이 있습니다. 하나는 직접 위대한 일을 하는 사람이고, 또 하나는 다른 사람이 위대한 일을 하게 도와주는 사람입니다. 후</description>
+      <description>&amp;quot;세상에는 두 종류의 위대한 사람이 있습니다. 하나는 직접 위대한 일을 하는 사람이고, 또 하나는 다른 사람이 위대한 일을 하게 도와주는 사람입니다. 후자</description>
     </item>
     
     <item>
@@ -31,7 +35,7 @@
       <pubDate>Mon, 29 Jun 2009 11:06:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/%EC%A3%BC%EB%AA%A9%ED%95%98%EB%8A%94-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%8D%A8%EB%8B%88%EC%9D%98-%E4%B8%80%E7%94%9F%E7%89%9B%E6%AD%A5%E8%A1%8C-%EC%97%90%EC%84%9C-%ED%8D%BC%EC%98%B4/</guid>
-      <description>&amp;quot; 써니의 一生牛步行&amp;quot; http://sunnykwak.egloos.com/4418486 에 유용한 IT(개발)관련 블로그 목록을 보고 opml로 만들었다. 아래는 목록이다. * All of Software * art.oriented * Channy&amp;rsquo;s Blog * Eternity&amp;rsquo;s Chit-Chat * From Business To</description>
+      <description>&amp;rdquo; 써니의 一生牛步行&amp;rdquo; http://sunnykwak.egloos.com/4418486 에 유용한 IT(개발)관련 블로그 목록을 보고 opml로 만들었다. 아래는 목록이다. * All of Software * art.oriented * Channy&amp;rsquo;s Blog * Eternity&amp;rsquo;s Chit-Chat * From Business</description>
     </item>
     
     <item>
@@ -121,7 +125,7 @@
       <pubDate>Sat, 20 Dec 2008 00:23:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4%EC%97%90%EC%84%9C-%EB%8C%80%EC%9D%91%EB%90%98%EB%8A%94-%EA%B4%84%ED%98%B8%EC%B0%BE%EA%B8%B0/</guid>
-      <description>&#39;{ 혹은 (&#39; 와 대응되는 &amp;lsquo;} 혹은 )&amp;lsquo;를 찾고 싶다면 단순히 커서를 { 다음에 놓으면 대응되는 괄호에 사각형이 씌워져서 구별할 수 있다. 커서를 { 다음에 놓은</description>
+      <description>&amp;rsquo;{ 혹은 (&amp;rsquo; 와 대응되는 &amp;lsquo;} 혹은 )&amp;lsquo;를 찾고 싶다면 단순히 커서를 { 다음에 놓으면 대응되는 괄호에 사각형이 씌워져서 구별할 수 있다. 커서를 { 다음에 놓은</description>
     </item>
     
     <item>
@@ -301,7 +305,7 @@
       <pubDate>Thu, 08 Nov 2007 09:11:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/%EC%95%84%EC%9D%BC%EB%9E%9C%EB%93%9C-%EB%8D%94%EB%B8%94%EB%A6%B0%EC%97%90-java-%EC%9D%B8%EB%A0%A5%EC%9D%B4-%EA%B7%80%ED%95%9C%EA%B0%80-%EB%B3%B4%EB%8B%A4./</guid>
-      <description>아일랜드 헤드헌터의 하소연 &amp;ldquo;Java Jobs - Where have all the developers gone&amp;rdquo; http://www.dubjug.org/node/23 &amp;ldquo;Seriously guys - Java is a problem&amp;rdquo; http://www.dubjug.org/node/27 --</description>
+      <description>아일랜드 헤드헌터의 하소연 &amp;quot;Java Jobs - Where have all the developers gone&amp;rdquo; http://www.dubjug.org/node/23 &amp;quot;Seriously guys - Java is a problem&amp;rdquo; http://www.dubjug.org/node/27 --</description>
     </item>
     
     <item>
@@ -310,7 +314,7 @@
       <pubDate>Wed, 07 Nov 2007 21:21:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/%EC%9D%BC%EC%A0%95%EC%B6%94%EC%A0%95%EC%9D%98-%EC%96%B4%EB%A0%A4%EC%9B%80/</guid>
-      <description>&amp;ldquo;캐나다 워털루 대학교 연구팀은 37명의 4학년생들에게 자신의 학부졸업논문을 작성하는데 몇일이나 소요될지 예측하게 하였다. 평균 대답은 33.</description>
+      <description>&amp;quot;캐나다 워털루 대학교 연구팀은 37명의 4학년생들에게 자신의 학부졸업논문을 작성하는데 몇일이나 소요될지 예측하게 하였다. 평균 대답은 33.9</description>
     </item>
     
     <item>
@@ -319,7 +323,7 @@
       <pubDate>Fri, 02 Nov 2007 16:52:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/javascript%EB%A1%9C-%ED%95%B4%EB%8B%B9-html-%EB%82%B4%EB%B6%80%EC%9D%98-%EB%AA%A8%EB%93%A0-%EB%A7%81%ED%81%AC-%EB%AA%A9%EB%A1%9D-%EB%BD%91%EC%95%84%EB%82%B4%EA%B8%B0/</guid>
-      <description>아래 코드를 &amp;lt;/body&amp;gt; 앞에 삽입한 후 브라우저로 불러보면 제일 아래쪽에 링크들 목록이 뜬다. &amp;lt;script&amp;gt; for(i = 0 ; i &amp;lt; document.links.length ; i++ ) { document.write(&#39;&amp;lt;xmp&amp;gt;&#39;); document.write(&#39;[&#39; + (i+1) + &amp;lsquo;]번째 링크 : &#39; + document.links[i].href +</description>
+      <description>아래 코드를 &amp;lt;/body&amp;gt; 앞에 삽입한 후 브라우저로 불러보면 제일 아래쪽에 링크들 목록이 뜬다. &amp;lt;script&amp;gt; for(i = 0 ; i &amp;lt; document.links.length ; i++ ) { document.write(&#39;&amp;lt;xmp&amp;gt;&#39;); document.write(&#39;[&amp;rsquo; + (i+1) + &amp;lsquo;]번째 링크 : &#39; + document.links[i].href +</description>
     </item>
     
     <item>
@@ -328,7 +332,7 @@
       <pubDate>Thu, 01 Nov 2007 17:46:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/ftp-script-%EC%83%98%ED%94%8C/</guid>
-      <description>암호 중간에 스페이스 문자가 있을 때 아래와 같이 한다. #!/bin/sh HOST=&amp;lsquo;ftp.somehost.com&amp;rsquo; USER=&amp;lsquo;loginid&amp;rsquo; PASSWD=&amp;lsquo;pass word&amp;rsquo; ftp -v -n $HOST &amp;lt;&amp;lt;END_SCRIPT quote USER $USER quote PASS $PASSWD passive pwd quit END_SCRIPT exit 0 --</description>
+      <description>암호 중간에 스페이스 문자가 있을 때 아래와 같이 한다. #!/bin/sh HOST=&#39;ftp.somehost.com&amp;rsquo; USER=&#39;loginid&amp;rsquo; PASSWD=&#39;pass word&#39; ftp -v -n $HOST &amp;lt;&amp;lt;END_SCRIPT quote USER $USER quote PASS $PASSWD passive pwd quit END_SCRIPT exit 0 --</description>
     </item>
     
     <item>
@@ -418,7 +422,7 @@
       <pubDate>Wed, 25 Apr 2007 15:17:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/jsp-%EC%97%90%EC%84%9C-request-header-%EB%AA%A8%EB%91%90-%EC%B0%8D%EC%96%B4%EB%B3%B4%EA%B8%B0/</guid>
-      <description>아래코드를 그대로 copy &amp;amp; paste 하면 됨 Enumeration em = request.getHeaderNames(); while (em.hasMoreElements()){ String s = (String)em.nextElement(); out.println(s +&amp;quot; : &amp;ldquo;); out.println(request.getHeader(s)+&amp;quot;&amp;lt;br&amp;gt;&amp;quot;); } --</description>
+      <description>아래코드를 그대로 copy &amp;amp; paste 하면 됨 Enumeration em = request.getHeaderNames(); while (em.hasMoreElements()){ String s = (String)em.nextElement(); out.println(s +&amp;rdquo; : &amp;ldquo;); out.println(request.getHeader(s)+&amp;rdquo;&amp;lt;br&amp;gt;&amp;quot;); } --</description>
     </item>
     
     <item>
@@ -589,7 +593,7 @@
       <pubDate>Tue, 12 Sep 2006 21:48:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/sed-%EC%82%AC%EC%9A%A9%ED%95%9C-find-and-replace-%EC%83%98%ED%94%8C/</guid>
-      <description>sed s/=&amp;quot;..//=&amp;quot;//g develop_view.htm &amp;gt; develop_view2.htm 이런식으로 하면 develop_view.htm의 소스에서 =../ 를 =/ 로 바꿔서 develop_view2.htm 로 저장함 --</description>
+      <description>sed s/=&amp;rdquo;..//=&amp;rdquo;//g develop_view.htm &amp;gt; develop_view2.htm 이런식으로 하면 develop_view.htm의 소스에서 =../ 를 =/ 로 바꿔서 develop_view2.htm 로 저장함 --</description>
     </item>
     
     <item>
@@ -607,7 +611,7 @@
       <pubDate>Thu, 31 Aug 2006 01:11:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/%EC%9D%B8%ED%84%B0%EB%84%B7-%EC%9D%B5%EC%8A%A4%ED%94%8C%EB%A1%9C%EB%9F%AC-6.0%EC%97%90%EC%84%9C-html-%EC%97%98%EB%A6%AC%EB%A8%BC%ED%8A%B8%EB%A5%BC-java-script%EC%97%90%EC%84%9C-%EC%B0%B8%EC%A1%B0%ED%95%98%EC%A7%80-%EB%AA%BB%ED%95%98%EB%8A%94-%EA%B2%BD%EC%9A%B0-%EC%9E%88%EC%9D%8C/</guid>
-      <description>드림위버(버전은 모름, 현재 최신 버전인듯)에서 html 편집을 할 때 아래와 같이 자동으로 코딩되는 부분이 있음 &amp;lt;!DOCTYPE html PUBLIC &amp;ldquo;-//W3C//DTD XHTML 1.0 Transitional//EN&amp;rdquo; &amp;ldquo;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&amp;quot;&amp;gt; &amp;lt;html xmlns=&amp;ldquo;http://www.w3.org/1999/xhtml&amp;quot;&amp;gt; 이 때 인터넷 익스플로러 6.0에</description>
+      <description>드림위버(버전은 모름, 현재 최신 버전인듯)에서 html 편집을 할 때 아래와 같이 자동으로 코딩되는 부분이 있음 &amp;lt;!DOCTYPE html PUBLIC &amp;ldquo;-//W3C//DTD XHTML 1.0 Transitional//EN&amp;rdquo; &amp;ldquo;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&amp;quot;&amp;gt; &amp;lt;html xmlns=&amp;quot;http://www.w3.org/1999/xhtml&amp;rdquo;&amp;gt; 이 때 인터넷 익스플로러 6.0에</description>
     </item>
     
     <item>
@@ -670,7 +674,7 @@
       <pubDate>Fri, 11 Aug 2006 22:35:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/eclipse-&#43;-cvsnt-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-syncronize-%EC%8B%9C-problems-reported-while-synchronizing-cvs-workspace.../</guid>
-      <description>- cvsNT 2.0.4 - Eclipse 3.1.0 에서 발생함. cvsNT의 문제임 repository path 에 드라이브문자가 들어가면 안됨 cvsNT 설청창에서 &amp;lsquo;repository prefix&amp;rsquo;를 사용할것 예를들어 repo</description>
+      <description>- cvsNT 2.0.4 - Eclipse 3.1.0 에서 발생함. cvsNT의 문제임 repository path 에 드라이브문자가 들어가면 안됨 cvsNT 설청창에서 &amp;lsquo;repository prefix&#39;를 사용할것 예를들어 repository</description>
     </item>
     
     <item>

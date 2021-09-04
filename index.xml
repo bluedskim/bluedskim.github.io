@@ -6,7 +6,20 @@
     <description>Recent content on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Wed, 14 Jul 2021 23:59:28 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Aug 2021 10:05:20 +0900</lastBuildDate>
+    
+	<atom:link href="https://bluedskim.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>&#39;Back Office&#39; vs &#39;Back End&#39;</title>
+      <link>https://bluedskim.github.io/posts/tech/back-office-vs-back-end/</link>
+      <pubDate>Wed, 11 Aug 2021 10:05:20 +0900</pubDate>
+      
+      <guid>https://bluedskim.github.io/posts/tech/back-office-vs-back-end/</guid>
+      <description>IT프로젝트에서 back office와 back end를 혼용하면 망할 수 있다. front office와 front end도 마찬가지. 다음 두 문장을 비교해보자 &amp;lsquo;백 오피</description>
+    </item>
+    
     <item>
       <title>Docker로 Oracle12 설치하기</title>
       <link>https://bluedskim.github.io/posts/tech/oracleondocker/</link>
@@ -157,7 +170,7 @@
       <pubDate>Sat, 09 Jan 2021 22:59:55 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/tech/karate-restful-api-%EC%8B%9C%EB%82%98%EB%A6%AC%EC%98%A4%EA%B8%B0%EB%B0%98-%EC%9E%90%EB%8F%99%ED%99%94-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%8D%B0%EB%AA%A8/</guid>
-      <description>&amp;ldquo;美 IT업계서 45년 일한 어느 개발자의 여섯가지 조언&amp;rdquo;이라는 기사의 다섯번째 조언은 바로 &amp;lsquo;테스트 자동화&amp;rsqu</description>
+      <description>&amp;ldquo;美 IT업계서 45년 일한 어느 개발자의 여섯가지 조언&amp;rdquo;이라는 기사의 다섯번째 조언은 바로 &amp;lsquo;테스트 자동화&#39;다. 그대</description>
     </item>
     
     <item>
@@ -967,7 +980,7 @@
       <pubDate>Sun, 20 Nov 2011 12:16:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D%EC%98%81%ED%99%94%EC%A0%9C%EB%AF%B8%EC%8A%A4%ED%84%B0-%EB%85%B8%EB%B0%94%EB%94%94-mr.-nobody/</guid>
-      <description>&amp;ldquo;살아 있는 모든 것들 중에 뭐가 올바른 거죠?&amp;rdquo; &amp;ldquo;살아있는 것들 마다 모두가 옳은 것이야&amp;rdquo; --</description>
+      <description>&amp;quot;살아 있는 모든 것들 중에 뭐가 올바른 거죠?&amp;rdquo; &amp;quot;살아있는 것들 마다 모두가 옳은 것이야&amp;rdquo; --</description>
     </item>
     
     <item>
@@ -994,7 +1007,7 @@
       <pubDate>Wed, 16 Nov 2011 12:36:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novalobo-bobo/</guid>
-      <description>Wilson Simonal e Sandra de Sa&#39; Carlos Lyra --</description>
+      <description>Wilson Simonal e Sandra de Sa&amp;rsquo; Carlos Lyra --</description>
     </item>
     
     <item>
@@ -1174,7 +1187,7 @@
       <pubDate>Sun, 18 Sep 2011 12:50:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novaflora-purim/</guid>
-      <description>누님 기타 짱! Stan Getz and Flora Purim - Sandalia Dela Flora Purim, Elaine Elias, &amp;amp; David Sanborn - Jobim Medley Airto Moreira e Flora Purim &#39;&#39; Partido alto &#39;&#39; / &#39;&#39; Nada será como antes &#39;&#39; = Brasil 1988 Samba do Carioca --</description>
+      <description>누님 기타 짱! Stan Getz and Flora Purim - Sandalia Dela Flora Purim, Elaine Elias, &amp;amp; David Sanborn - Jobim Medley Airto Moreira e Flora Purim &#39;&amp;rsquo; Partido alto &#39;&amp;rsquo; / &#39;&amp;rsquo; Nada será como antes &#39;&amp;rsquo; = Brasil 1988 Samba do Carioca --</description>
     </item>
     
     <item>
@@ -1480,7 +1493,7 @@
       <pubDate>Sat, 05 Mar 2011 14:08:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%82%98%EC%9D%98-%EB%9D%BC%EC%9E%84%EC%98%A4%EB%A0%8C%EC%A7%80%EB%82%98%EB%AC%B4-_-o-meu-p%C3%A9-de-laranja-lima/</guid>
-      <description>처음 만난 브라질이 &amp;lsquo;나의 라임오렌지나무 / O Meu Pé de Laranja Lima&amp;rsquo; 였다는걸 최근에 알았습니다. 초등생일 때 대히트를 친 책이었습니다. 읽으면서 많이 울었</description>
+      <description>처음 만난 브라질이 &#39;나의 라임오렌지나무 / O Meu Pé de Laranja Lima&amp;rsquo; 였다는걸 최근에 알았습니다. 초등생일 때 대히트를 친 책이었습니다. 읽으면서 많이 울었던 기억이 나네</description>
     </item>
     
     <item>
@@ -1507,7 +1520,7 @@
       <pubDate>Sun, 27 Feb 2011 01:19:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novaromero-lubambo/</guid>
-      <description>Romero 이분은 보사노바계의 타미 임마뉴엘이라 할 수 있겠군요! &amp;ldquo;Samba Dobrado&amp;rdquo; - Cesar Camargo Mariano e Romero Lubambo &amp;ldquo;April Child&amp;rdquo; - Cesar Camargo Mariano e Romero Lubambo &amp;ldquo;By The Brook&amp;rdquo; Romero Lubambo e Pamela Driggs Song for Kaya 이분 한국에 왔다 가셨군요. -.- http://www.yonhapnews.co.kr/bulletin/2010/03/05/0200000000AKR20100305060500005.HTML --</description>
+      <description>Romero 이분은 보사노바계의 타미 임마뉴엘이라 할 수 있겠군요! &amp;quot;Samba Dobrado&amp;rdquo; - Cesar Camargo Mariano e Romero Lubambo &amp;quot;April Child&amp;rdquo; - Cesar Camargo Mariano e Romero Lubambo &amp;quot;By The Brook&amp;rdquo; Romero Lubambo e Pamela Driggs Song for Kaya 이분 한국에 왔다 가셨군요. -.- http://www.yonhapnews.co.kr/bulletin/2010/03/05/0200000000AKR20100305060500005.HTML --</description>
     </item>
     
     <item>
@@ -1552,7 +1565,7 @@
       <pubDate>Wed, 09 Feb 2011 00:58:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%B0%BD%ED%94%BC%ED%95%98%EC%A7%80%EB%A7%8C-%EB%A9%B0%EC%B9%A0%EC%A7%B8-%EC%95%84%EB%AC%B4%EA%B2%83%EB%8F%84-%EB%A8%B9%EC%A7%80-%EB%AA%BB%ED%95%B4-%EB%82%A8%EB%8A%94-%EB%B0%A5%EA%B3%BC-%EA%B9%80%EC%B9%98%EA%B0%80-%EC%9E%88%EC%9C%BC%EB%A9%B4-%EB%AC%B8-%EC%A2%80-%EB%91%90%EB%93%A4%EA%B2%A8-%EC%A3%BC%EC%84%B8%EC%9A%94.-%EC%B5%9C%EA%B3%A0%EC%9D%80-%EC%9E%91%EA%B0%80-%EC%83%9D%ED%99%9C%EA%B3%A0-%EB%81%9D%EC%97%90-%EC%9A%94%EC%A0%88/</guid>
-      <description>&amp;ldquo;창피하지만 며칠째 아무것도 먹지 못해 남는 밥과 김치가 있으면 문 좀 두들겨 주세요.&amp;rdquo; 최고은 작가 생활고 끝에 요절 http://media.daum.net/entertain/topic/view.html?cateid=100029&amp;amp;amp;newsid=20110208143525724 절대 음식 남기지 말</description>
+      <description>&amp;quot;창피하지만 며칠째 아무것도 먹지 못해 남는 밥과 김치가 있으면 문 좀 두들겨 주세요.&amp;rdquo; 최고은 작가 생활고 끝에 요절 http://media.daum.net/entertain/topic/view.html?cateid=100029&amp;amp;amp;newsid=20110208143525724 절대 음식 남기지 말아</description>
     </item>
     
     <item>
@@ -1966,7 +1979,7 @@
       <pubDate>Mon, 22 Mar 2010 12:47:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/leaving-las-vegas-come-rain-or-come-shine-angel-eyes-my-one-and-only-love/</guid>
-      <description>진짜 사랑은 흔하지 않다. &amp;ldquo;Come Rain or Come Shine&amp;rdquo; &amp;ldquo;Angel Eyes&amp;rdquo; &amp;ldquo;My One and Only Love&amp;rdquo; I&amp;rsquo;m gonna love you, like nobody&amp;rsquo;s loved you Come rain or come shine High as a mountain, deep as a river Come rain or come shine I guess when you met me It was just one of those things But don&amp;rsquo;t you ever bet me &amp;lsquo;Cause I&amp;rsquo;m</description>
+      <description>진짜 사랑은 흔하지 않다. &amp;quot;Come Rain or Come Shine&amp;rdquo; &amp;quot;Angel Eyes&amp;rdquo; &amp;quot;My One and Only Love&amp;rdquo; I&amp;rsquo;m gonna love you, like nobody&amp;rsquo;s loved you Come rain or come shine High as a mountain, deep as a river Come rain or come shine I guess when you met me It was just one of those things But don&amp;rsquo;t you ever bet me &#39;Cause I&amp;rsquo;m</description>
     </item>
     
     <item>
@@ -2083,7 +2096,7 @@
       <pubDate>Thu, 10 Dec 2009 00:12:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novabeat-it-cris-delanno-/</guid>
-      <description>Michael Jackson In Bossanova 에 수록된 Beat It ( Cris Delanno ) 입니다. 유명한 밴드, 가수 곡들을 보사노바로 편곡한 앨범들이 많습니다. &amp;ldquo;Bossa n&#39; 어쩌구 &amp;quot; 시리즈가 대표적인데요. 가끔 보사노바와</description>
+      <description>Michael Jackson In Bossanova 에 수록된 Beat It ( Cris Delanno ) 입니다. 유명한 밴드, 가수 곡들을 보사노바로 편곡한 앨범들이 많습니다. &amp;quot;Bossa n&amp;rsquo; 어쩌구 &amp;quot; 시리즈가 대표적인데요. 가끔 보사노바와</description>
     </item>
     
     <item>
@@ -2209,7 +2222,7 @@
       <pubDate>Mon, 02 Nov 2009 23:50:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-nova-skindo-le-le/</guid>
-      <description>밴드 Viva Brasil 이 80년에 발표한 앨범에 수록된 곡 곡 스타일은 보사노바라기 보다는 삼바라고 할 수 있는데 가사가 좋아요. 삼바에 딱 어울리는 가사입니다. &amp;lsquo;</description>
+      <description>밴드 Viva Brasil 이 80년에 발표한 앨범에 수록된 곡 곡 스타일은 보사노바라기 보다는 삼바라고 할 수 있는데 가사가 좋아요. 삼바에 딱 어울리는 가사입니다. &#39;근심걱정일랑</description>
     </item>
     
     <item>
@@ -2335,7 +2348,7 @@
       <pubDate>Wed, 09 Sep 2009 23:28:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-nova-%EB%B8%8C%EB%9D%BC%EC%A7%88-%EC%9D%8C%EC%95%85%EB%8B%A4%ED%81%90-brazil-brazil-1%ED%8E%B8-samba-to-bossa-bbc/</guid>
-      <description>앞서 가는 착한 방송 BBC 에서 2007년에 제작한 3부작 브라질 음악다큐 Brazil, Brazil 의 1편 Samba To Bossa 에서 주목할 만한 장면들이다. &amp;ldquo;나에게는 말이지, 신이 삼바</description>
+      <description>앞서 가는 착한 방송 BBC 에서 2007년에 제작한 3부작 브라질 음악다큐 Brazil, Brazil 의 1편 Samba To Bossa 에서 주목할 만한 장면들이다. &amp;quot;나에게는 말이지, 신이 삼바야</description>
     </item>
     
     <item>
@@ -2353,7 +2366,7 @@
       <pubDate>Sun, 30 Aug 2009 15:38:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-noval%C3%A1-vem-a-baiana-%EB%B0%94%EC%9D%B4%EC%95%84%EC%9D%98-%EC%97%AC%EC%9D%B8%EC%9D%B4-%EB%8B%A4%EA%B0%80%EC%98%A4%EB%84%A4/</guid>
-      <description>&amp;ldquo;그녀가 삼바춤을 시작할 때 당신은 아찔해질 거예요&amp;rdquo; From http://www.galinawatercolors.com/welcome/folklore.php Lá vem a baiana De saia rodada, sandália bordada Vem me convidar para dançar Mas eu não vou</description>
+      <description>&amp;quot;그녀가 삼바춤을 시작할 때 당신은 아찔해질 거예요&amp;rdquo; From http://www.galinawatercolors.com/welcome/folklore.php Lá vem a baiana De saia rodada, sandália bordada Vem me convidar para dançar Mas eu não vou L</description>
     </item>
     
     <item>
@@ -2371,7 +2384,7 @@
       <pubDate>Fri, 28 Aug 2009 23:51:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/g.i.-jonny-%ED%98%B8%EB%A5%B4%EB%AA%AC-%EC%99%84%EC%B6%A9-%EC%84%A0%EB%82%A8%EC%84%A0%EB%85%80%EB%93%A4%EC%95%84-%ED%95%A8%EA%BB%98-%EB%B3%B4%EC%9E%90./</guid>
-      <description>2007년, 영국 BBC 방송국에서는 방어하지 않은 성교의 위험성에 대한 홍보를 위해 &amp;ldquo;G.I. Jonny&amp;rdquo; 캠페인을 시작했다. 캠페인 효과 만빵! 호르몬 완충 선남선녀들아 함께 보자.</description>
+      <description>2007년, 영국 BBC 방송국에서는 방어하지 않은 성교의 위험성에 대한 홍보를 위해 &amp;quot;G.I. Jonny&amp;quot; 캠페인을 시작했다. 캠페인 효과 만빵! 호르몬 완충 선남선녀들아 함께 보자.</description>
     </item>
     
     <item>
@@ -2389,7 +2402,7 @@
       <pubDate>Sat, 22 Aug 2009 12:10:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EC%9B%85%EC%82%B0-angel-eyes/</guid>
-      <description>기타 한대 웅산노래로만 구성되어 있다 밴드구성으로 했다면 그냥 평범한 곡이 되었을, Try to think, that love&amp;rsquo;s not around, But it&amp;rsquo;s uncomfortably near. My ol&#39; heart ain&amp;rsquo;t gainin&#39; no ground Because my angel eyes, ain&amp;rsquo;t here. Angel eyes, that old devil sent They go unbearably bright.</description>
+      <description>기타 한대 웅산노래로만 구성되어 있다 밴드구성으로 했다면 그냥 평범한 곡이 되었을, Try to think, that love&amp;rsquo;s not around, But it&amp;rsquo;s uncomfortably near. My ol&amp;rsquo; heart ain&amp;rsquo;t gainin&amp;rsquo; no ground Because my angel eyes, ain&amp;rsquo;t here. Angel eyes, that old devil sent They go unbearably bright.</description>
     </item>
     
     <item>
@@ -2425,7 +2438,7 @@
       <pubDate>Fri, 07 Aug 2009 14:19:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%A3%BD%EA%B8%B0%EC%A0%84%EC%97%90-%EB%B4%90%EC%95%BC%ED%95%A0-%EC%98%81%ED%99%94-%EB%A7%88%EC%9D%B4-%EC%8B%9C%EC%8A%A4%ED%84%B0%EC%A6%88-%ED%82%A4%ED%8D%BC-my-sisters-keeper-2008/</guid>
-      <description>&amp;lsquo;노트북&amp;rsquo;의 닉 카사베츠 선생이 감독하고 &amp;lsquo;미스 리틀 선샤인&amp;rsquo;의 막내로 나왔던 Abigail Breslin 이 출연한다. --</description>
+      <description>&#39;노트북&#39;의 닉 카사베츠 선생이 감독하고 &#39;미스 리틀 선샤인&#39;의 막내로 나왔던 Abigail Breslin 이 출연한다. --</description>
     </item>
     
     <item>
@@ -2533,7 +2546,7 @@
       <pubDate>Tue, 28 Jul 2009 19:35:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%ED%95%9C%EA%B5%AD%EB%A7%8C%ED%81%BC-%EC%9D%B8%EC%A2%85%EC%B0%A8%EB%B3%84-%EC%8B%AC%ED%95%9C-%EB%82%98%EB%9D%BC%EB%8F%84-%EC%97%86%EC%A3%A0./</guid>
-      <description>다만 우리가 한국에 사는 한국인이기 때문에 못느끼고 있을 뿐입니다. 이건 정말 다행입니다. 하지만 인종차별 공론화한 후세인 씨의 경우는 어떨까요? &amp;quot; 제가 백인이었</description>
+      <description>다만 우리가 한국에 사는 한국인이기 때문에 못느끼고 있을 뿐입니다. 이건 정말 다행입니다. 하지만 인종차별 공론화한 후세인 씨의 경우는 어떨까요? &amp;rdquo; 제가 백인이었</description>
     </item>
     
     <item>
@@ -2551,7 +2564,7 @@
       <pubDate>Sun, 26 Jul 2009 02:55:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9C%EB%8B%B9%EC%8B%A0%EC%9D%98-%EC%84%B1%EC%9E%90%EB%A5%BC-%EC%95%8C%EC%95%84%EB%B3%B4%EB%8A%94-%EB%B0%A9%EB%B2%95-a-guide-to-recognizing-your-saints/</guid>
-      <description>&amp;ldquo;나는 모두를 떠났다. 그러나 아무도 나를 떠나지 않았다&amp;rdquo; --</description>
+      <description>&amp;quot;나는 모두를 떠났다. 그러나 아무도 나를 떠나지 않았다&amp;rdquo; --</description>
     </item>
     
     <item>
@@ -2569,7 +2582,7 @@
       <pubDate>Wed, 15 Jul 2009 12:52:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/%EC%84%B8%EC%83%81%EC%97%90%EB%8A%94-%EB%91%90-%EC%A2%85%EB%A5%98%EC%9D%98-%EC%9C%84%EB%8C%80%ED%95%9C-%EC%82%AC%EB%9E%8C%EC%9D%B4-%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.-%ED%95%98%EB%82%98%EB%8A%94-%EC%A7%81%EC%A0%91-%EC%9C%84%EB%8C%80%ED%95%9C-%EC%9D%BC%EC%9D%84-%ED%95%98%EB%8A%94-%EC%82%AC%EB%9E%8C%EC%9D%B4%EA%B3%A0-%EB%98%90-%ED%95%98%EB%82%98%EB%8A%94-%EB%8B%A4%EB%A5%B8-%EC%82%AC%EB%9E%8C%EC%9D%B4-%EC%9C%84%EB%8C%80%ED%95%9C-%EC%9D%BC%EC%9D%84-%ED%95%98%EA%B2%8C-%EB%8F%84%EC%99%80%EC%A3%BC%EB%8A%94-%EC%82%AC%EB%9E%8C%EC%9E%85%EB%8B%88%EB%8B%A4.-%ED%9B%84%EC%9E%90%EB%8F%84-%EC%9C%84%EB%8C%80%ED%95%9C-%EC%82%AC%EB%9E%8C%EC%9E%85%EB%8B%88%EB%8B%A4./</guid>
-      <description>&amp;ldquo;세상에는 두 종류의 위대한 사람이 있습니다. 하나는 직접 위대한 일을 하는 사람이고, 또 하나는 다른 사람이 위대한 일을 하게 도와주는 사람입니다. 후</description>
+      <description>&amp;quot;세상에는 두 종류의 위대한 사람이 있습니다. 하나는 직접 위대한 일을 하는 사람이고, 또 하나는 다른 사람이 위대한 일을 하게 도와주는 사람입니다. 후자</description>
     </item>
     
     <item>
@@ -2578,7 +2591,7 @@
       <pubDate>Tue, 07 Jul 2009 21:26:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/the-meeting-on-the-turret-stairs/</guid>
-      <description>나는 그 살 냄새 아직 잊지 못하네, &amp;ldquo;The Meeting on the Turret Stairs&amp;rdquo; - Frederic William Burton (Watercolour, 95.5 x 60.8 cm. 1864) [National Gallery of Ireland] --</description>
+      <description>나는 그 살 냄새 아직 잊지 못하네, &amp;quot;The Meeting on the Turret Stairs&amp;rdquo; - Frederic William Burton (Watercolour, 95.5 x 60.8 cm. 1864) [National Gallery of Ireland] --</description>
     </item>
     
     <item>
@@ -2605,7 +2618,7 @@
       <pubDate>Mon, 29 Jun 2009 11:52:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/minesweeper-the-movie/</guid>
-      <description>윈도우즈의 대표 내장게임 &amp;lsquo;지뢰찾기&amp;rsquo;를 배경으로 한 영화가 출시된다. 마침 티저동영상이 유튜브에 공개되어 &#39; 3,457,271&amp;rsquo; 건이라는 엄청난 조회</description>
+      <description>윈도우즈의 대표 내장게임 &amp;lsquo;지뢰찾기&#39;를 배경으로 한 영화가 출시된다. 마침 티저동영상이 유튜브에 공개되어 &#39; 3,457,271&amp;rsquo; 건이라는 엄청난 조회수를 기록했다</description>
     </item>
     
     <item>
@@ -2614,7 +2627,7 @@
       <pubDate>Mon, 29 Jun 2009 11:06:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/%EC%A3%BC%EB%AA%A9%ED%95%98%EB%8A%94-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%8D%A8%EB%8B%88%EC%9D%98-%E4%B8%80%E7%94%9F%E7%89%9B%E6%AD%A5%E8%A1%8C-%EC%97%90%EC%84%9C-%ED%8D%BC%EC%98%B4/</guid>
-      <description>&amp;quot; 써니의 一生牛步行&amp;quot; http://sunnykwak.egloos.com/4418486 에 유용한 IT(개발)관련 블로그 목록을 보고 opml로 만들었다. 아래는 목록이다. * All of Software * art.oriented * Channy&amp;rsquo;s Blog * Eternity&amp;rsquo;s Chit-Chat * From Business To</description>
+      <description>&amp;rdquo; 써니의 一生牛步行&amp;rdquo; http://sunnykwak.egloos.com/4418486 에 유용한 IT(개발)관련 블로그 목록을 보고 opml로 만들었다. 아래는 목록이다. * All of Software * art.oriented * Channy&amp;rsquo;s Blog * Eternity&amp;rsquo;s Chit-Chat * From Business</description>
     </item>
     
     <item>
@@ -2812,7 +2825,7 @@
       <pubDate>Sat, 17 Jan 2009 19:37:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9C-%ED%8C%8C%EB%8B%88%ED%95%91%ED%81%ACfanny-fink-nobody-loves-mekeiner-liebt-mich/</guid>
-      <description>오르페오 형님의 명대사. &amp;ldquo;I can&amp;rsquo;t&amp;rdquo; means &amp;ldquo;I don&amp;rsquo;t want to&amp;rdquo;. 주저말자. 눈길이 자꾸 간다면 그냥 지르는 거다! --</description>
+      <description>오르페오 형님의 명대사. &amp;quot;I can&amp;rsquo;t&amp;rdquo; means &amp;ldquo;I don&amp;rsquo;t want to&amp;rdquo;. 주저말자. 눈길이 자꾸 간다면 그냥 지르는 거다! --</description>
     </item>
     
     <item>
@@ -2866,7 +2879,7 @@
       <pubDate>Sat, 20 Dec 2008 00:23:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4%EC%97%90%EC%84%9C-%EB%8C%80%EC%9D%91%EB%90%98%EB%8A%94-%EA%B4%84%ED%98%B8%EC%B0%BE%EA%B8%B0/</guid>
-      <description>&#39;{ 혹은 (&#39; 와 대응되는 &amp;lsquo;} 혹은 )&amp;lsquo;를 찾고 싶다면 단순히 커서를 { 다음에 놓으면 대응되는 괄호에 사각형이 씌워져서 구별할 수 있다. 커서를 { 다음에 놓은</description>
+      <description>&amp;rsquo;{ 혹은 (&amp;rsquo; 와 대응되는 &amp;lsquo;} 혹은 )&amp;lsquo;를 찾고 싶다면 단순히 커서를 { 다음에 놓으면 대응되는 괄호에 사각형이 씌워져서 구별할 수 있다. 커서를 { 다음에 놓은</description>
     </item>
     
     <item>
@@ -2956,7 +2969,7 @@
       <pubDate>Tue, 18 Nov 2008 01:26:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EA%B9%80%EA%B5%AC%EB%8A%94-%EB%B9%88%EB%9D%BC%EB%8D%B4-%EC%A7%80%EB%A7%8C%EC%9B%90-vs-%EC%A7%84%EC%A4%91%EA%B6%8C-sick-and-tired-nightmare/</guid>
-      <description>영화배우 문근영씨의 사회기부 기사에 대해 군사평론가 지만원씨는 자신의 홈페이지를 통해 문근영의 기부 행위를 &amp;lsquo;좌파의 음모&amp;rsquo;라고 주장</description>
+      <description>영화배우 문근영씨의 사회기부 기사에 대해 군사평론가 지만원씨는 자신의 홈페이지를 통해 문근영의 기부 행위를 &amp;lsquo;좌파의 음모&#39;라고 주장하고 있다고 한</description>
     </item>
     
     <item>
@@ -3046,7 +3059,7 @@
       <pubDate>Tue, 04 Nov 2008 21:47:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%84%9C%EC%9A%B8%EC%A7%80%ED%95%98%EC%B2%A0-%ED%92%8D%EB%A0%A5%EB%B0%9C%EC%A0%84-%EB%86%80%EB%9D%BC%EC%9A%B4-%EC%97%90%EB%84%88%EC%A7%80%EC%9D%98-%EC%97%B0%EA%B8%88%EC%88%A0/</guid>
-      <description>아주 오래된 물리학 법칙 중에 &amp;lsquo;에너지보존법칙&amp;rsquo;이 있다. 법칙의 정의를 인용하자면 &amp;ldquo;열, 전기, 자기, 빛, 역학적 에너</description>
+      <description>아주 오래된 물리학 법칙 중에 &#39;에너지보존법칙&#39;이 있다. 법칙의 정의를 인용하자면 &amp;quot;열, 전기, 자기, 빛, 역학적 에너지 등이 서로 형태만 바뀔 뿐, 그</description>
     </item>
     
     <item>
@@ -3100,7 +3113,7 @@
       <pubDate>Sun, 26 Oct 2008 19:01:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EC%9A%94%EC%83%88-%ED%95%9C%EA%B5%AD%EA%B1%B1%EC%A0%95%EC%97%90-%EB%B0%A4%EC%97%90-%EC%9E%A0%EC%9D%B4-%EC%95%88%EC%98%A8%EB%8B%A4./</guid>
-      <description>우연히 10년전 그사건을 재구성한 글을 발견하고 무단으로 퍼온다. http://www.seoprise.com/board/view_nw.php?uid=173411&amp;amp;amp;table=seoprise_11&amp;amp;amp;start=440 1997년 1월 23일 재계 자산순위 14위 규모의 대기업 &amp;lsquo;한보철강&amp;rsq</description>
+      <description>우연히 10년전 그사건을 재구성한 글을 발견하고 무단으로 퍼온다. http://www.seoprise.com/board/view_nw.php?uid=173411&amp;amp;amp;table=seoprise_11&amp;amp;amp;start=440 1997년 1월 23일 재계 자산순위 14위 규모의 대기업 &amp;lsquo;한보철강&#39;이 자금</description>
     </item>
     
     <item>
@@ -3118,7 +3131,7 @@
       <pubDate>Tue, 21 Oct 2008 18:12:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%BC%80%EC%9D%B4%ED%81%AC%EB%A5%BC-%EC%9E%90%EB%A5%B4%EB%8A%94-%EC%82%AC%EB%9E%8C%EC%9D%B4-%EC%9E%90%EA%B8%B0-%EB%AA%AB%EC%9D%84-%EC%A0%9C%EC%9D%BC-%EB%A7%88%EC%A7%80%EB%A7%89%EC%9C%BC%EB%A1%9C-%EC%B7%A8%ED%95%B4%EC%95%BC-%ED%95%9C%EB%8B%A4.-%EA%B7%B8%EB%A0%87%EA%B2%8C-%ED%95%A0-%EB%95%8C-%EC%BC%80%EC%9D%B4%ED%81%AC%EB%A5%BC-%EA%B3%B5%ED%8F%89%ED%95%98%EA%B2%8C-%EC%9E%90%EB%A5%B4%EB%8A%94-%EA%B2%83%EC%9D%B4-%EC%9E%90%EB%A5%B4%EB%8A%94-%EC%82%AC%EB%9E%8C%EC%97%90%EA%B2%8C%EB%8F%84-%EC%9D%B4%EC%9D%B5%EC%9D%B4-%EB%90%9C%EB%8B%A4./</guid>
-      <description>&amp;ldquo;케이크를 자르는 사람이 자기 몫을 제일 마지막으로 취해야 한다. 그렇게 할 때 케이크를 공평하게 자르는 것이 자르는 사람에게도 이익이 된다. Suppose five children have</description>
+      <description>&amp;quot;케이크를 자르는 사람이 자기 몫을 제일 마지막으로 취해야 한다. 그렇게 할 때 케이크를 공평하게 자르는 것이 자르는 사람에게도 이익이 된다. Suppose five children have to</description>
     </item>
     
     <item>
@@ -3281,7 +3294,7 @@
       <pubDate>Sat, 01 Mar 2008 10:13:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EA%B0%84%EB%A7%8C%EC%97%90-%EC%A6%90%EA%B2%A8%EB%B3%B4%EB%8A%94-%EB%AA%A9%EC%95%84%ED%94%88-%EC%88%98%EB%8B%A4.-%EC%A0%9C1%ED%9A%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%B6%95%EC%A0%9C/</guid>
-      <description>&amp;lt;a title=&amp;quot;&amp;quot; 제1회=&amp;quot;&amp;quot; 블로그=&amp;quot;&amp;quot; 축제=&amp;quot;&amp;quot; href=&amp;ldquo;http://ww</description>
+      <description>&amp;lt;a title=&amp;rdquo;&amp;rdquo; 제1회=&amp;rdquo;&amp;rdquo; 블로그=&amp;rdquo;&amp;rdquo; 축제=&amp;rdquo;&amp;rdquo; href=&amp;quot;http</description>
     </item>
     
     <item>
@@ -3335,7 +3348,7 @@
       <pubDate>Sun, 10 Feb 2008 01:20:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%A0%9C1%ED%9A%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%B6%95%EC%A0%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%82%A8/</guid>
-      <description>혜민아빠님 은 1년 전부터 &amp;lsquo;블로그 포럼&amp;rsquo; 을 운영해왔다. &#39; 블로그 포럼&amp;lsquo;은 블로그, 블로깅, 블로거에 관련된 이슈들을</description>
+      <description>혜민아빠님 은 1년 전부터 &amp;lsquo;블로그 포럼&amp;rsquo; 을 운영해왔다. &amp;rsquo; 블로그 포럼&#39;은 블로그, 블로깅, 블로거에 관련된 이슈들을 토론하는 블로</description>
     </item>
     
     <item>
@@ -3443,7 +3456,7 @@
       <pubDate>Mon, 07 Jan 2008 22:25:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EC%B6%94%EC%B2%9C-%ED%95%9C%EA%B5%AD-%EB%B3%B4%EC%82%AC%EB%85%B8%EB%B0%94_%EC%82%BC%EB%B0%94-korean-bossanova-_-samba/</guid>
-      <description>순서는 의미 없음 -- &amp;ldquo;마녀 여행을 떠나다(KONA)&amp;rdquo; -- &amp;ldquo;춘천가는 기차(김현철)&amp;rdquo; -- &amp;ldquo;</description>
+      <description>순서는 의미 없음 -- &amp;quot;마녀 여행을 떠나다(KONA)&amp;rdquo; -- &amp;quot;춘천가는 기차(김현철)&amp;rdquo; -- &amp;quot;머물고</description>
     </item>
     
     <item>
@@ -3506,7 +3519,7 @@
       <pubDate>Thu, 20 Dec 2007 09:00:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%98%A4%EB%B9%A0%EB%8A%94-%EC%84%B8%EC%83%81%EC%9D%84-%EB%84%88%EB%AC%B4-%EB%AA%B0%EB%9D%BC%EC%9A%94...-%ED%95%9C-%ED%9B%84%EB%B0%B0%EA%B0%80-%EA%B1%B1%EC%A0%95%EC%8A%A4%EB%9F%BD%EA%B2%8C-%EB%A7%90%EC%9D%84-%EA%BA%BC%EB%83%88%EB%8B%A4./</guid>
-      <description>나이 서른다섯에 듣기에는 적절치 않은 평가다. &amp;lsquo;내가 좀 고지식하게 보일지는 모르지만 세상을 잘 알고 있다&amp;rsquo; 는 말로 안심시키려 했었다.</description>
+      <description>나이 서른다섯에 듣기에는 적절치 않은 평가다. &#39;내가 좀 고지식하게 보일지는 모르지만 세상을 잘 알고 있다&amp;rsquo; 는 말로 안심시키려 했었다. 여유 있는 웃음</description>
     </item>
     
     <item>
@@ -3623,7 +3636,7 @@
       <pubDate>Sun, 02 Dec 2007 11:10:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D%EC%98%81%ED%99%94%EC%A0%9Cla-petite-lili-%EC%9A%B0%EB%A6%AC%EC%9D%98-%EB%A6%B4%EB%A6%AC/</guid>
-      <description>&amp;ldquo;8명의 여인들(2002년)&amp;rdquo; 의 막내로 출연했던 &amp;lsquo;뤼디빈 사니에 Ludivine Sagnier&amp;rsquo; 이듬해에 스위밍 풀 (Swimming Pool, 2003) 에 출연하였는데 전혀</description>
+      <description>&amp;quot;8명의 여인들(2002년)&amp;rdquo; 의 막내로 출연했던 &amp;lsquo;뤼디빈 사니에 Ludivine Sagnier&amp;rsquo; 이듬해에 스위밍 풀 (Swimming Pool, 2003) 에 출연하였는데 전혀 알</description>
     </item>
     
     <item>
@@ -3687,7 +3700,7 @@
       <pubDate>Wed, 21 Nov 2007 13:34:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EC%B0%A9%ED%95%9C-%EC%82%AC%EB%9E%91%EB%85%B8%EB%9E%98-dont-get-around-much-anymore/</guid>
-      <description>스탠다드 재즈가 땡기는 가을~ By Rod Stewart By Lina Romay By Dancing On Strings By NAUDO &amp;ldquo;Don&amp;rsquo;t Get Around Much Anymore&amp;rdquo; music by Duke Ellington and lyrics by Bob Russell Missed the Saturday dance Heard they crowded the floor Couldn&amp;rsquo;t bear it without you Don&amp;rsquo;t get around much anymore Thought I&amp;rsquo;d visit the club Got as far as the door They&amp;rsquo;d</description>
+      <description>스탠다드 재즈가 땡기는 가을~ By Rod Stewart By Lina Romay By Dancing On Strings By NAUDO &amp;quot;Don&amp;rsquo;t Get Around Much Anymore&amp;quot; music by Duke Ellington and lyrics by Bob Russell Missed the Saturday dance Heard they crowded the floor Couldn&amp;rsquo;t bear it without you Don&amp;rsquo;t get around much anymore Thought I&amp;rsquo;d visit the club Got as far as the door They&amp;rsquo;d</description>
     </item>
     
     <item>
@@ -3714,7 +3727,7 @@
       <pubDate>Sat, 10 Nov 2007 15:35:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/%EB%A9%94%EB%AA%A8/%ED%8D%BC%EC%98%A8%EA%B8%80%EA%B1%B4%EA%B0%95%EC%9D%84-%ED%95%B4%EC%B9%98%EB%8A%94-%EB%8B%B4%EB%B0%B0-%EA%B7%B8%EB%9E%98%EB%8F%84-%ED%8C%8C%EC%8B%9C%EA%B2%A0%EC%8A%B5%EB%8B%88%EA%B9%8C/</guid>
-      <description>&amp;ldquo;담배, 그래도 파시겠습니까?&amp;quot; (원문 : http://news.media.daum.net/society/others/200711/10/chosun/v18802918.html?_RIGHT_COMM=R3) 전세계적으로 13억 명의 사람들이 흡연을 하고 있을 때 우리나라에서는 1300만명의 국민</description>
+      <description>&amp;quot;담배, 그래도 파시겠습니까?&amp;quot; (원문 : http://news.media.daum.net/society/others/200711/10/chosun/v18802918.html?_RIGHT_COMM=R3) 전세계적으로 13억 명의 사람들이 흡연을 하고 있을 때 우리나라에서는 1300만명의 국민들</description>
     </item>
     
     <item>
@@ -3723,7 +3736,7 @@
       <pubDate>Thu, 08 Nov 2007 09:11:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/%EC%95%84%EC%9D%BC%EB%9E%9C%EB%93%9C-%EB%8D%94%EB%B8%94%EB%A6%B0%EC%97%90-java-%EC%9D%B8%EB%A0%A5%EC%9D%B4-%EA%B7%80%ED%95%9C%EA%B0%80-%EB%B3%B4%EB%8B%A4./</guid>
-      <description>아일랜드 헤드헌터의 하소연 &amp;ldquo;Java Jobs - Where have all the developers gone&amp;rdquo; http://www.dubjug.org/node/23 &amp;ldquo;Seriously guys - Java is a problem&amp;rdquo; http://www.dubjug.org/node/27 --</description>
+      <description>아일랜드 헤드헌터의 하소연 &amp;quot;Java Jobs - Where have all the developers gone&amp;rdquo; http://www.dubjug.org/node/23 &amp;quot;Seriously guys - Java is a problem&amp;rdquo; http://www.dubjug.org/node/27 --</description>
     </item>
     
     <item>
@@ -3732,7 +3745,7 @@
       <pubDate>Wed, 07 Nov 2007 21:21:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/%EC%9D%BC%EC%A0%95%EC%B6%94%EC%A0%95%EC%9D%98-%EC%96%B4%EB%A0%A4%EC%9B%80/</guid>
-      <description>&amp;ldquo;캐나다 워털루 대학교 연구팀은 37명의 4학년생들에게 자신의 학부졸업논문을 작성하는데 몇일이나 소요될지 예측하게 하였다. 평균 대답은 33.</description>
+      <description>&amp;quot;캐나다 워털루 대학교 연구팀은 37명의 4학년생들에게 자신의 학부졸업논문을 작성하는데 몇일이나 소요될지 예측하게 하였다. 평균 대답은 33.9</description>
     </item>
     
     <item>
@@ -3984,7 +3997,7 @@
       <pubDate>Fri, 02 Nov 2007 16:52:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/javascript%EB%A1%9C-%ED%95%B4%EB%8B%B9-html-%EB%82%B4%EB%B6%80%EC%9D%98-%EB%AA%A8%EB%93%A0-%EB%A7%81%ED%81%AC-%EB%AA%A9%EB%A1%9D-%EB%BD%91%EC%95%84%EB%82%B4%EA%B8%B0/</guid>
-      <description>아래 코드를 &amp;lt;/body&amp;gt; 앞에 삽입한 후 브라우저로 불러보면 제일 아래쪽에 링크들 목록이 뜬다. &amp;lt;script&amp;gt; for(i = 0 ; i &amp;lt; document.links.length ; i++ ) { document.write(&#39;&amp;lt;xmp&amp;gt;&#39;); document.write(&#39;[&#39; + (i+1) + &amp;lsquo;]번째 링크 : &#39; + document.links[i].href +</description>
+      <description>아래 코드를 &amp;lt;/body&amp;gt; 앞에 삽입한 후 브라우저로 불러보면 제일 아래쪽에 링크들 목록이 뜬다. &amp;lt;script&amp;gt; for(i = 0 ; i &amp;lt; document.links.length ; i++ ) { document.write(&#39;&amp;lt;xmp&amp;gt;&#39;); document.write(&#39;[&amp;rsquo; + (i+1) + &amp;lsquo;]번째 링크 : &#39; + document.links[i].href +</description>
     </item>
     
     <item>
@@ -3993,7 +4006,7 @@
       <pubDate>Thu, 01 Nov 2007 17:46:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/ftp-script-%EC%83%98%ED%94%8C/</guid>
-      <description>암호 중간에 스페이스 문자가 있을 때 아래와 같이 한다. #!/bin/sh HOST=&amp;lsquo;ftp.somehost.com&amp;rsquo; USER=&amp;lsquo;loginid&amp;rsquo; PASSWD=&amp;lsquo;pass word&amp;rsquo; ftp -v -n $HOST &amp;lt;&amp;lt;END_SCRIPT quote USER $USER quote PASS $PASSWD passive pwd quit END_SCRIPT exit 0 --</description>
+      <description>암호 중간에 스페이스 문자가 있을 때 아래와 같이 한다. #!/bin/sh HOST=&#39;ftp.somehost.com&amp;rsquo; USER=&#39;loginid&amp;rsquo; PASSWD=&#39;pass word&#39; ftp -v -n $HOST &amp;lt;&amp;lt;END_SCRIPT quote USER $USER quote PASS $PASSWD passive pwd quit END_SCRIPT exit 0 --</description>
     </item>
     
     <item>
@@ -4065,7 +4078,7 @@
       <pubDate>Sun, 30 Sep 2007 14:04:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9C%EC%BA%90%EC%89%AC%EB%B0%B1-cashback/</guid>
-      <description>영국영화 Cashback 입니다. 네. &amp;lsquo;OK 캐시백&amp;rsquo;이 떠오르네요. 굳이 번역하자면 &amp;lsquo;돈으로 돌려주기&amp;rsquo; 혹은 &amp;lsquo;돈 다시 돌</description>
+      <description>영국영화 Cashback 입니다. 네. &amp;lsquo;OK 캐시백&#39;이 떠오르네요. 굳이 번역하자면 &amp;lsquo;돈으로 돌려주기&amp;rsquo; 혹은 &amp;lsquo;돈 다시 돌려주기&amp;rs</description>
     </item>
     
     <item>
@@ -4155,7 +4168,7 @@
       <pubDate>Sat, 30 Jun 2007 11:16:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/nirvana-territorial-pissings/</guid>
-      <description>굵고 짧게. &amp;ldquo;Come on people now smile on your brother everybody get together, try love one another right now&amp;rdquo; When I was an alien Cultures weren&amp;rsquo;t opinions Gotta find a way ,a better way, when I&amp;rsquo;m there Gotta find a way ,a better way, a better way Never met a wise man If so it&amp;rsquo;s a woman Gotta find a way ,a better way, when I&amp;rsquo;m there</description>
+      <description>굵고 짧게. &amp;quot;Come on people now smile on your brother everybody get together, try love one another right now&amp;rdquo; When I was an alien Cultures weren&amp;rsquo;t opinions Gotta find a way ,a better way, when I&amp;rsquo;m there Gotta find a way ,a better way, a better way Never met a wise man If so it&amp;rsquo;s a woman Gotta find a way ,a better way, when I&amp;rsquo;m there</description>
     </item>
     
     <item>
@@ -4362,7 +4375,7 @@
       <pubDate>Wed, 25 Apr 2007 15:17:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/jsp-%EC%97%90%EC%84%9C-request-header-%EB%AA%A8%EB%91%90-%EC%B0%8D%EC%96%B4%EB%B3%B4%EA%B8%B0/</guid>
-      <description>아래코드를 그대로 copy &amp;amp; paste 하면 됨 Enumeration em = request.getHeaderNames(); while (em.hasMoreElements()){ String s = (String)em.nextElement(); out.println(s +&amp;quot; : &amp;ldquo;); out.println(request.getHeader(s)+&amp;quot;&amp;lt;br&amp;gt;&amp;quot;); } --</description>
+      <description>아래코드를 그대로 copy &amp;amp; paste 하면 됨 Enumeration em = request.getHeaderNames(); while (em.hasMoreElements()){ String s = (String)em.nextElement(); out.println(s +&amp;rdquo; : &amp;ldquo;); out.println(request.getHeader(s)+&amp;rdquo;&amp;lt;br&amp;gt;&amp;quot;); } --</description>
     </item>
     
     <item>
@@ -4398,7 +4411,7 @@
       <pubDate>Thu, 15 Mar 2007 13:07:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/%EC%97%94%ED%84%B0-%EB%8D%94-%EA%B9%80%EC%A0%95%EB%82%A8-_-%EC%B6%A9%EC%A7%81%ED%95%9C-%EA%B3%A0%EC%96%91%EC%9D%B4-_-%EA%B9%80%EC%A0%95%EB%82%A8-%EA%B3%A4%EC%9E%98%EB%A0%88%EC%8A%A4-%EA%B2%8C%EB%A0%88%EB%A1%9C/</guid>
-      <description>http://comicmall.naver.com/webtoon.do?m=list&amp;amp;amp;contentId=20853 &amp;ldquo;마음의 소리&amp;rdquo; 불펌함 냥이 키우는 분들은 한번 쯤 겪었을&amp;hellip; 칠복아 미안하다. 사실 나는 니 어미가 아니란다.... --</description>
+      <description>http://comicmall.naver.com/webtoon.do?m=list&amp;amp;amp;contentId=20853 &amp;quot;마음의 소리&amp;rdquo; 불펌함 냥이 키우는 분들은 한번 쯤 겪었을&amp;hellip; 칠복아 미안하다. 사실 나는 니 어미가 아니란다.... --</description>
     </item>
     
     <item>
@@ -4596,7 +4609,7 @@
       <pubDate>Sun, 14 Jan 2007 15:33:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novaskindo-le-le-tombo-in-7_4-cada-vez/</guid>
-      <description>&amp;ldquo;skindo-le-le&amp;rdquo; 아싸! Tombo In 7/4 / A BOSSA ELETRICA *모든 음악의 저작권은 원 소유자 혹은 관계 회사에있으며, 상업적 재사용을 금합니다. 본 음악파일 혹은 동영상은 일체의 상업적 목적은 없습</description>
+      <description>&amp;quot;skindo-le-le&amp;rdquo; 아싸! Tombo In 7/4 / A BOSSA ELETRICA *모든 음악의 저작권은 원 소유자 혹은 관계 회사에있으며, 상업적 재사용을 금합니다. 본 음악파일 혹은 동영상은 일체의 상업적 목적은 없습</description>
     </item>
     
     <item>
@@ -4920,7 +4933,7 @@
       <pubDate>Tue, 12 Sep 2006 21:48:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/sed-%EC%82%AC%EC%9A%A9%ED%95%9C-find-and-replace-%EC%83%98%ED%94%8C/</guid>
-      <description>sed s/=&amp;quot;..//=&amp;quot;//g develop_view.htm &amp;gt; develop_view2.htm 이런식으로 하면 develop_view.htm의 소스에서 =../ 를 =/ 로 바꿔서 develop_view2.htm 로 저장함 --</description>
+      <description>sed s/=&amp;rdquo;..//=&amp;rdquo;//g develop_view.htm &amp;gt; develop_view2.htm 이런식으로 하면 develop_view.htm의 소스에서 =../ 를 =/ 로 바꿔서 develop_view2.htm 로 저장함 --</description>
     </item>
     
     <item>
@@ -4974,7 +4987,7 @@
       <pubDate>Thu, 31 Aug 2006 01:11:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/%EC%9D%B8%ED%84%B0%EB%84%B7-%EC%9D%B5%EC%8A%A4%ED%94%8C%EB%A1%9C%EB%9F%AC-6.0%EC%97%90%EC%84%9C-html-%EC%97%98%EB%A6%AC%EB%A8%BC%ED%8A%B8%EB%A5%BC-java-script%EC%97%90%EC%84%9C-%EC%B0%B8%EC%A1%B0%ED%95%98%EC%A7%80-%EB%AA%BB%ED%95%98%EB%8A%94-%EA%B2%BD%EC%9A%B0-%EC%9E%88%EC%9D%8C/</guid>
-      <description>드림위버(버전은 모름, 현재 최신 버전인듯)에서 html 편집을 할 때 아래와 같이 자동으로 코딩되는 부분이 있음 &amp;lt;!DOCTYPE html PUBLIC &amp;ldquo;-//W3C//DTD XHTML 1.0 Transitional//EN&amp;rdquo; &amp;ldquo;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&amp;quot;&amp;gt; &amp;lt;html xmlns=&amp;ldquo;http://www.w3.org/1999/xhtml&amp;quot;&amp;gt; 이 때 인터넷 익스플로러 6.0에</description>
+      <description>드림위버(버전은 모름, 현재 최신 버전인듯)에서 html 편집을 할 때 아래와 같이 자동으로 코딩되는 부분이 있음 &amp;lt;!DOCTYPE html PUBLIC &amp;ldquo;-//W3C//DTD XHTML 1.0 Transitional//EN&amp;rdquo; &amp;ldquo;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&amp;quot;&amp;gt; &amp;lt;html xmlns=&amp;quot;http://www.w3.org/1999/xhtml&amp;rdquo;&amp;gt; 이 때 인터넷 익스플로러 6.0에</description>
     </item>
     
     <item>
@@ -5064,7 +5077,7 @@
       <pubDate>Mon, 21 Aug 2006 12:29:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%88%88%EB%AC%BC%EC%9D%84-%EB%AA%A8%EB%A5%B4%EB%8A%94-%EB%88%88%EC%9C%BC%EB%A1%9C-%EC%A7%84%EB%A6%AC%EB%A5%BC-%EB%B3%BC-%EC%88%98-%EC%97%86%EA%B3%A0-%EC%95%84%ED%94%94%EC%9D%84-%EA%B2%AA%EC%96%B4%EB%B3%B4%EC%A7%80-%EC%95%8A%EC%9D%80-%EB%A7%88%EC%9D%8C%EC%9C%BC%EB%A1%9C%EB%8A%94-%EC%82%AC%EB%9E%8C%EC%9D%84-%EC%95%8C-%EC%88%98-%EC%97%86%EB%8B%A4/</guid>
-      <description>&amp;ldquo;눈물을 모르는 눈으로 진리를 볼 수 없고 아픔을 겪어보지 않은 마음으로는 사람을 알 수 없다&amp;rdquo; - 쇼펜하우어 이우근 서울중앙지법원장 曰 --</description>
+      <description>&amp;quot;눈물을 모르는 눈으로 진리를 볼 수 없고 아픔을 겪어보지 않은 마음으로는 사람을 알 수 없다&amp;rdquo; - 쇼펜하우어 이우근 서울중앙지법원장 曰 --</description>
     </item>
     
     <item>
@@ -5091,7 +5104,7 @@
       <pubDate>Fri, 11 Aug 2006 22:35:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/software-engineering/eclipse-&#43;-cvsnt-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-syncronize-%EC%8B%9C-problems-reported-while-synchronizing-cvs-workspace.../</guid>
-      <description>- cvsNT 2.0.4 - Eclipse 3.1.0 에서 발생함. cvsNT의 문제임 repository path 에 드라이브문자가 들어가면 안됨 cvsNT 설청창에서 &amp;lsquo;repository prefix&amp;rsquo;를 사용할것 예를들어 repo</description>
+      <description>- cvsNT 2.0.4 - Eclipse 3.1.0 에서 발생함. cvsNT의 문제임 repository path 에 드라이브문자가 들어가면 안됨 cvsNT 설청창에서 &amp;lsquo;repository prefix&#39;를 사용할것 예를들어 repository</description>
     </item>
     
     <item>
@@ -5442,7 +5455,7 @@
       <pubDate>Sun, 01 Jan 2006 23:25:00 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%82%AC%EB%9E%91%EC%9D%80-%EB%B3%80%ED%95%A9%EB%8B%88%EB%8B%A4./</guid>
-      <description>사랑은 변질變質됩니다. 아니면 고갈되는 것인지도 모릅니다. 혹은 시간에 희석되는 것인지도 모르죠. &amp;ldquo;영원하지 않다고 존재의 이유가 없는 것은 아니</description>
+      <description>사랑은 변질變質됩니다. 아니면 고갈되는 것인지도 모릅니다. 혹은 시간에 희석되는 것인지도 모르죠. &amp;quot;영원하지 않다고 존재의 이유가 없는 것은 아니다</description>
     </item>
     
     <item>

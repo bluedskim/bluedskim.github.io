@@ -6,7 +6,11 @@
     <description>Recent content in JPA on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Mon, 27 Apr 2020 21:26:43 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/tags/jpa/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Apr 2020 21:26:43 +0900</lastBuildDate>
+    
+	<atom:link href="https://bluedskim.github.io/tags/jpa/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Spring Boot &#43; JPA &#43; REST &#43; HATEOAS &#43; Lombok 그리고 VS code 환경에서 getter()를 찾지 못하는 문제</title>
       <link>https://bluedskim.github.io/posts/tech/spring-boot-&#43;-jpa-&#43;-rest-&#43;-hateoas-with-lombok/</link>

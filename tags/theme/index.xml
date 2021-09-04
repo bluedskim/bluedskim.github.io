@@ -6,7 +6,11 @@
     <description>Recent content in Theme on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Sat, 23 Jun 2018 10:54:24 +0200</lastBuildDate><atom:link href="https://bluedskim.github.io/tags/theme/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Jun 2018 10:54:24 +0200</lastBuildDate>
+    
+	<atom:link href="https://bluedskim.github.io/tags/theme/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Hugo Theme 변경 테스트</title>
       <link>https://bluedskim.github.io/posts/tech/post-title/</link>
