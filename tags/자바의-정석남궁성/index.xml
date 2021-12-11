@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>자바의 정석(남궁성) on Do What You Want To Do</title>
+    <link>https://bluedskim.github.io/tags/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D%EB%82%A8%EA%B6%81%EC%84%B1/</link>
+    <description>Recent content in 자바의 정석(남궁성) on Do What You Want To Do</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <lastBuildDate>Tue, 07 Dec 2021 23:11:03 +0900</lastBuildDate>
+    
+	<atom:link href="https://bluedskim.github.io/tags/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D%EB%82%A8%EA%B6%81%EC%84%B1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>자바의 정석 7장. 객체지향 프로그래밍 II</title>
+      <link>https://bluedskim.github.io/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/</link>
+      <pubDate>Tue, 07 Dec 2021 23:11:03 +0900</pubDate>
+      
+      <guid>https://bluedskim.github.io/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/</guid>
+      <description>자바의 정석(남궁성) 독후감 형식의 글입니다 7장. 객체지향 프로그래밍 II 1.1상속의 정의와 장점 재사용성을 높히고 코드의 중복을 제거하여 생산성과 유지보수</description>
+    </item>
+    
+    <item>
+      <title>자바의 정석 6장. 객체지향 프로그래밍 I</title>
+      <link>https://bluedskim.github.io/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_6.6%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-i/</link>
+      <pubDate>Mon, 06 Dec 2021 11:33:01 +0900</pubDate>
+      
+      <guid>https://bluedskim.github.io/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_6.6%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-i/</guid>
+      <description>자바의 정석(남궁성) 독후감 형식의 글입니다 6장. 객체지향 프로그래밍1 1. 객체지향언어 1.2 객체지향언어 현실 세계를 프로그램의 세계에서 표현하기 위한 방법 p.230</description>
+    </item>
+    
+  </channel>
+</rss>
