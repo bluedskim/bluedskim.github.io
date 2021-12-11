@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta property="og:title" content="자바의 정석 7장. 객체지향 프로그래밍 II" />
+<meta property="og:description" content="자바의 정석(남궁성) 독후감 형식의 글입니다 7장. 객체지향 프로그래밍 II 1.1상속의 정의와 장점 재사용성을 높히고 코드의 중복을 제거하여 생산성과 유지보수" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://bluedskim.github.io/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/" />
+<meta property="article:published_time" content="2021-12-07T23:11:03+09:00" />
+<meta property="article:modified_time" content="2021-12-07T23:11:03+09:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="자바의 정석 7장. 객체지향 프로그래밍 II"/>
+<meta name="twitter:description" content="자바의 정석(남궁성) 독후감 형식의 글입니다 7장. 객체지향 프로그래밍 II 1.1상속의 정의와 장점 재사용성을 높히고 코드의 중복을 제거하여 생산성과 유지보수"/>
+<meta name="generator" content="Hugo 0.68.3" />
+
+
+    
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "자바의 정석 7장. 객체지향 프로그래밍 II",
+  "url": "https:\/\/bluedskim.github.io\/posts\/tech\/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii\/",
+  "wordCount": "2096",
+  "datePublished": "2021-12-07T23:11:03\x2b09:00",
+  "dateModified": "2021-12-07T23:11:03\x2b09:00",
+  "author": {
+    "@type": "Person",
+    "name": "Dennis"
+  },
+  "keywords": "tech, java"
+}
+</script>
+
+
+
+    <link rel="canonical" href="https://bluedskim.github.io/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/">
+
+    <title>자바의 정석 7장. 객체지향 프로그래밍 II | Do What You Want To Do</title>
+
+    
+    <!-- combined, minified CSS -->
+    <link href="https://bluedskim.github.io/css/style.css" rel="stylesheet" integrity="sha384-G5B34w7DFTumWTswxYzTX7NWfbvQEg1HbFFEg6ItN03uTAAoS2qkPS/fu3LhuuSA" crossorigin="anonymous">
+    
+
+    <!-- RSS 2.0 feed -->
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-108812986-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    
+
+    
+	<link rel="stylesheet" href="https://bluedskim.github.io/custom.css">
+
+
+  </head>
+
+  <body>
+
+    
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="nav blog-nav">
+          <a class="nav-link " href="https://bluedskim.github.io/">Home</a>
+          
+          <a class="nav-link" href="/tags/samba/" title="">Samba</a>
+          
+          
+          <a class="nav-link" href="/categories/tech/" title="">Tech</a>
+          
+          
+          <a class="nav-link" href="/categories/%EC%9D%8C%EC%95%85/" title="">음악</a>
+          
+          
+          <a class="nav-link" href="/categories/%EC%9D%BC%EC%83%81%EC%82%AC/" title="">일상사</a>
+          
+        </nav>
+      </div>
+    </div>
+    
+
+    
+    
+    <header class="blog-header">
+      <div class="container">
+        <h1 class="blog-title" dir="auto"><a href="https://bluedskim.github.io/" rel="home">Do What You Want To Do</a></h1>
+        <p class="lead blog-description" dir="auto"><a href="mailto:bluedskim@gmail.com">bluedskim@gmail.com</a></p>
+      </div>
+    </header>
+    
+    
+
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+
+          
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="https://bluedskim.github.io/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/">자바의 정석 7장. 객체지향 프로그래밍 II</a></h2>
+    <p class="blog-post-meta"><time datetime="2021-12-07T23:11:03&#43;09:00">2021-12-07</time> by Dennis in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/tech" rel="category tag">tech</a>
+
+
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/java" rel="tag">java</a>
+
+</p>
+  </header>
+  <p><em>자바의 정석(남궁성) 독후감 형식의 글입니다</em></p>
+<h3 id="7장-객체지향-프로그래밍-ii">7장. 객체지향 프로그래밍 II</h3>
+<h4 id="11상속의-정의와-장점">1.1상속의 정의와 장점</h4>
+<ol>
+<li>재사용성을 높히고</li>
+<li>코드의 중복을 제거하여</li>
+<li>생산성과 유지보수성을 높힌다.</li>
+</ol>
+<h5 id="왜-상속에-해당하는-키워드가-inherit이-아니고-extends인가">왜 상속에 해당하는 키워드가 inherit이 아니고 extends인가</h5>
+<blockquote>
+<p>상속을 거듭할수록 상속받는 클래스의 멤버 개수가 점점 늘어나기 때문</p>
+</blockquote>
+<aside>
+💡 inherit은 무언가를 물려받는 의미일 뿐이다 하지만 OOP에서 상속을 하는 이유는 무언가를 물려받는(상속)데에서 그치는 것이 아니라 확장extend하기 위해서이다.
+</aside>
+<aside>
+💡 inherit과 extend 둘 다 '상속'으로 번역하기 때문에 상속의 의미를 좁게 인식하게 만들 수 있다.
+</aside>
+<h5 id="jpa의-최상위-모델객체-예제">JPA의 최상위 모델객체 예제</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@MappedSuperclass</span>
+<span style="color:#a6e22e">@EntityListeners</span><span style="color:#f92672">(</span>AuditingEntityListener<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">)</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BaseEntity</span> <span style="color:#f92672">{</span>
+    <span style="color:#a6e22e">@Id</span>
+    <span style="color:#a6e22e">@GeneratedValue</span>
+    <span style="color:#66d9ef">private</span> Long id<span style="color:#f92672">;</span>
+		<span style="color:#a6e22e">@CreatedBy</span>
+    <span style="color:#66d9ef">private</span> String regUserId<span style="color:#f92672">;</span>
+		<span style="color:#a6e22e">@LastModifiedBy</span>
+    <span style="color:#66d9ef">private</span> String modUserId<span style="color:#f92672">;</span>
+		<span style="color:#a6e22e">@CreatedDate</span>
+    <span style="color:#66d9ef">private</span> Date regDate<span style="color:#f92672">;</span>
+		<span style="color:#a6e22e">@LastModifiedDate</span>
+    <span style="color:#66d9ef">private</span> Date modDate<span style="color:#f92672">;</span>
+    <span style="color:#a6e22e">@Version</span>
+    <span style="color:#66d9ef">private</span> Integer version<span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span>
+
+<span style="color:#a6e22e">@Entity</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">File</span> <span style="color:#66d9ef">extends</span> BaseEntity <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">private</span> String name<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> String content<span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><h4 id="12-클래스간의-관계---포함관계">1.2 클래스간의 관계 - 포함관계</h4>
+<h5 id="언제-포함관계를-사용하는가">언제 포함관계를 사용하는가?</h5>
+<p><a href="https://stackoverflow.com/a/37624298/4766882">https://stackoverflow.com/a/37624298/4766882</a></p>
+<p>언제나 상속 대신 포함관계 사용이 가능하다.</p>
+<h5 id="언제-상속관계를-사용하는가">언제 상속관계를 사용하는가</h5>
+<ol>
+<li>자식이 부모에 대해 &lsquo;is a&rsquo; 관계인 동시에 자식이 부모의 모든 기능을 다 가지고 있을 때</li>
+<li>다중상속을 할 수 없으므로(?) : &ldquo;VCR클래스는 TVCR클래스에 포함&rdquo; p.325</li>
+</ol>
+<h5 id="ex-사각형과-정사각형-문제">ex) 사각형과 정사각형 문제</h5>
+<ol>
+<li>사각형 클래스에 가로길이_늘리기()가 정의되어 있다고 하자.</li>
+<li>정사각형 클래스는 사각형 클래스를 상속했다.</li>
+<li>정사각형 객체에서 사각형 클래스의 가로길이_늘리기()를 호출하는 순간 정사각형은 더 이상 정사각형이 아니게 된다.</li>
+</ol>
+<aside>
+💡  이 문제를 해결하기 위해 인터페이스를 도입?
+</aside>
+<h4 id="23-오버로딩-vs-오버라이딩">2.3 오버로딩 vs 오버라이딩</h4>
+<ul>
+<li>
+<p>오버로딩 : 과적(하면 할 수록 갯수가 늘어남)</p>
+<ul>
+<li>
+<p><a href="https://www.google.com/search?q=overloaded+vehicles">https://www.google.com/search?q=overloaded+vehicles</a></p>
+</li>
+<li>
+<p>한때 유명했던 귀여운 동물사진 블로그</p>
+<p><img src="https://images-na.ssl-images-amazon.com/images/I/516qJv+yDTL._SY486_BO1,204,203,200_.jpg" alt="Untitled"></p>
+</li>
+</ul>
+</li>
+<li>
+<p>오버라이딩 : 덮어씌우기(아무리 많이 해도 갯수가 늘어나지 않는다)</p>
+<ul>
+<li>overwrite와 유사함 <a href="https://stackoverflow.com/a/34036684/4766882">https://stackoverflow.com/a/34036684/4766882</a></li>
+</ul>
+</li>
+</ul>
+<h4 id="24-super">2.4 super</h4>
+<ul>
+<li>메소드 체이닝 샘플 p.331</li>
+</ul>
+<h4 id="33-import문">3.3 import문</h4>
+<blockquote>
+<p>한 패키지에서 여러 클래스를 사용하는 경우 클래스의 이름을 일일이 지정해주는 것보다 패키지명.*과 같이 하는것이 편리하다 ☛ IDE의 import정리기능을 써서 사용할 클래스들을 명시적으로 import 것이 좋다. import만 보면 어떤 클래스들을 쓰는지(dependency)를 쉽게 파악할 수 있기 때문.</p>
+</blockquote>
+<h4 id="42-static---클래스의-공통적인-p344">4.2 static - <del>클래스의, 공통적인</del> p.344</h4>
+<h5 id="static의-사전적-의미--정적인-변하지-않는">static의 사전적 의미 : 정적인, 변하지 않는</h5>
+<blockquote>
+<p><em>Nothing is static. Everything is evolving.</em>(Chuck Palahniuk, Fight Club)</p>
+</blockquote>
+<h4 id="43-final---마지막의-변경될-수-없는">4.3 final - 마지막의, 변경될 수 없는</h4>
+<blockquote>
+<p>모든 private 메소드는 final이다 하지만 모든 final 메소드가 private인 것은 아니다. p.353</p>
+</blockquote>
+<h4 id="44-abstract---추상의-미완성의">4.4 abstract - 추상의, 미완성의</h4>
+<blockquote>
+<p>추상 클래스를 상속extend하는 구상 클래스는 모두 abstract 메소드를 override해야 한다</p>
+</blockquote>
+<p>VS</p>
+<blockquote>
+<p>인터페이스를 구현implement하는 클래스는 모두 메소드를 override해야 한다</p>
+</blockquote>
+<h5 id="언제-abstract를-써야-하는가">언제 abstract를 써야 하는가?</h5>
+<h5 id="언제-interface를-써야-하는가">언제 interface를 써야 하는가?</h5>
+<p>composition over inheritance vs inheritance over composition</p>
+<h4 id="46-제어자modifier의-조합">4.6 제어자(modifier)의 조합</h4>
+<blockquote>
+<p>메서드에 private와 final을 같이 사용할 필요는 없다. (중략) 이 둘 중 하나만 사용해도 의미가 충분하다 ☛ private 메소드에 final 제어자를 쓸 필요는 없다. 하지만 final 메소드에 접근 제어자를 지정하지 않는다면 접근 제어자는 default가 된다. 즉 private가 아니다.</p>
+</blockquote>
+<h3 id="5-다형성">5. 다형성</h3>
+<h4 id="51-다형성이란">5.1 다형성이란?</h4>
+<h4 id="52-참조변수의-형변환">5.2 참조변수의 형변환</h4>
+<h4 id="53-instanceof-연산자">5.3 instanceof 연산자</h4>
+<h4 id="54-참조변수와-인스턴스의-연결">5.4 참조변수와 인스턴스의 연결</h4>
+<blockquote>
+<p>메서드의 경우 조상 클래스의 메소드를 자손의 클래스에서 오버라이딩한 경우에도 참조변수의 타입에 관계없이 항상 실제 인스턴스의 메서드(오버라이딩된 메서드)가 호출되지만, <strong>멤버변수의 경우 참조변수의 타입에 따라 달라진다.</strong></p>
+</blockquote>
+<p><a href="https://github.com/bluedskim/java_standard_study/blob/master/src/test/java/chap7/AnimalShopperTest.java">https://github.com/bluedskim/java_standard_study/blob/master/src/test/java/chap7/AnimalShopperTest.java</a></p>
+<blockquote>
+<p>다운캐스팅은 지양해야 한다 <a href="https://stackoverflow.com/a/30659861/4766882">https://stackoverflow.com/a/30659861/4766882</a></p>
+</blockquote>
+<aside>
+💡 왜 다운캐스팅은 명시적으로 해야 하는가 ☛ [https://stackoverflow.com/a/36383210/4766882](https://stackoverflow.com/a/36383210/4766882) Or you just assume that you got a Dog?
+</aside>
+<h3 id="6-추상-클래스">6. 추상 클래스</h3>
+<h4 id="61-추상-클래스란">6.1 추상 클래스란?</h4>
+<ol>
+<li>클래스 = 설계도</li>
+<li>추상 클래스 = 미완성 설계도</li>
+<li>인터페이스 = 기본 설계도</li>
+</ol>
+<blockquote>
+<p>추상 클래스로 인스턴스 생성 불가</p>
+</blockquote>
+<h3 id="7-인터페이스">7. 인터페이스</h3>
+<h4 id="71-인터페이스란">7.1 인터페이스란?</h4>
+<ul>
+<li>인터페이스는 일종의 추상 &lsquo;클래스'이다. ☛ 자식이 인스턴스를 만들 수 있으므로 추상클래스는 클래스다. 하지만 인터페이스는 자식이 인스턴스를 만들 수 없으므로 클래스가 아니다.</li>
+<li>인터페이스는 명세서(specfication)다. <em>&ldquo;인터페이스의 이름에는 주로 Fightable과 같이 &lsquo;~을 할 수 있는'의 의미인 able로 끝나는 것들이 많은데, 그 이유는 어떠한 기능 또는 행위를 하는데 필요한 메서드를 제공한다는 의미를 강조하기 위해서이다.&quot;</em></li>
+<li>인터페이스는 구현체에 대한 관점이다.</li>
+</ul>
+<aside>
+💡 다형성 : 어떤 경우 상속을 써야 하는 지 혹은 인터페이스를 써야 하는지 -.-
+</aside>
+<h4 id="73-인터페이스의-상속">7.3 인터페이스의 상속</h4>
+<p>다중 상속이 가능하다</p>
+<h4 id="74-인터페이스의-구현">7.4 인터페이스의 구현</h4>
+<p>&lsquo;implements&rsquo; 구문이 상속을 의미하지 않는다. extends구문은 생략 가능</p>
+<h4 id="75-인터페이스를-이용한-다중상속">7.5 인터페이스를 이용한 다중상속</h4>
+<aside>
+💡 인터페이스는 상속되는 것이 아니고 구현되는 것이다
+</aside>
+<h4 id="76-인터페이스를-이용한-다형성">7.6 인터페이스를 이용한 다형성</h4>
+<p><a href="https://github.com/bluedskim/java_standard_study/blob/master/src/test/java/chap7/PolymorphismTest.java">https://github.com/bluedskim/java_standard_study/blob/master/src/test/java/chap7/PolymorphismTest.java</a></p>
+<h4 id="77-인터페이스의-장점">7.7 인터페이스의 장점</h4>
+<ul>
+<li>표준화가 가능하다</li>
+<li>독립적인 프로그래밍이 가능하다</li>
+<li>개발시간을 단축시킬 수 있다</li>
+<li>서로 관계없는 클래스들에게 관계를 맺어 줄 수 있다</li>
+</ul>
+<h5 id="liskov-substitution-principle-해결-p395">Liskov Substitution Principle 해결 p.395</h5>
+<p><img src="https://miro.medium.com/max/1400/1*iV_TeHoEDE0TwhQEFj2fxA.png" alt="Untitled"></p>
+<ul>
+<li><a href="https://www.baeldung.com/cs/liskov-substitution-principle">https://www.baeldung.com/cs/liskov-substitution-principle</a></li>
+<li><a href="https://www.infragistics.com/community/blogs/b/dhananjay_kumar/posts/simplifying-the-liskov-substitution-principle-of-solid-in-c">https://www.infragistics.com/community/blogs/b/dhananjay_kumar/posts/simplifying-the-liskov-substitution-principle-of-solid-in-c</a></li>
+<li><a href="https://www.javabrahman.com/programming-principles/liskov-substitution-principal-java-example/">https://www.javabrahman.com/programming-principles/liskov-substitution-principal-java-example/</a></li>
+</ul>
+<h4 id="78-인터페이스의-이해">7.8 인터페이스의 이해</h4>
+<ul>
+<li>클래스를 사용하는 쪽(User)과 클래스를 제공하는 쪽(Provider)이 있다.</li>
+<li>메소드를 사용(호출)하는 쪽(User)에서는 사용하려는 메서드(Provider)의 선언부만 알면 된다(Open-Close Principal)</li>
+</ul>
+<h4 id="79-디폴트-메서드와-static메서드">7.9 디폴트 메서드와 static메서드</h4>
+<p>Java8부터 인터페이스에 구상 메소드 사용가능</p>
+<h4 id="8-내부-클래스inner-class">8. 내부 클래스(inner class)</h4>
+<ul>
+<li>테스트 : <a href="https://github.com/bluedskim/java_standard_study/blob/b3f9ccc40a6e0a3683748bb51e228a076dfffff1/src/test/java/chap7/PublicFinalInnerMethodTest.java">https://github.com/bluedskim/java_standard_study/blob/b3f9ccc40a6e0a3683748bb51e228a076dfffff1/src/test/java/chap7/PublicFinalInnerMethodTest.java</a></li>
+</ul>
+<h4 id="85-익명-클래스anonymous-class">8.5 익명 클래스(anonymous class)</h4>
+<p>임시 클래스. 주로 인수 생성용</p>
+
+
+  
+
+  
+  <hr>
+  <footer>
+
+  
+
+  
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bluedskim" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  
+  </footer>
+  
+
+</article> 
+
+
+
+        </div> <!-- /.blog-main -->
+
+        <aside class="col-sm-3 ml-auto blog-sidebar">
+  
+  <section class="sidebar-module sidebar-module-inset">
+    <h4>About</h4>
+    <p dir="auto">잡다한것들을 기록합니다. something to remember</p>
+  </section>
+  
+
+  
+        <section class="sidebar-module">
+    <h4>Recent Posts</h4>
+    <ol class="list-unstyled">
+
+
+<li><a href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/">자바의 정석 7장. 객체지향 프로그래밍 II</a></li>
+
+<li><a href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_6.6%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-i/">자바의 정석 6장. 객체지향 프로그래밍 I</a></li>
+
+<li><a href="/posts/tech/back-office-vs-back-end/">&lsquo;Back Office&rsquo; vs &lsquo;Back End&rsquo;</a></li>
+
+<li><a href="/posts/tech/oracleondocker/">Docker로 Oracle12 설치하기</a></li>
+
+<li><a href="/posts/tech/javadesignpattern-12.composite/">Java 디자인 패턴-12.Composite</a></li>
+
+    </ol>
+  </section>
+
+  
+
+  
+  <section class="sidebar-module">
+    <h4>Links</h4>
+    <ol class="list-unstyled">
+      
+      <li><a href="http://bohemia.band">- Bohemia</a></li>
+      
+      <li><a href="https://github.com/bluedskim">- Github</a></li>
+      
+      <li><a href="https://www.instagram.com/bluedskim/">- Instagram</a></li>
+      
+      <li><a href="https://soundcloud.com/bluedskim">- Sound Cloud</a></li>
+      
+      <li><a href="https://www.youtube.com/user/bluedskim/videos">- Youtube Channel</a></li>
+      
+    </ol>
+  </section>
+  
+</aside>
+
+
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+    
+
+    
+    <footer class="blog-footer">
+      <p dir="auto">
+      
+      Blog template created by <a href="https://twitter.com/mdo">@mdo</a>, ported to Hugo by <a href='https://twitter.com/mralanorth'>@mralanorth</a>.
+      
+      </p>
+      <p>
+      <a href="#">Back to top</a>
+      </p>
+    </footer>
+    
+
+  </body>
+
+</html>
