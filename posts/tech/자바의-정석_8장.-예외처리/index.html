@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta property="og:title" content="자바의 정석 8장. 예외처리" />
+<meta property="og:description" content="8장. 예외처리 💡 [요청하는 자 : &#34;나는 이 작업을 어떻게 하는지 몰라. 하지만 너는 알고 있지. 나 대신 이 일을 해줄래?&#34; 요청받는 자 : &#34;나도 도와 주고 싶어. 그래" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://bluedskim.github.io/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_8%EC%9E%A5.-%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/" />
+<meta property="article:published_time" content="2021-12-17T22:31:51+09:00" />
+<meta property="article:modified_time" content="2021-12-17T22:31:51+09:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="자바의 정석 8장. 예외처리"/>
+<meta name="twitter:description" content="8장. 예외처리 💡 [요청하는 자 : &#34;나는 이 작업을 어떻게 하는지 몰라. 하지만 너는 알고 있지. 나 대신 이 일을 해줄래?&#34; 요청받는 자 : &#34;나도 도와 주고 싶어. 그래"/>
+<meta name="generator" content="Hugo 0.68.3" />
+
+
+    
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "자바의 정석 8장. 예외처리",
+  "url": "https:\/\/bluedskim.github.io\/posts\/tech\/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_8%EC%9E%A5.-%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC\/",
+  "wordCount": "1286",
+  "datePublished": "2021-12-17T22:31:51\x2b09:00",
+  "dateModified": "2021-12-17T22:31:51\x2b09:00",
+  "author": {
+    "@type": "Person",
+    "name": "Dennis"
+  },
+  "keywords": "tech, java, 자바의 정석(남궁성)"
+}
+</script>
+
+
+
+    <link rel="canonical" href="https://bluedskim.github.io/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_8%EC%9E%A5.-%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/">
+
+    <title>자바의 정석 8장. 예외처리 | Do What You Want To Do</title>
+
+    
+    <!-- combined, minified CSS -->
+    <link href="https://bluedskim.github.io/css/style.css" rel="stylesheet" integrity="sha384-G5B34w7DFTumWTswxYzTX7NWfbvQEg1HbFFEg6ItN03uTAAoS2qkPS/fu3LhuuSA" crossorigin="anonymous">
+    
+
+    <!-- RSS 2.0 feed -->
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-108812986-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    
+
+    
+	<link rel="stylesheet" href="https://bluedskim.github.io/custom.css">
+
+
+  </head>
+
+  <body>
+
+    
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="nav blog-nav">
+          <a class="nav-link " href="https://bluedskim.github.io/">Home</a>
+          
+          <a class="nav-link" href="/tags/samba/" title="">Samba</a>
+          
+          
+          <a class="nav-link" href="/categories/tech/" title="">Tech</a>
+          
+          
+          <a class="nav-link" href="/categories/%EC%9D%8C%EC%95%85/" title="">음악</a>
+          
+          
+          <a class="nav-link" href="/categories/%EC%9D%BC%EC%83%81%EC%82%AC/" title="">일상사</a>
+          
+        </nav>
+      </div>
+    </div>
+    
+
+    
+    
+    <header class="blog-header">
+      <div class="container">
+        <h1 class="blog-title" dir="auto"><a href="https://bluedskim.github.io/" rel="home">Do What You Want To Do</a></h1>
+        <p class="lead blog-description" dir="auto"><a href="mailto:bluedskim@gmail.com">bluedskim@gmail.com</a></p>
+      </div>
+    </header>
+    
+    
+
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+
+          
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="https://bluedskim.github.io/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_8%EC%9E%A5.-%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/">자바의 정석 8장. 예외처리</a></h2>
+    <p class="blog-post-meta"><time datetime="2021-12-17T22:31:51&#43;09:00">2021-12-17</time> by Dennis in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/tech" rel="category tag">tech</a>
+
+
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/java" rel="tag">java</a>, <a href="/tags/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D%EB%82%A8%EA%B6%81%EC%84%B1" rel="tag">자바의 정석(남궁성)</a>
+
+</p>
+  </header>
+  <h3 id="8장-예외처리">8장. 예외처리</h3>
+<aside>
+💡 [요청하는 자 : "나는 이 작업을 어떻게 하는지 몰라. 하지만 너는 알고 있지. 나 대신 이 일을 해줄래?"
+요청받는 자 : "나도 도와 주고 싶어. 그래서 시도해봤지. 하지만 이러한 문제가 있어서 작업을 마칠 수 없었어." 👉 이 때 예외를 던진다](https://softwareengineering.stackexchange.com/a/323507)
+</aside>
+<aside>
+💡 [Exception이 없던 시절 어떻게 예외처리를 했을까? 반환값을 일일이 체크하는 수 밖에 없었다. 예를 들어 개수를 구하는 함수에서 음수가 반환된다면 예외로 한다던지, 정수를 반환하는 경우라면 가장 큰 정수(혹은 가장 작은 정수)를 반환하기로 약속을 한다던지](https://softwareengineering.stackexchange.com/a/323507)
+</aside>
+<h4 id="11-프로그램-오류-p414">1.1 프로그램 오류 p.414</h4>
+<blockquote>
+<p>컴파일 에러 : 컴파일 시에 발생하는 에러
+런타임 에러 : 실행 시에 발생하는 에러
+논리적 에러 : 실행은 되지만 의도와 다르게 동작하는 것</p>
+</blockquote>
+<ul>
+<li>처리 가능 여부에 따라</li>
+</ul>
+<blockquote>
+<p>에러(error) : 프로그램 코드에 의해서 수습될 수 없는 심각한 오류
+예외(exception) : 프로그램 코드에 의해 수습될 수 있는 다소 미약한 오류</p>
+</blockquote>
+<h4 id="12-예외-클래스의-계층구조-p415">1.2 예외 클래스의 계층구조 p.415</h4>
+<ul>
+<li>Throwable</li>
+</ul>
+<p><img src="http://www.plantuml.com/plantuml/png/SoWkIImgAKygLb3oJIpAJialprFYqb88oIZABqzCoadbujHISAr8JYqeoSpFu-84ye9AyqeoSrDH1VNqzC2qfpzS7Aopg2Y_24M1Vsc9VvflQcv-KIL4qY4rBoKt4uWJ2m00" alt="http://www.plantuml.com/plantuml/png/SoWkIImgAKygLb3oJIpAJialprFYqb88oIZABqzCoadbujHISAr8JYqeoSpFu-84ye9AyqeoSrDH1VNqzC2qfpzS7Aopg2Y_24M1Vsc9VvflQcv-KIL4qY4rBoKt4uWJ2m00"></p>
+<ul>
+<li>Exception</li>
+</ul>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F9045cf63-a81c-4e91-a2df-7a6f59a9ea00%2FUntitled.png?table=block&amp;id=15976be8-705f-41e6-9c2c-b0cd6b5ad2ac&amp;spaceId=e61b686e-d1af-4c3a-9777-c12e83dc3275&amp;width=1900&amp;userId=eb87f607-930d-4f18-83f2-eaab20fcf33d&amp;cache=v2" alt="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F9045cf63-a81c-4e91-a2df-7a6f59a9ea00%2FUntitled.png?table=block&id=15976be8-705f-41e6-9c2c-b0cd6b5ad2ac&spaceId=e61b686e-d1af-4c3a-9777-c12e83dc3275&width=1900&userId=eb87f607-930d-4f18-83f2-eaab20fcf33d&cache=v2"></p>
+<blockquote>
+<p><strong>Excetion클래스들</strong> : 사용자의 실수와 같은 외적인 요인에 의해 발생하는 예외
+<strong>RuntimeException클래스들</strong> : 프로그래머의 실수로 발생하는 예외</p>
+</blockquote>
+<aside>
+💡 catch 구문은 다형성의 좋은 샘플.
+</aside>
+<h5 id="catch-순서-p421">catch 순서 p.421</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> chap8<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ExceptionEx7</span> <span style="color:#f92672">{</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String args<span style="color:#f92672">[])</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
+			<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> 1<span style="color:#f92672">/</span>0<span style="color:#f92672">;</span>
+		<span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>Exception e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>ArithmeticException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+			<span style="color:#75715e">//&#34;Unreachable catch block for ArithmeticException. It is already handled by the catch block for Exception&#34;
+</span><span style="color:#75715e"></span>		<span style="color:#f92672">}</span>
+	<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><h5 id="exceptionprintstacktrace-vs-slf4j-loggererror-p422-httpsstackoverflowcoma104776464766882httpsstackoverflowcoma104776464766882">Exception.printStackTrace() vs @Slf4j logger.error() p.422 <a href="https://stackoverflow.com/a/10477646/4766882">https://stackoverflow.com/a/10477646/4766882</a></h5>
+<blockquote>
+<p>printStackTrace()는 단순히 오류를 어딘가에 출력하는데 그치지만 Slf4j를 쓰면 출력을 할지 말지 부터 어디에 출력할지를 소스 수정없이 조절가능. 출력은 시스템 런타임 성능을 저하시키는 주요 요인</p>
+</blockquote>
+<h5 id="예외의-종류--컴파일러가-체크할-수-있는가">예외의 종류 : <em>컴파일러가 체크할 수 있는가</em></h5>
+<ol>
+<li>checked : 컴파일러가 체크 가능. 컴파일 에러 발생(소스를 수정해야 컴파일 될 것이므로 코딩 시에 excetion에 대한 대처가 가능)</li>
+<li>unchecked : 컴파일러가 체크 불가능. 컴파일 에러 발생하지 않음</li>
+</ol>
+<h3 id="언제-exception을-사용할까-가능한-안써야-한다-특히-제어로직에-예외를-사용하지-마라">언제 Exception을 사용할까? 가능한 안써야 한다. 특히 &lsquo;<em>제어로직에 예외를 사용하지 마라&rsquo;</em></h3>
+<ol>
+<li>소스 가독성 저하(goto문이랑 동일함)</li>
+<li>런타임의 속도저하</li>
+</ol>
+<h3 id="언제-exceptionthrows을-사용할까">언제 Exception(throws)을 사용할까?</h3>
+<p>호출stack이 깊을 때 예외 상황을 우아하게 처리하기 위해. &lsquo;<em>예외를 마지막에 처리하는 쪽은 최초 call을 발생시킨 객체다&rsquo;</em></p>
+<h4 id="19-자동-자원-반환---try-with-resources">1.9 자동 자원 반환 - try-with-resources</h4>
+<ol>
+<li>소스가 많이 짧아져서 가독성이 좋아졌다.</li>
+<li>해당 리소스는 AutoCloseable인터페이스를 구현해야 한다.</li>
+</ol>
+<ul>
+<li>before</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Scanner scanner <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
+<span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
+    scanner <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Scanner<span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> File<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;test.txt&#34;</span><span style="color:#f92672">));</span>
+    <span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span>scanner<span style="color:#f92672">.</span><span style="color:#a6e22e">hasNext</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>scanner<span style="color:#f92672">.</span><span style="color:#a6e22e">nextLine</span><span style="color:#f92672">());</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>FileNotFoundException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    e<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+<span style="color:#f92672">}</span> <span style="color:#66d9ef">finally</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>scanner <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        scanner<span style="color:#f92672">.</span><span style="color:#a6e22e">close</span><span style="color:#f92672">();</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><ul>
+<li>after</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">try</span> <span style="color:#f92672">(</span>Scanner scanner <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Scanner<span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> File<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;test.txt&#34;</span><span style="color:#f92672">)))</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span>scanner<span style="color:#f92672">.</span><span style="color:#a6e22e">hasNext</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>scanner<span style="color:#f92672">.</span><span style="color:#a6e22e">nextLine</span><span style="color:#f92672">());</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>FileNotFoundException fnfe<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    fnfe<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><h4 id="110-사용자정의-예외-만들기">1.10 사용자정의 예외 만들기</h4>
+<blockquote>
+<p>필요에 따라 예외처리의 여부를 선택할 수 있는 &lsquo;unchecked'예외가 강제적인 &lsquo;checked예외'보다 더 환영받고 있다 👉 하지만 예외처리를 강제하기 위해서는 checked예외가 필요</p>
+</blockquote>
+<h4 id="112-연결된-예외chained-exception">1.12 연결된 예외(chained exception)</h4>
+<blockquote>
+<p>여러가지 예외(원인과 결과)를 하나의 큰 분류의 예외로 묶어서 다루기 위해</p>
+</blockquote>
+<ul>
+<li>
+<p>exception-handling-for-rest-with-spring :
+<a href="https://github.com/eugenp/tutorials/tree/master/spring-boot-rest">tutorials/spring-boot-rest at master · eugenp/tutorials</a></p>
+</li>
+<li>
+<p>Exception Handling in Spring MVC : <a href="https://github.com/paulc4/mvc-exceptions">https://github.com/paulc4/mvc-exceptions</a></p>
+</li>
+</ul>
+
+
+  
+
+  
+  <hr>
+  <footer>
+
+  
+
+  
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bluedskim" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  
+  </footer>
+  
+
+</article> 
+
+
+
+        </div> <!-- /.blog-main -->
+
+        <aside class="col-sm-3 ml-auto blog-sidebar">
+  
+  <section class="sidebar-module sidebar-module-inset">
+    <h4>About</h4>
+    <p dir="auto">잡다한것들을 기록합니다. something to remember</p>
+  </section>
+  
+
+  
+        <section class="sidebar-module">
+    <h4>Recent Posts</h4>
+    <ol class="list-unstyled">
+
+
+<li><a href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_8%EC%9E%A5.-%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/">자바의 정석 8장. 예외처리</a></li>
+
+<li><a href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/">자바의 정석 7장. 객체지향 프로그래밍 II</a></li>
+
+<li><a href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_6.6%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-i/">자바의 정석 6장. 객체지향 프로그래밍 I</a></li>
+
+<li><a href="/posts/tech/back-office-vs-back-end/">&lsquo;Back Office&rsquo; vs &lsquo;Back End&rsquo;</a></li>
+
+<li><a href="/posts/tech/oracleondocker/">Docker로 Oracle12 설치하기</a></li>
+
+    </ol>
+  </section>
+
+  
+
+  
+  <section class="sidebar-module">
+    <h4>Links</h4>
+    <ol class="list-unstyled">
+      
+      <li><a href="http://bohemia.band">- Bohemia</a></li>
+      
+      <li><a href="https://github.com/bluedskim">- Github</a></li>
+      
+      <li><a href="https://www.instagram.com/bluedskim/">- Instagram</a></li>
+      
+      <li><a href="https://soundcloud.com/bluedskim">- Sound Cloud</a></li>
+      
+      <li><a href="https://www.youtube.com/user/bluedskim/videos">- Youtube Channel</a></li>
+      
+    </ol>
+  </section>
+  
+</aside>
+
+
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+    
+
+    
+    <footer class="blog-footer">
+      <p dir="auto">
+      
+      Blog template created by <a href="https://twitter.com/mdo">@mdo</a>, ported to Hugo by <a href='https://twitter.com/mralanorth'>@mralanorth</a>.
+      
+      </p>
+      <p>
+      <a href="#">Back to top</a>
+      </p>
+    </footer>
+    
+
+  </body>
+
+</html>

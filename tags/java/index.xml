@@ -6,10 +6,19 @@
     <description>Recent content in Java on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Tue, 07 Dec 2021 23:11:03 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 17 Dec 2021 22:31:51 +0900</lastBuildDate>
     
 	<atom:link href="https://bluedskim.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>자바의 정석 8장. 예외처리</title>
+      <link>https://bluedskim.github.io/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_8%EC%9E%A5.-%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/</link>
+      <pubDate>Fri, 17 Dec 2021 22:31:51 +0900</pubDate>
+      
+      <guid>https://bluedskim.github.io/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_8%EC%9E%A5.-%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/</guid>
+      <description>8장. 예외처리 💡 [요청하는 자 : &#34;나는 이 작업을 어떻게 하는지 몰라. 하지만 너는 알고 있지. 나 대신 이 일을 해줄래?&#34; 요청받는 자 : &#34;나도 도와 주고 싶어. 그래</description>
+    </item>
     
     <item>
       <title>자바의 정석 7장. 객체지향 프로그래밍 II</title>
