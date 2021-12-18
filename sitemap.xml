@@ -3,3693 +3,4431 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://bluedskim.github.io/categories/</loc>
-    <lastmod>2021-12-17T22:31:51+09:00</lastmod>
+    <loc>https://bluedskim.github.io/</loc>
+    <lastmod>2021-12-18T10:36:39+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
-    <loc>https://bluedskim.github.io/</loc>
+    <loc>https://bluedskim.github.io/categories/</loc>
     <lastmod>2021-12-17T22:31:51+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/java/</loc>
     <lastmod>2021-12-17T22:31:51+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/</loc>
     <lastmod>2021-12-17T22:31:51+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/</loc>
     <lastmod>2021-12-17T22:31:51+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/categories/tech/</loc>
     <lastmod>2021-12-17T22:31:51+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_8%EC%9E%A5.-%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/</loc>
     <lastmod>2021-12-17T22:31:51+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D%EB%82%A8%EA%B6%81%EC%84%B1/</loc>
     <lastmod>2021-12-17T22:31:51+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/</loc>
     <lastmod>2021-12-07T23:11:03+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_6.6%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-i/</loc>
     <lastmod>2021-12-06T11:33:01+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/back-office-vs-back-end/</loc>
     <lastmod>2021-08-11T10:05:20+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/architecture/</loc>
     <lastmod>2021-08-11T10:05:20+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/docker/</loc>
     <lastmod>2021-07-14T23:59:28+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/oracleondocker/</loc>
     <lastmod>2021-07-14T23:59:28+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/oracle/</loc>
     <lastmod>2021-07-14T23:59:28+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/design-pattern/</loc>
     <lastmod>2021-06-29T22:47:34+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/javadesignpattern-12.composite/</loc>
     <lastmod>2021-06-29T22:47:34+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/agile/</loc>
     <lastmod>2021-06-12T10:38:46+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/redmine/</loc>
     <lastmod>2021-06-12T10:38:46+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/%EC%B6%94%EC%B2%9C-redmine-agile%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8%EA%B3%BC-purplemine-2-%ED%85%8C%EB%A7%88/</loc>
     <lastmod>2021-06-12T10:38:46+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/ubuntu/</loc>
     <lastmod>2021-06-08T22:20:30+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/ubuntu_vs-code-%EC%97%90%EC%84%9C-%ED%95%9C%EA%B8%80-%EC%9E%85%EB%A0%A5-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/</loc>
     <lastmod>2021-06-08T22:20:30+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/vs-code/</loc>
     <lastmod>2021-06-08T22:20:30+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/javadesignpattern-11.decorator/</loc>
     <lastmod>2021-06-03T22:31:58+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/javadesignpattern-10.adapter/</loc>
     <lastmod>2021-06-01T16:12:55+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/javadesignpattern-09.observer/</loc>
     <lastmod>2021-05-28T21:36:41+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/javadesignpattern-08.facade/</loc>
     <lastmod>2021-05-25T12:17:16+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/javadesignpattern-07.state/</loc>
     <lastmod>2021-05-24T08:46:28+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/categories/linux/</loc>
     <lastmod>2021-05-21T00:00:37+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/categories/perl/</loc>
     <lastmod>2021-05-21T00:00:37+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/perl%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%A1%9C-http-get-%EC%9A%94%EC%B2%AD%ED%95%98%EA%B3%A0-%EC%9D%91%EB%8B%B5%EC%B6%9C%EB%A0%A5/</loc>
     <lastmod>2021-05-21T00:00:37+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/javadesignpattern-05.proxy/</loc>
     <lastmod>2021-05-18T12:23:26+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/javadesignpattern-04.iterators/</loc>
     <lastmod>2021-05-14T08:57:45+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/javadesignpattern-03.command/</loc>
     <lastmod>2021-05-12T00:48:24+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/javadesignpattern-factory/</loc>
     <lastmod>2021-05-11T00:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/javadesignpattern-singleton/</loc>
     <lastmod>2021-05-07T12:13:37+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/taurus/</loc>
     <lastmod>2021-02-15T00:16:55+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/taurus-%EB%B6%80%ED%95%98-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%88%B4-%EB%8D%B0%EB%AA%A8/</loc>
     <lastmod>2021-02-15T00:16:55+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/</loc>
     <lastmod>2021-02-15T00:16:55+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/karate/</loc>
     <lastmod>2021-01-09T22:59:55+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/karate-restful-api-%EC%8B%9C%EB%82%98%EB%A6%AC%EC%98%A4%EA%B8%B0%EB%B0%98-%EC%9E%90%EB%8F%99%ED%99%94-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%8D%B0%EB%AA%A8/</loc>
     <lastmod>2021-01-09T22:59:55+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/jboss%EC%9D%98-modeshape%EB%A1%9C-%EC%98%81%EB%8B%A8%EC%96%B4%EB%A5%BC-%EB%B3%B5%EC%88%98%ED%98%95%EB%8B%A8%EC%88%98%ED%98%95%EC%9C%BC%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/</loc>
     <lastmod>2020-10-11T21:39:37+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/vs-code-spring-java-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A6%AC%ED%94%84%EB%A0%88%EC%8B%9C-%ED%95%98%EA%B8%B0/</loc>
     <lastmod>2020-10-06T23:09:54+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/%EB%B0%A9%EB%B2%95%EB%A1%A0/</loc>
     <lastmod>2020-10-04T21:13:35+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/%EC%95%A0%EC%9E%90%EC%9D%BC/</loc>
     <lastmod>2020-10-04T21:13:35+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/%ED%95%A8%EA%BB%98-%EC%9E%90%EB%9D%BC%EA%B8%B0_%EA%B9%80%EC%B0%BD%EC%A4%80_%EB%A9%94%EB%AA%A8/</loc>
     <lastmod>2020-10-04T21:13:35+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/node/</loc>
     <lastmod>2020-09-30T12:37:16+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/pm2-production-process-manager-for-node.js/</loc>
     <lastmod>2020-09-30T12:37:16+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/reactjs/</loc>
     <lastmod>2020-09-30T12:37:16+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/chromebook/</loc>
     <lastmod>2020-05-16T17:49:41+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/chromebook%EC%97%90-ssh%EC%A0%91%EC%86%8D%ED%95%98%EA%B8%B0/</loc>
     <lastmod>2020-05-16T17:49:41+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/linux/</loc>
     <lastmod>2020-05-16T17:49:41+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/certbot/</loc>
     <lastmod>2020-05-10T21:23:09+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/certbot%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-iptime-ddns-%EB%8F%84%EB%A9%94%EC%9D%B8%EC%9A%A9-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EB%B0%9C%EA%B8%89/</loc>
     <lastmod>2020-05-10T21:23:09+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/spring-boot/</loc>
     <lastmod>2020-05-10T21:23:09+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/material-ui/</loc>
     <lastmod>2020-05-05T21:58:18+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/reactjs-material-ui%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%B9%8C%EB%9D%BC%EC%9D%B4%EB%A6%84-%EC%83%9D%EC%84%B1%EA%B8%B0/</loc>
     <lastmod>2020-05-05T21:58:18+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/android/</loc>
     <lastmod>2020-05-01T12:03:18+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/qwerty-phone/</loc>
     <lastmod>2020-05-01T12:03:18+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/sony-xperia-pro/</loc>
     <lastmod>2020-05-01T12:03:18+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/sony-xperia-proiyokan-2011-%EB%B6%80%ED%99%9C/</loc>
     <lastmod>2020-05-01T12:03:18+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/jpa/</loc>
     <lastmod>2020-04-27T21:26:43+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/spring-boot-&#43;-jpa-&#43;-rest-&#43;-hateoas-with-lombok/</loc>
     <lastmod>2020-04-27T21:26:43+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/samba-in-seoul-by-jair-martins-de-miranda/</loc>
     <lastmod>2020-04-19T22:34:15+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/samba/</loc>
     <lastmod>2020-04-19T22:34:15+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EB%8B%A4%ED%81%90sambistas/</loc>
     <lastmod>2020-04-19T22:16:37+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/%EA%B0%9C%EB%B0%9C/</loc>
     <lastmod>2020-04-19T21:44:58+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4/</loc>
     <lastmod>2020-04-19T21:44:58+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B5%AC%ED%98%84-%EB%8B%A8%EA%B3%84-overview/</loc>
     <lastmod>2020-04-19T21:44:58+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/run-kdenlive-on-pixelbook/</loc>
     <lastmod>2020-04-18T14:22:37+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/%EB%A6%AC%EB%88%85%EC%8A%A4/</loc>
     <lastmod>2020-04-18T14:22:37+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/%ED%94%BD%EC%85%80%EB%B6%81/</loc>
     <lastmod>2020-04-18T14:22:37+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/sparkylinux/</loc>
     <lastmod>2019-11-02T02:14:20+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/%EC%A0%80%EC%82%AC%EC%96%91-pc%EC%97%90-%EA%B0%95%EC%B6%94-%EB%A6%AC%EB%88%85%EC%8A%A4-sparky-linux/</loc>
     <lastmod>2019-11-02T02:14:20+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/special-thanks-to-ubuntu/</loc>
     <lastmod>2019-10-29T22:53:26+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/mirroring/</loc>
     <lastmod>2019-10-29T21:42:39+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/mirroring-with-wget/</loc>
     <lastmod>2019-10-29T21:42:39+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/wget/</loc>
     <lastmod>2019-10-29T21:42:39+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/pixelbook/</loc>
     <lastmod>2019-09-04T13:25:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/%ED%94%BD%EC%85%80%EB%B6%81%EC%97%90%EC%84%9C-%EC%93%B8%EB%A7%8C%ED%95%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B7%B0%EC%96%B4_image-annotation-tool/</loc>
     <lastmod>2019-09-04T13:25:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%A7%8C%EB%82%98%EC%9E%90-%ED%95%98%EC%98%80%EC%9C%BC%EB%82%98-%EC%84%A0%EB%AF%B8%EB%8A%94-%EA%B1%B0%EC%A0%88%ED%96%88%EB%8B%A4/</loc>
     <lastmod>2019-08-22T13:22:37+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/categories/%EC%9D%BC%EC%83%81%EC%82%AC/</loc>
     <lastmod>2019-08-22T13:22:37+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/categories/myworks/</loc>
     <lastmod>2019-08-20T17:25:01+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/%EB%B3%B4%ED%97%A4%EB%AF%B8%EC%95%84/</loc>
     <lastmod>2019-08-20T17:25:01+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/myworks/%EB%B3%B4%ED%97%A4%EB%AF%B8%EC%95%84-%EA%B3%B5%EC%97%B0-%EB%A7%A8%EC%85%98%EB%82%98%EC%9D%B8-190907/</loc>
     <lastmod>2019-08-20T17:25:01+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/ffmpeg/</loc>
     <lastmod>2019-08-20T17:06:05+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/ffmpeg%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%8F%99%EC%98%81%EC%83%81-%ED%8E%B8%EC%A7%91-%EC%83%98%ED%94%8C-%EB%AA%87%EA%B0%9C/</loc>
     <lastmod>2019-08-20T17:06:05+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/life-hack/</loc>
     <lastmod>2019-08-15T13:32:43+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/%EA%B3%A0%EC%96%91%EC%9D%B4/</loc>
     <lastmod>2019-08-15T13:32:43+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EA%B3%A0%EC%96%91%EC%9D%B4%EB%AA%A8%EB%9E%98-%EB%A8%BC%EC%A7%80%EB%82%A0%EB%A6%AC%EC%A7%80-%EC%95%8A%EA%B2%8C-%ED%86%B5%EC%97%90-%EB%B6%80%EC%96%B4%EB%84%A3%EA%B8%B0/</loc>
     <lastmod>2019-08-15T13:32:43+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/1908%ED%98%84%EC%9E%AC-%EC%93%B8%EB%A7%8C%ED%95%9C-%EC%A0%80%EA%B0%80-8%EC%9D%B8%EC%B9%98-%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%ED%83%9C%EB%B8%94%EB%A6%BF-lg-g-pad3-8.0-v425/</loc>
     <lastmod>2019-08-15T00:00:34+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/tablet/</loc>
     <lastmod>2019-08-15T00:00:34+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/google/</loc>
     <lastmod>2019-08-14T09:26:56+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/%EC%A3%BC%EC%9C%84%EC%97%90-%ED%81%AC%EB%A1%AC%EB%B6%81%EC%9D%84-%EC%B6%94%EC%B2%9C%ED%95%98%EA%B2%A0%EC%8A%B5%EB%8B%88%EA%B9%8C/</loc>
     <lastmod>2019-08-14T09:26:56+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/quake/</loc>
     <lastmod>2019-08-13T18:28:39+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/webgl/</loc>
     <lastmod>2019-08-13T18:28:39+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C-quake%EA%B2%8C%EC%9E%84-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/</loc>
     <lastmod>2019-08-13T18:28:39+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/%EB%A6%AC%EB%88%85%EC%8A%A4%EC%97%90%EC%84%9C-%ED%98%84%EC%9E%AC-%EC%8B%9C%EA%B0%81-%EC%9D%8C%EC%84%B1%EC%9C%BC%EB%A1%9C-%EC%95%8C%EB%A0%A4%EC%A3%BC%EA%B8%B0/</loc>
     <lastmod>2019-08-08T10:39:11+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/flutter/</loc>
     <lastmod>2019-07-31T15:14:43+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/pixelbook%EC%97%90%EC%84%9C-flutter%EB%A1%9C-%EC%95%B1-%EA%B0%9C%EB%B0%9C_1/</loc>
     <lastmod>2019-07-31T15:14:43+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/visual-studio-code/</loc>
     <lastmod>2019-07-31T15:14:43+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/redminetopdffull/</loc>
     <lastmod>2019-07-29T16:49:45+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/pixelbook%EC%97%90%EC%84%9C-reaper%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</loc>
     <lastmod>2019-07-10T17:24:26+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/reaper/</loc>
     <lastmod>2019-07-10T17:24:26+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/categories/%EC%9D%8C%EC%95%85/</loc>
     <lastmod>2019-07-10T17:24:26+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/%EC%9D%B4%EA%B8%80%EB%A3%A8%EC%8A%A4/</loc>
     <lastmod>2019-06-23T16:36:35+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/%EC%9D%B4%EA%B8%80%EB%A3%A8%EC%8A%A4-%EB%B0%B1%EC%97%85/</loc>
     <lastmod>2019-06-23T16:36:35+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/%EC%9D%B4%EA%B8%80%EB%A3%A8%EC%8A%A4-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%B0%B1%EC%97%85/</loc>
     <lastmod>2019-06-23T16:36:35+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/%EC%9D%B4%EA%B8%80%EB%A3%A8%EC%8A%A4%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%9D%B4%EC%82%AC%EC%99%84%EB%A3%8C/</loc>
     <lastmod>2019-06-23T16:36:35+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/movie/%EC%82%BC%EB%B0%94%EC%99%80-%EC%98%81%ED%99%94%EB%A5%BC-%EC%82%AC%EB%9E%91%ED%95%98%EB%8A%94-%EB%B6%84%EB%93%A4%EC%97%90%EA%B2%8C-%EC%B6%94%EC%B2%9C%ED%95%98%EB%8A%94-%EC%98%81%ED%99%94/</loc>
     <lastmod>2019-05-15T10:14:03+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/pixelbook%EC%97%90-docker%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</loc>
     <lastmod>2019-04-28T13:38:28+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/termdown/</loc>
     <lastmod>2019-03-24T10:38:28+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/%EC%93%B8%EB%A7%8C%ED%95%9C-ubuntu%EC%9A%A9-command-line-%ED%83%80%EC%9D%B4%EB%A8%B8/</loc>
     <lastmod>2019-03-24T10:38:28+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/excel-to-redmine-table/</loc>
     <lastmod>2019-03-21T20:38:28+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/gear360/</loc>
     <lastmod>2019-03-19T23:38:28+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/%EC%82%BC%EC%84%B1-%EA%B8%B0%EC%96%B4360-%EC%B9%B4%EB%A9%94%EB%9D%BC-%ED%95%B4%ED%82%B9/</loc>
     <lastmod>2019-03-19T23:38:28+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/crostini/</loc>
     <lastmod>2019-03-16T22:38:28+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/howtoinputkorenwithcrostinionpixelbook/</loc>
     <lastmod>2019-03-16T22:38:28+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/hugo/</loc>
     <lastmod>2019-03-15T22:38:28+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/hugoonpixelbook/</loc>
     <lastmod>2019-03-15T22:38:28+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/method-overriding-vs-overloading/</loc>
     <lastmod>2018-06-24T10:54:24+02:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/overloading/</loc>
     <lastmod>2018-06-24T10:54:24+02:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/overring/</loc>
     <lastmod>2018-06-24T10:54:24+02:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/post-title/</loc>
     <lastmod>2018-06-23T10:54:24+02:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/theme/</loc>
     <lastmod>2018-06-23T10:54:24+02:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C_%EC%82%AC%EC%9A%A9%ED%95%A0_dtm%EB%B9%84%EA%B5%90/</loc>
     <lastmod>2017-12-13T22:38:28+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/%EA%B5%AC%ED%98%84/</loc>
     <lastmod>2017-12-12T22:38:28+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/</loc>
     <lastmod>2017-12-12T22:38:28+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B5%AC%ED%98%84_%EB%8B%A8%EA%B3%84/</loc>
     <lastmod>2017-12-12T22:38:28+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/asuschrombookflipc100pads03/</loc>
     <lastmod>2017-10-22T22:38:28+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/c100pa/</loc>
     <lastmod>2017-10-22T22:38:28+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/chrombook/</loc>
     <lastmod>2017-10-22T22:38:28+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/ds03/</loc>
     <lastmod>2017-10-22T22:38:28+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/flip/</loc>
     <lastmod>2017-10-22T22:38:28+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/tech/hugo/</loc>
     <lastmod>2017-10-22T22:38:28+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/guitar/</loc>
     <lastmod>2015-02-10T01:03:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EB%B8%8C%EB%9D%BC%EC%A7%88%EB%A6%AC%EC%96%B8-%EB%A6%AC%EB%93%AC-%EA%B8%B0%ED%83%80-%EC%9B%8C%ED%81%AC%EC%83%B5/</loc>
     <lastmod>2015-02-10T01:03:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%ED%95%9C%EA%B5%AD%EC%9D%98-%EB%B8%8C%EB%9D%BC%EC%A7%88-%EC%9D%8C%EC%95%85-%EB%AE%A4%EC%A7%80%EC%85%98-2015.01.21/</loc>
     <lastmod>2015-01-21T13:36:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/o-b%C3%AAbado-e-a-equilibrista/</loc>
     <lastmod>2013-11-27T13:14:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EC%98%A4%EB%8A%98%EC%9C%BC-%EC%98%A4%EB%8A%98%EC%9C%BC-%EC%82%BC%EB%B0%94-1800-colinas/</loc>
     <lastmod>2013-11-26T23:57:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/creative-coaching_5%EC%A3%BC%EC%B0%A8-%EB%8F%88-%EC%A3%BC%EC%9C%84%EC%97%90-%EB%AF%BC%ED%8F%90%EB%81%BC%EC%B9%98%EC%A7%80-%EC%95%8A%EC%9D%84-%EC%A0%95%EB%8F%84%EB%A7%8C-%EB%B2%8C%EC%9E%90/</loc>
     <lastmod>2013-06-22T15:01:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/our-love-is-here-to-stay-johnny-mathis/</loc>
     <lastmod>2013-03-12T12:39:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-nova-%EC%9E%98-%EC%95%88%EC%95%8C%EB%A0%A4%EC%A7%84-%EC%97%AC%EA%B0%80%EC%88%98-%ED%8A%B9%EC%A7%91/</loc>
     <lastmod>2013-02-02T09:19:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/bossa-novacrazy-lisa-ono/</loc>
     <lastmod>2013-01-17T00:26:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/10%EA%B0%80%EC%A7%80-%EC%A2%8B%EC%95%84%ED%95%98%EB%8A%94-%EA%B2%83/</loc>
     <lastmod>2013-01-14T16:53:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/best-%EC%98%81%ED%99%94%EB%93%A4/</loc>
     <lastmod>2013-01-14T16:46:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/my-favorite-things/</loc>
     <lastmod>2012-12-10T00:41:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-nova-smile-lisa-ono/</loc>
     <lastmod>2012-11-13T23:30:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novayou-are-the-sunshine-of-my-life-lisa-ono/</loc>
     <lastmod>2012-08-07T00:33:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossanovabrinoy-brazil-&#43;-pinoy-music-%ED%95%84%EB%A6%AC%ED%95%80%EC%9D%80-%EC%95%84%EC%8B%9C%EC%95%84%EC%9D%98-%EB%B8%8C%EB%9D%BC%EC%A7%88/</loc>
     <lastmod>2012-07-23T15:58:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novafeelin-so-good-olivia-ong/</loc>
     <lastmod>2012-07-22T10:30:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EC%97%AC%EC%9A%B0%EC%95%BC%EC%84%B1%EC%8B%9C%EA%B2%BD/</loc>
     <lastmod>2012-07-19T22:17:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EB%82%B4-%EB%B0%A9%EC%8B%9D%EB%8C%80%EB%A1%9C%EC%9D%98-%EC%82%AC%EB%9E%91-house-ver.%EC%8B%A0%EC%8A%B9%ED%9B%88/</loc>
     <lastmod>2012-07-19T21:50:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/bossa-novacant-take-my-eyes-off-of-you/</loc>
     <lastmod>2012-07-16T16:45:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-nova%EC%98%A4%EB%9E%98%EB%90%9C-%EC%B9%9C%EA%B5%AC-%EC%96%B4%EB%96%A4%EB%82%A0/</loc>
     <lastmod>2012-07-16T09:34:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novasamba-da-b%C3%AAn%C3%A7%C3%A3o-%EC%B6%95%EB%B3%B5%EC%9D%98-%EC%8C%88%EB%B0%94/</loc>
     <lastmod>2012-06-14T12:54:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%ED%95%9C%EA%B5%AD-%EC%9E%90%EC%82%B4%EB%A5%A0-%EB%B8%8C%EB%9D%BC%EC%A7%88-%EC%82%B4%EC%9D%B8-%EC%82%AC%EB%A7%9D%EB%A5%A0%EB%B3%B4%EB%8B%A4-%EB%86%92%EB%8B%A4./</loc>
     <lastmod>2012-05-25T12:28:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/cantoras-do-r%C3%A1dio/</loc>
     <lastmod>2012-05-23T13:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/cantores-do-r%C3%A1dio/</loc>
     <lastmod>2012-05-23T12:55:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/2012-%EC%A4%91%EB%82%A8%EB%AF%B8-%EB%AC%B8%ED%99%94%EC%B6%95%EC%A0%9C-05.31~-06.03/</loc>
     <lastmod>2012-05-16T12:04:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EA%B3%A0%EC%96%91%EC%9D%B4-%EA%B5%AC%EC%B6%9C%ED%95%98%EC%8B%9C%EB%8A%94-%EC%86%8C%EB%B0%A9%EA%B4%80%EB%93%A4-%EC%82%AC%EC%A7%84-%EC%B0%BE%EB%8B%A4%EA%B0%80-%EB%84%88%EB%AC%B4-%EB%A7%8E%EC%95%84-%ED%8F%AC%EA%B8%B0/</loc>
     <lastmod>2012-05-09T09:47:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novasamba-de-um-minutonovidade-roberta-s%C3%A1/</loc>
     <lastmod>2012-05-07T21:27:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novaolha-erasmo-carlos-e-chico-buarque/</loc>
     <lastmod>2012-05-04T09:26:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EB%B3%B4%EC%82%AC%EB%85%B8%EB%B0%94_%EC%86%8C%EC%85%9C%ED%81%B4%EB%9F%BD_%ED%8F%AC%EC%8A%A4%ED%84%B02012.05.26/</loc>
     <lastmod>2012-05-03T09:42:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novamorena-flor-vinicius-de-moraes/</loc>
     <lastmod>2012-05-02T20:51:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EC%A1%B0%EB%B0%94%EC%8B%AC-%EB%B9%9B%EA%B3%BC%EC%86%8C%EA%B8%88-%EA%B0%80%EC%82%AC_%EC%BD%94%EB%93%9C/</loc>
     <lastmod>2012-04-30T14:09:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EC%96%B4%EB%94%94%EA%B9%8C%EC%A7%80-%EC%99%94%EB%82%98/</loc>
     <lastmod>2012-04-24T13:20:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EC%9E%90%EC%82%B4%EC%9D%84-%ED%95%98%EB%A0%A4%EB%8A%94-%EC%88%9C%EA%B0%84-%EB%8B%B9%EC%8B%A0%EC%9D%98-%EC%9D%8C%EC%95%85%EC%9D%B4-%EB%93%A4%EB%A0%A4%EC%99%94%EC%8A%B5%EB%8B%88%EB%8B%A4.-%EA%B7%B8-%EC%88%9C%EA%B0%84-%EC%9D%B8%EC%83%9D%EC%9D%80-%EC%82%B4%EB%A7%8C%ED%95%9C-%EA%B0%80%EC%B9%98%EA%B0%80-%EC%9E%88%EB%8B%A4%EB%8A%94-%EA%B2%83%EC%9D%84-%EA%B9%A8%EB%8B%AC%EC%95%98%EC%8A%B5%EB%8B%88%EB%8B%A4-%EC%99%80-%EA%B0%99%EC%9D%80-%ED%8E%B8%EC%A7%80%EB%A5%BC-%EB%A7%8E%EC%9D%B4-%EB%B0%9B%EC%95%98%EC%A3%A0-%ED%86%B0-%EC%A1%B0%EB%B9%94%EC%9D%80-%ED%9A%8C%EC%83%81%ED%96%88%EB%8B%A4./</loc>
     <lastmod>2012-04-24T10:44:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/2012-04-29-%EC%BB%A4%ED%94%BC%EC%96%B8%ED%94%8C%EB%9F%AC%EA%B7%B8%EB%93%9C-na-vida-sok%EC%8F%98%EC%BC%80%EC%9D%B4-%EB%91%90%EB%B6%80/</loc>
     <lastmod>2012-04-23T13:29:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D%EC%98%81%ED%99%94%EC%A0%9C%EC%82%B6%EC%9D%98-%EA%B0%80%EC%9E%A5%EC%9E%90%EB%A6%AC-factotum-2005/</loc>
     <lastmod>2012-04-23T00:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/naomi-fuse-%EB%8B%98/</loc>
     <lastmod>2012-04-16T09:23:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novasem-resposta-celso-fonseca/</loc>
     <lastmod>2012-04-09T12:42:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/2012%EB%85%84-3%EC%9B%94-%ED%99%8D%EB%8C%80-%EC%AA%BD-%EC%9B%90%EB%A3%B8_%EC%98%A4%ED%94%BC%EC%8A%A4%ED%85%94%EC%9D%84-%EA%B5%AC%ED%95%98%EB%A9%B4%EC%84%9C-%EB%A7%8C%EB%93%A0-%EC%A7%80%EB%8F%84/</loc>
     <lastmod>2012-03-19T11:41:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/cort-cec7-%EB%A6%AC%EB%B7%B0/</loc>
     <lastmod>2012-03-01T19:02:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/oceano-toots-thielemans-djavan/</loc>
     <lastmod>2012-02-20T12:33:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/dancing-with-cats-%EB%82%98%EB%B9%84%EB%8B%A4-navida%EC%9D%98-%EB%83%90%EC%98%B9-%ED%85%8C%EB%A7%88%EA%B8%B0%ED%9A%8D%EA%B3%B5%EC%97%B0-1%ED%83%84/</loc>
     <lastmod>2012-01-10T13:11:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novafolhas-secas/</loc>
     <lastmod>2011-12-25T16:05:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/vivaldis-song/</loc>
     <lastmod>2011-12-25T11:04:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/1.2.1.2-samba-day-rapercussions-3rd-anniversary-party/</loc>
     <lastmod>2011-12-12T21:04:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novachico-buarque-o-meu-guri/</loc>
     <lastmod>2011-12-04T11:59:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/pagode-samba-tem-que-ter-%EB%93%B1%EB%93%B1../</loc>
     <lastmod>2011-12-01T12:42:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%98%81%ED%99%94-%ED%8A%B8%EB%A6%AC%EC%98%A4%EB%B8%8C%EB%9D%BC%EC%9D%B4%ED%94%84-%EC%8B%A0%EB%8F%84-%ED%95%98%ED%92%88%ED%95%A0-%EC%9E%A5%ED%99%A9%ED%95%9C-%EA%B8%B0%EB%8F%84%EB%AC%B8/</loc>
     <lastmod>2011-11-22T14:04:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossanovaold-fashioned-love-you-are-my-sunshine-lisa-ono/</loc>
     <lastmod>2011-11-20T21:39:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D%EC%98%81%ED%99%94%EC%A0%9C%EB%AF%B8%EC%8A%A4%ED%84%B0-%EB%85%B8%EB%B0%94%EB%94%94-mr.-nobody/</loc>
     <lastmod>2011-11-20T12:16:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novacarolina-chico-buarque/</loc>
     <lastmod>2011-11-19T12:15:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novasamba-da-ben%C3%A7%C3%A3o-samba-sarabah/</loc>
     <lastmod>2011-11-19T11:44:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novalobo-bobo/</loc>
     <lastmod>2011-11-16T12:36:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%9E%90%EB%9D%BC%EC%84%AC-%EC%9E%AC%EC%A6%88%ED%8E%98%EC%8A%A4%ED%8B%B0%EB%B2%8C-%EC%82%AC%EC%A7%84/</loc>
     <lastmod>2011-11-16T10:23:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novacantores-do-r%C3%A1dio-nara-le%C3%A3o/</loc>
     <lastmod>2011-11-16T08:37:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EB%B8%8C%EB%9D%BC%EC%A7%88-%EB%85%B8%EB%9E%98-%EA%B0%80%EC%82%AC%EC%99%80-%EB%8F%99%EC%98%81%EC%83%81%EC%9D%84-%EC%B0%BE%EB%8A%94%EB%8B%A4%EB%A9%B4-%EA%B5%AC%EA%B8%80-%EA%B2%80%EC%83%89%EC%B0%BD%EC%97%90-%EC%A0%9C%EB%AA%A9%EB%84%A3%EA%B3%A0-%ED%95%9C%EC%B9%B8%EB%9D%84%EC%9A%B0%EA%B3%A0-letra-%EB%84%A3%EA%B3%A0-%EA%B2%80%EC%83%89.-%EC%BD%94%EB%93%9C%EB%8F%84-%EA%B0%99%EC%9D%B4-%EC%B0%BE%EB%8A%94%EB%8B%A4%EB%A9%B4-%EA%B5%AC%EA%B8%80-%EA%B2%80%EC%83%89%EC%B0%BD%EC%97%90-%EC%A0%9C%EB%AA%A9%EB%84%A3%EA%B3%A0-%ED%95%9C%EC%B9%B8%EB%9D%84%EC%9A%B0%EA%B3%A0-cifras-%EB%84%A3%EA%B3%A0-%EA%B2%80%EC%83%89/</loc>
     <lastmod>2011-11-16T08:35:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-nova%EC%A1%B0%EB%B9%94%EC%B6%94%EB%AA%A8%EA%B3%B5%EC%97%B0-homenagem-%C3%A1-tom-jobim/</loc>
     <lastmod>2011-11-15T12:25:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/bossa-novamr-tom-lisa-ono-music-by-eumir-deodato/</loc>
     <lastmod>2011-11-15T09:57:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/d.still-1%EC%A3%BC%EB%85%84-%EA%B8%B0%EB%85%90-caipirinha-party-4~5.-november/</loc>
     <lastmod>2011-11-02T12:42:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novaeu-n%C3%A3o-existo-sem-voc%C3%AA/</loc>
     <lastmod>2011-10-27T09:42:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/rosa-morena2010-%EB%8D%B4%EB%A7%88%ED%81%AC-%EB%B8%8C%EB%9D%BC%EC%A7%88-%ED%95%A9%EC%9E%91%EC%98%81%ED%99%94/</loc>
     <lastmod>2011-10-25T17:12:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EC%BB%A4%ED%94%BC%EC%83%81%EC%A0%90-%EC%9D%B4%EC%8B%AC%E4%BB%A5%E5%BF%83-1%EC%A3%BC%EB%85%84%EC%9E%94%EC%B9%98-%EC%9A%B0%EB%A6%AC%EB%8A%94-%EC%BB%A4%ED%94%BC%EB%8F%84-%EB%A7%88%EC%8B%9C%EA%B3%A0-%EC%B9%9C%EA%B5%AC%EB%8F%84-%EB%8A%98%EC%97%88%EB%8B%A4%EB%84%A4/</loc>
     <lastmod>2011-10-24T22:05:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/10th-%EB%A9%9C%EB%A1%9C%EB%94%94%EC%9E%94%EC%B9%98-%EB%85%B8%EB%9E%98%EC%9D%98-%ED%85%83%EB%B0%AD/</loc>
     <lastmod>2011-10-24T22:01:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/pretty-world-lisa-ono/</loc>
     <lastmod>2011-10-24T01:06:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/rosa-morena-elis-regina-e-wilson-simonal/</loc>
     <lastmod>2011-10-23T23:54:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/only-brazil-%ED%95%A9%EB%8F%99%EA%B3%B5%EC%97%B0-%EB%B8%8C%EB%9D%BC%EC%A7%88%EC%9D%98-%EB%B3%B4%EC%8B%B8%EB%85%B8%EB%B0%94%EC%99%80-%EC%8C%88%EB%B0%94%EB%A7%8C-%EC%A0%84%EB%AC%B8%EC%9C%BC%EB%A1%9C-%EC%97%B0%EC%A3%BC%ED%95%98%EB%8A%94-%ED%8C%80%EB%93%A4%EC%9D%B4-%EB%AA%A8%EC%97%AC-%EA%B3%B5%EC%97%B0%EC%9D%84-%ED%95%A9%EB%8B%88%EB%8B%A4./</loc>
     <lastmod>2011-10-23T10:48:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EB%A6%AC%EB%B9%84%EC%95%84-%EC%A0%84%EC%9E%A5-%ED%95%9C%EB%B3%B5%ED%8C%90%EC%97%90-%EA%B8%B0%ED%83%80%EC%B9%98%EB%8A%94-%EC%98%81%EC%9B%85-%EB%93%B1%EC%9E%A5/</loc>
     <lastmod>2011-10-12T23:40:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%98%81%ED%99%94-goldfish-memory/</loc>
     <lastmod>2011-09-30T10:40:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novacasa-pre-fabricada-by-roberta-s%C3%A1/</loc>
     <lastmod>2011-09-28T08:59:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EB%82%98%EB%B9%84%EB%8B%A4-%EA%B3%B5%EC%97%B0-%EC%9B%B9%ED%94%8C%EB%9D%BC%EC%9D%B4%EC%96%B4/</loc>
     <lastmod>2011-09-22T10:46:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%98%81%ED%99%94-%ED%8B%B0%ED%8C%8C%EB%8B%88%EC%97%90%EC%84%9C-%EC%95%84%EC%B9%A8%EC%9D%84-%EC%B5%9C%EA%B3%A0%EC%9D%98-%EC%A1%B0%EC%97%B0-cat%EC%9D%98-%EC%8B%A0%EB%93%A4%EB%A6%B0-%EC%97%B0%EA%B8%B0/</loc>
     <lastmod>2011-09-19T19:57:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novafirst-step/</loc>
     <lastmod>2011-09-18T23:58:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novaflora-purim/</loc>
     <lastmod>2011-09-18T12:50:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/cabide-primavera/</loc>
     <lastmod>2011-08-28T12:24:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novadesde-que-o-samba-%C3%A9-samba/</loc>
     <lastmod>2011-08-28T11:08:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EC%95%84%EC%9D%BC%EB%9E%9C%EB%93%9C%EC%9D%98-%EB%B8%94%EB%A3%A8%EC%8A%A4-%ED%8E%98%EC%8A%A4%ED%8B%B0%EB%B2%8C/</loc>
     <lastmod>2011-08-25T10:24:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%ED%94%84%EB%A6%AC%EB%A7%88%EB%B2%A0%EB%9D%BC-%EA%B3%B5%EC%97%B0%EC%9D%BC%EC%A0%95-%EC%84%9C%EC%9A%B8%ED%94%84%EB%A6%B0%EC%A7%80%ED%8E%98%EC%8A%A4%ED%8B%B0%EB%B2%8C/</loc>
     <lastmod>2011-08-16T14:51:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novasamba-em-prel%C3%BAdio/</loc>
     <lastmod>2011-08-05T16:36:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EB%A1%AF%EB%8D%B0%EC%9B%94%EB%93%9C-%EC%8C%88%EB%B0%94/</loc>
     <lastmod>2011-08-01T12:47:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EC%A6%90%EA%B1%B0%EC%9A%B4-%EC%9D%B8%EC%83%9D/</loc>
     <lastmod>2011-07-31T14:24:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EC%8B%B8%EC%9D%B4%ED%81%B4%EB%9F%BD-%EB%B3%B4%EC%82%AC%EB%8F%99-%EC%A0%95%EB%AA%A8-%ED%8F%AC%EC%8A%A4%ED%84%B0%EA%B0%80-%EC%9D%B4%EB%BB%90%EC%84%9C/</loc>
     <lastmod>2011-07-20T13:53:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EB%8F%99%EC%84%9D-%EA%B3%B5%EC%97%B0-%EC%86%8C%EC%8B%9D-7_20-22-23/</loc>
     <lastmod>2011-07-16T23:54:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novafalsa-biana/</loc>
     <lastmod>2011-07-12T12:51:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EC%98%81%ED%99%94-%EC%95%B5%EA%B7%B8%EB%A6%AC%EB%B2%84%EB%93%9C-%EB%A6%AC%EC%98%A4-angry-birds-rio/</loc>
     <lastmod>2011-07-04T12:53:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9Csonhos-roubados-_-stolen-dreams-_-%EC%96%B4%EB%A6%B0-%EC%B0%BD%EB%85%80%EC%9D%98-%EB%85%B8%EB%9E%98/</loc>
     <lastmod>2011-07-03T13:04:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EA%B7%B8%EB%8C%80-%EB%82%B4-%ED%92%88%EC%97%90/</loc>
     <lastmod>2011-06-27T00:10:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/primavera-%EC%82%AC%EC%A7%84/</loc>
     <lastmod>2011-06-21T23:38:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/navida-%EC%82%AC%EC%A7%84/</loc>
     <lastmod>2011-06-14T16:04:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossanovao-b%C3%AAbado-e-a-equilibrista/</loc>
     <lastmod>2011-06-12T12:12:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novalisa-ekdahl-i-will-be-blessed/</loc>
     <lastmod>2011-06-05T03:08:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/gilberto-gil/</loc>
     <lastmod>2011-05-29T11:11:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/meu-fado-meumariza/</loc>
     <lastmod>2011-05-29T10:39:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossanova%EB%82%98%EB%A5%B8%ED%95%9C-%EC%98%A4%ED%9B%84%EA%B9%80%ED%98%84%EC%B2%A0-%EC%9E%91%EC%82%AC%EC%9E%91%EA%B3%A1/</loc>
     <lastmod>2011-05-29T09:40:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novaanswered-prayerse-de-deus-%EC%8C%8D%EB%B0%94%EB%8A%94-%EC%8B%A0%EC%9D%B4-%EB%82%B4%EB%A6%B0-%EB%A9%8B%EC%A7%84-%EC%84%A0%EB%AC%BC/</loc>
     <lastmod>2011-05-21T13:21:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/p-bro-sound-party%EC%97%90-primavera-%EC%B6%9C%EC%97%B0/</loc>
     <lastmod>2011-05-21T11:47:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/sambaluar-e-batucadapaula-morelenbaum/</loc>
     <lastmod>2011-05-14T12:15:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novaastrud-by-basia/</loc>
     <lastmod>2011-05-09T13:21:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/tristeza-%EC%8A%AC%ED%94%94%EC%9D%B4%EC%97%AC-%EC%98%81%EC%9B%90%ED%9E%88-%EC%82%AC%EB%9D%BC%EC%A0%B8-%EC%A3%BC%EB%A0%B4/</loc>
     <lastmod>2011-05-06T22:16:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%ED%94%84%EB%A6%AC%EB%A7%88%EB%B2%A0%EB%9D%BC-%EB%91%90%EB%B2%88%EC%A7%B8-%EA%B3%B5%EC%97%B0/</loc>
     <lastmod>2011-04-05T14:41:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%ED%94%84%EB%A6%AC%EB%A7%88%EB%B2%A0%EB%9D%BC-%EC%B2%AB-%EA%B3%B5%EC%97%B0-2011.03.26-%ED%99%8D%EB%8C%80-%EA%BD%83/</loc>
     <lastmod>2011-03-28T22:21:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EB%B8%8C%EB%9D%BC%EC%A7%88%EB%A6%AC%EC%96%B8%EC%9D%98-%EB%B0%A4-wool-shed/</loc>
     <lastmod>2011-03-27T23:15:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B8%8C%EB%9D%BC%EC%A7%88-%EC%83%81%ED%8C%8C%EC%9A%B8%EB%A3%A8-%EC%8B%9C%EB%82%B4%EC%97%90%EC%84%9C-%EB%B8%8C%EB%9D%BC%EC%A7%88-%EC%A0%8A%EC%9D%80%EC%9D%B4%EB%93%A4%EC%9D%B4-%EB%B9%99%EA%B7%B8%EB%A0%88%EC%9D%98-%EB%A9%94%EB%A1%9C%EB%82%98%EB%A5%BC-%EB%A8%B9%EA%B3%A0-%EC%9E%88%EB%8B%A4/</loc>
     <lastmod>2011-03-23T09:53:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%ED%8C%8C%EA%B3%A0%EC%A7%80-%EC%8C%88%EB%B0%94-%EB%B0%B4%EB%93%9C-primavera-%EA%B3%B5%EC%97%B0-3_26-8%EC%8B%9C-%ED%99%8D%EB%8C%80%EA%B7%BC%EC%B2%98-%EC%B9%B4%ED%8E%98-%EA%BD%83/</loc>
     <lastmod>2011-03-21T13:18:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/brazilianchega-martn%C3%A1lia/</loc>
     <lastmod>2011-03-16T13:06:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EA%B9%80%EC%88%98%EC%B2%A0-%EC%A0%95%EC%8B%A0%EC%B0%A8%EB%A0%A4/</loc>
     <lastmod>2011-03-05T17:12:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EB%B8%8C%EB%9D%BC%EC%A7%88-%EC%B9%B4%EB%8B%88%EB%B0%9C-2011-%EB%93%9C%EB%94%94%EC%96%B4-%EC%8B%9C%EC%9E%91/</loc>
     <lastmod>2011-03-05T14:44:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%82%98%EC%9D%98-%EB%9D%BC%EC%9E%84%EC%98%A4%EB%A0%8C%EC%A7%80%EB%82%98%EB%AC%B4-_-o-meu-p%C3%A9-de-laranja-lima/</loc>
     <lastmod>2011-03-05T14:08:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novapelas-tabelas-roberta-s%C3%A1/</loc>
     <lastmod>2011-03-02T00:32:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novachega-de-saudade-rosa-passos-yo-yo-ma/</loc>
     <lastmod>2011-02-27T01:19:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novaromero-lubambo/</loc>
     <lastmod>2011-02-27T01:19:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novamairzy-doats-by-romero-lubambo/</loc>
     <lastmod>2011-02-27T00:44:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/bossa-novaembola-a-bola/</loc>
     <lastmod>2011-02-21T21:12:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/chicas/</loc>
     <lastmod>2011-02-20T13:51:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/mariana-baltar/</loc>
     <lastmod>2011-02-20T13:07:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%B0%BD%ED%94%BC%ED%95%98%EC%A7%80%EB%A7%8C-%EB%A9%B0%EC%B9%A0%EC%A7%B8-%EC%95%84%EB%AC%B4%EA%B2%83%EB%8F%84-%EB%A8%B9%EC%A7%80-%EB%AA%BB%ED%95%B4-%EB%82%A8%EB%8A%94-%EB%B0%A5%EA%B3%BC-%EA%B9%80%EC%B9%98%EA%B0%80-%EC%9E%88%EC%9C%BC%EB%A9%B4-%EB%AC%B8-%EC%A2%80-%EB%91%90%EB%93%A4%EA%B2%A8-%EC%A3%BC%EC%84%B8%EC%9A%94.-%EC%B5%9C%EA%B3%A0%EC%9D%80-%EC%9E%91%EA%B0%80-%EC%83%9D%ED%99%9C%EA%B3%A0-%EB%81%9D%EC%97%90-%EC%9A%94%EC%A0%88/</loc>
     <lastmod>2011-02-09T00:58:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/gary-moore-%EA%B3%A0%EB%A7%88%EC%9B%8C%EC%9A%94/</loc>
     <lastmod>2011-02-08T01:26:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%82%98%EB%AF%B8-%EC%98%81%EC%9B%90%ED%95%9C-%EC%B9%9C%EA%B5%AC/</loc>
     <lastmod>2011-01-28T13:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossanova%EC%95%84%EC%9D%BC%EB%9E%9C%EB%93%9C%EC%97%90%EC%84%9C-%EC%98%A8-%EB%B3%B4%EC%82%AC%EB%85%B8%EB%B0%94-once-i-loved-waters-of-march-desafinado-damien-rice/</loc>
     <lastmod>2011-01-18T12:55:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/ana-caram-blue-bossa/</loc>
     <lastmod>2011-01-17T12:39:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novaed-motta-caso-s%C3%A8rio/</loc>
     <lastmod>2011-01-04T21:18:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B8%8C%EB%9D%BC%EC%A7%88-%EA%B0%80%EA%B3%A0%EC%8B%B6%EB%84%A4/</loc>
     <lastmod>2010-11-07T11:41:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9Cthe-secret-in-their-eyes/</loc>
     <lastmod>2010-11-06T22:41:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novaeldissa-%EC%9D%B4-%EC%B9%9C%EA%B5%AC%EB%93%A4%EC%95%84-%EB%A9%8B%EC%A7%84-%EB%B3%B4%EC%82%AC%EB%85%B8%EB%B0%94-%EB%A6%AC%EB%A9%94%EC%9D%B4%ED%81%AC-%EC%A2%80-%EA%B7%B8%EB%A7%8C%ED%95%B4.-%EB%94%B4-%EC%82%AC%EB%9E%8C%EB%93%A4%EC%9D%B4-%ED%95%A0%EA%B2%8C-%EC%97%86%EC%9E%96%EC%96%B4~/</loc>
     <lastmod>2010-11-03T23:46:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/mpbo-melhor-vai-comecar-patricia-marx-%EC%B5%9C%EA%B3%A0%EC%9D%98-%EC%88%9C%EA%B0%84%EC%9D%B4-%EC%98%AC%EA%B1%B0%EC%95%BC/</loc>
     <lastmod>2010-11-01T00:34:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novaamor-de-carnaval-daniela-mercury-gilberto-gil/</loc>
     <lastmod>2010-10-31T15:36:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossanovasei-l%C3%A1%EB%82%9C-%EB%AA%A8%EB%A5%B4%EA%B2%A0%EB%84%A4-mi%C3%BAcha-tom-jobim/</loc>
     <lastmod>2010-10-30T18:31:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossanovacaso-serio-by-cesar-e-pedro-mariano-piano-e-voz-%E4%B8%AD-/</loc>
     <lastmod>2010-10-30T16:34:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/djavan-final-feliz/</loc>
     <lastmod>2010-10-24T09:47:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novajanita-i-miss-you/</loc>
     <lastmod>2010-10-23T17:25:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%ED%8A%B8%EC%9C%84%ED%84%B0%EB%B4%87-%EB%A7%8C%EB%93%A4%EA%B8%B0/</loc>
     <lastmod>2010-10-11T00:11:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-nostra-jakie/</loc>
     <lastmod>2010-10-09T19:01:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/starting-over/</loc>
     <lastmod>2010-10-08T12:59:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%ED%86%B5%EA%B8%B0%ED%83%80%EB%A6%AC%EC%8A%A4%ED%8A%B8-tommy-emmanuel-joscho-stephan/</loc>
     <lastmod>2010-10-03T14:17:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/nokia%EC%9D%98-%EC%8A%A4%EB%A7%88%ED%8A%B8%ED%8F%B0-xpressmusic-5800-%EC%97%90%EC%84%9C-ipad%EB%A1%9C-bluetooth-%ED%85%8C%EB%8D%94%EB%A7%81-%ED%95%98%EA%B8%B0/</loc>
     <lastmod>2010-09-26T15:45:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossanovasabrina-malheiros-connex%C3%A3o-%EC%99%B8/</loc>
     <lastmod>2010-09-19T15:03:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novaalessandro-magnanini-2009%EB%85%84-%EB%8D%B0%EB%B7%94%EC%95%A8%EB%B2%94-someway-still-i-do/</loc>
     <lastmod>2010-09-06T23:49:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novamichael-franks-%EC%84%A0%EC%83%9D%EC%9D%98-%EB%B3%B4%EC%82%AC%EB%85%B8%EB%B0%94-%EA%B3%A1%EB%93%A4/</loc>
     <lastmod>2010-08-30T23:25:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/bossa-novawanda-s%C3%A1/</loc>
     <lastmod>2010-08-22T00:15:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novajo%C3%A3o-bosco-%EC%84%A0%EC%83%9D-%ED%95%9C%EA%B5%AD%EC%98%A8%EB%8B%A4/</loc>
     <lastmod>2010-08-19T01:37:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novachega-de-saudade/</loc>
     <lastmod>2010-08-19T00:56:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/a-%EC%9D%8C%EC%9D%98-%EC%A7%84%EB%8F%99%EC%88%98%EA%B0%80-%EC%96%B4%EB%96%BB%EA%B2%8C-%EB%B0%94%EB%80%8C%EC%97%88%EB%8A%94%EC%A7%80-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90/</loc>
     <lastmod>2010-08-12T09:12:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EC%83%88%EB%A1%9C%EC%9A%B4-%EB%A6%AC%EB%93%AC-%EB%B3%B4%EC%82%AC%EB%85%B8%EB%B0%94-%EB%93%B1%EC%9E%A5-%ED%8A%B8%EC%9C%84%EC%8A%A4%ED%8A%B8-%ED%95%9C%EB%AC%BC-%EA%B0%84-%EB%93%AF-%EB%8F%99%EC%95%84%EC%9D%BC%EB%B3%B4/</loc>
     <lastmod>2010-08-11T21:51:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EC%9A%94%EC%83%88-%ED%8C%90%EB%A7%A4%EB%90%98%EB%8A%94-2-~-30%EB%A7%8C%EC%9B%90-%EC%B4%88%EB%B0%98-%EC%9E%85%EB%AC%B8%EC%9A%A9-%ED%86%B5%EA%B8%B0%ED%83%80%EB%A5%BC-%EC%95%8C%EC%95%84%EB%B4%A4%EC%8A%B5%EB%8B%88%EB%8B%A4./</loc>
     <lastmod>2010-08-11T21:13:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EC%9A%94%EC%83%88-%ED%8C%90%EB%A7%A4%EB%90%98%EB%8A%94-2-~-30%EB%A7%8C%EC%9B%90-%EC%B4%88%EB%B0%98-%ED%81%B4%EB%9E%98%EC%8B%9D-%EA%B8%B0%ED%83%80%EB%A5%BC-%EC%95%8C%EC%95%84%EB%B4%A4%EC%8A%B5%EB%8B%88%EB%8B%A4./</loc>
     <lastmod>2010-08-11T21:03:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-nova%ED%9B%84%EB%81%88%EB%88%84%EB%8B%98-tania-maria/</loc>
     <lastmod>2010-08-10T23:48:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novasamba-e-amorby-chico-buarque/</loc>
     <lastmod>2010-07-20T22:17:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/nunca-lupicinio-rodrigues/</loc>
     <lastmod>2010-07-19T23:06:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/categories/software-engineering/</loc>
     <lastmod>2010-07-17T12:53:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/%EC%9E%83%EC%96%B4%EB%B2%84%EB%A6%B0_%EB%8F%84%EB%82%9C%EB%8B%B9%ED%95%9C-ipad-iphone-ipod-%EB%A5%BC-%EC%B0%BE%EA%B8%B0-%EC%9C%84%ED%95%9C-%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4/</loc>
     <lastmod>2010-07-17T12:53:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novasem-voc%C3%AA-chico-buarque-tom-jobim-e-vin%C3%ADcius-de-moraes/</loc>
     <lastmod>2010-07-14T21:19:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EB%B3%B4%EC%82%AC%EB%85%B8%EB%B0%94-%EA%B0%80%EC%88%98-%ED%9A%A8%EA%B8%B0-%EB%8D%B0%EB%B7%B0/</loc>
     <lastmod>2010-07-14T15:29:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/it-was-shiraz-%EC%9D%B4%EB%B3%84%EC%9D%98-%EA%B7%B8%EB%8A%98-vocal-by-%EC%8B%A0%EC%98%88%EC%9B%90/</loc>
     <lastmod>2010-07-13T12:55:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/tic-tac-do-meu-cora%C3%A7%C3%A3o/</loc>
     <lastmod>2010-07-13T00:13:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EC%83%B4%ED%91%B8%EC%9D%98-%EC%9A%94%EC%A0%95%EA%B0%80%EC%82%AC_%EC%BD%94%EB%93%9C-%EB%B9%9B%EA%B3%BC-%EC%86%8C%EA%B8%88/</loc>
     <lastmod>2010-06-20T15:01:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%9D%B4%EC%B0%BD%EB%8F%99-%EA%B0%90%EB%8F%85-%EC%8B%9C-%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%97%90-%EC%8B%9C%EB%A5%BC-%EC%93%B0%EB%8A%94-%EA%B2%BD%EC%A7%80/</loc>
     <lastmod>2010-06-20T11:34:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novachristopher-cross-arthurs-theme-best-that-you-can-do-by-paris-match/</loc>
     <lastmod>2010-06-05T12:31:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EA%BC%AC%EB%A5%B4%EB%9A%9C%EA%B2%8C%EC%8A%A4-kortuguese-%EB%A1%9C-%EC%9D%BD%EC%96%B4%EB%B3%B8-influencia-do-jazz/</loc>
     <lastmod>2010-06-05T11:14:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/bossa-novaroberta-sa/</loc>
     <lastmod>2010-05-29T00:40:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novanunca-keico-yoshida-%EA%B2%8C%EC%9D%B4%EC%BD%94-%EC%9A%94%EC%8B%9C%EB%8B%A4/</loc>
     <lastmod>2010-05-17T03:05:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B3%B4%EB%8B%A4%EB%A7%8C-%EC%98%81%ED%99%94%ED%83%80%EC%9E%84-%ED%88%AC-%EB%A6%AC%EB%B8%8Ctime-to-leave-le-temps-qui-reste/</loc>
     <lastmod>2010-05-02T21:32:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9Chard-candy/</loc>
     <lastmod>2010-05-02T03:25:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/leaving-las-vegas-come-rain-or-come-shine-angel-eyes-my-one-and-only-love/</loc>
     <lastmod>2010-03-22T12:47:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-nova-manh%C3%A3-de-carnaval/</loc>
     <lastmod>2010-03-20T00:46:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-nova-falsa-baina-roberta-s%C3%A1-roberto-silva/</loc>
     <lastmod>2010-03-19T01:15:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9C-%EC%8A%A4%ED%84%B1-_-stuck-%EC%98%B4%ED%8C%A1%EC%A7%84-%EC%9D%BC%EC%83%81-%EC%8A%A4%EB%A6%B4%EB%9F%AC/</loc>
     <lastmod>2010-01-31T23:27:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%ED%8C%94%EC%9E%90-%EC%A2%8B%EC%9D%80-%EC%B9%A0%EB%B3%B5%EA%B5%B0/</loc>
     <lastmod>2010-01-31T21:03:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%84%9C%EC%9A%B8%EC%86%8D%EC%9D%98-%EB%8D%94%EB%B8%94%EB%A6%B0/</loc>
     <lastmod>2010-01-23T14:11:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%84%9C%EC%9A%B8%EC%86%8D%EC%9D%98-%EB%8D%94%EB%B8%94%EB%A6%B0_1/</loc>
     <lastmod>2010-01-23T14:11:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/n%C3%A3o-%C3%A9-f%C3%A1cil-by-marcos-valle-patr%C3%ADcia-alv%C3%AD-%EB%88%84%EA%B5%B0%EA%B0%80%EC%99%80-%EA%BF%88%EC%9D%84-%ED%95%A8%EA%BB%98%ED%95%9C%EB%8B%A4%EB%8A%94-%EA%B2%83%EC%9D%80-%EC%89%BD%EC%A7%80-%EC%95%8A%EC%A7%80.-%ED%95%98%EC%A7%80%EB%A7%8C.../</loc>
     <lastmod>2010-01-17T15:42:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EB%84%88%EB%8A%94-%EC%82%AC%EB%9E%91%EC%9D%84-%EB%AA%B0%EB%9D%BC.-%EC%A7%84%EC%A7%9C%EB%A1%9C-%EC%82%AC%EB%9E%91%EC%97%90-%EB%B9%A0%EC%A7%84%EC%A0%81%EC%9D%B4-%EC%97%86%EC%9E%96%EC%95%84/</loc>
     <lastmod>2009-12-27T00:28:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-nova-pretty-world-%EC%95%84%EB%A6%84%EB%8B%A4%EC%9A%B4-%EC%84%B8%EC%83%81/</loc>
     <lastmod>2009-12-26T23:34:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novaum-barzinho-um-viol%C3%A3o/</loc>
     <lastmod>2009-12-12T00:37:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-nova-eliane-elias/</loc>
     <lastmod>2009-12-11T01:14:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novatamy/</loc>
     <lastmod>2009-12-11T00:48:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novabeat-it-cris-delanno-/</loc>
     <lastmod>2009-12-10T00:12:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-nova-bbc-jazz-library-antonio-carlos-jobim/</loc>
     <lastmod>2009-12-08T01:13:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/viva-brasil-paris/</loc>
     <lastmod>2009-12-05T03:49:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-nova-gilberto-gil/</loc>
     <lastmod>2009-12-05T03:40:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-nova-delicatessen/</loc>
     <lastmod>2009-12-03T23:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novasamba-da-minha-terra-by-dorival-caymmi/</loc>
     <lastmod>2009-11-30T00:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novamarcela-mangabeira/</loc>
     <lastmod>2009-11-23T00:32:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novamellow-motif/</loc>
     <lastmod>2009-11-22T21:26:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-nova-hayato-kaori%ED%95%98%EC%95%BC%ED%86%A0-%EC%B9%B4%EC%98%A4%EB%A6%AC_%E6%BA%96%E4%BA%BA%E5%8A%A0%E7%B9%94/</loc>
     <lastmod>2009-11-22T20:53:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-nova-%EC%9D%BC%EB%B3%B8%EC%9D%98-%EB%B3%B4%EC%82%AC%EB%85%B8%EB%B0%94-%EC%A0%84%EB%AC%B8-%EB%A0%88%EC%9D%B4%EB%B8%94-cora%C3%A7%C3%A3o-records/</loc>
     <lastmod>2009-11-22T20:41:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novasophie-milman-agua-de-beber/</loc>
     <lastmod>2009-11-22T20:16:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novao-grande-amorryuichi-sakamoto-morelenbaum-casa/</loc>
     <lastmod>2009-11-19T02:54:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-nova-james-hill-one-note-samba/</loc>
     <lastmod>2009-11-17T12:31:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novaseu-jorge-eu-sou-favela/</loc>
     <lastmod>2009-11-13T12:56:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-nova-skindo-le-le/</loc>
     <lastmod>2009-11-02T23:50:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/1987%EB%85%84-11%EC%9B%94-1%EC%9D%BC-%EC%9C%A0%EC%9E%AC%ED%95%98-%EC%82%AC%EB%A7%9D-1990%EB%85%84-11%EC%9B%94-1%EC%9D%BC-%EA%B9%80%ED%98%84%EC%8B%9D-%EC%82%AC%EB%A7%9D/</loc>
     <lastmod>2009-11-01T22:23:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9C%EB%A0%88%EC%8A%AC%EB%9F%ACthe-wrestler-%ED%94%84%EB%A1%9C%EB%A0%88%EC%8A%AC%EB%A7%81%EC%9D%80-%EA%B0%9C%EA%B7%B8%EC%BD%98%EC%84%9C%ED%8A%B8%EB%B3%B4%EB%8B%A4-%EC%8A%AC%ED%94%84%EB%8B%A4/</loc>
     <lastmod>2009-11-01T00:13:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novabatida-de-samba-joao-bosco-%EB%B3%B4%EC%82%AC%EB%85%B8%EB%B0%94-%EA%B8%B0%ED%83%80-%EA%B0%95%EC%A2%8C-%EC%95%84%EB%A7%88%EB%8F%84-%EB%B8%8C%EB%9D%BC%EC%A7%88-%EA%B8%B0%ED%83%80%EB%A6%AC%EC%8A%A4%ED%8A%B8/</loc>
     <lastmod>2009-10-30T00:42:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/brazil-carnival-samba/</loc>
     <lastmod>2009-10-25T11:20:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/disco-samba-two-man-sound-%ED%87%B4%ED%8F%90%EB%B0%9C%EB%9E%84/</loc>
     <lastmod>2009-10-25T10:57:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/vst-co-step-no-step-yes/</loc>
     <lastmod>2009-10-24T17:48:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9C-vicky-cristina-barcelona/</loc>
     <lastmod>2009-10-24T17:21:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-nova-o-pato-joao-gilberto-e-caetano-veloso/</loc>
     <lastmod>2009-10-24T09:55:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-nova-%EB%9D%BC%EB%8A%94-%EC%A0%9C%EB%AA%A9%EC%9D%98-%EC%98%81%ED%99%94/</loc>
     <lastmod>2009-10-19T22:50:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/quando-quando-quando-%ED%8E%84%ED%8E%84-%EB%82%98%EB%8A%94-%EC%A0%80-%EA%BE%80%EA%BC%AC%EB%A6%AC-%EC%95%94%EC%88%98-%EC%84%9C%EB%A1%9C-%EC%A0%95%EB%8B%B5%EA%B5%AC%EB%82%98/</loc>
     <lastmod>2009-10-17T21:27:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novaantonio-carlos-jobim-blusa-vermelha-the-red-blouse-by-emily-remler/</loc>
     <lastmod>2009-09-26T20:08:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%ED%8A%B8%EC%9C%84%ED%84%B0%EA%B0%80-%EB%A7%A4%EB%A0%A5%EC%A0%81%EC%9D%B8-%EA%B0%9C%EC%9D%B8%EC%A0%81-%EC%9D%B4%EC%9C%A0/</loc>
     <lastmod>2009-09-24T00:50:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novadeixa-baden-powell_vinicius-de-moraes/</loc>
     <lastmod>2009-09-20T10:32:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-nova-%EB%B8%8C%EB%9D%BC%EC%A7%88-%EC%9D%8C%EC%95%85%EB%8B%A4%ED%81%90-brazil-brazil-1%ED%8E%B8-samba-to-bossa-bbc/</loc>
     <lastmod>2009-09-09T23:28:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-nova%EB%B8%8C%EB%9D%BC%EC%A7%88%EC%97%90%EC%84%9C-%EB%A7%8C%EB%93%A0-%EB%B3%B4%EC%82%AC%EB%85%B8%EB%B0%94-%EC%98%81%ED%99%94-os-desafinados-_-out-of-tune/</loc>
     <lastmod>2009-09-06T18:42:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-noval%C3%A1-vem-a-baiana-%EB%B0%94%EC%9D%B4%EC%95%84%EC%9D%98-%EC%97%AC%EC%9D%B8%EC%9D%B4-%EB%8B%A4%EA%B0%80%EC%98%A4%EB%84%A4/</loc>
     <lastmod>2009-08-30T15:38:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EA%B7%B8%EB%93%A4%EC%9D%80-%EC%84%9C%EB%A1%9C-%EC%82%AC%EB%9E%91%ED%95%9C%EB%8B%A4.-%EC%A0%95%EB%A7%90-%EC%95%84%EB%A6%84%EB%8B%B5%EC%A7%80-%EC%95%8A%EC%9D%80%EA%B0%80/</loc>
     <lastmod>2009-08-30T10:12:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/g.i.-jonny-%ED%98%B8%EB%A5%B4%EB%AA%AC-%EC%99%84%EC%B6%A9-%EC%84%A0%EB%82%A8%EC%84%A0%EB%85%80%EB%93%A4%EC%95%84-%ED%95%A8%EA%BB%98-%EB%B3%B4%EC%9E%90./</loc>
     <lastmod>2009-08-28T23:51:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9C-%EC%82%AC%EB%9E%91%EC%9D%98-%EC%9D%80%ED%95%98%EC%88%98.-somewhere-in-time.-%EB%AA%A8%EB%93%A0-%EC%82%AC%EC%A7%84%EC%97%90%EB%8A%94-%EC%82%AC%EC%97%B0%EC%9D%B4-%EC%9E%88%EB%8B%A4%EB%84%A4.-every-picture-has-a-story/</loc>
     <lastmod>2009-08-24T22:04:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EC%9B%85%EC%82%B0-angel-eyes/</loc>
     <lastmod>2009-08-22T12:10:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9Cthe-visitor-%EB%B0%A9%EB%AC%B8%EC%9E%90/</loc>
     <lastmod>2009-08-16T18:10:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%8C%84%EC%8A%A4%EC%8B%A0%EB%8F%99-%EA%B5%AC%EC%8A%AC%EA%B8%B0-%EC%8A%88%ED%8D%BC%EC%8A%A4%ED%83%80k-%ED%86%B5%ED%95%B4-%EA%B0%80%EC%88%98-%EC%9E%AC%EB%8F%84%EC%A0%84/</loc>
     <lastmod>2009-08-09T10:56:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B3%B4%EB%8B%A4-%EB%A7%8C-%EC%98%81%ED%99%94%EC%9E%AD%EA%B3%BC-%EB%AF%B8%EB%A6%AC%EA%B0%80-%ED%8F%AC%EB%A5%B4%EB%85%B8-%EC%98%81%ED%99%94%EB%A5%BC-%EB%A7%8C%EB%93%A4%EB%8B%A4zack-and-miri-make-a-porno-2008/</loc>
     <lastmod>2009-08-08T10:37:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%A3%BD%EA%B8%B0%EC%A0%84%EC%97%90-%EB%B4%90%EC%95%BC%ED%95%A0-%EC%98%81%ED%99%94-%EB%A7%88%EC%9D%B4-%EC%8B%9C%EC%8A%A4%ED%84%B0%EC%A6%88-%ED%82%A4%ED%8D%BC-my-sisters-keeper-2008/</loc>
     <lastmod>2009-08-07T14:19:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%82%B4%EC%9D%98%EB%A5%BC-%EB%B6%88%EB%9F%AC%EC%98%A4%EB%8A%94-%EB%8C%80%ED%98%95-%EB%8B%AC%ED%8C%BD%EC%9D%B4/</loc>
     <lastmod>2009-08-07T13:01:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%85%B8-%EB%8C%80%ED%86%B5%EB%A0%B9-%EC%8B%9C%EC%9C%84-%EB%86%8D%EB%AF%BC-%EC%82%AC%EB%A7%9D%EC%82%AC%EA%B1%B4-%EA%B4%80%EB%A0%A8-%EB%8C%80%EA%B5%AD%EB%AF%BC%EC%82%AC%EA%B3%BC%EB%AC%B8-2005-12-27/</loc>
     <lastmod>2009-08-07T12:44:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/20%EB%8C%80...-%EB%8B%88%EB%93%A4%EC%9D%B4-%EA%B3%A0%EC%83%9D%EC%9D%B4-%EB%A7%8E%EB%8B%A4./</loc>
     <lastmod>2009-08-07T01:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%A0%9C%EB%B9%84%ED%91%9C-%ED%8A%B9%EC%88%98-%EB%96%A1%EB%B0%A5/</loc>
     <lastmod>2009-08-03T12:47:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%82%B4%EC%A7%91-%EB%A7%88%EB%A0%A8-%ED%8F%AC%EA%B8%B0...-%EA%B1%8D-%EC%A0%84%EC%84%B8%EA%B0%80-%ED%8E%B8%ED%95%98%EB%8B%A4.-/</loc>
     <lastmod>2009-08-03T09:55:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/boogie-pimps-%EC%9D%B4%EB%84%98%EB%93%A4%EC%9D%80-%EB%AD%90%ED%95%98%EB%8A%94-%EB%84%98%EB%93%A4%EC%9D%B8%EA%B0%80/</loc>
     <lastmod>2009-08-02T10:18:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/at-seventeen/</loc>
     <lastmod>2009-08-02T09:54:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%98%81%ED%99%94%EC%9D%98-%EB%B0%94%EB%8B%A4%EC%97%90-%EB%B9%A0%EC%A0%B8%EB%B2%84%EB%A6%B4%ED%85%8C%EB%8B%A4/</loc>
     <lastmod>2009-07-31T11:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B2%84%EC%8A%A4%ED%83%80%EB%8A%94-%EA%B3%A0%EC%96%91%EC%9D%B4%EB%93%A4%EA%B3%BC-%EA%B3%A0%EC%96%91%EC%9D%B4-%EB%B2%84%EC%8A%A4/</loc>
     <lastmod>2009-07-30T17:28:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%9D%B4%EB%9F%B0%EA%B1%B0-%EA%B0%80%EA%B3%A0-%EC%8B%B6%EC%96%B4%EB%8F%84-%EA%B0%99%EC%9D%B4-%EA%B0%88-%EC%82%AC%EB%9E%8C%EC%9D%B4-%EC%97%86%EB%8B%A4.-.-..../</loc>
     <lastmod>2009-07-30T16:56:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%95%84%EC%9D%B4%ED%8F%B0%EA%B3%BC-%EB%A7%9E%EC%A7%B1-%EB%9C%AC%EB%8B%A4%EB%8A%94-%EA%B5%AD%EC%82%B0-%EC%8A%A4%EB%A7%88%ED%8A%B8%ED%8F%B0%EB%93%A4%EC%9D%B4-%EC%A0%95%EB%A7%90-%EB%98%91%EB%98%91%ED%95%9C%EA%B0%80%EC%9A%94smart/</loc>
     <lastmod>2009-07-29T14:56:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%ED%95%9C%EA%B5%AD%EB%A7%8C%ED%81%BC-%EC%9D%B8%EC%A2%85%EC%B0%A8%EB%B3%84-%EC%8B%AC%ED%95%9C-%EB%82%98%EB%9D%BC%EB%8F%84-%EC%97%86%EC%A3%A0./</loc>
     <lastmod>2009-07-28T19:35:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%82%98%EA%B2%BD%EC%9B%90%EC%94%A8%EB%8F%84-%EB%AA%B0%EB%9E%90%EB%8D%98-%EB%B3%B8%EC%9D%B8%EC%9D%98-%EC%A0%80%EC%9E%91%EA%B6%8C%EB%B2%95-%EC%9C%84%EB%B0%98/</loc>
     <lastmod>2009-07-28T01:02:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9C%EB%8B%B9%EC%8B%A0%EC%9D%98-%EC%84%B1%EC%9E%90%EB%A5%BC-%EC%95%8C%EC%95%84%EB%B3%B4%EB%8A%94-%EB%B0%A9%EB%B2%95-a-guide-to-recognizing-your-saints/</loc>
     <lastmod>2009-07-26T02:55:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90-%EB%B0%98%EC%9E%A5%EC%84%A0%EA%B1%B0%EC%97%90%EC%84%9C%EB%8F%84-%EC%95%88%EC%9D%BC%EC%96%B4%EB%82%98%EB%8A%94-%EB%8C%80%EB%A6%AC%ED%88%AC%ED%91%9C%EA%B0%80-%EA%B5%AD%ED%9A%8C%EC%97%90%EC%84%9C/</loc>
     <lastmod>2009-07-25T18:35:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/%EC%84%B8%EC%83%81%EC%97%90%EB%8A%94-%EB%91%90-%EC%A2%85%EB%A5%98%EC%9D%98-%EC%9C%84%EB%8C%80%ED%95%9C-%EC%82%AC%EB%9E%8C%EC%9D%B4-%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.-%ED%95%98%EB%82%98%EB%8A%94-%EC%A7%81%EC%A0%91-%EC%9C%84%EB%8C%80%ED%95%9C-%EC%9D%BC%EC%9D%84-%ED%95%98%EB%8A%94-%EC%82%AC%EB%9E%8C%EC%9D%B4%EA%B3%A0-%EB%98%90-%ED%95%98%EB%82%98%EB%8A%94-%EB%8B%A4%EB%A5%B8-%EC%82%AC%EB%9E%8C%EC%9D%B4-%EC%9C%84%EB%8C%80%ED%95%9C-%EC%9D%BC%EC%9D%84-%ED%95%98%EA%B2%8C-%EB%8F%84%EC%99%80%EC%A3%BC%EB%8A%94-%EC%82%AC%EB%9E%8C%EC%9E%85%EB%8B%88%EB%8B%A4.-%ED%9B%84%EC%9E%90%EB%8F%84-%EC%9C%84%EB%8C%80%ED%95%9C-%EC%82%AC%EB%9E%8C%EC%9E%85%EB%8B%88%EB%8B%A4./</loc>
     <lastmod>2009-07-15T12:52:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/the-meeting-on-the-turret-stairs/</loc>
     <lastmod>2009-07-07T21:26:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossanovaamazonics-%EC%9D%98-since-i-dont-have-youfrom-bossa-nrosses/</loc>
     <lastmod>2009-07-06T23:34:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9C-tropa-de-elite-_-the-elite-squad-%EC%97%8E%EC%96%B4%EC%B9%98%EB%82%98-%EB%A9%94%EC%B9%98%EB%82%98-%ED%94%BC%EB%95%80%EB%B2%94%EB%B2%85-%EB%A6%AC%EC%9A%B0%EC%97%90%EC%84%9C-%EC%82%B4%EC%95%84%EB%82%A8%EA%B8%B0/</loc>
     <lastmod>2009-07-05T13:56:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/minesweeper-the-movie/</loc>
     <lastmod>2009-06-29T11:52:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/%EC%A3%BC%EB%AA%A9%ED%95%98%EB%8A%94-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%8D%A8%EB%8B%88%EC%9D%98-%E4%B8%80%E7%94%9F%E7%89%9B%E6%AD%A5%E8%A1%8C-%EC%97%90%EC%84%9C-%ED%8D%BC%EC%98%B4/</loc>
     <lastmod>2009-06-29T11:06:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8-%EA%B3%84%EC%B8%B5%EB%8F%84-%EC%9E%90%EB%B0%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EB%8A%94-%EC%9E%90%EC%8B%A0%EB%93%A4%EC%9D%B4-html%EC%9D%84-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%96%B8%EC%96%B4%EB%9D%BC%EA%B3%A0-%EC%A3%BC%EC%9E%A5%ED%95%98%EB%8A%94-%EC%82%AC%EB%9E%8C%EB%93%A4%EB%B3%B4%EB%8B%A4-%EC%9A%B0%EC%9B%94%ED%95%98%EB%8B%A4%EA%B3%A0-%EC%83%9D%EA%B0%81%ED%95%9C%EB%8B%A4./</loc>
     <lastmod>2009-06-27T14:40:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9C%ED%96%89%EB%B3%B5%ED%95%9C-%EC%97%A0%EB%A7%88-%EB%8F%BC%EC%A7%80-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EB%82%A8%EC%9E%90/</loc>
     <lastmod>2009-06-19T13:24:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/%EC%97%91%EC%85%80%EC%97%90%EC%84%9C-%EC%85%80-%EB%82%B4%EC%9A%A9%EC%9D%B4-%EB%B3%80%EA%B2%BD%EB%90%98%EC%97%88%EC%9D%84-%EB%95%8C-%EB%B0%9C%EC%83%9D%ED%95%98%EB%8A%94-%EC%9D%B4%EB%B2%A4%ED%8A%B8-catch-%ED%95%98%EA%B8%B0/</loc>
     <lastmod>2009-06-18T14:10:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/%EC%9B%B9%EA%B0%9C%EB%B0%9C%EC%9D%98-%ED%9D%90%EB%A6%84-web_development_timeline.png/</loc>
     <lastmod>2009-06-17T12:50:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/ebs%EB%B0%A9%EC%86%A1%EC%9D%98-%EC%84%B8%EA%B3%84%EC%9D%8C%EC%95%85%EA%B8%B0%ED%96%89-%EC%A2%8B%EB%84%A4/</loc>
     <lastmod>2009-06-14T16:06:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/xming%EC%9D%84-%EC%9D%B4%EC%9A%A9-gnome_kde-%EB%8D%B0%EC%8A%A4%ED%81%AC%ED%83%91-%EB%9D%84%EC%9A%B0%EA%B8%B0/</loc>
     <lastmod>2009-06-12T15:24:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/excel-%ED%98%84%EC%9E%AC-%EC%9B%8C%ED%81%AC%EC%8B%9C%ED%8A%B8%EC%9D%98-%EC%9D%B4%EB%A6%84%EC%9D%84-%EC%85%80%EC%97%90-%EB%B3%B4%EC%97%AC%EC%A3%BC%EA%B8%B0/</loc>
     <lastmod>2009-06-11T09:41:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%88%A0%EC%9D%84-%EC%95%88%EB%A7%88%EC%8B%A4-%EC%88%98-%EC%97%86%EB%8B%A4/</loc>
     <lastmod>2009-05-25T00:28:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/the-dos-and-donts-of-a-java-position-interview/</loc>
     <lastmod>2009-05-19T13:22:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/portable-ubuntu-%ED%8C%81/</loc>
     <lastmod>2009-05-14T01:19:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A3%BD%EC%9D%B4%EB%8A%94-101%EA%B0%80%EC%A7%80-%EB%B0%A9%EB%B2%95/</loc>
     <lastmod>2009-05-13T14:45:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%AD%98-%ED%95%A0-%EC%88%98-%EC%9E%88%EC%9D%84%EA%B9%8C/</loc>
     <lastmod>2009-05-10T23:40:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%B2%AD%EC%B6%98%EC%9D%B4%EB%9E%80-%EB%A7%88%EC%9D%8C%EC%9D%98-%EC%83%81%ED%83%9C%EB%A5%BC-%EB%A7%90%ED%95%9C%EB%8B%A4./</loc>
     <lastmod>2009-05-06T01:21:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%AC%B4%EB%A6%87-%ED%8C%A8%EB%9F%AC%EB%94%94%EB%82%98-%ED%92%8D%EC%9E%90%EB%9D%BC%EA%B3%A0%ED%95%98%EB%8A%94-%EA%B2%83%EB%93%A4%EC%9D%80-%EC%9D%BC%EB%8B%A8-%EC%9E%AC%EB%AF%B8%EA%B0%80-%EC%9E%88%EC%96%B4%EC%95%BC-%EB%90%98%EB%8A%94%EA%B1%B0-%EC%95%84%EB%8B%88%EB%83%90-%EB%AD%98-%EC%A0%84%EB%8B%AC%ED%95%98%EB%A0%A4%EA%B3%A0-%ED%95%98%EA%B8%B0-%EC%A0%84%EC%97%90-%EB%A7%90%EC%9D%B4%EB%8B%A4./</loc>
     <lastmod>2009-05-06T01:03:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/e-%ED%8E%9C%ED%8C%94-%EC%B9%9C%EA%B5%AC%EC%99%80-%ED%95%A8%EA%B2%8C%ED%95%98%EB%8A%94-%ED%95%9C%EA%B5%AD%EC%96%B4-%EC%97%AC%ED%96%89/</loc>
     <lastmod>2009-05-02T11:47:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EC%B0%A9%ED%95%9C-%EB%85%B8%EB%9E%98-%EC%8B%9C%EB%A6%AC%EC%A6%88-just-the-way-you-are/</loc>
     <lastmod>2009-05-01T03:24:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9Cthe-man-without-a-head-lhomme-sans-tete-2003-%EB%A8%B8%EB%A6%AC-%EC%97%86%EB%8A%94-%EB%82%A8%EC%9E%90/</loc>
     <lastmod>2009-05-01T03:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EB%82%B4-%EC%9E%A5%EB%A1%80%EC%8B%9D%EC%97%90%EC%84%9C-%ED%8B%80%EA%B3%A0-%EC%8B%B6%EC%9D%80-%EB%85%B8%EB%9E%98/</loc>
     <lastmod>2009-03-02T17:31:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EB%B3%B4%EC%82%AC%EB%85%B8%EB%B0%94-%EC%97%B0%EC%A3%BC%EB%A5%BC-%EC%9C%84%ED%95%B4%EC%84%9C%EB%8A%94-%EC%96%B4%EB%96%A4-%EA%B8%B0%ED%83%80%EB%A5%BC-%EC%84%A0%ED%83%9D%ED%95%B4%EC%95%BC-%ED%95%98%EB%82%98%EC%9A%94/</loc>
     <lastmod>2009-02-24T23:32:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EB%B3%B4%EC%82%AC%EB%85%B8%EB%B0%94-%EA%B0%80%EC%82%AC-_-%EA%B8%B0%ED%83%80%EC%BD%94%EB%93%9C-%EC%A0%9C%EA%B3%B5-%EC%82%AC%EC%9D%B4%ED%8A%B8-www.bossanovaguitar.com/</loc>
     <lastmod>2009-02-24T22:41:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/javascript%EC%9D%98-date.gettimezoneoffset-%EC%98%A4%EB%8F%99%EC%9E%91/</loc>
     <lastmod>2009-02-04T19:59:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9C-%ED%8C%8C%EB%8B%88%ED%95%91%ED%81%ACfanny-fink-nobody-loves-mekeiner-liebt-mich/</loc>
     <lastmod>2009-01-17T19:37:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/postgre-%EB%B0%B1%EC%97%85%ED%8C%8C%EC%9D%BC-%EB%B3%B5%EC%9B%90-%EB%AA%85%EB%A0%B9/</loc>
     <lastmod>2009-01-16T20:19:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9C%EC%82%AC%EB%9E%91%EB%8F%84-%EB%A6%AC%EC%BD%9C%EC%9D%B4-%EB%90%98%EB%82%98%EC%9A%94-hige-fidelity/</loc>
     <lastmod>2009-01-11T23:18:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/playing-for-change-%EC%9D%8C%EC%95%85%EC%9C%BC%EB%A1%9C-%EC%84%B8%EC%83%81%EC%9D%84-%EB%B0%94%EA%BF%80-%EC%88%98-%EC%9E%88%EC%9D%84%EA%B9%8C/</loc>
     <lastmod>2009-01-08T02:26:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EB%B8%8C%EB%9D%BC%EC%A7%88%EC%97%90%EC%84%9C-%EC%9C%A0%EB%AA%85%ED%95%9C-%EA%B2%83%EB%93%A4/</loc>
     <lastmod>2008-12-22T16:56:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9Cyou-are-my-destiny-%ED%9C%B4%EB%A8%BC%EB%8B%A4%ED%81%90%EC%82%AC%EB%9E%91-%EB%84%88%EB%8A%94-%EB%82%B4%EC%9A%B4%EB%AA%85-%EC%9E%90%EB%A7%89-%ED%95%9C%EA%B8%80%EC%98%81%EB%AC%B8/</loc>
     <lastmod>2008-12-21T02:54:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4%EC%97%90%EC%84%9C-%EB%8C%80%EC%9D%91%EB%90%98%EB%8A%94-%EA%B4%84%ED%98%B8%EC%B0%BE%EA%B8%B0/</loc>
     <lastmod>2008-12-20T00:23:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%83%9D%EC%9D%BC%EC%B6%95%ED%95%98-%EB%A9%94%EC%84%B8%EC%A7%80%EB%A7%8C-%EB%AA%A8%EC%95%84%EB%86%93%EC%9D%80-%EC%82%AC%EC%9D%B4%ED%8A%B8-http__www.birthdaymessages.com_/</loc>
     <lastmod>2008-12-19T00:06:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%B0%BD%EC%9D%98%EC%84%B1%EC%97%90-%EB%8F%84%EC%9B%80%EB%90%98%EB%8A%94-%EC%B1%85-10%EA%B6%8C/</loc>
     <lastmod>2008-12-14T19:11:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/apache-wicket-localization-%EC%83%98%ED%94%8C/</loc>
     <lastmod>2008-12-11T01:13:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/simple-webcam-capture-command-line-%EC%A7%80%EC%9B%90/</loc>
     <lastmod>2008-12-03T20:17:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/windows-desktop-screen-logger/</loc>
     <lastmod>2008-12-02T22:37:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%A0%95%EC%A7%81%ED%95%98%EA%B2%8C-%EC%82%B4%EC%9E%90.-%EC%A0%9C%EB%B0%9C.-%EC%8C%80%EC%A7%81%EB%B6%88%EA%B8%88-%EC%82%BC%ED%82%A8-%EA%B0%95%EB%B6%80%EC%9E%90%EB%93%A4%EB%A7%8C-%ED%83%93%ED%95%A0-%EC%9D%BC-%EC%95%84%EB%8B%88%EB%8B%A4./</loc>
     <lastmod>2008-11-30T23:21:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/cckorea-hope-day/</loc>
     <lastmod>2008-11-29T02:08:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%9D%B4%EA%B1%B0%EC%95%BC-%EC%9B%90~-%EC%9D%B4%EC%82%AC%ED%95%98%EA%B8%B0-%EC%9D%B4%EB%A0%87%EA%B2%8C-%ED%9E%98%EB%93%A4%EC%96%B4%EC%84%9C%EC%95%BC./</loc>
     <lastmod>2008-11-28T02:45:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EA%B7%B8%EB%9E%98%EB%8F%84-%EA%B0%80%EC%88%98-%EA%B9%80%EC%9E%A5%ED%9B%88%EC%9D%B4-%ED%83%90%ED%83%81%EC%B9%98-%EC%95%8A%EC%9D%80-%EC%9D%B4%EC%9C%A0%EB%8A%94/</loc>
     <lastmod>2008-11-26T21:05:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EA%B9%80%EA%B5%AC%EB%8A%94-%EB%B9%88%EB%9D%BC%EB%8D%B4-%EC%A7%80%EB%A7%8C%EC%9B%90-vs-%EC%A7%84%EC%A4%91%EA%B6%8C-sick-and-tired-nightmare/</loc>
     <lastmod>2008-11-18T01:26:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/wear-sunscreen-%EC%98%A4%EB%9E%98%EB%90%9C-%EC%9D%80%ED%96%89%ED%86%B5%EC%9E%A5%EC%9D%80-%EB%B2%84%EB%A6%AC%EA%B3%A0-%EC%98%A4%EB%9E%98%EB%90%9C-%EC%97%B0%EC%95%A0%ED%8E%B8%EC%A7%80%EB%8A%94-%EA%B0%84%EC%A7%81%ED%95%98%EB%9D%BC/</loc>
     <lastmod>2008-11-13T19:51:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossanova-is-everywhereolivia-ong/</loc>
     <lastmod>2008-11-13T10:30:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossanova-is-everywhere%E5%B0%8F%E6%B3%89%E3%83%8B%E3%83%AD-nilo-koizumi/</loc>
     <lastmod>2008-11-13T09:45:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/mysql/</loc>
     <lastmod>2008-11-13T00:38:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/mysql-%EC%9D%98-%ED%95%84%EB%93%9C-type-%EB%B3%80%ED%99%98%ED%95%A8%EC%88%98-cast/</loc>
     <lastmod>2008-11-13T00:38:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90/</loc>
     <lastmod>2008-11-12T04:07:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%9D%98-%EC%9E%90%EC%A7%88%EC%9D%B4%EB%9D%BC%EA%B3%A0-%ED%95%9C%EB%8B%A4./</loc>
     <lastmod>2008-11-12T04:07:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/%EC%95%84%EC%9D%BC%EB%9E%9C%EB%93%9C%EC%9D%98-%EB%8C%80%ED%91%9C%EC%A0%81-isp%EC%9D%B8-%EC%97%90%EC%9D%B4%EB%A0%88%EC%BD%A4%EC%9D%98-wep-%ED%82%A4-%EC%A0%9C%EB%84%88%EB%A0%88%EC%9D%B4%ED%84%B0/</loc>
     <lastmod>2008-11-11T18:38:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/myworks/how-deep-is-your-love-the-bird-and-the-bee%EB%A6%AC%EB%AF%B9%EC%8A%A4/</loc>
     <lastmod>2008-11-10T02:53:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EA%B3%B5%EC%A7%9C-%EB%A9%80%ED%8B%B0%ED%8A%B8%EB%9E%99-%EC%82%AC%EC%9A%B4%EB%93%9C-%EC%97%90%EB%94%94%ED%84%B0-vsti/</loc>
     <lastmod>2008-11-09T20:36:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/we-are-in-love-shannon-hurley/</loc>
     <lastmod>2008-11-05T00:31:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%84%9C%EC%9A%B8%EC%A7%80%ED%95%98%EC%B2%A0-%ED%92%8D%EB%A0%A5%EB%B0%9C%EC%A0%84-%EB%86%80%EB%9D%BC%EC%9A%B4-%EC%97%90%EB%84%88%EC%A7%80%EC%9D%98-%EC%97%B0%EA%B8%88%EC%88%A0/</loc>
     <lastmod>2008-11-04T21:47:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EB%B2%A0%ED%86%A0%EB%B2%A4%EC%9D%98-%ED%95%98%EC%9D%BC%EB%A6%AC%EA%B2%90%EC%8A%88%ED%83%80%ED%8A%B8%EC%9D%98-%EC%9C%A0%EC%84%9C/</loc>
     <lastmod>2008-10-31T18:14:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%84%B8%EC%83%81%EC%9D%B4-%EB%84%88%EB%AC%B4-%EC%8B%AB%EC%96%B4-%EB%A8%BC%EC%A0%80-%EA%B0%91%EB%8B%88%EB%8B%A4.-%EC%97%84%EB%A7%88-%EC%95%84%EB%B9%A0-%EC%A3%84%EC%86%A1%ED%95%A9%EB%8B%88%EB%8B%A4-%EC%84%B1%EC%A0%81-%EB%B9%84%EA%B4%80-%EC%B4%88%EB%93%B1%EC%83%9D-%EC%9E%90%EC%82%B4/</loc>
     <lastmod>2008-10-29T18:34:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%ED%95%99%EC%9C%84%EB%A5%BC-%EC%82%AC%EA%B3%A0%ED%8C%8C%EB%8A%94-%EB%84%98%EB%93%A4%EC%9D%B4-%EC%9E%88%EA%B5%AC%EB%82%98./</loc>
     <lastmod>2008-10-28T19:17:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-nova-%EB%B3%B4%EC%82%AC%EB%85%B8%EB%B0%94-%EA%B8%B0%ED%83%80-guitar-%EC%97%B0%EC%A3%BC%EB%A5%BC-%ED%95%B4%EB%B3%B4%EA%B2%A0%EB%8B%A4%EB%8A%94-%EB%B6%84%EB%93%A4%EA%BB%98-%EB%8F%84%EC%9B%80%EC%9D%B4-%EB%90%A0%EA%B9%8C-%ED%95%B4%EC%84%9C-%EC%93%B0%EB%8A%94-%EA%B8%80%EC%9E%85%EB%8B%88%EB%8B%A4/</loc>
     <lastmod>2008-10-27T23:20:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-nova-is-everywhere-filipino-sitti-navarro/</loc>
     <lastmod>2008-10-27T21:23:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EC%9A%94%EC%83%88-%ED%95%9C%EA%B5%AD%EA%B1%B1%EC%A0%95%EC%97%90-%EB%B0%A4%EC%97%90-%EC%9E%A0%EC%9D%B4-%EC%95%88%EC%98%A8%EB%8B%A4./</loc>
     <lastmod>2008-10-26T19:01:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/imf%EB%A5%BC-%EA%B7%B9%EB%B3%B5%ED%95%98%EB%8A%94-%EC%A7%80%ED%98%9C/</loc>
     <lastmod>2008-10-26T18:54:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%BC%80%EC%9D%B4%ED%81%AC%EB%A5%BC-%EC%9E%90%EB%A5%B4%EB%8A%94-%EC%82%AC%EB%9E%8C%EC%9D%B4-%EC%9E%90%EA%B8%B0-%EB%AA%AB%EC%9D%84-%EC%A0%9C%EC%9D%BC-%EB%A7%88%EC%A7%80%EB%A7%89%EC%9C%BC%EB%A1%9C-%EC%B7%A8%ED%95%B4%EC%95%BC-%ED%95%9C%EB%8B%A4.-%EA%B7%B8%EB%A0%87%EA%B2%8C-%ED%95%A0-%EB%95%8C-%EC%BC%80%EC%9D%B4%ED%81%AC%EB%A5%BC-%EA%B3%B5%ED%8F%89%ED%95%98%EA%B2%8C-%EC%9E%90%EB%A5%B4%EB%8A%94-%EA%B2%83%EC%9D%B4-%EC%9E%90%EB%A5%B4%EB%8A%94-%EC%82%AC%EB%9E%8C%EC%97%90%EA%B2%8C%EB%8F%84-%EC%9D%B4%EC%9D%B5%EC%9D%B4-%EB%90%9C%EB%8B%A4./</loc>
     <lastmod>2008-10-21T18:12:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EC%83%81%EC%8B%A4-%EC%9D%B4%EC%A0%95%EC%84%A0-%EA%B0%80%EC%82%AC_%EC%BD%94%EB%93%9C/</loc>
     <lastmod>2008-10-16T21:36:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/shoutcast-%EC%84%9C%EB%B2%84%EC%97%90%EC%84%9C-%EC%A0%95%EB%B3%B4-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0-php-%EC%86%8C%EC%8A%A4/</loc>
     <lastmod>2008-10-02T00:47:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/clickjacking-%EB%B0%A9%EC%A7%80%EC%B1%85/</loc>
     <lastmod>2008-09-28T05:44:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/%EB%84%A4%EB%8D%9C%EB%9E%80%EB%93%9C-java-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%97%B0%EB%B4%89/</loc>
     <lastmod>2008-09-23T00:47:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%9C%A0%EB%9F%BD-%EC%A3%BC%EC%9A%94%EA%B5%AD%EB%93%A4%EC%9D%98-%EC%99%B8%EA%B5%AD%EC%9D%B8-%EC%88%98%EC%99%80-%EB%B9%84%EC%9C%A8/</loc>
     <lastmod>2008-09-22T23:52:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/%ED%97%89-google-%ED%81%AC%EB%A1%AC%EC%9D%B4-%EB%8B%A4%EC%9A%B4%EB%90%98%EC%97%88%EC%8A%B5%EB%8B%88%EB%8B%A4./</loc>
     <lastmod>2008-09-18T22:11:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/myworks/dennis-kim-best/</loc>
     <lastmod>2008-08-28T03:02:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%9E%90%EA%B8%B0%EC%86%8C%EA%B0%9C-for-creative-commons-korea/</loc>
     <lastmod>2008-08-13T09:27:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9Cthis-is-england/</loc>
     <lastmod>2008-08-03T20:08:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%95%84%EC%9D%BC%EB%9E%9C%EB%93%9C%EB%A5%BC-%EB%B0%B0%EA%B2%BD%EC%9C%BC%EB%A1%9C-%ED%95%9C-%EC%98%81%ED%99%94/</loc>
     <lastmod>2008-08-01T05:55:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%9A%B0%EB%A6%AC%EC%A7%91-%EA%B1%B0%EC%8B%A4/</loc>
     <lastmod>2008-06-05T02:11:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9Cjuno/</loc>
     <lastmod>2008-05-28T00:07:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/when-you-wish-upon-a-star-%EA%B8%B0%ED%83%80%EC%BD%94%EB%93%9C/</loc>
     <lastmod>2008-05-27T05:04:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/in-amsterdam/</loc>
     <lastmod>2008-05-02T21:22:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%ED%95%9C%EA%B5%AD-ms%EC%9D%98-it-%EC%9D%B4%EC%95%BC%EA%B8%B0-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EC%83%81%EB%B0%9B%EC%95%98%EC%8A%B5%EB%8B%88%EB%8B%A4./</loc>
     <lastmod>2008-04-03T17:24:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%94%EC%9D%B4%EB%B0%94%EC%9D%B4-%EC%95%84%EB%B2%A8%EB%9D%BC~/</loc>
     <lastmod>2008-03-16T12:39:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B6%80%EC%82%B0-%EC%88%98%EC%98%81%EC%B2%9C-%EA%B4%91%EC%95%88%EB%A6%AC-%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5/</loc>
     <lastmod>2008-03-16T12:30:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EA%B0%84%EB%A7%8C%EC%97%90-%EC%A6%90%EA%B2%A8%EB%B3%B4%EB%8A%94-%EB%AA%A9%EC%95%84%ED%94%88-%EC%88%98%EB%8B%A4.-%EC%A0%9C1%ED%9A%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%B6%95%EC%A0%9C/</loc>
     <lastmod>2008-03-01T10:13:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%B6%95%EC%A0%9C/</loc>
     <lastmod>2008-03-01T10:13:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/categories/%EB%B0%A9%EB%AA%85%EB%A1%9D/</loc>
     <lastmod>2008-02-28T23:04:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EB%B0%A9%EB%AA%85%EB%A1%9D/%EB%B0%A9%EB%AA%85%EB%A1%9D%EC%9D%84-%EB%8D%A7%EA%B8%80%EB%A1%9C-%EB%8B%AC%EC%95%84%EC%A3%BC%EC%85%94%EC%9A%94./</loc>
     <lastmod>2008-02-28T23:04:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/sharp-zaurus-c1000%EC%97%90-milkytracker-0.90.50-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</loc>
     <lastmod>2008-02-23T14:03:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%A7%88%EC%A7%80%EB%A7%89%ED%86%A0%EC%9A%94%EC%9D%BC%EB%B0%A4%EC%9D%98-%EC%97%B4%EA%B8%B0/</loc>
     <lastmod>2008-02-12T23:28:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9Cjennifer-tilly/</loc>
     <lastmod>2008-02-10T10:32:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D%EC%98%81%ED%99%94%EC%A0%9Ctideland-%EA%BA%BD%EC%9D%B4%EC%A7%80-%EC%95%8A%EC%9C%BC%EB%A0%A4%EB%A9%B4-%ED%9C%98%EC%96%B4%EC%A0%B8%EC%95%BC%ED%95%B4/</loc>
     <lastmod>2008-02-10T09:46:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/%EC%9D%B8%EC%83%9D/</loc>
     <lastmod>2008-02-10T09:46:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%A0%9C1%ED%9A%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%B6%95%EC%A0%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%82%A8/</loc>
     <lastmod>2008-02-10T01:20:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D%EC%98%81%ED%99%94%EC%A0%9C%EC%8B%AC%EC%8A%A8%EA%B0%80%EC%A1%B1/</loc>
     <lastmod>2008-02-10T00:20:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D%EC%98%81%ED%99%94%EC%A0%9C%EC%B9%B4%EB%AA%A8%EB%A9%94-%EC%8B%9D%EB%8B%B9-%EB%B0%B0%EA%B3%A0%ED%94%88-%EC%98%81%ED%98%BC%EB%93%A4%EC%9D%84-%EC%9C%84%ED%95%9C-%EC%86%8C%EC%9A%B8%ED%91%B8%EB%93%9C/</loc>
     <lastmod>2008-01-27T13:06:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%82%B4%EA%B0%80-%EC%A2%8B%EC%95%84%ED%95%98%EB%8A%94-3%EA%B0%80%EC%A7%80-%ED%82%A4%EC%9B%8C%EB%93%9C-small-_-simple-_-lightweight/</loc>
     <lastmod>2008-01-21T19:37:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/look-right-%EC%A0%9C%EB%8C%80%EB%A1%9C-%EB%B3%B4%EB%9D%BC/</loc>
     <lastmod>2008-01-20T14:23:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/%EA%B2%A9%EC%96%B8/</loc>
     <lastmod>2008-01-18T15:23:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%9D%B8%EC%83%9D%EC%97%90-%EB%8C%80%ED%95%9C-%EA%B2%A9%EC%96%B8%EB%93%A4%EC%A7%A7%EC%9D%80-%EA%B2%83%EB%93%A4%EB%A7%8C/</loc>
     <lastmod>2008-01-18T15:23:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%96%B4%EB%96%A4-%EC%B1%84%EC%9A%A9%EA%B3%B5%EA%B3%A0-%EC%A4%91%EC%97%90%EC%84%9C-%EC%9D%B8%EC%9E%AC%EC%83%81/</loc>
     <lastmod>2008-01-16T11:46:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%95%84%EB%82%B4%EC%97%90%EA%B2%8C-%EC%82%AC%EB%9E%91%EB%B0%9B%EB%8A%94-101%EA%B0%80%EC%A7%80-%EB%85%B8%ED%95%98%EC%9A%B0/</loc>
     <lastmod>2008-01-13T13:09:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/astor-piazzolla-libertango-movie-clip-3%EA%B0%9C/</loc>
     <lastmod>2008-01-10T16:55:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%8C%80%EC%9A%B4%ED%95%98-%EA%B0%9C%EB%85%90%EB%8F%84/</loc>
     <lastmod>2008-01-10T08:55:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EC%97%90%EA%B2%8C-%EA%B8%B0%EB%8C%80%EB%90%98%EB%8A%94-%ED%92%88%EC%84%B1%EA%B3%BC-%EB%8A%A5%EB%A0%A5/</loc>
     <lastmod>2008-01-09T19:40:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/127.0.0.1/</loc>
     <lastmod>2008-01-09T17:21:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/bossa/</loc>
     <lastmod>2008-01-07T22:25:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/bossanova/</loc>
     <lastmod>2008-01-07T22:25:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EC%B6%94%EC%B2%9C-%ED%95%9C%EA%B5%AD-%EB%B3%B4%EC%82%AC%EB%85%B8%EB%B0%94_%EC%82%BC%EB%B0%94-korean-bossanova-_-samba/</loc>
     <lastmod>2008-01-07T22:25:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%B2%9C%EC%9E%AC%EB%8A%94-%EB%85%B8%EB%A0%A5%ED%95%98%EB%8A%94-%EC%82%AC%EB%9E%8C%EC%9D%84-%EC%9D%B4%EA%B8%B8-%EC%88%98-%EC%97%86%EA%B3%A0-%EB%85%B8%EB%A0%A5%ED%95%98%EB%8A%94-%EC%82%AC%EB%9E%8C%EC%9D%80-%EC%A6%90%EA%B8%B0%EB%8A%94-%EC%9E%90%EB%A5%BC-%EC%9D%B4%EA%B8%B8-%EC%88%98-%EC%97%86%EB%8B%A4.-t.%EC%9C%8C%EB%A6%AC%EC%97%84/</loc>
     <lastmod>2008-01-03T22:27:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%A0%9C5%ED%9A%8C-%EB%82%9C%EC%83%81%ED%86%A0%EB%A1%A0%ED%9A%8C-%EC%98%A8%EB%9D%BC%EC%9D%B8-%EB%A1%B1%ED%85%8C%EC%9D%BC%EC%9D%98-%EB%81%84%ED%8A%B8%EB%A8%B8%EB%A6%AC-%EC%96%B4%EB%94%94%EC%AF%A4-%ED%9D%A9%EC%96%B4%EC%A0%80-%EC%9E%88%EB%8D%98-%EC%9E%88%EB%8D%98-%EC%82%AC%EB%9E%8C%EB%93%A4%EC%9D%B4-%EC%98%A4%ED%94%84%EB%9D%BC%EC%9D%B8%EC%97%90-%EB%AA%A8%EC%98%80%EC%8A%B5%EB%8B%88%EB%8B%A4./</loc>
     <lastmod>2008-01-02T22:26:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/ccl/</loc>
     <lastmod>2007-12-26T14:31:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EC%A1%B0pd-free-music2-cc-korea-hope-day-%EC%97%90%EC%84%9C-%EC%A1%B0pd%EA%B0%80-%EC%83%88-%EB%85%B8%EB%9E%98%EB%A5%BC-%EB%B0%9C%ED%91%9C%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4./</loc>
     <lastmod>2007-12-26T14:31:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%ED%95%9C%EA%B8%80%EC%9D%80-%EC%83%81%EB%8B%B9%ED%9E%88-%EA%B3%BC%ED%95%99%EC%A0%81%EC%9D%B8-%EB%AC%B8%EC%9E%90%EB%8B%A4./</loc>
     <lastmod>2007-12-24T14:59:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%ED%95%9C%EA%B5%AD%EC%9D%B8%EC%9D%B4-%EC%9D%BC%EB%B3%B8%EC%9D%B4-%EC%8B%AB%EB%8B%A4%EB%9D%BC%EA%B3%A0-%EB%A7%90-%ED%95%A0-%EB%95%8C-%EC%9D%BC%EB%B3%B8%EC%9D%80-%EB%AC%B4%EC%97%88%EC%9D%BC%EA%B9%8C%EC%9A%94/</loc>
     <lastmod>2007-12-24T13:09:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/saludos-amigos-%EC%A4%91-aquarela-do-brasil-%EB%8F%84%EB%82%A0%EB%93%9C-%EB%8D%95%EC%9D%98-%EB%B8%8C%EB%9D%BC%EC%A7%88-%EC%82%BC%EB%B0%94-%EC%98%81%EC%A0%91%EA%B8%B0/</loc>
     <lastmod>2007-12-21T20:08:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/%EB%B8%8C%EB%9D%BC%EC%A7%88/</loc>
     <lastmod>2007-12-21T20:08:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/%EC%82%BC%EB%B0%94/</loc>
     <lastmod>2007-12-21T20:08:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%98%A4%EB%B9%A0%EB%8A%94-%EC%84%B8%EC%83%81%EC%9D%84-%EB%84%88%EB%AC%B4-%EB%AA%B0%EB%9D%BC%EC%9A%94...-%ED%95%9C-%ED%9B%84%EB%B0%B0%EA%B0%80-%EA%B1%B1%EC%A0%95%EC%8A%A4%EB%9F%BD%EA%B2%8C-%EB%A7%90%EC%9D%84-%EA%BA%BC%EB%83%88%EB%8B%A4./</loc>
     <lastmod>2007-12-20T09:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%95%84%EC%A7%81%EB%8F%84-%EC%B0%B8%EC%9D%84-%EC%88%98-%EC%97%86%EB%8A%94-%EC%82%AC%EC%8B%A4%EB%93%A4/</loc>
     <lastmod>2007-12-17T21:22:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D%EC%98%81%ED%99%94%EC%A0%9C%EC%A0%9C%EB%B8%8C%EB%9D%BC%EB%A7%A8-%EB%AC%B4%EA%B8%B0%EB%A0%A5%ED%95%9C-%EC%9D%BC%EB%B3%B8%EC%9D%84-%EA%B5%AC%ED%95%98%EB%8B%A4/</loc>
     <lastmod>2007-12-16T20:51:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/%EC%98%81%EC%9B%85/</loc>
     <lastmod>2007-12-16T20:51:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/%EC%A0%9C%EB%B8%8C%EB%9D%BC%EB%A7%A8/</loc>
     <lastmod>2007-12-16T20:51:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/je-taime-lara-fabian-%ED%9D%A5%EB%B6%84%ED%95%9C-%ED%8C%AC%EB%93%A4-%EA%B3%B5%EC%97%B0%EC%A7%84%ED%96%89-%EB%B0%A9%ED%95%B4-%EC%97%AC%EA%B0%80%EC%88%98-%EB%81%9D%EB%82%B4-%EB%88%88%EB%AC%BC/</loc>
     <lastmod>2007-12-15T15:04:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/larafabian/</loc>
     <lastmod>2007-12-15T15:04:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/hayley-westenra-ave-maria-by-giulio-caccini/</loc>
     <lastmod>2007-12-15T11:11:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%9D%B4%EA%B2%83%EC%9D%B4-%EC%97%94%ED%84%B0%ED%85%8C%EC%9D%B8%EB%A8%BC%ED%8A%B8%EB%8B%A4/</loc>
     <lastmod>2007-12-12T13:06:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/excel/</loc>
     <lastmod>2007-12-12T11:59:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/excel%EC%9D%98-vlookup-%ED%95%A8%EC%88%98%EC%9D%98-%EC%B2%AB%EB%B2%88%EC%A7%B8-%EC%9D%B8%EC%9E%90%EC%9D%98-%EA%B0%92%EC%97%90-~-tilda-%EB%AC%BC%EA%B2%B0%ED%91%9C%EC%8B%9C%EA%B0%80-%EC%9E%88%EB%8A%94-%EA%B2%BD%EC%9A%B0-%EC%B0%BE%EA%B8%B0%EC%98%A4%EB%A5%98-%EB%B0%9C%EC%83%9D/</loc>
     <lastmod>2007-12-12T11:59:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/vlookup/</loc>
     <lastmod>2007-12-12T11:59:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/ap%ED%86%B5%EC%8B%A0%EC%9D%B4-%EC%84%A0%EC%A0%95%ED%95%9C-%EC%98%AC%ED%95%B4%EC%9D%98-%EB%B3%B4%EB%8F%84%EC%82%AC%EC%A7%842007-%EC%A4%91-%EC%9D%B4%EB%9D%BC%ED%81%AC/</loc>
     <lastmod>2007-12-12T00:21:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/%EB%B6%88%EB%B2%95%EB%B3%B5%EC%A0%9C%EB%8A%94-%EB%AC%B8%EC%A0%9C%EA%B0%80-%EC%95%84%EB%8B%88%EB%8B%A4.-%EB%AC%B8%EC%A0%9C%EB%8A%94-%EB%AC%B4%EB%AA%85%EC%9C%BC%EB%A1%9C-%EB%82%A8%EB%8A%94-%EA%B2%83%EC%9D%B4%EB%8B%A4-by-cory-doctorow.-%EC%9C%84%ED%82%A4%EB%85%B8%EB%AF%B9%EC%8A%A421%EC%84%B8%EA%B8%B0%EB%B6%81%EC%8A%A4-%EC%A4%91%EC%97%90%EC%84%9C/</loc>
     <lastmod>2007-12-10T09:01:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/dannyboy/</loc>
     <lastmod>2007-12-10T09:01:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/%EC%9B%B9-%EA%B8%B0%EC%88%A0-%EA%B0%80%EA%B3%84%EB%8F%84-modernlifeisrubbish.co.uk/</loc>
     <lastmod>2007-12-06T10:51:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%9A%95%EC%9F%81%EC%9D%B4%ED%95%A0%EB%A8%B8%EB%8B%88%EB%84%A4-%EA%B3%A0%EA%B9%83%EC%A7%91/</loc>
     <lastmod>2007-12-04T14:28:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/%ED%86%B5%EA%B8%B0%ED%83%80/</loc>
     <lastmod>2007-12-04T14:23:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%ED%86%B5%EA%B8%B0%ED%83%80%EB%8A%94-%EC%9D%B8%EA%B0%84%EC%A0%81%EC%9E%85%EB%8B%88%EB%8B%A4.-%ED%86%B5%EA%B8%B0%ED%83%80%EB%8A%94-%EC%86%8C%EB%B0%95%ED%95%9C-%EC%95%85%EA%B8%B0%EC%9E%85%EB%8B%88%EB%8B%A4/</loc>
     <lastmod>2007-12-04T14:23:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/%EB%8D%94%EB%B8%94%EB%A6%B0/</loc>
     <lastmod>2007-12-02T17:47:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/%EC%95%84%EC%9D%BC%EB%9E%9C%EB%93%9C/</loc>
     <lastmod>2007-12-02T17:47:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%95%84%EC%9D%BC%EB%9E%9C%EB%93%9C-%EC%9B%B9%EC%BA%A0/</loc>
     <lastmod>2007-12-02T17:47:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D%EC%98%81%ED%99%94%EC%A0%9Cla-petite-lili-%EC%9A%B0%EB%A6%AC%EC%9D%98-%EB%A6%B4%EB%A6%AC/</loc>
     <lastmod>2007-12-02T11:10:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D%EC%98%81%ED%99%94%EC%A0%9C%EB%B8%8C%EC%9D%B4-%ED%8F%AC-%EB%B2%A4%EB%8D%B0%ED%83%80-%ED%98%81%EB%AA%85%EC%9D%84-%EC%A3%BC%EB%AC%BC%EB%9F%AC-%EC%98%A4%EB%9D%BD%EC%9D%84-%EB%A7%8C%EB%93%A4%EB%8B%A4./</loc>
     <lastmod>2007-12-02T09:06:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/%EB%B8%8C%EC%9D%B4%ED%8F%AC%EB%B2%A4%EB%8D%B0%ED%83%80/</loc>
     <lastmod>2007-12-02T09:06:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/wget-%ED%99%9C%EC%9A%A9-%ED%97%A4%EB%8D%94%EC%A0%95%EB%B3%B4-%EB%B3%B4%EA%B8%B0-%ED%8C%8C%EC%9D%BC%EC%9D%84-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-%ED%95%98%EC%97%AC-%ED%8A%B9%EC%A0%95%EC%9D%B4%EB%A6%84%EC%9C%BC%EB%A1%9C-%EC%A0%80%EC%9E%A5/</loc>
     <lastmod>2007-11-30T15:30:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%96%B4%EB%8A%90-%EC%A4%91%EA%B3%A0-%EC%BB%B4%ED%93%A8%ED%84%B0-%EC%9E%A5%EC%82%AC%EC%9D%98-%EC%9D%BC%EA%B8%B0%EC%B6%9C%EC%B2%98-okjsp.pe.kr/</loc>
     <lastmod>2007-11-30T13:46:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/http__s.freedomz.co.kr_tb_1c023243c870/</loc>
     <lastmod>2007-11-28T08:59:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D%EC%98%81%ED%99%94%EC%A0%9C%EC%82%B6%EC%97%90-%EB%8C%80%ED%95%9C-%EC%98%81%ED%99%94-nolf.-no-one-lives-forever.-%EB%88%84%EA%B5%AC%EB%82%98-%EC%95%8C%EA%B3%A0-%EC%9E%88%EB%8A%94-%EC%82%AC%EC%8B%A4%EC%9E%85%EB%8B%88%EB%8B%A4./</loc>
     <lastmod>2007-11-23T14:47:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/%EB%A7%88%EC%B8%A0%EC%BD%94/</loc>
     <lastmod>2007-11-23T14:47:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/%EB%AA%A8%EB%A6%AC/</loc>
     <lastmod>2007-11-23T14:47:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/%ED%94%BC%EC%85%94%ED%82%B9/</loc>
     <lastmod>2007-11-23T14:47:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/brazil/</loc>
     <lastmod>2007-11-21T14:02:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/harry-nilsson-how-about-you-from-the-fisher-king-1991ost-4m17s/</loc>
     <lastmod>2007-11-21T14:02:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EC%B0%A9%ED%95%9C-%EC%82%AC%EB%9E%91%EB%85%B8%EB%9E%98-dont-get-around-much-anymore/</loc>
     <lastmod>2007-11-21T13:34:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/olpc%EC%9D%98-xo%EC%BB%B4%ED%93%A8%ED%84%B0-%EB%93%9C%EB%94%94%EC%96%B4-%EB%B3%B8%EA%B2%A9%EC%A0%81%EC%9C%BC%EB%A1%9C-%EB%B0%B0%ED%8F%AC%ED%95%98%EB%8A%94-%EB%93%AF/</loc>
     <lastmod>2007-11-15T09:48:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/google-android-%EC%9E%90%EB%B0%94%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EC%B5%9C%EA%B3%A0%EC%9D%98-%ED%8F%AC%ED%84%B0%EB%B8%94-%EC%9E%A5%EB%82%9C%EA%B0%90/</loc>
     <lastmod>2007-11-14T00:15:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EB%A9%94%EB%AA%A8/%ED%8D%BC%EC%98%A8%EA%B8%80%EA%B1%B4%EA%B0%95%EC%9D%84-%ED%95%B4%EC%B9%98%EB%8A%94-%EB%8B%B4%EB%B0%B0-%EA%B7%B8%EB%9E%98%EB%8F%84-%ED%8C%8C%EC%8B%9C%EA%B2%A0%EC%8A%B5%EB%8B%88%EA%B9%8C/</loc>
     <lastmod>2007-11-10T15:35:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/categories/%EB%A9%94%EB%AA%A8/</loc>
     <lastmod>2007-11-10T15:35:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/%EC%95%84%EC%9D%BC%EB%9E%9C%EB%93%9C-%EB%8D%94%EB%B8%94%EB%A6%B0%EC%97%90-java-%EC%9D%B8%EB%A0%A5%EC%9D%B4-%EA%B7%80%ED%95%9C%EA%B0%80-%EB%B3%B4%EB%8B%A4./</loc>
     <lastmod>2007-11-08T09:11:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/%EC%9D%BC%EC%A0%95%EC%B6%94%EC%A0%95%EC%9D%98-%EC%96%B4%EB%A0%A4%EC%9B%80/</loc>
     <lastmod>2007-11-07T21:21:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossanova-videovinicius-jobim-toquinho-miucha-berimbau_canto-de-ossanha/</loc>
     <lastmod>2007-11-06T22:16:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossanova-videotom-jobim&#43;vinicius-de-moraes&#43;toquinho&#43;miucha/</loc>
     <lastmod>2007-11-06T22:14:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossanova-videotom-jobim-e-vin%C3%ADcius-de-moraes-%C3%A1gua-de-beber/</loc>
     <lastmod>2007-11-06T22:12:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossanova-videotom-jobim-and-frank-sinatra-the-girl-from-ipanema/</loc>
     <lastmod>2007-11-06T22:10:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossanova-videotom-jobim-and-andy-willians-the-girl-from-ipanema/</loc>
     <lastmod>2007-11-06T22:08:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossanova-videosamba-de-orly-toquinho-vinicius/</loc>
     <lastmod>2007-11-06T22:06:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossanova-videoemily-remler-red-blouse-bossa-nova/</loc>
     <lastmod>2007-11-06T22:04:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossanova-videoaguas-de-marco-elis-regina/</loc>
     <lastmod>2007-11-06T22:01:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossanova-videobaden-powell-samba-triste-europe-by-loronix/</loc>
     <lastmod>2007-11-06T21:57:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossanova-videotom-jobim-corcovado/</loc>
     <lastmod>2007-11-06T21:53:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossanova-videostan-getz-jo%C3%A3o-gilberto-corcovado/</loc>
     <lastmod>2007-11-06T21:51:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossanova-videoseis-milonga-arranged-by-carlos-barbosa-lima/</loc>
     <lastmod>2007-11-06T21:50:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossanova-videojoao-gilberto-and-antonio-carlos-jobim-chega-de-saudade/</loc>
     <lastmod>2007-11-06T21:49:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossanova-videojo%C3%A3o-gilberto-tom-jobim-desafinado/</loc>
     <lastmod>2007-11-06T21:47:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossanova-videojoao-gilberto-bebel-gilberto-diga/</loc>
     <lastmod>2007-11-06T21:45:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossanova-videojoao-gilberto-garota-de-ipanema-junto-a-tom-jobim/</loc>
     <lastmod>2007-11-06T21:43:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossanova-videojoao-gilberto-estate/</loc>
     <lastmod>2007-11-06T21:41:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossanova-videoelis-e-tom-aguas-de-marco/</loc>
     <lastmod>2007-11-06T21:39:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossanova-videocorcovado-aguas-de-marco-tom-jobim-elis-regina/</loc>
     <lastmod>2007-11-06T21:36:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossanova-videoall-around-so-nice-bebel-gilberto/</loc>
     <lastmod>2007-11-06T21:33:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossanova-videobarbosa-lima-plays-sambolero/</loc>
     <lastmod>2007-11-06T21:28:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossanova-videocochichando-barbosa-lima/</loc>
     <lastmod>2007-11-06T21:26:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossanova-videobarbosa-lima-plays-melod%C3%ADa-sentimental-h.villa-lobos/</loc>
     <lastmod>2007-11-06T21:22:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossanova-videobarbosa-lima-plays-manha-de-carnaval/</loc>
     <lastmod>2007-11-06T21:15:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossanova-videobarbosa-lima-plays-jobim/</loc>
     <lastmod>2007-11-06T21:11:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossanova-videoaquarela-do-brasil-babosa-lima/</loc>
     <lastmod>2007-11-06T21:03:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%84%B8%EC%83%81%EC%9D%84-%EB%B0%94%EA%BE%BC-101%EA%B0%80%EC%A7%80-%EB%B0%9C%EB%AA%85%ED%92%88-%EC%98%81%EA%B5%AD-%EC%9D%BC%EA%B0%84-%EC%9D%B8%EB%94%94%ED%8E%9C%EB%8D%98%ED%8A%B8.-5-november-2007/</loc>
     <lastmod>2007-11-05T13:17:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/javascript%EB%A1%9C-%ED%95%B4%EB%8B%B9-html-%EB%82%B4%EB%B6%80%EC%9D%98-%EB%AA%A8%EB%93%A0-%EB%A7%81%ED%81%AC-%EB%AA%A9%EB%A1%9D-%EB%BD%91%EC%95%84%EB%82%B4%EA%B8%B0/</loc>
     <lastmod>2007-11-02T16:52:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/ftp-script-%EC%83%98%ED%94%8C/</loc>
     <lastmod>2007-11-01T17:46:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%ED%8D%BC%EC%98%A8%EA%B8%80%EC%82%AC%EB%9E%91%EC%9D%80-%EC%99%9C-%EC%8B%9D%EB%8A%94%EA%B0%80/</loc>
     <lastmod>2007-10-29T14:39:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%ED%94%84%EB%A0%88%EC%9E%84-%EB%82%98%EB%A5%BC-%EB%B0%94%EA%BE%B8%EB%8A%94-%EC%8B%AC%EB%A6%AC%ED%95%99%EC%9D%98-%EC%A7%80%ED%98%9C-%EC%A1%B0%EC%82%BC%EB%AA%A8%EC%82%AC%EC%9D%98-%EC%97%90%ED%94%BC%EC%86%8C%EB%93%9C%EC%99%80-%EC%8B%A4%ED%97%98-%EC%BC%80%EC%9D%B4%EC%8A%A4%EB%93%A4%EC%9D%84-%EC%8B%AC%EB%A6%AC%ED%95%99%EC%A0%81%EC%9C%BC%EB%A1%9C-%EB%B6%84%EC%84%9D-%EC%A0%95%EB%A6%AC%ED%95%9C-%EC%B1%85/</loc>
     <lastmod>2007-10-24T23:49:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/%EC%8B%AC%EB%A6%AC%ED%95%99/</loc>
     <lastmod>2007-10-24T23:49:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/%ED%94%84%EB%A0%88%EC%9E%84/</loc>
     <lastmod>2007-10-24T23:49:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/how-the-cat-wakes-you-up-in-the-morning/</loc>
     <lastmod>2007-10-23T14:06:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9Clord-of-war/</loc>
     <lastmod>2007-10-22T22:51:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/bullet/</loc>
     <lastmod>2007-10-22T22:51:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/war/</loc>
     <lastmod>2007-10-22T22:51:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%A7%80%EA%B5%AC%EA%B0%80-100%EB%AA%85%EC%9D%98-%EB%A7%88%EC%9D%84%EC%9D%B4%EB%9D%BC%EB%A9%B4%EB%8D%B0%EC%9D%B4%EB%B9%84%EB%93%9C-%EC%8A%A4%EB%AF%B8%EC%8A%A4-%EB%85%B8%EA%B2%BD%EC%8B%A4-%EC%97%AD-%ED%91%B8%EB%A5%B8%EC%88%B2-2002-%EC%A4%91/</loc>
     <lastmod>2007-10-19T17:26:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/%EB%AA%85%EB%A0%B9-%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8%EC%97%90%EC%84%9C-%EC%9C%88%EB%8F%84%EC%9A%B0%EA%B3%84%EC%A0%95%EC%B6%94%EA%B0%80-cvs%EA%B3%84%EC%A0%95%EC%B6%94%EA%B0%80/</loc>
     <lastmod>2007-10-15T13:36:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/2007-jco-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-%EC%BB%A8%ED%8D%BC%EB%9F%B0%EC%8A%A4/</loc>
     <lastmod>2007-10-02T15:19:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9C%EC%BA%90%EC%89%AC%EB%B0%B1-cashback/</loc>
     <lastmod>2007-09-30T14:04:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/cashback/</loc>
     <lastmod>2007-09-30T14:04:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/%EC%BA%90%EC%89%AC%EB%B0%B1/</loc>
     <lastmod>2007-09-30T14:04:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EC%B6%94%EC%B2%9C-house-music-%EC%9D%B8%ED%84%B0%EB%84%B7-%EB%9D%BC%EB%94%94%EC%98%A4/</loc>
     <lastmod>2007-09-27T21:06:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9C%EC%B9%A0%EB%93%9C%EB%9F%B0-%EC%98%A4%EB%B8%8C-%EB%A7%A8/</loc>
     <lastmod>2007-09-05T00:08:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/%EC%B9%A0%EB%93%9C%EB%9F%B0%EC%98%A4%EB%B8%8C%EB%A7%A8/</loc>
     <lastmod>2007-09-05T00:08:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/%ED%8C%8C%EC%9D%B4%ED%94%84%EB%A1%9C-grep-%EC%97%AC%EB%9F%AC-%EB%B2%88-%EC%8B%A4%ED%96%89-%ED%9B%84-%EA%B2%B0%EA%B3%BC%EB%A5%BC-txt-%ED%8C%8C%EC%9D%BC%EB%A1%9C-%EC%A0%80%EC%9E%A5/</loc>
     <lastmod>2007-08-07T17:59:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9C-%EB%A1%9C%EB%AF%B8%EC%98%A4-%EC%9D%B4%EC%A6%88-%EB%B8%94%EB%A6%AC%EB%94%A9-romeo-is-bleeding/</loc>
     <lastmod>2007-08-04T00:27:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9C-%EC%B6%94%EC%B2%9C-%EB%B2%94%EC%A3%84_%EC%8A%A4%EB%A6%B4%EB%9F%AC-%EC%98%81%ED%99%94/</loc>
     <lastmod>2007-07-31T23:59:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/%EB%B2%94%EC%A3%84%EC%98%81%ED%99%94/</loc>
     <lastmod>2007-07-31T23:59:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/ora-01653-the_table_name-%ED%85%8C%EC%9D%B4%EB%B8%94%EC%9D%84-4%EC%9C%BC%EB%A1%9C-pf_dat-%ED%85%8C%EC%9D%B4%EB%B8%94%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%97%90%EC%84%9C-%ED%99%95%EC%9E%A5%ED%95%A0-%EC%88%98-%EC%97%86%EC%8A%B5%EB%8B%88%EB%8B%A4/</loc>
     <lastmod>2007-07-23T09:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D%EC%98%81%ED%99%94%EC%A0%9C-%EC%8A%A4%ED%85%8C%EC%9D%B4/</loc>
     <lastmod>2007-07-18T22:50:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/html-%EC%9D%98-form-%EC%9D%98-enctype%EC%9D%84-javascript%EB%A1%9C-%EB%B3%80%EA%B2%BD/</loc>
     <lastmod>2007-07-05T07:54:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/all-blues-band-live/</loc>
     <lastmod>2007-06-30T12:11:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/nirvana-territorial-pissings/</loc>
     <lastmod>2007-06-30T11:16:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/oracle-%ED%8A%B9%EC%A0%95-%ED%85%8C%EC%9D%B4%EB%B8%94%EB%93%A4%EB%A7%8C-export/</loc>
     <lastmod>2007-06-28T16:46:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/jeus-3.3-%EC%97%90%EC%84%9C-file_realm.xml-%ED%8E%B8%EC%A7%91%ED%95%98%EC%97%AC-%EA%B4%80%EB%A6%AC%EC%9E%90-%EC%95%84%EC%9D%B4%EB%94%94-%EB%B3%80%EA%B2%BD%EA%B4%80%EB%A6%AC%EC%9E%90-%EC%B6%94%EA%B0%80/</loc>
     <lastmod>2007-06-20T15:05:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EB%83%A5%EB%83%A5%EB%83%A5~-dj-you-dictate-the-groove/</loc>
     <lastmod>2007-06-13T00:50:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossanova-live-show-by-alquimista-with-valtinho/</loc>
     <lastmod>2007-06-10T17:09:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%9C%A0%ED%8A%9C%EB%B8%8C-%EB%8F%99%EC%98%81%EC%83%81-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-%ED%95%98%EA%B8%B0/</loc>
     <lastmod>2007-06-09T15:44:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/lisa-ekdahl-i-will-be-blessed-it-had-to-be-you-now-or-never-laurore/</loc>
     <lastmod>2007-06-09T13:32:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossanovagoodbye-sadness-_-tristeza/</loc>
     <lastmod>2007-06-06T11:26:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/so-dan%C3%A7o-samba/</loc>
     <lastmod>2007-06-06T10:39:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D%EC%98%81%ED%99%94%EC%A0%9Cgirl-interrupted-_-%EC%B2%98%EC%9D%8C-%EB%A7%8C%EB%82%98%EB%8A%94-%EC%9E%90%EC%9C%A0/</loc>
     <lastmod>2007-06-06T01:09:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D%EC%98%81%ED%99%94%EC%A0%9C%EC%95%84%EB%AC%B4%EB%8F%84-%EB%AA%A8%EB%A5%B8%EB%8B%A4./</loc>
     <lastmod>2007-05-27T21:51:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9C%ED%98%90%EC%98%A4%EC%8A%A4%EB%9F%B0-%EB%A7%88%EC%B8%A0%EC%BD%94%EC%9D%98-%EC%9D%BC%EC%83%9D-%EB%A7%88%EC%B8%A0%EC%BD%94%EB%8A%94...-%EB%82%98%EC%9D%98-%ED%95%98%EB%82%98%EB%8B%98%EC%9D%B4%EC%97%88%EC%96%B4%EC%9A%94/</loc>
     <lastmod>2007-05-27T00:05:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/cry-me-a-river/</loc>
     <lastmod>2007-05-20T01:07:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EC%B0%A9%ED%95%9C-%EB%85%B8%EB%9E%98-nobody-does-it-better/</loc>
     <lastmod>2007-05-20T00:47:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D%EC%98%81%ED%99%94%EC%A0%9Clost-in-translation/</loc>
     <lastmod>2007-05-19T23:58:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/le-boogie-digor-%EA%B8%B0%ED%83%80%ED%94%84%EB%A1%9C-%EC%95%85%EB%B3%B4/</loc>
     <lastmod>2007-05-16T00:09:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%98%81%ED%99%94-once/</loc>
     <lastmod>2007-05-13T10:04:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/zaurus-c1000-milkytracker-%EC%84%A4%EC%B9%98/</loc>
     <lastmod>2007-05-12T12:26:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%A7%88%EC%82%AC%EC%A7%80-%ED%95%98%EB%8A%94-%EA%B3%A0%EC%96%91%EC%9D%B4-%EB%A7%88%EC%82%AC%EC%A7%80-%EB%B0%9B%EB%8A%94-%EA%B0%95%EC%95%84%EC%A7%80/</loc>
     <lastmod>2007-05-09T23:28:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/punch-jazz-blues-in-g.doc/</loc>
     <lastmod>2007-05-08T22:44:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%ED%95%9C%EA%B5%AD%EC%98%81%EC%83%81%EC%9D%91%EC%9A%A9%EC%97%B0%EA%B5%AC%EC%86%8C%EC%97%90%EC%84%9C-%EB%BD%91%EC%9D%80-%EC%B9%98%EC%9C%A0%EC%A0%81%EC%9D%B8-%EC%98%81%ED%99%94-%EB%B2%A0%EC%8A%A4%ED%8A%B8-10./</loc>
     <lastmod>2007-05-05T23:01:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/freshmeat.net-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%96%B8%EC%96%B4%EB%B3%84-%EB%93%B1%EB%A1%9D%EB%90%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%88%98/</loc>
     <lastmod>2007-05-04T08:18:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%ED%99%80%EB%A1%9C-%EC%9D%BC%EC%96%B4%EB%82%9C-%EC%83%88%EB%B2%BD%EC%9D%84-%EB%91%90%EB%A0%A4%EC%9B%8C-%EB%A7%90%EA%B3%A0-%EB%B3%84%EC%9D%84-%EB%B3%B4%EA%B3%A0-%EA%B1%B8%EC%96%B4%EA%B0%80%EB%8A%94-%EC%82%AC%EB%9E%8C%EC%9D%B4-%EB%90%98%EB%9D%BC/</loc>
     <lastmod>2007-04-30T08:34:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/jsp-%EC%97%90%EC%84%9C-request-header-%EB%AA%A8%EB%91%90-%EC%B0%8D%EC%96%B4%EB%B3%B4%EA%B8%B0/</loc>
     <lastmod>2007-04-25T15:17:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/police-every-breath-you-take-%EA%B8%B0%ED%83%80-tab-%EC%95%85%EB%B3%B4/</loc>
     <lastmod>2007-04-17T23:32:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/loser-beck/</loc>
     <lastmod>2007-03-25T14:33:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/crazy-%EA%B0%80%EC%82%AC/</loc>
     <lastmod>2007-03-16T16:17:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%97%94%ED%84%B0-%EB%8D%94-%EA%B9%80%EC%A0%95%EB%82%A8-_-%EC%B6%A9%EC%A7%81%ED%95%9C-%EA%B3%A0%EC%96%91%EC%9D%B4-_-%EA%B9%80%EC%A0%95%EB%82%A8-%EA%B3%A4%EC%9E%98%EB%A0%88%EC%8A%A4-%EA%B2%8C%EB%A0%88%EB%A1%9C/</loc>
     <lastmod>2007-03-15T13:07:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/libertango-astor-piazzolla-by-yoyoma-grace-jones/</loc>
     <lastmod>2007-03-07T21:03:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%B2%AD%ED%98%BC/</loc>
     <lastmod>2007-03-04T22:40:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/myworks/so-long/</loc>
     <lastmod>2007-03-03T12:41:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%A0%80-%EA%B9%94%EB%8C%80%EA%B8%B0%EB%A5%BC-%EC%9E%A1%EC%95%84%EC%A4%84-%EC%82%AC%EB%9E%8C%EC%9D%B4-%ED%95%84%EC%9A%94%ED%95%98%EC%98%A4/</loc>
     <lastmod>2007-02-25T10:50:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/%EC%BB%B4%ED%93%A8%ED%84%B0%EB%8A%94%EC%9A%94-%EC%A0%88%EB%8C%80%EB%A1%9C-%EA%B1%B0%EC%A7%93%EB%A7%90%EC%9D%84-%EC%95%88%ED%95%A9%EB%8B%88%EB%8B%A4./</loc>
     <lastmod>2007-02-12T19:32:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EB%B3%B4%EC%82%AC%EB%85%B8%EB%B0%94-%EA%B8%B0%ED%83%80%EC%BD%94%EB%93%9Csaudade-da-bahia/</loc>
     <lastmod>2007-02-12T13:35:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/the-shadow-of-your-smile/</loc>
     <lastmod>2007-02-08T23:36:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/faure-pavane-op.-50/</loc>
     <lastmod>2007-02-07T23:51:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/google-2084/</loc>
     <lastmod>2007-02-06T20:25:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/%ED%98%84%EC%9E%AC-%ED%8F%B4%EB%8D%94%EC%97%90%EC%84%9C-%ED%95%98%EC%9C%84-%ED%8F%B4%EB%8D%94%EA%B9%8C%EC%A7%80-%EB%AA%A8%EB%93%A0-%ED%8C%8C%EC%9D%BC%EB%AA%A9%EB%A1%9D-dir-_on-_b-_a-d-_s-list.txt/</loc>
     <lastmod>2007-02-03T09:58:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EB%B3%B4%EC%82%AC%EB%85%B8%EB%B0%94-%EC%95%85%EB%B3%B4%EA%B8%B0%ED%83%80-guitarra-%EC%9A%A9/</loc>
     <lastmod>2007-02-03T09:45:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/java-ee-5%EB%A5%BC-%EC%9D%B4%EB%A3%A8%EB%8A%94-%EC%8B%A0%EA%B8%B0%EC%88%A0%EB%93%A4/</loc>
     <lastmod>2007-02-01T19:53:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/%EC%9B%B9%EC%B1%84%ED%8C%85-http__www.lingr.com_/</loc>
     <lastmod>2007-01-30T13:17:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/vivaldis-song-%EA%B0%80%EC%82%AC/</loc>
     <lastmod>2007-01-28T13:19:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9C-lilja-4-ever/</loc>
     <lastmod>2007-01-25T00:23:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/%EC%BD%94%EB%94%A9%EC%A4%91-%EB%AC%B8%EB%93%9D-%EC%83%9D%EA%B0%81%EB%82%9C-%EC%98%81%ED%99%94-%EC%96%B4%EB%8C%91%ED%85%8C%EC%9D%B4%EC%85%98-adaptation/</loc>
     <lastmod>2007-01-24T14:27:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/%EB%AC%B4%EB%A3%8C-%EB%B0%94%EC%9D%B4%EB%9F%AC%EC%8A%A4-%EB%B0%8F-%EC%8A%A4%ED%8C%8C%EC%9D%B4%EC%9B%A8%EC%96%B4-%EA%B2%80%EC%82%AC/</loc>
     <lastmod>2007-01-23T13:11:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/%EC%BD%94%EB%94%A9%ED%95%98%EB%8D%98-%EB%85%B8%EC%9D%B8/</loc>
     <lastmod>2007-01-23T13:07:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/if-you-rescue-me-%EA%B8%B0%ED%83%80-%EC%BD%94%EB%93%9C-guitar-chord-tab-%EC%88%98%EB%A9%B4%EC%9D%98-%EA%B3%BC%ED%95%99-the-science-of-sleep-ost/</loc>
     <lastmod>2007-01-20T21:25:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/%EC%B1%85%EC%9D%BD%EC%96%B4%EC%A3%BC%EB%8A%94-%EB%8F%84%EC%84%9C%EA%B4%80-%EC%A0%84%EC%9A%A9%ED%8F%B0-wipi-%ED%99%94%EB%A9%B4/</loc>
     <lastmod>2007-01-18T16:42:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EB%A9%94%EB%AA%A8/%EC%98%81%EC%96%B4-%EC%A0%90%EC%88%98-%EB%B9%84%EA%B5%90%ED%91%9C/</loc>
     <lastmod>2007-01-18T00:40:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novaskindo-le-le-tombo-in-7_4-cada-vez/</loc>
     <lastmod>2007-01-14T15:33:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EB%82%98%EC%9D%98-%EA%B8%B0%ED%83%80%EB%93%A4/</loc>
     <lastmod>2007-01-14T12:27:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/b142/</loc>
     <lastmod>2007-01-14T11:21:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/%ED%9B%84%EC%A7%80%EC%AF%94-b142-%EB%B6%84%ED%95%B4%ED%95%98%EA%B8%B0/</loc>
     <lastmod>2007-01-14T11:21:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%B9%A0%EB%B3%B5~/</loc>
     <lastmod>2007-01-12T13:29:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/196kbps-mp3-%EC%A5%AC%ED%81%AC%EB%B0%95%EC%8A%A4-http__www.giantstep.net/</loc>
     <lastmod>2007-01-09T14:28:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9C-%EB%A3%A8%EC%8B%9C%EC%95%84/</loc>
     <lastmod>2007-01-07T20:37:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D-%EC%98%81%ED%99%94%EC%A0%9C-%EC%96%B4%EB%91%A0-%EC%86%8D%EC%9D%98-%EB%8C%84%EC%84%9C/</loc>
     <lastmod>2007-01-06T16:37:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%A7%88%EC%9D%B4%EB%84%88%EC%8A%A4%ED%86%B5%EC%9E%A5%EC%9D%B4-%EB%BF%8C%EB%9D%BC%EC%8A%A4%ED%86%B5%EC%9E%A5-%EB%90%A8/</loc>
     <lastmod>2007-01-05T15:03:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/world-music-%EC%9D%B8%ED%84%B0%EB%84%B7-%EB%9D%BC%EB%94%94%EC%98%A4-http__www.music21radio.net/</loc>
     <lastmod>2007-01-03T09:30:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/java-&#43;-oracle-xmltype-insert-%EC%8B%9C-%EB%AC%B8%EC%A0%9C-non-supported-character-set-oracle-character-set-840/</loc>
     <lastmod>2006-12-27T02:24:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/%ED%95%B4%EB%B3%80%EC%9D%98-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8/</loc>
     <lastmod>2006-12-15T13:31:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/%ED%8C%80%EC%9B%A4/</loc>
     <lastmod>2006-12-15T13:26:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-novaslow-motion-bossa-novacelso-fonseca/</loc>
     <lastmod>2006-12-15T09:56:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/javadoc-%EC%97%90%EC%84%9C-%ED%95%9C%EA%B8%80%EC%9D%B4-%EA%B9%A8%EC%A7%80%EB%8A%94-%EA%B2%BD%EC%9A%B0/</loc>
     <lastmod>2006-12-04T14:35:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/http__www.art.go.kr_kids/</loc>
     <lastmod>2006-12-01T22:27:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/ivan-lins-and-pattie-austin-daquilo-que-eu-sei/</loc>
     <lastmod>2006-11-26T20:54:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EB%B3%B4%EC%82%AC%EB%85%B8%EB%B0%94-%EB%B0%A9%EC%86%A1-on-datempo.com/</loc>
     <lastmod>2006-11-26T00:18:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/eclipse%EC%97%90%EC%84%9C-word-wrap-%ED%95%98%EA%B8%B0/</loc>
     <lastmod>2006-11-25T20:20:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%B6%95%EA%B5%AC%EA%B3%B5-%EB%92%A4-%EB%83%A5%EC%9D%B4/</loc>
     <lastmod>2006-11-21T12:56:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EA%B0%9C-&#43;-%EB%83%A5/</loc>
     <lastmod>2006-11-20T15:52:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EA%B0%9C%EB%AF%B8%EC%99%80-%EB%B0%B0%EC%A7%B1%EC%9D%B4/</loc>
     <lastmod>2006-11-20T12:55:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EA%B3%A0%EC%96%91%EC%9D%B4%EB%8A%94-%EC%82%AC%EB%9E%8C%EC%9D%84-%EB%B6%80%EB%9F%AC%EC%9B%8C-%ED%95%A0%EA%B9%8C/</loc>
     <lastmod>2006-11-11T20:16:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%95%84%EB%82%B4%EA%B0%80-%EC%9A%B4%EB%8B%A4-%EC%9E%84%EC%84%B1%EC%9A%A9/</loc>
     <lastmod>2006-11-02T14:27:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%ED%8F%B4-%EB%B2%A0%EB%A5%BC%EB%A0%8C%EB%8A%90-%ED%95%98%EB%8A%98%EC%9D%80-%EC%A7%80%EB%B6%95%EC%9C%84%EB%A1%9C/</loc>
     <lastmod>2006-10-31T12:45:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%95%84%EC%9D%B4%EC%97%90%EA%B2%8C-%ED%9B%88%EA%B3%84%ED%95%A0-%EB%95%90-%ED%95%A8%EA%BB%98-%EB%88%84%EC%9B%8C%EC%84%9C-%ED%95%98%EC%9E%90./</loc>
     <lastmod>2006-10-28T13:06:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/apache-mod_rewrite/</loc>
     <lastmod>2006-10-24T17:36:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/alan-parsons-project-the-eagle-will-rise-again/</loc>
     <lastmod>2006-10-02T22:44:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/java-tcp-proxy/</loc>
     <lastmod>2006-09-29T23:54:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EA%B3%A0%EC%96%91%EC%9D%B4-cf/</loc>
     <lastmod>2006-09-24T15:14:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/unplugged-life%EB%8B%98%EC%9D%98-%EB%AF%B8%EB%8B%88%ED%99%88%ED%94%BC.-%EC%A2%8B%EC%9D%80-%EC%9D%8C%EC%95%85%EC%9D%B4-%EB%A7%8E%EC%9D%8C/</loc>
     <lastmod>2006-09-23T01:43:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/how-insensitive/</loc>
     <lastmod>2006-09-22T03:18:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%82%AC%EB%9E%91%EC%9D%80-asdf-%EC%9E%85%EB%8B%88%EB%8B%A4./</loc>
     <lastmod>2006-09-22T02:44:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/python-computer-programming-for-everybody/</loc>
     <lastmod>2006-09-20T19:09:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%8B%B9%EC%8B%A0%EC%9D%84-%EC%9C%84%ED%95%9C-shmily/</loc>
     <lastmod>2006-09-20T12:27:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%82%98%EC%9D%98-%EB%B2%A0%EC%8A%A4%ED%8A%B83-%EB%AC%B8%EB%8B%B5./</loc>
     <lastmod>2006-09-17T13:15:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/binary-%EB%B0%94%EC%9D%B4%EB%84%88%EB%A6%AC-%ED%8C%8C%EC%9D%BC-cvs-import-%ED%95%98%EA%B8%B0/</loc>
     <lastmod>2006-09-15T13:26:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/sed-%EC%82%AC%EC%9A%A9%ED%95%9C-find-and-replace-%EC%83%98%ED%94%8C/</loc>
     <lastmod>2006-09-12T21:48:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%98%81%ED%99%94-under-suspicion/</loc>
     <lastmod>2006-09-12T00:43:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/ip-%EB%A1%9C-%ED%95%B4%EB%8B%B9%EA%B5%AD%EA%B0%80-%EC%95%8C%EC%95%84%EB%82%B4%EA%B8%B0/</loc>
     <lastmod>2006-09-08T00:11:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EB%B0%B4%EB%93%9C-%EC%9E%91%EC%97%85%EC%8B%A4-%EA%B2%B8-%EB%B6%80%EC%97%8C/</loc>
     <lastmod>2006-09-07T23:37:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EB%B8%94%EB%A3%A8%EC%8A%A4-%EC%9D%8C%EC%95%85%EC%9D%98-%EC%97%AD%EC%82%ACdaily-event-%EC%97%91%EC%85%80-mysql-%EB%B0%B1%EC%97%85/</loc>
     <lastmod>2006-09-06T11:03:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EB%8F%99%EC%8B%9C%EC%A0%91%EC%86%8D-13%EB%AA%85.-%ED%98%84%EC%9E%AC%EA%B9%8C%EC%A7%80-%EC%B5%9C%EA%B3%A0%EC%88%98%EC%B9%98.-10%EC%8B%9C%EA%B0%84%EC%A7%B8-%EB%93%A3%EA%B3%A0%EC%9E%88%EB%8A%94-%EC%A0%80%EC%B9%9C%EA%B5%AC%EB%8A%94-%EB%88%84%EA%B5%B4%EA%B9%8C/</loc>
     <lastmod>2006-08-31T01:34:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/%EC%9D%B8%ED%84%B0%EB%84%B7-%EC%9D%B5%EC%8A%A4%ED%94%8C%EB%A1%9C%EB%9F%AC-6.0%EC%97%90%EC%84%9C-html-%EC%97%98%EB%A6%AC%EB%A8%BC%ED%8A%B8%EB%A5%BC-java-script%EC%97%90%EC%84%9C-%EC%B0%B8%EC%A1%B0%ED%95%98%EC%A7%80-%EB%AA%BB%ED%95%98%EB%8A%94-%EA%B2%BD%EC%9A%B0-%EC%9E%88%EC%9D%8C/</loc>
     <lastmod>2006-08-31T01:11:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%B2%AB%EC%82%AC%EB%9E%91/</loc>
     <lastmod>2006-08-30T21:30:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/%EC%B6%94%EC%96%B5%EC%9D%98-ip/</loc>
     <lastmod>2006-08-29T20:21:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/injection/</loc>
     <lastmod>2006-08-29T18:56:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/sql/</loc>
     <lastmod>2006-08-29T18:56:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/sql-injection-cross-site-scripting-xss-%EC%98%88%EB%B0%A9%EC%B1%85/</loc>
     <lastmod>2006-08-29T18:56:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/ruby-%EC%96%B8%EC%96%B4%EC%9A%A9-%EC%9B%B9-%EC%9D%B8%ED%84%B0%ED%94%84%EB%A6%AC%ED%84%B0/</loc>
     <lastmod>2006-08-25T19:05:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EB%B3%B4%EC%82%AC%EB%85%B8%EB%B0%94-shoutcast-%EB%B0%A9%EC%86%A1-%EC%84%B1%EA%B3%B5/</loc>
     <lastmod>2006-08-22T03:43:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%8A%94-%EC%99%9C-%EB%B0%A4%EC%9D%84-%EC%84%B8%EB%8A%94%EA%B0%80-%EC%A0%88%EB%8C%80-%EA%B3%B5%EA%B0%90/</loc>
     <lastmod>2006-08-21T13:19:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%97%85%EB%AC%B4-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%EB%8F%84/</loc>
     <lastmod>2006-08-21T13:08:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/%EB%AC%B4%EC%A0%81%EC%95%BC%EA%B7%BC%EB%B6%80%EB%8C%80/</loc>
     <lastmod>2006-08-21T13:06:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%86%8D%EB%8B%B4/</loc>
     <lastmod>2006-08-21T12:57:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%88%88%EB%AC%BC%EC%9D%84-%EB%AA%A8%EB%A5%B4%EB%8A%94-%EB%88%88%EC%9C%BC%EB%A1%9C-%EC%A7%84%EB%A6%AC%EB%A5%BC-%EB%B3%BC-%EC%88%98-%EC%97%86%EA%B3%A0-%EC%95%84%ED%94%94%EC%9D%84-%EA%B2%AA%EC%96%B4%EB%B3%B4%EC%A7%80-%EC%95%8A%EC%9D%80-%EB%A7%88%EC%9D%8C%EC%9C%BC%EB%A1%9C%EB%8A%94-%EC%82%AC%EB%9E%8C%EC%9D%84-%EC%95%8C-%EC%88%98-%EC%97%86%EB%8B%A4/</loc>
     <lastmod>2006-08-21T12:29:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EC%86%8C%ED%9E%88%EC%9D%98-%EB%B3%B4%EC%82%AC%EB%85%B8%EB%B0%94-%EC%95%A8%EB%B2%94-%EC%95%B5%EB%91%90/</loc>
     <lastmod>2006-08-16T00:42:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%98%81%ED%99%94-antares-%EC%84%B8%EA%B0%80%EC%A7%80-%EC%82%AC%EB%9E%91-%EC%A0%95%EC%82%AC/</loc>
     <lastmod>2006-08-16T00:29:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/eclipse-&#43;-cvsnt-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-syncronize-%EC%8B%9C-problems-reported-while-synchronizing-cvs-workspace.../</loc>
     <lastmod>2006-08-11T22:35:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/%EB%A1%AC%EB%B3%B4%EC%A6%88%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4%EC%97%90%EC%84%9C-%EC%9E%90%EB%8F%99%EC%BB%B4%ED%8C%8C%EC%9D%BC%EC%9D%B4-%EC%95%88%EB%90%98%EB%8A%94-%ED%98%84%EC%83%81-%ED%95%B4%EA%B2%B0/</loc>
     <lastmod>2006-08-11T20:40:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%AC%B4%EB%A6%87-%EC%98%88%EC%88%A0%EA%B0%80%EB%9E%80-%EC%96%B4%EB%94%98%EA%B0%80-%EB%88%88%EC%97%90-%EB%9D%84%EB%8A%94-%EA%B2%B0%ED%95%A8%EC%9D%B4%EB%82%98-%EA%B2%B0%ED%95%8D%EC%9D%B4-%EC%9E%88%EB%8B%A4/</loc>
     <lastmod>2006-06-07T09:29:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/traveler-guitar-escape-nylon-%EC%A7%88%EB%9F%AC%EB%B2%84%EB%A6%BC/</loc>
     <lastmod>2006-06-04T09:47:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EC%B6%98%EC%B2%9C%EA%B0%80%EB%8A%94-%EA%B8%B0%EC%B0%A8-%EC%95%85%EB%B3%B4/</loc>
     <lastmod>2006-06-04T09:43:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%ED%96%A5%EA%B8%B0%EB%A1%9C%EC%9A%B4-%EC%B6%94%EC%96%B5-%EC%95%85%EB%B3%B4/</loc>
     <lastmod>2006-06-04T09:42:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EB%A9%94%EB%AA%A8/%EA%B0%80%EA%B5%AC-%ED%95%84%EC%9A%94%ED%95%98%EC%8B%A0%EB%B6%84/</loc>
     <lastmod>2006-05-18T13:45:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/come-rain-or-come-shine-%EB%B9%84%EA%B0%80%EC%98%A4%EB%82%98-%EB%88%88%EC%9D%B4%EC%98%A4%EB%82%98/</loc>
     <lastmod>2006-04-23T15:02:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EB%A9%94%EB%AA%A8/%EA%B3%A0%EC%96%91%EC%9D%B4%EB%A5%BC-%EC%95%8C%EA%B3%A0-%EC%8B%B6%EB%8B%A4%EB%A9%B4/</loc>
     <lastmod>2006-02-26T12:22:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/myworks/moon-river-060223/</loc>
     <lastmod>2006-02-26T11:25:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/myworks/green-sleeves-060220/</loc>
     <lastmod>2006-02-20T23:49:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/housedrumloop-from-blz/</loc>
     <lastmod>2006-02-12T23:52:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EB%A9%94%EB%AA%A8/%ED%94%8C%EB%9E%98%EC%8B%9C%EB%A1%9C-%EB%A7%8C%EB%93%A0-%EA%B3%A0%EC%96%91%EC%9D%B4/</loc>
     <lastmod>2006-02-10T13:56:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/do-what-you-want-to-do/</loc>
     <lastmod>2006-02-09T01:03:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/myworks/fly-me-to-the-moon/</loc>
     <lastmod>2006-01-30T14:27:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%98%81%ED%99%94%EB%82%B4-%EC%83%9D%EC%95%A0-%EA%B0%80%EC%9E%A5-%EC%95%84%EB%A6%84%EB%8B%A4%EC%9A%B4-%EC%9D%BC%EC%A3%BC%EC%9D%BC/</loc>
     <lastmod>2006-01-28T02:07:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/http__www.freebgm.net_-%EA%B3%B5%EC%A7%9C-mp3%EB%9D%BC.../</loc>
     <lastmod>2006-01-27T18:37:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%ED%83%9C%ED%84%B0-%ED%88%B4%EC%A6%88-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%A4%91.../</loc>
     <lastmod>2006-01-27T17:52:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/blues-give-me-strength-eric-clapton/</loc>
     <lastmod>2006-01-26T00:24:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EC%95%85%EB%B3%B4chips-blues-1/</loc>
     <lastmod>2006-01-24T22:55:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EB%A9%94%EB%AA%A8/%EA%B0%81%EC%A2%85-%EB%A7%81%ED%81%AC/</loc>
     <lastmod>2006-01-24T12:34:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%92%88%EC%A7%88%EC%9D%98-%EC%9A%94%EC%86%8C/</loc>
     <lastmod>2006-01-23T09:20:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%98%81%ED%99%94%ED%99%80%EB%A6%AC%EB%8D%B0%EC%9D%B4/</loc>
     <lastmod>2006-01-22T16:19:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%AA%85%EC%98%88%EC%9D%98-%EC%A0%84%EB%8B%B9-%EC%A2%8B%EC%95%84%ED%95%98%EB%8A%94-%EB%B0%B0%EC%9A%B0%EB%93%A4/</loc>
     <lastmod>2006-01-22T14:55:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/claude-bolling-and-jean-pierre-rampal-sentimentale-from-suite-for-flute-and-jazz-piano/</loc>
     <lastmod>2006-01-22T14:03:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EB%8F%99%EB%AC%BC%EC%9B%90-%EC%9C%A0%EB%A6%AC%EB%A1%9C-%EB%A7%8C%EB%93%A0-%EB%B0%B0/</loc>
     <lastmod>2006-01-21T10:55:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/freeze-frame/</loc>
     <lastmod>2006-01-18T01:05:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EB%A9%94%EB%AA%A8/%EC%98%A4%EB%A5%B4%EA%B3%A8/</loc>
     <lastmod>2006-01-17T01:13:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%8F%8C%EA%B3%A0%EB%9E%98%EA%B0%80-%EB%B0%94%EB%8B%A4%EB%A1%9C-%EA%B0%84-%EA%B9%8C%EB%8B%AD%EC%9D%80/</loc>
     <lastmod>2006-01-15T22:29:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%ED%8D%BC%EA%B0%91%EB%8B%88%EB%8B%A4.-%E3%85%8E%E3%85%8E%E3%85%8E/</loc>
     <lastmod>2006-01-15T20:12:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%97%B0%EB%B4%89-%EC%9E%90%EB%8F%99%EA%B3%84%EC%82%B0%EA%B8%B0/</loc>
     <lastmod>2006-01-13T09:30:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/with-%EB%AA%A8%EB%82%9C%EB%8F%8C/</loc>
     <lastmod>2006-01-10T22:46:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EA%B9%80%EB%AF%BC%EA%B8%B0/</loc>
     <lastmod>2006-01-10T22:27:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/relax-its-just-sex/</loc>
     <lastmod>2006-01-08T11:30:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bluest-bluesliving-blues-go-go-train/</loc>
     <lastmod>2006-01-07T18:20:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%97%AC%EC%9E%90%EB%8A%94-%EB%A7%88%EC%9D%8C%EC%9D%B4-%EC%9D%B4%EB%BB%90%EC%95%BC/</loc>
     <lastmod>2006-01-04T22:27:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%82%AC%EB%AC%B4%EC%8B%A4%EC%97%90%EC%84%9C-%EC%97%B0%EC%95%A0%EC%A7%88-%ED%95%98%EB%A9%B4...%EC%86%94%EB%A1%9C%EB%B6%80%EB%8C%80%EC%9D%98-%EC%9D%91%EC%A7%95%ED%8E%8C/</loc>
     <lastmod>2006-01-04T22:21:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/bossa-nostra-feat-bruna-lopez-inverno-cybophonia-remix/</loc>
     <lastmod>2006-01-04T21:59:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EA%B2%80%EC%83%89%EC%96%B4-%EC%82%AC%EB%9E%91%EC%9C%BC%EB%A1%9C-%EA%B8%B0%EB%B3%B8%EA%B2%80%EC%83%89%ED%95%98%EC%97%AC-%EC%B4%9D-5427%EA%B6%8C-%EA%B2%80%EC%83%89%EB%90%98%EC%97%88%EC%8A%B5%EB%8B%88%EB%8B%A4./</loc>
     <lastmod>2006-01-03T02:20:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%82%AC%EB%9E%91%EC%9D%80-%EB%B3%80%ED%95%A9%EB%8B%88%EB%8B%A4./</loc>
     <lastmod>2006-01-01T23:25:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/christopher-walken-%EC%B6%9C%EC%97%B0%EC%9E%91-%EC%A4%91-%EB%B3%B8-%EC%98%81%ED%99%94/</loc>
     <lastmod>2005-12-28T22:01:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EA%B8%B0%ED%83%80%EB%A6%AC%EC%8A%A4%ED%8A%B8/</loc>
     <lastmod>2005-12-26T21:35:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EA%B8%B0%ED%83%80%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%A2%85%EC%9D%B4%EA%B1%B0%EC%9A%B8-%EC%86%8D%EC%9D%98-%EC%8A%AC%ED%94%88%EC%96%BC%EA%B5%B4-_-%EC%B5%9C%EB%AF%BC%EC%8B%9D-/</loc>
     <lastmod>2005-12-26T02:12:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EC%99%80%EC%9D%B4%ED%82%A4%ED%82%A4-%EB%B8%8C%EB%9D%BC%EB%8D%94%EC%8A%A4/</loc>
     <lastmod>2005-12-26T01:28:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/eternal-sunshine/</loc>
     <lastmod>2005-12-25T20:45:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/%EA%B8%B0%ED%83%80%EB%A6%AC%EC%8A%A4%ED%8A%B8_2/</loc>
     <lastmod>2005-12-18T17:53:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/software-engineering/ego-oriented-programming/</loc>
     <lastmod>2005-12-16T13:16:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%9E%91%EC%97%85-%EC%8B%A4%ED%8C%A8.-.-./</loc>
     <lastmod>2005-12-16T12:41:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EA%B3%A0%EC%96%91%EC%9D%B4-%EC%B9%A0%EB%B3%B5%EA%B5%B0/</loc>
     <lastmod>2005-12-12T00:37:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/house-%EC%9D%8C%EC%95%85%EC%9D%84-%EB%93%A3%EB%8A%94-%EC%9D%B4%EC%9C%A0./</loc>
     <lastmod>2005-12-04T12:24:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/babyoilband-sleepwalker-050615.mp3/</loc>
     <lastmod>2005-11-26T22:59:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/babyoilbanddo-you-believe-masterdemo050626.mp3/</loc>
     <lastmod>2005-11-26T22:56:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/myworks/blues-%EC%9D%B4%EB%B3%84%EC%9D%98-%EC%A2%85%EC%B0%A9%EC%97%AD/</loc>
     <lastmod>2005-11-26T22:50:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/myworks/house-test5-051126/</loc>
     <lastmod>2005-11-26T22:33:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%9D%B4%EB%9F%B0-%EA%B5%AC%EA%B8%80%EB%A6%AC%ED%95%9C-%EA%B2%BD%EC%9A%B0%EA%B0%80/</loc>
     <lastmod>2005-11-25T14:18:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/%EB%8F%8C%EA%B3%A0%EB%9E%98/</loc>
     <lastmod>2005-11-25T12:52:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/%EC%82%AC%EB%9E%91/</loc>
     <lastmod>2005-11-25T12:52:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/tags/%EC%B1%85/</loc>
     <lastmod>2005-11-25T12:52:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://bluedskim.github.io/posts/%EB%A9%94%EB%AA%A8/%EC%B1%85%EC%82%AC%EC%9E%90/</loc>
     <lastmod>2005-11-25T12:52:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   
 </urlset>

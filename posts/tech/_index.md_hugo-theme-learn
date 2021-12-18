@@ -1,0 +1,15 @@
++++
+title = "Tech"
+date = 2021-12-18T10:36:39+09:00
+weight = 5
+chapter = true
+pre = "<b>X. </b>"
++++
+
+### Chapter X
+
+# Some Chapter title
+
+{{% children %}}
+
+Lorem Ipsum.
