@@ -6,11 +6,7 @@
     <description>Recent content in 프로그래밍 on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Mon, 15 Feb 2021 00:16:55 +0900</lastBuildDate>
-    
-	<atom:link href="https://bluedskim.github.io/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 15 Feb 2021 00:16:55 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Taurus 부하 테스트 툴 데모</title>
       <link>https://bluedskim.github.io/posts/tech/taurus-%EB%B6%80%ED%95%98-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%88%B4-%EB%8D%B0%EB%AA%A8/</link>
@@ -26,7 +22,7 @@
       <pubDate>Sat, 09 Jan 2021 22:59:55 +0900</pubDate>
       
       <guid>https://bluedskim.github.io/posts/tech/karate-restful-api-%EC%8B%9C%EB%82%98%EB%A6%AC%EC%98%A4%EA%B8%B0%EB%B0%98-%EC%9E%90%EB%8F%99%ED%99%94-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%8D%B0%EB%AA%A8/</guid>
-      <description>&amp;ldquo;美 IT업계서 45년 일한 어느 개발자의 여섯가지 조언&amp;rdquo;이라는 기사의 다섯번째 조언은 바로 &amp;lsquo;테스트 자동화&#39;다. 그대</description>
+      <description>&amp;ldquo;美 IT업계서 45년 일한 어느 개발자의 여섯가지 조언&amp;rdquo;이라는 기사의 다섯번째 조언은 바로 &amp;lsquo;테스트 자동화&amp;rsqu</description>
     </item>
     
   </channel>

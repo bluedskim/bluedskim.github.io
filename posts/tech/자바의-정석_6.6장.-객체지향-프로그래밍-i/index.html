@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.68.3" />
+    <meta name="generator" content="Hugo 0.92.2" />
     <meta name="description" content="bluedskim@gmail.com">
 <meta name="author" content="Dennis">
 
@@ -12,20 +12,20 @@
     <title>자바의 정석 6장. 객체지향 프로그래밍 I :: Do What You Want To Do</title>
 
     
-    <link href="/css/nucleus.css?1639794325" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1639794325" rel="stylesheet">
-    <link href="/css/hybrid.css?1639794325" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1639794325" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1639794325" rel="stylesheet">
-    <link href="/css/auto-complete.css?1639794325" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1639794325" rel="stylesheet">
-    <link href="/css/theme.css?1639794325" rel="stylesheet">
-    <link href="/css/tabs.css?1639794325" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1639794325" rel="stylesheet">
+    <link href="/css/nucleus.css?1696908906" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1696908906" rel="stylesheet">
+    <link href="/css/hybrid.css?1696908906" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1696908906" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1696908906" rel="stylesheet">
+    <link href="/css/auto-complete.css?1696908906" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1696908906" rel="stylesheet">
+    <link href="/css/theme.css?1696908906" rel="stylesheet">
+    <link href="/css/tabs.css?1696908906" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1696908906" rel="stylesheet">
     
-    <link href="/custom.css?1639794325" rel="stylesheet">
+    <link href="/custom.css?1696908906" rel="stylesheet">
 
-    <script src="/js/jquery-3.3.1.min.js?1639794325"></script>
+    <script src="/js/jquery-3.3.1.min.js?1696908906"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -135,14 +135,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1639794325"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1639794325"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1696908906"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1696908906"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/bluedskim.github.io\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1639794325"></script>
+<script type="text/javascript" src="/js/search.js?1696908906"></script>
 
     
   </div>
@@ -13461,7 +13461,7 @@
 </ul>
 <h5 id="32-클래스-변수와-인스턴스-변수">3.2 클래스 변수와 인스턴스 변수</h5>
 <blockquote>
-<p>클래스변수를 참조할 때는 &lsquo;클래스이름.클래스변수'의 형태로 하는 것이 좋다. 인스턴스 참조 변수를 통해서도 클래스변수를 사용할 수 있지만 이렇게 하면 클래스 변수를 인스턴스 변수로 오해하기 쉽기 때문이다. p.249</p>
+<p>클래스변수를 참조할 때는 &lsquo;클래스이름.클래스변수&rsquo;의 형태로 하는 것이 좋다. 인스턴스 참조 변수를 통해서도 클래스변수를 사용할 수 있지만 이렇게 하면 클래스 변수를 인스턴스 변수로 오해하기 쉽기 때문이다. p.249</p>
 </blockquote>
 <h5 id="33-메서드-p249">3.3 메서드 p.249</h5>
 <p>메서드를 사용하는 이유</p>
@@ -13489,7 +13489,7 @@
 <ul>
 <li>option1</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">public</span> ActionResult <span style="color:#a6e22e">Edit</span>(MyClass <span style="color:#66d9ef">class</span><span style="color:#960050;background-color:#1e0010">)</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">public</span> ActionResult <span style="color:#a6e22e">Edit</span>(MyClass <span style="color:#66d9ef">class</span><span style="color:#960050;background-color:#1e0010">)</span>
 {
     <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#66d9ef">class</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">Editable</span>)
        <span style="color:#66d9ef">return</span> null;
@@ -13500,7 +13500,7 @@
 </code></pre></div><ul>
 <li>option2</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">public</span> ActionResult <span style="color:#a6e22e">Edit</span>(MyClass <span style="color:#66d9ef">class</span><span style="color:#960050;background-color:#1e0010">)</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">public</span> ActionResult <span style="color:#a6e22e">Edit</span>(MyClass <span style="color:#66d9ef">class</span><span style="color:#960050;background-color:#1e0010">)</span>
 {
     <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">class</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">Editable</span>)
     {
@@ -13515,7 +13515,7 @@
 </code></pre></div><ul>
 <li>option3</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">public</span> ActionResult <span style="color:#a6e22e">Edit</span>(MyClass <span style="color:#66d9ef">class</span><span style="color:#960050;background-color:#1e0010">)</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">public</span> ActionResult <span style="color:#a6e22e">Edit</span>(MyClass <span style="color:#66d9ef">class</span><span style="color:#960050;background-color:#1e0010">)</span>
 {
     ActionResult rv <span style="color:#f92672">=</span> null;
     <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">class</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">Editable</span>)
@@ -13528,13 +13528,13 @@
 </code></pre></div></li>
 <li>
 <p>p.260 매개변수의 유효성 검사 : <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalArgumentException.html">IllegalArgumentException</a>을 쓰자</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">float</span> <span style="color:#a6e22e">divide</span>(<span style="color:#66d9ef">int</span> x, <span style="color:#66d9ef">int</span> y) {
-    <span style="color:#75715e">// 작업을 하기 전에 나누는 수(y)가 0인지 확인한다
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span>(y <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) {
-        System.out.println(<span style="color:#e6db74">&#34;0으로 나눌 수 없습니다.&#34;</span>);
-        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>; <span style="color:#75715e">// 매개변수가 유효하지 않으므로 메서드를 종료한다.
-</span><span style="color:#75715e"></span>    }
-    <span style="color:#66d9ef">return</span> x <span style="color:#f92672">/</span> (<span style="color:#66d9ef">float</span>)y;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">float</span> <span style="color:#a6e22e">divide</span>(<span style="color:#66d9ef">int</span> x, <span style="color:#66d9ef">int</span> y) {
+	<span style="color:#75715e">// 작업을 하기 전에 나누는 수(y)가 0인지 확인한다
+</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">if</span>(y <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) {
+		System.out.println(<span style="color:#e6db74">&#34;0으로 나눌 수 없습니다.&#34;</span>);
+		<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>; <span style="color:#75715e">// 매개변수가 유효하지 않으므로 메서드를 종료한다.
+</span><span style="color:#75715e"></span>	}
+	<span style="color:#66d9ef">return</span> x <span style="color:#f92672">/</span> (<span style="color:#66d9ef">float</span>)y;
 }
 </code></pre></div></li>
 </ul>
@@ -13547,7 +13547,7 @@
 <ul>
 <li>클래스 메소드의 용도를 유틸리티성 메소드로 한정하는 것이 좋다. 단순히 호출 속도를 빠르게 하기 위해 쓰는것은 오용할 위험이 있다.(p.278)</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Fee</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Fee</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
 	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> payment<span style="color:#f92672">;</span>
 	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">calculatePayment</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> amount<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
 		<span style="color:#66d9ef">return</span> amount <span style="color:#f92672">+</span> 1<span style="color:#f92672">;</span>
@@ -13564,9 +13564,9 @@
 </code></pre></div><blockquote>
 <p>알아두면 좋아요!(p.282) → 하지만 이런식으로 사용할거면 클래스 메소드로 만들어야 한다. 왜냐하면&hellip;</p>
 </blockquote>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">int</span> result <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> MemberCall<span style="color:#f92672">().</span><span style="color:#a6e22e">instanceMethod1</span><span style="color:#f92672">();</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">int</span> result <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> MemberCall<span style="color:#f92672">().</span><span style="color:#a6e22e">instanceMethod1</span><span style="color:#f92672">();</span>
 </code></pre></div><h5 id="44-메소드-오버로딩의-장점--chain-overloaded-functions54에서-생성자를-이런식으로-호출하고-있음">4.4 메소드 오버로딩의 장점 : chain overloaded functions(5.4에서 생성자를 이런식으로 호출하고 있음)</h5>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">calculate</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> a<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">calculate</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> a<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
 	<span style="color:#66d9ef">return</span> calculate<span style="color:#f92672">(</span>a<span style="color:#f92672">,</span> 0<span style="color:#f92672">);</span>
 <span style="color:#f92672">}</span>
 
@@ -13582,7 +13582,7 @@
 <p>생성자에서 다른 생성자를 호출할 때는 첫 줄에서만 가능하다.</p>
 </blockquote>
 <h5 id="55-생성자를-이용한-인스턴스의-복사">5.5 생성자를 이용한 인스턴스의 복사</h5>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Car</span> <span style="color:#f92672">{</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Car</span> <span style="color:#f92672">{</span>
 	String color<span style="color:#f92672">;</span>
 	String gearType<span style="color:#f92672">;</span>
 	<span style="color:#66d9ef">int</span> door<span style="color:#f92672">;</span>
@@ -23682,19 +23682,19 @@ Car copied <span style="color:#f92672">=</span> original<span style="color:#f926
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1639794325"></script>
-    <script src="/js/perfect-scrollbar.min.js?1639794325"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1639794325"></script>
-    <script src="/js/jquery.sticky.js?1639794325"></script>
-    <script src="/js/featherlight.min.js?1639794325"></script>
-    <script src="/js/highlight.pack.js?1639794325"></script>
+    <script src="/js/clipboard.min.js?1696908906"></script>
+    <script src="/js/perfect-scrollbar.min.js?1696908906"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1696908906"></script>
+    <script src="/js/jquery.sticky.js?1696908906"></script>
+    <script src="/js/featherlight.min.js?1696908906"></script>
+    <script src="/js/highlight.pack.js?1696908906"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1639794325"></script>
-    <script src="/js/learn.js?1639794325"></script>
-    <script src="/js/hugo-learn.js?1639794325"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1696908906"></script>
+    <script src="/js/learn.js?1696908906"></script>
+    <script src="/js/hugo-learn.js?1696908906"></script>
     
         
-            <script src="/mermaid/mermaid.js?1639794325"></script>
+            <script src="/mermaid/mermaid.js?1696908906"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.68.3" />
+    <meta name="generator" content="Hugo 0.92.2" />
     <meta name="description" content="bluedskim@gmail.com">
 <meta name="author" content="Dennis">
 
@@ -12,20 +12,20 @@
     <title>Karate, RESTful API 시나리오기반 자동화 테스트 데모 :: Do What You Want To Do</title>
 
     
-    <link href="/css/nucleus.css?1639794325" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1639794325" rel="stylesheet">
-    <link href="/css/hybrid.css?1639794325" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1639794325" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1639794325" rel="stylesheet">
-    <link href="/css/auto-complete.css?1639794325" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1639794325" rel="stylesheet">
-    <link href="/css/theme.css?1639794325" rel="stylesheet">
-    <link href="/css/tabs.css?1639794325" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1639794325" rel="stylesheet">
+    <link href="/css/nucleus.css?1696908905" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1696908905" rel="stylesheet">
+    <link href="/css/hybrid.css?1696908905" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1696908905" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1696908905" rel="stylesheet">
+    <link href="/css/auto-complete.css?1696908905" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1696908905" rel="stylesheet">
+    <link href="/css/theme.css?1696908905" rel="stylesheet">
+    <link href="/css/tabs.css?1696908905" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1696908905" rel="stylesheet">
     
-    <link href="/custom.css?1639794325" rel="stylesheet">
+    <link href="/custom.css?1696908905" rel="stylesheet">
 
-    <script src="/js/jquery-3.3.1.min.js?1639794325"></script>
+    <script src="/js/jquery-3.3.1.min.js?1696908905"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -135,14 +135,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1639794325"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1639794325"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1696908905"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1696908905"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/bluedskim.github.io\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1639794325"></script>
+<script type="text/javascript" src="/js/search.js?1696908905"></script>
 
     
   </div>
@@ -13404,7 +13404,7 @@
         
 
 
-<p><a href="https://zdnet.co.kr/view/?no=20210108154359">&ldquo;美 IT업계서 45년 일한 어느 개발자의 여섯가지 조언&rdquo;</a>이라는 기사의 다섯번째 조언은 바로 &lsquo;테스트 자동화'다.
+<p><a href="https://zdnet.co.kr/view/?no=20210108154359">&ldquo;美 IT업계서 45년 일한 어느 개발자의 여섯가지 조언&rdquo;</a>이라는 기사의 다섯번째 조언은 바로 &lsquo;테스트 자동화&rsquo;다.
 그대로 인용하자면 &ldquo;테스트를 자동화 하면 충분히 시험된 코드를 사용할 수 있어 자신감과 속도감을 가진 개발 작업에 몰두할 수 있다&quot;는 주장이다.</p>
 <p>자동화 테스트를 적극적으로 개발에 활용한 방법론이 바로 TDD(Test-Driven-Development)다. TDD의 테스트는 단위 테스트(Unit Test)이며 모든 기능에 대한 단위테스트를 먼저 작성한 후 개발하도록 하고 있다.</p>
 <p>하지만 개발을 진행하다보면 현실적으로 단위테스트를 모두 먼저 만들고 코딩을 진행하는 것이 불가능할 때가 많다.
@@ -13435,7 +13435,7 @@
 <p>(테스트용 api는 mock api 제공 서비스인 <a href="https://reqres.in/">https://reqres.in/</a> 를 사용했다)</p>
 <h1 id="샘플">샘플</h1>
 <h2 id="설정-파일-작성--karate-configjs">설정 파일 작성 : karate-config.js</h2>
-<pre><code>function fn() {
+<pre tabindex="0"><code>function fn() {
 	var config = {
 		&quot;여기에 공통 환경 변수를 넣으세요&quot;:&quot;&quot;
 		,&quot;baseUrl&quot;: &quot;https://reqres.in&quot;
@@ -13446,7 +13446,7 @@
 <p>하나의 feature 파일에는 여러 개의 feature를 넣을 수 있으며 feature에는 여러 개의 시나리오를 넣을 수 있다.
 시나리오는 step들로 구성되어 있다.</p>
 <p>아래의 내용을 복사하여 test.feature 라는 이름으로 저장하자.</p>
-<pre><code>Feature: 사용자
+<pre tabindex="0"><code>Feature: 사용자
 
 Background:
 	* def conf = read('karate-config.js')
@@ -13501,7 +13501,7 @@ Scenario: 사용자 crud
 <h2 id="결과-확인">결과 확인</h2>
 <h3 id="터미널에서-확인">터미널에서 확인</h3>
 <p>실행 후 터미널에서 결과가 간략하게 출력된다.</p>
-<pre><code>Karate version: 0.9.6
+<pre tabindex="0"><code>Karate version: 0.9.6
 ======================================================
 elapsed:   3.14 | threads:    1 | thread time: 1.94 
 features:     1 | ignored:    0 | efficiency: 0.62
@@ -23582,19 +23582,19 @@ scenarios:    1 | passed:     1 | failed: 0
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1639794325"></script>
-    <script src="/js/perfect-scrollbar.min.js?1639794325"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1639794325"></script>
-    <script src="/js/jquery.sticky.js?1639794325"></script>
-    <script src="/js/featherlight.min.js?1639794325"></script>
-    <script src="/js/highlight.pack.js?1639794325"></script>
+    <script src="/js/clipboard.min.js?1696908906"></script>
+    <script src="/js/perfect-scrollbar.min.js?1696908906"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1696908906"></script>
+    <script src="/js/jquery.sticky.js?1696908906"></script>
+    <script src="/js/featherlight.min.js?1696908906"></script>
+    <script src="/js/highlight.pack.js?1696908906"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1639794325"></script>
-    <script src="/js/learn.js?1639794325"></script>
-    <script src="/js/hugo-learn.js?1639794325"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1696908906"></script>
+    <script src="/js/learn.js?1696908906"></script>
+    <script src="/js/hugo-learn.js?1696908906"></script>
     
         
-            <script src="/mermaid/mermaid.js?1639794325"></script>
+            <script src="/mermaid/mermaid.js?1696908906"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

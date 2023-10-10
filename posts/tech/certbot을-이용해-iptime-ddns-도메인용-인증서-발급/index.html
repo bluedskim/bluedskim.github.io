@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.68.3" />
+    <meta name="generator" content="Hugo 0.92.2" />
     <meta name="description" content="bluedskim@gmail.com">
 <meta name="author" content="Dennis">
 
@@ -12,20 +12,20 @@
     <title>Certbot을 이용해 Iptime DDNS 도메인용 인증서 발급 :: Do What You Want To Do</title>
 
     
-    <link href="/css/nucleus.css?1639794325" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1639794325" rel="stylesheet">
-    <link href="/css/hybrid.css?1639794325" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1639794325" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1639794325" rel="stylesheet">
-    <link href="/css/auto-complete.css?1639794325" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1639794325" rel="stylesheet">
-    <link href="/css/theme.css?1639794325" rel="stylesheet">
-    <link href="/css/tabs.css?1639794325" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1639794325" rel="stylesheet">
+    <link href="/css/nucleus.css?1696908905" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1696908905" rel="stylesheet">
+    <link href="/css/hybrid.css?1696908905" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1696908905" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1696908905" rel="stylesheet">
+    <link href="/css/auto-complete.css?1696908905" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1696908905" rel="stylesheet">
+    <link href="/css/theme.css?1696908905" rel="stylesheet">
+    <link href="/css/tabs.css?1696908905" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1696908905" rel="stylesheet">
     
-    <link href="/custom.css?1639794325" rel="stylesheet">
+    <link href="/custom.css?1696908905" rel="stylesheet">
 
-    <script src="/js/jquery-3.3.1.min.js?1639794325"></script>
+    <script src="/js/jquery-3.3.1.min.js?1696908905"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -135,14 +135,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1639794325"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1639794325"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1696908905"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1696908905"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/bluedskim.github.io\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1639794325"></script>
+<script type="text/javascript" src="/js/search.js?1696908905"></script>
 
     
   </div>
@@ -13422,17 +13422,17 @@
 
 IMPORTANT NOTES:
 - Congratulations! Your certificate and chain have been saved at:
-    /etc/letsencrypt/live/samba.iptime.org/fullchain.pem
-    Your key file has been saved at:
-    /etc/letsencrypt/live/samba.iptime.org/privkey.pem
-    Your cert will expire on 2020-08-08. To obtain a new or tweaked
-    version of this certificate in the future, simply run certbot-auto
-    again. To non-interactively renew *all* of your certificates, run
-    &quot;certbot-auto renew&quot;
+	/etc/letsencrypt/live/samba.iptime.org/fullchain.pem
+	Your key file has been saved at:
+	/etc/letsencrypt/live/samba.iptime.org/privkey.pem
+	Your cert will expire on 2020-08-08. To obtain a new or tweaked
+	version of this certificate in the future, simply run certbot-auto
+	again. To non-interactively renew *all* of your certificates, run
+	&quot;certbot-auto renew&quot;
 - If you like Certbot, please consider supporting our work by:
 
-    Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
-    Donating to EFF:                    https://eff.org/donate-le 
+	Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
+	Donating to EFF:                    https://eff.org/donate-le 
 </code></pre>
 <p>여기 경로에(/etc/letsencrypt/live/samba.iptime.org) 인증서 파일이 잘 생성되었다.</p>
 <h4 id="pkcs12-생성">PKCS12 생성</h4>
@@ -13449,9 +13449,9 @@ IMPORTANT NOTES:
 <pre><code>server:
   port: 8082
   ssl:
-    key-store: classpath:sambando.p12
-    key-store-password: 지정한_암호를_넣는다
-    keyStoreType: PKCS12 
+	key-store: classpath:sambando.p12
+	key-store-password: 지정한_암호를_넣는다
+	keyStoreType: PKCS12 
 </code></pre>
 <p>SpringBoot을 기동한 후 인증서 정보를 확인해보자</p>
 <p>[![Certbot을 이용해 Iptime DDNS 도메인용 인증서 발급.png](/images/Certbot을 이용해 Iptime DDNS 도메인용 인증서 발급.png)](/images/Certbot을 이용해 Iptime DDNS 도메인용 인증서 발급.png)</p>
@@ -23518,19 +23518,19 @@ IMPORTANT NOTES:
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1639794325"></script>
-    <script src="/js/perfect-scrollbar.min.js?1639794325"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1639794325"></script>
-    <script src="/js/jquery.sticky.js?1639794325"></script>
-    <script src="/js/featherlight.min.js?1639794325"></script>
-    <script src="/js/highlight.pack.js?1639794325"></script>
+    <script src="/js/clipboard.min.js?1696908905"></script>
+    <script src="/js/perfect-scrollbar.min.js?1696908905"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1696908905"></script>
+    <script src="/js/jquery.sticky.js?1696908905"></script>
+    <script src="/js/featherlight.min.js?1696908905"></script>
+    <script src="/js/highlight.pack.js?1696908905"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1639794325"></script>
-    <script src="/js/learn.js?1639794325"></script>
-    <script src="/js/hugo-learn.js?1639794325"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1696908905"></script>
+    <script src="/js/learn.js?1696908905"></script>
+    <script src="/js/hugo-learn.js?1696908905"></script>
     
         
-            <script src="/mermaid/mermaid.js?1639794325"></script>
+            <script src="/mermaid/mermaid.js?1696908905"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

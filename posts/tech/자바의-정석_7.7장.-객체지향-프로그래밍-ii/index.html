@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.68.3" />
+    <meta name="generator" content="Hugo 0.92.2" />
     <meta name="description" content="bluedskim@gmail.com">
 <meta name="author" content="Dennis">
 
@@ -12,20 +12,20 @@
     <title>자바의 정석 7장. 객체지향 프로그래밍 II :: Do What You Want To Do</title>
 
     
-    <link href="/css/nucleus.css?1639794325" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1639794325" rel="stylesheet">
-    <link href="/css/hybrid.css?1639794325" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1639794325" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1639794325" rel="stylesheet">
-    <link href="/css/auto-complete.css?1639794325" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1639794325" rel="stylesheet">
-    <link href="/css/theme.css?1639794325" rel="stylesheet">
-    <link href="/css/tabs.css?1639794325" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1639794325" rel="stylesheet">
+    <link href="/css/nucleus.css?1696908906" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1696908906" rel="stylesheet">
+    <link href="/css/hybrid.css?1696908906" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1696908906" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1696908906" rel="stylesheet">
+    <link href="/css/auto-complete.css?1696908906" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1696908906" rel="stylesheet">
+    <link href="/css/theme.css?1696908906" rel="stylesheet">
+    <link href="/css/tabs.css?1696908906" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1696908906" rel="stylesheet">
     
-    <link href="/custom.css?1639794325" rel="stylesheet">
+    <link href="/custom.css?1696908906" rel="stylesheet">
 
-    <script src="/js/jquery-3.3.1.min.js?1639794325"></script>
+    <script src="/js/jquery-3.3.1.min.js?1696908906"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -135,14 +135,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1639794325"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1639794325"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1696908906"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1696908906"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/bluedskim.github.io\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1639794325"></script>
+<script type="text/javascript" src="/js/search.js?1696908906"></script>
 
     
   </div>
@@ -13421,7 +13421,7 @@
 💡 inherit과 extend 둘 다 '상속'으로 번역하기 때문에 상속의 의미를 좁게 인식하게 만들 수 있다.
 </aside>
 <h5 id="jpa의-최상위-모델객체-예제">JPA의 최상위 모델객체 예제</h5>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@MappedSuperclass</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@MappedSuperclass</span>
 <span style="color:#a6e22e">@EntityListeners</span><span style="color:#f92672">(</span>AuditingEntityListener<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">)</span>
 <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BaseEntity</span> <span style="color:#f92672">{</span>
     <span style="color:#a6e22e">@Id</span>
@@ -13543,8 +13543,8 @@
 <h3 id="7-인터페이스">7. 인터페이스</h3>
 <h4 id="71-인터페이스란">7.1 인터페이스란?</h4>
 <ul>
-<li>인터페이스는 일종의 추상 &lsquo;클래스'이다. ☛ 자식이 인스턴스를 만들 수 있으므로 추상클래스는 클래스다. 하지만 인터페이스는 자식이 인스턴스를 만들 수 없으므로 클래스가 아니다.</li>
-<li>인터페이스는 명세서(specfication)다. <em>&ldquo;인터페이스의 이름에는 주로 Fightable과 같이 &lsquo;~을 할 수 있는'의 의미인 able로 끝나는 것들이 많은데, 그 이유는 어떠한 기능 또는 행위를 하는데 필요한 메서드를 제공한다는 의미를 강조하기 위해서이다.&quot;</em></li>
+<li>인터페이스는 일종의 추상 &lsquo;클래스&rsquo;이다. ☛ 자식이 인스턴스를 만들 수 있으므로 추상클래스는 클래스다. 하지만 인터페이스는 자식이 인스턴스를 만들 수 없으므로 클래스가 아니다.</li>
+<li>인터페이스는 명세서(specfication)다. <em>&ldquo;인터페이스의 이름에는 주로 Fightable과 같이 &lsquo;~을 할 수 있는&rsquo;의 의미인 able로 끝나는 것들이 많은데, 그 이유는 어떠한 기능 또는 행위를 하는데 필요한 메서드를 제공한다는 의미를 강조하기 위해서이다.&quot;</em></li>
 <li>인터페이스는 구현체에 대한 관점이다.</li>
 </ul>
 <aside>
@@ -23649,19 +23649,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1639794325"></script>
-    <script src="/js/perfect-scrollbar.min.js?1639794325"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1639794325"></script>
-    <script src="/js/jquery.sticky.js?1639794325"></script>
-    <script src="/js/featherlight.min.js?1639794325"></script>
-    <script src="/js/highlight.pack.js?1639794325"></script>
+    <script src="/js/clipboard.min.js?1696908906"></script>
+    <script src="/js/perfect-scrollbar.min.js?1696908906"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1696908906"></script>
+    <script src="/js/jquery.sticky.js?1696908906"></script>
+    <script src="/js/featherlight.min.js?1696908906"></script>
+    <script src="/js/highlight.pack.js?1696908906"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1639794325"></script>
-    <script src="/js/learn.js?1639794325"></script>
-    <script src="/js/hugo-learn.js?1639794325"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1696908906"></script>
+    <script src="/js/learn.js?1696908906"></script>
+    <script src="/js/hugo-learn.js?1696908906"></script>
     
         
-            <script src="/mermaid/mermaid.js?1639794325"></script>
+            <script src="/mermaid/mermaid.js?1696908906"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

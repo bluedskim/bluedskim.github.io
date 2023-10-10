@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.68.3" />
+    <meta name="generator" content="Hugo 0.92.2" />
     <meta name="description" content="bluedskim@gmail.com">
 <meta name="author" content="Dennis">
 
@@ -12,20 +12,20 @@
     <title>자바의 정석 8장. 예외처리 :: Do What You Want To Do</title>
 
     
-    <link href="/css/nucleus.css?1639794325" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1639794325" rel="stylesheet">
-    <link href="/css/hybrid.css?1639794325" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1639794325" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1639794325" rel="stylesheet">
-    <link href="/css/auto-complete.css?1639794325" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1639794325" rel="stylesheet">
-    <link href="/css/theme.css?1639794325" rel="stylesheet">
-    <link href="/css/tabs.css?1639794325" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1639794325" rel="stylesheet">
+    <link href="/css/nucleus.css?1696908906" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1696908906" rel="stylesheet">
+    <link href="/css/hybrid.css?1696908906" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1696908906" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1696908906" rel="stylesheet">
+    <link href="/css/auto-complete.css?1696908906" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1696908906" rel="stylesheet">
+    <link href="/css/theme.css?1696908906" rel="stylesheet">
+    <link href="/css/tabs.css?1696908906" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1696908906" rel="stylesheet">
     
-    <link href="/custom.css?1639794325" rel="stylesheet">
+    <link href="/custom.css?1696908906" rel="stylesheet">
 
-    <script src="/js/jquery-3.3.1.min.js?1639794325"></script>
+    <script src="/js/jquery-3.3.1.min.js?1696908906"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -135,14 +135,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1639794325"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1639794325"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1696908906"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1696908906"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/bluedskim.github.io\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1639794325"></script>
+<script type="text/javascript" src="/js/search.js?1696908906"></script>
 
     
   </div>
@@ -13439,7 +13439,7 @@
 💡 catch 구문은 다형성의 좋은 샘플.
 </aside>
 <h5 id="catch-순서-p421">catch 순서 p.421</h5>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> chap8<span style="color:#f92672">;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> chap8<span style="color:#f92672">;</span>
 
 <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ExceptionEx7</span> <span style="color:#f92672">{</span>
 	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String args<span style="color:#f92672">[])</span> <span style="color:#f92672">{</span>
@@ -13475,7 +13475,7 @@
 <ul>
 <li>before</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Scanner scanner <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Scanner scanner <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
 <span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
     scanner <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Scanner<span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> File<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;test.txt&#34;</span><span style="color:#f92672">));</span>
     <span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span>scanner<span style="color:#f92672">.</span><span style="color:#a6e22e">hasNext</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
@@ -13491,7 +13491,7 @@
 </code></pre></div><ul>
 <li>after</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">try</span> <span style="color:#f92672">(</span>Scanner scanner <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Scanner<span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> File<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;test.txt&#34;</span><span style="color:#f92672">)))</span> <span style="color:#f92672">{</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">try</span> <span style="color:#f92672">(</span>Scanner scanner <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Scanner<span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> File<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;test.txt&#34;</span><span style="color:#f92672">)))</span> <span style="color:#f92672">{</span>
     <span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span>scanner<span style="color:#f92672">.</span><span style="color:#a6e22e">hasNext</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
         System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>scanner<span style="color:#f92672">.</span><span style="color:#a6e22e">nextLine</span><span style="color:#f92672">());</span>
     <span style="color:#f92672">}</span>
@@ -13500,7 +13500,7 @@
 <span style="color:#f92672">}</span>
 </code></pre></div><h4 id="110-사용자정의-예외-만들기">1.10 사용자정의 예외 만들기</h4>
 <blockquote>
-<p>필요에 따라 예외처리의 여부를 선택할 수 있는 &lsquo;unchecked'예외가 강제적인 &lsquo;checked예외'보다 더 환영받고 있다 👉 하지만 예외처리를 강제하기 위해서는 checked예외가 필요</p>
+<p>필요에 따라 예외처리의 여부를 선택할 수 있는 &lsquo;unchecked&rsquo;예외가 강제적인 &lsquo;checked예외&rsquo;보다 더 환영받고 있다 👉 하지만 예외처리를 강제하기 위해서는 checked예외가 필요</p>
 </blockquote>
 <h4 id="112-연결된-예외chained-exception">1.12 연결된 예외(chained exception)</h4>
 <blockquote>
@@ -23574,19 +23574,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1639794325"></script>
-    <script src="/js/perfect-scrollbar.min.js?1639794325"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1639794325"></script>
-    <script src="/js/jquery.sticky.js?1639794325"></script>
-    <script src="/js/featherlight.min.js?1639794325"></script>
-    <script src="/js/highlight.pack.js?1639794325"></script>
+    <script src="/js/clipboard.min.js?1696908906"></script>
+    <script src="/js/perfect-scrollbar.min.js?1696908906"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1696908906"></script>
+    <script src="/js/jquery.sticky.js?1696908906"></script>
+    <script src="/js/featherlight.min.js?1696908906"></script>
+    <script src="/js/highlight.pack.js?1696908906"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1639794325"></script>
-    <script src="/js/learn.js?1639794325"></script>
-    <script src="/js/hugo-learn.js?1639794325"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1696908906"></script>
+    <script src="/js/learn.js?1696908906"></script>
+    <script src="/js/hugo-learn.js?1696908906"></script>
     
         
-            <script src="/mermaid/mermaid.js?1639794325"></script>
+            <script src="/mermaid/mermaid.js?1696908906"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
