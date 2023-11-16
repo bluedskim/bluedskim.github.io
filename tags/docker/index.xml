@@ -6,24 +6,21 @@
     <description>Recent content in Docker on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Wed, 14 Jul 2021 23:59:28 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 14 Jul 2021 23:59:28 +0900</lastBuildDate>
+    <atom:link href="https://bluedskim.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker로 Oracle12 설치하기</title>
       <link>https://bluedskim.github.io/posts/tech/oracleondocker/</link>
       <pubDate>Wed, 14 Jul 2021 23:59:28 +0900</pubDate>
-      
       <guid>https://bluedskim.github.io/posts/tech/oracleondocker/</guid>
       <description>oracle 12 enterprise 버전 설치에 대한 글이다. 다른 버전 설치는 이렇게 복잡하지 않은 듯. 아래 링크 참조 Docker로 Oracle xe 11g 설치 : https://romeoh.tistory.com/entry/Oracle-docker%EC%97%90-Oracle-11g-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0 [Docker] Oracle DB(Oracle 12c) 구성하기 : https://gomguk.tistory.com/69 Docker를 어</description>
     </item>
-    
     <item>
       <title>pixelbook에 Docker설치하기</title>
       <link>https://bluedskim.github.io/posts/tech/pixelbook%EC%97%90-docker%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</link>
       <pubDate>Sun, 28 Apr 2019 13:38:28 +0900</pubDate>
-      
       <guid>https://bluedskim.github.io/posts/tech/pixelbook%EC%97%90-docker%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</guid>
       <description>reddit에 의하면 Chromeos 72 이상에서 docker-ce 최신 버전 설치에 문제가 없다고 한다(참고 : https://www.reddit.com/r/Crostini/comments/aoc9i7/docker_working_now/) 여기 가이드대로 진행하면 문제없이 설치되는데 https://docs.docker.com/install/linux/docker-ce/debian/ 한가지 주의사항이 있다. add-apt-repository</description>
     </item>
-    
   </channel>
 </rss>

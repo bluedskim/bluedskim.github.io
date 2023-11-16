@@ -6,15 +6,14 @@
     <description>Recent content in 이글루스 on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Sun, 23 Jun 2019 16:36:35 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/tags/%EC%9D%B4%EA%B8%80%EB%A3%A8%EC%8A%A4/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 23 Jun 2019 16:36:35 +0900</lastBuildDate>
+    <atom:link href="https://bluedskim.github.io/tags/%EC%9D%B4%EA%B8%80%EB%A3%A8%EC%8A%A4/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>이글루스 블로그 이사완료</title>
       <link>https://bluedskim.github.io/posts/tech/%EC%9D%B4%EA%B8%80%EB%A3%A8%EC%8A%A4%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%9D%B4%EC%82%AC%EC%99%84%EB%A3%8C/</link>
       <pubDate>Sun, 23 Jun 2019 16:36:35 +0900</pubDate>
-      
       <guid>https://bluedskim.github.io/posts/tech/%EC%9D%B4%EA%B8%80%EB%A3%A8%EC%8A%A4%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%9D%B4%EC%82%AC%EC%99%84%EB%A3%8C/</guid>
       <description>약 한달간 코딩으로 이글루스 블로그 백업 웹서비스 완성. 아직 해결해야할 문제가 몇가지 남아있기는 한데 beta버전 정도는 되겠다. 간단한 작업일 줄 알았는데 다른</description>
     </item>
-    
   </channel>
 </rss>

@@ -6,78 +6,63 @@
     <description>Recent content in Pixelbook on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Wed, 04 Sep 2019 13:25:00 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/tags/pixelbook/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Sep 2019 13:25:00 +0900</lastBuildDate>
+    <atom:link href="https://bluedskim.github.io/tags/pixelbook/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>픽셀북에서 쓸만한 리눅스용 이미지 뷰어 &amp; Image Annotation Tool 비교 중</title>
       <link>https://bluedskim.github.io/posts/tech/%ED%94%BD%EC%85%80%EB%B6%81%EC%97%90%EC%84%9C-%EC%93%B8%EB%A7%8C%ED%95%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B7%B0%EC%96%B4_image-annotation-tool/</link>
       <pubDate>Wed, 04 Sep 2019 13:25:00 +0900</pubDate>
-      
       <guid>https://bluedskim.github.io/posts/tech/%ED%94%BD%EC%85%80%EB%B6%81%EC%97%90%EC%84%9C-%EC%93%B8%EB%A7%8C%ED%95%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B7%B0%EC%96%B4_image-annotation-tool/</guid>
       <description>이미지 뷰어 ristretto : 적당히 가볍고 무난하다. thumbnail 크기만 더 크게 할 수 있으면 좋은데 -.- feh : 가장 가볍다. 하지만 GUI가 없어(?) 불편 Image Annotation Tool shutter : 캡쳐를 전제로 한 프로</description>
     </item>
-    
     <item>
       <title>주위에 크롬북을 추천하시겠습니까?</title>
       <link>https://bluedskim.github.io/posts/tech/%EC%A3%BC%EC%9C%84%EC%97%90-%ED%81%AC%EB%A1%AC%EB%B6%81%EC%9D%84-%EC%B6%94%EC%B2%9C%ED%95%98%EA%B2%A0%EC%8A%B5%EB%8B%88%EA%B9%8C/</link>
       <pubDate>Wed, 14 Aug 2019 09:26:56 +0900</pubDate>
-      
       <guid>https://bluedskim.github.io/posts/tech/%EC%A3%BC%EC%9C%84%EC%97%90-%ED%81%AC%EB%A1%AC%EB%B6%81%EC%9D%84-%EC%B6%94%EC%B2%9C%ED%95%98%EA%B2%A0%EC%8A%B5%EB%8B%88%EA%B9%8C/</guid>
       <description>구글에서 설문 메일이 왔다. 혹시나 사은품으로 픽셀북2 줄까 해서 응답했지만 그럴리가 없겠지. &amp;ldquo;주위에 크롬북을 추천하시겠습니까?&amp;rdquo</description>
     </item>
-    
     <item>
       <title>픽셀북(모든 크롬북?)에서 Quake게임 실행하기</title>
       <link>https://bluedskim.github.io/posts/tech/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C-quake%EA%B2%8C%EC%9E%84-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/</link>
       <pubDate>Tue, 13 Aug 2019 18:28:39 +0900</pubDate>
-      
       <guid>https://bluedskim.github.io/posts/tech/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C-quake%EA%B2%8C%EC%9E%84-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/</guid>
       <description>Pixelbook은 상당히 사양이 괜찮은 노트북이지만 즐길 수 있는 적당한 FPS게임이 없다. 안드로이드용 FPS는 있지만 뭔가 부족한 느낌이다. 키보드 지원</description>
     </item>
-    
     <item>
       <title>Pixelbook에서 Flutter로 앱 개발</title>
       <link>https://bluedskim.github.io/posts/tech/pixelbook%EC%97%90%EC%84%9C-flutter%EB%A1%9C-%EC%95%B1-%EA%B0%9C%EB%B0%9C_1/</link>
       <pubDate>Wed, 31 Jul 2019 15:14:43 +0900</pubDate>
-      
       <guid>https://bluedskim.github.io/posts/tech/pixelbook%EC%97%90%EC%84%9C-flutter%EB%A1%9C-%EC%95%B1-%EA%B0%9C%EB%B0%9C_1/</guid>
       <description>픽셀북으로 안드로이드 개발을 편하게 할 수 있다고 해서 시도하고 있는데 편하다고 하는 이유는 픽셀북에서 바로 안드로이드 앱 화면을 띄울 수 있기 때문인것 같다. 그러나</description>
     </item>
-    
     <item>
       <title>Pixelbook에서 Reaper사용하기</title>
       <link>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/pixelbook%EC%97%90%EC%84%9C-reaper%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link>
       <pubDate>Wed, 10 Jul 2019 17:24:26 +0900</pubDate>
-      
       <guid>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/pixelbook%EC%97%90%EC%84%9C-reaper%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid>
       <description>크롬북 리눅스 앱에서 오디오 재생을 지원한것은 얼마되지 않았다. (OS버전 74부터 지원) 주위에서 리눅스를 쓰는 사람도 없지만 쓴다고 해도 오디오 편집까지 하는</description>
     </item>
-    
     <item>
       <title>각종 작업 소요시간 체크용 우분투용 command line stopwatch</title>
       <link>https://bluedskim.github.io/posts/tech/%EC%93%B8%EB%A7%8C%ED%95%9C-ubuntu%EC%9A%A9-command-line-%ED%83%80%EC%9D%B4%EB%A8%B8/</link>
       <pubDate>Sun, 24 Mar 2019 10:38:28 +0900</pubDate>
-      
       <guid>https://bluedskim.github.io/posts/tech/%EC%93%B8%EB%A7%8C%ED%95%9C-ubuntu%EC%9A%A9-command-line-%ED%83%80%EC%9D%B4%EB%A8%B8/</guid>
       <description>간단하게 터미널에서 작업 소요 시간을 체크 할 수 있는 방법들을 찾아봤는데 https://superuser.com/questions/611538/is-there-a-way-to-display-a-countdown-or-stopwatch-timer-in-a-terminal terdon 이라는 분이 알려준 방법은 잘 동작하였지만 https://superuser.com/questions/611538/is-there-a-way-to-display-a-countdown-or-stopwatch-timer-in-a-terminal?answertab=active#tab-top ~/.bashrc 파일에 함수를 추가하고 터미널에서 바로</description>
     </item>
-    
     <item>
       <title>Pixelbook Crostini Linux앱에서 한글 입력하기</title>
       <link>https://bluedskim.github.io/posts/tech/howtoinputkorenwithcrostinionpixelbook/</link>
       <pubDate>Sat, 16 Mar 2019 22:38:28 +0900</pubDate>
-      
       <guid>https://bluedskim.github.io/posts/tech/howtoinputkorenwithcrostinionpixelbook/</guid>
       <description>영어/알파벳을 쓰는 나라 사람들은 이해하기 힘든 문제가 바로 2byte 이상 문자 입출력 문제이다. 최신 기술일수록 한글지원이 미약한 경우가 많은데 역시나 크롬북도 예외가</description>
     </item>
-    
     <item>
       <title>Pixelbook에서 hugo 설치</title>
       <link>https://bluedskim.github.io/posts/tech/hugoonpixelbook/</link>
       <pubDate>Fri, 15 Mar 2019 22:38:28 +0900</pubDate>
-      
       <guid>https://bluedskim.github.io/posts/tech/hugoonpixelbook/</guid>
       <description>설치 ASUS Chromebook C100PA-DS03 에 설치할 때와 마찬가지로 최신버전을 설치하려면 deb 파일을 다운 받아야 한다. 현재 최신 버전은 hugo_0.54.0-1_amd64.deb 이다. 하지만 libsass1이 필요하다고 하니 먼저</description>
     </item>
-    
   </channel>
 </rss>

@@ -6,159 +6,126 @@
     <description>Recent content in Java on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Fri, 17 Dec 2021 22:31:51 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Dec 2021 22:31:51 +0900</lastBuildDate>
+    <atom:link href="https://bluedskim.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>자바의 정석 8장. 예외처리</title>
       <link>https://bluedskim.github.io/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_8%EC%9E%A5.-%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/</link>
       <pubDate>Fri, 17 Dec 2021 22:31:51 +0900</pubDate>
-      
       <guid>https://bluedskim.github.io/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_8%EC%9E%A5.-%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/</guid>
       <description>8장. 예외처리 💡 [요청하는 자 : &#34;나는 이 작업을 어떻게 하는지 몰라. 하지만 너는 알고 있지. 나 대신 이 일을 해줄래?&#34; 요청받는 자 : &#34;나도 도와 주고 싶어. 그래</description>
     </item>
-    
     <item>
       <title>자바의 정석 7장. 객체지향 프로그래밍 II</title>
       <link>https://bluedskim.github.io/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/</link>
       <pubDate>Tue, 07 Dec 2021 23:11:03 +0900</pubDate>
-      
       <guid>https://bluedskim.github.io/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/</guid>
       <description>자바의 정석(남궁성) 독후감 형식의 글입니다 7장. 객체지향 프로그래밍 II 1.1상속의 정의와 장점 재사용성을 높히고 코드의 중복을 제거하여 생산성과 유지보수</description>
     </item>
-    
     <item>
       <title>자바의 정석 6장. 객체지향 프로그래밍 I</title>
       <link>https://bluedskim.github.io/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_6.6%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-i/</link>
       <pubDate>Mon, 06 Dec 2021 11:33:01 +0900</pubDate>
-      
       <guid>https://bluedskim.github.io/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_6.6%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-i/</guid>
       <description>자바의 정석(남궁성) 독후감 형식의 글입니다 6장. 객체지향 프로그래밍1 1. 객체지향언어 1.2 객체지향언어 현실 세계를 프로그램의 세계에서 표현하기 위한 방법 p.230</description>
     </item>
-    
     <item>
       <title>Java 디자인 패턴-12.Composite</title>
       <link>https://bluedskim.github.io/posts/tech/javadesignpattern-12.composite/</link>
       <pubDate>Tue, 29 Jun 2021 22:47:34 +0900</pubDate>
-      
       <guid>https://bluedskim.github.io/posts/tech/javadesignpattern-12.composite/</guid>
       <description>Composite 패턴 &amp;ldquo;하나의 주문은 여러 상품으로 구성될 수 있다. 이 상품들은 여러 개의 다른 박스에 담길 수 있으며 이 박스들 역시 더 큰 박스에 담길 수 있다. 이런 구조</description>
     </item>
-    
     <item>
       <title>Java 디자인 패턴-11.Decorator</title>
       <link>https://bluedskim.github.io/posts/tech/javadesignpattern-11.decorator/</link>
       <pubDate>Thu, 03 Jun 2021 22:31:58 +0900</pubDate>
-      
       <guid>https://bluedskim.github.io/posts/tech/javadesignpattern-11.decorator/</guid>
       <description>(Java 디자인 패턴 스터디 모집 중 : https://github.com/bluedskim/javaDesignPatterns) Decorator 패턴 (출처:https://stefanhenneken.net/2019/02/16/iec-61131-3</description>
     </item>
-    
     <item>
       <title>Java 디자인 패턴-10.Adapter</title>
       <link>https://bluedskim.github.io/posts/tech/javadesignpattern-10.adapter/</link>
       <pubDate>Tue, 01 Jun 2021 16:12:55 +0900</pubDate>
-      
       <guid>https://bluedskim.github.io/posts/tech/javadesignpattern-10.adapter/</guid>
       <description>(Java 디자인 패턴 스터디 모집 중 : https://github.com/bluedskim/javaDesignPatterns) Adapter(적응) 패턴 (출처:https://educationinaction.org/water-roc</description>
     </item>
-    
     <item>
       <title>Java 디자인 패턴-09.Observer</title>
       <link>https://bluedskim.github.io/posts/tech/javadesignpattern-09.observer/</link>
       <pubDate>Fri, 28 May 2021 21:36:41 +0900</pubDate>
-      
       <guid>https://bluedskim.github.io/posts/tech/javadesignpattern-09.observer/</guid>
       <description>(Java 디자인 패턴 스터디 모집 중 : https://github.com/bluedskim/javaDesignPatterns) Observer 패턴 다이어그램 (출처:https://dev.to/danlee0528/design-pattern-the</description>
     </item>
-    
     <item>
       <title>Java 디자인 패턴-08.Facade</title>
       <link>https://bluedskim.github.io/posts/tech/javadesignpattern-08.facade/</link>
       <pubDate>Tue, 25 May 2021 12:17:16 +0900</pubDate>
-      
       <guid>https://bluedskim.github.io/posts/tech/javadesignpattern-08.facade/</guid>
       <description>(Java 디자인 패턴 스터디 모집 중 : https://github.com/bluedskim/javaDesignPatterns) Facade 패턴 다이어그램 (출처:https://www.geeksforgeeks.org/facade-design-</description>
     </item>
-    
     <item>
       <title>Java 디자인 패턴-07.State</title>
       <link>https://bluedskim.github.io/posts/tech/javadesignpattern-07.state/</link>
       <pubDate>Mon, 24 May 2021 08:46:28 +0900</pubDate>
-      
       <guid>https://bluedskim.github.io/posts/tech/javadesignpattern-07.state/</guid>
       <description>(Java 디자인 패턴 스터디 모집 중 : https://github.com/bluedskim/javaDesignPatterns) 패턴 다이어그램 &amp;ldquo;어떤 객체의 상태에 따라 행위가 변경되는 경우 유용한 패턴&amp;rdquo; (출처:https:/</description>
     </item>
-    
     <item>
       <title>Java 디자인 패턴-05.Proxy</title>
       <link>https://bluedskim.github.io/posts/tech/javadesignpattern-05.proxy/</link>
       <pubDate>Tue, 18 May 2021 12:23:26 +0900</pubDate>
-      
       <guid>https://bluedskim.github.io/posts/tech/javadesignpattern-05.proxy/</guid>
       <description>(Java 디자인 패턴 스터디 모집 중 : https://github.com/bluedskim/javaDesignPatterns) 패턴 다이어그램 &amp;ldquo;특정 클래스 대신 그 클래스와 동일한 인터페이스를 구현한 래퍼 wrapper 클래스 Proxy 를 이용한다&amp;rdquo</description>
     </item>
-    
     <item>
       <title>Java 디자인 패턴-04.Iterators</title>
       <link>https://bluedskim.github.io/posts/tech/javadesignpattern-04.iterators/</link>
       <pubDate>Fri, 14 May 2021 08:57:45 +0900</pubDate>
-      
       <guid>https://bluedskim.github.io/posts/tech/javadesignpattern-04.iterators/</guid>
       <description>(Java 디자인 패턴 스터디 모집 중 : https://github.com/bluedskim/javaDesignPatterns) 패턴 다이어그램 &amp;ldquo;하나의 집합Collection의 모든 요소를 모두 접근하는 방법은 여러가지가 있을 수 있다&amp;r</description>
     </item>
-    
     <item>
       <title>Java 디자인 패턴-03.Command</title>
       <link>https://bluedskim.github.io/posts/tech/javadesignpattern-03.command/</link>
       <pubDate>Wed, 12 May 2021 00:48:24 +0900</pubDate>
-      
       <guid>https://bluedskim.github.io/posts/tech/javadesignpattern-03.command/</guid>
       <description>(Java 디자인 패턴 스터디 모집 중 : https://github.com/bluedskim/javaDesignPatterns) (출처:https://refactoring.guru/design-patterns/command) 해결하</description>
     </item>
-    
     <item>
       <title>Java 디자인 패턴-02.Factory Method</title>
       <link>https://bluedskim.github.io/posts/tech/javadesignpattern-factory/</link>
       <pubDate>Tue, 11 May 2021 00:00:00 +0900</pubDate>
-      
       <guid>https://bluedskim.github.io/posts/tech/javadesignpattern-factory/</guid>
       <description>(Java 디자인 패턴 스터디 모집 중 : https://github.com/bluedskim/javaDesignPatterns) (출처:Abstract Factory Design Pattern in C#) 해결하려는 문제 생성자를 직접 호출해서 객체를 생성하는 경우 해당 객체와 클라이언트가 강하</description>
     </item>
-    
     <item>
       <title>Java 디자인 패턴-01.Singleton</title>
       <link>https://bluedskim.github.io/posts/tech/javadesignpattern-singleton/</link>
       <pubDate>Fri, 07 May 2021 12:13:37 +0900</pubDate>
-      
       <guid>https://bluedskim.github.io/posts/tech/javadesignpattern-singleton/</guid>
       <description>(Java 디자인 패턴 스터디 모집 중 : https://github.com/bluedskim/javaDesignPatterns) (출처 : refactoring.guru : Singleton pattern) 해결하려는 문제 공유된 자원은 대체로 한정적이다. 이 자원을 무분별하게 사용하는 경우 쉽게 고갈될 수 있다. 용도</description>
     </item>
-    
     <item>
       <title>Jboss의 Modeshape로 영단어를 복수형 혹은 단수형으로 변환하기</title>
       <link>https://bluedskim.github.io/posts/tech/jboss%EC%9D%98-modeshape%EB%A1%9C-%EC%98%81%EB%8B%A8%EC%96%B4%EB%A5%BC-%EB%B3%B5%EC%88%98%ED%98%95%EB%8B%A8%EC%88%98%ED%98%95%EC%9C%BC%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/</link>
       <pubDate>Sun, 11 Oct 2020 21:39:37 +0900</pubDate>
-      
       <guid>https://bluedskim.github.io/posts/tech/jboss%EC%9D%98-modeshape%EB%A1%9C-%EC%98%81%EB%8B%A8%EC%96%B4%EB%A5%BC-%EB%B3%B5%EC%88%98%ED%98%95%EB%8B%A8%EC%88%98%ED%98%95%EC%9C%BC%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/</guid>
       <description>java 프로젝트를 진행할 때 단수 영단어를 복수로 변환하거나 반대로 복수 영단어를 단수로 변환해야 하는 경우가 있다. Jboss에서 제공하는 Modeshape의 Inflector</description>
     </item>
-    
     <item>
       <title>VS Code에서 Spring Java &#43; Gradle 프로젝트 리프레시 하기</title>
       <link>https://bluedskim.github.io/posts/tech/vs-code-spring-java-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A6%AC%ED%94%84%EB%A0%88%EC%8B%9C-%ED%95%98%EA%B8%B0/</link>
       <pubDate>Tue, 06 Oct 2020 23:09:54 +0900</pubDate>
-      
       <guid>https://bluedskim.github.io/posts/tech/vs-code-spring-java-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A6%AC%ED%94%84%EB%A0%88%EC%8B%9C-%ED%95%98%EA%B8%B0/</guid>
       <description>VS code에서 Java 개발은 아직 갈 길이 먼듯. 가령 Tomcat 기반의 MVC 어플리케이션 개발 시 불편한 점이 많다. 제대로 된 플러그인이 없기 때문 -.- 반면 Spring Boot 기반이라면 웹 MVC</description>
     </item>
-    
     <item>
       <title>아일랜드의 대표적 ISP인 에이레콤의 WEP 키 제너레이터</title>
       <link>https://bluedskim.github.io/posts/software-engineering/%EC%95%84%EC%9D%BC%EB%9E%9C%EB%93%9C%EC%9D%98-%EB%8C%80%ED%91%9C%EC%A0%81-isp%EC%9D%B8-%EC%97%90%EC%9D%B4%EB%A0%88%EC%BD%A4%EC%9D%98-wep-%ED%82%A4-%EC%A0%9C%EB%84%88%EB%A0%88%EC%9D%B4%ED%84%B0/</link>
       <pubDate>Tue, 11 Nov 2008 18:38:00 +0900</pubDate>
-      
       <guid>https://bluedskim.github.io/posts/software-engineering/%EC%95%84%EC%9D%BC%EB%9E%9C%EB%93%9C%EC%9D%98-%EB%8C%80%ED%91%9C%EC%A0%81-isp%EC%9D%B8-%EC%97%90%EC%9D%B4%EB%A0%88%EC%BD%A4%EC%9D%98-wep-%ED%82%A4-%EC%A0%9C%EB%84%88%EB%A0%88%EC%9D%B4%ED%84%B0/</guid>
       <description>아일랜드의 대표적 ISP인 에이레콤 의 경우 무선공유기에 디폴트로 세팅된 SSID를 통해서 WEP키를 해킹할수 있는 어이없는 경우가 있다. 해킹툴은 java로</description>
     </item>
-    
   </channel>
 </rss>

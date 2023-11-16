@@ -6,15 +6,14 @@
     <description>Recent content in architecture on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Wed, 11 Aug 2021 10:05:20 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/tags/architecture/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Aug 2021 10:05:20 +0900</lastBuildDate>
+    <atom:link href="https://bluedskim.github.io/tags/architecture/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>&#39;Back Office&#39; vs &#39;Back End&#39;</title>
       <link>https://bluedskim.github.io/posts/tech/back-office-vs-back-end/</link>
       <pubDate>Wed, 11 Aug 2021 10:05:20 +0900</pubDate>
-      
       <guid>https://bluedskim.github.io/posts/tech/back-office-vs-back-end/</guid>
       <description>IT프로젝트에서 back office와 back end를 혼용하면 망할 수 있다. front office와 front end도 마찬가지. 다음 두 문장을 비교해보자 &amp;lsquo;백 오피</description>
     </item>
-    
   </channel>
 </rss>

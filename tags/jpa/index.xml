@@ -6,15 +6,14 @@
     <description>Recent content in JPA on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Mon, 27 Apr 2020 21:26:43 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/tags/jpa/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Apr 2020 21:26:43 +0900</lastBuildDate>
+    <atom:link href="https://bluedskim.github.io/tags/jpa/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Spring Boot &#43; JPA &#43; REST &#43; HATEOAS &#43; Lombok 그리고 VS code 환경에서 getter()를 찾지 못하는 문제</title>
       <link>https://bluedskim.github.io/posts/tech/spring-boot-&#43;-jpa-&#43;-rest-&#43;-hateoas-with-lombok/</link>
       <pubDate>Mon, 27 Apr 2020 21:26:43 +0900</pubDate>
-      
       <guid>https://bluedskim.github.io/posts/tech/spring-boot-&#43;-jpa-&#43;-rest-&#43;-hateoas-with-lombok/</guid>
       <description>증상은 제목과 같다. 아래 소스코드에서 보듯 @Data 어노테이션이 있는데도 불구하고 api 호출 결과에 word 변수의 값이 출력되지 않는다 Java소스 1 2 3 4 5 6 7 8 9 10 11</description>
     </item>
-    
   </channel>
 </rss>

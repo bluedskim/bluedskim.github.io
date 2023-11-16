@@ -6,15 +6,14 @@
     <description>Recent content in 소프트웨어 프로젝트 on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Tue, 12 Dec 2017 22:38:28 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Dec 2017 22:38:28 +0900</lastBuildDate>
+    <atom:link href="https://bluedskim.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>소프트웨어 프로젝트-구현 단계</title>
       <link>https://bluedskim.github.io/posts/tech/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B5%AC%ED%98%84_%EB%8B%A8%EA%B3%84/</link>
       <pubDate>Tue, 12 Dec 2017 22:38:28 +0900</pubDate>
-      
       <guid>https://bluedskim.github.io/posts/tech/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B5%AC%ED%98%84_%EB%8B%A8%EA%B3%84/</guid>
       <description>SI 소프트웨어 프로젝트-구현 단계에서 발생하는 각종 이슈,상념들과 각종 S/W 개발 트렌드 들에 대한 발표자료로 모 대학 문헌정보학과 학생들을 상대로 진행한 강의 자료</description>
     </item>
-    
   </channel>
 </rss>

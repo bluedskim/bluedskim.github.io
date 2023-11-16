@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.92.2" />
+    <meta name="generator" content="Hugo 0.120.4">
     <meta name="description" content="bluedskim@gmail.com">
 <meta name="author" content="Dennis">
 
@@ -12,20 +12,20 @@
     <title>Java 디자인 패턴-09.Observer :: Do What You Want To Do</title>
 
     
-    <link href="/css/nucleus.css?1696909243" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1696909243" rel="stylesheet">
-    <link href="/css/hybrid.css?1696909243" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1696909243" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1696909243" rel="stylesheet">
-    <link href="/css/auto-complete.css?1696909243" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1696909243" rel="stylesheet">
-    <link href="/css/theme.css?1696909243" rel="stylesheet">
-    <link href="/css/tabs.css?1696909243" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1696909243" rel="stylesheet">
+    <link href="/css/nucleus.css?1700096505" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1700096505" rel="stylesheet">
+    <link href="/css/hybrid.css?1700096505" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1700096505" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1700096505" rel="stylesheet">
+    <link href="/css/auto-complete.css?1700096505" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1700096505" rel="stylesheet">
+    <link href="/css/theme.css?1700096505" rel="stylesheet">
+    <link href="/css/tabs.css?1700096505" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1700096505" rel="stylesheet">
     
-    <link href="/custom.css?1696909243" rel="stylesheet">
+    <link href="/custom.css?1700096505" rel="stylesheet">
 
-    <script src="/js/jquery-3.3.1.min.js?1696909243"></script>
+    <script src="/js/jquery-3.3.1.min.js?1700096505"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -135,14 +135,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1696909243"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1696909243"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1700096505"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1700096505"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/bluedskim.github.io\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1696909243"></script>
+<script type="text/javascript" src="/js/search.js?1700096505"></script>
 
     
   </div>
@@ -6013,8 +6013,8 @@
  
   
     
-      <li data-nav-id="/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%82%B4%EC%A7%91-%EB%A7%88%EB%A0%A8-%ED%8F%AC%EA%B8%B0...-%EA%B1%8D-%EC%A0%84%EC%84%B8%EA%B0%80-%ED%8E%B8%ED%95%98%EB%8B%A4.-/" title="내집 마련 포기... 걍 전세가 편하다. --;" class="dd-item ">
-        <a href="/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%82%B4%EC%A7%91-%EB%A7%88%EB%A0%A8-%ED%8F%AC%EA%B8%B0...-%EA%B1%8D-%EC%A0%84%EC%84%B8%EA%B0%80-%ED%8E%B8%ED%95%98%EB%8B%A4.-/">
+      <li data-nav-id="/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%82%B4%EC%A7%91-%EB%A7%88%EB%A0%A8-%ED%8F%AC%EA%B8%B0...-%EA%B1%8D-%EC%A0%84%EC%84%B8%EA%B0%80-%ED%8E%B8%ED%95%98%EB%8B%A4.--/" title="내집 마련 포기... 걍 전세가 편하다. --;" class="dd-item ">
+        <a href="/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%82%B4%EC%A7%91-%EB%A7%88%EB%A0%A8-%ED%8F%AC%EA%B8%B0...-%EA%B1%8D-%EC%A0%84%EC%84%B8%EA%B0%80-%ED%8E%B8%ED%95%98%EB%8B%A4.--/">
         내집 마련 포기... 걍 전세가 편하다. --;
         
         </a>
@@ -13432,184 +13432,184 @@
 <ul>
 <li>PropertyChangeSupport 를 사용한 observer 패턴 샘플</li>
 <li>observable(Subject, Publisher) : NewsAgency.java
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> net.dskim.desingpattern.observer<span style="color:#f92672">;</span>
-
-<span style="color:#f92672">import</span> java.beans.PropertyChangeListener<span style="color:#f92672">;</span>
-<span style="color:#f92672">import</span> java.beans.PropertyChangeSupport<span style="color:#f92672">;</span>
-
-<span style="color:#75715e">/**
-</span><span style="color:#75715e"> * Subject(Publisher)
-</span><span style="color:#75715e"> */</span>
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">NewsAgency</span> <span style="color:#f92672">{</span>
-	<span style="color:#66d9ef">private</span> String previousNews<span style="color:#f92672">;</span>
-
-	<span style="color:#66d9ef">private</span> PropertyChangeSupport support<span style="color:#f92672">;</span>
-
-	<span style="color:#66d9ef">public</span> <span style="color:#a6e22e">NewsAgency</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-		support <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> PropertyChangeSupport<span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">);</span>
-	<span style="color:#f92672">}</span>
-
-	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">addPropertyChangeListener</span><span style="color:#f92672">(</span>PropertyChangeListener pcl<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-		support<span style="color:#f92672">.</span><span style="color:#a6e22e">addPropertyChangeListener</span><span style="color:#f92672">(</span>pcl<span style="color:#f92672">);</span>
-	<span style="color:#f92672">}</span>
-
-	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">removePropertyChangeListener</span><span style="color:#f92672">(</span>PropertyChangeListener pcl<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-		support<span style="color:#f92672">.</span><span style="color:#a6e22e">removePropertyChangeListener</span><span style="color:#f92672">(</span>pcl<span style="color:#f92672">);</span>
-	<span style="color:#f92672">}</span>
-
-	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setNews</span><span style="color:#f92672">(</span>String news<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-		support<span style="color:#f92672">.</span><span style="color:#a6e22e">firePropertyChange</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;news&#34;</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">previousNews</span><span style="color:#f92672">,</span> news<span style="color:#f92672">);</span>
-		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">previousNews</span> <span style="color:#f92672">=</span> news<span style="color:#f92672">;</span>
-
-	<span style="color:#f92672">}</span>
-<span style="color:#f92672">}</span></code></pre></td></tr></table>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">package</span> net.dskim.desingpattern.observer;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> java.beans.PropertyChangeListener;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> java.beans.PropertyChangeSupport;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * Subject(Publisher)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> */</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">NewsAgency</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">private</span> String previousNews;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">private</span> PropertyChangeSupport support;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#a6e22e">NewsAgency</span>() {
+</span></span><span style="display:flex;"><span>		support <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> PropertyChangeSupport(<span style="color:#66d9ef">this</span>);
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">addPropertyChangeListener</span>(PropertyChangeListener pcl) {
+</span></span><span style="display:flex;"><span>		support.<span style="color:#a6e22e">addPropertyChangeListener</span>(pcl);
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">removePropertyChangeListener</span>(PropertyChangeListener pcl) {
+</span></span><span style="display:flex;"><span>		support.<span style="color:#a6e22e">removePropertyChangeListener</span>(pcl);
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setNews</span>(String news) {
+</span></span><span style="display:flex;"><span>		support.<span style="color:#a6e22e">firePropertyChange</span>(<span style="color:#e6db74">&#34;news&#34;</span>, <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">previousNews</span>, news);
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">previousNews</span> <span style="color:#f92672">=</span> news;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></td></tr></table>
 </div>
 </div></li>
 <li>observer(Listener, Subscriber) : NewsChannel.java
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> net.dskim.desingpattern.observer<span style="color:#f92672">;</span>
-
-<span style="color:#f92672">import</span> java.beans.PropertyChangeEvent<span style="color:#f92672">;</span>
-<span style="color:#f92672">import</span> java.beans.PropertyChangeListener<span style="color:#f92672">;</span>
-
-<span style="color:#75715e">/**
-</span><span style="color:#75715e"> * Listener(Subscriber)
-</span><span style="color:#75715e"> */</span>
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">NewsChannel</span> <span style="color:#66d9ef">implements</span> PropertyChangeListener <span style="color:#f92672">{</span>
-
-	<span style="color:#66d9ef">private</span> String news<span style="color:#f92672">;</span>
-
-	<span style="color:#a6e22e">@Override</span>
-	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">propertyChange</span><span style="color:#f92672">(</span>PropertyChangeEvent evt<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-		news <span style="color:#f92672">=</span> <span style="color:#f92672">(</span>String<span style="color:#f92672">)</span> evt<span style="color:#f92672">.</span><span style="color:#a6e22e">getNewValue</span><span style="color:#f92672">();</span>
-	<span style="color:#f92672">}</span>
-
-	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getNews</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-		<span style="color:#66d9ef">return</span> news<span style="color:#f92672">;</span>
-	<span style="color:#f92672">}</span>
-<span style="color:#f92672">}</span></code></pre></td></tr></table>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">package</span> net.dskim.desingpattern.observer;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> java.beans.PropertyChangeEvent;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> java.beans.PropertyChangeListener;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * Listener(Subscriber)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> */</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">NewsChannel</span> <span style="color:#66d9ef">implements</span> PropertyChangeListener {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">private</span> String news;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">propertyChange</span>(PropertyChangeEvent evt) {
+</span></span><span style="display:flex;"><span>		news <span style="color:#f92672">=</span> (String) evt.<span style="color:#a6e22e">getNewValue</span>();
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getNews</span>() {
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> news;
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></td></tr></table>
 </div>
 </div></li>
 <li>client : ObserverTest.java
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> net.dskim.desingpattern.observer<span style="color:#f92672">;</span>
-
-<span style="color:#f92672">import static</span> org.junit.jupiter.api.Assertions.assertEquals<span style="color:#f92672">;</span>
-
-<span style="color:#f92672">import</span> org.junit.jupiter.api.Test<span style="color:#f92672">;</span>
-
-<span style="color:#f92672">import</span> lombok.extern.slf4j.Slf4j<span style="color:#f92672">;</span>
-
-<span style="color:#a6e22e">@Slf4j</span>
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ObserverTest</span> <span style="color:#f92672">{</span>
-
-	<span style="color:#a6e22e">@Test</span>
-	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">whenChangingPCLNewsAgencyState_thenONewsChannelNotified</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-		String newsName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;뉴스 제목&#34;</span><span style="color:#f92672">;</span>
-
-		NewsAgency observable <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NewsAgency<span style="color:#f92672">();</span>
-		NewsChannel observer1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NewsChannel<span style="color:#f92672">();</span>
-		NewsChannel observer2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NewsChannel<span style="color:#f92672">();</span>
-
-		observable<span style="color:#f92672">.</span><span style="color:#a6e22e">addPropertyChangeListener</span><span style="color:#f92672">(</span>observer1<span style="color:#f92672">);</span>
-		observable<span style="color:#f92672">.</span><span style="color:#a6e22e">addPropertyChangeListener</span><span style="color:#f92672">(</span>observer2<span style="color:#f92672">);</span>
-		observable<span style="color:#f92672">.</span><span style="color:#a6e22e">setNews</span><span style="color:#f92672">(</span>newsName<span style="color:#f92672">);</span>
-
-		log<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;observer.getNews()={}&#34;</span><span style="color:#f92672">,</span> observer1<span style="color:#f92672">.</span><span style="color:#a6e22e">getNews</span><span style="color:#f92672">());</span>
-		assertEquals<span style="color:#f92672">(</span>observer1<span style="color:#f92672">.</span><span style="color:#a6e22e">getNews</span><span style="color:#f92672">(),</span> newsName<span style="color:#f92672">);</span>
-		assertEquals<span style="color:#f92672">(</span>observer2<span style="color:#f92672">.</span><span style="color:#a6e22e">getNews</span><span style="color:#f92672">(),</span> newsName<span style="color:#f92672">);</span>
-	<span style="color:#f92672">}</span>
-<span style="color:#f92672">}</span></code></pre></td></tr></table>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">package</span> net.dskim.desingpattern.observer;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import static</span> org.junit.jupiter.api.Assertions.assertEquals;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> org.junit.jupiter.api.Test;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> lombok.extern.slf4j.Slf4j;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@Slf4j</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ObserverTest</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">@Test</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">whenChangingPCLNewsAgencyState_thenONewsChannelNotified</span>() {
+</span></span><span style="display:flex;"><span>		String newsName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;뉴스 제목&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		NewsAgency observable <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NewsAgency();
+</span></span><span style="display:flex;"><span>		NewsChannel observer1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NewsChannel();
+</span></span><span style="display:flex;"><span>		NewsChannel observer2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NewsChannel();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		observable.<span style="color:#a6e22e">addPropertyChangeListener</span>(observer1);
+</span></span><span style="display:flex;"><span>		observable.<span style="color:#a6e22e">addPropertyChangeListener</span>(observer2);
+</span></span><span style="display:flex;"><span>		observable.<span style="color:#a6e22e">setNews</span>(newsName);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		log.<span style="color:#a6e22e">info</span>(<span style="color:#e6db74">&#34;observer.getNews()={}&#34;</span>, observer1.<span style="color:#a6e22e">getNews</span>());
+</span></span><span style="display:flex;"><span>		assertEquals(observer1.<span style="color:#a6e22e">getNews</span>(), newsName);
+</span></span><span style="display:flex;"><span>		assertEquals(observer2.<span style="color:#a6e22e">getNews</span>(), newsName);
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></td></tr></table>
 </div>
 </div></li>
 </ul>
@@ -23681,19 +23681,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1696909243"></script>
-    <script src="/js/perfect-scrollbar.min.js?1696909243"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1696909243"></script>
-    <script src="/js/jquery.sticky.js?1696909243"></script>
-    <script src="/js/featherlight.min.js?1696909243"></script>
-    <script src="/js/highlight.pack.js?1696909243"></script>
+    <script src="/js/clipboard.min.js?1700096505"></script>
+    <script src="/js/perfect-scrollbar.min.js?1700096505"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1700096505"></script>
+    <script src="/js/jquery.sticky.js?1700096505"></script>
+    <script src="/js/featherlight.min.js?1700096505"></script>
+    <script src="/js/highlight.pack.js?1700096505"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1696909243"></script>
-    <script src="/js/learn.js?1696909243"></script>
-    <script src="/js/hugo-learn.js?1696909243"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1700096505"></script>
+    <script src="/js/learn.js?1700096505"></script>
+    <script src="/js/hugo-learn.js?1700096505"></script>
     
         
-            <script src="/mermaid/mermaid.js?1696909243"></script>
+            <script src="/mermaid/mermaid.js?1700096505"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
