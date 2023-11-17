@@ -12,20 +12,20 @@
     <title>VScode Java코드품질검사 확장 SornarLint vs CodeScene :: Do What You Want To Do</title>
 
     
-    <link href="/css/nucleus.css?1700222845" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1700222845" rel="stylesheet">
-    <link href="/css/hybrid.css?1700222845" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1700222845" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1700222845" rel="stylesheet">
-    <link href="/css/auto-complete.css?1700222845" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1700222845" rel="stylesheet">
-    <link href="/css/theme.css?1700222845" rel="stylesheet">
-    <link href="/css/tabs.css?1700222845" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1700222845" rel="stylesheet">
+    <link href="/css/nucleus.css?1700226252" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1700226252" rel="stylesheet">
+    <link href="/css/hybrid.css?1700226252" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1700226252" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1700226252" rel="stylesheet">
+    <link href="/css/auto-complete.css?1700226252" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1700226252" rel="stylesheet">
+    <link href="/css/theme.css?1700226252" rel="stylesheet">
+    <link href="/css/tabs.css?1700226252" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1700226252" rel="stylesheet">
     
-    <link href="/custom.css?1700222845" rel="stylesheet">
+    <link href="/custom.css?1700226252" rel="stylesheet">
 
-    <script src="/js/jquery-3.3.1.min.js?1700222845"></script>
+    <script src="/js/jquery-3.3.1.min.js?1700226252"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -135,14 +135,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1700222845"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1700222845"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1700226252"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1700226252"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/bluedskim.github.io\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1700222845"></script>
+<script type="text/javascript" src="/js/search.js?1700226252"></script>
 
     
   </div>
@@ -13446,7 +13446,7 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#sornarlint">SornarLint</a></li>
+    <li><a href="#sonarlint">SonarLint</a></li>
     <li><a href="#codescene">CodeScene</a></li>
     <li><a href="#결론">결론</a></li>
   </ul>
@@ -13473,18 +13473,18 @@
         
 
 
-<p>코드 리뷰를 받을 수 없는 솔로 개발자 혹은 사실상(?) 솔로 개발자의 필수품-정적 코드 분석기. VS code-Java에도 역시나 있다.</p>
-<p><a href="https://marketplace.visualstudio.com/search?term=java%20code%20quality&amp;target=VSCode&amp;category=Linters&amp;sortBy=Installs">VS Code 공식 확장 마켓</a>에서 가장 많은 설치 건수를 가지고 있는 2개의 확장 프로그램들을 재빨리 비교해보자.</p>
-<h2 id="sornarlint">SornarLint</h2>
+<p>코드 리뷰를 받을 수 없는 솔로 개발자 혹은 사실상(?) 솔로 개발자의 필수품-정적 코드 분석기, VS code-Java에도 역시나 있다.</p>
+<p><a href="https://marketplace.visualstudio.com/search?term=java%20code%20quality&amp;target=VSCode&amp;category=Linters&amp;sortBy=Installs">VS Code 공식 확장 마켓</a>에서 가장 많은 설치 건수를 자랑하는 2개의 확장 프로그램들을 재빨리 비교해보자.</p>
+<h2 id="sonarlint">SonarLint</h2>
 <ul>
 <li>그 유명한 SonarQube가 VS code 품으로</li>
 <li>SonarSource의 모든 <a href="https://rules.sonarsource.com/java/">rule</a>들을 그대로 사용가능</li>
-<li>rule 제외 가능. 추가/수정은 불가능</li>
+<li>특정 rule 제외(무시) 가능. 추가/수정은 불가능</li>
 <li><a href="https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarlint-vscode">마켓플레이스 보기</a>, <a href="https://docs.sonarsource.com/sonarlint/vs-code/">SonarLint 공식문서</a></li>
 </ul>
 <p>실제 동작 방식을 살펴보자.</p>
 <p>아래는 어떤 문제가 있는 소스다.
-그래서 해당 구문에 SonarLint가 노란색 물결무의 밑줄을 그어줬다.
+그래서 해당 구문에 SonarLint가 노란색 물결무늬 밑줄을 그어줬다.
 그 위에 마우스를 올리면 SonarLint의 경고 내용을 확인할 수 있다.</p>
 <p><img src="../../images/sonarlint_%EB%AC%B8%EC%A0%9C%EA%B0%80-%EC%9E%88%EB%8A%94-%EC%86%8C%EC%8A%A4.png" alt="htop"></p>
 <p>혹은 problems 창에서 해당 경고를 마우스 오른쪽 버튼으로 클릭 후 &ldquo;SonarLint Open description of rule &lsquo;java:Sxxxx&rsquo;&ldquo;를 클릭하면</p>
@@ -23642,19 +23642,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1700222845"></script>
-    <script src="/js/perfect-scrollbar.min.js?1700222845"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1700222845"></script>
-    <script src="/js/jquery.sticky.js?1700222845"></script>
-    <script src="/js/featherlight.min.js?1700222845"></script>
-    <script src="/js/highlight.pack.js?1700222845"></script>
+    <script src="/js/clipboard.min.js?1700226252"></script>
+    <script src="/js/perfect-scrollbar.min.js?1700226252"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1700226252"></script>
+    <script src="/js/jquery.sticky.js?1700226252"></script>
+    <script src="/js/featherlight.min.js?1700226252"></script>
+    <script src="/js/highlight.pack.js?1700226252"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1700222845"></script>
-    <script src="/js/learn.js?1700222845"></script>
-    <script src="/js/hugo-learn.js?1700222845"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1700226252"></script>
+    <script src="/js/learn.js?1700226252"></script>
+    <script src="/js/hugo-learn.js?1700226252"></script>
     
         
-            <script src="/mermaid/mermaid.js?1700222845"></script>
+            <script src="/mermaid/mermaid.js?1700226252"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
