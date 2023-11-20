@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Fri, 17 Nov 2023 17:38:10 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 18 Nov 2023 00:03:09 +0900</lastBuildDate>
     <atom:link href="https://bluedskim.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PLANTUML - 텍스트 기반 다이어그램 드로잉 툴</title>
+      <link>https://bluedskim.github.io/posts/tech/plantuml-%ED%85%8D%EC%8A%A4%ED%8A%B8-%EA%B8%B0%EB%B0%98-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8-%EB%93%9C%EB%A1%9C%EC%9E%89-%ED%88%B4/</link>
+      <pubDate>Sat, 18 Nov 2023 00:03:09 +0900</pubDate>
+      <guid>https://bluedskim.github.io/posts/tech/plantuml-%ED%85%8D%EC%8A%A4%ED%8A%B8-%EA%B8%B0%EB%B0%98-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8-%EB%93%9C%EB%A1%9C%EC%9E%89-%ED%88%B4/</guid>
+      <description>다이어그램을 그릴 수 있는 툴들은 많다. 가장 쉽게 구할 수 있는(?) 파워포인트부터 전통을 자랑하는 Visio, IBM Rational Software 같은 끝판왕급 툴들 그리고 각종 개발툴의 플러그인 형태</description>
+    </item>
     <item>
       <title>VScode Java코드품질검사 확장 SornarLint vs CodeScene</title>
       <link>https://bluedskim.github.io/posts/tech/vscode-java%EC%BD%94%EB%93%9C%ED%92%88%EC%A7%88%EA%B2%80%EC%82%AC-%ED%99%95%EC%9E%A5-sornarlint-vs-codescene/</link>
