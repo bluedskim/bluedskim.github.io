@@ -6,70 +6,87 @@
     <description>Recent content in Categories on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Fri, 17 Dec 2021 22:31:51 +0900</lastBuildDate>
-    <atom:link href="https://bluedskim.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Dec 2021 22:31:51 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>tech</title>
       <link>https://bluedskim.github.io/categories/tech/</link>
       <pubDate>Fri, 17 Dec 2021 22:31:51 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/categories/tech/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>linux</title>
       <link>https://bluedskim.github.io/categories/linux/</link>
       <pubDate>Fri, 21 May 2021 00:00:37 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/categories/linux/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>perl</title>
       <link>https://bluedskim.github.io/categories/perl/</link>
       <pubDate>Fri, 21 May 2021 00:00:37 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/categories/perl/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>일상사</title>
       <link>https://bluedskim.github.io/categories/%EC%9D%BC%EC%83%81%EC%82%AC/</link>
       <pubDate>Thu, 22 Aug 2019 13:22:37 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/categories/%EC%9D%BC%EC%83%81%EC%82%AC/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>MyWorks</title>
       <link>https://bluedskim.github.io/categories/myworks/</link>
       <pubDate>Tue, 20 Aug 2019 17:25:01 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/categories/myworks/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>음악</title>
       <link>https://bluedskim.github.io/categories/%EC%9D%8C%EC%95%85/</link>
       <pubDate>Wed, 10 Jul 2019 17:24:26 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/categories/%EC%9D%8C%EC%95%85/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>Software Engineering</title>
       <link>https://bluedskim.github.io/categories/software-engineering/</link>
       <pubDate>Sat, 17 Jul 2010 12:53:00 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/categories/software-engineering/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>방명록</title>
       <link>https://bluedskim.github.io/categories/%EB%B0%A9%EB%AA%85%EB%A1%9D/</link>
       <pubDate>Thu, 28 Feb 2008 23:04:00 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/categories/%EB%B0%A9%EB%AA%85%EB%A1%9D/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>메모</title>
       <link>https://bluedskim.github.io/categories/%EB%A9%94%EB%AA%A8/</link>
       <pubDate>Sat, 10 Nov 2007 15:35:00 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/categories/%EB%A9%94%EB%AA%A8/</guid>
       <description></description>
     </item>
+    
   </channel>
 </rss>

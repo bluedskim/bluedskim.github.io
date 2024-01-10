@@ -6,21 +6,24 @@
     <description>Recent content in ReactJS on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Wed, 30 Sep 2020 12:37:16 +0900</lastBuildDate>
-    <atom:link href="https://bluedskim.github.io/tags/reactjs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 30 Sep 2020 12:37:16 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/tags/reactjs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PM2 - Production Process Manager for Node</title>
       <link>https://bluedskim.github.io/posts/tech/pm2-production-process-manager-for-node.js/</link>
       <pubDate>Wed, 30 Sep 2020 12:37:16 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/pm2-production-process-manager-for-node.js/</guid>
       <description>ReactJS 로 Single-page application을 개발한다면 일반적으로 build를 하고 build를 deploy하는 방식을 사용한다. 최근 진행했던 프로젝트에서도 역시</description>
     </item>
+    
     <item>
       <title>ReactJS &amp; Material UI를 이용한 빌라 이름 생성기</title>
       <link>https://bluedskim.github.io/posts/tech/reactjs-material-ui%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%B9%8C%EB%9D%BC%EC%9D%B4%EB%A6%84-%EC%83%9D%EC%84%B1%EA%B8%B0/</link>
       <pubDate>Tue, 05 May 2020 21:58:18 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/reactjs-material-ui%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%B9%8C%EB%9D%BC%EC%9D%B4%EB%A6%84-%EC%83%9D%EC%84%B1%EA%B8%B0/</guid>
       <description>Bootstrap + ReactJS 기반 예쁜 템플리트도 많지만 실제 업무에서 사용하려면 힘든 경우가 많다. 이런 템플리트류들은 기능성보다는 시각적 만족에 촛점을 맞추기 때문이라 생각. 막상</description>
     </item>
+    
   </channel>
 </rss>

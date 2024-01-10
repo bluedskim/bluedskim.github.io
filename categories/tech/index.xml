@@ -6,266 +6,339 @@
     <description>Recent content in tech on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Fri, 17 Dec 2021 22:31:51 +0900</lastBuildDate>
-    <atom:link href="https://bluedskim.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Dec 2021 22:31:51 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>자바의 정석 8장. 예외처리</title>
       <link>https://bluedskim.github.io/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_8%EC%9E%A5.-%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/</link>
       <pubDate>Fri, 17 Dec 2021 22:31:51 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_8%EC%9E%A5.-%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/</guid>
       <description>8장. 예외처리 💡 [요청하는 자 : &#34;나는 이 작업을 어떻게 하는지 몰라. 하지만 너는 알고 있지. 나 대신 이 일을 해줄래?&#34; 요청받는 자 : &#34;나도 도와 주고 싶어. 그래</description>
     </item>
+    
     <item>
       <title>자바의 정석 7장. 객체지향 프로그래밍 II</title>
       <link>https://bluedskim.github.io/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/</link>
       <pubDate>Tue, 07 Dec 2021 23:11:03 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/</guid>
       <description>자바의 정석(남궁성) 독후감 형식의 글입니다 7장. 객체지향 프로그래밍 II 1.1상속의 정의와 장점 재사용성을 높히고 코드의 중복을 제거하여 생산성과 유지보수</description>
     </item>
+    
     <item>
       <title>자바의 정석 6장. 객체지향 프로그래밍 I</title>
       <link>https://bluedskim.github.io/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_6.6%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-i/</link>
       <pubDate>Mon, 06 Dec 2021 11:33:01 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_6.6%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-i/</guid>
       <description>자바의 정석(남궁성) 독후감 형식의 글입니다 6장. 객체지향 프로그래밍1 1. 객체지향언어 1.2 객체지향언어 현실 세계를 프로그램의 세계에서 표현하기 위한 방법 p.230</description>
     </item>
+    
     <item>
       <title>&#39;Back Office&#39; vs &#39;Back End&#39;</title>
       <link>https://bluedskim.github.io/posts/tech/back-office-vs-back-end/</link>
       <pubDate>Wed, 11 Aug 2021 10:05:20 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/back-office-vs-back-end/</guid>
       <description>IT프로젝트에서 back office와 back end를 혼용하면 망할 수 있다. front office와 front end도 마찬가지. 다음 두 문장을 비교해보자 &amp;lsquo;백 오피</description>
     </item>
+    
     <item>
       <title>Docker로 Oracle12 설치하기</title>
       <link>https://bluedskim.github.io/posts/tech/oracleondocker/</link>
       <pubDate>Wed, 14 Jul 2021 23:59:28 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/oracleondocker/</guid>
       <description>oracle 12 enterprise 버전 설치에 대한 글이다. 다른 버전 설치는 이렇게 복잡하지 않은 듯. 아래 링크 참조 Docker로 Oracle xe 11g 설치 : https://romeoh.tistory.com/entry/Oracle-docker%EC%97%90-Oracle-11g-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0 [Docker] Oracle DB(Oracle 12c) 구성하기 : https://gomguk.tistory.com/69 Docker를 어</description>
     </item>
+    
     <item>
       <title>Java 디자인 패턴-12.Composite</title>
       <link>https://bluedskim.github.io/posts/tech/javadesignpattern-12.composite/</link>
       <pubDate>Tue, 29 Jun 2021 22:47:34 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/javadesignpattern-12.composite/</guid>
       <description>Composite 패턴 &amp;ldquo;하나의 주문은 여러 상품으로 구성될 수 있다. 이 상품들은 여러 개의 다른 박스에 담길 수 있으며 이 박스들 역시 더 큰 박스에 담길 수 있다. 이런 구조</description>
     </item>
+    
     <item>
       <title>추천 Redmine Agile플러그인과 PurpleMine2 테마</title>
       <link>https://bluedskim.github.io/posts/tech/%EC%B6%94%EC%B2%9C-redmine-agile%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8%EA%B3%BC-purplemine-2-%ED%85%8C%EB%A7%88/</link>
       <pubDate>Sat, 12 Jun 2021 10:38:46 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/%EC%B6%94%EC%B2%9C-redmine-agile%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8%EA%B3%BC-purplemine-2-%ED%85%8C%EB%A7%88/</guid>
       <description>Redmine은 꽤 오래된 웹기반 프로젝트 관리 툴이다. 그래서 기능이나 화면이 상당히 예스럽다. 이런 기능과 UI를 좋아하는 분들도 있겠지만 현재의 유행과는 많</description>
     </item>
+    
     <item>
       <title>Ubuntu 20.04 &#43; VS Code 1.56.2에서 한글 입력 문제 해결하기</title>
       <link>https://bluedskim.github.io/posts/tech/ubuntu_vs-code-%EC%97%90%EC%84%9C-%ED%95%9C%EA%B8%80-%EC%9E%85%EB%A0%A5-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/</link>
       <pubDate>Tue, 08 Jun 2021 22:20:30 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/ubuntu_vs-code-%EC%97%90%EC%84%9C-%ED%95%9C%EA%B8%80-%EC%9E%85%EB%A0%A5-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/</guid>
       <description>Ubuntu 20.04 환경에서 VS Code를 사용할 때 한글입력 시 기역으로 시작하는 글자에 받침이 붙으면 깨진다. 위의 이미지를 보면 타이틀바의 한글은 깨지지 않지만 편집기 내부의</description>
     </item>
+    
     <item>
       <title>Java 디자인 패턴-11.Decorator</title>
       <link>https://bluedskim.github.io/posts/tech/javadesignpattern-11.decorator/</link>
       <pubDate>Thu, 03 Jun 2021 22:31:58 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/javadesignpattern-11.decorator/</guid>
       <description>(Java 디자인 패턴 스터디 모집 중 : https://github.com/bluedskim/javaDesignPatterns) Decorator 패턴 (출처:https://stefanhenneken.net/2019/02/16/iec-61131-3</description>
     </item>
+    
     <item>
       <title>Java 디자인 패턴-10.Adapter</title>
       <link>https://bluedskim.github.io/posts/tech/javadesignpattern-10.adapter/</link>
       <pubDate>Tue, 01 Jun 2021 16:12:55 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/javadesignpattern-10.adapter/</guid>
       <description>(Java 디자인 패턴 스터디 모집 중 : https://github.com/bluedskim/javaDesignPatterns) Adapter(적응) 패턴 (출처:https://educationinaction.org/water-roc</description>
     </item>
+    
     <item>
       <title>Java 디자인 패턴-09.Observer</title>
       <link>https://bluedskim.github.io/posts/tech/javadesignpattern-09.observer/</link>
       <pubDate>Fri, 28 May 2021 21:36:41 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/javadesignpattern-09.observer/</guid>
       <description>(Java 디자인 패턴 스터디 모집 중 : https://github.com/bluedskim/javaDesignPatterns) Observer 패턴 다이어그램 (출처:https://dev.to/danlee0528/design-pattern-the</description>
     </item>
+    
     <item>
       <title>Java 디자인 패턴-08.Facade</title>
       <link>https://bluedskim.github.io/posts/tech/javadesignpattern-08.facade/</link>
       <pubDate>Tue, 25 May 2021 12:17:16 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/javadesignpattern-08.facade/</guid>
       <description>(Java 디자인 패턴 스터디 모집 중 : https://github.com/bluedskim/javaDesignPatterns) Facade 패턴 다이어그램 (출처:https://www.geeksforgeeks.org/facade-design-</description>
     </item>
+    
     <item>
       <title>Java 디자인 패턴-07.State</title>
       <link>https://bluedskim.github.io/posts/tech/javadesignpattern-07.state/</link>
       <pubDate>Mon, 24 May 2021 08:46:28 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/javadesignpattern-07.state/</guid>
       <description>(Java 디자인 패턴 스터디 모집 중 : https://github.com/bluedskim/javaDesignPatterns) 패턴 다이어그램 &amp;ldquo;어떤 객체의 상태에 따라 행위가 변경되는 경우 유용한 패턴&amp;rdquo; (출처:https:/</description>
     </item>
+    
     <item>
       <title>Perl스크립트로 Http Get 요청하고 응답출력하기</title>
       <link>https://bluedskim.github.io/posts/tech/perl%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%A1%9C-http-get-%EC%9A%94%EC%B2%AD%ED%95%98%EA%B3%A0-%EC%9D%91%EB%8B%B5%EC%B6%9C%EB%A0%A5/</link>
       <pubDate>Fri, 21 May 2021 00:00:37 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/perl%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%A1%9C-http-get-%EC%9A%94%EC%B2%AD%ED%95%98%EA%B3%A0-%EC%9D%91%EB%8B%B5%EC%B6%9C%EB%A0%A5/</guid>
       <description>리눅스/유직스 서버에서 http포트가 열려있는지, 웹서버가 떠있는지 등등을 확인 할 때 일반적으로 wget혹은 curl을 주로 사용한다. wget도 cur</description>
     </item>
+    
     <item>
       <title>Java 디자인 패턴-05.Proxy</title>
       <link>https://bluedskim.github.io/posts/tech/javadesignpattern-05.proxy/</link>
       <pubDate>Tue, 18 May 2021 12:23:26 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/javadesignpattern-05.proxy/</guid>
       <description>(Java 디자인 패턴 스터디 모집 중 : https://github.com/bluedskim/javaDesignPatterns) 패턴 다이어그램 &amp;ldquo;특정 클래스 대신 그 클래스와 동일한 인터페이스를 구현한 래퍼 wrapper 클래스 Proxy 를 이용한다&amp;rdquo</description>
     </item>
+    
     <item>
       <title>Java 디자인 패턴-04.Iterators</title>
       <link>https://bluedskim.github.io/posts/tech/javadesignpattern-04.iterators/</link>
       <pubDate>Fri, 14 May 2021 08:57:45 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/javadesignpattern-04.iterators/</guid>
       <description>(Java 디자인 패턴 스터디 모집 중 : https://github.com/bluedskim/javaDesignPatterns) 패턴 다이어그램 &amp;ldquo;하나의 집합Collection의 모든 요소를 모두 접근하는 방법은 여러가지가 있을 수 있다&amp;r</description>
     </item>
+    
     <item>
       <title>Java 디자인 패턴-03.Command</title>
       <link>https://bluedskim.github.io/posts/tech/javadesignpattern-03.command/</link>
       <pubDate>Wed, 12 May 2021 00:48:24 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/javadesignpattern-03.command/</guid>
       <description>(Java 디자인 패턴 스터디 모집 중 : https://github.com/bluedskim/javaDesignPatterns) (출처:https://refactoring.guru/design-patterns/command) 해결하</description>
     </item>
+    
     <item>
       <title>Java 디자인 패턴-02.Factory Method</title>
       <link>https://bluedskim.github.io/posts/tech/javadesignpattern-factory/</link>
       <pubDate>Tue, 11 May 2021 00:00:00 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/javadesignpattern-factory/</guid>
       <description>(Java 디자인 패턴 스터디 모집 중 : https://github.com/bluedskim/javaDesignPatterns) (출처:Abstract Factory Design Pattern in C#) 해결하려는 문제 생성자를 직접 호출해서 객체를 생성하는 경우 해당 객체와 클라이언트가 강하</description>
     </item>
+    
     <item>
       <title>Java 디자인 패턴-01.Singleton</title>
       <link>https://bluedskim.github.io/posts/tech/javadesignpattern-singleton/</link>
       <pubDate>Fri, 07 May 2021 12:13:37 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/javadesignpattern-singleton/</guid>
       <description>(Java 디자인 패턴 스터디 모집 중 : https://github.com/bluedskim/javaDesignPatterns) (출처 : refactoring.guru : Singleton pattern) 해결하려는 문제 공유된 자원은 대체로 한정적이다. 이 자원을 무분별하게 사용하는 경우 쉽게 고갈될 수 있다. 용도</description>
     </item>
+    
     <item>
       <title>Taurus 부하 테스트 툴 데모</title>
       <link>https://bluedskim.github.io/posts/tech/taurus-%EB%B6%80%ED%95%98-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%88%B4-%EB%8D%B0%EB%AA%A8/</link>
       <pubDate>Mon, 15 Feb 2021 00:16:55 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/taurus-%EB%B6%80%ED%95%98-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%88%B4-%EB%8D%B0%EB%AA%A8/</guid>
       <description>간단하게 사용할 수 있는 RESTful API 부하 테스트 툴을 찾던 중 괜찮은 툴을 발견해서 테스트해본 기록을 남긴다. 부하 테스트 툴 선정 기준 쉬운 설정 가벼운 실행환경 확장성, 다양</description>
     </item>
+    
     <item>
       <title>Karate, RESTful API 시나리오기반 자동화 테스트 데모</title>
       <link>https://bluedskim.github.io/posts/tech/karate-restful-api-%EC%8B%9C%EB%82%98%EB%A6%AC%EC%98%A4%EA%B8%B0%EB%B0%98-%EC%9E%90%EB%8F%99%ED%99%94-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%8D%B0%EB%AA%A8/</link>
       <pubDate>Sat, 09 Jan 2021 22:59:55 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/karate-restful-api-%EC%8B%9C%EB%82%98%EB%A6%AC%EC%98%A4%EA%B8%B0%EB%B0%98-%EC%9E%90%EB%8F%99%ED%99%94-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%8D%B0%EB%AA%A8/</guid>
       <description>&amp;ldquo;美 IT업계서 45년 일한 어느 개발자의 여섯가지 조언&amp;rdquo;이라는 기사의 다섯번째 조언은 바로 &amp;lsquo;테스트 자동화&amp;rsqu</description>
     </item>
+    
     <item>
       <title>Jboss의 Modeshape로 영단어를 복수형 혹은 단수형으로 변환하기</title>
       <link>https://bluedskim.github.io/posts/tech/jboss%EC%9D%98-modeshape%EB%A1%9C-%EC%98%81%EB%8B%A8%EC%96%B4%EB%A5%BC-%EB%B3%B5%EC%88%98%ED%98%95%EB%8B%A8%EC%88%98%ED%98%95%EC%9C%BC%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/</link>
       <pubDate>Sun, 11 Oct 2020 21:39:37 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/jboss%EC%9D%98-modeshape%EB%A1%9C-%EC%98%81%EB%8B%A8%EC%96%B4%EB%A5%BC-%EB%B3%B5%EC%88%98%ED%98%95%EB%8B%A8%EC%88%98%ED%98%95%EC%9C%BC%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/</guid>
       <description>java 프로젝트를 진행할 때 단수 영단어를 복수로 변환하거나 반대로 복수 영단어를 단수로 변환해야 하는 경우가 있다. Jboss에서 제공하는 Modeshape의 Inflector</description>
     </item>
+    
     <item>
       <title>VS Code에서 Spring Java &#43; Gradle 프로젝트 리프레시 하기</title>
       <link>https://bluedskim.github.io/posts/tech/vs-code-spring-java-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A6%AC%ED%94%84%EB%A0%88%EC%8B%9C-%ED%95%98%EA%B8%B0/</link>
       <pubDate>Tue, 06 Oct 2020 23:09:54 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/vs-code-spring-java-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A6%AC%ED%94%84%EB%A0%88%EC%8B%9C-%ED%95%98%EA%B8%B0/</guid>
       <description>VS code에서 Java 개발은 아직 갈 길이 먼듯. 가령 Tomcat 기반의 MVC 어플리케이션 개발 시 불편한 점이 많다. 제대로 된 플러그인이 없기 때문 -.- 반면 Spring Boot 기반이라면 웹 MVC</description>
     </item>
+    
     <item>
       <title>함께 자라기(김창준) 메모</title>
       <link>https://bluedskim.github.io/posts/tech/%ED%95%A8%EA%BB%98-%EC%9E%90%EB%9D%BC%EA%B8%B0_%EA%B9%80%EC%B0%BD%EC%A4%80_%EB%A9%94%EB%AA%A8/</link>
       <pubDate>Sun, 04 Oct 2020 21:13:35 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/%ED%95%A8%EA%BB%98-%EC%9E%90%EB%9D%BC%EA%B8%B0_%EA%B9%80%EC%B0%BD%EC%A4%80_%EB%A9%94%EB%AA%A8/</guid>
       <description>애자일 컨설팅 대표 김창준님이 2018년에 쓰신 책 &amp;ldquo;함께 자라기:애자일로 가는 길&amp;rdquo; http://www.yes24.com/Product/Goods/67350256 을 읽고 주요 내용에 대한 메모를 정리했다. 읽으</description>
     </item>
+    
     <item>
       <title>PM2 - Production Process Manager for Node</title>
       <link>https://bluedskim.github.io/posts/tech/pm2-production-process-manager-for-node.js/</link>
       <pubDate>Wed, 30 Sep 2020 12:37:16 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/pm2-production-process-manager-for-node.js/</guid>
       <description>ReactJS 로 Single-page application을 개발한다면 일반적으로 build를 하고 build를 deploy하는 방식을 사용한다. 최근 진행했던 프로젝트에서도 역시</description>
     </item>
+    
     <item>
       <title>Sony Xperia Pro(iyokan) 2011 부활 프로젝트</title>
       <link>https://bluedskim.github.io/posts/tech/sony-xperia-proiyokan-2011-%EB%B6%80%ED%99%9C/</link>
       <pubDate>Fri, 01 May 2020 12:03:18 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/sony-xperia-proiyokan-2011-%EB%B6%80%ED%99%9C/</guid>
       <description>미니 slide out qwerty 디바이스에 대한 로망은 식지 않는다. 하지만 대세는 터치 인터페이스라 더 이상 이런 스타일의 기기는 구할래야 구할 수가 없다. 그렇다면 서랍속에서 곤히 잠</description>
     </item>
+    
     <item>
       <title>저사양 Pc에 강추 리눅스 Sparky Linux</title>
       <link>https://bluedskim.github.io/posts/tech/%EC%A0%80%EC%82%AC%EC%96%91-pc%EC%97%90-%EA%B0%95%EC%B6%94-%EB%A6%AC%EB%88%85%EC%8A%A4-sparky-linux/</link>
       <pubDate>Sat, 02 Nov 2019 02:14:20 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/%EC%A0%80%EC%82%AC%EC%96%91-pc%EC%97%90-%EA%B0%95%EC%B6%94-%EB%A6%AC%EB%88%85%EC%8A%A4-sparky-linux/</guid>
       <description>32bit 노트북에 SparkyLinux 설치 설치한 모델은 MSI vr420x이다. 2008년에 구입한 모델 Intel Pentium Dual Core T2330 (1.6GHz / 1MB / FSB 533MHz) 2GB DDR2 667Mhz 이 노트북에 설치한 리눅스 OS중에 가장 쾌적하다</description>
     </item>
+    
     <item>
       <title>Special Thanks to Ubuntu</title>
       <link>https://bluedskim.github.io/posts/tech/special-thanks-to-ubuntu/</link>
       <pubDate>Tue, 29 Oct 2019 22:53:26 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/special-thanks-to-ubuntu/</guid>
       <description>고맙다 우분투. 내 너를 반드시 업데이트 한다. Welcome to Ubuntu 14.04.5 LTS (GNU/Linux 3.8.13.16 armv7l) * Documentation: https://help.ubuntu.com/ 564 packages can be updated. 500 updates are security updates. New release &#39;16.04.6 LTS&#39; available. Run &#39;do-release-upgrade&#39; to upgrade to it. Last login: Tue Oct 29 22:49:04 2019 from 8f30cba7c16415127f3b667a5db841d3.local</description>
     </item>
+    
     <item>
       <title>Mirroring With Wget</title>
       <link>https://bluedskim.github.io/posts/tech/mirroring-with-wget/</link>
       <pubDate>Tue, 29 Oct 2019 21:42:39 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/mirroring-with-wget/</guid>
       <description>볼만한 하둡 pdf 자료가 없어서 공식 홈페이지의 document를 다운받기로 했다. 웹사이트 미러링에는 wget 관련 자료가 가장 많다. 사용한 옵션을 정리해보자 &amp;ndash;mirror : 해</description>
     </item>
+    
     <item>
       <title>픽셀북에서 쓸만한 리눅스용 이미지 뷰어 &amp; Image Annotation Tool 비교 중</title>
       <link>https://bluedskim.github.io/posts/tech/%ED%94%BD%EC%85%80%EB%B6%81%EC%97%90%EC%84%9C-%EC%93%B8%EB%A7%8C%ED%95%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B7%B0%EC%96%B4_image-annotation-tool/</link>
       <pubDate>Wed, 04 Sep 2019 13:25:00 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/%ED%94%BD%EC%85%80%EB%B6%81%EC%97%90%EC%84%9C-%EC%93%B8%EB%A7%8C%ED%95%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B7%B0%EC%96%B4_image-annotation-tool/</guid>
       <description>이미지 뷰어 ristretto : 적당히 가볍고 무난하다. thumbnail 크기만 더 크게 할 수 있으면 좋은데 -.- feh : 가장 가볍다. 하지만 GUI가 없어(?) 불편 Image Annotation Tool shutter : 캡쳐를 전제로 한 프로</description>
     </item>
+    
     <item>
       <title>ffmpeg를 이용한 동영상 편집 샘플 몇개</title>
       <link>https://bluedskim.github.io/posts/tech/ffmpeg%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%8F%99%EC%98%81%EC%83%81-%ED%8E%B8%EC%A7%91-%EC%83%98%ED%94%8C-%EB%AA%87%EA%B0%9C/</link>
       <pubDate>Tue, 20 Aug 2019 17:06:05 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/ffmpeg%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%8F%99%EC%98%81%EC%83%81-%ED%8E%B8%EC%A7%91-%EC%83%98%ED%94%8C-%EB%AA%87%EA%B0%9C/</guid>
       <description>자르기, 스크린샷 찍기같은 간단한 동영상 편집은 GUI프로그램보다 명령행 툴 ffmpeg가 훨씬 편하다. 동영상에서 초당 하나씩 스크린샷 찍기. 스크린샷 파일</description>
     </item>
+    
     <item>
       <title>19년 8월 현재 쓸만한 저가 8인치 안드로이드 태블릿 LG G Pad3 8 모델 V425</title>
       <link>https://bluedskim.github.io/posts/tech/1908%ED%98%84%EC%9E%AC-%EC%93%B8%EB%A7%8C%ED%95%9C-%EC%A0%80%EA%B0%80-8%EC%9D%B8%EC%B9%98-%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%ED%83%9C%EB%B8%94%EB%A6%BF-lg-g-pad3-8.0-v425/</link>
       <pubDate>Thu, 15 Aug 2019 00:00:34 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/1908%ED%98%84%EC%9E%AC-%EC%93%B8%EB%A7%8C%ED%95%9C-%EC%A0%80%EA%B0%80-8%EC%9D%B8%EC%B9%98-%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%ED%83%9C%EB%B8%94%EB%A6%BF-lg-g-pad3-8.0-v425/</guid>
       <description>현재 메인 디지털 기기는 픽셀북이다. 성능은 충분하지만 아무래도 노트북이다 보니 기동성이 떨어진다. 그래서 장만한 안드로이드 태블릿 LG G Pad3 8인치 모델 V425 이 모델</description>
     </item>
+    
     <item>
       <title>주위에 크롬북을 추천하시겠습니까?</title>
       <link>https://bluedskim.github.io/posts/tech/%EC%A3%BC%EC%9C%84%EC%97%90-%ED%81%AC%EB%A1%AC%EB%B6%81%EC%9D%84-%EC%B6%94%EC%B2%9C%ED%95%98%EA%B2%A0%EC%8A%B5%EB%8B%88%EA%B9%8C/</link>
       <pubDate>Wed, 14 Aug 2019 09:26:56 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/%EC%A3%BC%EC%9C%84%EC%97%90-%ED%81%AC%EB%A1%AC%EB%B6%81%EC%9D%84-%EC%B6%94%EC%B2%9C%ED%95%98%EA%B2%A0%EC%8A%B5%EB%8B%88%EA%B9%8C/</guid>
       <description>구글에서 설문 메일이 왔다. 혹시나 사은품으로 픽셀북2 줄까 해서 응답했지만 그럴리가 없겠지. &amp;ldquo;주위에 크롬북을 추천하시겠습니까?&amp;rdquo</description>
     </item>
+    
     <item>
       <title>픽셀북(모든 크롬북?)에서 Quake게임 실행하기</title>
       <link>https://bluedskim.github.io/posts/tech/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C-quake%EA%B2%8C%EC%9E%84-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/</link>
       <pubDate>Tue, 13 Aug 2019 18:28:39 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C-quake%EA%B2%8C%EC%9E%84-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/</guid>
       <description>Pixelbook은 상당히 사양이 괜찮은 노트북이지만 즐길 수 있는 적당한 FPS게임이 없다. 안드로이드용 FPS는 있지만 뭔가 부족한 느낌이다. 키보드 지원</description>
     </item>
+    
     <item>
       <title>리눅스에서 현재 시각 음성으로 알려주기</title>
       <link>https://bluedskim.github.io/posts/tech/%EB%A6%AC%EB%88%85%EC%8A%A4%EC%97%90%EC%84%9C-%ED%98%84%EC%9E%AC-%EC%8B%9C%EA%B0%81-%EC%9D%8C%EC%84%B1%EC%9C%BC%EB%A1%9C-%EC%95%8C%EB%A0%A4%EC%A3%BC%EA%B8%B0/</link>
       <pubDate>Thu, 08 Aug 2019 10:39:11 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/%EB%A6%AC%EB%88%85%EC%8A%A4%EC%97%90%EC%84%9C-%ED%98%84%EC%9E%AC-%EC%8B%9C%EA%B0%81-%EC%9D%8C%EC%84%B1%EC%9C%BC%EB%A1%9C-%EC%95%8C%EB%A0%A4%EC%A3%BC%EA%B8%B0/</guid>
       <description>매시 마다 현재 시각을 아름다운 음성으로 알려주면 편할거 같아 만들었다. 집 거실에 Odroid 싱글보드컴퓨터Single-board computer가 설치되어 있고</description>
     </item>
+    
     <item>
       <title>Pixelbook에서 Flutter로 앱 개발</title>
       <link>https://bluedskim.github.io/posts/tech/pixelbook%EC%97%90%EC%84%9C-flutter%EB%A1%9C-%EC%95%B1-%EA%B0%9C%EB%B0%9C_1/</link>
       <pubDate>Wed, 31 Jul 2019 15:14:43 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/pixelbook%EC%97%90%EC%84%9C-flutter%EB%A1%9C-%EC%95%B1-%EA%B0%9C%EB%B0%9C_1/</guid>
       <description>픽셀북으로 안드로이드 개발을 편하게 할 수 있다고 해서 시도하고 있는데 편하다고 하는 이유는 픽셀북에서 바로 안드로이드 앱 화면을 띄울 수 있기 때문인것 같다. 그러나</description>
     </item>
+    
     <item>
       <title>우분투 command line에서 모든 레드마인 이슈를 하나의 pdf 로 내려받기</title>
       <link>https://bluedskim.github.io/posts/tech/redminetopdffull/</link>
       <pubDate>Mon, 29 Jul 2019 16:49:45 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/redminetopdffull/</guid>
       <description>레드마인에서 공식적으로 이 기능을 지원하지는 않고 있다. 이것을 위한 3rd party 플러그인은 있는데 동작하지 않았다. https://github.com/brunoqs/pdf_export_redmine Proxy Error가 발생하였는데 아마도 Apach</description>
     </item>
+    
   </channel>
 </rss>

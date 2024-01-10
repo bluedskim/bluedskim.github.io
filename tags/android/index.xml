@@ -6,21 +6,24 @@
     <description>Recent content in android on Do What You Want To Do</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Fri, 01 May 2020 12:03:18 +0900</lastBuildDate>
-    <atom:link href="https://bluedskim.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 May 2020 12:03:18 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sony Xperia Pro(iyokan) 2011 부활 프로젝트</title>
       <link>https://bluedskim.github.io/posts/tech/sony-xperia-proiyokan-2011-%EB%B6%80%ED%99%9C/</link>
       <pubDate>Fri, 01 May 2020 12:03:18 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/sony-xperia-proiyokan-2011-%EB%B6%80%ED%99%9C/</guid>
       <description>미니 slide out qwerty 디바이스에 대한 로망은 식지 않는다. 하지만 대세는 터치 인터페이스라 더 이상 이런 스타일의 기기는 구할래야 구할 수가 없다. 그렇다면 서랍속에서 곤히 잠</description>
     </item>
+    
     <item>
       <title>19년 8월 현재 쓸만한 저가 8인치 안드로이드 태블릿 LG G Pad3 8 모델 V425</title>
       <link>https://bluedskim.github.io/posts/tech/1908%ED%98%84%EC%9E%AC-%EC%93%B8%EB%A7%8C%ED%95%9C-%EC%A0%80%EA%B0%80-8%EC%9D%B8%EC%B9%98-%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%ED%83%9C%EB%B8%94%EB%A6%BF-lg-g-pad3-8.0-v425/</link>
       <pubDate>Thu, 15 Aug 2019 00:00:34 +0900</pubDate>
+      
       <guid>https://bluedskim.github.io/posts/tech/1908%ED%98%84%EC%9E%AC-%EC%93%B8%EB%A7%8C%ED%95%9C-%EC%A0%80%EA%B0%80-8%EC%9D%B8%EC%B9%98-%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%ED%83%9C%EB%B8%94%EB%A6%BF-lg-g-pad3-8.0-v425/</guid>
       <description>현재 메인 디지털 기기는 픽셀북이다. 성능은 충분하지만 아무래도 노트북이다 보니 기동성이 떨어진다. 그래서 장만한 안드로이드 태블릿 LG G Pad3 8인치 모델 V425 이 모델</description>
     </item>
+    
   </channel>
 </rss>
