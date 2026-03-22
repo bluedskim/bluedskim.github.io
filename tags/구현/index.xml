@@ -4,17 +4,16 @@
     <title>구현 on Do What You Want To Do</title>
     <link>https://bluedskim.github.io/tags/%EA%B5%AC%ED%98%84/</link>
     <description>Recent content in 구현 on Do What You Want To Do</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Tue, 12 Dec 2017 22:38:28 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/tags/%EA%B5%AC%ED%98%84/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Dec 2017 22:38:28 +0900</lastBuildDate>
+    <atom:link href="https://bluedskim.github.io/tags/%EA%B5%AC%ED%98%84/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>소프트웨어 프로젝트-구현 단계</title>
       <link>https://bluedskim.github.io/posts/tech/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B5%AC%ED%98%84_%EB%8B%A8%EA%B3%84/</link>
       <pubDate>Tue, 12 Dec 2017 22:38:28 +0900</pubDate>
-      
       <guid>https://bluedskim.github.io/posts/tech/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B5%AC%ED%98%84_%EB%8B%A8%EA%B3%84/</guid>
-      <description>SI 소프트웨어 프로젝트-구현 단계에서 발생하는 각종 이슈,상념들과 각종 S/W 개발 트렌드 들에 대한 발표자료로 모 대학 문헌정보학과 학생들을 상대로 진행한 강의 자료</description>
+      <description>&lt;p&gt;SI 소프트웨어 프로젝트-구현 단계에서 발생하는 각종 이슈,상념들과 각종 S/W 개발 트렌드 들에 대한 발표자료로&#xA;모 대학 문헌정보학과 학생들을 상대로 진행한 강의 자료이다.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/e/2PACX-1vTMn9Z1_5eU-_NaI7pcl0OdH_zZQAQ2Qo3yO60H3o_d9eWkcCktlArkeTP-8Y3VCbxYXPT7_FIsW09D/pub?start=false&amp;amp;loop=false&amp;amp;delayms=3000&amp;amp;slide=id.p&#34;&gt;https://docs.google.com/presentation/d/e/2PACX-1vTMn9Z1_5eU-_NaI7pcl0OdH_zZQAQ2Qo3yO60H3o_d9eWkcCktlArkeTP-8Y3VCbxYXPT7_FIsW09D/pub?start=false&amp;amp;loop=false&amp;amp;delayms=3000&amp;amp;slide=id.p&lt;/a&gt;&lt;/p&gt;&#xA;&lt;iframe src=&#34;https://docs.google.com/presentation/d/e/2PACX-1vTMn9Z1_5eU-_NaI7pcl0OdH_zZQAQ2Qo3yO60H3o_d9eWkcCktlArkeTP-8Y3VCbxYXPT7_FIsW09D/embed?start=false&amp;loop=false&amp;delayms=3000&#34; frameborder=&#34;0&#34; width=&#34;960&#34; height=&#34;749&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;</description>
     </item>
-    
   </channel>
 </rss>

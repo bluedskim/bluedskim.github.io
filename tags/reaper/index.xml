@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>reaper on Do What You Want To Do</title>
+    <title>Reaper on Do What You Want To Do</title>
     <link>https://bluedskim.github.io/tags/reaper/</link>
-    <description>Recent content in reaper on Do What You Want To Do</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Reaper on Do What You Want To Do</description>
+    <generator>Hugo</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Wed, 10 Jul 2019 17:24:26 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/tags/reaper/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Jul 2019 17:24:26 +0900</lastBuildDate>
+    <atom:link href="https://bluedskim.github.io/tags/reaper/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pixelbook에서 Reaper사용하기</title>
       <link>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/pixelbook%EC%97%90%EC%84%9C-reaper%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link>
       <pubDate>Wed, 10 Jul 2019 17:24:26 +0900</pubDate>
-      
       <guid>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/pixelbook%EC%97%90%EC%84%9C-reaper%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid>
-      <description>크롬북 리눅스 앱에서 오디오 재생을 지원한것은 얼마되지 않았다. (OS버전 74부터 지원) 주위에서 리눅스를 쓰는 사람도 없지만 쓴다고 해도 오디오 편집까지 하는</description>
+      <description>&lt;p&gt;크롬북 리눅스 앱에서 오디오 재생을 지원한것은 얼마되지 않았다.&#xA;(OS버전 74부터 지원)&lt;/p&gt;&#xA;&lt;p&gt;주위에서 리눅스를 쓰는 사람도 없지만 쓴다고 해도 오디오 편집까지 하는 경우를 보지 못했다.&#xA;맥의 Logic이나 윈도우의 Cubase, Ableton Live같은 멋진 리눅스용 멀티트랙 녹음 편집 프로그램은 없는 듯 하다&lt;/p&gt;&#xA;&lt;p&gt;신기하게도 Reaper 는 리눅스용 무설치 버전을 제공하고 있다. 개발자 중에 리눅스 매니아가 있는 듯&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://reaper.fm/download.php#linux_download&#34;&gt;http://reaper.fm/download.php#linux_download&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;[![Reaper](/images/Screenshot 2019-07-10 at 5.13.23 PM.png)](/images/Screenshot 2019-07-10 at 5.13.23 PM.png)&lt;/p&gt;&#xA;&lt;p&gt;중요한거 하나! 터미널에서 reaper실행 파일을 바로 실행할 수 있는데 아래처럼 조그많게 떠서 알아 볼 수가 없다 -.-&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>qwerty phone on Do What You Want To Do</title>
+    <title>Qwerty Phone on Do What You Want To Do</title>
     <link>https://bluedskim.github.io/tags/qwerty-phone/</link>
-    <description>Recent content in qwerty phone on Do What You Want To Do</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Qwerty Phone on Do What You Want To Do</description>
+    <generator>Hugo</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Fri, 01 May 2020 12:03:18 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/tags/qwerty-phone/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 May 2020 12:03:18 +0900</lastBuildDate>
+    <atom:link href="https://bluedskim.github.io/tags/qwerty-phone/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sony Xperia Pro(iyokan) 2011 부활 프로젝트</title>
       <link>https://bluedskim.github.io/posts/tech/sony-xperia-proiyokan-2011-%EB%B6%80%ED%99%9C/</link>
       <pubDate>Fri, 01 May 2020 12:03:18 +0900</pubDate>
-      
       <guid>https://bluedskim.github.io/posts/tech/sony-xperia-proiyokan-2011-%EB%B6%80%ED%99%9C/</guid>
-      <description>미니 slide out qwerty 디바이스에 대한 로망은 식지 않는다. 하지만 대세는 터치 인터페이스라 더 이상 이런 스타일의 기기는 구할래야 구할 수가 없다. 그렇다면 서랍속에서 곤히 잠</description>
+      <description>&lt;p&gt;미니 slide out qwerty 디바이스에 대한 로망은 식지 않는다. 하지만 대세는 터치 인터페이스라 더 이상 이런 스타일의 기기는 구할래야 구할 수가 없다. 그렇다면 서랍속에서 곤히 잠자는 그때 그 기기에게 새 생명을 불어넣어 보자.&lt;/p&gt;&#xA;&lt;h4 id=&#34;sony-xperia-pro2011-코드명-iyokan&#34;&gt;Sony Xperia Pro(2011) 코드명 &amp;lsquo;iyokan&amp;rsquo;&lt;/h4&gt;&#xA;&lt;p&gt;적당한 사이즈의 slide out qwerty android phone. 하지만 치명적 약점이 있는데&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;사용자 앱 설치 공간이 500메가 정도 밖에 되지 않는다.&lt;/li&gt;&#xA;&lt;li&gt;RAM도 역시 500메가 정도라 큰 프로그램을 돌릴 수 없다.&lt;/li&gt;&#xA;&lt;li&gt;cpu가 1core 1Ghz라서 무거운 프로그램을 돌릴 수 없다.&lt;/li&gt;&#xA;&lt;li&gt;공식 지원 안드로이드 버전이 4.0.4 아이스크림 샌드위치(Ice Cream Sandwich) 로 상당히 낮다. 카카오톡도 설치되지 않는다(확인 결과 Kitkat에도 설치되기는 하는데 최신판으로 업그레이드 하라고 메시지가 뜬다. 최신판은 android 5 이상만 지원한다 -.- 텔레그램 씁시다)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://bluedskim.github.io/images/IMG_0731.JPG&#34;&#xA;    alt=&#34;(Xperia Pro의 공식 마지막 안드로이드 버전 4.0.4 Ice Cream Sandwich)&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;(Xperia Pro의 공식 마지막 안드로이드 버전 4.0.4 Ice Cream Sandwich)&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

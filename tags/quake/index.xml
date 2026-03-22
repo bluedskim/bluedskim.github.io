@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>quake on Do What You Want To Do</title>
+    <title>Quake on Do What You Want To Do</title>
     <link>https://bluedskim.github.io/tags/quake/</link>
-    <description>Recent content in quake on Do What You Want To Do</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Quake on Do What You Want To Do</description>
+    <generator>Hugo</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Tue, 13 Aug 2019 18:28:39 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/tags/quake/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Aug 2019 18:28:39 +0900</lastBuildDate>
+    <atom:link href="https://bluedskim.github.io/tags/quake/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>픽셀북(모든 크롬북?)에서 Quake게임 실행하기</title>
       <link>https://bluedskim.github.io/posts/tech/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C-quake%EA%B2%8C%EC%9E%84-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/</link>
       <pubDate>Tue, 13 Aug 2019 18:28:39 +0900</pubDate>
-      
       <guid>https://bluedskim.github.io/posts/tech/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C-quake%EA%B2%8C%EC%9E%84-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/</guid>
-      <description>Pixelbook은 상당히 사양이 괜찮은 노트북이지만 즐길 수 있는 적당한 FPS게임이 없다. 안드로이드용 FPS는 있지만 뭔가 부족한 느낌이다. 키보드 지원</description>
+      <description>&lt;p&gt;Pixelbook은 상당히 사양이 괜찮은 노트북이지만 즐길 수 있는 적당한 FPS게임이 없다. 안드로이드용  FPS는 있지만 뭔가 부족한 느낌이다.&#xA;키보드 지원이 미비하다는게 그 이유 일 듯. 외형상 일반 노트북과 동일한 크롬북에는 클래식 FPS게임이 가장 적당한데 크롬OS용 FPS게임은 들어 본적이 없다.&lt;/p&gt;&#xA;&lt;p&gt;Quake 소스가 공개된 후로 Webgl로 포팅한 프로젝트가 있어 시도해봤는데 환상적이다.&lt;/p&gt;&#xA;&lt;h3 id=&#34;webgl&#34;&gt;WebGL?&lt;/h3&gt;&#xA;&lt;p&gt;브라우저에서 OpenGL ES 를 이용할 수 있게해주는 API&lt;/p&gt;&#xA;&lt;h3 id=&#34;quake&#34;&gt;Quake?&lt;/h3&gt;&#xA;&lt;p&gt;1인칭 슈팅 게임. 현재는 소스가 오픈되어 있어 많은 개발자들이 이것을 이용해서 각종 변종들을 만들고 있다.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

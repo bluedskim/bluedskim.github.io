@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>injection on Do What You Want To Do</title>
+    <title>Injection on Do What You Want To Do</title>
     <link>https://bluedskim.github.io/tags/injection/</link>
-    <description>Recent content in injection on Do What You Want To Do</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Injection on Do What You Want To Do</description>
+    <generator>Hugo</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Tue, 29 Aug 2006 18:56:00 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/tags/injection/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Aug 2006 18:56:00 +0900</lastBuildDate>
+    <atom:link href="https://bluedskim.github.io/tags/injection/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sql injection &amp; Cross Site Scripting (XSS) 예방책</title>
-      <link>https://bluedskim.github.io/posts/software-engineering/sql-injection-cross-site-scripting-xss-%EC%98%88%EB%B0%A9%EC%B1%85/</link>
+      <link>https://bluedskim.github.io/posts/software-engineering/sql-injection--cross-site-scripting-xss-%EC%98%88%EB%B0%A9%EC%B1%85/</link>
       <pubDate>Tue, 29 Aug 2006 18:56:00 +0900</pubDate>
-      
-      <guid>https://bluedskim.github.io/posts/software-engineering/sql-injection-cross-site-scripting-xss-%EC%98%88%EB%B0%A9%EC%B1%85/</guid>
-      <description>&amp;lt; Sql injection&amp;nbsp;&amp;gt; [공격 예제] Java 소스의 게시판 검색 Sql 구문 코딩이 아래와 같다고 하고 String findQuery = “select * from notice where title = &#39;”+ keyword + “&#39; “; &amp;nbsp; 홈페이지의 게시판 검색 시 k</description>
+      <guid>https://bluedskim.github.io/posts/software-engineering/sql-injection--cross-site-scripting-xss-%EC%98%88%EB%B0%A9%EC%B1%85/</guid>
+      <description>&lt;p&gt;&lt;span class=&#34;copyright_entry&#34; style=&#34;display:block;&#34; title=&#34;Sql injection &amp;amp; Cross Site Scripting (XSS) 예방책@@**@@http://shed.egloos.com/1401958&#34;&gt;&lt;/span&gt;&lt;/p&gt;&#xA;&lt;p class=&#34;MsoNormal&#34; style=&#34;&#34;&gt;&lt;b style=&#34;&#34;&gt;&lt;span style=&#34;font-family: 굴림체;&#34; lang=&#34;EN-US&#34;&gt;&amp;lt; Sql injection&amp;nbsp;&amp;gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt; &#xA;&lt;p class=&#34;MsoNormal&#34; style=&#34;&#34;&gt;&lt;b style=&#34;&#34;&gt;&lt;span style=&#34;font-size: 10pt; font-family: 굴림체;&#34; lang=&#34;EN-US&#34;&gt;[&lt;/span&gt;&lt;/b&gt;&lt;b style=&#34;&#34;&gt;&lt;span style=&#34;font-size: 10pt; font-family: 굴림체;&#34;&gt;공격 예제&lt;span lang=&#34;EN-US&#34;&gt;]&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt; &#xA;&lt;p class=&#34;MsoNormal&#34; style=&#34;&#34;&gt;&lt;span style=&#34;font-size: 10pt; font-family: 굴림체;&#34; lang=&#34;EN-US&#34;&gt;Java &lt;/span&gt;&lt;span style=&#34;font-size: 10pt; font-family: 굴림체;&#34;&gt;소스의 게시판 검색 &lt;span lang=&#34;EN-US&#34;&gt;Sql &lt;/span&gt;구문 코딩이 아래와 같다고 하고&lt;span lang=&#34;EN-US&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt; &#xA;&lt;p class=&#34;MsoNormal&#34; style=&#34;&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34; lang=&#34;EN-US&#34;&gt;String findQuery = &lt;/span&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;“&lt;span lang=&#34;EN-US&#34;&gt;select * from notice where &lt;b style=&#34;&#34;&gt;title = &#39;&lt;/b&gt;&lt;/span&gt;&lt;b style=&#34;&#34;&gt;”&lt;span lang=&#34;EN-US&#34;&gt; + keyword + &lt;/span&gt;“&lt;span lang=&#34;EN-US&#34;&gt;&#39; &lt;/span&gt;“&lt;/b&gt;&lt;span lang=&#34;EN-US&#34;&gt; ;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-size: 10pt; font-family: 바탕;&#34; lang=&#34;EN-US&#34;&gt;&lt;/span&gt;&lt;/p&gt; &#xA;&lt;p class=&#34;MsoNormal&#34; style=&#34;&#34;&gt;&lt;span style=&#34;font-size: 10pt; font-family: 굴림체;&#34; lang=&#34;EN-US&#34;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt; &#xA;&lt;p class=&#34;MsoNormal&#34; style=&#34;&#34;&gt;&lt;span style=&#34;font-size: 10pt; font-family: 굴림체;&#34;&gt;홈페이지의 게시판 검색 시 &lt;span style=&#34;&#34; lang=&#34;EN-US&#34;&gt;keyword&lt;/span&gt;&lt;span lang=&#34;EN-US&#34;&gt; &lt;/span&gt;에&lt;span lang=&#34;EN-US&#34;&gt; &lt;br&gt; &lt;br&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;“&lt;span lang=&#34;EN-US&#34;&gt;&lt;span style=&#34;&#34;&gt;&amp;nbsp;&amp;nbsp; &lt;/span&gt;any&#39; &lt;span style=&#34;&#34;&gt;&amp;nbsp;&lt;/span&gt;;&lt;span style=&#34;&#34;&gt;&amp;nbsp; &lt;/span&gt;DROP TABLE NOTICE&lt;span style=&#34;&#34;&gt;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;“&lt;/span&gt;&lt;span style=&#34;font-size: 10pt; font-family: 굴림체;&#34; lang=&#34;EN-US&#34;&gt;&lt;span style=&#34;&#34;&gt;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-size: 10pt; font-family: 굴림체;&#34;&gt;를 넣고 검색한다면 &lt;span lang=&#34;EN-US&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

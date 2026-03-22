@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>linux on Do What You Want To Do</title>
+    <title>Linux on Do What You Want To Do</title>
     <link>https://bluedskim.github.io/categories/linux/</link>
-    <description>Recent content in linux on Do What You Want To Do</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Linux on Do What You Want To Do</description>
+    <generator>Hugo</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Fri, 21 May 2021 00:00:37 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 May 2021 00:00:37 +0900</lastBuildDate>
+    <atom:link href="https://bluedskim.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Perl스크립트로 Http Get 요청하고 응답출력하기</title>
       <link>https://bluedskim.github.io/posts/tech/perl%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%A1%9C-http-get-%EC%9A%94%EC%B2%AD%ED%95%98%EA%B3%A0-%EC%9D%91%EB%8B%B5%EC%B6%9C%EB%A0%A5/</link>
       <pubDate>Fri, 21 May 2021 00:00:37 +0900</pubDate>
-      
       <guid>https://bluedskim.github.io/posts/tech/perl%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%A1%9C-http-get-%EC%9A%94%EC%B2%AD%ED%95%98%EA%B3%A0-%EC%9D%91%EB%8B%B5%EC%B6%9C%EB%A0%A5/</guid>
-      <description>리눅스/유직스 서버에서 http포트가 열려있는지, 웹서버가 떠있는지 등등을 확인 할 때 일반적으로 wget혹은 curl을 주로 사용한다. wget도 cur</description>
+      <description>&lt;p&gt;리눅스/유직스 서버에서 http포트가 열려있는지, 웹서버가 떠있는지 등등을 확인 할 때 일반적으로 wget혹은 curl을 주로 사용한다.&lt;/p&gt;&#xA;&lt;p&gt;wget도 curl도 없는 *nix서버는 보기 힘들지만 간혹 없는 경우도 있다&#xA;(JVM이라도 있다면 Java로 간단하게 프로그램을 짜서 돌리면 되지만 소스도 길고 컴파일도 해줘야 하니 불편하다 -.-).&lt;/p&gt;&#xA;&lt;p&gt;그래서 perl스크립트는 없는지 구글링 해보니 역시나 있다.&lt;/p&gt;&#xA;&lt;p&gt;다음은 Http Get 요청 수행 후 응답을 출력하는 perl 스크립트다.&lt;/p&gt;&#xA;&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;&#34;&gt;&#xA;&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1&#xA;&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2&#xA;&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3&#xA;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&#xA;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;&#34;&gt;&lt;code class=&#34;language-perl&#34; data-lang=&#34;perl&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#!/usr/bin/perl&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;use&lt;/span&gt; LWP::Simple;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;getprint($ARGV[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]) &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; $ARGV[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;];&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;[출처] &lt;a href=&#34;https://dzone.com/articles/simplest-wgetcurl-replacement&#34;&gt;https://dzone.com/articles/simplest-wgetcurl-replacement&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

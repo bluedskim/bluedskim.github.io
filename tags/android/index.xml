@@ -1,29 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>android on Do What You Want To Do</title>
+    <title>Android on Do What You Want To Do</title>
     <link>https://bluedskim.github.io/tags/android/</link>
-    <description>Recent content in android on Do What You Want To Do</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Android on Do What You Want To Do</description>
+    <generator>Hugo</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Fri, 01 May 2020 12:03:18 +0900</lastBuildDate><atom:link href="https://bluedskim.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 May 2020 12:03:18 +0900</lastBuildDate>
+    <atom:link href="https://bluedskim.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sony Xperia Pro(iyokan) 2011 부활 프로젝트</title>
       <link>https://bluedskim.github.io/posts/tech/sony-xperia-proiyokan-2011-%EB%B6%80%ED%99%9C/</link>
       <pubDate>Fri, 01 May 2020 12:03:18 +0900</pubDate>
-      
       <guid>https://bluedskim.github.io/posts/tech/sony-xperia-proiyokan-2011-%EB%B6%80%ED%99%9C/</guid>
-      <description>미니 slide out qwerty 디바이스에 대한 로망은 식지 않는다. 하지만 대세는 터치 인터페이스라 더 이상 이런 스타일의 기기는 구할래야 구할 수가 없다. 그렇다면 서랍속에서 곤히 잠</description>
+      <description>&lt;p&gt;미니 slide out qwerty 디바이스에 대한 로망은 식지 않는다. 하지만 대세는 터치 인터페이스라 더 이상 이런 스타일의 기기는 구할래야 구할 수가 없다. 그렇다면 서랍속에서 곤히 잠자는 그때 그 기기에게 새 생명을 불어넣어 보자.&lt;/p&gt;&#xA;&lt;h4 id=&#34;sony-xperia-pro2011-코드명-iyokan&#34;&gt;Sony Xperia Pro(2011) 코드명 &amp;lsquo;iyokan&amp;rsquo;&lt;/h4&gt;&#xA;&lt;p&gt;적당한 사이즈의 slide out qwerty android phone. 하지만 치명적 약점이 있는데&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;사용자 앱 설치 공간이 500메가 정도 밖에 되지 않는다.&lt;/li&gt;&#xA;&lt;li&gt;RAM도 역시 500메가 정도라 큰 프로그램을 돌릴 수 없다.&lt;/li&gt;&#xA;&lt;li&gt;cpu가 1core 1Ghz라서 무거운 프로그램을 돌릴 수 없다.&lt;/li&gt;&#xA;&lt;li&gt;공식 지원 안드로이드 버전이 4.0.4 아이스크림 샌드위치(Ice Cream Sandwich) 로 상당히 낮다. 카카오톡도 설치되지 않는다(확인 결과 Kitkat에도 설치되기는 하는데 최신판으로 업그레이드 하라고 메시지가 뜬다. 최신판은 android 5 이상만 지원한다 -.- 텔레그램 씁시다)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://bluedskim.github.io/images/IMG_0731.JPG&#34;&#xA;    alt=&#34;(Xperia Pro의 공식 마지막 안드로이드 버전 4.0.4 Ice Cream Sandwich)&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;(Xperia Pro의 공식 마지막 안드로이드 버전 4.0.4 Ice Cream Sandwich)&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>19년 8월 현재 쓸만한 저가 8인치 안드로이드 태블릿 LG G Pad3 8 모델 V425</title>
       <link>https://bluedskim.github.io/posts/tech/1908%ED%98%84%EC%9E%AC-%EC%93%B8%EB%A7%8C%ED%95%9C-%EC%A0%80%EA%B0%80-8%EC%9D%B8%EC%B9%98-%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%ED%83%9C%EB%B8%94%EB%A6%BF-lg-g-pad3-8.0-v425/</link>
       <pubDate>Thu, 15 Aug 2019 00:00:34 +0900</pubDate>
-      
       <guid>https://bluedskim.github.io/posts/tech/1908%ED%98%84%EC%9E%AC-%EC%93%B8%EB%A7%8C%ED%95%9C-%EC%A0%80%EA%B0%80-8%EC%9D%B8%EC%B9%98-%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%ED%83%9C%EB%B8%94%EB%A6%BF-lg-g-pad3-8.0-v425/</guid>
-      <description>현재 메인 디지털 기기는 픽셀북이다. 성능은 충분하지만 아무래도 노트북이다 보니 기동성이 떨어진다. 그래서 장만한 안드로이드 태블릿 LG G Pad3 8인치 모델 V425 이 모델</description>
+      <description>&lt;p&gt;현재 메인 디지털 기기는 픽셀북이다. 성능은 충분하지만 아무래도 노트북이다 보니 기동성이 떨어진다.&lt;/p&gt;&#xA;&lt;p&gt;그래서 장만한 안드로이드 태블릿  LG G Pad3 8인치 모델 V425&lt;/p&gt;&#xA;&lt;p&gt;이 모델은 소위 홈보이(모델명 P451L)라고 알려진 U+ 인터넷 번들 상품과 동일한 사양으로 기업용으로 포지셔닝한 제품인 것 같다.&lt;/p&gt;&#xA;&lt;p&gt;반면 일반적으로 알려진 G Pad3 8인치 모델명은 V525이다.&lt;/p&gt;&#xA;&lt;p&gt;하지만 중고나라에서 꽤 비싸게 팔려는 사람들이 많은데 V525와의 차이에 대해 잘 모르는 것 같다.&lt;/p&gt;&#xA;&lt;h3 id=&#34;lg-g-pad3-80v525-p451l-v425-공통-장점&#34;&gt;LG G pad3 8.0(V525, P451L, V425) 공통 장점&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;가볍다 : 325g&lt;/li&gt;&#xA;&lt;li&gt;표준USB : 심지어 핸드폰 외장 배터리로 사용가능(하지만 속도는 느림 -.-)&lt;/li&gt;&#xA;&lt;li&gt;적당한 2G RAM&lt;/li&gt;&#xA;&lt;li&gt;적지않은 배터리 용량(4800mh)&lt;/li&gt;&#xA;&lt;li&gt;안드로이드용 MS오피스 기본 제공&lt;/li&gt;&#xA;&lt;li&gt;비교적 최신 OS(안드로이드 7 누가)&lt;/li&gt;&#xA;&lt;li&gt;리더모드(Q버튼)&lt;/li&gt;&#xA;&lt;li&gt;노크온&lt;/li&gt;&#xA;&lt;li&gt;LG(대기업) 제품이라 AS가 용이함&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;v525-대비-v425의-단점&#34;&gt;V525 대비 V425의 단점&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;미끄러움 : 후면 재질이 틀린 듯&lt;/li&gt;&#xA;&lt;li&gt;CPU가 느림 : Qualcomm Snapdragon 425 (MSM8917) 쿼드코어 1.4GHz(V525는 Snapdragon™ 617 옥타코어 1.5GHZ)&lt;/li&gt;&#xA;&lt;li&gt;저장용량 작음 : 16G&lt;/li&gt;&#xA;&lt;li&gt;해상도 떨어짐 : 8.0&amp;quot; WXGA (1280*800)&lt;/li&gt;&#xA;&lt;li&gt;IR 송신 모듈 없음&lt;/li&gt;&#xA;&lt;li&gt;스피커가 밑면이 아니라 후면이라 음질이 별로일듯&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;lg-g-pad3-80-v425의-장점v525-대비&#34;&gt;LG G pad3 8.0 V425의 장점(V525 대비)&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;싸다, 싸야 한다 : 19년 8월 현재 신품 기준 중고나라의 적당한 가격은 5~7만원이라 생각한다. 중고구입시 조심. V525 가격을 받으려는 판매자들이 있는데 모델간 차이에 대해 잘 모르는 것 같다.&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
-    
   </channel>
 </rss>
