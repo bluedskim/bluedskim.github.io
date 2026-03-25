@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hansung_TFX4470H :: Tag :: Do What You Want To Do</title>
+    <link>//localhost:7001/tags/hansung_tfx4470h/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>ko-KR</language>
+    <lastBuildDate>Mon, 09 Aug 2021 08:56:35 +0900</lastBuildDate>
+    <atom:link href="//localhost:7001/tags/hansung_tfx4470h/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hansung_TFX4470H</title>
+      <link>//localhost:7001/posts/tech/hansung_tfx4470h/index.html</link>
+      <pubDate>Mon, 09 Aug 2021 08:56:35 +0900</pubDate>
+      <guid>//localhost:7001/posts/tech/hansung_tfx4470h/index.html</guid>
+      <description>h1. 좋은 점&#xA;싸다 100% linux compatible 충전이 빠름 h1. 나쁜 점&#xA;빌드 퀄리티 트랙패드가 잘 안 미끌어짐 키보드마다 누르는 소리가 틀림. 가장 많이 쓰는 키 중의 하나인 왼쪽 ctrl키에서 기계식 키보드의 사운드가 남 키보드 백라이트가 약하고 균등하지 않 충전상태 확인이 힘듬 PD충전 불안함 triple screen 불가 h1. 이상한 점&#xA;저평가된 랩탑 : 쿨링팬에 의한 하판 갈림 현상은 해외에서도 유명함. 윈도우 최대 절전 모드 후 우분투로 부팅했을 때 wifi 사용 불가(인식이 안됨?) h1. Dell XPS 9630과 비교</description>
+    </item>
+  </channel>
+</rss>

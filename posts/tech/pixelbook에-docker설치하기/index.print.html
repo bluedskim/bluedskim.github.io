@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html id="R-html" lang="ko-KR" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.152.2">
+    <meta name="generator" content="Relearn 9.0.3+36307e4ed23582638ab689240ac7b427217803ee">
+    <meta name="description" content="reddit에 의하면 Chromeos 72 이상에서 docker-ce 최신 버전 설치에 문제가 없다고 한다(참고 : https://www.reddit.com/r/Crostini/comments/aoc9i7/docker_working_now/)
+여기 가이드대로 진행하면 문제없이 설치되는데 https://docs.docker.com/install/linux/docker-ce/debian/
+한가지 주의사항이 있다. add-apt-repository 할 때 lsb-core가 없어서 오류가 발생한다. 그래서 아래처럼 lsb-core 를 설치하던가
+sudo apt-get install lsb-core add-apt-repository 구문을 아래처럼 변경하면 된다.
+$ sudo add-apt-repository &#34;deb [arch=amd64] https://download.docker.com/linux/debian stretch stable&#34; Docker 만세!">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="pixelbook에 Docker설치하기 :: Do What You Want To Do">
+    <meta name="twitter:description" content="reddit에 의하면 Chromeos 72 이상에서 docker-ce 최신 버전 설치에 문제가 없다고 한다(참고 : https://www.reddit.com/r/Crostini/comments/aoc9i7/docker_working_now/)
+여기 가이드대로 진행하면 문제없이 설치되는데 https://docs.docker.com/install/linux/docker-ce/debian/
+한가지 주의사항이 있다. add-apt-repository 할 때 lsb-core가 없어서 오류가 발생한다. 그래서 아래처럼 lsb-core 를 설치하던가
+sudo apt-get install lsb-core add-apt-repository 구문을 아래처럼 변경하면 된다.
+$ sudo add-apt-repository &#34;deb [arch=amd64] https://download.docker.com/linux/debian stretch stable&#34; Docker 만세!">
+    <meta property="og:url" content="https://bluedskim.github.io/posts/tech/pixelbook%EC%97%90-docker%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/index.html">
+    <meta property="og:site_name" content="Do What You Want To Do">
+    <meta property="og:title" content="pixelbook에 Docker설치하기 :: Do What You Want To Do">
+    <meta property="og:description" content="reddit에 의하면 Chromeos 72 이상에서 docker-ce 최신 버전 설치에 문제가 없다고 한다(참고 : https://www.reddit.com/r/Crostini/comments/aoc9i7/docker_working_now/)
+여기 가이드대로 진행하면 문제없이 설치되는데 https://docs.docker.com/install/linux/docker-ce/debian/
+한가지 주의사항이 있다. add-apt-repository 할 때 lsb-core가 없어서 오류가 발생한다. 그래서 아래처럼 lsb-core 를 설치하던가
+sudo apt-get install lsb-core add-apt-repository 구문을 아래처럼 변경하면 된다.
+$ sudo add-apt-repository &#34;deb [arch=amd64] https://download.docker.com/linux/debian stretch stable&#34; Docker 만세!">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Posts">
+    <meta property="article:published_time" content="2019-04-28T13:38:28+09:00">
+    <meta property="article:modified_time" content="2019-04-28T13:38:28+09:00">
+    <meta property="article:tag" content="Docker">
+    <meta itemprop="name" content="pixelbook에 Docker설치하기 :: Do What You Want To Do">
+    <meta itemprop="description" content="reddit에 의하면 Chromeos 72 이상에서 docker-ce 최신 버전 설치에 문제가 없다고 한다(참고 : https://www.reddit.com/r/Crostini/comments/aoc9i7/docker_working_now/)
+여기 가이드대로 진행하면 문제없이 설치되는데 https://docs.docker.com/install/linux/docker-ce/debian/
+한가지 주의사항이 있다. add-apt-repository 할 때 lsb-core가 없어서 오류가 발생한다. 그래서 아래처럼 lsb-core 를 설치하던가
+sudo apt-get install lsb-core add-apt-repository 구문을 아래처럼 변경하면 된다.
+$ sudo add-apt-repository &#34;deb [arch=amd64] https://download.docker.com/linux/debian stretch stable&#34; Docker 만세!">
+    <meta itemprop="datePublished" content="2019-04-28T13:38:28+09:00">
+    <meta itemprop="dateModified" content="2019-04-28T13:38:28+09:00">
+    <meta itemprop="wordCount" content="54">
+    <meta itemprop="keywords" content="Docker">
+    <title>pixelbook에 Docker설치하기 :: Do What You Want To Do</title>
+    <link href="https://bluedskim.github.io/posts/tech/pixelbook%EC%97%90-docker%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/index.html" rel="canonical" type="text/html" title="pixelbook에 Docker설치하기 :: Do What You Want To Do">
+    <link href="/css/auto-complete/auto-complete.min.css?1774431351" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1774431351" defer></script>
+    <script src="/js/search-lunr.min.js?1774431351" defer></script>
+    <script src="/js/search.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/searchindex.en.js?1774431351";
+    </script>
+    <script src="/js/lunr/lunr.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.ko.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['ko'];
+    </script>
+    <link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1774431351" rel="stylesheet">
+    <link href="/css/theme.min.css?1774431351" rel="stylesheet">
+    <link href="/css/format-print.min.css?1774431351" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/posts\/tech\/pixelbook%EC%97%90-docker%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/bluedskim.github.io';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'relearn-auto', 'learn' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+  </head>
+  <body class="mobile-support print" data-origin="/posts/tech/pixelbook%EC%97%90-docker%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Do What You Want</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/posts/index.html"><span itemprop="name">Posts</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">pixelbook에 Docker설치하기</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/pixelbook%EC%97%90-docker%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/movie/%EC%82%BC%EB%B0%94%EC%99%80-%EC%98%81%ED%99%94%EB%A5%BC-%EC%82%AC%EB%9E%91%ED%95%98%EB%8A%94-%EB%B6%84%EB%93%A4%EC%97%90%EA%B2%8C-%EC%B6%94%EC%B2%9C%ED%95%98%EB%8A%94-%EC%98%81%ED%99%94/index.html" title="삼바와 영화를 사랑하는 분들에게 추천하는 브라질의 극영화 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/%EC%93%B8%EB%A7%8C%ED%95%9C-ubuntu%EC%9A%A9-command-line-%ED%83%80%EC%9D%B4%EB%A8%B8/index.html" title="각종 작업 소요시간 체크용 우분투용 command line stopwatch (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable posts" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/tags/docker/index.html">Docker</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="pixelbook에-docker설치하기">pixelbook에 Docker설치하기</h1>
+
+<p>reddit에 의하면 Chromeos 72 이상에서 docker-ce 최신 버전 설치에 문제가 없다고 한다(참고 : <a href="https://www.reddit.com/r/Crostini/comments/aoc9i7/docker_working_now/" rel="external">https://www.reddit.com/r/Crostini/comments/aoc9i7/docker_working_now/</a>)</p>
+<p>여기 가이드대로 진행하면 문제없이 설치되는데  <a href="https://docs.docker.com/install/linux/docker-ce/debian/" rel="external">https://docs.docker.com/install/linux/docker-ce/debian/</a></p>
+<p>한가지 주의사항이 있다. add-apt-repository 할 때 lsb-core가 없어서 오류가 발생한다. 그래서  아래처럼 lsb-core 를 설치하던가</p>
+<pre><code>sudo apt-get install lsb-core
+</code></pre>
+<p>add-apt-repository 구문을 아래처럼 변경하면 된다.</p>
+<pre><code>$ sudo add-apt-repository &quot;deb [arch=amd64] https://download.docker.com/linux/debian stretch stable&quot;
+</code></pre>
+<p>Docker 만세!</p>
+<!---
+인터넷에서 찾아본 자료에 의하면 docker 설치에 문제가 있다고.  
+하지만 고마운 누군가가 직접 binary를 수정해서 github에 공유해 주셨다.
+
+아래에서 스크립트를 받아서 실행하면 깔끔하게 설치된다.
+https://github.com/abiosoft/crostini-docker
+
+root 가 아닌 사용자(본인)도 쓸 수 있게 하기 위해 docker그룹에 추가하고
+
+	sudo usermod -a -G docker $USER
+
+터미널만 리스타트 하면 된다고 하는데 그렇게 되지는 않았고 픽셀북을 껐다 켜야 한다.
+
+이후에 아래 명령이 잘 동작하는지 확인한다.
+
+	docker run hello-world
+-->
+
+  <footer class="footline">
+              <i class='fa-fw fas fa-calendar'></i> 2019-04-28
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1774431351" defer></script>
+    <script src="/js/theme.min.js?1774431351" defer></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-3QTEZE6PDE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3QTEZE6PDE');
+</script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

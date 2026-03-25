@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html id="R-html" lang="ko-KR" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.152.2">
+    <meta name="generator" content="Relearn 9.0.3+36307e4ed23582638ab689240ac7b427217803ee">
+    <meta name="description" content="oracle 12 enterprise 버전 설치에 대한 글이다. 다른 버전 설치는 이렇게 복잡하지 않은 듯. 아래 링크 참조 Docker로 Oracle xe 11g 설치 : https://romeoh.tistory.com/entry/Oracle-docker%EC%97%90-Oracle-11g-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0 [Docker] Oracle DB(Oracle 12c) 구성하기 : https://gomguk.tistory.com/69 Docker를 어느 정도 사용할 수 있어야 아래 설명을 따라갈 수 있다. 리눅스에 오라클DB 설치는 정말 악몽이다(윈도우즈는 차라리 낫다). 만약 리눅스가 그래픽환경(X windows)가 아니라면 완전 낭패다.
+그래서 X windows를 설치하기까지 했었다. 그래픽환경(X windows)은 시스템 리소스를 더 쓸 수 밖에 없는데 -.- 서버에 그래픽환경(X windows)을 설치할 필요는 없잖아~">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Docker로 Oracle12 설치하기 :: Do What You Want To Do">
+    <meta name="twitter:description" content="oracle 12 enterprise 버전 설치에 대한 글이다. 다른 버전 설치는 이렇게 복잡하지 않은 듯. 아래 링크 참조 Docker로 Oracle xe 11g 설치 : https://romeoh.tistory.com/entry/Oracle-docker%EC%97%90-Oracle-11g-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0 [Docker] Oracle DB(Oracle 12c) 구성하기 : https://gomguk.tistory.com/69 Docker를 어느 정도 사용할 수 있어야 아래 설명을 따라갈 수 있다. 리눅스에 오라클DB 설치는 정말 악몽이다(윈도우즈는 차라리 낫다). 만약 리눅스가 그래픽환경(X windows)가 아니라면 완전 낭패다.
+그래서 X windows를 설치하기까지 했었다. 그래픽환경(X windows)은 시스템 리소스를 더 쓸 수 밖에 없는데 -.- 서버에 그래픽환경(X windows)을 설치할 필요는 없잖아~">
+    <meta property="og:url" content="https://bluedskim.github.io/posts/tech/oracleondocker/index.html">
+    <meta property="og:site_name" content="Do What You Want To Do">
+    <meta property="og:title" content="Docker로 Oracle12 설치하기 :: Do What You Want To Do">
+    <meta property="og:description" content="oracle 12 enterprise 버전 설치에 대한 글이다. 다른 버전 설치는 이렇게 복잡하지 않은 듯. 아래 링크 참조 Docker로 Oracle xe 11g 설치 : https://romeoh.tistory.com/entry/Oracle-docker%EC%97%90-Oracle-11g-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0 [Docker] Oracle DB(Oracle 12c) 구성하기 : https://gomguk.tistory.com/69 Docker를 어느 정도 사용할 수 있어야 아래 설명을 따라갈 수 있다. 리눅스에 오라클DB 설치는 정말 악몽이다(윈도우즈는 차라리 낫다). 만약 리눅스가 그래픽환경(X windows)가 아니라면 완전 낭패다.
+그래서 X windows를 설치하기까지 했었다. 그래픽환경(X windows)은 시스템 리소스를 더 쓸 수 밖에 없는데 -.- 서버에 그래픽환경(X windows)을 설치할 필요는 없잖아~">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Posts">
+    <meta property="article:published_time" content="2021-07-14T23:59:28+09:00">
+    <meta property="article:modified_time" content="2021-07-14T23:59:28+09:00">
+    <meta property="article:tag" content="Docker">
+    <meta property="article:tag" content="Oracle">
+    <meta itemprop="name" content="Docker로 Oracle12 설치하기 :: Do What You Want To Do">
+    <meta itemprop="description" content="oracle 12 enterprise 버전 설치에 대한 글이다. 다른 버전 설치는 이렇게 복잡하지 않은 듯. 아래 링크 참조 Docker로 Oracle xe 11g 설치 : https://romeoh.tistory.com/entry/Oracle-docker%EC%97%90-Oracle-11g-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0 [Docker] Oracle DB(Oracle 12c) 구성하기 : https://gomguk.tistory.com/69 Docker를 어느 정도 사용할 수 있어야 아래 설명을 따라갈 수 있다. 리눅스에 오라클DB 설치는 정말 악몽이다(윈도우즈는 차라리 낫다). 만약 리눅스가 그래픽환경(X windows)가 아니라면 완전 낭패다.
+그래서 X windows를 설치하기까지 했었다. 그래픽환경(X windows)은 시스템 리소스를 더 쓸 수 밖에 없는데 -.- 서버에 그래픽환경(X windows)을 설치할 필요는 없잖아~">
+    <meta itemprop="datePublished" content="2021-07-14T23:59:28+09:00">
+    <meta itemprop="dateModified" content="2021-07-14T23:59:28+09:00">
+    <meta itemprop="wordCount" content="394">
+    <meta itemprop="keywords" content="Docker,Oracle">
+    <title>Docker로 Oracle12 설치하기 :: Do What You Want To Do</title>
+    <link href="https://bluedskim.github.io/posts/tech/oracleondocker/index.html" rel="canonical" type="text/html" title="Docker로 Oracle12 설치하기 :: Do What You Want To Do">
+    <link href="/css/auto-complete/auto-complete.min.css?1774431351" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1774431351" defer></script>
+    <script src="/js/search-lunr.min.js?1774431351" defer></script>
+    <script src="/js/search.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/searchindex.en.js?1774431351";
+    </script>
+    <script src="/js/lunr/lunr.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.ko.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['ko'];
+    </script>
+    <link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1774431351" rel="stylesheet">
+    <link href="/css/theme.min.css?1774431351" rel="stylesheet">
+    <link href="/css/format-print.min.css?1774431351" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/posts\/tech\/oracleondocker\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/bluedskim.github.io';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'relearn-auto', 'learn' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+  </head>
+  <body class="mobile-support print" data-origin="/posts/tech/oracleondocker/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#데이터-저장용-폴더-준비하기">데이터 저장용 폴더 준비하기</a></li>
+        <li><a href="#실행">실행</a></li>
+        <li><a href="#계정-생성">계정 생성</a></li>
+        <li><a href="#dbeaver로-접속">DBeaver로 접속</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Do What You Want</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/posts/index.html"><span itemprop="name">Posts</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Docker로 Oracle12 설치하기</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/oracleondocker/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/back-office-vs-back-end/index.html" title="'Back Office' vs 'Back End' (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/javadesignpattern-12.composite/index.html" title="Java 디자인 패턴-12.Composite (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable posts" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/tags/docker/index.html">Docker</a></li>
+    <li><a class="term-link" href="/tags/oracle/index.html">Oracle</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="docker로-oracle12-설치하기">Docker로 Oracle12 설치하기</h1>
+
+<ul>
+<li><em>oracle 12 enterprise 버전 설치에 대한 글이다.</em></li>
+<li><em>다른 버전 설치는 이렇게 복잡하지 않은 듯. 아래 링크 참조</em>
+<ul>
+<li>Docker로 Oracle xe 11g 설치 :   <a href="https://romeoh.tistory.com/entry/Oracle-docker%EC%97%90-Oracle-11g-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0" rel="external">https://romeoh.tistory.com/entry/Oracle-docker%EC%97%90-Oracle-11g-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0</a></li>
+<li>[Docker] Oracle DB(Oracle 12c) 구성하기 : <a href="https://gomguk.tistory.com/69" rel="external">https://gomguk.tistory.com/69</a></li>
+</ul>
+</li>
+<li><em>Docker를 어느 정도 사용할 수 있어야 아래 설명을 따라갈 수 있다.</em></li>
+</ul>
+<hr>
+<p>리눅스에 오라클DB 설치는 정말 악몽이다(윈도우즈는 차라리 낫다). 만약 리눅스가 그래픽환경(X windows)가 아니라면 완전 낭패다.</p>
+<p>그래서 X windows를 설치하기까지 했었다.  그래픽환경(X windows)은 시스템 리소스를 더 쓸 수 밖에 없는데 -.- 서버에 그래픽환경(X windows)을 설치할 필요는 없잖아~</p>
+<p>고맙게도 Docker로 설치하면 이런 문제는 해결된다.</p>
+<h3 id="데이터-저장용-폴더-준비하기">데이터 저장용 폴더 준비하기<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>데이터를 docker 내부에 저장하면 이후에 대이터를 백업하거나 다른 서버로 이전할 때 힘들어진다. 처음부터 데이터는 docker 컨테이너 외부에 저장하자.</p>
+<ol>
+<li>
+<p>데이터 저장용 폴더 생성</p>
+<p>저장용 폴더는 본인 환경에 맞게 경로를 지정한다.</p>
+<pre><code> $ mkdir /home/shed/util/data/oradata
+</code></pre>
+</li>
+<li>
+<p>폴더에 권한 주기</p>
+<p>마운드될 폴더에 쓰기 권한이 없으면 기동자체가 되지 않는다 -.- 아래의 명령어로 쓰기 권한을 주자.</p>
+<pre><code> $ chmod -R a+w /home/shed/util/data/oradata
+</code></pre>
+<p>생성한 폴더는 도커 기동시 볼륨으로 연결할 것이다.</p>
+</li>
+</ol>
+<h3 id="실행">실행<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<pre><code>$ docker run -d -it --name oracle -e ORACLE_CHARACTERSET=AL32UTF8 -p 1521:1521 -p 5500:5500 -v /home/shed/util/data/oradata:/ORCL store/oracle/database-enterprise:12.2.0.1
+
+/oracle:/ORCL store/oracle/database-enterprise:12.2.0.1
+Unable to find image 'store/oracle/database-enterprise:12.2.0.1' locally
+12.2.0.1: Pulling from store/oracle/database-enterprise
+4ce27fe12c04: Pull complete 
+9d3556e8e792: Pull complete 
+fc60a1a28025: Pull complete 
+0c32e4ed872e: Pull complete 
+b465d9b6e399: Downloading [============================&gt;                      ]  1.538GB/2.739GB
+</code></pre>
+<p>다운로드가 끝나면 자동으로 실행된다.  docker ps -a 명령으로 확인해보자.</p>
+<pre><code>$ docker ps -a
+CCONTAINER ID        IMAGE                                       COMMAND                  CREATED              STATUS                        PORTS                                            NAMES
+d4d851dea5b9        store/oracle/database-enterprise:12.2.0.1   &quot;/bin/sh -c '/bin/ba…&quot;   About a minute ago   Up About a minute (healthy)   0.0.0.0:1521-&gt;1521/tcp, 0.0.0.0:5500-&gt;5500/tcp   oracle
+</code></pre>
+<h3 id="계정-생성">계정 생성<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>접속용 계정을 생성해야 각종 툴에서 사용가능하다.</p>
+<ol>
+<li>
+<p>sqlplus로 접속</p>
+<pre><code> $ docker exec -it oracle bash -c &quot;source /home/oracle/.bashrc; sqlplus /nolog&quot;
+ SQL*Plus: Release 12.2.0.1.0 Production on Wed Jul 14 15:42:57 2021
+ Copyright (c) 1982, 2016, Oracle.  All rights reserved.
+ SQL&gt;
+</code></pre>
+</li>
+<li>
+<p>로그인</p>
+<pre><code> SQL&gt; conn sys/oracle as sysdba
+ Connected.
+</code></pre>
+</li>
+<li>
+<p>세션 설정 변경</p>
+<pre><code> SQL&gt; alter session set &quot;_ORACLE_SCRIPT&quot;=true;
+ Session altered.
+</code></pre>
+</li>
+<li>
+<p>계정 생성 &amp; 권한 주기</p>
+<p>acc01라는 계정을 만들어 보겠다.</p>
+<pre><code> SQL&gt; create user acc01 identified by passwd;
+ User created.
+ SQL&gt; GRANT CREATE SESSION TO acc01;
+ SQL&gt; GRANT CONNECT, RESOURCE, DBA TO acc01;
+ Grant succeeded.
+</code></pre>
+</li>
+<li>
+<p>생성한 계정으로 sqlplus 접속 테스트</p>
+<pre><code> $ docker exec -it oracle bash -c &quot;source /home/oracle/.bashrc; sqlplus acc01/passwd@ORCLCDB&quot;
+ SQL*Plus: Release 12.2.0.1.0 Production on Wed Jul 14 16:00:51 2021
+ Copyright (c) 1982, 2016, Oracle.  All rights reserved.
+ Last Successful login time: Wed Jul 14 2021 15:59:45 +00:00
+ Connected to:
+ Oracle Database 12c Enterprise Edition Release 12.2.0.1.0 - 64bit Production
+ SQL&gt;
+</code></pre>
+</li>
+</ol>
+<h3 id="dbeaver로-접속">DBeaver로 접속<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>다음과 같이 접속 설정을 한다.</p>
+<p><a href="#R-image-35ca4f241fad14aa5afa7941c58e1a4c" class="lightbox-link"><img alt="기본 UI" class="lazy lightbox figure-image" loading="lazy" src="/images/Docker%EB%A1%9C_Oracle%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0_DBeaver%EB%A1%9C_%EC%A0%91%EC%86%8D.png" style="height: auto;width: auto;" title="Title here"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-35ca4f241fad14aa5afa7941c58e1a4c"><img alt="기본 UI" class="lazy lightbox lightbox-image" loading="lazy" src="/images/Docker%EB%A1%9C_Oracle%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0_DBeaver%EB%A1%9C_%EC%A0%91%EC%86%8D.png" title="Title here"></a></p>
+<p>Docker기반 오라클12 정도면 개발 환경에서 사용하기에는 충분한것 같다.</p>
+
+  <footer class="footline">
+              <i class='fa-fw fas fa-calendar'></i> 2021-07-14
+<div class="R-taxonomy taxonomy-categories cstyle" title="Categories" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/categories/tech/index.html">Tech</a></li>
+  </ul>
+</div>
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1774431351" defer></script>
+    <script src="/js/theme.min.js?1774431351" defer></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-3QTEZE6PDE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3QTEZE6PDE');
+</script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

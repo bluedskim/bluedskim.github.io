@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sparkylinux on Do What You Want To Do</title>
-    <link>https://bluedskim.github.io/tags/sparkylinux/</link>
-    <description>Recent content in Sparkylinux on Do What You Want To Do</description>
+    <title>Sparkylinux :: Tag :: Do What You Want To Do</title>
+    <link>https://bluedskim.github.io/tags/sparkylinux/index.html</link>
+    <description></description>
     <generator>Hugo</generator>
     <language>ko-KR</language>
     <lastBuildDate>Sat, 02 Nov 2019 02:14:20 +0900</lastBuildDate>
     <atom:link href="https://bluedskim.github.io/tags/sparkylinux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>저사양 Pc에 강추 리눅스 Sparky Linux</title>
-      <link>https://bluedskim.github.io/posts/tech/%EC%A0%80%EC%82%AC%EC%96%91-pc%EC%97%90-%EA%B0%95%EC%B6%94-%EB%A6%AC%EB%88%85%EC%8A%A4-sparky-linux/</link>
+      <link>https://bluedskim.github.io/posts/tech/%EC%A0%80%EC%82%AC%EC%96%91-pc%EC%97%90-%EA%B0%95%EC%B6%94-%EB%A6%AC%EB%88%85%EC%8A%A4-sparky-linux/index.html</link>
       <pubDate>Sat, 02 Nov 2019 02:14:20 +0900</pubDate>
-      <guid>https://bluedskim.github.io/posts/tech/%EC%A0%80%EC%82%AC%EC%96%91-pc%EC%97%90-%EA%B0%95%EC%B6%94-%EB%A6%AC%EB%88%85%EC%8A%A4-sparky-linux/</guid>
-      <description>&lt;h2 id=&#34;32bit-노트북에-sparkylinux-설치&#34;&gt;32bit 노트북에 SparkyLinux 설치&lt;/h2&gt;&#xA;&lt;p&gt;설치한 모델은 MSI vr420x이다. 2008년에 구입한 모델&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Intel Pentium Dual Core T2330 (1.6GHz / 1MB / FSB 533MHz)&lt;/li&gt;&#xA;&lt;li&gt;2GB DDR2 667Mhz&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;이 노트북에 설치한 리눅스  OS중에 가장 쾌적하다.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://bluedskim.github.io/images/screenShootvr420.png&#34;&gt;&lt;img src=&#34;https://bluedskim.github.io/images/screenShootvr420.png&#34; alt=&#34;screenShootvr420.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;hibernate-후-resume-안될-때-참고&#34;&gt;hibernate 후 resume 안될 때 참고&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://unix.stackexchange.com/a/410971/380108&#34;&gt;https://unix.stackexchange.com/a/410971/380108&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;하여 GRUB_CMDLINE_LINUX_DEFAULT 의 제일 마지막에 nokaslr 옵션을 추가하고&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;#GRUB_CMDLINE_LINUX_DEFAULT=&amp;quot;quiet splash resume=UUID=9449b1a5-f2c1-4116-a1f3-6b10e63728ef&amp;quot;&#xA;GRUB_CMDLINE_LINUX_DEFAULT=&amp;quot;quiet splash resume=UUID=9449b1a5-f2c1-4116-a1f3-6b10e63728ef nokaslr&amp;quot;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;update-grub 하면 잘 된다.&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;sudo update-grub &#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h2 id=&#34;winbook-tw801에-sparkylinux-설치&#34;&gt;Winbook TW801에 SparkyLinux 설치&lt;/h2&gt;&#xA;&lt;p&gt;노트북에 설치할 때와 방식은 동일하다.&lt;/p&gt;</description>
+      <guid>https://bluedskim.github.io/posts/tech/%EC%A0%80%EC%82%AC%EC%96%91-pc%EC%97%90-%EA%B0%95%EC%B6%94-%EB%A6%AC%EB%88%85%EC%8A%A4-sparky-linux/index.html</guid>
+      <description>32bit 노트북에 SparkyLinux 설치 설치한 모델은 MSI vr420x이다. 2008년에 구입한 모델&#xA;Intel Pentium Dual Core T2330 (1.6GHz / 1MB / FSB 533MHz) 2GB DDR2 667Mhz 이 노트북에 설치한 리눅스 OS중에 가장 쾌적하다.&#xA;hibernate 후 resume 안될 때 참고 https://unix.stackexchange.com/a/410971/380108</description>
     </item>
   </channel>
 </rss>

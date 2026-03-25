@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html id="R-html" lang="ko-KR" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.152.2">
+    <meta name="generator" content="Relearn 9.0.3+36307e4ed23582638ab689240ac7b427217803ee">
+    <meta name="description" content="IT프로젝트에서 back office와 back end를 혼용하면 망할 수 있다. front office와 front end도 마찬가지.
+다음 두 문장을 비교해보자
+‘백 오피스와 프론트 오피스를 별도의 인스턴스로 구성합시다’
+와
+‘백 엔드와 프론트 엔드를 별도의 인스턴스로 구성합시다.’ 는 전혀 다른 말이다.
+back office는 운영자 화면(사이트)을 지칭한다고 보면 되고 front office는 사용자 화면이라고 생각하면 된다(front office는 한국 IT에서는 잘 쓰지 않는 용어).
+https://www.webopedia.com/definitions/back-office/에서 언급한 “백 오피스는 백엔드의 지원을 받는다The back office is supported by a back end system.“는 말이 틀린것은 아니지만 오해를 불러올 수 있다. 백 오피스만 백엔드의 지원을 받는 것은 아니다. 당연히 ‘백 오피스와 프론트 오피스 모두 백엔드의 지원을 받는다’">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="&#39;Back Office&#39; vs &#39;Back End&#39; :: Do What You Want To Do">
+    <meta name="twitter:description" content="IT프로젝트에서 back office와 back end를 혼용하면 망할 수 있다. front office와 front end도 마찬가지.
+다음 두 문장을 비교해보자
+‘백 오피스와 프론트 오피스를 별도의 인스턴스로 구성합시다’
+와
+‘백 엔드와 프론트 엔드를 별도의 인스턴스로 구성합시다.’ 는 전혀 다른 말이다.
+back office는 운영자 화면(사이트)을 지칭한다고 보면 되고 front office는 사용자 화면이라고 생각하면 된다(front office는 한국 IT에서는 잘 쓰지 않는 용어).
+https://www.webopedia.com/definitions/back-office/에서 언급한 “백 오피스는 백엔드의 지원을 받는다The back office is supported by a back end system.“는 말이 틀린것은 아니지만 오해를 불러올 수 있다. 백 오피스만 백엔드의 지원을 받는 것은 아니다. 당연히 ‘백 오피스와 프론트 오피스 모두 백엔드의 지원을 받는다’">
+    <meta property="og:url" content="https://bluedskim.github.io/posts/tech/back-office-vs-back-end/index.html">
+    <meta property="og:site_name" content="Do What You Want To Do">
+    <meta property="og:title" content="&#39;Back Office&#39; vs &#39;Back End&#39; :: Do What You Want To Do">
+    <meta property="og:description" content="IT프로젝트에서 back office와 back end를 혼용하면 망할 수 있다. front office와 front end도 마찬가지.
+다음 두 문장을 비교해보자
+‘백 오피스와 프론트 오피스를 별도의 인스턴스로 구성합시다’
+와
+‘백 엔드와 프론트 엔드를 별도의 인스턴스로 구성합시다.’ 는 전혀 다른 말이다.
+back office는 운영자 화면(사이트)을 지칭한다고 보면 되고 front office는 사용자 화면이라고 생각하면 된다(front office는 한국 IT에서는 잘 쓰지 않는 용어).
+https://www.webopedia.com/definitions/back-office/에서 언급한 “백 오피스는 백엔드의 지원을 받는다The back office is supported by a back end system.“는 말이 틀린것은 아니지만 오해를 불러올 수 있다. 백 오피스만 백엔드의 지원을 받는 것은 아니다. 당연히 ‘백 오피스와 프론트 오피스 모두 백엔드의 지원을 받는다’">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Posts">
+    <meta property="article:published_time" content="2021-08-11T10:05:20+09:00">
+    <meta property="article:modified_time" content="2021-08-11T10:05:20+09:00">
+    <meta property="article:tag" content="Architecture">
+    <meta itemprop="name" content="&#39;Back Office&#39; vs &#39;Back End&#39; :: Do What You Want To Do">
+    <meta itemprop="description" content="IT프로젝트에서 back office와 back end를 혼용하면 망할 수 있다. front office와 front end도 마찬가지.
+다음 두 문장을 비교해보자
+‘백 오피스와 프론트 오피스를 별도의 인스턴스로 구성합시다’
+와
+‘백 엔드와 프론트 엔드를 별도의 인스턴스로 구성합시다.’ 는 전혀 다른 말이다.
+back office는 운영자 화면(사이트)을 지칭한다고 보면 되고 front office는 사용자 화면이라고 생각하면 된다(front office는 한국 IT에서는 잘 쓰지 않는 용어).
+https://www.webopedia.com/definitions/back-office/에서 언급한 “백 오피스는 백엔드의 지원을 받는다The back office is supported by a back end system.“는 말이 틀린것은 아니지만 오해를 불러올 수 있다. 백 오피스만 백엔드의 지원을 받는 것은 아니다. 당연히 ‘백 오피스와 프론트 오피스 모두 백엔드의 지원을 받는다’">
+    <meta itemprop="datePublished" content="2021-08-11T10:05:20+09:00">
+    <meta itemprop="dateModified" content="2021-08-11T10:05:20+09:00">
+    <meta itemprop="wordCount" content="119">
+    <meta itemprop="keywords" content="Architecture">
+    <title>&#39;Back Office&#39; vs &#39;Back End&#39; :: Do What You Want To Do</title>
+    <link href="https://bluedskim.github.io/posts/tech/back-office-vs-back-end/index.html" rel="canonical" type="text/html" title="&#39;Back Office&#39; vs &#39;Back End&#39; :: Do What You Want To Do">
+    <link href="/css/auto-complete/auto-complete.min.css?1774431351" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1774431351" defer></script>
+    <script src="/js/search-lunr.min.js?1774431351" defer></script>
+    <script src="/js/search.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/searchindex.en.js?1774431351";
+    </script>
+    <script src="/js/lunr/lunr.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.ko.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['ko'];
+    </script>
+    <link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1774431351" rel="stylesheet">
+    <link href="/css/theme.min.css?1774431351" rel="stylesheet">
+    <link href="/css/format-print.min.css?1774431351" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/posts\/tech\/back-office-vs-back-end\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/bluedskim.github.io';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'relearn-auto', 'learn' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+  </head>
+  <body class="mobile-support print" data-origin="/posts/tech/back-office-vs-back-end/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Do What You Want</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/posts/index.html"><span itemprop="name">Posts</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">&#39;Back Office&#39; vs &#39;Back End&#39;</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/back-office-vs-back-end/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_6.6%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-i/index.html" title="자바의 정석 6장. 객체지향 프로그래밍 I (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/oracleondocker/index.html" title="Docker로 Oracle12 설치하기 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable posts" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/tags/architecture/index.html">Architecture</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="back-office-vs-back-end">&#39;Back Office&#39; vs &#39;Back End&#39;</h1>
+
+<p>IT프로젝트에서 back office와 back end를 혼용하면 망할 수 있다.
+front office와 front end도 마찬가지.</p>
+<p>다음 두 문장을 비교해보자</p>
+<p>&lsquo;<em>백 <strong>오피스</strong>와 프론트 <strong>오피스</strong>를 별도의 인스턴스로 구성합시다</em>&rsquo;</p>
+<p>와</p>
+<p>&lsquo;<em>백 <strong>엔드</strong>와 프론트 <strong>엔드</strong>를 별도의 인스턴스로 구성합시다.</em>&rsquo;
+는 전혀 다른 말이다.</p>
+<p>back office는 운영자 화면(사이트)을 지칭한다고 보면 되고 front office는 사용자 화면이라고 생각하면 된다(front office는 한국 IT에서는 잘 쓰지 않는 용어).</p>
+<p><a href="https://www.webopedia.com/definitions/back-office/" rel="external">https://www.webopedia.com/definitions/back-office/</a>에서 언급한 &ldquo;<em>백 오피스는 백엔드의 지원을 받는다The back office is supported by a back end system.</em>&ldquo;는 말이 틀린것은 아니지만 오해를 불러올 수 있다. 백 오피스만 백엔드의 지원을 받는 것은 아니다.  당연히 &lsquo;백 오피스와 프론트 오피스 모두 백엔드의 지원을 받는다&rsquo;</p>
+<p>정리하자면 back office와 front office는 사용자 타겟에 따른 서비스 영역 개념이며 back end와 front end는 시스템 아키텍처 개념이다.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center"><a href="#R-image-d7d864ec57099955a77d7be9228bf308" class="lightbox-link"><img alt="Front-End,Back-End VS Front Office,Back Office" class="lazy lightbox figure-image" loading="lazy" src="http://www.plantuml.com/plantuml/png/SoWkIImgAStDuIhEpimhI2nAp5KeoY_DIt7EByfBBL8mDENYAafDBadCIyz9LNWxfUNrmWLlktQycJxbzUGv2jLS2Wfv-Icf2gytR7mpOydRANlUT2rHY0QAAg08WGLqWG3Cy4eiIonEBieiAD5H24fDJ2xn2jPHyCrFoWJQu5XGeAUd1rGM2pKQOIUQ1GW9ogofvUA2UG7YAv3n21uNr4I8UJeA0Hu1EWf-G0rUmI0JOhcua3qAL6k7f1VkH5mA75BpKe213m00" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d7d864ec57099955a77d7be9228bf308"><img alt="Front-End,Back-End VS Front Office,Back Office" class="lazy lightbox lightbox-image" loading="lazy" src="http://www.plantuml.com/plantuml/png/SoWkIImgAStDuIhEpimhI2nAp5KeoY_DIt7EByfBBL8mDENYAafDBadCIyz9LNWxfUNrmWLlktQycJxbzUGv2jLS2Wfv-Icf2gytR7mpOydRANlUT2rHY0QAAg08WGLqWG3Cy4eiIonEBieiAD5H24fDJ2xn2jPHyCrFoWJQu5XGeAUd1rGM2pKQOIUQ1GW9ogofvUA2UG7YAv3n21uNr4I8UJeA0Hu1EWf-G0rUmI0JOhcua3qAL6k7f1VkH5mA75BpKe213m00"></a></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center"><b>Front-End,Back-End VS Front Office,Back Office</b></td>
+      </tr>
+  </tbody>
+</table>
+<!--
+
+http://www.plantuml.com/plantuml/uml/SoWkIImgAStDuIhEpimhI2nAp5KeoY_DIt7EByfBBL8mDENYAafDBadCIyz9LNWxfUNrmWLlktQycJxbzUGv2jLS2Wfv-Icf2gytR7mpOydRANlUT2rHY0QAAg08WGLqWG3Cy4eiIonEBieiAD5H24fDJ2xn2jPHyCrFoWJQu5XGeAUd1rGM2pKQOIUQ1GW9ogofvUA2UG7YAv3n21uNr4I8UJeA0Hu1EWf-G0rUmI0JOhcua3qAL6k7f1VkH5mA75BpKe213m00
+
+-->
+
+  <footer class="footline">
+              <i class='fa-fw fas fa-calendar'></i> 2021-08-11
+<div class="R-taxonomy taxonomy-categories cstyle" title="Categories" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/categories/tech/index.html">Tech</a></li>
+  </ul>
+</div>
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1774431351" defer></script>
+    <script src="/js/theme.min.js?1774431351" defer></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-3QTEZE6PDE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3QTEZE6PDE');
+</script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

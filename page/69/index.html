@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=7001&amp;path=livereload" data-no-instant defer></script>
+  
+
+  
+  
+
+
+  <meta charset="utf-8">
+
+
+  <meta name="robots" content="noindex, nofollow, noarchive">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  
+    
+      <meta name="description" content="bluedskim@gmail.com">
+    
+  
+
+
+<meta name="color-scheme" content="light dark">
+
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.152.2">
+  <title>Do What You Want | Do What You Want To Do</title>
+  <link href="//localhost:7001/" rel="canonical">
+
+
+
+
+  <link href="alternate" rel="/feed.xml" type="application/rss+xml">
+
+  
+
+
+
+
+  
+  
+    
+    
+  
+  
+
+
+
+
+
+  
+
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+
+
+  
+    <link href="/css/base.css" rel="stylesheet">
+
+    <link href="/css/syntax.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+  <nav class="u-background">
+  <div class="u-wrapper">
+    <ul class="Banner">
+      <li class="Banner-item Banner-item--title">
+        
+          <a class="Banner-link u-clickable" href="/">Do What You Want To Do</a>
+        
+      </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/categories/tech/">Tech</a>
+        </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/tags/samba/">Samba</a>
+        </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/categories/%EC%9D%8C%EC%95%85/">음악</a>
+        </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/categories/%EC%9D%BC%EC%83%81%EC%82%AC/">일상사</a>
+        </li>
+      
+        
+        
+          
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/feed.xml">RSS</a>
+        </li>
+      
+    </ul>
+  </div>
+</nav>
+
+  <main>
+    <div class="u-wrapper">
+      <div class="u-padding">
+        
+
+  
+    
+    <header class="Heading">
+  <h1 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/" rel="bookmark">Do What You Want</a>
+  </h1>
+  
+</header>
+  
+
+  
+
+
+
+<h1 id="do-what-you-want">
+  <a class="Heading-link u-clickable" href="/#do-what-you-want">Do What You Want</a>
+</h1>
+<p>잡다한 것들을 기록합니다.</p>
+
+
+  
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/software-engineering/simple-webcam-capture---command-line-%EC%A7%80%EC%9B%90/" rel="bookmark">Simple Webcam Capture - command line 지원</a>
+  </h2>
+  
+    
+      <time datetime="2008-12-03T20:17:00&#43;09:00">December 3, 2008</time>
+    
+  
+</header>
+      
+        
+          
+            <p><span class="copyright_entry" style="display:block;" title="Simple Webcam Capture - command line 지원@@**@@http://shed.egloos.com/1843801"></span>
+<a href="http://mattcollinge.wordpress.com/software/simple-webcam-capture/"><span class="Apple-style-span" style="font-size: small;"><a href="http://mattcollinge.wordpress.com/software/simple-webcam-capture/">http://mattcollinge.wordpress.com/software/simple-webcam-capture/</a></span></a>
+<span class="Apple-style-span" style="font-size: small;"></span></p>
+<div>
+ <span class="Apple-style-span" style="font-size: small;"><br></span>
+</div>
+<div>
+ <span class="Apple-style-span" style="font-size: small;">다른 캡쳐프로그램들도 많지만 이건&nbsp;</span>
+ <span class="Apple-style-span" style="font-family: 돋움; line-height: normal; white-space: pre; "><span class="Apple-style-span" style="font-size: small;">command line을 지원한다.</span></span>
+</div>
+<div>
+ <font class="Apple-style-span" face="돋움"><span class="Apple-style-span" style="line-height: normal; white-space: pre; "><span class="Apple-style-span" style="font-size: small;"><br></span></span></font>
+</div>
+<div>
+ <font class="Apple-style-span" face="돋움"><span class="Apple-style-span" style="line-height: normal; white-space: pre; "><span class="Apple-style-span" style="font-size: small;">즉, "예약된 작업"에 등록하면 특정 시간 간격으로 웹캠을 자동으로 찍고</span></span></font>
+</div>
+<div>
+ <font class="Apple-style-span" face="돋움"><span class="Apple-style-span" style="line-height: normal; white-space: pre; "><span class="Apple-style-span" style="font-size: small;"><br></span></span></font>
+</div>
+<div>
+ <font class="Apple-style-span" face="돋움"><span class="Apple-style-span" style="line-height: normal; white-space: pre; "><span class="Apple-style-span" style="font-size: small;">curl 같은 유틸리티를 이용해서 자동으로 서버에 업로드 할 수 있다.</span></span></font>
+</div>
+<div>
+ <font class="Apple-style-span" face="돋움"><span class="Apple-style-span" style="line-height: normal; white-space: pre; "><span class="Apple-style-span" style="font-size: small;">(</span><a href="http://shed.egloos.com/1843497"><span class="Apple-style-span" style="font-size: small;">http://shed.egloos.com/1843497</span></a><span class="Apple-style-span" style="font-size: small;"> 참고)</span></span></font>
+</div>
+<div>
+ <font class="Apple-style-span" face="돋움" size="3"><span class="Apple-style-span" style="font-size: 13px; line-height: normal; white-space: pre;"><br></span></font>
+</div>
+<div>
+ <font class="Apple-style-span" face="돋움" size="3"><span class="Apple-style-span" style="font-size: 13px; line-height: normal; white-space: pre;">물론 이런 프로그램은 많이 있다.</span></font>
+</div>
+<div>
+ <font class="Apple-style-span" face="돋움" size="3"><span class="Apple-style-span" style="font-size: 13px; line-height: normal; white-space: pre;">그러나 백그라운드에서 사용자가 눈치채지 못하게 하려면 프로그램이 제일인듯하다.</span></font>
+</div>
+<div>
+ <font class="Apple-style-span" face="돋움"><span class="Apple-style-span" style="line-height: normal; white-space: pre; "><span class="Apple-style-span" style="font-size: small;"><br></span></span></font>
+</div>
+<div>
+ <font class="Apple-style-span" face="돋움"><span class="Apple-style-span" style="line-height: normal; white-space: pre; ">
+   <div style="text-align:center">
+    <img class="image_mid" border="0" onmouseover="this.style.cursor='pointer'" alt="" src="/attachment/1843801_1.jpg" width="577" height="678" onclick="Control.Modal.openDialog(this, event, 'http://pds12.egloos.com/pds/200812/03/82/a0003782_49366a7cdeaaf.jpg', 577, 678);">
+   </div></span></font>
+</div>
+<div>
+ <font class="Apple-style-span" face="돋움"><span class="Apple-style-span" style="line-height: normal; white-space: pre; "><span class="Apple-style-span" style="font-size: small;"><br></span></span></font>
+</div>
+<div>
+ <font class="Apple-style-span" face="돋움"><span class="Apple-style-span" style="line-height: normal; white-space: pre; "><span class="Apple-style-span" style="font-size: small;">command 라인에서 에러(</span><span class="Apple-style-span" style="font-family: 굴림; line-height: 15px; white-space: normal; "><span class="Apple-style-span" style="font-size: small;">Error processing command line options)</span><span class="Apple-style-span" style="font-family: 돋움; line-height: normal; white-space: pre; "><span class="Apple-style-span" style="font-size: small;">가 발생하는 경우가 있는데</span></span></span></span></font>
+</div>
+<div>
+ <span class="Apple-style-span" style="font-size: small;"><br></span>
+</div>
+<div>
+ <font class="Apple-style-span" face="돋움"><span class="Apple-style-span" style="line-height: normal; white-space: pre; "><a href="http://mattcollinge.wordpress.com/software/simple-webcam-capture/"><span class="Apple-style-span" style="font-size: small;">http://mattcollinge.wordpress.com/software/simple-webcam-capture</span></a><span class="Apple-style-span" style="font-size: small;">/ 에 의하면</span></span></font>
+</div>
+<div>
+ <font class="Apple-style-span" face="돋움"><span class="Apple-style-span" style="line-height: normal; white-space: pre; "><span class="Apple-style-span" style="font-size: small;"><br></span></span></font>
+</div>
+<div>
+ <font class="Apple-style-span" face="돋움"><span class="Apple-style-span" style="line-height: normal; white-space: pre; "><span class="Apple-style-span" style="font-size: small;">레지스트리에 몇몇 키가 세팅되어 있지 않아서이다.</span></span></font>
+</div>
+<div>
+ <font class="Apple-style-span" face="돋움"><span class="Apple-style-span" style="line-height: normal; white-space: pre; "><span class="Apple-style-span" style="font-size: small;"><br></span></span></font>
+</div>
+<div>
+ <font class="Apple-style-span" face="돋움"><span class="Apple-style-span" style="line-height: normal; white-space: pre; "><span class="Apple-style-span" style="font-size: small;">이건 프로그램을 한번만 제대로 동작시키면 해결된다.</span></span></font>
+</div>
+<div>
+ <font class="Apple-style-span" face="돋움"><span class="Apple-style-span" style="line-height: normal; white-space: pre; "><span class="Apple-style-span" style="font-size: small;"><br></span></span></font>
+</div>
+<div>
+ <font class="Apple-style-span" face="돋움"><span class="Apple-style-span" style="line-height: normal; white-space: pre; "><span class="Apple-style-span" style="font-size: small;">또 하나 제약사항은 command line 옵션을 모두 지정하여 실행해야 한다는 것이다.</span></span></font>
+</div>
+<div>
+ <font class="Apple-style-span" face="돋움"><span class="Apple-style-span" style="line-height: normal; white-space: pre; "><span class="Apple-style-span" style="font-size: small;"><br></span></span></font>
+</div>
+<div>
+ <font class="Apple-style-span" face="돋움"><span class="Apple-style-span" style="line-height: normal; white-space: pre; "><span class="Apple-style-span" style="font-size: small;">아래는 나의 command line 옵션이다.</span></span></font>
+</div>
+<div>
+ <font class="Apple-style-span" face="돋움"><span class="Apple-style-span" style="line-height: normal; white-space: pre; "><span class="Apple-style-span" style="font-size: small;"><br></span></span></font>
+</div>
+<div>
+ <font class="Apple-style-span" face="돋움"><span class="Apple-style-span" style="line-height: normal; white-space: pre; "><span class="Apple-style-span" style="font-size: small;">"E:\Program Files\Simple Webcam Capture\simplecapture.exe" /filename E:\Util\ssUploader\cam.jpg /jpgquality 80 &nbsp;/imgperfect 500 /suffix &nbsp;/imgcaption ##dd-mm-yyyy hh:nn:ss##</span></span></font>
+</div>
+<div>
+ <font class="Apple-style-span" face="돋움"><span class="Apple-style-span" style="line-height: normal; white-space: pre; "><span class="Apple-style-span" style="font-size: small;"><br></span></span></font>
+</div>
+<div>
+ <font class="Apple-style-span" face="돋움"><span class="Apple-style-span" style="line-height: normal; white-space: pre; "><span class="Apple-style-span" style="font-family: 굴림; line-height: 15px; white-space: normal; "><a href="http://pds10.egloos.com/pds/200812/03/82/simplecapture-setup.exe" style="background-image: url(http://md.egloos.com/img/eg/icon_file.gif); background-repeat: no-repeat; background-attachment: initial; -webkit-background-clip: initial; -webkit-background-origin: initial; background-color: initial; list-style-type: none; list-style-position: initial; list-style-image: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 15px; background-position: 0% 50%; "><span class="Apple-style-span" style="font-size: small;">simplecapture-setup.exe</span></a></span></span></font>
+</div> 
+<!--
+       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		    xmlns:dc="http://purl.org/dc/elements/1.1/"
+		    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+       <rdf:Description
+	        rdf:about="http://shed.egloos.com/1843801"
+	        dc:identifier="http://shed.egloos.com/1843801"
+	        dc:title="Simple Webcam Capture - command line 지원"
+	        trackback:ping="http://shed.egloos.com/tb/1843801"/>
+       </rdf:RDF>
+       -->
+<ul></ul>
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/software-engineering/" rel="tag">Software Engineering</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/software-engineering/windows-desktop-screen-logger/" rel="bookmark">Windows Desktop Screen Logger</a>
+  </h2>
+  
+    
+      <time datetime="2008-12-02T22:37:00&#43;09:00">December 2, 2008</time>
+    
+  
+</header>
+      
+        
+          
+            <p><span class="copyright_entry" style="display:block;" title="Windows Desktop Screen Logger@@**@@http://shed.egloos.com/1843497"></span>
+<font class="Apple-style-span" face="돋움"><span class="Apple-style-span" style="line-height: normal; white-space: pre; "><span class="Apple-style-span" style="font-size: small;">제목은 거창하지만</span></span></font></p>
+<div>
+ <font class="Apple-style-span" face="돋움"><span class="Apple-style-span" style="line-height: normal; white-space: pre; "><span class="Apple-style-span" style="font-size: small;"><br></span></span></font>
+</div>
+<div>
+ <font class="Apple-style-span" face="돋움"><span class="Apple-style-span" style="line-height: normal; white-space: pre; "><span class="Apple-style-span" style="font-size: small;">사실은,</span></span></font>
+</div>
+<div>
+ <font class="Apple-style-span" face="돋움"><span class="Apple-style-span" style="line-height: normal; white-space: pre; "><span class="Apple-style-span" style="font-size: small;"><br></span></span></font>
+</div>
+<div>
+ <font class="Apple-style-span" face="돋움"><span class="Apple-style-span" style="line-height: normal; white-space: pre; "><span class="Apple-style-span" style="font-size: small;">윈도우 데스크탑의 화면을 일정 시간 간격으로 웹서버에 업로드하는 일종의 솔류션(?), 아니 프로그램 묶음이라고 할 수 있겠다.</span></span></font>
+</div>
+<div>
+ <font class="Apple-style-span" face="돋움"><span class="Apple-style-span" style="line-height: normal; white-space: pre; "><span class="Apple-style-span" style="font-size: small;"><br></span></span></font>
+</div>
+<div>
+ <font class="Apple-style-span" face="돋움"><span class="Apple-style-span" style="line-height: normal; white-space: pre; "><span class="Apple-style-span" style="font-size: small;">왜 이런걸 하게 되었나?</span></span></font>
+</div>
+<div>
+ <ol>
+  <li>노트북 도난 방지<br><br></li>
+  <li>그냥 내가 뭘했었는지 궁금해서</li>
+ </ol>
+ <div>
+  그런데 이걸 쓴다고 해서 노트북 도난 방지가 될까?
+ </div>
+ <div>
+  <br>
+ </div>
+ <div>
+  안된다. -.-...
+ </div>
+ <div>
+  <br>
+ </div>
+ <div>
+  대신 도난된 노트북을 찾는데 결정적 증거가 될 수 있다.
+ </div>
+ <div>
+  (이런 류의 프로그램은 이미 많이 있지만...)
+ </div>
+ <div>
+  <br>
+ </div>
+ <div>
+  아래 샘플 스크린 샷 목록을 보자.
+ </div>
+ <div>
+  <br>
+ </div>
+ <div>
+  <a href="http://shed.ifastnet.com/ssUpload/">http://shed.ifastnet.com/ssUpload/</a>
+ </div>
+ <div>
+  <br>
+ </div>
+ <div>
+  스크린 샷 파일명을 보면&nbsp;
+ </div>
+ <div>
+  <br>
+ </div>
+ <div>
+  [86.40.160.107]20081202-21.09.34_ss.gif
+ </div>
+ <div>
+  <br>
+ </div>
+ <div>
+  이런식인데 [] 사이의 숫자는 컴퓨터의 IP이다. 그 다음 숫자들은 업로드 된 날짜와 시각이다. 2008년 12월 2일 21시 09문 34초에 업로드 된 파일이다.
+ </div>
+ <div>
+  <br>
+ </div>
+ <div>
+  즉 IP 추적이 가능하다는 것이다.
+ </div>
+ <div>
+  <br>
+ </div>
+ <div>
+  이제 설치를 해보자
+ </div>
+ <div>
+  <br>
+ </div>
+ <div>
+  첨부한 파일의 압축을 해제하면 6개 파일이 있다.
+ </div>
+ <div>
+  <br>
+ </div>
+ <div>
+  <a href="http://pds12.egloos.com/pds/200812/02/82/windowsDesktopScreenLogger.zip">windowsDesktopScreenLogger.zip</a>
+ </div>
+ <div>
+  <ol>
+   <li>boxcutter.exe :&nbsp;copyrighted by Matt Rasmussen</li>
+   <li>nconvert.exe&nbsp;:&nbsp;http://www.xnview.org</li>
+   <li>curl.exe :&nbsp;curl-7.19.1-win32-nossl (http://curl.haxx.se/)</li>
+   <li>post.bat<br><br></li>
+   <li>ssUpload.php&nbsp;</li>
+   <li>index.php :&nbsp;by Chris Snyder &nbsp;(csnyder@chxo.com)</li>
+  </ol>
+  <div>
+   1~4까지는 PC에 의 적당한 디렉토리에 둔다.
+  </div>
+  <div>
+   5, 6은 php가 지원되는 웹서버에 업로드 한다.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   프로그램이 동작하는 순서는 다음과 같다.
+  </div>
+  <div>
+   <ol>
+    <li>boxcutter 로 스크린 샷(bmp 형식)을 생성한다.</li>
+    <li>nconvert 로 생성된 bmp 파일을 gif로 변환한다. (원본 bmp 사이즈가 넘 크기 때문이다)</li>
+    <li>curl 로 gif 파일을&nbsp;웹서버에&nbsp;업로드 요청 한다.<br><br></li>
+    <li>ssUpload.php가 요청 IP를 파악해서 파일명을 변경하고 서버의 특정 디렉토리에 저장한다.</li>
+    <li>index.php(이미지 목록 프로그램)을 이용해서 스크린샷을 확인한다.&nbsp;</li>
+   </ol>
+  </div>
+  <div>
+   그러고 보면 내가 실제로 작성한 프로그램(?)은 post.bat 과 ssUpload.php 밖에 없다.&nbsp;
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   &lt;수정 &amp; 업로드 하기&gt;
+  </div>
+  <div>
+   <ol>
+    <li>post.bat 에서 웹서버 주소 부분 수정<br>curl -F "theFileName=@ss.gif;type=image/gif" "<span class="Apple-style-span" style="text-decoration: underline;"><b>http://localhost/ssUpload.php</b></span>"<br><br></li>
+    <li>ssUpload.php 4번째 라인에서 파일저장 폴더 부분 수정(그리고 해당 폴더의 권한을 777로 변경)<br>$uploaddir = "/<b><span class="Apple-style-span" style="text-decoration: underline;">ssUpload</span></b>/"; // create upload folder and change owner permission to 777<br><br></li>
+    <li>index.php 를 이미지파일 저장경로에 업로드 한다.</li>
+   </ol>
+   <div>
+    수정 &amp; 업로드가 정확히 되었다면&nbsp;post.bat 를 실행해본다.
+   </div>
+   <div>
+    <br>
+   </div>
+   <div>
+    에러메세지가 안뜬다면 성공한거다.
+   </div>
+   <div>
+    <br>
+   </div>
+   <div>
+    웹브라우저로 index.php를 불러서 제대로 업로드 되었는지 확인한다. ex)&nbsp;
+    <a href="http://shed.ifastnet.com/ssUpload/index.php">http://shed.ifastnet.com/ssUpload/index.php</a>&nbsp;
+   </div>
+   <div>
+    <br>
+   </div>
+   <div>
+    <br>
+   </div>
+   <div>
+    이제 post.bat를 자동으로 실행시켜 보자.&nbsp;
+   </div>
+   <div>
+    (도둑넘이 스스로 이걸 실행할리 만무하니깐)
+   </div>
+   <div>
+    <br>
+   </div>
+   <div>
+    이것은 윈도우즈의 "예약된 작업" 기능을 이용한다.
+   </div>
+   <div>
+    <br>
+   </div>
+   <div>
+    "예약된 작업" 설정은 다른 자료를 참고하면 되고.
+   </div>
+   <div>
+    <br>
+   </div>
+   <div>
+    <strike>
+     주의할 점은 컴퓨터 로그인 계정으로 post.bat를 실행하면 foreground 로 실행된다는 것이다. 즉, 명령프롬프트가 화면에 뜬다는 거다. 열심히 채팅하는데 도스창이 하나 뜨면 상당히 짜증날것이다.
+    </strike>
+   </div>
+   <div>
+    <strike>
+     <br>
+    </strike>
+   </div>
+   <div>
+    <strike>
+     그것을 피하는 방법은 현재 로그인한 사용자가 아닌 다른 사용자의 권한으로 실행하도록 하는 것이다.
+    </strike>
+   </div>
+   <div>
+    <strike>
+     <br>
+    </strike>
+   </div>
+   <div>
+    <strike>
+     그런데 또하나 문제점은&nbsp;boxcutter.exe(스크린샷 유틸)은 현재 로그인한 사용자 계정으로 실행해야 동작한다는 것이다.
+    </strike>
+   </div>
+   <div>
+    <strike>
+     <br>
+    </strike>
+   </div>
+   <div>
+    <strike>
+     그래서 어쩔 수 없이 2개의 스케쥴을 등록해야 하고 2개의 스케쥴이 교대로 동작하도록 해야 한다.
+    </strike>
+   </div>
+   <div>
+    <strike>
+     <br>
+    </strike>
+   </div>
+   <div style="text-align: center;">
+    <div style="text-align:center">
+     <img class="image_mid" border="0" onmouseover="this.style.cursor='pointer'" alt="" src="/attachment/1843497_1.jpg" width="600" height="261.845386534" onclick="Control.Modal.openDialog(this, event, 'http://pds11.egloos.com/pds/200812/02/82/a0003782_493533d4e102b.jpg', 802, 350);">
+    </div>
+   </div>
+   <div style="text-align: center;">
+    <strike>
+     <br>
+    </strike>
+   </div>
+   <div style="text-align: left;">
+    <strike>
+     즉&nbsp;post.bat&nbsp;의 첫 라인&nbsp;
+     <i>boxcutter -f ss.bmp</i> 를 제거한 후 현재 윈도우계정이 아닌 다른 계정으로 실행되도록 스케쥴 등록한다.(위의 그림에서 post)
+    </strike>
+   </div>
+   <div style="text-align: left;">
+    <strike>
+     "
+     <i>boxcutter -f ss.bmp</i>" 작업만 해주는 스케쥴을 또 하나 등록한다(위의 그림에서 boxcutter)
+    </strike>
+   </div>
+   <div style="text-align: left;">
+    <br>
+   </div>
+   <div style="text-align: left;">
+    작업등록시 아래와 같은 방식으로 하면 백그라운드로 실행할 수 있다 cmd /c start /min cmd /c D:\Utils\windowsDesktopScreenLogger\capture.bat
+   </div>
+   <div style="text-align: left;">
+    <br>
+   </div>
+   <div style="text-align: left;">
+    이 꽁수에는 단점이 있다.
+   </div>
+   <div style="text-align: left;">
+    <ol>
+     <li>개인 정보 유출 : 스크린샷을 주기적으로 찍어서 웹에 올리는 방식.<br><br></li>
+     <li>웹서버 공간 부족 : 스크린샷(1280x800) 하나당 60Kbyte 정도이다. 하루에 100장씩 업로드 한다면 하루에만 6메가를 저장공간으로 사용하게 된다. 한시간에 한장 이라 하면 하루에 14장이라 치고 1년에 300메가 정도다. <br>종종 지워주면 되지 않으려나?<br><br></li>
+     <li>설정이 복잡하다. -.-</li>
+    </ol>
+    <div>
+     <font class="Apple-style-span" color="#0000EE"><span class="Apple-style-span" style="text-decoration: underline; "><br></span></font>
+    </div>
+   </div>
+  </div>
+ </div>
+</div> 
+<!--
+       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		    xmlns:dc="http://purl.org/dc/elements/1.1/"
+		    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+       <rdf:Description
+	        rdf:about="http://shed.egloos.com/1843497"
+	        dc:identifier="http://shed.egloos.com/1843497"
+	        dc:title="Windows Desktop Screen Logger"
+	        trackback:ping="http://shed.egloos.com/tb/1843497"/>
+       </rdf:RDF>
+       -->
+<ul></ul>
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/software-engineering/" rel="tag">Software Engineering</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%A0%95%EC%A7%81%ED%95%98%EA%B2%8C-%EC%82%B4%EC%9E%90.-%EC%A0%9C%EB%B0%9C.-%EC%8C%80%EC%A7%81%EB%B6%88%EA%B8%88-%EC%82%BC%ED%82%A8-%EA%B0%95%EB%B6%80%EC%9E%90%EB%93%A4%EB%A7%8C-%ED%83%93%ED%95%A0-%EC%9D%BC-%EC%95%84%EB%8B%88%EB%8B%A4./" rel="bookmark">정직하게 살자. 제발. 쌀직불금 삼킨 강부자들만 탓할 일 아니다.</a>
+  </h2>
+  
+    
+      <time datetime="2008-11-30T23:21:00&#43;09:00">November 30, 2008</time>
+    
+  
+</header>
+      
+        
+          
+            <p><span class="copyright_entry" style="display:block;" title="정직하게 살자. 제발. 쌀직불금 삼킨 강부자들만 탓할 일 아니다.@@**@@http://shed.egloos.com/1842682"></span><a href="http://blog.daum.net/jhsct2/16157055">http://blog.daum.net/jhsct2/16157055</a> 에서 발견한 일화다.</p>
+<div>
+ <br>
+</div>
+<div>
+ <span class="Apple-style-span" style="font-family: Tahoma; font-size: 16px; line-height: 25px; "><p><i><span class="Apple-style-span" style="font-size: small;">이정우 교수님께서 수업시간에 소개해주신 일화로 두서없는 글 마무리하겠습니다.</span></i></p><p><i><span class="Apple-style-span" style="font-size: small;"><br></span></i></p><p><i><span class="Apple-style-span" style="font-size: small;">1995년 대구 상인동 가스 폭발 사건 때였습니다. 당시 폭발로 인해 주변 상가들이 얼마 동안 영업을 못했고, 이를 대구시에서 보상을 해주기로 결정했답니다. 영업을 하지 못한 기간 동안의 영업이익보전을 해주려면 그 상가 하나하나의 소득을 파악해야 할 것이고, 이는 당연히 그 가게들이 내었던 소득세를 기준으로 했었지요. 그런데 이 상식적인 조치에 상가주인들이 강력하게 반발하며 시장의 멱살을 잡는 등의 희귀한 소요사태가 발생했습니다. 그리고는 - 이정우 교수님 표현에 의하자면 - 세계 역사에 길이 남을 플랭카드가 등장했습니다. 그 플랭카드의 내용은 아래와 같습니다.</span></i></p><p><i><span class="Apple-style-span" style="font-size: small;"><br></span></i></p><p><i><span class="Apple-style-span" style="font-size: small;">"자영업자들의 소득세 불납, 하늘이 알고 땅은 아는데 왜 대구시장은 모르는가!"</span></i></p><p><br></p><p>정직해야 신뢰가 생긴다.</p><p><br></p><p>신뢰해야 거래가 성립되는거다.</p><p><br></p><p><br></p></span>
+</div> 
+<!--
+       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		    xmlns:dc="http://purl.org/dc/elements/1.1/"
+		    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+       <rdf:Description
+	        rdf:about="http://shed.egloos.com/1842682"
+	        dc:identifier="http://shed.egloos.com/1842682"
+	        dc:title="정직하게 살자. 제발. 쌀직불금 삼킨 강부자들만 탓할 일 아니다."
+	        trackback:ping="http://shed.egloos.com/tb/1842682"/>
+       </rdf:RDF>
+       -->
+<ul></ul>
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/%EC%9D%BC%EC%83%81%EC%82%AC/" rel="tag">일상사</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/%EC%9D%BC%EC%83%81%EC%82%AC/cckorea-hope-day/" rel="bookmark">CCKorea Hope Day</a>
+  </h2>
+  
+    
+      <time datetime="2008-11-29T02:08:00&#43;09:00">November 29, 2008</time>
+    
+  
+</header>
+      
+        
+          
+            <p><span class="copyright_entry" style="display:block;" title="CCKorea Hope Day@@**@@http://shed.egloos.com/1842043"></span></p>
+<div style="text-align: center; ">
+ 신청 페이지 :&nbsp;
+ <a href="http://www.onoffmix.com/e/mindfree/500">http://www.onoffmix.com/e/mindfree/500</a>
+</div>
+<div style="text-align: center;">
+ <br>
+</div>
+<div style="text-align:center">
+ <img class="image_mid" border="0" onmouseover="this.style.cursor='pointer'" alt="" src="/attachment/1842043_1.jpg" width="600" height="399.435825106" onclick="Control.Modal.openDialog(this, event, 'http://pds13.egloos.com/pds/200811/29/82/a0003782_49302492acfcc.jpg', 709, 472);">
+</div> 
+<!--
+       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		    xmlns:dc="http://purl.org/dc/elements/1.1/"
+		    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+       <rdf:Description
+	        rdf:about="http://shed.egloos.com/1842043"
+	        dc:identifier="http://shed.egloos.com/1842043"
+	        dc:title="CCKorea Hope Day"
+	        trackback:ping="http://shed.egloos.com/tb/1842043"/>
+       </rdf:RDF>
+       -->
+<ul></ul>
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/%EC%9D%BC%EC%83%81%EC%82%AC/" rel="tag">일상사</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%9D%B4%EA%B1%B0%EC%95%BC-%EC%9B%90~-%EC%9D%B4%EC%82%AC%ED%95%98%EA%B8%B0-%EC%9D%B4%EB%A0%87%EA%B2%8C-%ED%9E%98%EB%93%A4%EC%96%B4%EC%84%9C%EC%95%BC./" rel="bookmark">이거야 원~ 이사하기 이렇게 힘들어서야.</a>
+  </h2>
+  
+    
+      <time datetime="2008-11-28T02:45:00&#43;09:00">November 28, 2008</time>
+    
+  
+</header>
+      
+        
+          
+            <p><span class="copyright_entry" style="display:block;" title="이거야 원~ 이사하기 이렇게 힘들어서야.@@**@@http://shed.egloos.com/1841619"></span>이제 이글루스를 떠날때가 되었다.
+<br>
+<br>사실 마음은 이미 떠났다.
+<br></p>
+<!--
+       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		    xmlns:dc="http://purl.org/dc/elements/1.1/"
+		    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+       <rdf:Description
+	        rdf:about="http://shed.egloos.com/1841619"
+	        dc:identifier="http://shed.egloos.com/1841619"
+	        dc:title="이거야 원~ 이사하기 이렇게 힘들어서야."
+	        trackback:ping="http://shed.egloos.com/tb/1841619"/>
+       </rdf:RDF>
+       -->
+<ul></ul>
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/%EC%9D%BC%EC%83%81%EC%82%AC/" rel="tag">일상사</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+  
+
+  
+  <nav>
+    
+      <a class="Pagination u-clickable" href="/page/70/" rel="prev">« Previous</a>
+    
+    
+      <a class="Pagination Pagination--right u-clickable" href="/page/68/" rel="next">Next »</a>
+    
+  </nav>
+
+
+
+
+      </div>
+    </div>
+  </main>
+  
+  <footer class="Footer">
+    <div class="u-wrapper">
+      <div class="u-padding u-noboosting">
+        Do What You Want To Do
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

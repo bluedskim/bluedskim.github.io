@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=7001&amp;path=livereload" data-no-instant defer></script>
+  
+
+  
+  
+
+
+  <meta charset="utf-8">
+
+
+  <meta name="robots" content="noindex, nofollow, noarchive">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  
+    
+      <meta name="description" content="bluedskim@gmail.com">
+    
+  
+
+
+<meta name="color-scheme" content="light dark">
+
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.152.2">
+  <title>Do What You Want | Do What You Want To Do</title>
+  <link href="//localhost:7001/" rel="canonical">
+
+
+
+
+  <link href="alternate" rel="/feed.xml" type="application/rss+xml">
+
+  
+
+
+
+
+  
+  
+    
+    
+  
+  
+
+
+
+
+
+  
+
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+
+
+  
+    <link href="/css/base.css" rel="stylesheet">
+
+    <link href="/css/syntax.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+  <nav class="u-background">
+  <div class="u-wrapper">
+    <ul class="Banner">
+      <li class="Banner-item Banner-item--title">
+        
+          <a class="Banner-link u-clickable" href="/">Do What You Want To Do</a>
+        
+      </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/categories/tech/">Tech</a>
+        </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/tags/samba/">Samba</a>
+        </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/categories/%EC%9D%8C%EC%95%85/">음악</a>
+        </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/categories/%EC%9D%BC%EC%83%81%EC%82%AC/">일상사</a>
+        </li>
+      
+        
+        
+          
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/feed.xml">RSS</a>
+        </li>
+      
+    </ul>
+  </div>
+</nav>
+
+  <main>
+    <div class="u-wrapper">
+      <div class="u-padding">
+        
+
+  
+    
+    <header class="Heading">
+  <h1 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/" rel="bookmark">Do What You Want</a>
+  </h1>
+  
+</header>
+  
+
+  
+
+
+
+<h1 id="do-what-you-want">
+  <a class="Heading-link u-clickable" href="/#do-what-you-want">Do What You Want</a>
+</h1>
+<p>잡다한 것들을 기록합니다.</p>
+
+
+  
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/tech/howtoinputkorenwithcrostinionpixelbook/" rel="bookmark">Pixelbook Crostini Linux앱에서 한글 입력하기</a>
+  </h2>
+  
+    
+      <time datetime="2019-03-16T22:38:28&#43;09:00">March 16, 2019</time>
+    
+  
+</header>
+      
+        
+          
+            <p>영어/알파벳을 쓰는 나라 사람들은 이해하기 힘든 문제가 바로 2byte 이상 문자 입출력 문제이다.<br>
+최신 기술일수록 한글지원이 미약한 경우가 많은데<br>
+역시나 크롬북도 예외가 아니다.<br>
+크롬북은 리눅스 기반이며 그래서 구글에서는 대부분의 크롬북에서 리눅스 프로그램 설치를 지원해주는데<br>
+이것이 바로 프로젝트 Crostini다.<br>
+구글답게 멋지게 구현하였는데 역시나 한글 입력 문제가 있다.<br>
+크롬북의 한글전환 단축키가 리눅스앱에서는 동작하지 않는다는 점이다<br>
+여러 아시아 2byte이상 문자권의 사용자들이 구글에 요구를 해왔던 것 같은데<br>
+구글이 공식 지원해주기 전에 유저들이 방법을 찾아냈다.<br>
+이것은 의외로 리눅스에서 여러 언어를 동시에 지원하는 방법과 동일한데 바로 fcitx입력기를 설치하는 것이다.\</p>
+
+
+
+
+<h3 id="참고">
+  <a class="Heading-link u-clickable" href="/posts/tech/howtoinputkorenwithcrostinionpixelbook/#%ec%b0%b8%ea%b3%a0">참고</a>
+</h3>
+<ul>
+<li><a href="https://itsze.ro/blog/2018/08/08/quick-note-on-crostini-chinese-ime.html">https://itsze.ro/blog/2018/08/08/quick-note-on-crostini-chinese-ime.html</a></li>
+<li><a href="https://wiki.debianusers.or.kr/index.php?title=%ED%95%9C%EA%B8%80_%EC%84%A4%EC%A0%95">https://wiki.debianusers.or.kr/index.php?title=%ED%95%9C%EA%B8%80_%EC%84%A4%EC%A0%95</a></li>
+</ul>
+
+
+
+
+<h3 id="한글폰트-설치">
+  <a class="Heading-link u-clickable" href="/posts/tech/howtoinputkorenwithcrostinionpixelbook/#%ed%95%9c%ea%b8%80%ed%8f%b0%ed%8a%b8-%ec%84%a4%ec%b9%98">한글폰트 설치</a>
+</h3>
+<p>나눔글꼴을 좋아해서 항상 나눔글꼴만 설치한다</p>
+<pre><code>$ apt-get install fonts-nanum
+</code></pre>
+
+
+
+
+<h3 id="한글locale-설치">
+  <a class="Heading-link u-clickable" href="/posts/tech/howtoinputkorenwithcrostinionpixelbook/#%ed%95%9c%ea%b8%80locale-%ec%84%a4%ec%b9%98">한글locale 설치</a>
+</h3>
+<ol>
+<li>
+<p>/etc/locale.gen 파일을 편집기로 열어보면 한글 로케일이 comment 되어있다</p>
+<pre><code> #ko_KR.UTF-8 UTF-8
+</code></pre>
+<p>이 comment를 해제하고 저장한다</p>
+<pre><code> ko_KR.UTF-8 UTF-8
+</code></pre>
+</li>
+<li>
+<p>로케일을 생성한다</p>
+<pre><code> $ sudo locale-gen 
+ Generating locales (this might take a while)...
+   ko_KR.EUC-KR... done
+   ko_KR.UTF-8... done
+ Generation complete.
+</code></pre>
+</li>
+</ol>
+
+
+
+
+<h3 id="fcitx-한글-입력기--설치">
+  <a class="Heading-link u-clickable" href="/posts/tech/howtoinputkorenwithcrostinionpixelbook/#fcitx-%ed%95%9c%ea%b8%80-%ec%9e%85%eb%a0%a5%ea%b8%b0--%ec%84%a4%ec%b9%98">fcitx 한글 입력기  설치</a>
+</h3>
+<pre><code>$ sudo apt-get install fcitx-hangul
+</code></pre>
+<p>이 때 fcitx-config-gtk3 도 같이 설치된다. fcitx-config-gtk3를 실행하여 한영 전환키를 취향에 맞게 설정한다</p>
+<p>[![fcitx-config-gtk3](/images/Screenshot 2019-05-23 at 1.22.02 PM.png)](/images/Screenshot 2019-05-23 at 1.22.02 PM.png)</p>
+<ul>
+<li>
+<p>설치 후 fcitx 데몬이 기동되지 않는 것 같다. 이때 fcitx-config-gtk3 를 띄웠을 때 input method tab에 아무것도 보이지 않는 증상이 발생한다. 이 때는 수동으로 데몬을 띄워준다.</p>
+<pre><code>  $ /usr/bin/fcitx-autostart
+</code></pre>
+</li>
+</ul>
+
+
+
+
+<h3 id="crostini에서-한글입력기를-사용하도록-설정변경">
+  <a class="Heading-link u-clickable" href="/posts/tech/howtoinputkorenwithcrostinionpixelbook/#crostini%ec%97%90%ec%84%9c-%ed%95%9c%ea%b8%80%ec%9e%85%eb%a0%a5%ea%b8%b0%eb%a5%bc-%ec%82%ac%ec%9a%a9%ed%95%98%eb%8f%84%eb%a1%9d-%ec%84%a4%ec%a0%95%eb%b3%80%ea%b2%bd">crostini에서 한글입력기를 사용하도록 설정변경</a>
+</h3>
+<p>/etc/systemd/user/cros-garcon.service.d/cros-garcon-override.conf 에 추가</p>
+<pre><code>$ sudo vi /etc/systemd/user/cros-garcon.service.d/cros-garcon-override.conf
+...
+Environment=&quot;GTK_IM_MODULE=fcitx&quot;
+Environment=&quot;QT_IM_MODULE=fcitx&quot;
+Environment=&quot;XMODIFIERS=@im=fcitx&quot;
+</code></pre>
+<p>부팅 시 fcitx 프로세스가 자동으로 기동되도록 한다 : ~/.sommelierrc 에 추가(없다면 만든다)</p>
+<pre><code>/usr/bin/fcitx-autostart
+</code></pre>
+<p>terminator에서 한글이 잘 입력된다.</p>
+<p>[![terminator에서 한글 입출력](/images/Screenshot 2019-07-31 at 12.42.45 PM.png)](/images/Screenshot 2019-07-31 at 12.42.45 PM.png)</p>
+<p>그런데 기본 터미널에 한글 입출력에 문제가 있다 -.-</p>
+<p>[![기본 터미널에 한글 입출력에 문제가 있다](/images/Screenshot 2019-07-31 at 12.51.33 PM.png)](/images/Screenshot 2019-07-31 at 12.51.33 PM.png)</p>
+<p>그래서  terminator 프로그램을 추천한다.<br>
+<a href="https://taufanlubis.wordpress.com/2011/08/15/terminator-%E2%80%93-multiple-gnome-terminals-in-one-window/">https://taufanlubis.wordpress.com/2011/08/15/terminator-%E2%80%93-multiple-gnome-terminals-in-one-window/</a></p>
+<p>(fcitx는ˈfaɪtɪks라고 발음한다고)</p>
+
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/pixelbook/" rel="tag">Pixelbook</a>
+            </li>
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/crostini/" rel="tag">Crostini</a>
+            </li>
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/tech/hugoonpixelbook/" rel="bookmark">Pixelbook에서 hugo 설치</a>
+  </h2>
+  
+    
+      <time datetime="2019-03-15T22:38:28&#43;09:00">March 15, 2019</time>
+    
+  
+</header>
+      
+        
+          
+            
+
+
+
+<h2 id="설치">
+  <a class="Heading-link u-clickable" href="/posts/tech/hugoonpixelbook/#%ec%84%a4%ec%b9%98">설치</a>
+</h2>
+<p>ASUS Chromebook C100PA-DS03 에 설치할 때와 마찬가지로 최신버전을 설치하려면 deb 파일을 다운 받아야 한다. 현재 최신 버전은 hugo_0.54.0-1_amd64.deb 이다.
+하지만 libsass1이 필요하다고 하니 먼저 설치한다.</p>
+<p>다운로드 경로 <a href="https://packages.debian.org/sid/amd64/libsass1/download">https://packages.debian.org/sid/amd64/libsass1/download</a></p>
+<p>다운 받은 후 설치</p>
+<pre><code>$ sudo dpkg -i libsass1_3.5.5-2_amd64.deb
+</code></pre>
+<p>다운로드 경로 <a href="https://packages.debian.org/sid/amd64/hugo/download">https://packages.debian.org/sid/amd64/hugo/download</a></p>
+<p>다운 받은 후 설치</p>
+<pre><code>$ sudo dpkg -i hugo_0.54.0-1_amd64.deb 
+</code></pre>
+
+
+
+
+<h2 id="구동">
+  <a class="Heading-link u-clickable" href="/posts/tech/hugoonpixelbook/#%ea%b5%ac%eb%8f%99">구동</a>
+</h2>
+<p>pixelbook에서는 hugo 기본 포트인 1313 으로 띄울 수 없으니 아래를 참고하고
+<a href="https://www.reddit.com/r/Crostini/comments/aewwhf/cannot_access_penguinlinuxtestport/">https://www.reddit.com/r/Crostini/comments/aewwhf/cannot_access_penguinlinuxtestport/</a></p>
+<p>서버 띄울 때 포트 변경해줘야 한다. 제일 유명한 포트 중에 하나인 8080을 사용하면 잘 뜬다</p>
+<pre><code>$ hugo server -D -p 8080
+</code></pre>
+
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/pixelbook/" rel="tag">Pixelbook</a>
+            </li>
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/hugo/" rel="tag">Hugo</a>
+            </li>
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/tech/method-overriding-vs-overloading/" rel="bookmark">method overring 과  overloading 차이</a>
+  </h2>
+  
+    
+      <time datetime="2018-06-24T10:54:24&#43;02:00">June 24, 2018</time>
+    
+  
+</header>
+      
+        
+          
+            <p>모든 객체지향 서적에서 설명은 정확하게 하고 있다.
+하지만 영어권 개발자가 아닌이상 헷갈릴 수밖에 없다.
+그러나 두 단어의 차이를 생각해 보면 이해하기 쉽다.</p>
+
+
+
+
+<h5 id="override">
+  <a class="Heading-link u-clickable" href="/posts/tech/method-overriding-vs-overloading/#override">override</a>
+</h5>
+<p>덮어 씌우기 overlap. 덮어 씌우므로 메소드의 개수가 늘어나지 않는다.</p>
+
+
+
+
+<h5 id="overload">
+  <a class="Heading-link u-clickable" href="/posts/tech/method-overriding-vs-overloading/#overload">overload</a>
+</h5>
+<p>과적하다. 과적 한 만큼 메소드가 늘어난다.</p>
+
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/overring/" rel="tag">Overring</a>
+            </li>
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/overloading/" rel="tag">Overloading</a>
+            </li>
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/tech/post-title/" rel="bookmark">Hugo Theme 변경 테스트</a>
+  </h2>
+  
+    
+      <time datetime="2018-06-23T10:54:24&#43;02:00">June 23, 2018</time>
+    
+  
+</header>
+      
+        
+          
+            <p>원래 사용하던 theme이 좀 평범한 듯 하여 다른 theme 을 테스트 하고 있다.
+지금 현재 쓰는 theme 은 bleak 라는 것인데 메인화면에서 compact 하게 공간 낭비가 없다는게 좋다.</p>
+<p><a href="https://github.com/Zenithar/hugo-theme-bleak">https://github.com/Zenithar/hugo-theme-bleak</a></p>
+<p>한가지 마음에 안드는게 있는데 상세화면에서 소스 코드 보기(code태그) 가 눈에 잘 안띈다는 건데. 그래서  아래처럼 main.css를 좀 바꿨더니 볼만해졌다.</p>
+
+  
+
+<pre tabindex="0"><code>code,pre,tt{
+	font-family:Inconsolata,monospace;
+	background-color:white
+}</code></pre>
+<p>하지만 bleak를 쓰지 않기로 함.</p>
+<ul>
+<li>code line numbering 된다고 했는데 안되고 <a href="https://bleak.zutrinken.com/demo/">https://bleak.zutrinken.com/demo/</a></li>
+<li>google analytics 동작 안되고(세팅을 잘못했을 수도)</li>
+<li>업데이트가 활발하지 않은 듯</li>
+</ul>
+<p>그래서 <a href="https://themes.gohugo.io/gohugo-theme-ananke/">ananke</a> 로 다시 돌아감</p>
+<p>그 외에 괜찮은 theme 들</p>
+<ul>
+<li><a href="https://github.com/progrhyme/hugo-theme-bootie-docs">https://github.com/progrhyme/hugo-theme-bootie-docs</a></li>
+<li><a href="https://themes.gohugo.io/hugo_theme_pickles/">https://themes.gohugo.io/hugo_theme_pickles/</a></li>
+<li><a href="https://themes.gohugo.io/black-and-light/">https://themes.gohugo.io/black-and-light/</a></li>
+<li><a href="https://themes.gohugo.io/hugo-kiera/">https://themes.gohugo.io/hugo-kiera/</a></li>
+<li><a href="https://github.com/budparr/gohugo-theme-ananke">https://github.com/budparr/gohugo-theme-ananke</a></li>
+<li><a href="https://themes.gohugo.io/hugo-theme-minos/">https://themes.gohugo.io/hugo-theme-minos/</a></li>
+<li><a href="https://themes.gohugo.io/gohugo-amp/">https://themes.gohugo.io/gohugo-amp/</a></li>
+</ul>
+
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/hugo/" rel="tag">Hugo</a>
+            </li>
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/theme/" rel="tag">Theme</a>
+            </li>
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/%EC%9D%8C%EC%95%85/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C_%EC%82%AC%EC%9A%A9%ED%95%A0_dtm%EB%B9%84%EA%B5%90/" rel="bookmark">Chromebook Flip C100P에서 사용할 Multitrack Recorder</a>
+  </h2>
+  
+    
+      <time datetime="2017-12-13T22:38:28&#43;09:00">December 13, 2017</time>
+    
+  
+</header>
+      
+        
+          
+            <p>Chromebook Flip C100PA 에서 간단한 녹음 스케치 작업을 하는데 적합한 앱들을 비교해보고 있다.</p>
+
+
+
+
+<h4 id="필수-기능">
+  <a class="Heading-link u-clickable" href="/posts/%EC%9D%8C%EC%95%85/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C_%EC%82%AC%EC%9A%A9%ED%95%A0_dtm%EB%B9%84%EA%B5%90/#%ed%95%84%ec%88%98-%ea%b8%b0%eb%8a%a5">필수 기능</a>
+</h4>
+<ul>
+<li>멀티트랙 녹음</li>
+<li>메트로놈</li>
+<li>녹음 delay 자동 보정</li>
+</ul>
+
+
+
+
+<h4 id="있으면-좋은-기능">
+  <a class="Heading-link u-clickable" href="/posts/%EC%9D%8C%EC%95%85/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C_%EC%82%AC%EC%9A%A9%ED%95%A0_dtm%EB%B9%84%EA%B5%90/#%ec%9e%88%ec%9c%bc%eb%a9%b4-%ec%a2%8b%ec%9d%80-%ea%b8%b0%eb%8a%a5">있으면 좋은 기능</a>
+</h4>
+<ul>
+<li>sample stretch(warp)</li>
+</ul>
+
+
+
+
+<h4 id="웹앱">
+  <a class="Heading-link u-clickable" href="/posts/%EC%9D%8C%EC%95%85/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C_%EC%82%AC%EC%9A%A9%ED%95%A0_dtm%EB%B9%84%EA%B5%90/#%ec%9b%b9%ec%95%b1">웹앱</a>
+</h4>
+<p>대부분 subscribe기반이라 비용 발생 함. 한번에 구입하는게 나을 수도..</p>
+<ul>
+<li><a href="https://www.soundtrap.com/pricing">https://www.soundtrap.com/pricing</a></li>
+<li><a href="https://soundation.com/">https://soundation.com/</a></li>
+</ul>
+
+
+
+
+<h4 id="안드로이드-앱">
+  <a class="Heading-link u-clickable" href="/posts/%EC%9D%8C%EC%95%85/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C_%EC%82%AC%EC%9A%A9%ED%95%A0_dtm%EB%B9%84%EA%B5%90/#%ec%95%88%eb%93%9c%eb%a1%9c%ec%9d%b4%eb%93%9c-%ec%95%b1">안드로이드 앱</a>
+</h4>
+<ul>
+<li>Stagelight</li>
+</ul>
+<blockquote>
+<p>윈도우용도 있음. 비교적 싼 가격. Ableton Live 와 비슷</p>
+</blockquote>
+<blockquote>
+<p>녹음 기능이 좀 이상함. 5분이상 녹음 불가? 멀티트랙 레코더로 쓰기에는 별로인 듯</p>
+</blockquote>
+<ul>
+<li>Audio Evolution Mobile Studio</li>
+</ul>
+<blockquote>
+<p>키보드 단축키 지원</p>
+</blockquote>
+<ul>
+<li>n-Track for Android</li>
+</ul>
+<blockquote>
+<p>그냥 평범한 느낌</p>
+</blockquote>
+<ul>
+<li>FL Studio Mobile</li>
+</ul>
+<blockquote>
+<p>데모를 구하지 못해 써보지는 못햇으나 Ableton Live 느낌.</p>
+</blockquote>
+
+
+
+
+<h4 id="리눅스-앱">
+  <a class="Heading-link u-clickable" href="/posts/%EC%9D%8C%EC%95%85/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C_%EC%82%AC%EC%9A%A9%ED%95%A0_dtm%EB%B9%84%EA%B5%90/#%eb%a6%ac%eb%88%85%ec%8a%a4-%ec%95%b1">리눅스 앱</a>
+</h4>
+<ul>
+<li>Audacity</li>
+</ul>
+<blockquote>
+<p>공짜다.</p>
+</blockquote>
+<blockquote>
+<p>실시간 이펙트 안되는데 이펙트도 별로 없다.</p>
+</blockquote>
+<blockquote>
+<p>간단한 스케치용으로는 사용가능</p>
+</blockquote>
+
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/%EC%9D%8C%EC%95%85/" rel="tag">음악</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+  
+
+  
+  <nav>
+    
+      <a class="Pagination u-clickable" href="/page/16/" rel="prev">« Previous</a>
+    
+    
+      <a class="Pagination Pagination--right u-clickable" href="/page/14/" rel="next">Next »</a>
+    
+  </nav>
+
+
+
+
+      </div>
+    </div>
+  </main>
+  
+  <footer class="Footer">
+    <div class="u-wrapper">
+      <div class="u-padding u-noboosting">
+        Do What You Want To Do
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

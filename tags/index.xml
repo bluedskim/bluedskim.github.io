@@ -1,718 +1,718 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Do What You Want To Do</title>
-    <link>https://bluedskim.github.io/tags/</link>
-    <description>Recent content in Tags on Do What You Want To Do</description>
+    <title>Tags :: Do What You Want To Do</title>
+    <link>https://bluedskim.github.io/tags/index.html</link>
+    <description></description>
     <generator>Hugo</generator>
     <language>ko-KR</language>
     <lastBuildDate>Fri, 17 Dec 2021 22:31:51 +0900</lastBuildDate>
     <atom:link href="https://bluedskim.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Java</title>
-      <link>https://bluedskim.github.io/tags/java/</link>
+      <title>Tag :: Java</title>
+      <link>https://bluedskim.github.io/tags/java/index.html</link>
       <pubDate>Fri, 17 Dec 2021 22:31:51 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/java/</guid>
+      <guid>https://bluedskim.github.io/tags/java/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>자바의 정석(남궁성)</title>
-      <link>https://bluedskim.github.io/tags/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D%EB%82%A8%EA%B6%81%EC%84%B1/</link>
+      <title>Tag :: 자바의 정석(남궁성)</title>
+      <link>https://bluedskim.github.io/tags/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D%EB%82%A8%EA%B6%81%EC%84%B1/index.html</link>
       <pubDate>Fri, 17 Dec 2021 22:31:51 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D%EB%82%A8%EA%B6%81%EC%84%B1/</guid>
+      <guid>https://bluedskim.github.io/tags/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D%EB%82%A8%EA%B6%81%EC%84%B1/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Architecture</title>
-      <link>https://bluedskim.github.io/tags/architecture/</link>
+      <title>Tag :: Architecture</title>
+      <link>https://bluedskim.github.io/tags/architecture/index.html</link>
       <pubDate>Wed, 11 Aug 2021 10:05:20 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/architecture/</guid>
+      <guid>https://bluedskim.github.io/tags/architecture/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Docker</title>
-      <link>https://bluedskim.github.io/tags/docker/</link>
+      <title>Tag :: Docker</title>
+      <link>https://bluedskim.github.io/tags/docker/index.html</link>
       <pubDate>Wed, 14 Jul 2021 23:59:28 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/docker/</guid>
+      <guid>https://bluedskim.github.io/tags/docker/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Oracle</title>
-      <link>https://bluedskim.github.io/tags/oracle/</link>
+      <title>Tag :: Oracle</title>
+      <link>https://bluedskim.github.io/tags/oracle/index.html</link>
       <pubDate>Wed, 14 Jul 2021 23:59:28 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/oracle/</guid>
+      <guid>https://bluedskim.github.io/tags/oracle/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Design Pattern</title>
-      <link>https://bluedskim.github.io/tags/design-pattern/</link>
+      <title>Tag :: Design Pattern</title>
+      <link>https://bluedskim.github.io/tags/design-pattern/index.html</link>
       <pubDate>Tue, 29 Jun 2021 22:47:34 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/design-pattern/</guid>
+      <guid>https://bluedskim.github.io/tags/design-pattern/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Agile</title>
-      <link>https://bluedskim.github.io/tags/agile/</link>
+      <title>Tag :: Agile</title>
+      <link>https://bluedskim.github.io/tags/agile/index.html</link>
       <pubDate>Sat, 12 Jun 2021 10:38:46 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/agile/</guid>
+      <guid>https://bluedskim.github.io/tags/agile/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Redmine</title>
-      <link>https://bluedskim.github.io/tags/redmine/</link>
+      <title>Tag :: Redmine</title>
+      <link>https://bluedskim.github.io/tags/redmine/index.html</link>
       <pubDate>Sat, 12 Jun 2021 10:38:46 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/redmine/</guid>
+      <guid>https://bluedskim.github.io/tags/redmine/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Ubuntu</title>
-      <link>https://bluedskim.github.io/tags/ubuntu/</link>
+      <title>Tag :: Ubuntu</title>
+      <link>https://bluedskim.github.io/tags/ubuntu/index.html</link>
       <pubDate>Tue, 08 Jun 2021 22:20:30 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/ubuntu/</guid>
+      <guid>https://bluedskim.github.io/tags/ubuntu/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Vs Code</title>
-      <link>https://bluedskim.github.io/tags/vs-code/</link>
+      <title>Tag :: Vs Code</title>
+      <link>https://bluedskim.github.io/tags/vs-code/index.html</link>
       <pubDate>Tue, 08 Jun 2021 22:20:30 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/vs-code/</guid>
+      <guid>https://bluedskim.github.io/tags/vs-code/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Taurus</title>
-      <link>https://bluedskim.github.io/tags/taurus/</link>
+      <title>Tag :: Taurus</title>
+      <link>https://bluedskim.github.io/tags/taurus/index.html</link>
       <pubDate>Mon, 15 Feb 2021 00:16:55 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/taurus/</guid>
+      <guid>https://bluedskim.github.io/tags/taurus/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>프로그래밍</title>
-      <link>https://bluedskim.github.io/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/</link>
+      <title>Tag :: 프로그래밍</title>
+      <link>https://bluedskim.github.io/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/index.html</link>
       <pubDate>Mon, 15 Feb 2021 00:16:55 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/</guid>
+      <guid>https://bluedskim.github.io/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Karate</title>
-      <link>https://bluedskim.github.io/tags/karate/</link>
+      <title>Tag :: Karate</title>
+      <link>https://bluedskim.github.io/tags/karate/index.html</link>
       <pubDate>Sat, 09 Jan 2021 22:59:55 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/karate/</guid>
+      <guid>https://bluedskim.github.io/tags/karate/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>방법론</title>
-      <link>https://bluedskim.github.io/tags/%EB%B0%A9%EB%B2%95%EB%A1%A0/</link>
+      <title>Tag :: 방법론</title>
+      <link>https://bluedskim.github.io/tags/%EB%B0%A9%EB%B2%95%EB%A1%A0/index.html</link>
       <pubDate>Sun, 04 Oct 2020 21:13:35 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/%EB%B0%A9%EB%B2%95%EB%A1%A0/</guid>
+      <guid>https://bluedskim.github.io/tags/%EB%B0%A9%EB%B2%95%EB%A1%A0/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>애자일</title>
-      <link>https://bluedskim.github.io/tags/%EC%95%A0%EC%9E%90%EC%9D%BC/</link>
+      <title>Tag :: 애자일</title>
+      <link>https://bluedskim.github.io/tags/%EC%95%A0%EC%9E%90%EC%9D%BC/index.html</link>
       <pubDate>Sun, 04 Oct 2020 21:13:35 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/%EC%95%A0%EC%9E%90%EC%9D%BC/</guid>
+      <guid>https://bluedskim.github.io/tags/%EC%95%A0%EC%9E%90%EC%9D%BC/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Node</title>
-      <link>https://bluedskim.github.io/tags/node/</link>
+      <title>Tag :: Node</title>
+      <link>https://bluedskim.github.io/tags/node/index.html</link>
       <pubDate>Wed, 30 Sep 2020 12:37:16 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/node/</guid>
+      <guid>https://bluedskim.github.io/tags/node/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>ReactJS</title>
-      <link>https://bluedskim.github.io/tags/reactjs/</link>
+      <title>Tag :: ReactJS</title>
+      <link>https://bluedskim.github.io/tags/reactjs/index.html</link>
       <pubDate>Wed, 30 Sep 2020 12:37:16 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/reactjs/</guid>
+      <guid>https://bluedskim.github.io/tags/reactjs/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Chromebook</title>
-      <link>https://bluedskim.github.io/tags/chromebook/</link>
+      <title>Tag :: Chromebook</title>
+      <link>https://bluedskim.github.io/tags/chromebook/index.html</link>
       <pubDate>Sat, 16 May 2020 17:49:41 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/chromebook/</guid>
+      <guid>https://bluedskim.github.io/tags/chromebook/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Linux</title>
-      <link>https://bluedskim.github.io/tags/linux/</link>
+      <title>Tag :: Linux</title>
+      <link>https://bluedskim.github.io/tags/linux/index.html</link>
       <pubDate>Sat, 16 May 2020 17:49:41 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/linux/</guid>
+      <guid>https://bluedskim.github.io/tags/linux/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Certbot</title>
-      <link>https://bluedskim.github.io/tags/certbot/</link>
+      <title>Tag :: Certbot</title>
+      <link>https://bluedskim.github.io/tags/certbot/index.html</link>
       <pubDate>Sun, 10 May 2020 21:23:09 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/certbot/</guid>
+      <guid>https://bluedskim.github.io/tags/certbot/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Spring Boot</title>
-      <link>https://bluedskim.github.io/tags/spring-boot/</link>
+      <title>Tag :: Spring Boot</title>
+      <link>https://bluedskim.github.io/tags/spring-boot/index.html</link>
       <pubDate>Sun, 10 May 2020 21:23:09 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/spring-boot/</guid>
+      <guid>https://bluedskim.github.io/tags/spring-boot/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Material-UI</title>
-      <link>https://bluedskim.github.io/tags/material-ui/</link>
+      <title>Tag :: Material-UI</title>
+      <link>https://bluedskim.github.io/tags/material-ui/index.html</link>
       <pubDate>Tue, 05 May 2020 21:58:18 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/material-ui/</guid>
+      <guid>https://bluedskim.github.io/tags/material-ui/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Android</title>
-      <link>https://bluedskim.github.io/tags/android/</link>
+      <title>Tag :: Android</title>
+      <link>https://bluedskim.github.io/tags/android/index.html</link>
       <pubDate>Fri, 01 May 2020 12:03:18 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/android/</guid>
+      <guid>https://bluedskim.github.io/tags/android/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Qwerty Phone</title>
-      <link>https://bluedskim.github.io/tags/qwerty-phone/</link>
+      <title>Tag :: Qwerty Phone</title>
+      <link>https://bluedskim.github.io/tags/qwerty-phone/index.html</link>
       <pubDate>Fri, 01 May 2020 12:03:18 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/qwerty-phone/</guid>
+      <guid>https://bluedskim.github.io/tags/qwerty-phone/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Sony Xperia Pro</title>
-      <link>https://bluedskim.github.io/tags/sony-xperia-pro/</link>
+      <title>Tag :: Sony Xperia Pro</title>
+      <link>https://bluedskim.github.io/tags/sony-xperia-pro/index.html</link>
       <pubDate>Fri, 01 May 2020 12:03:18 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/sony-xperia-pro/</guid>
+      <guid>https://bluedskim.github.io/tags/sony-xperia-pro/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>JPA</title>
-      <link>https://bluedskim.github.io/tags/jpa/</link>
+      <title>Tag :: JPA</title>
+      <link>https://bluedskim.github.io/tags/jpa/index.html</link>
       <pubDate>Mon, 27 Apr 2020 21:26:43 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/jpa/</guid>
+      <guid>https://bluedskim.github.io/tags/jpa/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Samba</title>
-      <link>https://bluedskim.github.io/tags/samba/</link>
+      <title>Tag :: Samba</title>
+      <link>https://bluedskim.github.io/tags/samba/index.html</link>
       <pubDate>Sun, 19 Apr 2020 22:34:15 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/samba/</guid>
+      <guid>https://bluedskim.github.io/tags/samba/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>개발</title>
-      <link>https://bluedskim.github.io/tags/%EA%B0%9C%EB%B0%9C/</link>
+      <title>Tag :: 개발</title>
+      <link>https://bluedskim.github.io/tags/%EA%B0%9C%EB%B0%9C/index.html</link>
       <pubDate>Sun, 19 Apr 2020 21:44:58 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/%EA%B0%9C%EB%B0%9C/</guid>
+      <guid>https://bluedskim.github.io/tags/%EA%B0%9C%EB%B0%9C/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>소프트웨어</title>
-      <link>https://bluedskim.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4/</link>
+      <title>Tag :: 소프트웨어</title>
+      <link>https://bluedskim.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4/index.html</link>
       <pubDate>Sun, 19 Apr 2020 21:44:58 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4/</guid>
+      <guid>https://bluedskim.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>리눅스</title>
-      <link>https://bluedskim.github.io/tags/%EB%A6%AC%EB%88%85%EC%8A%A4/</link>
+      <title>Tag :: 리눅스</title>
+      <link>https://bluedskim.github.io/tags/%EB%A6%AC%EB%88%85%EC%8A%A4/index.html</link>
       <pubDate>Sat, 18 Apr 2020 14:22:37 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/%EB%A6%AC%EB%88%85%EC%8A%A4/</guid>
+      <guid>https://bluedskim.github.io/tags/%EB%A6%AC%EB%88%85%EC%8A%A4/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>픽셀북</title>
-      <link>https://bluedskim.github.io/tags/%ED%94%BD%EC%85%80%EB%B6%81/</link>
+      <title>Tag :: 픽셀북</title>
+      <link>https://bluedskim.github.io/tags/%ED%94%BD%EC%85%80%EB%B6%81/index.html</link>
       <pubDate>Sat, 18 Apr 2020 14:22:37 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/%ED%94%BD%EC%85%80%EB%B6%81/</guid>
+      <guid>https://bluedskim.github.io/tags/%ED%94%BD%EC%85%80%EB%B6%81/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Sparkylinux</title>
-      <link>https://bluedskim.github.io/tags/sparkylinux/</link>
+      <title>Tag :: Sparkylinux</title>
+      <link>https://bluedskim.github.io/tags/sparkylinux/index.html</link>
       <pubDate>Sat, 02 Nov 2019 02:14:20 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/sparkylinux/</guid>
+      <guid>https://bluedskim.github.io/tags/sparkylinux/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Mirroring</title>
-      <link>https://bluedskim.github.io/tags/mirroring/</link>
+      <title>Tag :: Mirroring</title>
+      <link>https://bluedskim.github.io/tags/mirroring/index.html</link>
       <pubDate>Tue, 29 Oct 2019 21:42:39 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/mirroring/</guid>
+      <guid>https://bluedskim.github.io/tags/mirroring/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Wget</title>
-      <link>https://bluedskim.github.io/tags/wget/</link>
+      <title>Tag :: Wget</title>
+      <link>https://bluedskim.github.io/tags/wget/index.html</link>
       <pubDate>Tue, 29 Oct 2019 21:42:39 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/wget/</guid>
+      <guid>https://bluedskim.github.io/tags/wget/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Pixelbook</title>
-      <link>https://bluedskim.github.io/tags/pixelbook/</link>
+      <title>Tag :: Pixelbook</title>
+      <link>https://bluedskim.github.io/tags/pixelbook/index.html</link>
       <pubDate>Wed, 04 Sep 2019 13:25:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/pixelbook/</guid>
+      <guid>https://bluedskim.github.io/tags/pixelbook/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>보헤미아</title>
-      <link>https://bluedskim.github.io/tags/%EB%B3%B4%ED%97%A4%EB%AF%B8%EC%95%84/</link>
+      <title>Tag :: 보헤미아</title>
+      <link>https://bluedskim.github.io/tags/%EB%B3%B4%ED%97%A4%EB%AF%B8%EC%95%84/index.html</link>
       <pubDate>Tue, 20 Aug 2019 17:25:01 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/%EB%B3%B4%ED%97%A4%EB%AF%B8%EC%95%84/</guid>
+      <guid>https://bluedskim.github.io/tags/%EB%B3%B4%ED%97%A4%EB%AF%B8%EC%95%84/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Ffmpeg</title>
-      <link>https://bluedskim.github.io/tags/ffmpeg/</link>
+      <title>Tag :: Ffmpeg</title>
+      <link>https://bluedskim.github.io/tags/ffmpeg/index.html</link>
       <pubDate>Tue, 20 Aug 2019 17:06:05 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/ffmpeg/</guid>
+      <guid>https://bluedskim.github.io/tags/ffmpeg/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Life Hack</title>
-      <link>https://bluedskim.github.io/tags/life-hack/</link>
+      <title>Tag :: Life Hack</title>
+      <link>https://bluedskim.github.io/tags/life-hack/index.html</link>
       <pubDate>Thu, 15 Aug 2019 13:32:43 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/life-hack/</guid>
+      <guid>https://bluedskim.github.io/tags/life-hack/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>고양이</title>
-      <link>https://bluedskim.github.io/tags/%EA%B3%A0%EC%96%91%EC%9D%B4/</link>
+      <title>Tag :: 고양이</title>
+      <link>https://bluedskim.github.io/tags/%EA%B3%A0%EC%96%91%EC%9D%B4/index.html</link>
       <pubDate>Thu, 15 Aug 2019 13:32:43 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/%EA%B3%A0%EC%96%91%EC%9D%B4/</guid>
+      <guid>https://bluedskim.github.io/tags/%EA%B3%A0%EC%96%91%EC%9D%B4/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Tablet</title>
-      <link>https://bluedskim.github.io/tags/tablet/</link>
+      <title>Tag :: Tablet</title>
+      <link>https://bluedskim.github.io/tags/tablet/index.html</link>
       <pubDate>Thu, 15 Aug 2019 00:00:34 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/tablet/</guid>
+      <guid>https://bluedskim.github.io/tags/tablet/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Google</title>
-      <link>https://bluedskim.github.io/tags/google/</link>
+      <title>Tag :: Google</title>
+      <link>https://bluedskim.github.io/tags/google/index.html</link>
       <pubDate>Wed, 14 Aug 2019 09:26:56 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/google/</guid>
+      <guid>https://bluedskim.github.io/tags/google/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Quake</title>
-      <link>https://bluedskim.github.io/tags/quake/</link>
+      <title>Tag :: Quake</title>
+      <link>https://bluedskim.github.io/tags/quake/index.html</link>
       <pubDate>Tue, 13 Aug 2019 18:28:39 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/quake/</guid>
+      <guid>https://bluedskim.github.io/tags/quake/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>WebGL</title>
-      <link>https://bluedskim.github.io/tags/webgl/</link>
+      <title>Tag :: WebGL</title>
+      <link>https://bluedskim.github.io/tags/webgl/index.html</link>
       <pubDate>Tue, 13 Aug 2019 18:28:39 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/webgl/</guid>
+      <guid>https://bluedskim.github.io/tags/webgl/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Flutter</title>
-      <link>https://bluedskim.github.io/tags/flutter/</link>
+      <title>Tag :: Flutter</title>
+      <link>https://bluedskim.github.io/tags/flutter/index.html</link>
       <pubDate>Wed, 31 Jul 2019 15:14:43 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/flutter/</guid>
+      <guid>https://bluedskim.github.io/tags/flutter/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Visual Studio Code</title>
-      <link>https://bluedskim.github.io/tags/visual-studio-code/</link>
+      <title>Tag :: Visual Studio Code</title>
+      <link>https://bluedskim.github.io/tags/visual-studio-code/index.html</link>
       <pubDate>Wed, 31 Jul 2019 15:14:43 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/visual-studio-code/</guid>
+      <guid>https://bluedskim.github.io/tags/visual-studio-code/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Reaper</title>
-      <link>https://bluedskim.github.io/tags/reaper/</link>
+      <title>Tag :: Reaper</title>
+      <link>https://bluedskim.github.io/tags/reaper/index.html</link>
       <pubDate>Wed, 10 Jul 2019 17:24:26 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/reaper/</guid>
+      <guid>https://bluedskim.github.io/tags/reaper/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>이글루스</title>
-      <link>https://bluedskim.github.io/tags/%EC%9D%B4%EA%B8%80%EB%A3%A8%EC%8A%A4/</link>
+      <title>Tag :: 이글루스</title>
+      <link>https://bluedskim.github.io/tags/%EC%9D%B4%EA%B8%80%EB%A3%A8%EC%8A%A4/index.html</link>
       <pubDate>Sun, 23 Jun 2019 16:36:35 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/%EC%9D%B4%EA%B8%80%EB%A3%A8%EC%8A%A4/</guid>
+      <guid>https://bluedskim.github.io/tags/%EC%9D%B4%EA%B8%80%EB%A3%A8%EC%8A%A4/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>이글루스 백업</title>
-      <link>https://bluedskim.github.io/tags/%EC%9D%B4%EA%B8%80%EB%A3%A8%EC%8A%A4-%EB%B0%B1%EC%97%85/</link>
+      <title>Tag :: 이글루스 백업</title>
+      <link>https://bluedskim.github.io/tags/%EC%9D%B4%EA%B8%80%EB%A3%A8%EC%8A%A4-%EB%B0%B1%EC%97%85/index.html</link>
       <pubDate>Sun, 23 Jun 2019 16:36:35 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/%EC%9D%B4%EA%B8%80%EB%A3%A8%EC%8A%A4-%EB%B0%B1%EC%97%85/</guid>
+      <guid>https://bluedskim.github.io/tags/%EC%9D%B4%EA%B8%80%EB%A3%A8%EC%8A%A4-%EB%B0%B1%EC%97%85/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>이글루스 블로그 백업</title>
-      <link>https://bluedskim.github.io/tags/%EC%9D%B4%EA%B8%80%EB%A3%A8%EC%8A%A4-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%B0%B1%EC%97%85/</link>
+      <title>Tag :: 이글루스 블로그 백업</title>
+      <link>https://bluedskim.github.io/tags/%EC%9D%B4%EA%B8%80%EB%A3%A8%EC%8A%A4-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%B0%B1%EC%97%85/index.html</link>
       <pubDate>Sun, 23 Jun 2019 16:36:35 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/%EC%9D%B4%EA%B8%80%EB%A3%A8%EC%8A%A4-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%B0%B1%EC%97%85/</guid>
+      <guid>https://bluedskim.github.io/tags/%EC%9D%B4%EA%B8%80%EB%A3%A8%EC%8A%A4-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%B0%B1%EC%97%85/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Termdown</title>
-      <link>https://bluedskim.github.io/tags/termdown/</link>
+      <title>Tag :: Termdown</title>
+      <link>https://bluedskim.github.io/tags/termdown/index.html</link>
       <pubDate>Sun, 24 Mar 2019 10:38:28 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/termdown/</guid>
+      <guid>https://bluedskim.github.io/tags/termdown/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Gear360</title>
-      <link>https://bluedskim.github.io/tags/gear360/</link>
+      <title>Tag :: Gear360</title>
+      <link>https://bluedskim.github.io/tags/gear360/index.html</link>
       <pubDate>Tue, 19 Mar 2019 23:38:28 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/gear360/</guid>
+      <guid>https://bluedskim.github.io/tags/gear360/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Crostini</title>
-      <link>https://bluedskim.github.io/tags/crostini/</link>
+      <title>Tag :: Crostini</title>
+      <link>https://bluedskim.github.io/tags/crostini/index.html</link>
       <pubDate>Sat, 16 Mar 2019 22:38:28 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/crostini/</guid>
+      <guid>https://bluedskim.github.io/tags/crostini/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Hugo</title>
-      <link>https://bluedskim.github.io/tags/hugo/</link>
+      <title>Tag :: Hugo</title>
+      <link>https://bluedskim.github.io/tags/hugo/index.html</link>
       <pubDate>Fri, 15 Mar 2019 22:38:28 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/hugo/</guid>
+      <guid>https://bluedskim.github.io/tags/hugo/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Overloading</title>
-      <link>https://bluedskim.github.io/tags/overloading/</link>
+      <title>Tag :: Overloading</title>
+      <link>https://bluedskim.github.io/tags/overloading/index.html</link>
       <pubDate>Sun, 24 Jun 2018 10:54:24 +0200</pubDate>
-      <guid>https://bluedskim.github.io/tags/overloading/</guid>
+      <guid>https://bluedskim.github.io/tags/overloading/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Overring</title>
-      <link>https://bluedskim.github.io/tags/overring/</link>
+      <title>Tag :: Overring</title>
+      <link>https://bluedskim.github.io/tags/overring/index.html</link>
       <pubDate>Sun, 24 Jun 2018 10:54:24 +0200</pubDate>
-      <guid>https://bluedskim.github.io/tags/overring/</guid>
+      <guid>https://bluedskim.github.io/tags/overring/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Theme</title>
-      <link>https://bluedskim.github.io/tags/theme/</link>
+      <title>Tag :: Theme</title>
+      <link>https://bluedskim.github.io/tags/theme/index.html</link>
       <pubDate>Sat, 23 Jun 2018 10:54:24 +0200</pubDate>
-      <guid>https://bluedskim.github.io/tags/theme/</guid>
+      <guid>https://bluedskim.github.io/tags/theme/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>구현</title>
-      <link>https://bluedskim.github.io/tags/%EA%B5%AC%ED%98%84/</link>
+      <title>Tag :: 구현</title>
+      <link>https://bluedskim.github.io/tags/%EA%B5%AC%ED%98%84/index.html</link>
       <pubDate>Tue, 12 Dec 2017 22:38:28 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/%EA%B5%AC%ED%98%84/</guid>
+      <guid>https://bluedskim.github.io/tags/%EA%B5%AC%ED%98%84/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>소프트웨어 프로젝트</title>
-      <link>https://bluedskim.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/</link>
+      <title>Tag :: 소프트웨어 프로젝트</title>
+      <link>https://bluedskim.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/index.html</link>
       <pubDate>Tue, 12 Dec 2017 22:38:28 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/</guid>
+      <guid>https://bluedskim.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>C100PA</title>
-      <link>https://bluedskim.github.io/tags/c100pa/</link>
+      <title>Tag :: C100PA</title>
+      <link>https://bluedskim.github.io/tags/c100pa/index.html</link>
       <pubDate>Sun, 22 Oct 2017 22:38:28 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/c100pa/</guid>
+      <guid>https://bluedskim.github.io/tags/c100pa/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Chrombook</title>
-      <link>https://bluedskim.github.io/tags/chrombook/</link>
+      <title>Tag :: Chrombook</title>
+      <link>https://bluedskim.github.io/tags/chrombook/index.html</link>
       <pubDate>Sun, 22 Oct 2017 22:38:28 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/chrombook/</guid>
+      <guid>https://bluedskim.github.io/tags/chrombook/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>DS03</title>
-      <link>https://bluedskim.github.io/tags/ds03/</link>
+      <title>Tag :: DS03</title>
+      <link>https://bluedskim.github.io/tags/ds03/index.html</link>
       <pubDate>Sun, 22 Oct 2017 22:38:28 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/ds03/</guid>
+      <guid>https://bluedskim.github.io/tags/ds03/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Flip</title>
-      <link>https://bluedskim.github.io/tags/flip/</link>
+      <title>Tag :: Flip</title>
+      <link>https://bluedskim.github.io/tags/flip/index.html</link>
       <pubDate>Sun, 22 Oct 2017 22:38:28 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/flip/</guid>
+      <guid>https://bluedskim.github.io/tags/flip/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Guitar</title>
-      <link>https://bluedskim.github.io/tags/guitar/</link>
+      <title>Tag :: Guitar</title>
+      <link>https://bluedskim.github.io/tags/guitar/index.html</link>
       <pubDate>Tue, 10 Feb 2015 01:03:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/guitar/</guid>
+      <guid>https://bluedskim.github.io/tags/guitar/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>MySQL</title>
-      <link>https://bluedskim.github.io/tags/mysql/</link>
+      <title>Tag :: MySQL</title>
+      <link>https://bluedskim.github.io/tags/mysql/index.html</link>
       <pubDate>Thu, 13 Nov 2008 00:38:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/mysql/</guid>
+      <guid>https://bluedskim.github.io/tags/mysql/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>개발자</title>
-      <link>https://bluedskim.github.io/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90/</link>
+      <title>Tag :: 개발자</title>
+      <link>https://bluedskim.github.io/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90/index.html</link>
       <pubDate>Wed, 12 Nov 2008 04:07:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90/</guid>
+      <guid>https://bluedskim.github.io/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>블로그축제</title>
-      <link>https://bluedskim.github.io/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%B6%95%EC%A0%9C/</link>
+      <title>Tag :: 블로그축제</title>
+      <link>https://bluedskim.github.io/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%B6%95%EC%A0%9C/index.html</link>
       <pubDate>Sat, 01 Mar 2008 10:13:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%B6%95%EC%A0%9C/</guid>
+      <guid>https://bluedskim.github.io/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%B6%95%EC%A0%9C/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>인생</title>
-      <link>https://bluedskim.github.io/tags/%EC%9D%B8%EC%83%9D/</link>
+      <title>Tag :: 인생</title>
+      <link>https://bluedskim.github.io/tags/%EC%9D%B8%EC%83%9D/index.html</link>
       <pubDate>Sun, 10 Feb 2008 09:46:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/%EC%9D%B8%EC%83%9D/</guid>
+      <guid>https://bluedskim.github.io/tags/%EC%9D%B8%EC%83%9D/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>격언</title>
-      <link>https://bluedskim.github.io/tags/%EA%B2%A9%EC%96%B8/</link>
+      <title>Tag :: 격언</title>
+      <link>https://bluedskim.github.io/tags/%EA%B2%A9%EC%96%B8/index.html</link>
       <pubDate>Fri, 18 Jan 2008 15:23:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/%EA%B2%A9%EC%96%B8/</guid>
+      <guid>https://bluedskim.github.io/tags/%EA%B2%A9%EC%96%B8/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Bossa</title>
-      <link>https://bluedskim.github.io/tags/bossa/</link>
+      <title>Tag :: Bossa</title>
+      <link>https://bluedskim.github.io/tags/bossa/index.html</link>
       <pubDate>Mon, 07 Jan 2008 22:25:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/bossa/</guid>
+      <guid>https://bluedskim.github.io/tags/bossa/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Bossanova</title>
-      <link>https://bluedskim.github.io/tags/bossanova/</link>
+      <title>Tag :: Bossanova</title>
+      <link>https://bluedskim.github.io/tags/bossanova/index.html</link>
       <pubDate>Mon, 07 Jan 2008 22:25:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/bossanova/</guid>
+      <guid>https://bluedskim.github.io/tags/bossanova/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Ccl</title>
-      <link>https://bluedskim.github.io/tags/ccl/</link>
+      <title>Tag :: Ccl</title>
+      <link>https://bluedskim.github.io/tags/ccl/index.html</link>
       <pubDate>Wed, 26 Dec 2007 14:31:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/ccl/</guid>
+      <guid>https://bluedskim.github.io/tags/ccl/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>브라질</title>
-      <link>https://bluedskim.github.io/tags/%EB%B8%8C%EB%9D%BC%EC%A7%88/</link>
+      <title>Tag :: 브라질</title>
+      <link>https://bluedskim.github.io/tags/%EB%B8%8C%EB%9D%BC%EC%A7%88/index.html</link>
       <pubDate>Fri, 21 Dec 2007 20:08:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/%EB%B8%8C%EB%9D%BC%EC%A7%88/</guid>
+      <guid>https://bluedskim.github.io/tags/%EB%B8%8C%EB%9D%BC%EC%A7%88/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>삼바</title>
-      <link>https://bluedskim.github.io/tags/%EC%82%BC%EB%B0%94/</link>
+      <title>Tag :: 삼바</title>
+      <link>https://bluedskim.github.io/tags/%EC%82%BC%EB%B0%94/index.html</link>
       <pubDate>Fri, 21 Dec 2007 20:08:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/%EC%82%BC%EB%B0%94/</guid>
+      <guid>https://bluedskim.github.io/tags/%EC%82%BC%EB%B0%94/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>영웅</title>
-      <link>https://bluedskim.github.io/tags/%EC%98%81%EC%9B%85/</link>
+      <title>Tag :: 영웅</title>
+      <link>https://bluedskim.github.io/tags/%EC%98%81%EC%9B%85/index.html</link>
       <pubDate>Sun, 16 Dec 2007 20:51:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/%EC%98%81%EC%9B%85/</guid>
+      <guid>https://bluedskim.github.io/tags/%EC%98%81%EC%9B%85/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>제브라맨</title>
-      <link>https://bluedskim.github.io/tags/%EC%A0%9C%EB%B8%8C%EB%9D%BC%EB%A7%A8/</link>
+      <title>Tag :: 제브라맨</title>
+      <link>https://bluedskim.github.io/tags/%EC%A0%9C%EB%B8%8C%EB%9D%BC%EB%A7%A8/index.html</link>
       <pubDate>Sun, 16 Dec 2007 20:51:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/%EC%A0%9C%EB%B8%8C%EB%9D%BC%EB%A7%A8/</guid>
+      <guid>https://bluedskim.github.io/tags/%EC%A0%9C%EB%B8%8C%EB%9D%BC%EB%A7%A8/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>LARAFABIAN</title>
-      <link>https://bluedskim.github.io/tags/larafabian/</link>
+      <title>Tag :: LARAFABIAN</title>
+      <link>https://bluedskim.github.io/tags/larafabian/index.html</link>
       <pubDate>Sat, 15 Dec 2007 15:04:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/larafabian/</guid>
+      <guid>https://bluedskim.github.io/tags/larafabian/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Excel</title>
-      <link>https://bluedskim.github.io/tags/excel/</link>
+      <title>Tag :: Excel</title>
+      <link>https://bluedskim.github.io/tags/excel/index.html</link>
       <pubDate>Wed, 12 Dec 2007 11:59:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/excel/</guid>
+      <guid>https://bluedskim.github.io/tags/excel/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>VLOOKUP</title>
-      <link>https://bluedskim.github.io/tags/vlookup/</link>
+      <title>Tag :: VLOOKUP</title>
+      <link>https://bluedskim.github.io/tags/vlookup/index.html</link>
       <pubDate>Wed, 12 Dec 2007 11:59:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/vlookup/</guid>
+      <guid>https://bluedskim.github.io/tags/vlookup/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Dannyboy</title>
-      <link>https://bluedskim.github.io/tags/dannyboy/</link>
+      <title>Tag :: Dannyboy</title>
+      <link>https://bluedskim.github.io/tags/dannyboy/index.html</link>
       <pubDate>Mon, 10 Dec 2007 09:01:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/dannyboy/</guid>
+      <guid>https://bluedskim.github.io/tags/dannyboy/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>통기타</title>
-      <link>https://bluedskim.github.io/tags/%ED%86%B5%EA%B8%B0%ED%83%80/</link>
+      <title>Tag :: 통기타</title>
+      <link>https://bluedskim.github.io/tags/%ED%86%B5%EA%B8%B0%ED%83%80/index.html</link>
       <pubDate>Tue, 04 Dec 2007 14:23:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/%ED%86%B5%EA%B8%B0%ED%83%80/</guid>
+      <guid>https://bluedskim.github.io/tags/%ED%86%B5%EA%B8%B0%ED%83%80/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>더블린</title>
-      <link>https://bluedskim.github.io/tags/%EB%8D%94%EB%B8%94%EB%A6%B0/</link>
+      <title>Tag :: 더블린</title>
+      <link>https://bluedskim.github.io/tags/%EB%8D%94%EB%B8%94%EB%A6%B0/index.html</link>
       <pubDate>Sun, 02 Dec 2007 17:47:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/%EB%8D%94%EB%B8%94%EB%A6%B0/</guid>
+      <guid>https://bluedskim.github.io/tags/%EB%8D%94%EB%B8%94%EB%A6%B0/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>아일랜드</title>
-      <link>https://bluedskim.github.io/tags/%EC%95%84%EC%9D%BC%EB%9E%9C%EB%93%9C/</link>
+      <title>Tag :: 아일랜드</title>
+      <link>https://bluedskim.github.io/tags/%EC%95%84%EC%9D%BC%EB%9E%9C%EB%93%9C/index.html</link>
       <pubDate>Sun, 02 Dec 2007 17:47:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/%EC%95%84%EC%9D%BC%EB%9E%9C%EB%93%9C/</guid>
+      <guid>https://bluedskim.github.io/tags/%EC%95%84%EC%9D%BC%EB%9E%9C%EB%93%9C/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>브이포벤데타</title>
-      <link>https://bluedskim.github.io/tags/%EB%B8%8C%EC%9D%B4%ED%8F%AC%EB%B2%A4%EB%8D%B0%ED%83%80/</link>
+      <title>Tag :: 브이포벤데타</title>
+      <link>https://bluedskim.github.io/tags/%EB%B8%8C%EC%9D%B4%ED%8F%AC%EB%B2%A4%EB%8D%B0%ED%83%80/index.html</link>
       <pubDate>Sun, 02 Dec 2007 09:06:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/%EB%B8%8C%EC%9D%B4%ED%8F%AC%EB%B2%A4%EB%8D%B0%ED%83%80/</guid>
+      <guid>https://bluedskim.github.io/tags/%EB%B8%8C%EC%9D%B4%ED%8F%AC%EB%B2%A4%EB%8D%B0%ED%83%80/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>마츠코</title>
-      <link>https://bluedskim.github.io/tags/%EB%A7%88%EC%B8%A0%EC%BD%94/</link>
+      <title>Tag :: 마츠코</title>
+      <link>https://bluedskim.github.io/tags/%EB%A7%88%EC%B8%A0%EC%BD%94/index.html</link>
       <pubDate>Fri, 23 Nov 2007 14:47:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/%EB%A7%88%EC%B8%A0%EC%BD%94/</guid>
+      <guid>https://bluedskim.github.io/tags/%EB%A7%88%EC%B8%A0%EC%BD%94/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>모리</title>
-      <link>https://bluedskim.github.io/tags/%EB%AA%A8%EB%A6%AC/</link>
+      <title>Tag :: 모리</title>
+      <link>https://bluedskim.github.io/tags/%EB%AA%A8%EB%A6%AC/index.html</link>
       <pubDate>Fri, 23 Nov 2007 14:47:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/%EB%AA%A8%EB%A6%AC/</guid>
+      <guid>https://bluedskim.github.io/tags/%EB%AA%A8%EB%A6%AC/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>피셔킹</title>
-      <link>https://bluedskim.github.io/tags/%ED%94%BC%EC%85%94%ED%82%B9/</link>
+      <title>Tag :: 피셔킹</title>
+      <link>https://bluedskim.github.io/tags/%ED%94%BC%EC%85%94%ED%82%B9/index.html</link>
       <pubDate>Fri, 23 Nov 2007 14:47:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/%ED%94%BC%EC%85%94%ED%82%B9/</guid>
+      <guid>https://bluedskim.github.io/tags/%ED%94%BC%EC%85%94%ED%82%B9/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Brazil</title>
-      <link>https://bluedskim.github.io/tags/brazil/</link>
+      <title>Tag :: Brazil</title>
+      <link>https://bluedskim.github.io/tags/brazil/index.html</link>
       <pubDate>Wed, 21 Nov 2007 14:02:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/brazil/</guid>
+      <guid>https://bluedskim.github.io/tags/brazil/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>심리학</title>
-      <link>https://bluedskim.github.io/tags/%EC%8B%AC%EB%A6%AC%ED%95%99/</link>
+      <title>Tag :: 심리학</title>
+      <link>https://bluedskim.github.io/tags/%EC%8B%AC%EB%A6%AC%ED%95%99/index.html</link>
       <pubDate>Wed, 24 Oct 2007 23:49:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/%EC%8B%AC%EB%A6%AC%ED%95%99/</guid>
+      <guid>https://bluedskim.github.io/tags/%EC%8B%AC%EB%A6%AC%ED%95%99/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>프레임</title>
-      <link>https://bluedskim.github.io/tags/%ED%94%84%EB%A0%88%EC%9E%84/</link>
+      <title>Tag :: 프레임</title>
+      <link>https://bluedskim.github.io/tags/%ED%94%84%EB%A0%88%EC%9E%84/index.html</link>
       <pubDate>Wed, 24 Oct 2007 23:49:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/%ED%94%84%EB%A0%88%EC%9E%84/</guid>
+      <guid>https://bluedskim.github.io/tags/%ED%94%84%EB%A0%88%EC%9E%84/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Bullet</title>
-      <link>https://bluedskim.github.io/tags/bullet/</link>
+      <title>Tag :: Bullet</title>
+      <link>https://bluedskim.github.io/tags/bullet/index.html</link>
       <pubDate>Mon, 22 Oct 2007 22:51:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/bullet/</guid>
+      <guid>https://bluedskim.github.io/tags/bullet/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>War</title>
-      <link>https://bluedskim.github.io/tags/war/</link>
+      <title>Tag :: War</title>
+      <link>https://bluedskim.github.io/tags/war/index.html</link>
       <pubDate>Mon, 22 Oct 2007 22:51:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/war/</guid>
+      <guid>https://bluedskim.github.io/tags/war/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Cashback</title>
-      <link>https://bluedskim.github.io/tags/cashback/</link>
+      <title>Tag :: Cashback</title>
+      <link>https://bluedskim.github.io/tags/cashback/index.html</link>
       <pubDate>Sun, 30 Sep 2007 14:04:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/cashback/</guid>
+      <guid>https://bluedskim.github.io/tags/cashback/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>캐쉬백</title>
-      <link>https://bluedskim.github.io/tags/%EC%BA%90%EC%89%AC%EB%B0%B1/</link>
+      <title>Tag :: 캐쉬백</title>
+      <link>https://bluedskim.github.io/tags/%EC%BA%90%EC%89%AC%EB%B0%B1/index.html</link>
       <pubDate>Sun, 30 Sep 2007 14:04:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/%EC%BA%90%EC%89%AC%EB%B0%B1/</guid>
+      <guid>https://bluedskim.github.io/tags/%EC%BA%90%EC%89%AC%EB%B0%B1/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>칠드런오브맨</title>
-      <link>https://bluedskim.github.io/tags/%EC%B9%A0%EB%93%9C%EB%9F%B0%EC%98%A4%EB%B8%8C%EB%A7%A8/</link>
+      <title>Tag :: 칠드런오브맨</title>
+      <link>https://bluedskim.github.io/tags/%EC%B9%A0%EB%93%9C%EB%9F%B0%EC%98%A4%EB%B8%8C%EB%A7%A8/index.html</link>
       <pubDate>Wed, 05 Sep 2007 00:08:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/%EC%B9%A0%EB%93%9C%EB%9F%B0%EC%98%A4%EB%B8%8C%EB%A7%A8/</guid>
+      <guid>https://bluedskim.github.io/tags/%EC%B9%A0%EB%93%9C%EB%9F%B0%EC%98%A4%EB%B8%8C%EB%A7%A8/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>범죄영화</title>
-      <link>https://bluedskim.github.io/tags/%EB%B2%94%EC%A3%84%EC%98%81%ED%99%94/</link>
+      <title>Tag :: 범죄영화</title>
+      <link>https://bluedskim.github.io/tags/%EB%B2%94%EC%A3%84%EC%98%81%ED%99%94/index.html</link>
       <pubDate>Tue, 31 Jul 2007 23:59:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/%EB%B2%94%EC%A3%84%EC%98%81%ED%99%94/</guid>
+      <guid>https://bluedskim.github.io/tags/%EB%B2%94%EC%A3%84%EC%98%81%ED%99%94/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>B142</title>
-      <link>https://bluedskim.github.io/tags/b142/</link>
+      <title>Tag :: B142</title>
+      <link>https://bluedskim.github.io/tags/b142/index.html</link>
       <pubDate>Sun, 14 Jan 2007 11:21:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/b142/</guid>
+      <guid>https://bluedskim.github.io/tags/b142/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Injection</title>
-      <link>https://bluedskim.github.io/tags/injection/</link>
+      <title>Tag :: Injection</title>
+      <link>https://bluedskim.github.io/tags/injection/index.html</link>
       <pubDate>Tue, 29 Aug 2006 18:56:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/injection/</guid>
+      <guid>https://bluedskim.github.io/tags/injection/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Sql</title>
-      <link>https://bluedskim.github.io/tags/sql/</link>
+      <title>Tag :: Sql</title>
+      <link>https://bluedskim.github.io/tags/sql/index.html</link>
       <pubDate>Tue, 29 Aug 2006 18:56:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/sql/</guid>
+      <guid>https://bluedskim.github.io/tags/sql/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>돌고래</title>
-      <link>https://bluedskim.github.io/tags/%EB%8F%8C%EA%B3%A0%EB%9E%98/</link>
+      <title>Tag :: 돌고래</title>
+      <link>https://bluedskim.github.io/tags/%EB%8F%8C%EA%B3%A0%EB%9E%98/index.html</link>
       <pubDate>Fri, 25 Nov 2005 12:52:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/%EB%8F%8C%EA%B3%A0%EB%9E%98/</guid>
+      <guid>https://bluedskim.github.io/tags/%EB%8F%8C%EA%B3%A0%EB%9E%98/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>사랑</title>
-      <link>https://bluedskim.github.io/tags/%EC%82%AC%EB%9E%91/</link>
+      <title>Tag :: 사랑</title>
+      <link>https://bluedskim.github.io/tags/%EC%82%AC%EB%9E%91/index.html</link>
       <pubDate>Fri, 25 Nov 2005 12:52:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/%EC%82%AC%EB%9E%91/</guid>
+      <guid>https://bluedskim.github.io/tags/%EC%82%AC%EB%9E%91/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>책</title>
-      <link>https://bluedskim.github.io/tags/%EC%B1%85/</link>
+      <title>Tag :: 책</title>
+      <link>https://bluedskim.github.io/tags/%EC%B1%85/index.html</link>
       <pubDate>Fri, 25 Nov 2005 12:52:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/tags/%EC%B1%85/</guid>
+      <guid>https://bluedskim.github.io/tags/%EC%B1%85/index.html</guid>
       <description></description>
     </item>
   </channel>

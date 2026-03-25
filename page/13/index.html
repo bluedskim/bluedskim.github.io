@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=7001&amp;path=livereload" data-no-instant defer></script>
+  
+
+  
+  
+
+
+  <meta charset="utf-8">
+
+
+  <meta name="robots" content="noindex, nofollow, noarchive">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  
+    
+      <meta name="description" content="bluedskim@gmail.com">
+    
+  
+
+
+<meta name="color-scheme" content="light dark">
+
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.152.2">
+  <title>Do What You Want | Do What You Want To Do</title>
+  <link href="//localhost:7001/" rel="canonical">
+
+
+
+
+  <link href="alternate" rel="/feed.xml" type="application/rss+xml">
+
+  
+
+
+
+
+  
+  
+    
+    
+  
+  
+
+
+
+
+
+  
+
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+
+
+  
+    <link href="/css/base.css" rel="stylesheet">
+
+    <link href="/css/syntax.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+  <nav class="u-background">
+  <div class="u-wrapper">
+    <ul class="Banner">
+      <li class="Banner-item Banner-item--title">
+        
+          <a class="Banner-link u-clickable" href="/">Do What You Want To Do</a>
+        
+      </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/categories/tech/">Tech</a>
+        </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/tags/samba/">Samba</a>
+        </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/categories/%EC%9D%8C%EC%95%85/">음악</a>
+        </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/categories/%EC%9D%BC%EC%83%81%EC%82%AC/">일상사</a>
+        </li>
+      
+        
+        
+          
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/feed.xml">RSS</a>
+        </li>
+      
+    </ul>
+  </div>
+</nav>
+
+  <main>
+    <div class="u-wrapper">
+      <div class="u-padding">
+        
+
+  
+    
+    <header class="Heading">
+  <h1 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/" rel="bookmark">Do What You Want</a>
+  </h1>
+  
+</header>
+  
+
+  
+
+
+
+<h1 id="do-what-you-want">
+  <a class="Heading-link u-clickable" href="/#do-what-you-want">Do What You Want</a>
+</h1>
+<p>잡다한 것들을 기록합니다.</p>
+
+
+  
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/tech/pixelbook%EC%97%90%EC%84%9C-flutter%EB%A1%9C-%EC%95%B1-%EA%B0%9C%EB%B0%9C_1/" rel="bookmark">Pixelbook에서 Flutter로 앱 개발</a>
+  </h2>
+  
+    
+      <time datetime="2019-07-31T15:14:43&#43;09:00">July 31, 2019</time>
+    
+  
+</header>
+      
+        
+          
+            <p>픽셀북으로 안드로이드 개발을 편하게 할 수 있다고 해서 시도하고 있는데
+편하다고 하는 이유는 픽셀북에서 바로 안드로이드 앱 화면을 띄울 수 있기 때문인것 같다.
+그러나 그러기 위해서는 픽셀북을 Developer Mode 로 변경해야 하는데 이렇게 하면 3가지 문제가 있다.</p>
+<ol>
+<li>보안이 해제된다 : <em>무섭다</em></li>
+<li>시스템이 불안해진다 : <em>짜증 나다가 화가 나다가 최신 노트북 가격을 비교 하고 있는 나를 발견하면 구글이 미워지기 시작한다</em></li>
+<li>cold 부팅 시 마다 Developer Mode 로 진입해줘야 한다 : <em>귀찮다</em></li>
+</ol>
+<p>그래서 약간(?) 불편하지만 실제 폰으로 테스트 하는 방법을 쓰기로 했다.</p>
+<ul>
+<li>참고 : <a href="https://flutter.dev/docs/get-started/install/linux">https://flutter.dev/docs/get-started/install/linux</a></li>
+<li>참고 : <a href="https://medium.com/snapp-mobile/turning-the-pixelbook-into-a-great-flutter-development-laptop-db29105cc789">https://medium.com/snapp-mobile/turning-the-pixelbook-into-a-great-flutter-development-laptop-db29105cc789</a></li>
+</ul>
+
+
+
+
+<h3 id="전제조건">
+  <a class="Heading-link u-clickable" href="/posts/tech/pixelbook%EC%97%90%EC%84%9C-flutter%EB%A1%9C-%EC%95%B1-%EA%B0%9C%EB%B0%9C_1/#%ec%a0%84%ec%a0%9c%ec%a1%b0%ea%b1%b4">전제조건</a>
+</h3>
+<ul>
+<li>픽셀북에 Linux Apps 활성화(모든 명령어들은 리눅스 터미널에서 실행)</li>
+<li>픽셀북과 같은 네트워크에 wifi로 접속된 안드로이드 폰(개발자모드 활성화 필수)</li>
+<li>끝까지 한번 읽어보시고 작업하세요.</li>
+</ul>
+
+
+
+
+<h3 id="순서">
+  <a class="Heading-link u-clickable" href="/posts/tech/pixelbook%EC%97%90%EC%84%9C-flutter%EB%A1%9C-%EC%95%B1-%EA%B0%9C%EB%B0%9C_1/#%ec%88%9c%ec%84%9c">순서</a>
+</h3>
+<ol>
+<li>Flutter 설치</li>
+<li>Android SDK Tools 와 Android SDK 설치</li>
+<li>안드로이드 폰과 adb로 연결</li>
+<li>Visual Studio Code 와 Flutter extensions 설치</li>
+</ol>
+
+
+
+
+<h3 id="flutter-설치">
+  <a class="Heading-link u-clickable" href="/posts/tech/pixelbook%EC%97%90%EC%84%9C-flutter%EB%A1%9C-%EC%95%B1-%EA%B0%9C%EB%B0%9C_1/#flutter-%ec%84%a4%ec%b9%98">flutter 설치</a>
+</h3>
+<ol>
+<li>
+<p>최신 SDK 다운로드  : <a href="https://flutter.dev/docs/development/tools/sdk/releases?tab=linux">https://flutter.dev/docs/development/tools/sdk/releases?tab=linux</a></p>
+</li>
+<li>
+<p>적당한 위치에 압축 해제</p>
+<pre><code> $ cd ~/dev
+ $ tar xf ~/Downloads/flutter_linux_v1.7.8+hotfix.4-stable.tar.xz
+</code></pre>
+</li>
+<li>
+<p>flutter 경로를 path에 추가 : ~/.bashrc파일에 아래의 라인을 추가하는 것이 편하다</p>
+<pre><code> export PATH=&quot;$PATH:/home/My/dev/flutter/bin&quot;
+</code></pre>
+</li>
+</ol>
+<ul>
+<li>가이드에 의하면 flutter설치 후 바로 각종 추가 파일들을 다운로드pre-download 하라고 하는데 필요할 때 알아서 다운로드 하므로 미리 할 필요 없을 듯</li>
+</ul>
+
+
+
+
+<h3 id="java-설치">
+  <a class="Heading-link u-clickable" href="/posts/tech/pixelbook%EC%97%90%EC%84%9C-flutter%EB%A1%9C-%EC%95%B1-%EA%B0%9C%EB%B0%9C_1/#java-%ec%84%a4%ec%b9%98">Java 설치</a>
+</h3>
+<p>왜 Java가 필요하냐고? Android sdkmanager 가 Java인 듯 -.- 어차피 설치할 Java라면 지금 설치하자.</p>
+<p>최신 Java를 설치해도 되지만 나는 1.8 버전이면  충분하기 때문에 1.8을 설치하겠다. 그리고 OpenJDK보다 OracleJDK가 빠르다고 하니 OracleJDK를 설치하겠다.</p>
+<p>Tharanga 란 분이 Github에 설치 스크립트를 공유해 주셔서 이것을 사용하려 한다. uninstall 스크립트도 제공해준다고 좋지 아니한가</p>
+<p><a href="https://github.com/chrishantha/install-java">https://github.com/chrishantha/install-java</a></p>
+<ol>
+<li>
+<p>설치 스크립트 다운로드</p>
+<pre><code> $ wget https://raw.githubusercontent.com/chrishantha/install-java/master/install-java.sh
+</code></pre>
+</li>
+<li>
+<p>JDK 다운로드</p>
+<p>jdk-8u212-linux-x64.tar.gz를 여기에서 다운로드 받자.
+<a href="https://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8u211-later-5573849.html">https://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8u211-later-5573849.html</a></p>
+</li>
+<li>
+<p>암호화 확장 기능 다운로드</p>
+<p>암호화 확장 기능은 Java 개발시에만 필요한 기능이지만 Pixelbook에서 Java개발에 필요할거 같아 같이 설치했다.
+jce_policy-8.zip 는 여기에서 다운로드 한다.
+<a href="https://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html">https://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html</a></p>
+</li>
+<li>
+<p>설치 스크립트 실행</p>
+<p>다운로드한 3개의 파일은 모두 하나의 폴더에 있어야 한다.</p>
+<p>설치 중 선택사항을 물어보는데 모두 Y로 했다.</p>
+<pre><code> $ sudo ./install-java.sh -f ./jdk-8u212-linux-x64.tar.gz
+</code></pre>
+</li>
+</ol>
+
+
+
+
+<h3 id="android-sdk-tools-와-android-sdk-설치">
+  <a class="Heading-link u-clickable" href="/posts/tech/pixelbook%EC%97%90%EC%84%9C-flutter%EB%A1%9C-%EC%95%B1-%EA%B0%9C%EB%B0%9C_1/#android-sdk-tools-%ec%99%80-android-sdk-%ec%84%a4%ec%b9%98">Android SDK Tools 와 Android SDK 설치</a>
+</h3>
+<ol>
+<li>
+<p>Android SDK 용 폴더 생성</p>
+<pre><code> $ mkdir ~/dev/android-sdk
+ $ cd ~/dev/android-sdk
+</code></pre>
+</li>
+<li>
+<p>명령행 툴 받기 : <a href="https://developer.android.com/studio/#downloads">https://developer.android.com/studio/#downloads</a> 에서  “Command line tools only” 의 리눅스 버전을 받거나  &lsquo;19.08.02 현재 최신버전을 wget으로 받을 수 있다.</p>
+<pre><code> $ wget https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
+</code></pre>
+</li>
+<li>
+<p>압축을 해제 한다.</p>
+<pre><code> $ unzip android-studio-ide-182.5264788-linux.zip
+</code></pre>
+</li>
+<li>
+<p>~/.bashrc파일에 path 추가</p>
+<pre><code> export PATH=&quot;$PATH:/home/My/dev/android-sdk/tools/bin&quot;
+</code></pre>
+</li>
+<li>
+<p>sdkmanager 로  필요한  SDK 받기 : 각각의 버전 번호는 &lsquo;19.08.02 현재 최신 버전인데 버전업 될 수 있으니 확인 후 최신버전을 받자.</p>
+<pre><code> $ sdkmanager &quot;build-tools;29.0.1&quot; &quot;tools&quot; &quot;platform-tools&quot; &quot;platforms;android-29&quot; &quot;extras;google;google_play_services&quot; &quot;extras;google;webdriver&quot; &quot;system-images;android-29;google_apis_playstore;x86_64&quot;
+</code></pre>
+<p>sdk목록과 버전 확인 방법</p>
+<pre><code> $ sdkmanager --list
+</code></pre>
+</li>
+<li>
+<p>~/.bashrc파일에 path 추가</p>
+<pre><code> export PATH=&quot;$PATH:~/Utils/android-sdk/platform-tools&quot;
+</code></pre>
+</li>
+<li>
+<p>~/.bashrc파일에  ANDROID_HOME 시스템 변수 추가</p>
+<pre><code> export ANDROID_HOME=&quot;/home/bluedskim/Utils/android-sdk&quot;
+</code></pre>
+</li>
+<li>
+<p>지금까지 설정한 시스템 변수를 적용한다</p>
+<pre><code> $ . ~/.bashrc
+</code></pre>
+</li>
+<li>
+<p>Android 라이센스 동의</p>
+<pre><code> $ flutter doctor --android-licenses
+</code></pre>
+</li>
+</ol>
+
+
+
+
+<h3 id="lib32stdc6-설치">
+  <a class="Heading-link u-clickable" href="/posts/tech/pixelbook%EC%97%90%EC%84%9C-flutter%EB%A1%9C-%EC%95%B1-%EA%B0%9C%EB%B0%9C_1/#lib32stdc6-%ec%84%a4%ec%b9%98">lib32stdc++6 설치</a>
+</h3>
+<p>여기까지 하고 flutter doctor 를 실행해보면 &ldquo;Downloaded executables cannot execute on host&rdquo; 라면서 불평을 한다. lib32stdc++6를 설치하자.</p>
+<pre><code>$ sudo apt-get install lib32stdc++6
+</code></pre>
+
+
+
+
+<h3 id="안드로이드-폰과-연결">
+  <a class="Heading-link u-clickable" href="/posts/tech/pixelbook%EC%97%90%EC%84%9C-flutter%EB%A1%9C-%EC%95%B1-%EA%B0%9C%EB%B0%9C_1/#%ec%95%88%eb%93%9c%eb%a1%9c%ec%9d%b4%eb%93%9c-%ed%8f%b0%ea%b3%bc-%ec%97%b0%ea%b2%b0">안드로이드 폰과 연결</a>
+</h3>
+<p>우리는 픽셀북을 개발자모드를 켜지 않았다. 그래서 픽셀북에서 바로 안드로이드 앱을 테스트 할 수 없고 실제 안드로이드 폰에 adb로 연결 후 디버깅할 것이다.
+그러기 위해서는 usb케이블로 폰을 연결하던지 wifi와 adb를 이용해서 연결 하는 방법이 있다.
+케이블 없는 개발을 위해 wifi와 adb를 이용해서 폰에 연결하도록 한다.</p>
+<ul>
+<li>
+<p>해당 폰을 wifi로 디버깅 가능하도록 설정변경</p>
+<p>최소 한번은 해당 폰과 usb로 연결해야 한다. 연결 후 다음 명령을 실행한다.</p>
+<pre><code>  $ adb tcpip 5555
+</code></pre>
+<p><a href="/images/IMG_20190803_105402.jpg"><img src="/images/IMG_20190803_105402.jpg" alt="최소 한번은 해당 폰과 usb로 연결해야 한다"></a></p>
+</li>
+<li>
+<p>adb over wifi 연결</p>
+<pre><code>  $ adb connect 해당폰의_내부ip:5554
+</code></pre>
+<p>연결된 기기 목록을 조회하면 해당 폰 정보가 뜬다.</p>
+<pre><code>  $ adb devices -l
+  List of devices attached
+  해당폰의_내부ip:5554      device product:kltektt model:SM_G900K device:kltektt transport_id:1
+</code></pre>
+</li>
+</ul>
+
+
+
+
+<h3 id="visual-studio-code-와-flutter-extensions-설치">
+  <a class="Heading-link u-clickable" href="/posts/tech/pixelbook%EC%97%90%EC%84%9C-flutter%EB%A1%9C-%EC%95%B1-%EA%B0%9C%EB%B0%9C_1/#visual-studio-code-%ec%99%80-flutter-extensions-%ec%84%a4%ec%b9%98">Visual Studio Code 와 Flutter extensions 설치</a>
+</h3>
+<p>여기서 다운로드 하자 <a href="https://code.visualstudio.com/docs/?dv=linux64_deb">https://code.visualstudio.com/docs/?dv=linux64_deb</a></p>
+<p>리눅스 터미널에서 설치하거나</p>
+<pre><code>$ sudo apt install ./code_1.36.1-1562627527_amd64.deb
+</code></pre>
+<p>탐색기에서 더블클릭하면 바로 설치할 수도 있다</p>
+<p>설치가 끝나면 터미널에서 실행하자. 실행 명령어는 code</p>
+<pre><code>$ code
+</code></pre>
+<p>혹은 바로가기를 클릭한다.</p>
+<p>실행 후에는 공식가이드에 따라 Flutter extensions을 설치한다
+<a href="https://flutter.dev/docs/get-started/editor?tab=vscode">https://flutter.dev/docs/get-started/editor?tab=vscode</a></p>
+<p>설치 후에는 테스트용 앱을 띄워보자
+<a href="https://flutter.dev/docs/get-started/test-drive?tab=vscode">https://flutter.dev/docs/get-started/test-drive?tab=vscode</a></p>
+<p><a href="/images/IMG_20190802_120659_410.jpg"><img src="/images/IMG_20190802_120659_410.jpg" alt="vs code"></a></p>
+<ul>
+<li>
+<p>아직 크롬북 리눅스 앱에서 scaling 문제로 화면이 흐릿하게 보이는 문제가 있다 -.- 다행히도 vs code 는 자체적으로  scaling 할 수 있는 옵션을 제공한다. vs code의 바로가기에 이 옵션을 추가면 쨍쨍한 화면을 볼 수 있다. /usr/share/applications/code.desktop 을 열어서  &ndash;force-device-scale-factor=2 인수를 추가한다</p>
+<pre><code>  [Desktop Entry]
+  Name=Visual Studio Code
+  Comment=Code Editing. Redefined.
+  GenericName=Text Editor
+  Exec=/usr/share/code/code --force-device-scale-factor=2 --unity-launch %F
+  Icon=com.visualstudio.code
+  Type=Application
+  StartupNotify=false
+  StartupWMClass=Code
+  Categories=Utility;TextEditor;Development;IDE;
+  MimeType=text/plain;inode/directory;
+  Actions=new-empty-window;
+  Keywords=vscode;
+
+  X-Desktop-File-Install-Version=0.23
+
+  [Desktop Action new-empty-window]
+  Name=New Empty Window
+  Exec=/usr/share/code/code --force-device-scale-factor=2 --new-window %F
+  Icon=com.visualstudio.code
+</code></pre>
+</li>
+<li>
+<p>Flutter 공부를 하던 중 &lsquo;나에게 이 기술이 꼭 필요할까&rsquo; 라는 질문에 도달하게 되었다. 딱히 잘하는 것도 없으면서 하고 싶은 것은 참 많기는 한데  GUI(Graphical User Interface)쪽은 내 분야가 아니라는 생각이 들었다. 적어도 앞으로는. 이제는 선택과 집중이 필요할 때.</p>
+</li>
+</ul>
+
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/tech/" rel="tag">Tech</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/pixelbook/" rel="tag">Pixelbook</a>
+            </li>
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/flutter/" rel="tag">Flutter</a>
+            </li>
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/visual-studio-code/" rel="tag">Visual Studio Code</a>
+            </li>
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/tech/redminetopdffull/" rel="bookmark">우분투 command line에서 모든 레드마인 이슈를 하나의 pdf 로 내려받기</a>
+  </h2>
+  
+    
+      <time datetime="2019-07-29T16:49:45&#43;09:00">July 29, 2019</time>
+    
+  
+</header>
+      
+        
+          
+            <p>레드마인에서 공식적으로 이 기능을 지원하지는 않고 있다.
+이것을 위한 3rd party 플러그인은 있는데 동작하지 않았다.</p>
+<p><a href="https://github.com/brunoqs/pdf_export_redmine">https://github.com/brunoqs/pdf_export_redmine</a></p>
+<p>Proxy Error가 발생하였는데 아마도 Apache에서 timeout이 발생한것 같았다. 레드마인 커뮤니티에서 해결방법을 찾아봤는데 원인도 정확히 밝혀지지 않은 듯 -.-</p>
+<p>그래서 이슈별로 하나씩 pdf 로 받은 다음 병합하는 방법으로 해결하였다.</p>
+
+
+
+
+<h4 id="redmine-api-key-생성">
+  <a class="Heading-link u-clickable" href="/posts/tech/redminetopdffull/#redmine-api-key-%ec%83%9d%ec%84%b1">Redmine Api Key 생성</a>
+</h4>
+<p>http://레드마인서버/redmine/my/api_key 에서 생성</p>
+
+
+
+
+<h4 id="이슈-목록을-csv로-다운-받기">
+  <a class="Heading-link u-clickable" href="/posts/tech/redminetopdffull/#%ec%9d%b4%ec%8a%88-%eb%aa%a9%eb%a1%9d%ec%9d%84-csv%eb%a1%9c-%eb%8b%a4%ec%9a%b4-%eb%b0%9b%ea%b8%b0">이슈 목록을 csv로 다운 받기</a>
+</h4>
+<pre><code>curl --remote-name &quot;http://api키:1234@레드마인서버주소/redmine/projects/프로젝트id/issues.csv&quot;
+</code></pre>
+
+
+
+
+<h4 id="csv에서-이슈번호-추출">
+  <a class="Heading-link u-clickable" href="/posts/tech/redminetopdffull/#csv%ec%97%90%ec%84%9c-%ec%9d%b4%ec%8a%88%eb%b2%88%ed%98%b8-%ec%b6%94%ec%b6%9c">csv에서 이슈번호 추출</a>
+</h4>
+<p>JDK1.8에서 쓸 수 있는 Javascript 인터프리터 <a href="https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jjs.html">jjs</a>가 있어서 사용해봤다.
+(이런 간단한 작업을 하는데 class 컴파일까지 하는건 과한 듯)</p>
+<p>Java 랑 JavaScript를 섞어쓰니 느낌이 묘하다.</p>
+<pre><code>var curlCmds = [];
+
+var FileReader=Java.type(&quot;java.io.FileReader&quot;);
+var csvFile = &quot;issues.csv&quot;;
+var fr = new FileReader(csvFile);
+
+var BufferedReader =Java.type(&quot;java.io.BufferedReader&quot;);
+var br = new BufferedReader(fr);
+
+var line ;
+br.readLine();    // 첫번째 줄은 넘어간다
+while ((line = br.readLine()) != null) {
+	print(line);
+	var issueNo = line.split(&quot;,&quot;)[0];
+	var curlCmd = &quot;curl --remote-name http://api키:1234@레드마인서버주소/redmine/issues/&quot; + issueNo + &quot;.pdf&quot;;
+	print(curlCmd);
+	curlCmds.push(curlCmd)
+}
+
+var FileWriter=Java.type(&quot;java.io.FileWriter&quot;);
+var curlCmdsFile = &quot;downloadPdf.sh&quot;;
+var fw = new FileWriter(curlCmdsFile);
+fw.write(curlCmds.join(&quot;\n&quot;));
+fw.write(&quot;\n&quot;);
+fw.close();  // forgetting to close it results in a truncated file
+</code></pre>
+
+
+
+
+<h4 id="각각의-이슈를-pdf로-다운-받기">
+  <a class="Heading-link u-clickable" href="/posts/tech/redminetopdffull/#%ea%b0%81%ea%b0%81%ec%9d%98-%ec%9d%b4%ec%8a%88%eb%a5%bc-pdf%eb%a1%9c-%eb%8b%a4%ec%9a%b4-%eb%b0%9b%ea%b8%b0">각각의 이슈를 pdf로 다운 받기</a>
+</h4>
+<p>위의 작업을 수행하면 downloadPdf.sh 가 생성된다. 이 shell파일을 수행하면 pdf 를 다운로드 한다.</p>
+
+
+
+
+<h4 id="각각의-pdf를-하나의-pdf-로-합치기">
+  <a class="Heading-link u-clickable" href="/posts/tech/redminetopdffull/#%ea%b0%81%ea%b0%81%ec%9d%98-pdf%eb%a5%bc-%ed%95%98%eb%82%98%ec%9d%98-pdf-%eb%a1%9c-%ed%95%a9%ec%b9%98%ea%b8%b0">각각의 pdf를 하나의 pdf 로 합치기</a>
+</h4>
+<p>pdfunite가 좋다고 하여 사용해봤는데 메모리 문제(&ldquo;Bogus memory allocation size&rdquo;) 발생하여 동작하지 않았다.</p>
+<p>qpdf 라는 유틸리티를 써보니 잘 동작했다.</p>
+<pre><code>qpdf --empty --pages $(ls -vr *.pdf) -- issues.pdf	#이름기준 역순descending으로 정렬됨(최신 이슈가 위로)
+</code></pre>
+<p>이 방법의 단점은 페이지 번호가 제대로 출력되지 않는 다는 점이다.</p>
+
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/tech/" rel="tag">Tech</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/ubuntu/" rel="tag">Ubuntu</a>
+            </li>
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/redmine/" rel="tag">Redmine</a>
+            </li>
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/%EC%9D%8C%EC%95%85/pixelbook%EC%97%90%EC%84%9C-reaper%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/" rel="bookmark">Pixelbook에서 Reaper사용하기</a>
+  </h2>
+  
+    
+      <time datetime="2019-07-10T17:24:26&#43;09:00">July 10, 2019</time>
+    
+  
+</header>
+      
+        
+          
+            <p>크롬북 리눅스 앱에서 오디오 재생을 지원한것은 얼마되지 않았다.
+(OS버전 74부터 지원)</p>
+<p>주위에서 리눅스를 쓰는 사람도 없지만 쓴다고 해도 오디오 편집까지 하는 경우를 보지 못했다.
+맥의 Logic이나 윈도우의 Cubase, Ableton Live같은 멋진 리눅스용 멀티트랙 녹음 편집 프로그램은 없는 듯 하다</p>
+<p>신기하게도 Reaper 는 리눅스용 무설치 버전을 제공하고 있다. 개발자 중에 리눅스 매니아가 있는 듯</p>
+<p><a href="http://reaper.fm/download.php#linux_download">http://reaper.fm/download.php#linux_download</a></p>
+<p>[![Reaper](/images/Screenshot 2019-07-10 at 5.13.23 PM.png)](/images/Screenshot 2019-07-10 at 5.13.23 PM.png)</p>
+<p>중요한거 하나! 터미널에서 reaper실행 파일을 바로 실행할 수 있는데 아래처럼 조그많게 떠서 알아 볼 수가 없다 -.-</p>
+<p>[![조그많게 떠서 알아 볼 수가 없다](/images/Screenshot 2019-07-31 at 1.13.17 PM.png)](/images/Screenshot 2019-07-31 at 1.13.17 PM.png)</p>
+<p>해상도가 맞지 않아서인데 이 때 &ldquo;use low density&rdquo; 를 활성화 하면 해결되는데 터미널에서 reaper실행 파일을 바로 실행할 경우는 해당 메뉴가 뜨지 않는다.<br>
+이때는 install-reaper.sh를 실행해서 설치를 진행하되  &ldquo;desktop integration&rdquo; 을 꼭 해야 한다</p>
+<p>아래 설치로그 참조</p>
+<pre><code>bluedskim@penguin:~/Utils/reaper_linux_x86_64$ ./install-reaper.sh 
+REAPER installation script
+
+PLEASE NOTE -- REAPER for Linux is an unsupported experimental version.
+
+-------------------------------------------------------------------------------
+Available commands:
+  [V]iew readme-linux.txt and REAPER license agreement
+
+  [R]un REAPER from /home/bluedskim/Utils/reaper_linux_x86_64/REAPER/reaper
+
+	 You can run REAPER without installing it.
+	 Your ~/.config/REAPER/ directory will be used
+
+  [I]nstall REAPER (you will be prompted for various options)
+
+	 This install script can put the REAPER program into /opt
+	 or ~/opt, or a path of your choice, and optionally set
+	 up desktop integration (menu items, file associations).
+
+  [A]dd desktop integration for /home/bluedskim/Utils/reaper_linux_x86_64/REAPER/reaper
+
+	 If you've extracted REAPER into the path you would like
+	 it to live in (/home/bluedskim/Utils/reaper_linux_x86_64/REAPER), you can set
+	 up desktop integration (menu items, file associations, 
+	 etc) via this action.
+
+Command [V,R,I,A]: I
+
+Install REAPER
+  [1] Install to /opt (in /opt/REAPER) [will require sudo password entry]
+  [2] Install to /home/bluedskim/opt (in ~/opt/REAPER)
+
+  Or, enter a path starting with / or ~/ to install to that path
+  (e.g. /foo to install into /foo/REAPER, or ~/foo to install into ~/foo/REAPER)
+
+Path to install [1,2, or /whatever]: 2
+
+Would you like to add desktop integration for this install [Y/N]?: Y
+
+
+Confirm:
+  Copy files to: /home/bluedskim/opt/REAPER
+  + Perform desktop integration for /home/bluedskim/opt/REAPER/reaper
+
+Proceed with installation [Y/N]?: Y
+REAPER installer -- install to /home/bluedskim/opt
+
+Copying files... done
+Writing uninstall script to /home/bluedskim/opt/REAPER/uninstall-reaper.sh
+Installing desktop integration... done
+
+ *** Installation complete
+</code></pre>
+<p>설치 후 최초 실행 시  audio device setting에서  Pulse Audio를 선택한다.</p>
+<p>[![설치 후 최초 실행 시  audio device setting에서  Pulse Audio를 선택한다](/images/Screenshot 2019-07-31 at 2.14.04 PM.png)](/images/Screenshot 2019-07-31 at 2.14.04 PM.png)</p>
+<p>현재까지는 특별한 문제 없이 쓰고 있다(물론 무거운 작업을 하고 있지는 않다)</p>
+<p>하지만 아직 Chromeos의 리눅스 앱에서 오디오 녹음은 지원하지 않는다고하니 반쪽짜리 앱 -.-</p>
+
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/%EC%9D%8C%EC%95%85/" rel="tag">음악</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/pixelbook/" rel="tag">Pixelbook</a>
+            </li>
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/reaper/" rel="tag">Reaper</a>
+            </li>
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/tech/%ED%94%BD%EC%85%80%EB%B6%81%EC%97%90-flutter%EC%84%A4%EC%B9%98/" rel="bookmark">픽셀북에 Flutter설치</a>
+  </h2>
+  
+    
+      <time datetime="2019-06-24T16:58:23&#43;09:00">June 24, 2019</time>
+    
+  
+</header>
+      
+        
+          
+            <p>모바일 앱 개발할 때 flutter가 편하다고 해서 픽셀북에서 시도 해보고 있다.</p>
+<ul>
+<li>참고 <a href="https://medium.com/snapp-mobile/turning-the-pixelbook-into-a-great-flutter-development-laptop-db29105cc789">https://medium.com/snapp-mobile/turning-the-pixelbook-into-a-great-flutter-development-laptop-db29105cc789</a> )</li>
+<li>java 는 이미 설치되어 있다고 가정한다</li>
+</ul>
+
+
+
+
+<h5 id="리눅스용-flutter-sdk다운로드">
+  <a class="Heading-link u-clickable" href="/posts/tech/%ED%94%BD%EC%85%80%EB%B6%81%EC%97%90-flutter%EC%84%A4%EC%B9%98/#%eb%a6%ac%eb%88%85%ec%8a%a4%ec%9a%a9-flutter-sdk%eb%8b%a4%ec%9a%b4%eb%a1%9c%eb%93%9c">리눅스용 Flutter SDK다운로드</a>
+</h5>
+<p><a href="https://flutter.dev/docs/get-started/install/linux">https://flutter.dev/docs/get-started/install/linux</a></p>
+
+
+
+
+<h5 id="압축-해제">
+  <a class="Heading-link u-clickable" href="/posts/tech/%ED%94%BD%EC%85%80%EB%B6%81%EC%97%90-flutter%EC%84%A4%EC%B9%98/#%ec%95%95%ec%b6%95-%ed%95%b4%ec%a0%9c">압축 해제</a>
+</h5>
+<pre><code>tar xf ~/flutter_linux_v1.5.4-hotfix.2-stable.tar.xz
+</code></pre>
+
+
+
+
+<h5 id="실행-path에-추가--bashrc에-추가한다">
+  <a class="Heading-link u-clickable" href="/posts/tech/%ED%94%BD%EC%85%80%EB%B6%81%EC%97%90-flutter%EC%84%A4%EC%B9%98/#%ec%8b%a4%ed%96%89-path%ec%97%90-%ec%b6%94%ea%b0%80--bashrc%ec%97%90-%ec%b6%94%ea%b0%80%ed%95%9c%eb%8b%a4">실행 path에 추가 : ~/.bashrc에 추가한다.</a>
+</h5>
+<pre><code>export PATH=&quot;/home/bluedskim/utils/flutter/bin:$PATH&quot;
+</code></pre>
+
+
+
+
+<h5 id="환경을-다시-읽어온다">
+  <a class="Heading-link u-clickable" href="/posts/tech/%ED%94%BD%EC%85%80%EB%B6%81%EC%97%90-flutter%EC%84%A4%EC%B9%98/#%ed%99%98%ea%b2%bd%ec%9d%84-%eb%8b%a4%ec%8b%9c-%ec%9d%bd%ec%96%b4%ec%98%a8%eb%8b%a4">환경을 다시 읽어온다.</a>
+</h5>
+<pre><code>$ source ~/.bashrc
+</code></pre>
+
+
+
+
+<h5 id="android-studio-설치">
+  <a class="Heading-link u-clickable" href="/posts/tech/%ED%94%BD%EC%85%80%EB%B6%81%EC%97%90-flutter%EC%84%A4%EC%B9%98/#android-studio-%ec%84%a4%ec%b9%98">Android Studio 설치</a>
+</h5>
+<p>이미 설치되어 있다(여기서 설치 <a href="https://developer.android.com/studio/#downloads">https://developer.android.com/studio/#downloads</a>)</p>
+
+
+
+
+<h5 id="시스템-라이브러리-설치">
+  <a class="Heading-link u-clickable" href="/posts/tech/%ED%94%BD%EC%85%80%EB%B6%81%EC%97%90-flutter%EC%84%A4%EC%B9%98/#%ec%8b%9c%ec%8a%a4%ed%85%9c-%eb%9d%bc%ec%9d%b4%eb%b8%8c%eb%9f%ac%eb%a6%ac-%ec%84%a4%ec%b9%98">시스템 라이브러리 설치</a>
+</h5>
+<pre><code>sudo apt-get install lib32stdc++6
+</code></pre>
+
+
+
+
+<h5 id="안드로이드-개발-라이센스-동의">
+  <a class="Heading-link u-clickable" href="/posts/tech/%ED%94%BD%EC%85%80%EB%B6%81%EC%97%90-flutter%EC%84%A4%EC%B9%98/#%ec%95%88%eb%93%9c%eb%a1%9c%ec%9d%b4%eb%93%9c-%ea%b0%9c%eb%b0%9c-%eb%9d%bc%ec%9d%b4%ec%84%bc%ec%8a%a4-%eb%8f%99%ec%9d%98">안드로이드 개발 라이센스 동의</a>
+</h5>
+<p>아래 명령 실행하고 동의하면 됨</p>
+<pre><code>flutter doctor --android-licenses
+</code></pre>
+<p>일단 한번 실행해보니 오류 발생</p>
+<pre><code>  ╔════════════════════════════════════════════════════════════════════════════╗
+  ║                 Welcome to Flutter! - https://flutter.dev                  ║
+  ║                                                                            ║
+  ║ The Flutter tool anonymously reports feature usage statistics and crash    ║
+  ║ reports to Google in order to help Google contribute improvements to       ║
+  ║ Flutter over time.                                                         ║
+  ║                                                                            ║
+  ║ Read about data we send with crash reports:                                ║
+  ║ https://github.com/flutter/flutter/wiki/Flutter-CLI-crash-reporting        ║
+  ║                                                                            ║
+  ║ See Google's privacy policy:                                               ║
+  ║ https://www.google.com/intl/en/policies/privacy/                           ║
+  ║                                                                            ║
+  ║ Use &quot;flutter config --no-analytics&quot; to disable analytics and crash         ║
+  ║ reporting.                                                                 ║
+  ╚════════════════════════════════════════════════════════════════════════════╝
+
+
+Doctor summary (to see all details, run flutter doctor -v):
+[!] Flutter (Channel stable, v1.5.4-hotfix.2, on Linux, locale en_US.UTF-8)
+	✗ Downloaded executables cannot execute on host.
+	  See https://github.com/flutter/flutter/issues/6207 for more information
+	  On Debian/Ubuntu/Mint: sudo apt-get install lib32stdc++6
+	  On Fedora: dnf install libstdc++.i686
+	  On Arch: pacman -S lib32-gcc-libs
+
+ 
+[!] Android toolchain - develop for Android devices (Android SDK version 29.0.0)
+	✗ Android licenses not accepted.  To resolve this, run: flutter doctor
+	  --android-licenses
+[!] Android Studio (version 3.4)
+	✗ Flutter plugin not installed; this adds Flutter specific functionality.
+	✗ Dart plugin not installed; this adds Dart specific functionality.
+[!] IntelliJ IDEA Community Edition (version 2019.1)
+	✗ Flutter plugin not installed; this adds Flutter specific functionality.
+	✗ Dart plugin not installed; this adds Dart specific functionality.
+[!] Connected device
+	! No devices available
+
+! Doctor found issues in 5 categories.
+</code></pre>
+<hr>
+
+
+
+
+<h3 id="draft-true">
+  <a class="Heading-link u-clickable" href="/posts/tech/%ED%94%BD%EC%85%80%EB%B6%81%EC%97%90-flutter%EC%84%A4%EC%B9%98/#draft-true">title: &ldquo;Pixelbook에서 Flutter로 앱 개발&rdquo;
+date: 2019-07-31T15:14:43+09:00
+draft: true</a>
+</h3>
+<ul>
+<li>참고 URL : <a href="https://flutter.dev/docs/get-started/install/linux">https://flutter.dev/docs/get-started/install/linux</a></li>
+</ul>
+
+
+
+
+<h3 id="flutter-설치">
+  <a class="Heading-link u-clickable" href="/posts/tech/%ED%94%BD%EC%85%80%EB%B6%81%EC%97%90-flutter%EC%84%A4%EC%B9%98/#flutter-%ec%84%a4%ec%b9%98">flutter 설치</a>
+</h3>
+<ul>
+<li>
+<p>최신 SDK 다운로드  : <a href="https://flutter.dev/docs/development/tools/sdk/releases?tab=linux">https://flutter.dev/docs/development/tools/sdk/releases?tab=linux</a></p>
+</li>
+<li>
+<p>적당한 위치에 압축 해제</p>
+<p>cd ~/Utils
+tar xf ~/Downloads/flutter_linux_v1.7.8+hotfix.4-stable.tar.xz</p>
+</li>
+<li>
+<p>flutter 경로를 path에 추가</p>
+<p>export PATH=&quot;$PATH:<code>pwd</code>/flutter/bin&quot;</p>
+</li>
+</ul>
+<p>그런데 위의 방식은 터미널을 새로 열때 마다 해야 하기 때문에 ~/.bashrc에 아래의 라인을 추가하는 것이 편하다</p>
+<pre><code>PATH=&quot;$PATH:/home/&lt;user&gt;/Utils/flutter/bin&quot;
+</code></pre>
+<ul>
+<li>
+<p>가이드에 의하면 flutter설치 후 바로 각종 추가 파일들을 다운로드pre-download 하라고 하는데 필요할 때 알아서 다운로드 하므로 미리 할 필요 없을 듯</p>
+</li>
+<li>
+<p>flutter 진단doctor 하기
+flutter 개발환경이 준비되었는지 확인하는 기능이다. 4가지 문제 발견!</p>
+<p>bluedskim@penguin:~$  flutter doctor
+Doctor summary (to see all details, run flutter doctor -v):
+[!] Flutter (Channel stable, v1.7.8+hotfix.4, on Linux, locale en_US.UTF-8)
+✗ Downloaded executables cannot execute on host.
+See <a href="https://github.com/flutter/flutter/issues/6207">https://github.com/flutter/flutter/issues/6207</a> for more information
+On Debian/Ubuntu/Mint: sudo apt-get install lib32stdc++6
+On Fedora: dnf install libstdc++.i686
+On Arch: pacman -S lib32-gcc-libs</p>
+<p>[✗] Android toolchain - develop for Android devices
+✗ Unable to locate Android SDK.
+Install Android Studio from: <a href="https://developer.android.com/studio/index.html">https://developer.android.com/studio/index.html</a>
+On first launch it will assist you in installing the Android SDK components.
+(or visit <a href="https://flutter.dev/setup/#android-setup">https://flutter.dev/setup/#android-setup</a> for detailed instructions).
+If the Android SDK has been installed to a custom location, set ANDROID_HOME to that location.
+You may also want to add it to your PATH environment variable.</p>
+<p>[!] Android Studio (not installed)
+[!] Connected device
+! No devices available</p>
+<p>! Doctor found issues in 4 categories.</p>
+</li>
+</ul>
+<p>From the download Android Studio page, in the download options, look for “Command line tools only”:</p>
+<ul>
+<li>unstalling android studio
+rm -rf ~/.android/
+rm -rf ~/Android/
+rm -rf ~/.AndroidStudio3.4/
+and delete the extracted folder.</li>
+</ul>
+<hr>
+<p>android studio 없이  해본다 <a href="https://medium.com/snapp-mobile/turning-the-pixelbook-into-a-great-flutter-development-laptop-db29105cc789">https://medium.com/snapp-mobile/turning-the-pixelbook-into-a-great-flutter-development-laptop-db29105cc789</a></p>
+<p>sdkmanager &ndash;list</p>
+<p>sdkmanager &ldquo;build-tools;29.0.1&rdquo; &ldquo;emulator&rdquo; &ldquo;tools&rdquo; &ldquo;platform-tools&rdquo; &ldquo;platforms;android-29&rdquo; &ldquo;extras;google;google_play_services&rdquo; &ldquo;extras;google;webdriver&rdquo; &ldquo;system-images;android-29;google_apis_playstore;x86_64&rdquo;</p>
+<p>export PATH=&quot;$PATH:<del>/Utils/flutter/bin&quot;
+export PATH=&quot;$PATH:</del>/Utils/android-sdk/tools/bin&quot;
+export PATH=&quot;$PATH:~/Utils/android-sdk/platform-tools&quot;
+export ANDROID_HOME=&quot;/home/bluedskim/Utils/android-sdk&quot;</p>
+<p>flutter doctor &ndash;android-licenses</p>
+<p><a href="https://code.visualstudio.com/docs/?dv=linux64_deb">https://code.visualstudio.com/docs/?dv=linux64_deb</a></p>
+<p>Failed to launch emulator: emulator: ERROR: x86_64 emulation currently requires hardware acceleration!
+Please ensure KVM is properly installed and usable.
+CPU acceleration status: KVM requires a CPU that supports vmx or svm
+More info on configuring VM acceleration on Linux:
+<a href="https://developer.android.com/studio/run/emulator-acceleration#vm-linux">https://developer.android.com/studio/run/emulator-acceleration#vm-linux</a>
+General information on acceleration: <a href="https://developer.android.com/studio/run/emulator-acceleration">https://developer.android.com/studio/run/emulator-acceleration</a>.
+statvfs(&rsquo;/home/bluedskim/.android/avd/flutter_emulator.avd/snapshots/default_boot/ram.img&rsquo;) failed: No such file or directory</p>
+<p><a href="https://support.elix.sr/#!/products/fwd/answers/Getting_started_with_fwd">https://support.elix.sr/#!/products/fwd/answers/Getting_started_with_fwd</a></p>
+
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/tech/" rel="tag">Tech</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/pixelbook/" rel="tag">Pixelbook</a>
+            </li>
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/%ED%94%BD%EC%85%80%EB%B6%81/" rel="tag">픽셀북</a>
+            </li>
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/flutter/" rel="tag">Flutter</a>
+            </li>
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/tech/%EC%9D%B4%EA%B8%80%EB%A3%A8%EC%8A%A4%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%9D%B4%EC%82%AC%EC%99%84%EB%A3%8C/" rel="bookmark">이글루스 블로그 이사완료</a>
+  </h2>
+  
+    
+      <time datetime="2019-06-23T16:36:35&#43;09:00">June 23, 2019</time>
+    
+  
+</header>
+      
+        
+          
+            <p>약 한달간 코딩으로 이글루스 블로그 백업 웹서비스 완성.
+아직 해결해야할 문제가 몇가지 남아있기는 한데 beta버전 정도는 되겠다.</p>
+<p>간단한 작업일 줄 알았는데 다른 사용자도 쓸 수 있는 웹서비스 형태로 만들려니 처리해야 할 문제가 상당히 많았다.
+일단 이글루스 테마가 의외로 많았고 현재 버전에서 모든 테마를 처리하지는 못한다. 원인은 알겠으나 조치하려니 시간이 부족하다.</p>
+<p>의외로 이글루의 트래킹 시스템이 잘 되어있어 테스트 하던 중 이글루스 유저들에게 노출이 되었는데
+이런 기능을 필요하지 않은 유저들 아니 부정적인 유저들이 많았다.</p>
+<p>내가 필요하다고 해서 다른 이들도 필요할 거라 생각하는 것 자체가 위험하다. 이런게 사실 꼰대질 아닌가. 자중하자.</p>
+<p>이미 완성한 사이트는 기술 데모 용도로 다운로드 포스팅 개수 제약을 걸어놓고 오픈된 상태로 두려고 한다.</p>
+<p><a href="http://samba.iptime.org:8081/ee/">http://samba.iptime.org:8081/ee/</a></p>
+<p>암튼, 안녕 이글루스</p>
+
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/%EC%9D%B4%EA%B8%80%EB%A3%A8%EC%8A%A4/" rel="tag">이글루스</a>
+            </li>
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/%EC%9D%B4%EA%B8%80%EB%A3%A8%EC%8A%A4-%EB%B0%B1%EC%97%85/" rel="tag">이글루스 백업</a>
+            </li>
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/%EC%9D%B4%EA%B8%80%EB%A3%A8%EC%8A%A4-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%B0%B1%EC%97%85/" rel="tag">이글루스 블로그 백업</a>
+            </li>
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+  
+
+  
+  <nav>
+    
+      <a class="Pagination u-clickable" href="/page/14/" rel="prev">« Previous</a>
+    
+    
+      <a class="Pagination Pagination--right u-clickable" href="/page/12/" rel="next">Next »</a>
+    
+  </nav>
+
+
+
+
+      </div>
+    </div>
+  </main>
+  
+  <footer class="Footer">
+    <div class="u-wrapper">
+      <div class="u-padding u-noboosting">
+        Do What You Want To Do
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

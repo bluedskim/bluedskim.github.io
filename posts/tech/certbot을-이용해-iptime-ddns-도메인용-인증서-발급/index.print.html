@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html id="R-html" lang="ko-KR" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.152.2">
+    <meta name="generator" content="Relearn 9.0.3+36307e4ed23582638ab689240ac7b427217803ee">
+    <meta name="description" content="발급될지 잠시 의심했었지만 발급 안될 이유가 없더라.
+환경은 다음과 같다.
+iptime 공유기 A104(version 10.03.8) : 80포트는 외부에서 접속가능하도록 반드시 port forwarding해야 한다. ODROID-U3(Ubuntu 14.04) : Spring Boot2 어플리케이션이 기동될 서버 python 2.7 : 혹자는 3.6 이상 버전이 필요하다고 하지만 2.7에서도 정상 동작하였다 Spring Boot 2 certbot 설치 $ git clone https://github.com/certbot/certbot certbot 인증서 발행 이 때 80 port에 서비스가 있다면 잠시 내려두자. 인증을 위해 certbot이 잠시 이 포트를 사용할 것이기 때문이다(인증서 갱신시에는 80포트가 불필요 하다)">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Certbot을 이용해 Iptime DDNS 도메인용 인증서 발급 :: Do What You Want To Do">
+    <meta name="twitter:description" content="발급될지 잠시 의심했었지만 발급 안될 이유가 없더라.
+환경은 다음과 같다.
+iptime 공유기 A104(version 10.03.8) : 80포트는 외부에서 접속가능하도록 반드시 port forwarding해야 한다. ODROID-U3(Ubuntu 14.04) : Spring Boot2 어플리케이션이 기동될 서버 python 2.7 : 혹자는 3.6 이상 버전이 필요하다고 하지만 2.7에서도 정상 동작하였다 Spring Boot 2 certbot 설치 $ git clone https://github.com/certbot/certbot certbot 인증서 발행 이 때 80 port에 서비스가 있다면 잠시 내려두자. 인증을 위해 certbot이 잠시 이 포트를 사용할 것이기 때문이다(인증서 갱신시에는 80포트가 불필요 하다)">
+    <meta property="og:url" content="https://bluedskim.github.io/posts/tech/certbot%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-iptime-ddns-%EB%8F%84%EB%A9%94%EC%9D%B8%EC%9A%A9-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EB%B0%9C%EA%B8%89/index.html">
+    <meta property="og:site_name" content="Do What You Want To Do">
+    <meta property="og:title" content="Certbot을 이용해 Iptime DDNS 도메인용 인증서 발급 :: Do What You Want To Do">
+    <meta property="og:description" content="발급될지 잠시 의심했었지만 발급 안될 이유가 없더라.
+환경은 다음과 같다.
+iptime 공유기 A104(version 10.03.8) : 80포트는 외부에서 접속가능하도록 반드시 port forwarding해야 한다. ODROID-U3(Ubuntu 14.04) : Spring Boot2 어플리케이션이 기동될 서버 python 2.7 : 혹자는 3.6 이상 버전이 필요하다고 하지만 2.7에서도 정상 동작하였다 Spring Boot 2 certbot 설치 $ git clone https://github.com/certbot/certbot certbot 인증서 발행 이 때 80 port에 서비스가 있다면 잠시 내려두자. 인증을 위해 certbot이 잠시 이 포트를 사용할 것이기 때문이다(인증서 갱신시에는 80포트가 불필요 하다)">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Posts">
+    <meta property="article:published_time" content="2020-05-10T21:23:09+09:00">
+    <meta property="article:modified_time" content="2020-05-10T21:23:09+09:00">
+    <meta property="article:tag" content="Certbot">
+    <meta property="article:tag" content="Spring Boot">
+    <meta itemprop="name" content="Certbot을 이용해 Iptime DDNS 도메인용 인증서 발급 :: Do What You Want To Do">
+    <meta itemprop="description" content="발급될지 잠시 의심했었지만 발급 안될 이유가 없더라.
+환경은 다음과 같다.
+iptime 공유기 A104(version 10.03.8) : 80포트는 외부에서 접속가능하도록 반드시 port forwarding해야 한다. ODROID-U3(Ubuntu 14.04) : Spring Boot2 어플리케이션이 기동될 서버 python 2.7 : 혹자는 3.6 이상 버전이 필요하다고 하지만 2.7에서도 정상 동작하였다 Spring Boot 2 certbot 설치 $ git clone https://github.com/certbot/certbot certbot 인증서 발행 이 때 80 port에 서비스가 있다면 잠시 내려두자. 인증을 위해 certbot이 잠시 이 포트를 사용할 것이기 때문이다(인증서 갱신시에는 80포트가 불필요 하다)">
+    <meta itemprop="datePublished" content="2020-05-10T21:23:09+09:00">
+    <meta itemprop="dateModified" content="2020-05-10T21:23:09+09:00">
+    <meta itemprop="wordCount" content="265">
+    <meta itemprop="keywords" content="Certbot,Spring Boot">
+    <title>Certbot을 이용해 Iptime DDNS 도메인용 인증서 발급 :: Do What You Want To Do</title>
+    <link href="https://bluedskim.github.io/posts/tech/certbot%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-iptime-ddns-%EB%8F%84%EB%A9%94%EC%9D%B8%EC%9A%A9-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EB%B0%9C%EA%B8%89/index.html" rel="canonical" type="text/html" title="Certbot을 이용해 Iptime DDNS 도메인용 인증서 발급 :: Do What You Want To Do">
+    <link href="/css/auto-complete/auto-complete.min.css?1774431351" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1774431351" defer></script>
+    <script src="/js/search-lunr.min.js?1774431351" defer></script>
+    <script src="/js/search.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/searchindex.en.js?1774431351";
+    </script>
+    <script src="/js/lunr/lunr.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.ko.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['ko'];
+    </script>
+    <link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1774431351" rel="stylesheet">
+    <link href="/css/theme.min.css?1774431351" rel="stylesheet">
+    <link href="/css/format-print.min.css?1774431351" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/posts\/tech\/certbot%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-iptime-ddns-%EB%8F%84%EB%A9%94%EC%9D%B8%EC%9A%A9-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EB%B0%9C%EA%B8%89\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/bluedskim.github.io';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'relearn-auto', 'learn' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+  </head>
+  <body class="mobile-support print" data-origin="/posts/tech/certbot%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-iptime-ddns-%EB%8F%84%EB%A9%94%EC%9D%B8%EC%9A%A9-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EB%B0%9C%EA%B8%89/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Do What You Want</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/posts/index.html"><span itemprop="name">Posts</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Certbot을 이용해 Iptime DDNS 도메인용 인증서 발급</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/certbot%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-iptime-ddns-%EB%8F%84%EB%A9%94%EC%9D%B8%EC%9A%A9-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EB%B0%9C%EA%B8%89/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/chromebook%EC%97%90-ssh%EC%A0%91%EC%86%8D%ED%95%98%EA%B8%B0/index.html" title="Chromebook crostini에 SSH접속하기 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/reactjs--material-ui%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%B9%8C%EB%9D%BC%EC%9D%B4%EB%A6%84-%EC%83%9D%EC%84%B1%EA%B8%B0/index.html" title="ReactJS & Material UI를 이용한 빌라 이름 생성기 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable posts" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/tags/certbot/index.html">Certbot</a></li>
+    <li><a class="term-link" href="/tags/spring-boot/index.html">Spring Boot</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="certbot을-이용해-iptime-ddns-도메인용-인증서-발급">Certbot을 이용해 Iptime DDNS 도메인용 인증서 발급</h1>
+
+<p>발급될지 잠시 의심했었지만 발급 안될 이유가 없더라.</p>
+<p>환경은 다음과 같다.</p>
+<ul>
+<li>iptime 공유기 A104(version 10.03.8) : 80포트는 외부에서 접속가능하도록 반드시 <strong>port forwarding</strong>해야 한다.</li>
+<li>ODROID-U3(Ubuntu 14.04) : Spring Boot2 어플리케이션이 기동될 서버
+<ul>
+<li>python 2.7 : 혹자는 3.6 이상 버전이 필요하다고 하지만 2.7에서도 정상 동작하였다</li>
+<li>Spring Boot 2</li>
+</ul>
+</li>
+</ul>
+<h5 id="certbot-설치">certbot 설치<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h5>
+<pre><code>$ git clone https://github.com/certbot/certbot
+</code></pre>
+<h5 id="certbot-인증서-발행">certbot 인증서 발행<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h5>
+<p>이 때 80 port에 서비스가 있다면 잠시 내려두자. 인증을 위해 certbot이 잠시 이 포트를 사용할 것이기 때문이다(인증서 갱신시에는 80포트가 불필요 하다)</p>
+<pre><code>$ sudo ./certbot-auto certonly \
+-a standalone -d samba.iptime.org
+
+...(중요하지 않은 메시지는 skip)...
+
+IMPORTANT NOTES:
+- Congratulations! Your certificate and chain have been saved at:
+	/etc/letsencrypt/live/samba.iptime.org/fullchain.pem
+	Your key file has been saved at:
+	/etc/letsencrypt/live/samba.iptime.org/privkey.pem
+	Your cert will expire on 2020-08-08. To obtain a new or tweaked
+	version of this certificate in the future, simply run certbot-auto
+	again. To non-interactively renew *all* of your certificates, run
+	&quot;certbot-auto renew&quot;
+- If you like Certbot, please consider supporting our work by:
+
+	Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
+	Donating to EFF:                    https://eff.org/donate-le 
+</code></pre>
+<p>여기 경로에(/etc/letsencrypt/live/samba.iptime.org) 인증서 파일이 잘 생성되었다.</p>
+<h4 id="pkcs12-생성">PKCS12 생성<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p>Spring Boot2 Backe-end 에서는 pkcs12 형식의 인증서가 필요하다(고 한다. 보안쪽은 잘 모르므로 패스 -.-)
+여기서 지정한 암호는 SpringBoot설정파일에 넣을 것이므로 잘 메모해 두자.</p>
+<pre><code>$ sudo openssl pkcs12 -export \
+-in /etc/letsencrypt/live/samba.iptime.org/fullchain.pem \
+-inkey /etc/letsencrypt/live/samba.iptime.org/privkey.pem \
+-out sambando.p12 -name bootalias \
+-CAfile /etc/letsencrypt/live/samba.iptime.org/chain.pem \
+-caname root -password pass:암호를지정하셔요
+</code></pre>
+<h5 id="springboot2-설정yaml파일">SpringBoot2 설정(yaml파일)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h5>
+<pre><code>server:
+  port: 8082
+  ssl:
+	key-store: classpath:sambando.p12
+	key-store-password: 지정한_암호를_넣는다
+	keyStoreType: PKCS12 
+</code></pre>
+<p>SpringBoot을 기동한 후 인증서 정보를 확인해보자</p>
+<p>[![Certbot을 이용해 Iptime DDNS 도메인용 인증서 발급.png](/images/Certbot을 이용해 Iptime DDNS 도메인용 인증서 발급.png)](/images/Certbot을 이용해 Iptime DDNS 도메인용 인증서 발급.png)</p>
+<p>만세! iptime의 top level domain 이지만 뭔가 신뢰가 간다.</p>
+
+  <footer class="footline">
+              <i class='fa-fw fas fa-calendar'></i> 2020-05-10
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1774431351" defer></script>
+    <script src="/js/theme.min.js?1774431351" defer></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-3QTEZE6PDE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3QTEZE6PDE');
+</script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

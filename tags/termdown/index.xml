@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Termdown on Do What You Want To Do</title>
-    <link>https://bluedskim.github.io/tags/termdown/</link>
-    <description>Recent content in Termdown on Do What You Want To Do</description>
+    <title>Termdown :: Tag :: Do What You Want To Do</title>
+    <link>https://bluedskim.github.io/tags/termdown/index.html</link>
+    <description></description>
     <generator>Hugo</generator>
     <language>ko-KR</language>
     <lastBuildDate>Sun, 24 Mar 2019 10:38:28 +0900</lastBuildDate>
     <atom:link href="https://bluedskim.github.io/tags/termdown/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>각종 작업 소요시간 체크용 우분투용 command line stopwatch</title>
-      <link>https://bluedskim.github.io/posts/tech/%EC%93%B8%EB%A7%8C%ED%95%9C-ubuntu%EC%9A%A9-command-line-%ED%83%80%EC%9D%B4%EB%A8%B8/</link>
+      <link>https://bluedskim.github.io/posts/tech/%EC%93%B8%EB%A7%8C%ED%95%9C-ubuntu%EC%9A%A9-command-line-%ED%83%80%EC%9D%B4%EB%A8%B8/index.html</link>
       <pubDate>Sun, 24 Mar 2019 10:38:28 +0900</pubDate>
-      <guid>https://bluedskim.github.io/posts/tech/%EC%93%B8%EB%A7%8C%ED%95%9C-ubuntu%EC%9A%A9-command-line-%ED%83%80%EC%9D%B4%EB%A8%B8/</guid>
-      <description>&lt;p&gt;간단하게 터미널에서 작업 소요 시간을 체크 할 수 있는 방법들을 찾아봤는데&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://superuser.com/questions/611538/is-there-a-way-to-display-a-countdown-or-stopwatch-timer-in-a-terminal&#34;&gt;https://superuser.com/questions/611538/is-there-a-way-to-display-a-countdown-or-stopwatch-timer-in-a-terminal&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;terdon 이라는 분이 알려준 방법은 잘 동작하였지만&#xA;&lt;a href=&#34;https://superuser.com/questions/611538/is-there-a-way-to-display-a-countdown-or-stopwatch-timer-in-a-terminal?answertab=active#tab-top&#34;&gt;https://superuser.com/questions/611538/is-there-a-way-to-display-a-countdown-or-stopwatch-timer-in-a-terminal?answertab=active#tab-top&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;~/.bashrc 파일에 함수를 추가하고 터미널에서 바로 호출해서 쓰는 방법이라 프로그램 추가 설치가 필요없다는 장점이 있다.&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;countdown(){&#xA;&#x9;date1=$((`date +%s` + $1));&#xA;&#x9;while [ &amp;quot;$date1&amp;quot; -ge `date +%s` ]; do &#xA;&#x9;## Is this more than 24h away?&#xA;&#x9;days=$(($(($(( $date1 - $(date +%s))) * 1 ))/86400))&#xA;&#x9;echo -ne &amp;quot;$days day(s) and $(date -u --date @$(($date1 - `date +%s`)) +%H:%M:%S)\r&amp;quot;; &#xA;&#x9;sleep 0.1&#xA;&#x9;done&#xA;}&#xA;&#xA;function stopwatch(){&#xA;  date1=`date +%s`; &#xA;   while true; do &#xA;&#x9;echo -ne &amp;quot;$(date -u --date @$((`date +%s` - $date1)) +%H:%M:%S)\r&amp;quot;; &#xA;&#x9;sleep 0.1&#xA;   done&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;현재 터미널에서 바로 사용하려면 source 명렁어로 .bashrc를 다시 읽어와야 한다&lt;/p&gt;</description>
+      <guid>https://bluedskim.github.io/posts/tech/%EC%93%B8%EB%A7%8C%ED%95%9C-ubuntu%EC%9A%A9-command-line-%ED%83%80%EC%9D%B4%EB%A8%B8/index.html</guid>
+      <description>간단하게 터미널에서 작업 소요 시간을 체크 할 수 있는 방법들을 찾아봤는데&#xA;https://superuser.com/questions/611538/is-there-a-way-to-display-a-countdown-or-stopwatch-timer-in-a-terminal&#xA;terdon 이라는 분이 알려준 방법은 잘 동작하였지만 https://superuser.com/questions/611538/is-there-a-way-to-display-a-countdown-or-stopwatch-timer-in-a-terminal?answertab=active#tab-top&#xA;~/.bashrc 파일에 함수를 추가하고 터미널에서 바로 호출해서 쓰는 방법이라 프로그램 추가 설치가 필요없다는 장점이 있다.&#xA;countdown(){ date1=$((`date +%s` + $1)); while [ &#34;$date1&#34; -ge `date +%s` ]; do ## Is this more than 24h away? days=$(($(($(( $date1 - $(date +%s))) * 1 ))/86400)) echo -ne &#34;$days day(s) and $(date -u --date @$(($date1 - `date +%s`)) +%H:%M:%S)\r&#34;; sleep 0.1 done } function stopwatch(){ date1=`date +%s`; while true; do echo -ne &#34;$(date -u --date @$((`date +%s` - $date1)) +%H:%M:%S)\r&#34;; sleep 0.1 done } 현재 터미널에서 바로 사용하려면 source 명렁어로 .bashrc를 다시 읽어와야 한다</description>
     </item>
   </channel>
 </rss>

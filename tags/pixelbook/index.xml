@@ -1,68 +1,68 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pixelbook on Do What You Want To Do</title>
-    <link>https://bluedskim.github.io/tags/pixelbook/</link>
-    <description>Recent content in Pixelbook on Do What You Want To Do</description>
+    <title>Pixelbook :: Tag :: Do What You Want To Do</title>
+    <link>https://bluedskim.github.io/tags/pixelbook/index.html</link>
+    <description></description>
     <generator>Hugo</generator>
     <language>ko-KR</language>
     <lastBuildDate>Wed, 04 Sep 2019 13:25:00 +0900</lastBuildDate>
     <atom:link href="https://bluedskim.github.io/tags/pixelbook/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>픽셀북에서 쓸만한 리눅스용 이미지 뷰어 &amp; Image Annotation Tool 비교 중</title>
-      <link>https://bluedskim.github.io/posts/tech/%ED%94%BD%EC%85%80%EB%B6%81%EC%97%90%EC%84%9C-%EC%93%B8%EB%A7%8C%ED%95%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B7%B0%EC%96%B4_image-annotation-tool/</link>
+      <link>https://bluedskim.github.io/posts/tech/%ED%94%BD%EC%85%80%EB%B6%81%EC%97%90%EC%84%9C-%EC%93%B8%EB%A7%8C%ED%95%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B7%B0%EC%96%B4_image-annotation-tool/index.html</link>
       <pubDate>Wed, 04 Sep 2019 13:25:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/posts/tech/%ED%94%BD%EC%85%80%EB%B6%81%EC%97%90%EC%84%9C-%EC%93%B8%EB%A7%8C%ED%95%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B7%B0%EC%96%B4_image-annotation-tool/</guid>
-      <description>&lt;h5 id=&#34;이미지-뷰어&#34;&gt;이미지 뷰어&lt;/h5&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;ristretto : 적당히 가볍고 무난하다. thumbnail 크기만 더 크게 할 수 있으면 좋은데 -.-&lt;/li&gt;&#xA;&lt;li&gt;feh : 가장 가볍다. 하지만 GUI가 없어(?) 불편&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h5 id=&#34;image-annotation-tool&#34;&gt;Image Annotation Tool&lt;/h5&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;shutter : 캡쳐를 전제로 한 프로그램이라 편집은 불편하지만 한글 입력가능하고 annotation위주로 사용한다면 쓸만하다&lt;/li&gt;&#xA;&lt;li&gt;gnome-paint : text 추가 기능 없음&lt;/li&gt;&#xA;&lt;li&gt;mtPaint : 의존성 문제로 설치 실패&lt;/li&gt;&#xA;&lt;li&gt;gpaint : 한글입력 불가 -.-&lt;/li&gt;&#xA;&lt;li&gt;Snap Markup : 한글입력 불가 -.-&lt;/li&gt;&#xA;&lt;li&gt;image magic : 뭔가 기능은 강력한것 같은데 쓰기 불편&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <guid>https://bluedskim.github.io/posts/tech/%ED%94%BD%EC%85%80%EB%B6%81%EC%97%90%EC%84%9C-%EC%93%B8%EB%A7%8C%ED%95%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B7%B0%EC%96%B4_image-annotation-tool/index.html</guid>
+      <description>이미지 뷰어 ristretto : 적당히 가볍고 무난하다. thumbnail 크기만 더 크게 할 수 있으면 좋은데 -.- feh : 가장 가볍다. 하지만 GUI가 없어(?) 불편 Image Annotation Tool shutter : 캡쳐를 전제로 한 프로그램이라 편집은 불편하지만 한글 입력가능하고 annotation위주로 사용한다면 쓸만하다 gnome-paint : text 추가 기능 없음 mtPaint : 의존성 문제로 설치 실패 gpaint : 한글입력 불가 -.- Snap Markup : 한글입력 불가 -.- image magic : 뭔가 기능은 강력한것 같은데 쓰기 불편</description>
     </item>
     <item>
       <title>주위에 크롬북을 추천하시겠습니까?</title>
-      <link>https://bluedskim.github.io/posts/tech/%EC%A3%BC%EC%9C%84%EC%97%90-%ED%81%AC%EB%A1%AC%EB%B6%81%EC%9D%84-%EC%B6%94%EC%B2%9C%ED%95%98%EA%B2%A0%EC%8A%B5%EB%8B%88%EA%B9%8C/</link>
+      <link>https://bluedskim.github.io/posts/tech/%EC%A3%BC%EC%9C%84%EC%97%90-%ED%81%AC%EB%A1%AC%EB%B6%81%EC%9D%84-%EC%B6%94%EC%B2%9C%ED%95%98%EA%B2%A0%EC%8A%B5%EB%8B%88%EA%B9%8C/index.html</link>
       <pubDate>Wed, 14 Aug 2019 09:26:56 +0900</pubDate>
-      <guid>https://bluedskim.github.io/posts/tech/%EC%A3%BC%EC%9C%84%EC%97%90-%ED%81%AC%EB%A1%AC%EB%B6%81%EC%9D%84-%EC%B6%94%EC%B2%9C%ED%95%98%EA%B2%A0%EC%8A%B5%EB%8B%88%EA%B9%8C/</guid>
-      <description>&lt;p&gt;구글에서 설문 메일이 왔다. 혹시나 사은품으로 픽셀북2 줄까 해서 응답했지만 그럴리가 없겠지.&lt;/p&gt;&#xA;&lt;p&gt;&amp;ldquo;&lt;em&gt;주위에 크롬북을 추천하시겠습니까?&lt;/em&gt;&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;&amp;ldquo;글쎄요&amp;hellip; 픽셀북 정말 좋아해요. 거의 모든 것을 이 친구를 통해서 하고 있어요. 하지만 인터넷이나 구글문서 좀 하고 안드로이드 앱 좀 쓰는 사용자에게는 비싸죠. 과한 장비입니다&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://bluedskim.github.io/images/IMG_20190814_092605_517.jpg&#34;&gt;&lt;img src=&#34;https://bluedskim.github.io/images/IMG_20190814_092605_517.jpg&#34; alt=&#34;주위에 크롬북을 추천하시겠습니까?&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
+      <guid>https://bluedskim.github.io/posts/tech/%EC%A3%BC%EC%9C%84%EC%97%90-%ED%81%AC%EB%A1%AC%EB%B6%81%EC%9D%84-%EC%B6%94%EC%B2%9C%ED%95%98%EA%B2%A0%EC%8A%B5%EB%8B%88%EA%B9%8C/index.html</guid>
+      <description>구글에서 설문 메일이 왔다. 혹시나 사은품으로 픽셀북2 줄까 해서 응답했지만 그럴리가 없겠지.&#xA;“주위에 크롬북을 추천하시겠습니까?”&#xA;“글쎄요… 픽셀북 정말 좋아해요. 거의 모든 것을 이 친구를 통해서 하고 있어요. 하지만 인터넷이나 구글문서 좀 하고 안드로이드 앱 좀 쓰는 사용자에게는 비싸죠. 과한 장비입니다”</description>
     </item>
     <item>
       <title>픽셀북(모든 크롬북?)에서 Quake게임 실행하기</title>
-      <link>https://bluedskim.github.io/posts/tech/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C-quake%EA%B2%8C%EC%9E%84-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/</link>
+      <link>https://bluedskim.github.io/posts/tech/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C-quake%EA%B2%8C%EC%9E%84-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/index.html</link>
       <pubDate>Tue, 13 Aug 2019 18:28:39 +0900</pubDate>
-      <guid>https://bluedskim.github.io/posts/tech/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C-quake%EA%B2%8C%EC%9E%84-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/</guid>
-      <description>&lt;p&gt;Pixelbook은 상당히 사양이 괜찮은 노트북이지만 즐길 수 있는 적당한 FPS게임이 없다. 안드로이드용  FPS는 있지만 뭔가 부족한 느낌이다.&#xA;키보드 지원이 미비하다는게 그 이유 일 듯. 외형상 일반 노트북과 동일한 크롬북에는 클래식 FPS게임이 가장 적당한데 크롬OS용 FPS게임은 들어 본적이 없다.&lt;/p&gt;&#xA;&lt;p&gt;Quake 소스가 공개된 후로 Webgl로 포팅한 프로젝트가 있어 시도해봤는데 환상적이다.&lt;/p&gt;&#xA;&lt;h3 id=&#34;webgl&#34;&gt;WebGL?&lt;/h3&gt;&#xA;&lt;p&gt;브라우저에서 OpenGL ES 를 이용할 수 있게해주는 API&lt;/p&gt;&#xA;&lt;h3 id=&#34;quake&#34;&gt;Quake?&lt;/h3&gt;&#xA;&lt;p&gt;1인칭 슈팅 게임. 현재는 소스가 오픈되어 있어 많은 개발자들이 이것을 이용해서 각종 변종들을 만들고 있다.&lt;/p&gt;</description>
+      <guid>https://bluedskim.github.io/posts/tech/%ED%81%AC%EB%A1%AC%EB%B6%81%EC%97%90%EC%84%9C-quake%EA%B2%8C%EC%9E%84-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/index.html</guid>
+      <description>Pixelbook은 상당히 사양이 괜찮은 노트북이지만 즐길 수 있는 적당한 FPS게임이 없다. 안드로이드용 FPS는 있지만 뭔가 부족한 느낌이다. 키보드 지원이 미비하다는게 그 이유 일 듯. 외형상 일반 노트북과 동일한 크롬북에는 클래식 FPS게임이 가장 적당한데 크롬OS용 FPS게임은 들어 본적이 없다.&#xA;Quake 소스가 공개된 후로 Webgl로 포팅한 프로젝트가 있어 시도해봤는데 환상적이다.&#xA;WebGL? 브라우저에서 OpenGL ES 를 이용할 수 있게해주는 API</description>
     </item>
     <item>
       <title>Pixelbook에서 Flutter로 앱 개발</title>
-      <link>https://bluedskim.github.io/posts/tech/pixelbook%EC%97%90%EC%84%9C-flutter%EB%A1%9C-%EC%95%B1-%EA%B0%9C%EB%B0%9C_1/</link>
+      <link>https://bluedskim.github.io/posts/tech/pixelbook%EC%97%90%EC%84%9C-flutter%EB%A1%9C-%EC%95%B1-%EA%B0%9C%EB%B0%9C_1/index.html</link>
       <pubDate>Wed, 31 Jul 2019 15:14:43 +0900</pubDate>
-      <guid>https://bluedskim.github.io/posts/tech/pixelbook%EC%97%90%EC%84%9C-flutter%EB%A1%9C-%EC%95%B1-%EA%B0%9C%EB%B0%9C_1/</guid>
-      <description>&lt;p&gt;픽셀북으로 안드로이드 개발을 편하게 할 수 있다고 해서 시도하고 있는데&#xA;편하다고 하는 이유는 픽셀북에서 바로 안드로이드 앱 화면을 띄울 수 있기 때문인것 같다.&#xA;그러나 그러기 위해서는 픽셀북을 Developer Mode 로 변경해야 하는데 이렇게 하면 3가지 문제가 있다.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;보안이 해제된다 : &lt;em&gt;무섭다&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;시스템이 불안해진다 : &lt;em&gt;짜증 나다가 화가 나다가 최신 노트북 가격을 비교 하고 있는 나를 발견하면 구글이 미워지기 시작한다&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;cold 부팅 시 마다 Developer Mode 로 진입해줘야 한다 : &lt;em&gt;귀찮다&lt;/em&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;그래서 약간(?) 불편하지만 실제 폰으로 테스트 하는 방법을 쓰기로 했다.&lt;/p&gt;</description>
+      <guid>https://bluedskim.github.io/posts/tech/pixelbook%EC%97%90%EC%84%9C-flutter%EB%A1%9C-%EC%95%B1-%EA%B0%9C%EB%B0%9C_1/index.html</guid>
+      <description>픽셀북으로 안드로이드 개발을 편하게 할 수 있다고 해서 시도하고 있는데 편하다고 하는 이유는 픽셀북에서 바로 안드로이드 앱 화면을 띄울 수 있기 때문인것 같다. 그러나 그러기 위해서는 픽셀북을 Developer Mode 로 변경해야 하는데 이렇게 하면 3가지 문제가 있다.&#xA;보안이 해제된다 : 무섭다 시스템이 불안해진다 : 짜증 나다가 화가 나다가 최신 노트북 가격을 비교 하고 있는 나를 발견하면 구글이 미워지기 시작한다 cold 부팅 시 마다 Developer Mode 로 진입해줘야 한다 : 귀찮다 그래서 약간(?) 불편하지만 실제 폰으로 테스트 하는 방법을 쓰기로 했다.</description>
     </item>
     <item>
       <title>Pixelbook에서 Reaper사용하기</title>
-      <link>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/pixelbook%EC%97%90%EC%84%9C-reaper%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link>
+      <link>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/pixelbook%EC%97%90%EC%84%9C-reaper%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/index.html</link>
       <pubDate>Wed, 10 Jul 2019 17:24:26 +0900</pubDate>
-      <guid>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/pixelbook%EC%97%90%EC%84%9C-reaper%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid>
-      <description>&lt;p&gt;크롬북 리눅스 앱에서 오디오 재생을 지원한것은 얼마되지 않았다.&#xA;(OS버전 74부터 지원)&lt;/p&gt;&#xA;&lt;p&gt;주위에서 리눅스를 쓰는 사람도 없지만 쓴다고 해도 오디오 편집까지 하는 경우를 보지 못했다.&#xA;맥의 Logic이나 윈도우의 Cubase, Ableton Live같은 멋진 리눅스용 멀티트랙 녹음 편집 프로그램은 없는 듯 하다&lt;/p&gt;&#xA;&lt;p&gt;신기하게도 Reaper 는 리눅스용 무설치 버전을 제공하고 있다. 개발자 중에 리눅스 매니아가 있는 듯&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://reaper.fm/download.php#linux_download&#34;&gt;http://reaper.fm/download.php#linux_download&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;[![Reaper](/images/Screenshot 2019-07-10 at 5.13.23 PM.png)](/images/Screenshot 2019-07-10 at 5.13.23 PM.png)&lt;/p&gt;&#xA;&lt;p&gt;중요한거 하나! 터미널에서 reaper실행 파일을 바로 실행할 수 있는데 아래처럼 조그많게 떠서 알아 볼 수가 없다 -.-&lt;/p&gt;</description>
+      <guid>https://bluedskim.github.io/posts/%EC%9D%8C%EC%95%85/pixelbook%EC%97%90%EC%84%9C-reaper%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/index.html</guid>
+      <description>크롬북 리눅스 앱에서 오디오 재생을 지원한것은 얼마되지 않았다. (OS버전 74부터 지원)&#xA;주위에서 리눅스를 쓰는 사람도 없지만 쓴다고 해도 오디오 편집까지 하는 경우를 보지 못했다. 맥의 Logic이나 윈도우의 Cubase, Ableton Live같은 멋진 리눅스용 멀티트랙 녹음 편집 프로그램은 없는 듯 하다&#xA;신기하게도 Reaper 는 리눅스용 무설치 버전을 제공하고 있다. 개발자 중에 리눅스 매니아가 있는 듯&#xA;http://reaper.fm/download.php#linux_download&#xA;[![Reaper](/images/Screenshot 2019-07-10 at 5.13.23 PM.png)](/images/Screenshot 2019-07-10 at 5.13.23 PM.png)&#xA;중요한거 하나! 터미널에서 reaper실행 파일을 바로 실행할 수 있는데 아래처럼 조그많게 떠서 알아 볼 수가 없다 -.-</description>
     </item>
     <item>
       <title>각종 작업 소요시간 체크용 우분투용 command line stopwatch</title>
-      <link>https://bluedskim.github.io/posts/tech/%EC%93%B8%EB%A7%8C%ED%95%9C-ubuntu%EC%9A%A9-command-line-%ED%83%80%EC%9D%B4%EB%A8%B8/</link>
+      <link>https://bluedskim.github.io/posts/tech/%EC%93%B8%EB%A7%8C%ED%95%9C-ubuntu%EC%9A%A9-command-line-%ED%83%80%EC%9D%B4%EB%A8%B8/index.html</link>
       <pubDate>Sun, 24 Mar 2019 10:38:28 +0900</pubDate>
-      <guid>https://bluedskim.github.io/posts/tech/%EC%93%B8%EB%A7%8C%ED%95%9C-ubuntu%EC%9A%A9-command-line-%ED%83%80%EC%9D%B4%EB%A8%B8/</guid>
-      <description>&lt;p&gt;간단하게 터미널에서 작업 소요 시간을 체크 할 수 있는 방법들을 찾아봤는데&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://superuser.com/questions/611538/is-there-a-way-to-display-a-countdown-or-stopwatch-timer-in-a-terminal&#34;&gt;https://superuser.com/questions/611538/is-there-a-way-to-display-a-countdown-or-stopwatch-timer-in-a-terminal&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;terdon 이라는 분이 알려준 방법은 잘 동작하였지만&#xA;&lt;a href=&#34;https://superuser.com/questions/611538/is-there-a-way-to-display-a-countdown-or-stopwatch-timer-in-a-terminal?answertab=active#tab-top&#34;&gt;https://superuser.com/questions/611538/is-there-a-way-to-display-a-countdown-or-stopwatch-timer-in-a-terminal?answertab=active#tab-top&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;~/.bashrc 파일에 함수를 추가하고 터미널에서 바로 호출해서 쓰는 방법이라 프로그램 추가 설치가 필요없다는 장점이 있다.&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;countdown(){&#xA;&#x9;date1=$((`date +%s` + $1));&#xA;&#x9;while [ &amp;quot;$date1&amp;quot; -ge `date +%s` ]; do &#xA;&#x9;## Is this more than 24h away?&#xA;&#x9;days=$(($(($(( $date1 - $(date +%s))) * 1 ))/86400))&#xA;&#x9;echo -ne &amp;quot;$days day(s) and $(date -u --date @$(($date1 - `date +%s`)) +%H:%M:%S)\r&amp;quot;; &#xA;&#x9;sleep 0.1&#xA;&#x9;done&#xA;}&#xA;&#xA;function stopwatch(){&#xA;  date1=`date +%s`; &#xA;   while true; do &#xA;&#x9;echo -ne &amp;quot;$(date -u --date @$((`date +%s` - $date1)) +%H:%M:%S)\r&amp;quot;; &#xA;&#x9;sleep 0.1&#xA;   done&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;현재 터미널에서 바로 사용하려면 source 명렁어로 .bashrc를 다시 읽어와야 한다&lt;/p&gt;</description>
+      <guid>https://bluedskim.github.io/posts/tech/%EC%93%B8%EB%A7%8C%ED%95%9C-ubuntu%EC%9A%A9-command-line-%ED%83%80%EC%9D%B4%EB%A8%B8/index.html</guid>
+      <description>간단하게 터미널에서 작업 소요 시간을 체크 할 수 있는 방법들을 찾아봤는데&#xA;https://superuser.com/questions/611538/is-there-a-way-to-display-a-countdown-or-stopwatch-timer-in-a-terminal&#xA;terdon 이라는 분이 알려준 방법은 잘 동작하였지만 https://superuser.com/questions/611538/is-there-a-way-to-display-a-countdown-or-stopwatch-timer-in-a-terminal?answertab=active#tab-top&#xA;~/.bashrc 파일에 함수를 추가하고 터미널에서 바로 호출해서 쓰는 방법이라 프로그램 추가 설치가 필요없다는 장점이 있다.&#xA;countdown(){ date1=$((`date +%s` + $1)); while [ &#34;$date1&#34; -ge `date +%s` ]; do ## Is this more than 24h away? days=$(($(($(( $date1 - $(date +%s))) * 1 ))/86400)) echo -ne &#34;$days day(s) and $(date -u --date @$(($date1 - `date +%s`)) +%H:%M:%S)\r&#34;; sleep 0.1 done } function stopwatch(){ date1=`date +%s`; while true; do echo -ne &#34;$(date -u --date @$((`date +%s` - $date1)) +%H:%M:%S)\r&#34;; sleep 0.1 done } 현재 터미널에서 바로 사용하려면 source 명렁어로 .bashrc를 다시 읽어와야 한다</description>
     </item>
     <item>
       <title>Pixelbook Crostini Linux앱에서 한글 입력하기</title>
-      <link>https://bluedskim.github.io/posts/tech/howtoinputkorenwithcrostinionpixelbook/</link>
+      <link>https://bluedskim.github.io/posts/tech/howtoinputkorenwithcrostinionpixelbook/index.html</link>
       <pubDate>Sat, 16 Mar 2019 22:38:28 +0900</pubDate>
-      <guid>https://bluedskim.github.io/posts/tech/howtoinputkorenwithcrostinionpixelbook/</guid>
-      <description>&lt;p&gt;영어/알파벳을 쓰는 나라 사람들은 이해하기 힘든 문제가 바로 2byte 이상 문자 입출력 문제이다.&lt;br&gt;&#xA;최신 기술일수록 한글지원이 미약한 경우가 많은데&lt;br&gt;&#xA;역시나 크롬북도 예외가 아니다.&lt;br&gt;&#xA;크롬북은 리눅스 기반이며 그래서 구글에서는 대부분의 크롬북에서 리눅스 프로그램 설치를 지원해주는데&lt;br&gt;&#xA;이것이 바로 프로젝트 Crostini다.&lt;br&gt;&#xA;구글답게 멋지게 구현하였는데 역시나 한글 입력 문제가 있다.&lt;br&gt;&#xA;크롬북의 한글전환 단축키가 리눅스앱에서는 동작하지 않는다는 점이다&lt;br&gt;&#xA;여러 아시아 2byte이상 문자권의 사용자들이 구글에 요구를 해왔던 것 같은데&lt;br&gt;&#xA;구글이 공식 지원해주기 전에 유저들이 방법을 찾아냈다.&lt;br&gt;&#xA;이것은 의외로 리눅스에서 여러 언어를 동시에 지원하는 방법과 동일한데 바로 fcitx입력기를 설치하는 것이다.\&lt;/p&gt;</description>
+      <guid>https://bluedskim.github.io/posts/tech/howtoinputkorenwithcrostinionpixelbook/index.html</guid>
+      <description>영어/알파벳을 쓰는 나라 사람들은 이해하기 힘든 문제가 바로 2byte 이상 문자 입출력 문제이다.&#xA;최신 기술일수록 한글지원이 미약한 경우가 많은데&#xA;역시나 크롬북도 예외가 아니다.&#xA;크롬북은 리눅스 기반이며 그래서 구글에서는 대부분의 크롬북에서 리눅스 프로그램 설치를 지원해주는데&#xA;이것이 바로 프로젝트 Crostini다.&#xA;구글답게 멋지게 구현하였는데 역시나 한글 입력 문제가 있다.&#xA;크롬북의 한글전환 단축키가 리눅스앱에서는 동작하지 않는다는 점이다&#xA;여러 아시아 2byte이상 문자권의 사용자들이 구글에 요구를 해왔던 것 같은데&#xA;구글이 공식 지원해주기 전에 유저들이 방법을 찾아냈다.&#xA;이것은 의외로 리눅스에서 여러 언어를 동시에 지원하는 방법과 동일한데 바로 fcitx입력기를 설치하는 것이다.\</description>
     </item>
     <item>
       <title>Pixelbook에서 hugo 설치</title>
-      <link>https://bluedskim.github.io/posts/tech/hugoonpixelbook/</link>
+      <link>https://bluedskim.github.io/posts/tech/hugoonpixelbook/index.html</link>
       <pubDate>Fri, 15 Mar 2019 22:38:28 +0900</pubDate>
-      <guid>https://bluedskim.github.io/posts/tech/hugoonpixelbook/</guid>
-      <description>&lt;h1 id=&#34;설치&#34;&gt;설치&lt;/h1&gt;&#xA;&lt;p&gt;ASUS Chromebook C100PA-DS03 에 설치할 때와 마찬가지로 최신버전을 설치하려면 deb 파일을 다운 받아야 한다. 현재 최신 버전은 hugo_0.54.0-1_amd64.deb 이다.&#xA;하지만 libsass1이 필요하다고 하니 먼저 설치한다.&lt;/p&gt;&#xA;&lt;p&gt;다운로드 경로 &lt;a href=&#34;https://packages.debian.org/sid/amd64/libsass1/download&#34;&gt;https://packages.debian.org/sid/amd64/libsass1/download&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;다운 받은 후 설치&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;$ sudo dpkg -i libsass1_3.5.5-2_amd64.deb&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;다운로드 경로 &lt;a href=&#34;https://packages.debian.org/sid/amd64/hugo/download&#34;&gt;https://packages.debian.org/sid/amd64/hugo/download&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;다운 받은 후 설치&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;$ sudo dpkg -i hugo_0.54.0-1_amd64.deb &#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h1 id=&#34;구동&#34;&gt;구동&lt;/h1&gt;&#xA;&lt;p&gt;pixelbook에서는 hugo 기본 포트인 1313 으로 띄울 수 없으니 아래를 참고하고&#xA;&lt;a href=&#34;https://www.reddit.com/r/Crostini/comments/aewwhf/cannot_access_penguinlinuxtestport/&#34;&gt;https://www.reddit.com/r/Crostini/comments/aewwhf/cannot_access_penguinlinuxtestport/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;서버 띄울 때 포트 변경해줘야 한다. 제일 유명한 포트 중에 하나인 8080을 사용하면 잘 뜬다&lt;/p&gt;</description>
+      <guid>https://bluedskim.github.io/posts/tech/hugoonpixelbook/index.html</guid>
+      <description>설치 ASUS Chromebook C100PA-DS03 에 설치할 때와 마찬가지로 최신버전을 설치하려면 deb 파일을 다운 받아야 한다. 현재 최신 버전은 hugo_0.54.0-1_amd64.deb 이다. 하지만 libsass1이 필요하다고 하니 먼저 설치한다.&#xA;다운로드 경로 https://packages.debian.org/sid/amd64/libsass1/download&#xA;다운 받은 후 설치&#xA;$ sudo dpkg -i libsass1_3.5.5-2_amd64.deb 다운로드 경로 https://packages.debian.org/sid/amd64/hugo/download&#xA;다운 받은 후 설치&#xA;$ sudo dpkg -i hugo_0.54.0-1_amd64.deb 구동 pixelbook에서는 hugo 기본 포트인 1313 으로 띄울 수 없으니 아래를 참고하고 https://www.reddit.com/r/Crostini/comments/aewwhf/cannot_access_penguinlinuxtestport/</description>
     </item>
   </channel>
 </rss>

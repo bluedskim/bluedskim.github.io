@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html id="R-html" lang="ko-KR" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.152.2">
+    <meta name="generator" content="Relearn 9.0.3+36307e4ed23582638ab689240ac7b427217803ee">
+    <meta name="description" content="픽셀북으로 안드로이드 개발을 편하게 할 수 있다고 해서 시도하고 있는데 편하다고 하는 이유는 픽셀북에서 바로 안드로이드 앱 화면을 띄울 수 있기 때문인것 같다. 그러나 그러기 위해서는 픽셀북을 Developer Mode 로 변경해야 하는데 이렇게 하면 3가지 문제가 있다.
+보안이 해제된다 : 무섭다 시스템이 불안해진다 : 짜증 나다가 화가 나다가 최신 노트북 가격을 비교 하고 있는 나를 발견하면 구글이 미워지기 시작한다 cold 부팅 시 마다 Developer Mode 로 진입해줘야 한다 : 귀찮다 그래서 약간(?) 불편하지만 실제 폰으로 테스트 하는 방법을 쓰기로 했다.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Pixelbook에서 Flutter로 앱 개발 :: Do What You Want To Do">
+    <meta name="twitter:description" content="픽셀북으로 안드로이드 개발을 편하게 할 수 있다고 해서 시도하고 있는데 편하다고 하는 이유는 픽셀북에서 바로 안드로이드 앱 화면을 띄울 수 있기 때문인것 같다. 그러나 그러기 위해서는 픽셀북을 Developer Mode 로 변경해야 하는데 이렇게 하면 3가지 문제가 있다.
+보안이 해제된다 : 무섭다 시스템이 불안해진다 : 짜증 나다가 화가 나다가 최신 노트북 가격을 비교 하고 있는 나를 발견하면 구글이 미워지기 시작한다 cold 부팅 시 마다 Developer Mode 로 진입해줘야 한다 : 귀찮다 그래서 약간(?) 불편하지만 실제 폰으로 테스트 하는 방법을 쓰기로 했다.">
+    <meta property="og:url" content="https://bluedskim.github.io/posts/tech/pixelbook%EC%97%90%EC%84%9C-flutter%EB%A1%9C-%EC%95%B1-%EA%B0%9C%EB%B0%9C_1/index.html">
+    <meta property="og:site_name" content="Do What You Want To Do">
+    <meta property="og:title" content="Pixelbook에서 Flutter로 앱 개발 :: Do What You Want To Do">
+    <meta property="og:description" content="픽셀북으로 안드로이드 개발을 편하게 할 수 있다고 해서 시도하고 있는데 편하다고 하는 이유는 픽셀북에서 바로 안드로이드 앱 화면을 띄울 수 있기 때문인것 같다. 그러나 그러기 위해서는 픽셀북을 Developer Mode 로 변경해야 하는데 이렇게 하면 3가지 문제가 있다.
+보안이 해제된다 : 무섭다 시스템이 불안해진다 : 짜증 나다가 화가 나다가 최신 노트북 가격을 비교 하고 있는 나를 발견하면 구글이 미워지기 시작한다 cold 부팅 시 마다 Developer Mode 로 진입해줘야 한다 : 귀찮다 그래서 약간(?) 불편하지만 실제 폰으로 테스트 하는 방법을 쓰기로 했다.">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Posts">
+    <meta property="article:published_time" content="2019-07-31T15:14:43+09:00">
+    <meta property="article:modified_time" content="2019-07-31T15:14:43+09:00">
+    <meta property="article:tag" content="Pixelbook">
+    <meta property="article:tag" content="Flutter">
+    <meta property="article:tag" content="Visual Studio Code">
+    <meta itemprop="name" content="Pixelbook에서 Flutter로 앱 개발 :: Do What You Want To Do">
+    <meta itemprop="description" content="픽셀북으로 안드로이드 개발을 편하게 할 수 있다고 해서 시도하고 있는데 편하다고 하는 이유는 픽셀북에서 바로 안드로이드 앱 화면을 띄울 수 있기 때문인것 같다. 그러나 그러기 위해서는 픽셀북을 Developer Mode 로 변경해야 하는데 이렇게 하면 3가지 문제가 있다.
+보안이 해제된다 : 무섭다 시스템이 불안해진다 : 짜증 나다가 화가 나다가 최신 노트북 가격을 비교 하고 있는 나를 발견하면 구글이 미워지기 시작한다 cold 부팅 시 마다 Developer Mode 로 진입해줘야 한다 : 귀찮다 그래서 약간(?) 불편하지만 실제 폰으로 테스트 하는 방법을 쓰기로 했다.">
+    <meta itemprop="datePublished" content="2019-07-31T15:14:43+09:00">
+    <meta itemprop="dateModified" content="2019-07-31T15:14:43+09:00">
+    <meta itemprop="wordCount" content="694">
+    <meta itemprop="keywords" content="Pixelbook,Flutter,Visual Studio Code">
+    <title>Pixelbook에서 Flutter로 앱 개발 :: Do What You Want To Do</title>
+    <link href="https://bluedskim.github.io/posts/tech/pixelbook%EC%97%90%EC%84%9C-flutter%EB%A1%9C-%EC%95%B1-%EA%B0%9C%EB%B0%9C_1/index.html" rel="canonical" type="text/html" title="Pixelbook에서 Flutter로 앱 개발 :: Do What You Want To Do">
+    <link href="/css/auto-complete/auto-complete.min.css?1774431351" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1774431351" defer></script>
+    <script src="/js/search-lunr.min.js?1774431351" defer></script>
+    <script src="/js/search.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/searchindex.en.js?1774431351";
+    </script>
+    <script src="/js/lunr/lunr.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.ko.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['ko'];
+    </script>
+    <link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1774431351" rel="stylesheet">
+    <link href="/css/theme.min.css?1774431351" rel="stylesheet">
+    <link href="/css/format-print.min.css?1774431351" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/posts\/tech\/pixelbook%EC%97%90%EC%84%9C-flutter%EB%A1%9C-%EC%95%B1-%EA%B0%9C%EB%B0%9C_1\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/bluedskim.github.io';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'relearn-auto', 'learn' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+  </head>
+  <body class="mobile-support print" data-origin="/posts/tech/pixelbook%EC%97%90%EC%84%9C-flutter%EB%A1%9C-%EC%95%B1-%EA%B0%9C%EB%B0%9C_1/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#전제조건">전제조건</a></li>
+    <li><a href="#순서">순서</a></li>
+    <li><a href="#flutter-설치">flutter 설치</a></li>
+    <li><a href="#java-설치">Java 설치</a></li>
+    <li><a href="#android-sdk-tools-와-android-sdk-설치">Android SDK Tools 와 Android SDK 설치</a></li>
+    <li><a href="#lib32stdc6-설치">lib32stdc++6 설치</a></li>
+    <li><a href="#안드로이드-폰과-연결">안드로이드 폰과 연결</a></li>
+    <li><a href="#visual-studio-code-와-flutter-extensions-설치">Visual Studio Code 와 Flutter extensions 설치</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Do What You Want</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/posts/index.html"><span itemprop="name">Posts</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Pixelbook에서 Flutter로 앱 개발</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/pixelbook%EC%97%90%EC%84%9C-flutter%EB%A1%9C-%EC%95%B1-%EA%B0%9C%EB%B0%9C_1/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/%EB%A6%AC%EB%88%85%EC%8A%A4%EC%97%90%EC%84%9C-%ED%98%84%EC%9E%AC-%EC%8B%9C%EA%B0%81-%EC%9D%8C%EC%84%B1%EC%9C%BC%EB%A1%9C-%EC%95%8C%EB%A0%A4%EC%A3%BC%EA%B8%B0/index.html" title="리눅스에서 현재 시각 음성으로 알려주기 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/redminetopdffull/index.html" title="우분투 command line에서 모든 레드마인 이슈를 하나의 pdf 로 내려받기 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable posts" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/tags/flutter/index.html">Flutter</a></li>
+    <li><a class="term-link" href="/tags/pixelbook/index.html">Pixelbook</a></li>
+    <li><a class="term-link" href="/tags/visual-studio-code/index.html">Visual Studio Code</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="pixelbook에서-flutter로-앱-개발">Pixelbook에서 Flutter로 앱 개발</h1>
+
+<p>픽셀북으로 안드로이드 개발을 편하게 할 수 있다고 해서 시도하고 있는데
+편하다고 하는 이유는 픽셀북에서 바로 안드로이드 앱 화면을 띄울 수 있기 때문인것 같다.
+그러나 그러기 위해서는 픽셀북을 Developer Mode 로 변경해야 하는데 이렇게 하면 3가지 문제가 있다.</p>
+<ol>
+<li>보안이 해제된다 : <em>무섭다</em></li>
+<li>시스템이 불안해진다 : <em>짜증 나다가 화가 나다가 최신 노트북 가격을 비교 하고 있는 나를 발견하면 구글이 미워지기 시작한다</em></li>
+<li>cold 부팅 시 마다 Developer Mode 로 진입해줘야 한다 : <em>귀찮다</em></li>
+</ol>
+<p>그래서 약간(?) 불편하지만 실제 폰으로 테스트 하는 방법을 쓰기로 했다.</p>
+<ul>
+<li>참고 : <a href="https://flutter.dev/docs/get-started/install/linux" rel="external">https://flutter.dev/docs/get-started/install/linux</a></li>
+<li>참고 : <a href="https://medium.com/snapp-mobile/turning-the-pixelbook-into-a-great-flutter-development-laptop-db29105cc789" rel="external">https://medium.com/snapp-mobile/turning-the-pixelbook-into-a-great-flutter-development-laptop-db29105cc789</a></li>
+</ul>
+<h2 id="전제조건">전제조건<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<ul>
+<li>픽셀북에 Linux Apps 활성화(모든 명령어들은 리눅스 터미널에서 실행)</li>
+<li>픽셀북과 같은 네트워크에 wifi로 접속된 안드로이드 폰(개발자모드 활성화 필수)</li>
+<li>끝까지 한번 읽어보시고 작업하세요.</li>
+</ul>
+<h2 id="순서">순서<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<ol>
+<li>Flutter 설치</li>
+<li>Android SDK Tools 와 Android SDK 설치</li>
+<li>안드로이드 폰과 adb로 연결</li>
+<li>Visual Studio Code 와 Flutter extensions 설치</li>
+</ol>
+<h2 id="flutter-설치">flutter 설치<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<ol>
+<li>
+<p>최신 SDK 다운로드  : <a href="https://flutter.dev/docs/development/tools/sdk/releases?tab=linux" rel="external">https://flutter.dev/docs/development/tools/sdk/releases?tab=linux</a></p>
+</li>
+<li>
+<p>적당한 위치에 압축 해제</p>
+<pre><code> $ cd ~/dev
+ $ tar xf ~/Downloads/flutter_linux_v1.7.8+hotfix.4-stable.tar.xz
+</code></pre>
+</li>
+<li>
+<p>flutter 경로를 path에 추가 : ~/.bashrc파일에 아래의 라인을 추가하는 것이 편하다</p>
+<pre><code> export PATH=&quot;$PATH:/home/My/dev/flutter/bin&quot;
+</code></pre>
+</li>
+</ol>
+<ul>
+<li>가이드에 의하면 flutter설치 후 바로 각종 추가 파일들을 다운로드pre-download 하라고 하는데 필요할 때 알아서 다운로드 하므로 미리 할 필요 없을 듯</li>
+</ul>
+<h2 id="java-설치">Java 설치<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>왜 Java가 필요하냐고? Android sdkmanager 가 Java인 듯 -.- 어차피 설치할 Java라면 지금 설치하자.</p>
+<p>최신 Java를 설치해도 되지만 나는 1.8 버전이면  충분하기 때문에 1.8을 설치하겠다. 그리고 OpenJDK보다 OracleJDK가 빠르다고 하니 OracleJDK를 설치하겠다.</p>
+<p>Tharanga 란 분이 Github에 설치 스크립트를 공유해 주셔서 이것을 사용하려 한다. uninstall 스크립트도 제공해준다고 좋지 아니한가</p>
+<p><a href="https://github.com/chrishantha/install-java" rel="external">https://github.com/chrishantha/install-java</a></p>
+<ol>
+<li>
+<p>설치 스크립트 다운로드</p>
+<pre><code> $ wget https://raw.githubusercontent.com/chrishantha/install-java/master/install-java.sh
+</code></pre>
+</li>
+<li>
+<p>JDK 다운로드</p>
+<p>jdk-8u212-linux-x64.tar.gz를 여기에서 다운로드 받자.
+<a href="https://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8u211-later-5573849.html" rel="external">https://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8u211-later-5573849.html</a></p>
+</li>
+<li>
+<p>암호화 확장 기능 다운로드</p>
+<p>암호화 확장 기능은 Java 개발시에만 필요한 기능이지만 Pixelbook에서 Java개발에 필요할거 같아 같이 설치했다.
+jce_policy-8.zip 는 여기에서 다운로드 한다.
+<a href="https://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html" rel="external">https://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html</a></p>
+</li>
+<li>
+<p>설치 스크립트 실행</p>
+<p>다운로드한 3개의 파일은 모두 하나의 폴더에 있어야 한다.</p>
+<p>설치 중 선택사항을 물어보는데 모두 Y로 했다.</p>
+<pre><code> $ sudo ./install-java.sh -f ./jdk-8u212-linux-x64.tar.gz
+</code></pre>
+</li>
+</ol>
+<h2 id="android-sdk-tools-와-android-sdk-설치">Android SDK Tools 와 Android SDK 설치<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<ol>
+<li>
+<p>Android SDK 용 폴더 생성</p>
+<pre><code> $ mkdir ~/dev/android-sdk
+ $ cd ~/dev/android-sdk
+</code></pre>
+</li>
+<li>
+<p>명령행 툴 받기 : <a href="https://developer.android.com/studio/#downloads" rel="external">https://developer.android.com/studio/#downloads</a> 에서  “Command line tools only” 의 리눅스 버전을 받거나  &lsquo;19.08.02 현재 최신버전을 wget으로 받을 수 있다.</p>
+<pre><code> $ wget https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
+</code></pre>
+</li>
+<li>
+<p>압축을 해제 한다.</p>
+<pre><code> $ unzip android-studio-ide-182.5264788-linux.zip
+</code></pre>
+</li>
+<li>
+<p>~/.bashrc파일에 path 추가</p>
+<pre><code> export PATH=&quot;$PATH:/home/My/dev/android-sdk/tools/bin&quot;
+</code></pre>
+</li>
+<li>
+<p>sdkmanager 로  필요한  SDK 받기 : 각각의 버전 번호는 &lsquo;19.08.02 현재 최신 버전인데 버전업 될 수 있으니 확인 후 최신버전을 받자.</p>
+<pre><code> $ sdkmanager &quot;build-tools;29.0.1&quot; &quot;tools&quot; &quot;platform-tools&quot; &quot;platforms;android-29&quot; &quot;extras;google;google_play_services&quot; &quot;extras;google;webdriver&quot; &quot;system-images;android-29;google_apis_playstore;x86_64&quot;
+</code></pre>
+<p>sdk목록과 버전 확인 방법</p>
+<pre><code> $ sdkmanager --list
+</code></pre>
+</li>
+<li>
+<p>~/.bashrc파일에 path 추가</p>
+<pre><code> export PATH=&quot;$PATH:~/Utils/android-sdk/platform-tools&quot;
+</code></pre>
+</li>
+<li>
+<p>~/.bashrc파일에  ANDROID_HOME 시스템 변수 추가</p>
+<pre><code> export ANDROID_HOME=&quot;/home/bluedskim/Utils/android-sdk&quot;
+</code></pre>
+</li>
+<li>
+<p>지금까지 설정한 시스템 변수를 적용한다</p>
+<pre><code> $ . ~/.bashrc
+</code></pre>
+</li>
+<li>
+<p>Android 라이센스 동의</p>
+<pre><code> $ flutter doctor --android-licenses
+</code></pre>
+</li>
+</ol>
+<h2 id="lib32stdc6-설치">lib32stdc++6 설치<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>여기까지 하고 flutter doctor 를 실행해보면 &ldquo;Downloaded executables cannot execute on host&rdquo; 라면서 불평을 한다. lib32stdc++6를 설치하자.</p>
+<pre><code>$ sudo apt-get install lib32stdc++6
+</code></pre>
+<h2 id="안드로이드-폰과-연결">안드로이드 폰과 연결<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>우리는 픽셀북을 개발자모드를 켜지 않았다. 그래서 픽셀북에서 바로 안드로이드 앱을 테스트 할 수 없고 실제 안드로이드 폰에 adb로 연결 후 디버깅할 것이다.
+그러기 위해서는 usb케이블로 폰을 연결하던지 wifi와 adb를 이용해서 연결 하는 방법이 있다.
+케이블 없는 개발을 위해 wifi와 adb를 이용해서 폰에 연결하도록 한다.</p>
+<ul>
+<li>
+<p>해당 폰을 wifi로 디버깅 가능하도록 설정변경</p>
+<p>최소 한번은 해당 폰과 usb로 연결해야 한다. 연결 후 다음 명령을 실행한다.</p>
+<pre><code>  $ adb tcpip 5555
+</code></pre>
+<p><a href="/images/IMG_20190803_105402.jpg"><a href="#R-image-85251ce6c39bdf85e859f44385c5ea85" class="lightbox-link"><img alt="최소 한번은 해당 폰과 usb로 연결해야 한다" class="lazy lightbox figure-image" loading="lazy" src="/images/IMG_20190803_105402.jpg" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-85251ce6c39bdf85e859f44385c5ea85"><img alt="최소 한번은 해당 폰과 usb로 연결해야 한다" class="lazy lightbox lightbox-image" loading="lazy" src="/images/IMG_20190803_105402.jpg"></a></a></p>
+</li>
+<li>
+<p>adb over wifi 연결</p>
+<pre><code>  $ adb connect 해당폰의_내부ip:5554
+</code></pre>
+<p>연결된 기기 목록을 조회하면 해당 폰 정보가 뜬다.</p>
+<pre><code>  $ adb devices -l
+  List of devices attached
+  해당폰의_내부ip:5554      device product:kltektt model:SM_G900K device:kltektt transport_id:1
+</code></pre>
+</li>
+</ul>
+<h2 id="visual-studio-code-와-flutter-extensions-설치">Visual Studio Code 와 Flutter extensions 설치<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>여기서 다운로드 하자 <a href="https://code.visualstudio.com/docs/?dv=linux64_deb" rel="external">https://code.visualstudio.com/docs/?dv=linux64_deb</a></p>
+<p>리눅스 터미널에서 설치하거나</p>
+<pre><code>$ sudo apt install ./code_1.36.1-1562627527_amd64.deb
+</code></pre>
+<p>탐색기에서 더블클릭하면 바로 설치할 수도 있다</p>
+<p>설치가 끝나면 터미널에서 실행하자. 실행 명령어는 code</p>
+<pre><code>$ code
+</code></pre>
+<p>혹은 바로가기를 클릭한다.</p>
+<p>실행 후에는 공식가이드에 따라 Flutter extensions을 설치한다
+<a href="https://flutter.dev/docs/get-started/editor?tab=vscode" rel="external">https://flutter.dev/docs/get-started/editor?tab=vscode</a></p>
+<p>설치 후에는 테스트용 앱을 띄워보자
+<a href="https://flutter.dev/docs/get-started/test-drive?tab=vscode" rel="external">https://flutter.dev/docs/get-started/test-drive?tab=vscode</a></p>
+<p><a href="/images/IMG_20190802_120659_410.jpg"><a href="#R-image-59998878f2726a43b13095c1a953241f" class="lightbox-link"><img alt="vs code" class="lazy lightbox figure-image" loading="lazy" src="/images/IMG_20190802_120659_410.jpg" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-59998878f2726a43b13095c1a953241f"><img alt="vs code" class="lazy lightbox lightbox-image" loading="lazy" src="/images/IMG_20190802_120659_410.jpg"></a></a></p>
+<ul>
+<li>
+<p>아직 크롬북 리눅스 앱에서 scaling 문제로 화면이 흐릿하게 보이는 문제가 있다 -.- 다행히도 vs code 는 자체적으로  scaling 할 수 있는 옵션을 제공한다. vs code의 바로가기에 이 옵션을 추가면 쨍쨍한 화면을 볼 수 있다. /usr/share/applications/code.desktop 을 열어서  &ndash;force-device-scale-factor=2 인수를 추가한다</p>
+<pre><code>  [Desktop Entry]
+  Name=Visual Studio Code
+  Comment=Code Editing. Redefined.
+  GenericName=Text Editor
+  Exec=/usr/share/code/code --force-device-scale-factor=2 --unity-launch %F
+  Icon=com.visualstudio.code
+  Type=Application
+  StartupNotify=false
+  StartupWMClass=Code
+  Categories=Utility;TextEditor;Development;IDE;
+  MimeType=text/plain;inode/directory;
+  Actions=new-empty-window;
+  Keywords=vscode;
+
+  X-Desktop-File-Install-Version=0.23
+
+  [Desktop Action new-empty-window]
+  Name=New Empty Window
+  Exec=/usr/share/code/code --force-device-scale-factor=2 --new-window %F
+  Icon=com.visualstudio.code
+</code></pre>
+</li>
+<li>
+<p>Flutter 공부를 하던 중 &lsquo;나에게 이 기술이 꼭 필요할까&rsquo; 라는 질문에 도달하게 되었다. 딱히 잘하는 것도 없으면서 하고 싶은 것은 참 많기는 한데  GUI(Graphical User Interface)쪽은 내 분야가 아니라는 생각이 들었다. 적어도 앞으로는. 이제는 선택과 집중이 필요할 때.</p>
+</li>
+</ul>
+
+  <footer class="footline">
+              <i class='fa-fw fas fa-calendar'></i> 2019-07-31
+<div class="R-taxonomy taxonomy-categories cstyle" title="Categories" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/categories/tech/index.html">Tech</a></li>
+  </ul>
+</div>
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1774431351" defer></script>
+    <script src="/js/theme.min.js?1774431351" defer></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-3QTEZE6PDE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3QTEZE6PDE');
+</script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

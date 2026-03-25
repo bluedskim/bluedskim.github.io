@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html id="R-html" lang="ko-KR" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.152.2">
+    <meta name="generator" content="Relearn 9.0.3+36307e4ed23582638ab689240ac7b427217803ee">
+    <meta name="description" content="ReactJS 로 Single-page application을 개발한다면 일반적으로 build를 하고 build를 deploy하는 방식을 사용한다.
+최근 진행했던 프로젝트에서도 역시 이런 방식으로 deploy를 해왔는데, deploy후 레이아웃이 깨지는 경우를 발견하게 되었다.
+뭔가 CSS 충돌이 발생한 상황인 듯 한데 소스레벨에서는 해결할 수도 피해갈 수도 없는 상황이었다.
+방법은 단 하나, 리소스 낭비를 감수하면서 운영환경에서도 npm start 형태로 구동하여 서비스할 수 밖에 없었다.
+하지만 리소스 낭비보다 더 심각한 문제가 있었으니.
+npm start로 구동하는 경우 nohup 을 이용한 background 프로세스로 구동하여야 하는데 리로드가 아닌 프로세스 리스타트가 필요한 경우(모듈이 추가된다던지 하는 이유로) 해당 프로세스를 ps명령으로 찾아서 kill해야 했다.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="PM2 - Production Process Manager for Node :: Do What You Want To Do">
+    <meta name="twitter:description" content="ReactJS 로 Single-page application을 개발한다면 일반적으로 build를 하고 build를 deploy하는 방식을 사용한다.
+최근 진행했던 프로젝트에서도 역시 이런 방식으로 deploy를 해왔는데, deploy후 레이아웃이 깨지는 경우를 발견하게 되었다.
+뭔가 CSS 충돌이 발생한 상황인 듯 한데 소스레벨에서는 해결할 수도 피해갈 수도 없는 상황이었다.
+방법은 단 하나, 리소스 낭비를 감수하면서 운영환경에서도 npm start 형태로 구동하여 서비스할 수 밖에 없었다.
+하지만 리소스 낭비보다 더 심각한 문제가 있었으니.
+npm start로 구동하는 경우 nohup 을 이용한 background 프로세스로 구동하여야 하는데 리로드가 아닌 프로세스 리스타트가 필요한 경우(모듈이 추가된다던지 하는 이유로) 해당 프로세스를 ps명령으로 찾아서 kill해야 했다.">
+    <meta property="og:url" content="https://bluedskim.github.io/posts/tech/pm2-production-process-manager-for-node.js/index.html">
+    <meta property="og:site_name" content="Do What You Want To Do">
+    <meta property="og:title" content="PM2 - Production Process Manager for Node :: Do What You Want To Do">
+    <meta property="og:description" content="ReactJS 로 Single-page application을 개발한다면 일반적으로 build를 하고 build를 deploy하는 방식을 사용한다.
+최근 진행했던 프로젝트에서도 역시 이런 방식으로 deploy를 해왔는데, deploy후 레이아웃이 깨지는 경우를 발견하게 되었다.
+뭔가 CSS 충돌이 발생한 상황인 듯 한데 소스레벨에서는 해결할 수도 피해갈 수도 없는 상황이었다.
+방법은 단 하나, 리소스 낭비를 감수하면서 운영환경에서도 npm start 형태로 구동하여 서비스할 수 밖에 없었다.
+하지만 리소스 낭비보다 더 심각한 문제가 있었으니.
+npm start로 구동하는 경우 nohup 을 이용한 background 프로세스로 구동하여야 하는데 리로드가 아닌 프로세스 리스타트가 필요한 경우(모듈이 추가된다던지 하는 이유로) 해당 프로세스를 ps명령으로 찾아서 kill해야 했다.">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Posts">
+    <meta property="article:published_time" content="2020-09-30T12:37:16+09:00">
+    <meta property="article:modified_time" content="2020-09-30T12:37:16+09:00">
+    <meta property="article:tag" content="Node">
+    <meta property="article:tag" content="ReactJS">
+    <meta itemprop="name" content="PM2 - Production Process Manager for Node :: Do What You Want To Do">
+    <meta itemprop="description" content="ReactJS 로 Single-page application을 개발한다면 일반적으로 build를 하고 build를 deploy하는 방식을 사용한다.
+최근 진행했던 프로젝트에서도 역시 이런 방식으로 deploy를 해왔는데, deploy후 레이아웃이 깨지는 경우를 발견하게 되었다.
+뭔가 CSS 충돌이 발생한 상황인 듯 한데 소스레벨에서는 해결할 수도 피해갈 수도 없는 상황이었다.
+방법은 단 하나, 리소스 낭비를 감수하면서 운영환경에서도 npm start 형태로 구동하여 서비스할 수 밖에 없었다.
+하지만 리소스 낭비보다 더 심각한 문제가 있었으니.
+npm start로 구동하는 경우 nohup 을 이용한 background 프로세스로 구동하여야 하는데 리로드가 아닌 프로세스 리스타트가 필요한 경우(모듈이 추가된다던지 하는 이유로) 해당 프로세스를 ps명령으로 찾아서 kill해야 했다.">
+    <meta itemprop="datePublished" content="2020-09-30T12:37:16+09:00">
+    <meta itemprop="dateModified" content="2020-09-30T12:37:16+09:00">
+    <meta itemprop="wordCount" content="332">
+    <meta itemprop="keywords" content="Node,ReactJS">
+    <title>PM2 - Production Process Manager for Node :: Do What You Want To Do</title>
+    <link href="https://bluedskim.github.io/posts/tech/pm2-production-process-manager-for-node.js/index.html" rel="canonical" type="text/html" title="PM2 - Production Process Manager for Node :: Do What You Want To Do">
+    <link href="/css/auto-complete/auto-complete.min.css?1774431351" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1774431351" defer></script>
+    <script src="/js/search-lunr.min.js?1774431351" defer></script>
+    <script src="/js/search.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/searchindex.en.js?1774431351";
+    </script>
+    <script src="/js/lunr/lunr.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.ko.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['ko'];
+    </script>
+    <link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1774431351" rel="stylesheet">
+    <link href="/css/theme.min.css?1774431351" rel="stylesheet">
+    <link href="/css/format-print.min.css?1774431351" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/posts\/tech\/pm2-production-process-manager-for-node.js\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/bluedskim.github.io';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'relearn-auto', 'learn' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+  </head>
+  <body class="mobile-support print" data-origin="/posts/tech/pm2-production-process-manager-for-node.js/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Do What You Want</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/posts/index.html"><span itemprop="name">Posts</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">PM2 - Production Process Manager for Node</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/pm2-production-process-manager-for-node.js/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/%ED%95%A8%EA%BB%98-%EC%9E%90%EB%9D%BC%EA%B8%B0_%EA%B9%80%EC%B0%BD%EC%A4%80_%EB%A9%94%EB%AA%A8/index.html" title="함께 자라기(김창준) 메모 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/chromebook%EC%97%90-ssh%EC%A0%91%EC%86%8D%ED%95%98%EA%B8%B0/index.html" title="Chromebook crostini에 SSH접속하기 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable posts" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/tags/node/index.html">Node</a></li>
+    <li><a class="term-link" href="/tags/reactjs/index.html">ReactJS</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="pm2---production-process-manager-for-node">PM2 - Production Process Manager for Node</h1>
+
+<p>ReactJS 로 Single-page application을 개발한다면 일반적으로 build를 하고 build를 deploy하는 방식을 사용한다.</p>
+<p>최근 진행했던 프로젝트에서도 역시 이런 방식으로 deploy를 해왔는데, deploy후 레이아웃이 깨지는 경우를 발견하게 되었다.</p>
+<p>뭔가 CSS 충돌이 발생한 상황인 듯 한데 소스레벨에서는 해결할 수도 피해갈 수도 없는 상황이었다.</p>
+<p>방법은 단 하나, 리소스 낭비를 감수하면서 운영환경에서도 npm start 형태로 구동하여 서비스할 수 밖에 없었다.</p>
+<p>하지만 리소스 낭비보다 더 심각한 문제가 있었으니.</p>
+<p>npm start로 구동하는 경우 nohup 을 이용한 background 프로세스로 구동하여야 하는데 리로드가 아닌 프로세스 리스타트가 필요한 경우(모듈이 추가된다던지 하는 이유로) 해당 프로세스를 ps명령으로 찾아서 kill해야 했다.</p>
+<p>만약 여러 서비스를 한개 서버에서 동시에 서비스 해야하는 경우라면 더 심각해진다.</p>
+<p>왜냐하면 node 프로세스를 다수 띄워야 하기 때문에 ps명령으로 해당 서비스의 프로세스를 찾는 것이 쉽지않고 자칫 실수하면 다른 프로세스를 kill하는 경우도 발생하기 때문이다.</p>
+<p>이런 시나리오에 유용한 툴이 있으니 바로 PM2(<a href="https://pm2.keymetrics.io" rel="external">https://pm2.keymetrics.io</a>) 이다.</p>
+<p>PM2를 이용하면 여러 node 프로세스를 쉽게 모니터링하고 관리(정지, 재기동)할 수 있다.</p>
+<p>npm 기반이기 때문에 설치도 간단하다. 아래의 명령으로 설치한다.</p>
+<pre><code>npm install pm2 -g
+</code></pre>
+<p>실행은 해당 폴더에서 아래의 명령으로 띄운다(&lsquo;서비스명&rsquo; 은 다른 서비스와 구별할수 있는 고유 식별자를 사용).</p>
+<pre><code>pm2 start npm --name 서비스명 -- start
+</code></pre>
+<p>상태를 모니터링 할 때는 &lsquo;pm2 monit&rsquo; 명령을 실행한다.</p>
+<pre><code>pm2 monit
+┌─ Process List ────┐┌──  rnd Logs  ──────────────────────────────────┐
+│[ 0] 서비스명  Mem:  ││                                                │
+│                   ││                                                │
+│                   ││                                                │
+│                   ││                                                │
+│                   ││                                                │
+│                   ││                                                │
+│                   ││                                                │
+└───────────────────┘└────────────────────────────────────────────────┘
+┌─ Custom Metrics ──┐┌─ Metadata ─────────────────────────────────────┐
+│ Heap Size         ││ App Name              서비스명                   │
+│ Heap Usage        ││ Namespace             default                  │
+│ Used Heap Size    ││ Version               N/A                      │
+│ Active requests   ││ Restarts              0                        │
+│ Active handles    ││ Uptime                3m                       │
+│ Event Loop        ││ Script path           /usr/bin/npm             │
+└───────────────────┘└────────────────────────────────────────────────┘
+</code></pre>
+<p>어플리케이션 정지</p>
+<pre><code>pm2 stop 서비스명
+</code></pre>
+<p>어플리케이션 삭제(파일을 삭제하는 것이 아니고 pm2 관리 대상에서 삭제한다는 의미)</p>
+<pre><code>pm2 delete 서비스명
+</code></pre>
+<p>아래처럼 어플리케이션의 포트를 지정할 수 있다고 하나 기동자체가 되지 않았다</p>
+<pre><code>pm2 start npm --name 서비스명 -- --port 1520 -- start
+</code></pre>
+<p>이 때는 아래처럼 package.json 를 수정 후 기동하면 가능하기는 하지만,</p>
+<pre><code>sed -i &quot;s/npm-run-all -p build:css watch:\*/PORT=1520 npm-run-all -p build:css watch:\*/g&quot; ./package.json
+</code></pre>
+<p>왠간하면 빌드해서 반영하자. pm2는 최후의 수단이다.</p>
+
+  <footer class="footline">
+              <i class='fa-fw fas fa-calendar'></i> 2020-09-30
+<div class="R-taxonomy taxonomy-categories cstyle" title="Categories" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/categories/tech/index.html">Tech</a></li>
+  </ul>
+</div>
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1774431351" defer></script>
+    <script src="/js/theme.min.js?1774431351" defer></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-3QTEZE6PDE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3QTEZE6PDE');
+</script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

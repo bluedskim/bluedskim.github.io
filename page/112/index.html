@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=7001&amp;path=livereload" data-no-instant defer></script>
+  
+
+  
+  
+
+
+  <meta charset="utf-8">
+
+
+  <meta name="robots" content="noindex, nofollow, noarchive">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  
+    
+      <meta name="description" content="bluedskim@gmail.com">
+    
+  
+
+
+<meta name="color-scheme" content="light dark">
+
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.152.2">
+  <title>Do What You Want | Do What You Want To Do</title>
+  <link href="//localhost:7001/" rel="canonical">
+
+
+
+
+  <link href="alternate" rel="/feed.xml" type="application/rss+xml">
+
+  
+
+
+
+
+  
+  
+    
+    
+  
+  
+
+
+
+
+
+  
+
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+
+
+  
+    <link href="/css/base.css" rel="stylesheet">
+
+    <link href="/css/syntax.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+  <nav class="u-background">
+  <div class="u-wrapper">
+    <ul class="Banner">
+      <li class="Banner-item Banner-item--title">
+        
+          <a class="Banner-link u-clickable" href="/">Do What You Want To Do</a>
+        
+      </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/categories/tech/">Tech</a>
+        </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/tags/samba/">Samba</a>
+        </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/categories/%EC%9D%8C%EC%95%85/">음악</a>
+        </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/categories/%EC%9D%BC%EC%83%81%EC%82%AC/">일상사</a>
+        </li>
+      
+        
+        
+          
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/feed.xml">RSS</a>
+        </li>
+      
+    </ul>
+  </div>
+</nav>
+
+  <main>
+    <div class="u-wrapper">
+      <div class="u-padding">
+        
+
+  
+    
+    <header class="Heading">
+  <h1 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/" rel="bookmark">Do What You Want</a>
+  </h1>
+  
+</header>
+  
+
+  
+
+
+
+<h1 id="do-what-you-want">
+  <a class="Heading-link u-clickable" href="/#do-what-you-want">Do What You Want</a>
+</h1>
+<p>잡다한 것들을 기록합니다.</p>
+
+
+  
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/software-engineering/java-tcp-proxy/" rel="bookmark">java TCP Proxy</a>
+  </h2>
+  
+    
+      <time datetime="2006-09-29T23:54:00&#43;09:00">September 29, 2006</time>
+    
+  
+</header>
+      
+        
+          
+            <p><span class="copyright_entry" style="display:block;" title="java TCP Proxy@@**@@http://shed.egloos.com/1423324"></span>
+<a href="http://pds2.egloos.com/pds/1/200609/29/82/dodgyTCPProxy.zip" egloo="file">dodgyTCPProxy.zip &ndash;&gt; 다운로드</a>
+<br>
+<br>활용 시나리오는 이렇다
+<br>
+<br>A사에서는 java로 구현된 sms 발송기 구축를 자사에 요청했다.
+<br>
+<br>sms 발송기는 A사의 머신에 탑재되어야 하며
+<br>
+<br>sms 발송요청을 받을 sms 서버는 B사 의 서버이며
+<br>
+<br>A사의 클라이언트용 머신과 B사의 서버용 머신은 내부네트ㅤㅇㅝㅋ으로 연결되어 있다.
+<br>
+<br>B사의 sms서버는 내부망의 클라이언트의 요청만 받게 되어 있다. 즉 192.168. 로 시작하는 IP의 클라이언트만 접속을 허용한다. 따라서 본인 pc에서 바로 접속이 불가능ㅤㅎㅏㄷ.
+<br>
+<br>다행히도 A 사는 개발편의를 위해서 sms 클라이언트용 머신의 telnet과 ftp을 자사에 개방해주었다.
+<br>
+<br>그러나 개발은 본인 pc에서 진행하기 때문에 테스트를 하려면 개발소스를 A사의 클라이언트 머신에 업로드 후 진행해야 하므로 무지 불편하다.
+<br>
+<br>그래서 찾아낸 것이 바로 TCP Proxy 이다.
+<br>
+<br>TCP Proxy를 A사의 클라이언트 머신에 설치하여 본인 pc와 B사 서버사이에 proxy로 사용하여 개발을 진행하는 것이다.
+<br>
+<br>그러나 문제가 있었으니 바로 byte ordering 문제이다.
+<br>
+<br>본인 pc는 인텔기반 윈도우 머신이고 sms클라이언트용 머신은 Hp Unix였으니&hellip;
+<br>
+<br>TCP Proxy가 무용지물이라는 거다.
+<br>
+<br>
+<br>(그래서 대안으로 모든 프로토콜을 준수하는 가짜 서버를 개발하여 본인 pc에서 작업하였다. -.-&hellip; 엄청난 삽질이다. B 사는 테스트용도의 서버프로그램이 있을거 같은데 미리 제공해주면 좋지 않나?)
+<br></p>
+<!--
+       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		    xmlns:dc="http://purl.org/dc/elements/1.1/"
+		    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+       <rdf:Description
+	        rdf:about="http://shed.egloos.com/1423324"
+	        dc:identifier="http://shed.egloos.com/1423324"
+	        dc:title="java TCP Proxy"
+	        trackback:ping="http://shed.egloos.com/tb/1423324"/>
+       </rdf:RDF>
+       -->
+<ul></ul>
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/software-engineering/" rel="tag">Software Engineering</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/%EA%B3%A0%EC%96%91%EC%9D%B4-cf/" rel="bookmark">고양이 CF</a>
+  </h2>
+  
+    
+      <time datetime="2006-09-24T15:14:00&#43;09:00">September 24, 2006</time>
+    
+  
+</header>
+      
+        
+          
+            <p><span class="copyright_entry" style="display:block;" title="고양이 CF@@**@@http://shed.egloos.com/1419666"></span>
+<embed src="http://dory.mncast.com/mncHMovie.swf?movieID=N2006650632" width="420" height="374" allowScriptAccess="never" type="application/x-shockwave-flash"></p>
+<!--
+       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		    xmlns:dc="http://purl.org/dc/elements/1.1/"
+		    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+       <rdf:Description
+	        rdf:about="http://shed.egloos.com/1419666"
+	        dc:identifier="http://shed.egloos.com/1419666"
+	        dc:title="고양이 CF"
+	        trackback:ping="http://shed.egloos.com/tb/1419666"/>
+       </rdf:RDF>
+       -->
+<ul></ul>
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/%EC%9D%8C%EC%95%85/unplugged-life%EB%8B%98%EC%9D%98-%EB%AF%B8%EB%8B%88%ED%99%88%ED%94%BC.-%EC%A2%8B%EC%9D%80-%EC%9D%8C%EC%95%85%EC%9D%B4-%EB%A7%8E%EC%9D%8C/" rel="bookmark">Unplugged Life님의 미니홈피. 좋은 음악이 많음</a>
+  </h2>
+  
+    
+      <time datetime="2006-09-23T01:43:00&#43;09:00">September 23, 2006</time>
+    
+  
+</header>
+      
+        
+          
+            <p><span class="copyright_entry" style="display:block;" title="Unplugged Life님의 미니홈피. 좋은 음악이 많음@@**@@http://shed.egloos.com/1418944"></span>Unplugged Life님의 미니홈피
+<br>
+<br>좋은 음악이 많음
+<br>
+<br>
+<a href="http://minihp.cyworld.nate.com/pims/main/pims_main.asp?tid=40719017" target="_new"><a href="http://minihp.cyworld.nate.com/pims/main/pims_main.asp?tid=40719017">http://minihp.cyworld.nate.com/pims/main/pims_main.asp?tid=40719017</a></a>
+<br>
+<br>cyworld는 URL주소를 공개를 안해주니&hellip;. 편법을 쓰는 수 밖에&hellip;
+<br>
+<br>정신못차리는 싸이월드 그러다 알라뷰스쿨 꼴 될걸.</p>
+<!--
+       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		    xmlns:dc="http://purl.org/dc/elements/1.1/"
+		    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+       <rdf:Description
+	        rdf:about="http://shed.egloos.com/1418944"
+	        dc:identifier="http://shed.egloos.com/1418944"
+	        dc:title="Unplugged Life님의 미니홈피. 좋은 음악이 많음"
+	        trackback:ping="http://shed.egloos.com/tb/1418944"/>
+       </rdf:RDF>
+       -->
+<ul><li class="comment_item"> <h4 class="comment_writer_info"> <span class="comment_gravatar"><img src="http://md.egloos.com/img/eg/profile_anonymous.jpg" alt=""></span> <span class="comment_writer">안영숙</span> <span class="comment_datetime" title="2007/01/04 00:58">2007/01/04 00:58</span> <span class="comment_link"><a name="5725312" href="http://shed.egloos.com/1418944#5725312" title="#">#</a> </span> <span class="comment_admin"> <a href="#" onclick="delComment_view('a0003782','1418944','5725312','','','0'); return false;">삭제</a> <a href="javascript:;" onclick="replyComment('replyform1418944','1418944','5725312',5,'','http://', '', 'http://shed.egloos.com/1418944#cmt','','0'); return false;" title="답글">답글</a> </span> <span class="comment_security"></span> </h4>
+ <div id="comment_5725312">
+  동석님 덕에 감쏴~ ^^
+ </div> 
+ <div id="reply1418944_5725312" class="comment_write reply_write" style="display:none;"></div> </li>
+<li class="comment_item"> <h4 class="comment_writer_info"> <span class="comment_gravatar"><img src="http://md.egloos.com/img/eg/profile_anonymous.jpg" alt=""></span> <span class="comment_writer">안나</span> <span class="comment_datetime" title="2007/01/04 01:01">2007/01/04 01:01</span> <span class="comment_link"><a name="5725320" href="http://shed.egloos.com/1418944#5725320" title="#">#</a> </span> <span class="comment_admin"> <a href="#" onclick="delComment_view('a0003782','1418944','5725320','','','0'); return false;">삭제</a> <a href="javascript:;" onclick="replyComment('replyform1418944','1418944','5725320',5,'','http://', '', 'http://shed.egloos.com/1418944#cmt','','0'); return false;" title="답글">답글</a> </span> <span class="comment_security"></span> </h4>
+ <div id="comment_5725320">
+  보이지 않는 작은 움직임에 오늘도 더듬이는 쉬지않을겁니다..^^
+ </div> 
+ <div id="reply1418944_5725320" class="comment_write reply_write" style="display:none;"></div> </li></ul>
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/%EC%9D%8C%EC%95%85/" rel="tag">음악</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/%EC%9D%8C%EC%95%85/how-insensitive/" rel="bookmark">How insensitive</a>
+  </h2>
+  
+    
+      <time datetime="2006-09-22T03:18:00&#43;09:00">September 22, 2006</time>
+    
+  
+</header>
+      
+        
+          
+            <p><span class="copyright_entry" style="display:block;" title="How insensitive@@**@@http://shed.egloos.com/1418296"></span>왜 우리는 항상 뒤는게 깨닫는 거냐고!!!!
+<br></p>
+<!--<embed src="http://babyoilband.com/bossa/Myrra_%5BSweet_Bossa%5D_04-How_Insensitive.mp3" type="audio/mpeg" autostart="1" loop="1">-->
+<br>
+<br>
+<object width="425" height="355"><param name="movie" value="http://www.youtube.com/v/ZSprtHIrXrY&amp;rel=1"><param name="wmode" value="transparent"><embed src="http://www.youtube.com/v/ZSprtHIrXrY&amp;rel=1" type="application/x-shockwave-flash" wmode="transparent" width="425" height="355"></object>
+<br>
+<br>
+<b>Myrra [Sweet_Bossa] 04 "How Insensitive"</b>
+<br>
+<br>
+<br>
+<font color="#3366ff">D7/A &nbsp; Db7/G# &nbsp; G6 &nbsp; Bm7</font>
+<br>
+<br>
+<font color="#3366ff">Bm7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A13/-9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Am6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; E7/G#<br></font>
+<font color="#000000">How insensitive I must have seemed when she told me that she loved me</font>
+<br>
+<font color="#3366ff">G6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cmaj7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dbm7/-5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; F#7/+5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bm7<br></font>
+<font color="#000000">How unmoved and cold I must have seemed when she told me so sincerely</font>
+<br>
+<font color="#3366ff">D7/A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; G#dim&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gmaj7&nbsp;&nbsp;&nbsp; Em7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bm7<br></font>
+<font color="#000000">Why? She must have asked did I just turn and stare in icy silence?</font>
+<br>
+<font color="#3366ff">D7/A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Db7/G#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gmaj7/-5&nbsp;&nbsp; F#7/+5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bm7<br></font>
+<font color="#000000">What was I to say what can you say when a love affair is over</font>
+<br>
+<font color="#3366ff">Bm7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A13/-9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Am6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; E7/G#<br></font>
+<font color="#000000">Now she's gone away And I'm alone with a memory of her last look</font>
+<br>
+<font color="#3366ff">G6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cmaj7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dbm7/-5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; F#7/+5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bm7<br></font>
+<font color="#000000">Vague and drawn and sad I see it still all her heartbreak in that last look</font>
+<br>
+<font color="#3366ff">D7/A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; G#dim&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gmaj7&nbsp;&nbsp;&nbsp; Em7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bm7<br></font>
+<font color="#000000">How, she must have asked could I just turn and stare in icy silence</font>
+<br>
+<font color="#3366ff">D7/A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Db7/G#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gmaj7/-5&nbsp; F#7/+5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bm7<br></font>
+<font color="#000000">What was I to do, what can you do when a love affair is over<br><br></font>
+<pre><span style="color: rgb(153, 51, 102);">*모든 음악의 저작권은 원 소유자 혹은 관계 회사에있으며, 상업적 재사용을 금합니다. <br>본 음악파일 혹은 동영상은 일체의 상업적 목적은 없습니다. <br>만일권리를 가진 개인이나 단체가 이의를 제기하는 경우, 즉시 삭제할 것 입니다*</span></pre>
+<br> 
+<!--
+       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		    xmlns:dc="http://purl.org/dc/elements/1.1/"
+		    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+       <rdf:Description
+	        rdf:about="http://shed.egloos.com/1418296"
+	        dc:identifier="http://shed.egloos.com/1418296"
+	        dc:title="How insensitive"
+	        trackback:ping="http://shed.egloos.com/tb/1418296"/>
+       </rdf:RDF>
+       -->
+<ul><li class="comment_item"> <h4 class="comment_writer_info"> <span class="comment_gravatar"><a href="http://riveruns.egloos.com" title="http://riveruns.egloos.com"><img src="http://profile.egloos.net/null_50.jpg" alt=""></a></span> <span class="comment_writer"><a href="http://riveruns.egloos.com" title="http://riveruns.egloos.com" target="_blank">선미</a></span> <span class="comment_datetime" title="2006/09/23 21:06">2006/09/23 21:06</span> <span class="comment_link"><a name="5431230" href="http://shed.egloos.com/1418296#5431230" title="#">#</a> </span> <span class="comment_admin"> <a href="javascript:;" onclick="replyComment('replyform1418296','1418296','5431230',5,'','http://', '', 'http://shed.egloos.com/1418296#cmt','','1'); return false;" title="답글">답글</a> </span> <span class="comment_security"></span> </h4>
+ <div id="comment_5431230">
+  저도 한번 와봤어요 노래 들으러 ~
+  <br>노래 듣다 갑니다!
+ </div> 
+ <div id="reply1418296_5431230" class="comment_write reply_write" style="display:none;"></div> </li>
+<li class="comment_item"> <h4 class="comment_writer_info"> <span class="comment_gravatar"><img src="http://md.egloos.com/img/eg/profile_anonymous.jpg" alt=""></span> <span class="comment_writer">3333</span> <span class="comment_datetime" title="2008/09/23 19:26">2008/09/23 19:26</span> <span class="comment_link"><a name="6993810" href="http://shed.egloos.com/1418296#6993810" title="#">#</a> </span> <span class="comment_admin"> <a href="#" onclick="delComment_view('a0003782','1418296','6993810','','','0'); return false;">삭제</a> <a href="javascript:;" onclick="replyComment('replyform1418296','1418296','6993810',5,'','http://', '', 'http://shed.egloos.com/1418296#cmt','','0'); return false;" title="답글">답글</a> </span> <span class="comment_security"></span> </h4>
+ <div id="comment_6993810">
+  <br>지금 올려두신 이 노래 
+  <br>스타서치 미디어에서 신고들어가고 있습니다.
+  <br>저도 오늘 통지서 받았구요
+  <br>확인하시면 얼른 삭제하시길 바랍니다...
+  <br>
+ </div> 
+ <div id="reply1418296_6993810" class="comment_write reply_write" style="display:none;"></div> </li>
+<li class="comment_item"> <h4 class="comment_writer_info"> <span class="comment_gravatar"><a href="http://shed.egloos.com" title="http://shed.egloos.com"><img src="http://profile.egloos.net/null_50.jpg" alt=""></a></span> <span class="comment_writer"><a href="http://shed.egloos.com" title="http://shed.egloos.com" target="_blank">sadButTrue</a></span> <span class="comment_datetime" title="2008/09/23 20:55">2008/09/23 20:55</span> <span class="comment_link"><a name="6993922" href="http://shed.egloos.com/1418296#6993922" title="#">#</a> </span> <span class="comment_admin"> <a href="javascript:;" onclick="replyComment('replyform1418296','1418296','6993922',5,'','http://', '', 'http://shed.egloos.com/1418296#cmt','','1'); return false;" title="답글">답글</a> </span> <span class="comment_security"></span> </h4>
+ <div id="comment_6993922">
+  감사합니다. 없앴습니다.
+ </div> 
+ <div id="reply1418296_6993922" class="comment_write reply_write" style="display:none;"></div> </li></ul>
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/%EC%9D%8C%EC%95%85/" rel="tag">음악</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%82%AC%EB%9E%91%EC%9D%80-asdf-%EC%9E%85%EB%8B%88%EB%8B%A4./" rel="bookmark">사랑은 asdf 입니다.</a>
+  </h2>
+  
+    
+      <time datetime="2006-09-22T02:44:00&#43;09:00">September 22, 2006</time>
+    
+  
+</header>
+      
+        
+          
+            <p><span class="copyright_entry" style="display:block;" title="사랑은 asdf 입니다.@@**@@http://shed.egloos.com/1418284"></span></p>
+<p>사랑은.</p> 
+<p>상처를.허락하는.일입니다.</p> 
+<p>2006.5.27</p> 
+<p>공지영.</p>.
+<br>.
+<br>.
+<br>.
+<br>
+<br>
+<br>
+<br>상처받는것은 두렵지 않으나
+<br> 
+<br> 그 사실을 모르는 그대에게는 섭섭하오. 
+<!--
+       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		    xmlns:dc="http://purl.org/dc/elements/1.1/"
+		    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+       <rdf:Description
+	        rdf:about="http://shed.egloos.com/1418284"
+	        dc:identifier="http://shed.egloos.com/1418284"
+	        dc:title="사랑은 asdf 입니다."
+	        trackback:ping="http://shed.egloos.com/tb/1418284"/>
+       </rdf:RDF>
+       -->
+<ul></ul>
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/%EC%9D%BC%EC%83%81%EC%82%AC/" rel="tag">일상사</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+  
+
+  
+  <nav>
+    
+      <a class="Pagination u-clickable" href="/page/113/" rel="prev">« Previous</a>
+    
+    
+      <a class="Pagination Pagination--right u-clickable" href="/page/111/" rel="next">Next »</a>
+    
+  </nav>
+
+
+
+
+      </div>
+    </div>
+  </main>
+  
+  <footer class="Footer">
+    <div class="u-wrapper">
+      <div class="u-padding u-noboosting">
+        Do What You Want To Do
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

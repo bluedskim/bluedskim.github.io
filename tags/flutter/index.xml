@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Flutter on Do What You Want To Do</title>
-    <link>https://bluedskim.github.io/tags/flutter/</link>
-    <description>Recent content in Flutter on Do What You Want To Do</description>
+    <title>Flutter :: Tag :: Do What You Want To Do</title>
+    <link>https://bluedskim.github.io/tags/flutter/index.html</link>
+    <description></description>
     <generator>Hugo</generator>
     <language>ko-KR</language>
     <lastBuildDate>Wed, 31 Jul 2019 15:14:43 +0900</lastBuildDate>
     <atom:link href="https://bluedskim.github.io/tags/flutter/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pixelbook에서 Flutter로 앱 개발</title>
-      <link>https://bluedskim.github.io/posts/tech/pixelbook%EC%97%90%EC%84%9C-flutter%EB%A1%9C-%EC%95%B1-%EA%B0%9C%EB%B0%9C_1/</link>
+      <link>https://bluedskim.github.io/posts/tech/pixelbook%EC%97%90%EC%84%9C-flutter%EB%A1%9C-%EC%95%B1-%EA%B0%9C%EB%B0%9C_1/index.html</link>
       <pubDate>Wed, 31 Jul 2019 15:14:43 +0900</pubDate>
-      <guid>https://bluedskim.github.io/posts/tech/pixelbook%EC%97%90%EC%84%9C-flutter%EB%A1%9C-%EC%95%B1-%EA%B0%9C%EB%B0%9C_1/</guid>
-      <description>&lt;p&gt;픽셀북으로 안드로이드 개발을 편하게 할 수 있다고 해서 시도하고 있는데&#xA;편하다고 하는 이유는 픽셀북에서 바로 안드로이드 앱 화면을 띄울 수 있기 때문인것 같다.&#xA;그러나 그러기 위해서는 픽셀북을 Developer Mode 로 변경해야 하는데 이렇게 하면 3가지 문제가 있다.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;보안이 해제된다 : &lt;em&gt;무섭다&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;시스템이 불안해진다 : &lt;em&gt;짜증 나다가 화가 나다가 최신 노트북 가격을 비교 하고 있는 나를 발견하면 구글이 미워지기 시작한다&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;cold 부팅 시 마다 Developer Mode 로 진입해줘야 한다 : &lt;em&gt;귀찮다&lt;/em&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;그래서 약간(?) 불편하지만 실제 폰으로 테스트 하는 방법을 쓰기로 했다.&lt;/p&gt;</description>
+      <guid>https://bluedskim.github.io/posts/tech/pixelbook%EC%97%90%EC%84%9C-flutter%EB%A1%9C-%EC%95%B1-%EA%B0%9C%EB%B0%9C_1/index.html</guid>
+      <description>픽셀북으로 안드로이드 개발을 편하게 할 수 있다고 해서 시도하고 있는데 편하다고 하는 이유는 픽셀북에서 바로 안드로이드 앱 화면을 띄울 수 있기 때문인것 같다. 그러나 그러기 위해서는 픽셀북을 Developer Mode 로 변경해야 하는데 이렇게 하면 3가지 문제가 있다.&#xA;보안이 해제된다 : 무섭다 시스템이 불안해진다 : 짜증 나다가 화가 나다가 최신 노트북 가격을 비교 하고 있는 나를 발견하면 구글이 미워지기 시작한다 cold 부팅 시 마다 Developer Mode 로 진입해줘야 한다 : 귀찮다 그래서 약간(?) 불편하지만 실제 폰으로 테스트 하는 방법을 쓰기로 했다.</description>
     </item>
   </channel>
 </rss>

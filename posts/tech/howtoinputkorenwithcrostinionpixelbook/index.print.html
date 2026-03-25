@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html id="R-html" lang="ko-KR" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.152.2">
+    <meta name="generator" content="Relearn 9.0.3+36307e4ed23582638ab689240ac7b427217803ee">
+    <meta name="description" content="영어/알파벳을 쓰는 나라 사람들은 이해하기 힘든 문제가 바로 2byte 이상 문자 입출력 문제이다.
+최신 기술일수록 한글지원이 미약한 경우가 많은데
+역시나 크롬북도 예외가 아니다.
+크롬북은 리눅스 기반이며 그래서 구글에서는 대부분의 크롬북에서 리눅스 프로그램 설치를 지원해주는데
+이것이 바로 프로젝트 Crostini다.
+구글답게 멋지게 구현하였는데 역시나 한글 입력 문제가 있다.
+크롬북의 한글전환 단축키가 리눅스앱에서는 동작하지 않는다는 점이다
+여러 아시아 2byte이상 문자권의 사용자들이 구글에 요구를 해왔던 것 같은데
+구글이 공식 지원해주기 전에 유저들이 방법을 찾아냈다.
+이것은 의외로 리눅스에서 여러 언어를 동시에 지원하는 방법과 동일한데 바로 fcitx입력기를 설치하는 것이다.\">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Pixelbook Crostini Linux앱에서 한글 입력하기 :: Do What You Want To Do">
+    <meta name="twitter:description" content="영어/알파벳을 쓰는 나라 사람들은 이해하기 힘든 문제가 바로 2byte 이상 문자 입출력 문제이다.
+최신 기술일수록 한글지원이 미약한 경우가 많은데
+역시나 크롬북도 예외가 아니다.
+크롬북은 리눅스 기반이며 그래서 구글에서는 대부분의 크롬북에서 리눅스 프로그램 설치를 지원해주는데
+이것이 바로 프로젝트 Crostini다.
+구글답게 멋지게 구현하였는데 역시나 한글 입력 문제가 있다.
+크롬북의 한글전환 단축키가 리눅스앱에서는 동작하지 않는다는 점이다
+여러 아시아 2byte이상 문자권의 사용자들이 구글에 요구를 해왔던 것 같은데
+구글이 공식 지원해주기 전에 유저들이 방법을 찾아냈다.
+이것은 의외로 리눅스에서 여러 언어를 동시에 지원하는 방법과 동일한데 바로 fcitx입력기를 설치하는 것이다.\">
+    <meta property="og:url" content="https://bluedskim.github.io/posts/tech/howtoinputkorenwithcrostinionpixelbook/index.html">
+    <meta property="og:site_name" content="Do What You Want To Do">
+    <meta property="og:title" content="Pixelbook Crostini Linux앱에서 한글 입력하기 :: Do What You Want To Do">
+    <meta property="og:description" content="영어/알파벳을 쓰는 나라 사람들은 이해하기 힘든 문제가 바로 2byte 이상 문자 입출력 문제이다.
+최신 기술일수록 한글지원이 미약한 경우가 많은데
+역시나 크롬북도 예외가 아니다.
+크롬북은 리눅스 기반이며 그래서 구글에서는 대부분의 크롬북에서 리눅스 프로그램 설치를 지원해주는데
+이것이 바로 프로젝트 Crostini다.
+구글답게 멋지게 구현하였는데 역시나 한글 입력 문제가 있다.
+크롬북의 한글전환 단축키가 리눅스앱에서는 동작하지 않는다는 점이다
+여러 아시아 2byte이상 문자권의 사용자들이 구글에 요구를 해왔던 것 같은데
+구글이 공식 지원해주기 전에 유저들이 방법을 찾아냈다.
+이것은 의외로 리눅스에서 여러 언어를 동시에 지원하는 방법과 동일한데 바로 fcitx입력기를 설치하는 것이다.\">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Posts">
+    <meta property="article:published_time" content="2019-03-16T22:38:28+09:00">
+    <meta property="article:modified_time" content="2019-03-16T22:38:28+09:00">
+    <meta property="article:tag" content="Pixelbook">
+    <meta property="article:tag" content="Crostini">
+    <meta itemprop="name" content="Pixelbook Crostini Linux앱에서 한글 입력하기 :: Do What You Want To Do">
+    <meta itemprop="description" content="영어/알파벳을 쓰는 나라 사람들은 이해하기 힘든 문제가 바로 2byte 이상 문자 입출력 문제이다.
+최신 기술일수록 한글지원이 미약한 경우가 많은데
+역시나 크롬북도 예외가 아니다.
+크롬북은 리눅스 기반이며 그래서 구글에서는 대부분의 크롬북에서 리눅스 프로그램 설치를 지원해주는데
+이것이 바로 프로젝트 Crostini다.
+구글답게 멋지게 구현하였는데 역시나 한글 입력 문제가 있다.
+크롬북의 한글전환 단축키가 리눅스앱에서는 동작하지 않는다는 점이다
+여러 아시아 2byte이상 문자권의 사용자들이 구글에 요구를 해왔던 것 같은데
+구글이 공식 지원해주기 전에 유저들이 방법을 찾아냈다.
+이것은 의외로 리눅스에서 여러 언어를 동시에 지원하는 방법과 동일한데 바로 fcitx입력기를 설치하는 것이다.\">
+    <meta itemprop="datePublished" content="2019-03-16T22:38:28+09:00">
+    <meta itemprop="dateModified" content="2019-03-16T22:38:28+09:00">
+    <meta itemprop="wordCount" content="264">
+    <meta itemprop="keywords" content="Pixelbook,Crostini">
+    <title>Pixelbook Crostini Linux앱에서 한글 입력하기 :: Do What You Want To Do</title>
+    <link href="https://bluedskim.github.io/posts/tech/howtoinputkorenwithcrostinionpixelbook/index.html" rel="canonical" type="text/html" title="Pixelbook Crostini Linux앱에서 한글 입력하기 :: Do What You Want To Do">
+    <link href="/css/auto-complete/auto-complete.min.css?1774431351" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1774431351" defer></script>
+    <script src="/js/search-lunr.min.js?1774431351" defer></script>
+    <script src="/js/search.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/searchindex.en.js?1774431351";
+    </script>
+    <script src="/js/lunr/lunr.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.ko.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['ko'];
+    </script>
+    <link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1774431351" rel="stylesheet">
+    <link href="/css/theme.min.css?1774431351" rel="stylesheet">
+    <link href="/css/format-print.min.css?1774431351" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/posts\/tech\/howtoinputkorenwithcrostinionpixelbook\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/bluedskim.github.io';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'relearn-auto', 'learn' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+  </head>
+  <body class="mobile-support print" data-origin="/posts/tech/howtoinputkorenwithcrostinionpixelbook/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#참고">참고</a></li>
+    <li><a href="#한글폰트-설치">한글폰트 설치</a></li>
+    <li><a href="#한글locale-설치">한글locale 설치</a></li>
+    <li><a href="#fcitx-한글-입력기--설치">fcitx 한글 입력기  설치</a></li>
+    <li><a href="#crostini에서-한글입력기를-사용하도록-설정변경">crostini에서 한글입력기를 사용하도록 설정변경</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Do What You Want</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/posts/index.html"><span itemprop="name">Posts</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Pixelbook Crostini Linux앱에서 한글 입력하기</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/howtoinputkorenwithcrostinionpixelbook/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/%EC%82%BC%EC%84%B1-%EA%B8%B0%EC%96%B4360-%EC%B9%B4%EB%A9%94%EB%9D%BC-%ED%95%B4%ED%82%B9/index.html" title="삼성 기어360 카메라(2017) 해킹 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/hugoonpixelbook/index.html" title="Pixelbook에서 hugo 설치 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable posts" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/tags/crostini/index.html">Crostini</a></li>
+    <li><a class="term-link" href="/tags/pixelbook/index.html">Pixelbook</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="pixelbook-crostini-linux앱에서-한글-입력하기">Pixelbook Crostini Linux앱에서 한글 입력하기</h1>
+
+<p>영어/알파벳을 쓰는 나라 사람들은 이해하기 힘든 문제가 바로 2byte 이상 문자 입출력 문제이다.<br>
+최신 기술일수록 한글지원이 미약한 경우가 많은데<br>
+역시나 크롬북도 예외가 아니다.<br>
+크롬북은 리눅스 기반이며 그래서 구글에서는 대부분의 크롬북에서 리눅스 프로그램 설치를 지원해주는데<br>
+이것이 바로 프로젝트 Crostini다.<br>
+구글답게 멋지게 구현하였는데 역시나 한글 입력 문제가 있다.<br>
+크롬북의 한글전환 단축키가 리눅스앱에서는 동작하지 않는다는 점이다<br>
+여러 아시아 2byte이상 문자권의 사용자들이 구글에 요구를 해왔던 것 같은데<br>
+구글이 공식 지원해주기 전에 유저들이 방법을 찾아냈다.<br>
+이것은 의외로 리눅스에서 여러 언어를 동시에 지원하는 방법과 동일한데 바로 fcitx입력기를 설치하는 것이다.\</p>
+<h2 id="참고">참고<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<ul>
+<li><a href="https://itsze.ro/blog/2018/08/08/quick-note-on-crostini-chinese-ime.html" rel="external">https://itsze.ro/blog/2018/08/08/quick-note-on-crostini-chinese-ime.html</a></li>
+<li><a href="https://wiki.debianusers.or.kr/index.php?title=%ED%95%9C%EA%B8%80_%EC%84%A4%EC%A0%95" rel="external">https://wiki.debianusers.or.kr/index.php?title=%ED%95%9C%EA%B8%80_%EC%84%A4%EC%A0%95</a></li>
+</ul>
+<h2 id="한글폰트-설치">한글폰트 설치<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>나눔글꼴을 좋아해서 항상 나눔글꼴만 설치한다</p>
+<pre><code>$ apt-get install fonts-nanum
+</code></pre>
+<h2 id="한글locale-설치">한글locale 설치<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<ol>
+<li>
+<p>/etc/locale.gen 파일을 편집기로 열어보면 한글 로케일이 comment 되어있다</p>
+<pre><code> #ko_KR.UTF-8 UTF-8
+</code></pre>
+<p>이 comment를 해제하고 저장한다</p>
+<pre><code> ko_KR.UTF-8 UTF-8
+</code></pre>
+</li>
+<li>
+<p>로케일을 생성한다</p>
+<pre><code> $ sudo locale-gen 
+ Generating locales (this might take a while)...
+   ko_KR.EUC-KR... done
+   ko_KR.UTF-8... done
+ Generation complete.
+</code></pre>
+</li>
+</ol>
+<h2 id="fcitx-한글-입력기--설치">fcitx 한글 입력기  설치<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<pre><code>$ sudo apt-get install fcitx-hangul
+</code></pre>
+<p>이 때 fcitx-config-gtk3 도 같이 설치된다. fcitx-config-gtk3를 실행하여 한영 전환키를 취향에 맞게 설정한다</p>
+<p>[![fcitx-config-gtk3](/images/Screenshot 2019-05-23 at 1.22.02 PM.png)](/images/Screenshot 2019-05-23 at 1.22.02 PM.png)</p>
+<ul>
+<li>
+<p>설치 후 fcitx 데몬이 기동되지 않는 것 같다. 이때 fcitx-config-gtk3 를 띄웠을 때 input method tab에 아무것도 보이지 않는 증상이 발생한다. 이 때는 수동으로 데몬을 띄워준다.</p>
+<pre><code>  $ /usr/bin/fcitx-autostart
+</code></pre>
+</li>
+</ul>
+<h2 id="crostini에서-한글입력기를-사용하도록-설정변경">crostini에서 한글입력기를 사용하도록 설정변경<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>/etc/systemd/user/cros-garcon.service.d/cros-garcon-override.conf 에 추가</p>
+<pre><code>$ sudo vi /etc/systemd/user/cros-garcon.service.d/cros-garcon-override.conf
+...
+Environment=&quot;GTK_IM_MODULE=fcitx&quot;
+Environment=&quot;QT_IM_MODULE=fcitx&quot;
+Environment=&quot;XMODIFIERS=@im=fcitx&quot;
+</code></pre>
+<p>부팅 시 fcitx 프로세스가 자동으로 기동되도록 한다 : ~/.sommelierrc 에 추가(없다면 만든다)</p>
+<pre><code>/usr/bin/fcitx-autostart
+</code></pre>
+<p>terminator에서 한글이 잘 입력된다.</p>
+<p>[![terminator에서 한글 입출력](/images/Screenshot 2019-07-31 at 12.42.45 PM.png)](/images/Screenshot 2019-07-31 at 12.42.45 PM.png)</p>
+<p>그런데 기본 터미널에 한글 입출력에 문제가 있다 -.-</p>
+<p>[![기본 터미널에 한글 입출력에 문제가 있다](/images/Screenshot 2019-07-31 at 12.51.33 PM.png)](/images/Screenshot 2019-07-31 at 12.51.33 PM.png)</p>
+<p>그래서  terminator 프로그램을 추천한다.<br>
+<a href="https://taufanlubis.wordpress.com/2011/08/15/terminator-%E2%80%93-multiple-gnome-terminals-in-one-window/" rel="external">https://taufanlubis.wordpress.com/2011/08/15/terminator-%E2%80%93-multiple-gnome-terminals-in-one-window/</a></p>
+<p>(fcitx는ˈfaɪtɪks라고 발음한다고)</p>
+
+  <footer class="footline">
+              <i class='fa-fw fas fa-calendar'></i> 2019-03-16
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1774431351" defer></script>
+    <script src="/js/theme.min.js?1774431351" defer></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-3QTEZE6PDE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3QTEZE6PDE');
+</script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

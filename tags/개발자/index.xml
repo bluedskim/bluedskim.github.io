@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>개발자 on Do What You Want To Do</title>
-    <link>https://bluedskim.github.io/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90/</link>
-    <description>Recent content in 개발자 on Do What You Want To Do</description>
+    <title>개발자 :: Tag :: Do What You Want To Do</title>
+    <link>https://bluedskim.github.io/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90/index.html</link>
+    <description></description>
     <generator>Hugo</generator>
     <language>ko-KR</language>
     <lastBuildDate>Wed, 12 Nov 2008 04:07:00 +0900</lastBuildDate>
     <atom:link href="https://bluedskim.github.io/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>개발자의 자질이라고 한다.</title>
-      <link>https://bluedskim.github.io/posts/software-engineering/%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%9D%98-%EC%9E%90%EC%A7%88%EC%9D%B4%EB%9D%BC%EA%B3%A0-%ED%95%9C%EB%8B%A4./</link>
+      <link>https://bluedskim.github.io/posts/software-engineering/%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%9D%98-%EC%9E%90%EC%A7%88%EC%9D%B4%EB%9D%BC%EA%B3%A0-%ED%95%9C%EB%8B%A4./index.html</link>
       <pubDate>Wed, 12 Nov 2008 04:07:00 +0900</pubDate>
-      <guid>https://bluedskim.github.io/posts/software-engineering/%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%9D%98-%EC%9E%90%EC%A7%88%EC%9D%B4%EB%9D%BC%EA%B3%A0-%ED%95%9C%EB%8B%A4./</guid>
-      <description>&lt;p&gt;&lt;span class=&#34;copyright_entry&#34; style=&#34;display:block;&#34; title=&#34;개발자의 자질이라고 한다.@@**@@http://shed.egloos.com/1834815&#34;&gt;&lt;/span&gt;해외의 어떤 회사의 구인광고에서 따왔다.&#xA;&lt;br&gt;&#xA;&lt;br&gt;리크루터가 &amp;lsquo;당신의 장점을 말해보세요&amp;rsquo; 라 하면 다음 단어를 잘 조합하면 되겠다.&#xA;&lt;br&gt;&#xA;&lt;br&gt;* Accurate&#xA;&lt;br&gt;&#xA;&lt;br&gt;* Eye for quality/details&#xA;&lt;br&gt;&#xA;&lt;br&gt;* Client focused&#xA;&lt;br&gt;&#xA;&lt;br&gt;* Team player&#xA;&lt;br&gt;&#xA;&lt;br&gt;* Entrepreneurial mentality&#xA;&lt;br&gt;&#xA;&lt;br&gt;* Analytical&#xA;&lt;br&gt;&#xA;&lt;br&gt;* Independent&#xA;&lt;br&gt;&#xA;&lt;br&gt;* Problem solving&#xA;&lt;br&gt;&#xA;&lt;br&gt;* Self starting&#xA;&lt;br&gt;&#xA;&lt;br&gt;* Fast learning&lt;/p&gt;&#xA;&lt;!--&#xA;       &lt;rdf:RDF xmlns:rdf=&#34;http://www.w3.org/1999/02/22-rdf-syntax-ns#&#34;&#xA;&#x9;&#x9;    xmlns:dc=&#34;http://purl.org/dc/elements/1.1/&#34;&#xA;&#x9;&#x9;    xmlns:trackback=&#34;http://madskills.com/public/xml/rss/module/trackback/&#34;&gt;&#xA;       &lt;rdf:Description&#xA;&#x9;        rdf:about=&#34;http://shed.egloos.com/1834815&#34;&#xA;&#x9;        dc:identifier=&#34;http://shed.egloos.com/1834815&#34;&#xA;&#x9;        dc:title=&#34;개발자의 자질이라고 한다.&#34;&#xA;&#x9;        trackback:ping=&#34;http://shed.egloos.com/tb/1834815&#34;/&gt;&#xA;       &lt;/rdf:RDF&gt;&#xA;       --&gt;&#xA;&lt;ul&gt;&lt;/ul&gt;</description>
+      <guid>https://bluedskim.github.io/posts/software-engineering/%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%9D%98-%EC%9E%90%EC%A7%88%EC%9D%B4%EB%9D%BC%EA%B3%A0-%ED%95%9C%EB%8B%A4./index.html</guid>
+      <description>해외의 어떤 회사의 구인광고에서 따왔다. 리크루터가 ‘당신의 장점을 말해보세요’ 라 하면 다음 단어를 잘 조합하면 되겠다. * Accurate * Eye for quality/details * Client focused * Team player * Entrepreneurial mentality * Analytical * Independent * Problem solving * Self starting * Fast learning</description>
     </item>
   </channel>
 </rss>

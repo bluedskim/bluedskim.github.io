@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html id="R-html" lang="ko-KR" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.152.2">
+    <meta name="generator" content="Relearn 9.0.3+36307e4ed23582638ab689240ac7b427217803ee">
+    <meta name="description" content="소개 llamafile은 하나의 파일로 로컬환경에서 텍스트 생성형 AI-Llama를 쉽게 돌릴 수 있는 툴이다.
+공식 홈페이지 : https://github.com/Mozilla-Ocho/llamafile 현재 실행파일내에 embed헝태로 지원하는 모델은 3개이다
+Mistral-7B-Instruct : 텍스트 생성 AI LLaVA 1.5 : 이미지 인식 텍스트 생성형 AI WizardCoder-Python-13B : 파이썬 코딩 특화 LLM 현재 *nix, mac, windows모두 지원한다. (하지만 윈도우즈에서는 실행파일 크기가 4G가 넘으면 실행이 불가한 문제로 모델파일을 따로 다운로드 하고 인수로 넘겨서 실행해야 한다)">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="로컬에서 Llamafile 돌려보기 :: Do What You Want To Do">
+    <meta name="twitter:description" content="소개 llamafile은 하나의 파일로 로컬환경에서 텍스트 생성형 AI-Llama를 쉽게 돌릴 수 있는 툴이다.
+공식 홈페이지 : https://github.com/Mozilla-Ocho/llamafile 현재 실행파일내에 embed헝태로 지원하는 모델은 3개이다
+Mistral-7B-Instruct : 텍스트 생성 AI LLaVA 1.5 : 이미지 인식 텍스트 생성형 AI WizardCoder-Python-13B : 파이썬 코딩 특화 LLM 현재 *nix, mac, windows모두 지원한다. (하지만 윈도우즈에서는 실행파일 크기가 4G가 넘으면 실행이 불가한 문제로 모델파일을 따로 다운로드 하고 인수로 넘겨서 실행해야 한다)">
+    <meta property="og:url" content="https://bluedskim.github.io/posts/tech/llamafile-%EC%9E%A0%EA%B9%90-%ED%85%8C%EC%8A%A4%ED%8A%B8/index.html">
+    <meta property="og:site_name" content="Do What You Want To Do">
+    <meta property="og:title" content="로컬에서 Llamafile 돌려보기 :: Do What You Want To Do">
+    <meta property="og:description" content="소개 llamafile은 하나의 파일로 로컬환경에서 텍스트 생성형 AI-Llama를 쉽게 돌릴 수 있는 툴이다.
+공식 홈페이지 : https://github.com/Mozilla-Ocho/llamafile 현재 실행파일내에 embed헝태로 지원하는 모델은 3개이다
+Mistral-7B-Instruct : 텍스트 생성 AI LLaVA 1.5 : 이미지 인식 텍스트 생성형 AI WizardCoder-Python-13B : 파이썬 코딩 특화 LLM 현재 *nix, mac, windows모두 지원한다. (하지만 윈도우즈에서는 실행파일 크기가 4G가 넘으면 실행이 불가한 문제로 모델파일을 따로 다운로드 하고 인수로 넘겨서 실행해야 한다)">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Posts">
+    <meta property="article:published_time" content="2023-12-01T10:44:52+09:00">
+    <meta property="article:modified_time" content="2023-12-01T10:44:52+09:00">
+    <meta itemprop="name" content="로컬에서 Llamafile 돌려보기 :: Do What You Want To Do">
+    <meta itemprop="description" content="소개 llamafile은 하나의 파일로 로컬환경에서 텍스트 생성형 AI-Llama를 쉽게 돌릴 수 있는 툴이다.
+공식 홈페이지 : https://github.com/Mozilla-Ocho/llamafile 현재 실행파일내에 embed헝태로 지원하는 모델은 3개이다
+Mistral-7B-Instruct : 텍스트 생성 AI LLaVA 1.5 : 이미지 인식 텍스트 생성형 AI WizardCoder-Python-13B : 파이썬 코딩 특화 LLM 현재 *nix, mac, windows모두 지원한다. (하지만 윈도우즈에서는 실행파일 크기가 4G가 넘으면 실행이 불가한 문제로 모델파일을 따로 다운로드 하고 인수로 넘겨서 실행해야 한다)">
+    <meta itemprop="datePublished" content="2023-12-01T10:44:52+09:00">
+    <meta itemprop="dateModified" content="2023-12-01T10:44:52+09:00">
+    <meta itemprop="wordCount" content="149">
+    <title>로컬에서 Llamafile 돌려보기 :: Do What You Want To Do</title>
+    <link href="https://bluedskim.github.io/posts/tech/llamafile-%EC%9E%A0%EA%B9%90-%ED%85%8C%EC%8A%A4%ED%8A%B8/index.html" rel="canonical" type="text/html" title="로컬에서 Llamafile 돌려보기 :: Do What You Want To Do">
+    <link href="/css/auto-complete/auto-complete.min.css?1774431351" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1774431351" defer></script>
+    <script src="/js/search-lunr.min.js?1774431351" defer></script>
+    <script src="/js/search.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/searchindex.en.js?1774431351";
+    </script>
+    <script src="/js/lunr/lunr.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.ko.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['ko'];
+    </script>
+    <link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1774431351" rel="stylesheet">
+    <link href="/css/theme.min.css?1774431351" rel="stylesheet">
+    <link href="/css/format-print.min.css?1774431351" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/posts\/tech\/llamafile-%EC%9E%A0%EA%B9%90-%ED%85%8C%EC%8A%A4%ED%8A%B8\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/bluedskim.github.io';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'relearn-auto', 'learn' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+  </head>
+  <body class="mobile-support print" data-origin="/posts/tech/llamafile-%EC%9E%A0%EA%B9%90-%ED%85%8C%EC%8A%A4%ED%8A%B8/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#소개">소개</a>
+      <ul>
+        <li><a href="#테스트-환경">테스트 환경</a></li>
+      </ul>
+    </li>
+    <li><a href="#제약사항">제약사항</a></li>
+    <li><a href="#테스트">테스트</a></li>
+    <li><a href="#결론">결론</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Do What You Want</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/posts/index.html"><span itemprop="name">Posts</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">로컬에서 Llamafile 돌려보기</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/llamafile-%EC%9E%A0%EA%B9%90-%ED%85%8C%EC%8A%A4%ED%8A%B8/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/index.html" title="Posts (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/%EC%96%BC%EA%B5%B4%EC%9D%B8%EC%8B%9D_%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EB%B9%84%EA%B5%90-openface-compreface/index.html" title="얼굴인식 오픈소스 간단 비교 OpenFace, CompreFace & 뉴스에서 정치인 얼굴 검색 데모 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable posts" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="로컬에서-llamafile-돌려보기">로컬에서 Llamafile 돌려보기</h1>
+
+<h2 id="소개">소개<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>llamafile은 하나의 파일로 로컬환경에서 텍스트 생성형 AI-Llama를 쉽게 돌릴 수 있는 툴이다.</p>
+<ul>
+<li>공식 홈페이지 : <a href="https://github.com/Mozilla-Ocho/llamafile" rel="external">https://github.com/Mozilla-Ocho/llamafile</a></li>
+</ul>
+<p>현재 실행파일내에 embed헝태로 지원하는 모델은 3개이다</p>
+<ol>
+<li><a href="https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.1" rel="external">Mistral-7B-Instruct</a> : 텍스트 생성 AI</li>
+<li><a href="https://llava-vl.github.io/" rel="external">LLaVA 1.5</a> : 이미지 인식 텍스트 생성형 AI</li>
+<li><a href="https://huggingface.co/WizardLM/WizardCoder-Python-13B-V1.0" rel="external">WizardCoder-Python-13B</a> : 파이썬 코딩 특화 LLM</li>
+</ol>
+<p>현재 *nix, mac, windows모두 지원한다.
+(하지만 윈도우즈에서는 실행파일 크기가 4G가 넘으면 실행이 불가한 문제로 <a href="https://github.com/Mozilla-Ocho/llamafile#gotchas" rel="external">모델파일을 따로 다운로드 하고 인수로 넘겨서 실행해야 한다</a>)</p>
+<h3 id="테스트-환경">테스트 환경<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>CPU : Intel i5 6600</li>
+<li>Memory : 32G</li>
+<li>GPU : 사용하지 않음</li>
+</ul>
+<h2 id="제약사항">제약사항<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<ol>
+<li>메모리가 최소 런타임 파일 사이즈 만큼 필요. 예를 들어 <a href="https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.1" rel="external">Mistral-7B-Instruct</a>의 경우 사이즈가 4G이므로 메모리를 4G이상 사용한다.</li>
+<li>GPU를 사용하지 않을 경우 CPU 사용량이 엄청 높다(응답 생성시 100%사용, 아이들링시에도 35% 정도 사용). 그래서 GPU가 필수일 듯</li>
+</ol>
+<h2 id="테스트">테스트<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<ul>
+<li>
+<p>초기화면에서 옵션을 설정할 수 있다. <a href="#R-image-6fdb622d01a67182393dfc78862ade05" class="lightbox-link"><img alt="초기화면" class="lazy lightbox figure-image" loading="lazy" src="../../images/llama-cpp-chat0.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6fdb622d01a67182393dfc78862ade05"><img alt="초기화면" class="lazy lightbox lightbox-image" loading="lazy" src="../../images/llama-cpp-chat0.png"></a></p>
+</li>
+<li>
+<p>한글도 잘 된다. 하지만 중간에 응답이 끊겼다 <a href="#R-image-d991ed7e68d8b9c1fd934aced1b4d966" class="lightbox-link"><img alt="한글 테스트" class="lazy lightbox figure-image" loading="lazy" src="../../images/llama-cpp-chat2.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d991ed7e68d8b9c1fd934aced1b4d966"><img alt="한글 테스트" class="lazy lightbox lightbox-image" loading="lazy" src="../../images/llama-cpp-chat2.png"></a></p>
+</li>
+</ul>
+<h2 id="결론">결론<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>시스템 리소스를 너무 많이 써서 실사용이 힘들다. GPU가 있는 고사양 장비를 가지고 있는 분들은 시도해볼만 하겠다. 그래서 나는 그냥 ChatGTP를 계속 쓰기로&hellip;</p>
+
+  <footer class="footline">
+              <i class='fa-fw fas fa-calendar'></i> 2023-12-01
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1774431351" defer></script>
+    <script src="/js/theme.min.js?1774431351" defer></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-3QTEZE6PDE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3QTEZE6PDE');
+</script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

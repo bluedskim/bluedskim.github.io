@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html id="R-html" lang="ko-KR" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.152.2">
+    <meta name="generator" content="Relearn 9.0.3+36307e4ed23582638ab689240ac7b427217803ee">
+    <meta name="description" content="제목은 거창하지만
+사실은, 윈도우 데스크탑의 화면을 일정 시간 간격으로 웹서버에 업로드하는 일종의 솔류션(?), 아니 프로그램 묶음이라고 할 수 있겠다. 왜 이런걸 하게 되었나? 노트북 도난 방지
+그냥 내가 뭘했었는지 궁금해서 그런데 이걸 쓴다고 해서 노트북 도난 방지가 될까? 안된다. -.-... 대신 도난된 노트북을 찾는데 결정적 증거가 될 수 있다. (이런 류의 프로그램은 이미 많이 있지만...) 아래 샘플 스크린 샷 목록을 보자. http://shed.ifastnet.com/ssUpload/ 스크린 샷 파일명을 보면  [86.40.160.107]20081202-21.09.34_ss.gif 이런식인데 [] 사이의 숫자는 컴퓨터의 IP이다. 그 다음 숫자들은 업로드 된 날짜와 시각이다. 2008년 12월 2일 21시 09문 34초에 업로드 된 파일이다. 즉 IP 추적이 가능하다는 것이다. 이제 설치를 해보자 첨부한 파일의 압축을 해제하면 6개 파일이 있다. windowsDesktopScreenLogger.zip boxcutter.exe : copyrighted by Matt Rasmussen nconvert.exe : http://www.xnview.org curl.exe : curl-7.19.1-win32-nossl (http://curl.haxx.se/) post.bat
+ssUpload.php  index.php : by Chris Snyder  (csnyder@chxo.com) 1~4까지는 PC에 의 적당한 디렉토리에 둔다. 5, 6은 php가 지원되는 웹서버에 업로드 한다. 프로그램이 동작하는 순서는 다음과 같다. boxcutter 로 스크린 샷(bmp 형식)을 생성한다. nconvert 로 생성된 bmp 파일을 gif로 변환한다. (원본 bmp 사이즈가 넘 크기 때문이다) curl 로 gif 파일을 웹서버에 업로드 요청 한다.
+ssUpload.php가 요청 IP를 파악해서 파일명을 변경하고 서버의 특정 디렉토리에 저장한다. index.php(이미지 목록 프로그램)을 이용해서 스크린샷을 확인한다.  그러고 보면 내가 실제로 작성한 프로그램(?)은 post.bat 과 ssUpload.php 밖에 없다.  &lt;수정 &amp; 업로드 하기&gt; post.bat 에서 웹서버 주소 부분 수정
+curl -F &#34;theFileName=@ss.gif;type=image/gif&#34; &#34;http://localhost/ssUpload.php&#34;
+ssUpload.php 4번째 라인에서 파일저장 폴더 부분 수정(그리고 해당 폴더의 권한을 777로 변경)
+$uploaddir = &#34;/ssUpload/&#34;; // create upload folder and change owner permission to 777
+index.php 를 이미지파일 저장경로에 업로드 한다. 수정 &amp; 업로드가 정확히 되었다면 post.bat 를 실행해본다. 에러메세지가 안뜬다면 성공한거다. 웹브라우저로 index.php를 불러서 제대로 업로드 되었는지 확인한다. ex)  http://shed.ifastnet.com/ssUpload/index.php  이제 post.bat를 자동으로 실행시켜 보자.  (도둑넘이 스스로 이걸 실행할리 만무하니깐) 이것은 윈도우즈의 &#34;예약된 작업&#34; 기능을 이용한다. &#34;예약된 작업&#34; 설정은 다른 자료를 참고하면 되고. 주의할 점은 컴퓨터 로그인 계정으로 post.bat를 실행하면 foreground 로 실행된다는 것이다. 즉, 명령프롬프트가 화면에 뜬다는 거다. 열심히 채팅하는데 도스창이 하나 뜨면 상당히 짜증날것이다. 그것을 피하는 방법은 현재 로그인한 사용자가 아닌 다른 사용자의 권한으로 실행하도록 하는 것이다. 그런데 또하나 문제점은 boxcutter.exe(스크린샷 유틸)은 현재 로그인한 사용자 계정으로 실행해야 동작한다는 것이다. 그래서 어쩔 수 없이 2개의 스케쥴을 등록해야 하고 2개의 스케쥴이 교대로 동작하도록 해야 한다. 즉 post.bat 의 첫 라인  boxcutter -f ss.bmp 를 제거한 후 현재 윈도우계정이 아닌 다른 계정으로 실행되도록 스케쥴 등록한다.(위의 그림에서 post) &#34; boxcutter -f ss.bmp&#34; 작업만 해주는 스케쥴을 또 하나 등록한다(위의 그림에서 boxcutter) 작업등록시 아래와 같은 방식으로 하면 백그라운드로 실행할 수 있다 cmd /c start /min cmd /c D:\Utils\windowsDesktopScreenLogger\capture.bat 이 꽁수에는 단점이 있다. 개인 정보 유출 : 스크린샷을 주기적으로 찍어서 웹에 올리는 방식.
+웹서버 공간 부족 : 스크린샷(1280x800) 하나당 60Kbyte 정도이다. 하루에 100장씩 업로드 한다면 하루에만 6메가를 저장공간으로 사용하게 된다. 한시간에 한장 이라 하면 하루에 14장이라 치고 1년에 300메가 정도다. 종종 지워주면 되지 않으려나?
+설정이 복잡하다. -.-">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Windows Desktop Screen Logger :: Do What You Want To Do">
+    <meta name="twitter:description" content="제목은 거창하지만
+사실은, 윈도우 데스크탑의 화면을 일정 시간 간격으로 웹서버에 업로드하는 일종의 솔류션(?), 아니 프로그램 묶음이라고 할 수 있겠다. 왜 이런걸 하게 되었나? 노트북 도난 방지
+그냥 내가 뭘했었는지 궁금해서 그런데 이걸 쓴다고 해서 노트북 도난 방지가 될까? 안된다. -.-... 대신 도난된 노트북을 찾는데 결정적 증거가 될 수 있다. (이런 류의 프로그램은 이미 많이 있지만...) 아래 샘플 스크린 샷 목록을 보자. http://shed.ifastnet.com/ssUpload/ 스크린 샷 파일명을 보면  [86.40.160.107]20081202-21.09.34_ss.gif 이런식인데 [] 사이의 숫자는 컴퓨터의 IP이다. 그 다음 숫자들은 업로드 된 날짜와 시각이다. 2008년 12월 2일 21시 09문 34초에 업로드 된 파일이다. 즉 IP 추적이 가능하다는 것이다. 이제 설치를 해보자 첨부한 파일의 압축을 해제하면 6개 파일이 있다. windowsDesktopScreenLogger.zip boxcutter.exe : copyrighted by Matt Rasmussen nconvert.exe : http://www.xnview.org curl.exe : curl-7.19.1-win32-nossl (http://curl.haxx.se/) post.bat
+ssUpload.php  index.php : by Chris Snyder  (csnyder@chxo.com) 1~4까지는 PC에 의 적당한 디렉토리에 둔다. 5, 6은 php가 지원되는 웹서버에 업로드 한다. 프로그램이 동작하는 순서는 다음과 같다. boxcutter 로 스크린 샷(bmp 형식)을 생성한다. nconvert 로 생성된 bmp 파일을 gif로 변환한다. (원본 bmp 사이즈가 넘 크기 때문이다) curl 로 gif 파일을 웹서버에 업로드 요청 한다.
+ssUpload.php가 요청 IP를 파악해서 파일명을 변경하고 서버의 특정 디렉토리에 저장한다. index.php(이미지 목록 프로그램)을 이용해서 스크린샷을 확인한다.  그러고 보면 내가 실제로 작성한 프로그램(?)은 post.bat 과 ssUpload.php 밖에 없다.  &lt;수정 &amp; 업로드 하기&gt; post.bat 에서 웹서버 주소 부분 수정
+curl -F &#34;theFileName=@ss.gif;type=image/gif&#34; &#34;http://localhost/ssUpload.php&#34;
+ssUpload.php 4번째 라인에서 파일저장 폴더 부분 수정(그리고 해당 폴더의 권한을 777로 변경)
+$uploaddir = &#34;/ssUpload/&#34;; // create upload folder and change owner permission to 777
+index.php 를 이미지파일 저장경로에 업로드 한다. 수정 &amp; 업로드가 정확히 되었다면 post.bat 를 실행해본다. 에러메세지가 안뜬다면 성공한거다. 웹브라우저로 index.php를 불러서 제대로 업로드 되었는지 확인한다. ex)  http://shed.ifastnet.com/ssUpload/index.php  이제 post.bat를 자동으로 실행시켜 보자.  (도둑넘이 스스로 이걸 실행할리 만무하니깐) 이것은 윈도우즈의 &#34;예약된 작업&#34; 기능을 이용한다. &#34;예약된 작업&#34; 설정은 다른 자료를 참고하면 되고. 주의할 점은 컴퓨터 로그인 계정으로 post.bat를 실행하면 foreground 로 실행된다는 것이다. 즉, 명령프롬프트가 화면에 뜬다는 거다. 열심히 채팅하는데 도스창이 하나 뜨면 상당히 짜증날것이다. 그것을 피하는 방법은 현재 로그인한 사용자가 아닌 다른 사용자의 권한으로 실행하도록 하는 것이다. 그런데 또하나 문제점은 boxcutter.exe(스크린샷 유틸)은 현재 로그인한 사용자 계정으로 실행해야 동작한다는 것이다. 그래서 어쩔 수 없이 2개의 스케쥴을 등록해야 하고 2개의 스케쥴이 교대로 동작하도록 해야 한다. 즉 post.bat 의 첫 라인  boxcutter -f ss.bmp 를 제거한 후 현재 윈도우계정이 아닌 다른 계정으로 실행되도록 스케쥴 등록한다.(위의 그림에서 post) &#34; boxcutter -f ss.bmp&#34; 작업만 해주는 스케쥴을 또 하나 등록한다(위의 그림에서 boxcutter) 작업등록시 아래와 같은 방식으로 하면 백그라운드로 실행할 수 있다 cmd /c start /min cmd /c D:\Utils\windowsDesktopScreenLogger\capture.bat 이 꽁수에는 단점이 있다. 개인 정보 유출 : 스크린샷을 주기적으로 찍어서 웹에 올리는 방식.
+웹서버 공간 부족 : 스크린샷(1280x800) 하나당 60Kbyte 정도이다. 하루에 100장씩 업로드 한다면 하루에만 6메가를 저장공간으로 사용하게 된다. 한시간에 한장 이라 하면 하루에 14장이라 치고 1년에 300메가 정도다. 종종 지워주면 되지 않으려나?
+설정이 복잡하다. -.-">
+    <meta property="og:url" content="https://bluedskim.github.io/posts/software-engineering/windows-desktop-screen-logger/index.html">
+    <meta property="og:site_name" content="Do What You Want To Do">
+    <meta property="og:title" content="Windows Desktop Screen Logger :: Do What You Want To Do">
+    <meta property="og:description" content="제목은 거창하지만
+사실은, 윈도우 데스크탑의 화면을 일정 시간 간격으로 웹서버에 업로드하는 일종의 솔류션(?), 아니 프로그램 묶음이라고 할 수 있겠다. 왜 이런걸 하게 되었나? 노트북 도난 방지
+그냥 내가 뭘했었는지 궁금해서 그런데 이걸 쓴다고 해서 노트북 도난 방지가 될까? 안된다. -.-... 대신 도난된 노트북을 찾는데 결정적 증거가 될 수 있다. (이런 류의 프로그램은 이미 많이 있지만...) 아래 샘플 스크린 샷 목록을 보자. http://shed.ifastnet.com/ssUpload/ 스크린 샷 파일명을 보면  [86.40.160.107]20081202-21.09.34_ss.gif 이런식인데 [] 사이의 숫자는 컴퓨터의 IP이다. 그 다음 숫자들은 업로드 된 날짜와 시각이다. 2008년 12월 2일 21시 09문 34초에 업로드 된 파일이다. 즉 IP 추적이 가능하다는 것이다. 이제 설치를 해보자 첨부한 파일의 압축을 해제하면 6개 파일이 있다. windowsDesktopScreenLogger.zip boxcutter.exe : copyrighted by Matt Rasmussen nconvert.exe : http://www.xnview.org curl.exe : curl-7.19.1-win32-nossl (http://curl.haxx.se/) post.bat
+ssUpload.php  index.php : by Chris Snyder  (csnyder@chxo.com) 1~4까지는 PC에 의 적당한 디렉토리에 둔다. 5, 6은 php가 지원되는 웹서버에 업로드 한다. 프로그램이 동작하는 순서는 다음과 같다. boxcutter 로 스크린 샷(bmp 형식)을 생성한다. nconvert 로 생성된 bmp 파일을 gif로 변환한다. (원본 bmp 사이즈가 넘 크기 때문이다) curl 로 gif 파일을 웹서버에 업로드 요청 한다.
+ssUpload.php가 요청 IP를 파악해서 파일명을 변경하고 서버의 특정 디렉토리에 저장한다. index.php(이미지 목록 프로그램)을 이용해서 스크린샷을 확인한다.  그러고 보면 내가 실제로 작성한 프로그램(?)은 post.bat 과 ssUpload.php 밖에 없다.  &lt;수정 &amp; 업로드 하기&gt; post.bat 에서 웹서버 주소 부분 수정
+curl -F &#34;theFileName=@ss.gif;type=image/gif&#34; &#34;http://localhost/ssUpload.php&#34;
+ssUpload.php 4번째 라인에서 파일저장 폴더 부분 수정(그리고 해당 폴더의 권한을 777로 변경)
+$uploaddir = &#34;/ssUpload/&#34;; // create upload folder and change owner permission to 777
+index.php 를 이미지파일 저장경로에 업로드 한다. 수정 &amp; 업로드가 정확히 되었다면 post.bat 를 실행해본다. 에러메세지가 안뜬다면 성공한거다. 웹브라우저로 index.php를 불러서 제대로 업로드 되었는지 확인한다. ex)  http://shed.ifastnet.com/ssUpload/index.php  이제 post.bat를 자동으로 실행시켜 보자.  (도둑넘이 스스로 이걸 실행할리 만무하니깐) 이것은 윈도우즈의 &#34;예약된 작업&#34; 기능을 이용한다. &#34;예약된 작업&#34; 설정은 다른 자료를 참고하면 되고. 주의할 점은 컴퓨터 로그인 계정으로 post.bat를 실행하면 foreground 로 실행된다는 것이다. 즉, 명령프롬프트가 화면에 뜬다는 거다. 열심히 채팅하는데 도스창이 하나 뜨면 상당히 짜증날것이다. 그것을 피하는 방법은 현재 로그인한 사용자가 아닌 다른 사용자의 권한으로 실행하도록 하는 것이다. 그런데 또하나 문제점은 boxcutter.exe(스크린샷 유틸)은 현재 로그인한 사용자 계정으로 실행해야 동작한다는 것이다. 그래서 어쩔 수 없이 2개의 스케쥴을 등록해야 하고 2개의 스케쥴이 교대로 동작하도록 해야 한다. 즉 post.bat 의 첫 라인  boxcutter -f ss.bmp 를 제거한 후 현재 윈도우계정이 아닌 다른 계정으로 실행되도록 스케쥴 등록한다.(위의 그림에서 post) &#34; boxcutter -f ss.bmp&#34; 작업만 해주는 스케쥴을 또 하나 등록한다(위의 그림에서 boxcutter) 작업등록시 아래와 같은 방식으로 하면 백그라운드로 실행할 수 있다 cmd /c start /min cmd /c D:\Utils\windowsDesktopScreenLogger\capture.bat 이 꽁수에는 단점이 있다. 개인 정보 유출 : 스크린샷을 주기적으로 찍어서 웹에 올리는 방식.
+웹서버 공간 부족 : 스크린샷(1280x800) 하나당 60Kbyte 정도이다. 하루에 100장씩 업로드 한다면 하루에만 6메가를 저장공간으로 사용하게 된다. 한시간에 한장 이라 하면 하루에 14장이라 치고 1년에 300메가 정도다. 종종 지워주면 되지 않으려나?
+설정이 복잡하다. -.-">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Posts">
+    <meta property="article:published_time" content="2008-12-02T22:37:00+09:00">
+    <meta property="article:modified_time" content="2008-12-02T22:37:00+09:00">
+    <meta itemprop="name" content="Windows Desktop Screen Logger :: Do What You Want To Do">
+    <meta itemprop="description" content="제목은 거창하지만
+사실은, 윈도우 데스크탑의 화면을 일정 시간 간격으로 웹서버에 업로드하는 일종의 솔류션(?), 아니 프로그램 묶음이라고 할 수 있겠다. 왜 이런걸 하게 되었나? 노트북 도난 방지
+그냥 내가 뭘했었는지 궁금해서 그런데 이걸 쓴다고 해서 노트북 도난 방지가 될까? 안된다. -.-... 대신 도난된 노트북을 찾는데 결정적 증거가 될 수 있다. (이런 류의 프로그램은 이미 많이 있지만...) 아래 샘플 스크린 샷 목록을 보자. http://shed.ifastnet.com/ssUpload/ 스크린 샷 파일명을 보면  [86.40.160.107]20081202-21.09.34_ss.gif 이런식인데 [] 사이의 숫자는 컴퓨터의 IP이다. 그 다음 숫자들은 업로드 된 날짜와 시각이다. 2008년 12월 2일 21시 09문 34초에 업로드 된 파일이다. 즉 IP 추적이 가능하다는 것이다. 이제 설치를 해보자 첨부한 파일의 압축을 해제하면 6개 파일이 있다. windowsDesktopScreenLogger.zip boxcutter.exe : copyrighted by Matt Rasmussen nconvert.exe : http://www.xnview.org curl.exe : curl-7.19.1-win32-nossl (http://curl.haxx.se/) post.bat
+ssUpload.php  index.php : by Chris Snyder  (csnyder@chxo.com) 1~4까지는 PC에 의 적당한 디렉토리에 둔다. 5, 6은 php가 지원되는 웹서버에 업로드 한다. 프로그램이 동작하는 순서는 다음과 같다. boxcutter 로 스크린 샷(bmp 형식)을 생성한다. nconvert 로 생성된 bmp 파일을 gif로 변환한다. (원본 bmp 사이즈가 넘 크기 때문이다) curl 로 gif 파일을 웹서버에 업로드 요청 한다.
+ssUpload.php가 요청 IP를 파악해서 파일명을 변경하고 서버의 특정 디렉토리에 저장한다. index.php(이미지 목록 프로그램)을 이용해서 스크린샷을 확인한다.  그러고 보면 내가 실제로 작성한 프로그램(?)은 post.bat 과 ssUpload.php 밖에 없다.  &lt;수정 &amp; 업로드 하기&gt; post.bat 에서 웹서버 주소 부분 수정
+curl -F &#34;theFileName=@ss.gif;type=image/gif&#34; &#34;http://localhost/ssUpload.php&#34;
+ssUpload.php 4번째 라인에서 파일저장 폴더 부분 수정(그리고 해당 폴더의 권한을 777로 변경)
+$uploaddir = &#34;/ssUpload/&#34;; // create upload folder and change owner permission to 777
+index.php 를 이미지파일 저장경로에 업로드 한다. 수정 &amp; 업로드가 정확히 되었다면 post.bat 를 실행해본다. 에러메세지가 안뜬다면 성공한거다. 웹브라우저로 index.php를 불러서 제대로 업로드 되었는지 확인한다. ex)  http://shed.ifastnet.com/ssUpload/index.php  이제 post.bat를 자동으로 실행시켜 보자.  (도둑넘이 스스로 이걸 실행할리 만무하니깐) 이것은 윈도우즈의 &#34;예약된 작업&#34; 기능을 이용한다. &#34;예약된 작업&#34; 설정은 다른 자료를 참고하면 되고. 주의할 점은 컴퓨터 로그인 계정으로 post.bat를 실행하면 foreground 로 실행된다는 것이다. 즉, 명령프롬프트가 화면에 뜬다는 거다. 열심히 채팅하는데 도스창이 하나 뜨면 상당히 짜증날것이다. 그것을 피하는 방법은 현재 로그인한 사용자가 아닌 다른 사용자의 권한으로 실행하도록 하는 것이다. 그런데 또하나 문제점은 boxcutter.exe(스크린샷 유틸)은 현재 로그인한 사용자 계정으로 실행해야 동작한다는 것이다. 그래서 어쩔 수 없이 2개의 스케쥴을 등록해야 하고 2개의 스케쥴이 교대로 동작하도록 해야 한다. 즉 post.bat 의 첫 라인  boxcutter -f ss.bmp 를 제거한 후 현재 윈도우계정이 아닌 다른 계정으로 실행되도록 스케쥴 등록한다.(위의 그림에서 post) &#34; boxcutter -f ss.bmp&#34; 작업만 해주는 스케쥴을 또 하나 등록한다(위의 그림에서 boxcutter) 작업등록시 아래와 같은 방식으로 하면 백그라운드로 실행할 수 있다 cmd /c start /min cmd /c D:\Utils\windowsDesktopScreenLogger\capture.bat 이 꽁수에는 단점이 있다. 개인 정보 유출 : 스크린샷을 주기적으로 찍어서 웹에 올리는 방식.
+웹서버 공간 부족 : 스크린샷(1280x800) 하나당 60Kbyte 정도이다. 하루에 100장씩 업로드 한다면 하루에만 6메가를 저장공간으로 사용하게 된다. 한시간에 한장 이라 하면 하루에 14장이라 치고 1년에 300메가 정도다. 종종 지워주면 되지 않으려나?
+설정이 복잡하다. -.-">
+    <meta itemprop="datePublished" content="2008-12-02T22:37:00+09:00">
+    <meta itemprop="dateModified" content="2008-12-02T22:37:00+09:00">
+    <meta itemprop="wordCount" content="434">
+    <meta itemprop="keywords" content="Software Engineering">
+    <title>Windows Desktop Screen Logger :: Do What You Want To Do</title>
+    <link href="https://bluedskim.github.io/posts/software-engineering/windows-desktop-screen-logger/index.html" rel="canonical" type="text/html" title="Windows Desktop Screen Logger :: Do What You Want To Do">
+    <link href="/css/auto-complete/auto-complete.min.css?1774431351" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1774431351" defer></script>
+    <script src="/js/search-lunr.min.js?1774431351" defer></script>
+    <script src="/js/search.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/searchindex.en.js?1774431351";
+    </script>
+    <script src="/js/lunr/lunr.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.ko.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['ko'];
+    </script>
+    <link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1774431351" rel="stylesheet">
+    <link href="/css/theme.min.css?1774431351" rel="stylesheet">
+    <link href="/css/format-print.min.css?1774431351" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/posts\/software-engineering\/windows-desktop-screen-logger\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/bluedskim.github.io';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'relearn-auto', 'learn' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+  </head>
+  <body class="mobile-support print" data-origin="/posts/software-engineering/windows-desktop-screen-logger/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Do What You Want</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/posts/index.html"><span itemprop="name">Posts</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Windows Desktop Screen Logger</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/software-engineering/windows-desktop-screen-logger/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/software-engineering/simple-webcam-capture---command-line-%EC%A7%80%EC%9B%90/index.html" title="Simple Webcam Capture - command line 지원 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EC%A0%95%EC%A7%81%ED%95%98%EA%B2%8C-%EC%82%B4%EC%9E%90.-%EC%A0%9C%EB%B0%9C.-%EC%8C%80%EC%A7%81%EB%B6%88%EA%B8%88-%EC%82%BC%ED%82%A8-%EA%B0%95%EB%B6%80%EC%9E%90%EB%93%A4%EB%A7%8C-%ED%83%93%ED%95%A0-%EC%9D%BC-%EC%95%84%EB%8B%88%EB%8B%A4./index.html" title="정직하게 살자. 제발. 쌀직불금 삼킨 강부자들만 탓할 일 아니다. (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable posts" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="windows-desktop-screen-logger">Windows Desktop Screen Logger</h1>
+
+<p><span class="copyright_entry" style="display:block;" title="Windows Desktop Screen Logger@@**@@http://shed.egloos.com/1843497"></span>
+<font class="Apple-style-span" face="돋움"><span class="Apple-style-span" style="line-height: normal; white-space: pre; "><span class="Apple-style-span" style="font-size: small;">제목은 거창하지만</span></span></font></p>
+<div>
+ <font class="Apple-style-span" face="돋움"><span class="Apple-style-span" style="line-height: normal; white-space: pre; "><span class="Apple-style-span" style="font-size: small;"><br></span></span></font>
+</div>
+<div>
+ <font class="Apple-style-span" face="돋움"><span class="Apple-style-span" style="line-height: normal; white-space: pre; "><span class="Apple-style-span" style="font-size: small;">사실은,</span></span></font>
+</div>
+<div>
+ <font class="Apple-style-span" face="돋움"><span class="Apple-style-span" style="line-height: normal; white-space: pre; "><span class="Apple-style-span" style="font-size: small;"><br></span></span></font>
+</div>
+<div>
+ <font class="Apple-style-span" face="돋움"><span class="Apple-style-span" style="line-height: normal; white-space: pre; "><span class="Apple-style-span" style="font-size: small;">윈도우 데스크탑의 화면을 일정 시간 간격으로 웹서버에 업로드하는 일종의 솔류션(?), 아니 프로그램 묶음이라고 할 수 있겠다.</span></span></font>
+</div>
+<div>
+ <font class="Apple-style-span" face="돋움"><span class="Apple-style-span" style="line-height: normal; white-space: pre; "><span class="Apple-style-span" style="font-size: small;"><br></span></span></font>
+</div>
+<div>
+ <font class="Apple-style-span" face="돋움"><span class="Apple-style-span" style="line-height: normal; white-space: pre; "><span class="Apple-style-span" style="font-size: small;">왜 이런걸 하게 되었나?</span></span></font>
+</div>
+<div>
+ <ol>
+  <li>노트북 도난 방지<br><br></li>
+  <li>그냥 내가 뭘했었는지 궁금해서</li>
+ </ol>
+ <div>
+  그런데 이걸 쓴다고 해서 노트북 도난 방지가 될까?
+ </div>
+ <div>
+  <br>
+ </div>
+ <div>
+  안된다. -.-...
+ </div>
+ <div>
+  <br>
+ </div>
+ <div>
+  대신 도난된 노트북을 찾는데 결정적 증거가 될 수 있다.
+ </div>
+ <div>
+  (이런 류의 프로그램은 이미 많이 있지만...)
+ </div>
+ <div>
+  <br>
+ </div>
+ <div>
+  아래 샘플 스크린 샷 목록을 보자.
+ </div>
+ <div>
+  <br>
+ </div>
+ <div>
+  <a href="http://shed.ifastnet.com/ssUpload/">http://shed.ifastnet.com/ssUpload/</a>
+ </div>
+ <div>
+  <br>
+ </div>
+ <div>
+  스크린 샷 파일명을 보면&nbsp;
+ </div>
+ <div>
+  <br>
+ </div>
+ <div>
+  [86.40.160.107]20081202-21.09.34_ss.gif
+ </div>
+ <div>
+  <br>
+ </div>
+ <div>
+  이런식인데 [] 사이의 숫자는 컴퓨터의 IP이다. 그 다음 숫자들은 업로드 된 날짜와 시각이다. 2008년 12월 2일 21시 09문 34초에 업로드 된 파일이다.
+ </div>
+ <div>
+  <br>
+ </div>
+ <div>
+  즉 IP 추적이 가능하다는 것이다.
+ </div>
+ <div>
+  <br>
+ </div>
+ <div>
+  이제 설치를 해보자
+ </div>
+ <div>
+  <br>
+ </div>
+ <div>
+  첨부한 파일의 압축을 해제하면 6개 파일이 있다.
+ </div>
+ <div>
+  <br>
+ </div>
+ <div>
+  <a href="http://pds12.egloos.com/pds/200812/02/82/windowsDesktopScreenLogger.zip">windowsDesktopScreenLogger.zip</a>
+ </div>
+ <div>
+  <ol>
+   <li>boxcutter.exe :&nbsp;copyrighted by Matt Rasmussen</li>
+   <li>nconvert.exe&nbsp;:&nbsp;http://www.xnview.org</li>
+   <li>curl.exe :&nbsp;curl-7.19.1-win32-nossl (http://curl.haxx.se/)</li>
+   <li>post.bat<br><br></li>
+   <li>ssUpload.php&nbsp;</li>
+   <li>index.php :&nbsp;by Chris Snyder &nbsp;(csnyder@chxo.com)</li>
+  </ol>
+  <div>
+   1~4까지는 PC에 의 적당한 디렉토리에 둔다.
+  </div>
+  <div>
+   5, 6은 php가 지원되는 웹서버에 업로드 한다.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   프로그램이 동작하는 순서는 다음과 같다.
+  </div>
+  <div>
+   <ol>
+    <li>boxcutter 로 스크린 샷(bmp 형식)을 생성한다.</li>
+    <li>nconvert 로 생성된 bmp 파일을 gif로 변환한다. (원본 bmp 사이즈가 넘 크기 때문이다)</li>
+    <li>curl 로 gif 파일을&nbsp;웹서버에&nbsp;업로드 요청 한다.<br><br></li>
+    <li>ssUpload.php가 요청 IP를 파악해서 파일명을 변경하고 서버의 특정 디렉토리에 저장한다.</li>
+    <li>index.php(이미지 목록 프로그램)을 이용해서 스크린샷을 확인한다.&nbsp;</li>
+   </ol>
+  </div>
+  <div>
+   그러고 보면 내가 실제로 작성한 프로그램(?)은 post.bat 과 ssUpload.php 밖에 없다.&nbsp;
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   &lt;수정 &amp; 업로드 하기&gt;
+  </div>
+  <div>
+   <ol>
+    <li>post.bat 에서 웹서버 주소 부분 수정<br>curl -F "theFileName=@ss.gif;type=image/gif" "<span class="Apple-style-span" style="text-decoration: underline;"><b>http://localhost/ssUpload.php</b></span>"<br><br></li>
+    <li>ssUpload.php 4번째 라인에서 파일저장 폴더 부분 수정(그리고 해당 폴더의 권한을 777로 변경)<br>$uploaddir = "/<b><span class="Apple-style-span" style="text-decoration: underline;">ssUpload</span></b>/"; // create upload folder and change owner permission to 777<br><br></li>
+    <li>index.php 를 이미지파일 저장경로에 업로드 한다.</li>
+   </ol>
+   <div>
+    수정 &amp; 업로드가 정확히 되었다면&nbsp;post.bat 를 실행해본다.
+   </div>
+   <div>
+    <br>
+   </div>
+   <div>
+    에러메세지가 안뜬다면 성공한거다.
+   </div>
+   <div>
+    <br>
+   </div>
+   <div>
+    웹브라우저로 index.php를 불러서 제대로 업로드 되었는지 확인한다. ex)&nbsp;
+    <a href="http://shed.ifastnet.com/ssUpload/index.php">http://shed.ifastnet.com/ssUpload/index.php</a>&nbsp;
+   </div>
+   <div>
+    <br>
+   </div>
+   <div>
+    <br>
+   </div>
+   <div>
+    이제 post.bat를 자동으로 실행시켜 보자.&nbsp;
+   </div>
+   <div>
+    (도둑넘이 스스로 이걸 실행할리 만무하니깐)
+   </div>
+   <div>
+    <br>
+   </div>
+   <div>
+    이것은 윈도우즈의 "예약된 작업" 기능을 이용한다.
+   </div>
+   <div>
+    <br>
+   </div>
+   <div>
+    "예약된 작업" 설정은 다른 자료를 참고하면 되고.
+   </div>
+   <div>
+    <br>
+   </div>
+   <div>
+    <strike>
+     주의할 점은 컴퓨터 로그인 계정으로 post.bat를 실행하면 foreground 로 실행된다는 것이다. 즉, 명령프롬프트가 화면에 뜬다는 거다. 열심히 채팅하는데 도스창이 하나 뜨면 상당히 짜증날것이다.
+    </strike>
+   </div>
+   <div>
+    <strike>
+     <br>
+    </strike>
+   </div>
+   <div>
+    <strike>
+     그것을 피하는 방법은 현재 로그인한 사용자가 아닌 다른 사용자의 권한으로 실행하도록 하는 것이다.
+    </strike>
+   </div>
+   <div>
+    <strike>
+     <br>
+    </strike>
+   </div>
+   <div>
+    <strike>
+     그런데 또하나 문제점은&nbsp;boxcutter.exe(스크린샷 유틸)은 현재 로그인한 사용자 계정으로 실행해야 동작한다는 것이다.
+    </strike>
+   </div>
+   <div>
+    <strike>
+     <br>
+    </strike>
+   </div>
+   <div>
+    <strike>
+     그래서 어쩔 수 없이 2개의 스케쥴을 등록해야 하고 2개의 스케쥴이 교대로 동작하도록 해야 한다.
+    </strike>
+   </div>
+   <div>
+    <strike>
+     <br>
+    </strike>
+   </div>
+   <div style="text-align: center;">
+    <div style="text-align:center">
+     <img class="image_mid" border="0" onmouseover="this.style.cursor='pointer'" alt="" src="/attachment/1843497_1.jpg" width="600" height="261.845386534" onclick="Control.Modal.openDialog(this, event, 'http://pds11.egloos.com/pds/200812/02/82/a0003782_493533d4e102b.jpg', 802, 350);">
+    </div>
+   </div>
+   <div style="text-align: center;">
+    <strike>
+     <br>
+    </strike>
+   </div>
+   <div style="text-align: left;">
+    <strike>
+     즉&nbsp;post.bat&nbsp;의 첫 라인&nbsp;
+     <i>boxcutter -f ss.bmp</i> 를 제거한 후 현재 윈도우계정이 아닌 다른 계정으로 실행되도록 스케쥴 등록한다.(위의 그림에서 post)
+    </strike>
+   </div>
+   <div style="text-align: left;">
+    <strike>
+     "
+     <i>boxcutter -f ss.bmp</i>" 작업만 해주는 스케쥴을 또 하나 등록한다(위의 그림에서 boxcutter)
+    </strike>
+   </div>
+   <div style="text-align: left;">
+    <br>
+   </div>
+   <div style="text-align: left;">
+    작업등록시 아래와 같은 방식으로 하면 백그라운드로 실행할 수 있다 cmd /c start /min cmd /c D:\Utils\windowsDesktopScreenLogger\capture.bat
+   </div>
+   <div style="text-align: left;">
+    <br>
+   </div>
+   <div style="text-align: left;">
+    이 꽁수에는 단점이 있다.
+   </div>
+   <div style="text-align: left;">
+    <ol>
+     <li>개인 정보 유출 : 스크린샷을 주기적으로 찍어서 웹에 올리는 방식.<br><br></li>
+     <li>웹서버 공간 부족 : 스크린샷(1280x800) 하나당 60Kbyte 정도이다. 하루에 100장씩 업로드 한다면 하루에만 6메가를 저장공간으로 사용하게 된다. 한시간에 한장 이라 하면 하루에 14장이라 치고 1년에 300메가 정도다. <br>종종 지워주면 되지 않으려나?<br><br></li>
+     <li>설정이 복잡하다. -.-</li>
+    </ol>
+    <div>
+     <font class="Apple-style-span" color="#0000EE"><span class="Apple-style-span" style="text-decoration: underline; "><br></span></font>
+    </div>
+   </div>
+  </div>
+ </div>
+</div> 
+<!--
+       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		    xmlns:dc="http://purl.org/dc/elements/1.1/"
+		    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+       <rdf:Description
+	        rdf:about="http://shed.egloos.com/1843497"
+	        dc:identifier="http://shed.egloos.com/1843497"
+	        dc:title="Windows Desktop Screen Logger"
+	        trackback:ping="http://shed.egloos.com/tb/1843497"/>
+       </rdf:RDF>
+       -->
+<ul></ul>
+  <footer class="footline">
+              <i class='fa-fw fas fa-calendar'></i> 2008-12-02
+<div class="R-taxonomy taxonomy-categories cstyle" title="Categories" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/categories/software-engineering/index.html">Software Engineering</a></li>
+  </ul>
+</div>
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1774431351" defer></script>
+    <script src="/js/theme.min.js?1774431351" defer></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-3QTEZE6PDE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3QTEZE6PDE');
+</script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

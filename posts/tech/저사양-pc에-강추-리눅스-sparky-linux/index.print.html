@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html id="R-html" lang="ko-KR" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.152.2">
+    <meta name="generator" content="Relearn 9.0.3+36307e4ed23582638ab689240ac7b427217803ee">
+    <meta name="description" content="32bit 노트북에 SparkyLinux 설치 설치한 모델은 MSI vr420x이다. 2008년에 구입한 모델
+Intel Pentium Dual Core T2330 (1.6GHz / 1MB / FSB 533MHz) 2GB DDR2 667Mhz 이 노트북에 설치한 리눅스 OS중에 가장 쾌적하다.
+hibernate 후 resume 안될 때 참고 https://unix.stackexchange.com/a/410971/380108">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="저사양 Pc에 강추 리눅스 Sparky Linux :: Do What You Want To Do">
+    <meta name="twitter:description" content="32bit 노트북에 SparkyLinux 설치 설치한 모델은 MSI vr420x이다. 2008년에 구입한 모델
+Intel Pentium Dual Core T2330 (1.6GHz / 1MB / FSB 533MHz) 2GB DDR2 667Mhz 이 노트북에 설치한 리눅스 OS중에 가장 쾌적하다.
+hibernate 후 resume 안될 때 참고 https://unix.stackexchange.com/a/410971/380108">
+    <meta property="og:url" content="https://bluedskim.github.io/posts/tech/%EC%A0%80%EC%82%AC%EC%96%91-pc%EC%97%90-%EA%B0%95%EC%B6%94-%EB%A6%AC%EB%88%85%EC%8A%A4-sparky-linux/index.html">
+    <meta property="og:site_name" content="Do What You Want To Do">
+    <meta property="og:title" content="저사양 Pc에 강추 리눅스 Sparky Linux :: Do What You Want To Do">
+    <meta property="og:description" content="32bit 노트북에 SparkyLinux 설치 설치한 모델은 MSI vr420x이다. 2008년에 구입한 모델
+Intel Pentium Dual Core T2330 (1.6GHz / 1MB / FSB 533MHz) 2GB DDR2 667Mhz 이 노트북에 설치한 리눅스 OS중에 가장 쾌적하다.
+hibernate 후 resume 안될 때 참고 https://unix.stackexchange.com/a/410971/380108">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Posts">
+    <meta property="article:published_time" content="2019-11-02T02:14:20+09:00">
+    <meta property="article:modified_time" content="2019-11-02T02:14:20+09:00">
+    <meta property="article:tag" content="Sparkylinux">
+    <meta property="article:tag" content="Linux">
+    <meta itemprop="name" content="저사양 Pc에 강추 리눅스 Sparky Linux :: Do What You Want To Do">
+    <meta itemprop="description" content="32bit 노트북에 SparkyLinux 설치 설치한 모델은 MSI vr420x이다. 2008년에 구입한 모델
+Intel Pentium Dual Core T2330 (1.6GHz / 1MB / FSB 533MHz) 2GB DDR2 667Mhz 이 노트북에 설치한 리눅스 OS중에 가장 쾌적하다.
+hibernate 후 resume 안될 때 참고 https://unix.stackexchange.com/a/410971/380108">
+    <meta itemprop="datePublished" content="2019-11-02T02:14:20+09:00">
+    <meta itemprop="dateModified" content="2019-11-02T02:14:20+09:00">
+    <meta itemprop="wordCount" content="125">
+    <meta itemprop="keywords" content="Sparkylinux,Linux">
+    <title>저사양 Pc에 강추 리눅스 Sparky Linux :: Do What You Want To Do</title>
+    <link href="https://bluedskim.github.io/posts/tech/%EC%A0%80%EC%82%AC%EC%96%91-pc%EC%97%90-%EA%B0%95%EC%B6%94-%EB%A6%AC%EB%88%85%EC%8A%A4-sparky-linux/index.html" rel="canonical" type="text/html" title="저사양 Pc에 강추 리눅스 Sparky Linux :: Do What You Want To Do">
+    <link href="/css/auto-complete/auto-complete.min.css?1774431351" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1774431351" defer></script>
+    <script src="/js/search-lunr.min.js?1774431351" defer></script>
+    <script src="/js/search.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/searchindex.en.js?1774431351";
+    </script>
+    <script src="/js/lunr/lunr.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.ko.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['ko'];
+    </script>
+    <link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1774431351" rel="stylesheet">
+    <link href="/css/theme.min.css?1774431351" rel="stylesheet">
+    <link href="/css/format-print.min.css?1774431351" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/posts\/tech\/%EC%A0%80%EC%82%AC%EC%96%91-pc%EC%97%90-%EA%B0%95%EC%B6%94-%EB%A6%AC%EB%88%85%EC%8A%A4-sparky-linux\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/bluedskim.github.io';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'relearn-auto', 'learn' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+  </head>
+  <body class="mobile-support print" data-origin="/posts/tech/%EC%A0%80%EC%82%AC%EC%96%91-pc%EC%97%90-%EA%B0%95%EC%B6%94-%EB%A6%AC%EB%88%85%EC%8A%A4-sparky-linux/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#32bit-노트북에-sparkylinux-설치">32bit 노트북에 SparkyLinux 설치</a>
+      <ul>
+        <li><a href="#hibernate-후-resume-안될-때-참고">hibernate 후 resume 안될 때 참고</a></li>
+      </ul>
+    </li>
+    <li><a href="#winbook-tw801에-sparkylinux-설치">Winbook TW801에 SparkyLinux 설치</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Do What You Want</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/posts/index.html"><span itemprop="name">Posts</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">저사양 Pc에 강추 리눅스 Sparky Linux</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/%EC%A0%80%EC%82%AC%EC%96%91-pc%EC%97%90-%EA%B0%95%EC%B6%94-%EB%A6%AC%EB%88%85%EC%8A%A4-sparky-linux/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/run-kdenlive-on-pixelbook/index.html" title="Pixelbook에서 Kdenlive로 동영상 편집하기 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/special-thanks-to-ubuntu/index.html" title="Special Thanks to Ubuntu (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable posts" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/tags/linux/index.html">Linux</a></li>
+    <li><a class="term-link" href="/tags/sparkylinux/index.html">Sparkylinux</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="저사양-pc에-강추-리눅스-sparky-linux">저사양 Pc에 강추 리눅스 Sparky Linux</h1>
+
+<h2 id="32bit-노트북에-sparkylinux-설치">32bit 노트북에 SparkyLinux 설치<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>설치한 모델은 MSI vr420x이다. 2008년에 구입한 모델</p>
+<ul>
+<li>Intel Pentium Dual Core T2330 (1.6GHz / 1MB / FSB 533MHz)</li>
+<li>2GB DDR2 667Mhz</li>
+</ul>
+<p>이 노트북에 설치한 리눅스  OS중에 가장 쾌적하다.</p>
+<p><a href="/images/screenShootvr420.png"><a href="#R-image-dac75f5a6cd6b10a0cbb3546e1cd683d" class="lightbox-link"><img alt="screenShootvr420.png" class="lazy lightbox figure-image" loading="lazy" src="/images/screenShootvr420.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-dac75f5a6cd6b10a0cbb3546e1cd683d"><img alt="screenShootvr420.png" class="lazy lightbox lightbox-image" loading="lazy" src="/images/screenShootvr420.png"></a></a></p>
+<h3 id="hibernate-후-resume-안될-때-참고">hibernate 후 resume 안될 때 참고<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p><a href="https://unix.stackexchange.com/a/410971/380108" rel="external">https://unix.stackexchange.com/a/410971/380108</a></p>
+<p>하여 GRUB_CMDLINE_LINUX_DEFAULT 의 제일 마지막에 nokaslr 옵션을 추가하고</p>
+<pre><code>#GRUB_CMDLINE_LINUX_DEFAULT=&quot;quiet splash resume=UUID=9449b1a5-f2c1-4116-a1f3-6b10e63728ef&quot;
+GRUB_CMDLINE_LINUX_DEFAULT=&quot;quiet splash resume=UUID=9449b1a5-f2c1-4116-a1f3-6b10e63728ef nokaslr&quot;
+</code></pre>
+<p>update-grub 하면 잘 된다.</p>
+<pre><code>sudo update-grub 
+</code></pre>
+<h2 id="winbook-tw801에-sparkylinux-설치">Winbook TW801에 SparkyLinux 설치<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>노트북에 설치할 때와 방식은 동일하다.</p>
+<ul>
+<li>usb에 설치 성공</li>
+<li>SD카드에 설치 후 부팅 실패.</li>
+<li>내장 MMC에 설치하려 했으나 파티션 생성 실패 -.- 윈도우 설치 파티션을 줄이고 리눅스파티션을 만드려고 했으나 2.7g 밖에 확보 못했다.
+다른 툴을 쓰면 가능하다고 하는데 굳이 그렇게까지 하고싶지는 않아서</li>
+</ul>
+<p>안되는 것들</p>
+<ul>
+<li>bluetooth 안됨</li>
+<li>battery 상태 확인 불가</li>
+<li>hibernate 안됨</li>
+<li>화면에서 터치로 마우스 오른쪽 클릭 안됨. 왼쪽 클릭, 드래그는 됨</li>
+</ul>
+<p><a href="/images/screenShotTW801.png"><a href="#R-image-404a40d11356724e43ad2f2c511b4b69" class="lightbox-link"><img alt="screenShotTW801.png" class="lazy lightbox figure-image" loading="lazy" src="/images/screenShotTW801.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-404a40d11356724e43ad2f2c511b4b69"><img alt="screenShotTW801.png" class="lazy lightbox lightbox-image" loading="lazy" src="/images/screenShotTW801.png"></a></a></p>
+
+  <footer class="footline">
+              <i class='fa-fw fas fa-calendar'></i> 2019-11-02
+<div class="R-taxonomy taxonomy-categories cstyle" title="Categories" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/categories/tech/index.html">Tech</a></li>
+  </ul>
+</div>
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1774431351" defer></script>
+    <script src="/js/theme.min.js?1774431351" defer></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-3QTEZE6PDE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3QTEZE6PDE');
+</script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

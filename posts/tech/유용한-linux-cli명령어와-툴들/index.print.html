@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html id="R-html" lang="ko-KR" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.152.2">
+    <meta name="generator" content="Relearn 9.0.3+36307e4ed23582638ab689240ac7b427217803ee">
+    <meta name="description" content="ffmpeg 범용 미디어 변환 프로그램
+오디오 파일을 avi동영상으로 변환하기
+ffmpeg -i inputFile.mp4 -q:v 6 outputFile.avi 특정 폴더의 mp3 파일들을 합친 후 사진을 삽입하여 유튜브 업로드용 동영상으로 변환하기
+find -name &#34;*.mp3&#34; -exec ffmpeg -loop 1 -framerate 2 -i 사진.jpg -i {} -tune stillimage -crf 18 -c:a copy -shortest {}.mkv \; 동영상 파일에서 특정 구간 복사하기
+#10초부터 20초 분량의 동영상 추출 ffmpeg -ss 00:00:10 -i &#34;원본.MP4&#34; -t 00:00:20 -vcodec copy -acodec copy &#34;10초부터_20초까지.MP4&#34; rtsp 스트리밍 동영상을 캡쳐하여 mp4로 저장">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="유용한 LINUX CLI명령어와 쉡스크립트들 :: Do What You Want To Do">
+    <meta name="twitter:description" content="ffmpeg 범용 미디어 변환 프로그램
+오디오 파일을 avi동영상으로 변환하기
+ffmpeg -i inputFile.mp4 -q:v 6 outputFile.avi 특정 폴더의 mp3 파일들을 합친 후 사진을 삽입하여 유튜브 업로드용 동영상으로 변환하기
+find -name &#34;*.mp3&#34; -exec ffmpeg -loop 1 -framerate 2 -i 사진.jpg -i {} -tune stillimage -crf 18 -c:a copy -shortest {}.mkv \; 동영상 파일에서 특정 구간 복사하기
+#10초부터 20초 분량의 동영상 추출 ffmpeg -ss 00:00:10 -i &#34;원본.MP4&#34; -t 00:00:20 -vcodec copy -acodec copy &#34;10초부터_20초까지.MP4&#34; rtsp 스트리밍 동영상을 캡쳐하여 mp4로 저장">
+    <meta property="og:url" content="https://bluedskim.github.io/posts/tech/%EC%9C%A0%EC%9A%A9%ED%95%9C-linux-cli%EB%AA%85%EB%A0%B9%EC%96%B4%EC%99%80-%ED%88%B4%EB%93%A4/index.html">
+    <meta property="og:site_name" content="Do What You Want To Do">
+    <meta property="og:title" content="유용한 LINUX CLI명령어와 쉡스크립트들 :: Do What You Want To Do">
+    <meta property="og:description" content="ffmpeg 범용 미디어 변환 프로그램
+오디오 파일을 avi동영상으로 변환하기
+ffmpeg -i inputFile.mp4 -q:v 6 outputFile.avi 특정 폴더의 mp3 파일들을 합친 후 사진을 삽입하여 유튜브 업로드용 동영상으로 변환하기
+find -name &#34;*.mp3&#34; -exec ffmpeg -loop 1 -framerate 2 -i 사진.jpg -i {} -tune stillimage -crf 18 -c:a copy -shortest {}.mkv \; 동영상 파일에서 특정 구간 복사하기
+#10초부터 20초 분량의 동영상 추출 ffmpeg -ss 00:00:10 -i &#34;원본.MP4&#34; -t 00:00:20 -vcodec copy -acodec copy &#34;10초부터_20초까지.MP4&#34; rtsp 스트리밍 동영상을 캡쳐하여 mp4로 저장">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Posts">
+    <meta property="article:published_time" content="2023-11-16T18:15:11+09:00">
+    <meta property="article:modified_time" content="2023-11-16T18:15:11+09:00">
+    <meta itemprop="name" content="유용한 LINUX CLI명령어와 쉡스크립트들 :: Do What You Want To Do">
+    <meta itemprop="description" content="ffmpeg 범용 미디어 변환 프로그램
+오디오 파일을 avi동영상으로 변환하기
+ffmpeg -i inputFile.mp4 -q:v 6 outputFile.avi 특정 폴더의 mp3 파일들을 합친 후 사진을 삽입하여 유튜브 업로드용 동영상으로 변환하기
+find -name &#34;*.mp3&#34; -exec ffmpeg -loop 1 -framerate 2 -i 사진.jpg -i {} -tune stillimage -crf 18 -c:a copy -shortest {}.mkv \; 동영상 파일에서 특정 구간 복사하기
+#10초부터 20초 분량의 동영상 추출 ffmpeg -ss 00:00:10 -i &#34;원본.MP4&#34; -t 00:00:20 -vcodec copy -acodec copy &#34;10초부터_20초까지.MP4&#34; rtsp 스트리밍 동영상을 캡쳐하여 mp4로 저장">
+    <meta itemprop="datePublished" content="2023-11-16T18:15:11+09:00">
+    <meta itemprop="dateModified" content="2023-11-16T18:15:11+09:00">
+    <meta itemprop="wordCount" content="403">
+    <title>유용한 LINUX CLI명령어와 쉡스크립트들 :: Do What You Want To Do</title>
+    <link href="https://bluedskim.github.io/posts/tech/%EC%9C%A0%EC%9A%A9%ED%95%9C-linux-cli%EB%AA%85%EB%A0%B9%EC%96%B4%EC%99%80-%ED%88%B4%EB%93%A4/index.html" rel="canonical" type="text/html" title="유용한 LINUX CLI명령어와 쉡스크립트들 :: Do What You Want To Do">
+    <link href="/css/auto-complete/auto-complete.min.css?1774431351" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1774431351" defer></script>
+    <script src="/js/search-lunr.min.js?1774431351" defer></script>
+    <script src="/js/search.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/searchindex.en.js?1774431351";
+    </script>
+    <script src="/js/lunr/lunr.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.ko.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['ko'];
+    </script>
+    <link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1774431351" rel="stylesheet">
+    <link href="/css/theme.min.css?1774431351" rel="stylesheet">
+    <link href="/css/format-print.min.css?1774431351" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/posts\/tech\/%EC%9C%A0%EC%9A%A9%ED%95%9C-linux-cli%EB%AA%85%EB%A0%B9%EC%96%B4%EC%99%80-%ED%88%B4%EB%93%A4\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/bluedskim.github.io';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'relearn-auto', 'learn' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+  </head>
+  <body class="mobile-support print" data-origin="/posts/tech/%EC%9C%A0%EC%9A%A9%ED%95%9C-linux-cli%EB%AA%85%EB%A0%B9%EC%96%B4%EC%99%80-%ED%88%B4%EB%93%A4/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#ffmpeg">ffmpeg</a></li>
+    <li><a href="#uvccapture">uvccapture</a></li>
+    <li><a href="#lshw">lshw</a></li>
+    <li><a href="#curl">curl</a></li>
+    <li><a href="#xdotool">xdotool</a></li>
+    <li><a href="#ctronome">ctronome</a></li>
+    <li><a href="#웹서버">웹서버</a></li>
+    <li><a href="#csv를-xlsx로-변환">csv를 xlsx로 변환</a></li>
+    <li><a href="#yewtube">yewtube</a></li>
+    <li><a href="#yt-dlp">yt-dlp</a></li>
+    <li><a href="#쉘-스크립트">쉘 스크립트</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Do What You Want</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/posts/index.html"><span itemprop="name">Posts</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">유용한 LINUX CLI명령어와 쉡스크립트들</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/%EC%9C%A0%EC%9A%A9%ED%95%9C-linux-cli%EB%AA%85%EB%A0%B9%EC%96%B4%EC%99%80-%ED%88%B4%EB%93%A4/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/vscode-java%EC%BD%94%EB%93%9C%ED%92%88%EC%A7%88%EA%B2%80%EC%82%AC-%ED%99%95%EC%9E%A5-sornarlint-vs-codescene/index.html" title="VScode Java코드품질검사 확장 SornarLint vs CodeScene (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/%EB%A6%AC%EB%88%85%EC%8A%A4-%ED%84%B0%EB%AF%B8%EB%84%90-%EC%9E%85%EC%B6%9C%EB%A0%A5%EC%9D%84-%EB%85%B9%ED%99%94%ED%95%98%EA%B8%B0/index.html" title="리눅스 터미널 입출력을 녹화하기 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable posts" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="유용한-linux-cli명령어와-쉡스크립트들">유용한 LINUX CLI명령어와 쉡스크립트들</h1>
+
+<h2 id="ffmpeg">ffmpeg<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>범용 미디어 변환 프로그램</p>
+<ul>
+<li>
+<p>오디오 파일을 avi동영상으로 변환하기</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>ffmpeg -i inputFile.mp4 -q:v <span style="color:#ae81ff">6</span> outputFile.avi</span></span></code></pre></div>
+</li>
+<li>
+<p>특정 폴더의 mp3 파일들을 합친 후 사진을 삽입하여 유튜브 업로드용 동영상으로 변환하기</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>find -name <span style="color:#e6db74">&#34;*.mp3&#34;</span> -exec ffmpeg -loop <span style="color:#ae81ff">1</span> -framerate <span style="color:#ae81ff">2</span> -i 사진.jpg -i <span style="color:#f92672">{}</span> -tune stillimage -crf <span style="color:#ae81ff">18</span> -c:a copy -shortest <span style="color:#f92672">{}</span>.mkv <span style="color:#ae81ff">\;</span></span></span></code></pre></div>
+</li>
+<li>
+<p>동영상 파일에서 특정 구간 복사하기</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e">#10초부터 20초 분량의 동영상 추출</span>
+</span></span><span style="display:flex;"><span>ffmpeg -ss 00:00:10 -i <span style="color:#e6db74">&#34;원본.MP4&#34;</span> -t 00:00:20 -vcodec copy -acodec copy <span style="color:#e6db74">&#34;10초부터_20초까지.MP4&#34;</span></span></span></code></pre></div>
+</li>
+<li>
+<p>rtsp 스트리밍 동영상을 캡쳐하여 mp4로 저장</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>ffmpeg -i rtsp://서버주소 -vcodec copy -acodec copy -f mp4 -y 저장파일명.mp4    </span></span></code></pre></div>
+</li>
+</ul>
+<h2 id="uvccapture">uvccapture<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>웹캠 캡쳐 유틸</p>
+<ul>
+<li>
+<p>YUYV포맷으로 캡쳐하여 파일명.jpg로 저장하기</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>uvccapture -m -o파일명.jpg</span></span></code></pre></div>
+</li>
+</ul>
+<h2 id="lshw">lshw<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>하드웨어 정보 출력</p>
+<ul>
+<li>
+<p>하드웨어 정보를 html 포맷으로 생성하고 파이어폭스에서 열기</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>lshw -html &gt; ~/hardware_info.html <span style="color:#f92672">&amp;&amp;</span> firefox ~/hardware_info.html</span></span></code></pre></div>
+</li>
+</ul>
+<h2 id="curl">curl<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>각종 인터넷 프로토콜 클라이언트</p>
+<ul>
+<li>http응답 코드 출력
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>curl -Is https://www.google.com/  | grep HTTP | cut -d &#39; &#39; -f2</code></pre></div>
+</li>
+</ul>
+<h2 id="xdotool">xdotool<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>명령행 x11자동화 툴</p>
+<ul>
+<li>마우스 위치 출력하기
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#66d9ef">while</span> true; <span style="color:#66d9ef">do</span> xdotool getmouselocation; sleep 0.2; clear; <span style="color:#66d9ef">done</span></span></span></code></pre></div>
+</li>
+</ul>
+<h2 id="ctronome">ctronome<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>메트로놈 유틸리티</p>
+<ul>
+<li><a href="https://github.com/bivanbi/ctronome" rel="external">https://github.com/bivanbi/ctronome</a>에서 소스를 받아서 컴파일해야 함</li>
+<li>구동 스크립트 샘플
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/sh
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>killall ctronome
+</span></span><span style="display:flex;"><span>bpm<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;100&#34;</span>
+</span></span><span style="display:flex;"><span>baseDir<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;메트로놈_사운드_wav파일_디렉토리&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span>$#<span style="color:#e6db74">&#34;</span> -eq  <span style="color:#e6db74">&#34;0&#34;</span> <span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">then</span>	
+</span></span><span style="display:flex;"><span>    bpm<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;100&#34;</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;No arugments supplied&#34;</span>
+</span></span><span style="display:flex;"><span>    echo bpm : $bpm
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>    bpm<span style="color:#f92672">=</span>$1
+</span></span><span style="display:flex;"><span>    echo bpm : $bpm
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>padsp ctronome -b $bpm -t <span style="color:#ae81ff">2</span> -w1 $baseDir/a5.wav -w2 $baseDir/a4.wav</span></span></code></pre></div>
+</li>
+</ul>
+<h2 id="웹서버">웹서버<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<ul>
+<li>
+<p><a href="https://manpages.ubuntu.com/manpages/trusty/en/man8/mini-httpd.8.html" rel="external">mini-httpd</a> : 가벼운 설치형 웹서버. CGI, SSL지원. Apache웹서버 성능의 90% 성능을 보인다고</p>
+</li>
+<li>
+<p><a href="https://github.com/emikulic/darkhttpd" rel="external">darkhttpd</a> : 직접 컴파일이 필요한 가벼운 웹서버</p>
+</li>
+<li>
+<p>python3 내장 웹서버 : python3에는 웹서버가 내장되어 있다. 터미널에서 아래 명령어를 입력하여 실행한다.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>python3 -m http.server</span></span></code></pre></div>
+</li>
+</ul>
+<h2 id="csv를-xlsx로-변환">csv를 xlsx로 변환<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<ul>
+<li>libreoffice
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>soffice --headless --convert-to xlsx:<span style="color:#e6db74">&#34;Calc MS Excel 2007 XML&#34;</span> file.csv</span></span></code></pre></div>
+</li>
+<li><a href="https://github.com/mentax/csv2xlsx" rel="external">csv2xlsx</a>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>    csv2xlsx --output 변환후.xlsx 변환전.csv</span></span></code></pre></div>
+</li>
+</ul>
+<h2 id="yewtube"><a href="https://github.com/mps-youtube/yewtube" rel="external">yewtube</a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<ul>
+<li>터미널 유튜브 클라이언트</li>
+<li>유튜브 계정없이 사용가능</li>
+<li>유튜브 광고 없음</li>
+<li>동영상 다운로드 가능</li>
+</ul>
+<h2 id="yt-dlp"><a href="https://github.com/yt-dlp/yt-dlp" rel="external">yt-dlp</a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>유튜브 다운로더</p>
+<ul>
+<li>
+<p>동영상 다운로드</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>yt-dlp https://www.youtube.com/watch?v<span style="color:#f92672">=</span>^CaN5ZCaiQI</span></span></code></pre></div>
+</li>
+<li>
+<p>mp3로 다운로드</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>yt-dlp https://www.youtube.com/watch?v<span style="color:#f92672">=</span>^CaN5ZCaiQI -x --audio-format mp3</span></span></code></pre></div>
+</li>
+</ul>
+<h2 id="쉘-스크립트">쉘 스크립트<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<ul>
+<li>
+<p>특정 폴더내의 특정 확장자 파일내의 탭문자를 스페이스 4개로 바꾸기</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>find 해당디랙토리 -name <span style="color:#e6db74">&#39;*.java&#39;</span> ! -type d -exec bash -c <span style="color:#e6db74">&#39;expand -i -t 4 &#34;$0&#34; &gt; /tmp/e &amp;&amp; mv /tmp/e &#34;$0&#34;&#39;</span> <span style="color:#f92672">{}</span> <span style="color:#ae81ff">\;</span>    </span></span></code></pre></div>
+</li>
+<li>
+<p>카운트 다운</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/sh
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75715e"># ex) ./countdown.sh 60 : 1분 동안 카운트 다운</span>
+</span></span><span style="display:flex;"><span>clear
+</span></span><span style="display:flex;"><span>date1<span style="color:#f92672">=</span><span style="color:#66d9ef">$((</span><span style="color:#e6db74">`</span>date +%s<span style="color:#e6db74">`</span> <span style="color:#f92672">+</span> $1<span style="color:#66d9ef">))</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span>$date1<span style="color:#e6db74">&#34;</span> -ge <span style="color:#e6db74">`</span>date +%s<span style="color:#e6db74">`</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Is this more than 24h away?</span>
+</span></span><span style="display:flex;"><span>days<span style="color:#f92672">=</span><span style="color:#66d9ef">$(($(($((</span> $date1 <span style="color:#f92672">-</span> <span style="color:#66d9ef">$(</span>date +%s<span style="color:#66d9ef">)))</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">))</span><span style="color:#f92672">/</span><span style="color:#ae81ff">86400</span><span style="color:#66d9ef">))</span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;\033[H</span>$days<span style="color:#e6db74"> day(s) and </span><span style="color:#66d9ef">$(</span>date -u --date @<span style="color:#66d9ef">$((</span>$date1 <span style="color:#f92672">-</span> <span style="color:#e6db74">`</span>date +%s<span style="color:#e6db74">`</span><span style="color:#66d9ef">))</span> +%H:%M:%S<span style="color:#66d9ef">)</span><span style="color:#e6db74">\r&#34;</span>; 
+</span></span><span style="display:flex;"><span>sleep 0.1
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span></span></span></code></pre></div>
+</li>
+<li>
+<p>스탑와치</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>date1<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>date +%s<span style="color:#e6db74">`</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> true; <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>days<span style="color:#f92672">=</span><span style="color:#66d9ef">$((</span> <span style="color:#66d9ef">$(($(</span>date +%s<span style="color:#66d9ef">)</span> <span style="color:#f92672">-</span> date1<span style="color:#66d9ef">))</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">86400</span> <span style="color:#66d9ef">))</span>
+</span></span><span style="display:flex;"><span>echo -ne <span style="color:#e6db74">&#34;</span>$days<span style="color:#e6db74"> day(s) and </span><span style="color:#66d9ef">$(</span>date -u --date @<span style="color:#66d9ef">$((</span><span style="color:#e6db74">`</span>date +%s<span style="color:#e6db74">`</span> <span style="color:#f92672">-</span> $date1<span style="color:#66d9ef">))</span> +%H:%M:%S<span style="color:#66d9ef">)</span><span style="color:#e6db74">\r&#34;</span>;
+</span></span><span style="display:flex;"><span>sleep 0.1
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span></span></span></code></pre></div>
+</li>
+</ul>
+
+  <footer class="footline">
+              <i class='fa-fw fas fa-calendar'></i> 2023-11-16
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1774431351" defer></script>
+    <script src="/js/theme.min.js?1774431351" defer></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-3QTEZE6PDE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3QTEZE6PDE');
+</script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

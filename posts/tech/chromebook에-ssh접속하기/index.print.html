@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html id="R-html" lang="ko-KR" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.152.2">
+    <meta name="generator" content="Relearn 9.0.3+36307e4ed23582638ab689240ac7b427217803ee">
+    <meta name="description" content="‘굳이 뭐 이런것까지’ 라고 생각할 사람도 있을지 모르겠지만 요긴할 때가 있다(sftp로 파일 전송, 부하 모니터링 등등…)
+이 방법의 핵심은 Connection Forwarder 라고 하는 port forwarding 앱에 있다.
+이 앱이 없다면 다른 기기에서 ssh접속은 불가능하다.
+sshd 설치 설명은 생략한다. debian에서 sshd설치 가이드는 인터넷상의 다른 자료를 참조하길 바란다 암호 로그인 대신 키파일 로그인을 하도록 한다. crostini 의 기본 계정의 암호를 알아내는 방법은 없다. 암호를 변경할 수는 있겠지만 이렇게 했을 때 어떤 문제가 발생할지 알 수 없어 키파일 방식 인증을 하도록 하겠다 키 생성 크롬북의 터미널에서 아래 명령을 실행한다.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Chromebook crostini에 SSH접속하기 :: Do What You Want To Do">
+    <meta name="twitter:description" content="‘굳이 뭐 이런것까지’ 라고 생각할 사람도 있을지 모르겠지만 요긴할 때가 있다(sftp로 파일 전송, 부하 모니터링 등등…)
+이 방법의 핵심은 Connection Forwarder 라고 하는 port forwarding 앱에 있다.
+이 앱이 없다면 다른 기기에서 ssh접속은 불가능하다.
+sshd 설치 설명은 생략한다. debian에서 sshd설치 가이드는 인터넷상의 다른 자료를 참조하길 바란다 암호 로그인 대신 키파일 로그인을 하도록 한다. crostini 의 기본 계정의 암호를 알아내는 방법은 없다. 암호를 변경할 수는 있겠지만 이렇게 했을 때 어떤 문제가 발생할지 알 수 없어 키파일 방식 인증을 하도록 하겠다 키 생성 크롬북의 터미널에서 아래 명령을 실행한다.">
+    <meta property="og:url" content="https://bluedskim.github.io/posts/tech/chromebook%EC%97%90-ssh%EC%A0%91%EC%86%8D%ED%95%98%EA%B8%B0/index.html">
+    <meta property="og:site_name" content="Do What You Want To Do">
+    <meta property="og:title" content="Chromebook crostini에 SSH접속하기 :: Do What You Want To Do">
+    <meta property="og:description" content="‘굳이 뭐 이런것까지’ 라고 생각할 사람도 있을지 모르겠지만 요긴할 때가 있다(sftp로 파일 전송, 부하 모니터링 등등…)
+이 방법의 핵심은 Connection Forwarder 라고 하는 port forwarding 앱에 있다.
+이 앱이 없다면 다른 기기에서 ssh접속은 불가능하다.
+sshd 설치 설명은 생략한다. debian에서 sshd설치 가이드는 인터넷상의 다른 자료를 참조하길 바란다 암호 로그인 대신 키파일 로그인을 하도록 한다. crostini 의 기본 계정의 암호를 알아내는 방법은 없다. 암호를 변경할 수는 있겠지만 이렇게 했을 때 어떤 문제가 발생할지 알 수 없어 키파일 방식 인증을 하도록 하겠다 키 생성 크롬북의 터미널에서 아래 명령을 실행한다.">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Posts">
+    <meta property="article:published_time" content="2020-05-16T17:49:41+09:00">
+    <meta property="article:modified_time" content="2020-05-16T17:49:41+09:00">
+    <meta property="article:tag" content="Chromebook">
+    <meta property="article:tag" content="Linux">
+    <meta itemprop="name" content="Chromebook crostini에 SSH접속하기 :: Do What You Want To Do">
+    <meta itemprop="description" content="‘굳이 뭐 이런것까지’ 라고 생각할 사람도 있을지 모르겠지만 요긴할 때가 있다(sftp로 파일 전송, 부하 모니터링 등등…)
+이 방법의 핵심은 Connection Forwarder 라고 하는 port forwarding 앱에 있다.
+이 앱이 없다면 다른 기기에서 ssh접속은 불가능하다.
+sshd 설치 설명은 생략한다. debian에서 sshd설치 가이드는 인터넷상의 다른 자료를 참조하길 바란다 암호 로그인 대신 키파일 로그인을 하도록 한다. crostini 의 기본 계정의 암호를 알아내는 방법은 없다. 암호를 변경할 수는 있겠지만 이렇게 했을 때 어떤 문제가 발생할지 알 수 없어 키파일 방식 인증을 하도록 하겠다 키 생성 크롬북의 터미널에서 아래 명령을 실행한다.">
+    <meta itemprop="datePublished" content="2020-05-16T17:49:41+09:00">
+    <meta itemprop="dateModified" content="2020-05-16T17:49:41+09:00">
+    <meta itemprop="wordCount" content="437">
+    <meta itemprop="keywords" content="Chromebook,Linux">
+    <title>Chromebook crostini에 SSH접속하기 :: Do What You Want To Do</title>
+    <link href="https://bluedskim.github.io/posts/tech/chromebook%EC%97%90-ssh%EC%A0%91%EC%86%8D%ED%95%98%EA%B8%B0/index.html" rel="canonical" type="text/html" title="Chromebook crostini에 SSH접속하기 :: Do What You Want To Do">
+    <link href="/css/auto-complete/auto-complete.min.css?1774431351" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1774431351" defer></script>
+    <script src="/js/search-lunr.min.js?1774431351" defer></script>
+    <script src="/js/search.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/searchindex.en.js?1774431351";
+    </script>
+    <script src="/js/lunr/lunr.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.ko.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['ko'];
+    </script>
+    <link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1774431351" rel="stylesheet">
+    <link href="/css/theme.min.css?1774431351" rel="stylesheet">
+    <link href="/css/format-print.min.css?1774431351" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/posts\/tech\/chromebook%EC%97%90-ssh%EC%A0%91%EC%86%8D%ED%95%98%EA%B8%B0\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/bluedskim.github.io';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'relearn-auto', 'learn' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+  </head>
+  <body class="mobile-support print" data-origin="/posts/tech/chromebook%EC%97%90-ssh%EC%A0%91%EC%86%8D%ED%95%98%EA%B8%B0/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Do What You Want</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/posts/index.html"><span itemprop="name">Posts</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Chromebook crostini에 SSH접속하기</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/chromebook%EC%97%90-ssh%EC%A0%91%EC%86%8D%ED%95%98%EA%B8%B0/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/pm2-production-process-manager-for-node.js/index.html" title="PM2 - Production Process Manager for Node (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/certbot%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-iptime-ddns-%EB%8F%84%EB%A9%94%EC%9D%B8%EC%9A%A9-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EB%B0%9C%EA%B8%89/index.html" title="Certbot을 이용해 Iptime DDNS 도메인용 인증서 발급 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable posts" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/tags/chromebook/index.html">Chromebook</a></li>
+    <li><a class="term-link" href="/tags/linux/index.html">Linux</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="chromebook-crostini에-ssh접속하기">Chromebook crostini에 SSH접속하기</h1>
+
+<p>&lsquo;굳이 뭐 이런것까지&rsquo; 라고 생각할 사람도 있을지 모르겠지만 요긴할 때가 있다(sftp로 파일 전송, 부하 모니터링 등등&hellip;)</p>
+<p>이 방법의 핵심은 <strong>Connection Forwarder</strong> 라고 하는 port forwarding 앱에 있다.</p>
+<p>이 앱이 없다면 다른 기기에서 ssh접속은 불가능하다.</p>
+<ul>
+<li>sshd 설치 설명은 생략한다. debian에서 sshd설치 가이드는 인터넷상의 다른 자료를 참조하길 바란다</li>
+<li>암호 로그인 대신 키파일 로그인을 하도록 한다. crostini 의 기본 계정의 암호를 알아내는 방법은 없다. 암호를 변경할 수는 있겠지만 이렇게 했을 때 어떤 문제가 발생할지 알 수 없어 키파일 방식 인증을 하도록 하겠다</li>
+</ul>
+<h4 id="키-생성">키 생성<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p>크롬북의 터미널에서 아래 명령을 실행한다.</p>
+<pre><code>$ mkdir ~/.ssh
+$ chmod 700 ~/.ssh
+$ cd ~/.ssh
+$ ssh-keygen -t rsa
+$ cat id_rsa.pub &gt;&gt; authorized_keys
+$ chmod 600 authorized_keys
+</code></pre>
+<p>일단 crostini 내에서 자기 자신으로 ssh접속이 되는지 확인해보자</p>
+<pre><code>본인아이디@penguin:~$ ssh 본인아이디@localhost -i ~/.ssh/id_rsa
+Linux penguin 4.19.98-08076-g24ab33fb8e14 #1 SMP PREEMPT Wed Apr 1 17:14:27 PDT 2020 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Sat May 16 20:46:05 2020 from ::1
+본인아이디@penguin:~$	
+</code></pre>
+<h4 id="port-forwarding">port forwarding<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p>아래 주소에서 connection-forwarder 를 설치하고 기동한다
+<a href="https://chrome.google.com/webstore/detail/connection-forwarder/ahaijnonphgkgnkbklchdhclailflinn" rel="external">https://chrome.google.com/webstore/detail/connection-forwarder/ahaijnonphgkgnkbklchdhclailflinn</a></p>
+<p>다음과 같이 포워딩 규칙을 생성한다</p>
+<ul>
+<li>Source Address : 0.0.0.0(anywhere)</li>
+<li>Source Port : 22를 제외한 적당한 숫자를 입력한다(22번은 ssh의 기본 포트인데 해커들이 좋아하는 포트이니 가능하면 피하는 것이 좋다)</li>
+<li>Destination Address : penguin.termina.linux.test (이 host명은 chromebook 시스템내에서 crostini 를 가리킨다)</li>
+<li>Destination Port : 22</li>
+</ul>
+<p>[<a href="#R-image-15dfd0b79d537a4b420b8c3e50bfcfcc" class="lightbox-link"><img alt="connection_forwarder.png" class="lazy lightbox figure-image" loading="lazy" src="/images/connection_forwarder.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-15dfd0b79d537a4b420b8c3e50bfcfcc"><img alt="connection_forwarder.png" class="lazy lightbox lightbox-image" loading="lazy" src="/images/connection_forwarder.png"></a>](/images/크롬북 아이피 알아내기.png)</p>
+<h4 id="다른-기기에서-접속하기">다른 기기에서 접속하기<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p>리눅스 컴퓨터에서 접속하는 것으로 예를 들어보자.</p>
+<ol>
+<li>
+<p>크롬북의 아이피 알아내기 : crostini의 아이피가 아니라 <strong>크롬북의 아이피</strong>를 알아내야 한다. &lsquo;설정&rsquo; 에서 현재 접속한 AP를 선택하면 확인할 수 있다
+[![크롬북 아이피 알아내기.png](/images/크롬북 아이피 알아내기.png)](/images/크롬북 아이피 알아내기.png)</p>
+</li>
+<li>
+<p>생성된 키를 클라이언트로 복사</p>
+</li>
+<li>
+<p>다른 키와 구별하기 위해 이름을 변경</p>
+<pre><code> mv id_rsa id_rsa_chrome
+</code></pre>
+</li>
+<li>
+<p>키  권한을 수정</p>
+<pre><code> chmod 600 id_rsa_chrome
+</code></pre>
+</li>
+<li>
+<p>접속</p>
+<pre><code> ssh 본인아이디@크롬북아이피 -i id_rsa_chromebook -p 소스포트번호
+</code></pre>
+</li>
+</ol>
+<p>이런 방법으로 crostini내의 모든 서비스에 다른 기기에서 접속가능하다.</p>
+<h4 id="trouble-shoot">Trouble shoot<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p>픽셀북을 초기화 하고 다시 sshd를 설치했는데 ssh 접속이 불가능하였다. 그래서  ssh status를 확인해 봤더니</p>
+<pre><code>penguin:~/.ssh$ sudo service ssh status
+● ssh.service - OpenBSD Secure Shell server
+   Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enabled)
+   Active: inactive (dead)
+Condition: start condition failed at Sat 2020-09-12 13:14:45 KST; 14s ago
+		   └─ ConditionPathExists=!/etc/ssh/sshd_not_to_be_run was not met
+	 Docs: man:sshd(8)
+		   man:sshd_config(5)
+
+Sep 12 12:23:07 penguin systemd[1]: Condition check resulted in OpenBSD Secure Shell server being skipped.
+Sep 12 13:11:09 penguin systemd[1]: Condition check resulted in OpenBSD Secure Shell server being skipped.
+Sep 12 13:14:45 penguin systemd[1]: Condition check resulted in OpenBSD Secure Shell server being skipped.
+</code></pre>
+<p>이런 문제가 있다고 알려준다.</p>
+<pre><code>ConditionPathExists=!/etc/ssh/sshd_not_to_be_run was not met
+</code></pre>
+<p>이 때는 /etc/ssh/sshd_not_to_be_run 파일을 삭제하고 다시 기동하면 된다.</p>
+<pre><code>penguin:~$ sudo rm /etc/ssh/sshd_not_to_be_run
+penguin:~$ sudo service ssh restart
+</code></pre>
+
+  <footer class="footline">
+              <i class='fa-fw fas fa-calendar'></i> 2020-05-16
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1774431351" defer></script>
+    <script src="/js/theme.min.js?1774431351" defer></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-3QTEZE6PDE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3QTEZE6PDE');
+</script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Agile on Do What You Want To Do</title>
-    <link>https://bluedskim.github.io/tags/agile/</link>
-    <description>Recent content in Agile on Do What You Want To Do</description>
+    <title>Agile :: Tag :: Do What You Want To Do</title>
+    <link>https://bluedskim.github.io/tags/agile/index.html</link>
+    <description></description>
     <generator>Hugo</generator>
     <language>ko-KR</language>
     <lastBuildDate>Sat, 12 Jun 2021 10:38:46 +0900</lastBuildDate>
     <atom:link href="https://bluedskim.github.io/tags/agile/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>추천 Redmine Agile플러그인과 PurpleMine2 테마</title>
-      <link>https://bluedskim.github.io/posts/tech/%EC%B6%94%EC%B2%9C-redmine-agile%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8%EA%B3%BC-purplemine-2-%ED%85%8C%EB%A7%88/</link>
+      <link>https://bluedskim.github.io/posts/tech/%EC%B6%94%EC%B2%9C-redmine-agile%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8%EA%B3%BC-purplemine-2-%ED%85%8C%EB%A7%88/index.html</link>
       <pubDate>Sat, 12 Jun 2021 10:38:46 +0900</pubDate>
-      <guid>https://bluedskim.github.io/posts/tech/%EC%B6%94%EC%B2%9C-redmine-agile%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8%EA%B3%BC-purplemine-2-%ED%85%8C%EB%A7%88/</guid>
-      <description>&lt;p&gt;Redmine은 꽤 오래된 웹기반 프로젝트 관리 툴이다.&#xA;그래서 기능이나 화면이 상당히 예스럽다. 이런 기능과 UI를 좋아하는 분들도 있겠지만 현재의 유행과는 많이 떨어져 있는게 사실이다.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://bluedskim.github.io/images/%EC%9D%BC%EA%B0%90-Redmine.png&#34; alt=&#34;기본 UI&#34; title=&#34;Title here&#34;&gt;&#xA;(20세기말에 유행하던 게시판 UI를 닮았다. 아래쪽의 PurpleMine2 UI와 비교해보자)&lt;/p&gt;&#xA;&lt;p&gt;하지만 기본 기능에 충실하고 오히려 예스러운 화면과 기능을 좋아하시는 분들께 훌륭한 툴이다.&lt;/p&gt;&#xA;&lt;p&gt;레드마인을 사용하면서 기본으로 제공되지 않는 기능 중 아쉬운 기능이 Agile Kanban 기능이었다. 하지만 redmineup이라는 회사의 플러그인을 쓰면 기본적인 Kanban 기능은 쓸 수 있다.&lt;/p&gt;</description>
+      <guid>https://bluedskim.github.io/posts/tech/%EC%B6%94%EC%B2%9C-redmine-agile%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8%EA%B3%BC-purplemine-2-%ED%85%8C%EB%A7%88/index.html</guid>
+      <description>Redmine은 꽤 오래된 웹기반 프로젝트 관리 툴이다. 그래서 기능이나 화면이 상당히 예스럽다. 이런 기능과 UI를 좋아하는 분들도 있겠지만 현재의 유행과는 많이 떨어져 있는게 사실이다.&#xA;(20세기말에 유행하던 게시판 UI를 닮았다. 아래쪽의 PurpleMine2 UI와 비교해보자)&#xA;하지만 기본 기능에 충실하고 오히려 예스러운 화면과 기능을 좋아하시는 분들께 훌륭한 툴이다.&#xA;레드마인을 사용하면서 기본으로 제공되지 않는 기능 중 아쉬운 기능이 Agile Kanban 기능이었다. 하지만 redmineup이라는 회사의 플러그인을 쓰면 기본적인 Kanban 기능은 쓸 수 있다.</description>
     </item>
   </channel>
 </rss>

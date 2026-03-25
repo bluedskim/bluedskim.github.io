@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Redmine on Do What You Want To Do</title>
-    <link>https://bluedskim.github.io/tags/redmine/</link>
-    <description>Recent content in Redmine on Do What You Want To Do</description>
+    <title>Redmine :: Tag :: Do What You Want To Do</title>
+    <link>https://bluedskim.github.io/tags/redmine/index.html</link>
+    <description></description>
     <generator>Hugo</generator>
     <language>ko-KR</language>
     <lastBuildDate>Sat, 12 Jun 2021 10:38:46 +0900</lastBuildDate>
     <atom:link href="https://bluedskim.github.io/tags/redmine/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>추천 Redmine Agile플러그인과 PurpleMine2 테마</title>
-      <link>https://bluedskim.github.io/posts/tech/%EC%B6%94%EC%B2%9C-redmine-agile%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8%EA%B3%BC-purplemine-2-%ED%85%8C%EB%A7%88/</link>
+      <link>https://bluedskim.github.io/posts/tech/%EC%B6%94%EC%B2%9C-redmine-agile%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8%EA%B3%BC-purplemine-2-%ED%85%8C%EB%A7%88/index.html</link>
       <pubDate>Sat, 12 Jun 2021 10:38:46 +0900</pubDate>
-      <guid>https://bluedskim.github.io/posts/tech/%EC%B6%94%EC%B2%9C-redmine-agile%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8%EA%B3%BC-purplemine-2-%ED%85%8C%EB%A7%88/</guid>
-      <description>&lt;p&gt;Redmine은 꽤 오래된 웹기반 프로젝트 관리 툴이다.&#xA;그래서 기능이나 화면이 상당히 예스럽다. 이런 기능과 UI를 좋아하는 분들도 있겠지만 현재의 유행과는 많이 떨어져 있는게 사실이다.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://bluedskim.github.io/images/%EC%9D%BC%EA%B0%90-Redmine.png&#34; alt=&#34;기본 UI&#34; title=&#34;Title here&#34;&gt;&#xA;(20세기말에 유행하던 게시판 UI를 닮았다. 아래쪽의 PurpleMine2 UI와 비교해보자)&lt;/p&gt;&#xA;&lt;p&gt;하지만 기본 기능에 충실하고 오히려 예스러운 화면과 기능을 좋아하시는 분들께 훌륭한 툴이다.&lt;/p&gt;&#xA;&lt;p&gt;레드마인을 사용하면서 기본으로 제공되지 않는 기능 중 아쉬운 기능이 Agile Kanban 기능이었다. 하지만 redmineup이라는 회사의 플러그인을 쓰면 기본적인 Kanban 기능은 쓸 수 있다.&lt;/p&gt;</description>
+      <guid>https://bluedskim.github.io/posts/tech/%EC%B6%94%EC%B2%9C-redmine-agile%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8%EA%B3%BC-purplemine-2-%ED%85%8C%EB%A7%88/index.html</guid>
+      <description>Redmine은 꽤 오래된 웹기반 프로젝트 관리 툴이다. 그래서 기능이나 화면이 상당히 예스럽다. 이런 기능과 UI를 좋아하는 분들도 있겠지만 현재의 유행과는 많이 떨어져 있는게 사실이다.&#xA;(20세기말에 유행하던 게시판 UI를 닮았다. 아래쪽의 PurpleMine2 UI와 비교해보자)&#xA;하지만 기본 기능에 충실하고 오히려 예스러운 화면과 기능을 좋아하시는 분들께 훌륭한 툴이다.&#xA;레드마인을 사용하면서 기본으로 제공되지 않는 기능 중 아쉬운 기능이 Agile Kanban 기능이었다. 하지만 redmineup이라는 회사의 플러그인을 쓰면 기본적인 Kanban 기능은 쓸 수 있다.</description>
     </item>
     <item>
       <title>우분투 command line에서 모든 레드마인 이슈를 하나의 pdf 로 내려받기</title>
-      <link>https://bluedskim.github.io/posts/tech/redminetopdffull/</link>
+      <link>https://bluedskim.github.io/posts/tech/redminetopdffull/index.html</link>
       <pubDate>Mon, 29 Jul 2019 16:49:45 +0900</pubDate>
-      <guid>https://bluedskim.github.io/posts/tech/redminetopdffull/</guid>
-      <description>&lt;p&gt;레드마인에서 공식적으로 이 기능을 지원하지는 않고 있다.&#xA;이것을 위한 3rd party 플러그인은 있는데 동작하지 않았다.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/brunoqs/pdf_export_redmine&#34;&gt;https://github.com/brunoqs/pdf_export_redmine&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Proxy Error가 발생하였는데 아마도 Apache에서 timeout이 발생한것 같았다. 레드마인 커뮤니티에서 해결방법을 찾아봤는데 원인도 정확히 밝혀지지 않은 듯 -.-&lt;/p&gt;&#xA;&lt;p&gt;그래서 이슈별로 하나씩 pdf 로 받은 다음 병합하는 방법으로 해결하였다.&lt;/p&gt;&#xA;&lt;h3 id=&#34;redmine-api-key-생성&#34;&gt;Redmine Api Key 생성&lt;/h3&gt;&#xA;&lt;p&gt;http://레드마인서버/redmine/my/api_key 에서 생성&lt;/p&gt;&#xA;&lt;h3 id=&#34;이슈-목록을-csv로-다운-받기&#34;&gt;이슈 목록을 csv로 다운 받기&lt;/h3&gt;&#xA;&lt;pre&gt;&lt;code&gt;curl --remote-name &amp;quot;http://api키:1234@레드마인서버주소/redmine/projects/프로젝트id/issues.csv&amp;quot;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h3 id=&#34;csv에서-이슈번호-추출&#34;&gt;csv에서 이슈번호 추출&lt;/h3&gt;&#xA;&lt;p&gt;JDK1.8에서 쓸 수 있는 Javascript 인터프리터 &lt;a href=&#34;https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jjs.html&#34;&gt;jjs&lt;/a&gt;가 있어서 사용해봤다.&#xA;(이런 간단한 작업을 하는데 class 컴파일까지 하는건 과한 듯)&lt;/p&gt;</description>
+      <guid>https://bluedskim.github.io/posts/tech/redminetopdffull/index.html</guid>
+      <description>레드마인에서 공식적으로 이 기능을 지원하지는 않고 있다. 이것을 위한 3rd party 플러그인은 있는데 동작하지 않았다.&#xA;https://github.com/brunoqs/pdf_export_redmine&#xA;Proxy Error가 발생하였는데 아마도 Apache에서 timeout이 발생한것 같았다. 레드마인 커뮤니티에서 해결방법을 찾아봤는데 원인도 정확히 밝혀지지 않은 듯 -.-&#xA;그래서 이슈별로 하나씩 pdf 로 받은 다음 병합하는 방법으로 해결하였다.&#xA;Redmine Api Key 생성 http://레드마인서버/redmine/my/api_key 에서 생성&#xA;이슈 목록을 csv로 다운 받기 curl --remote-name &#34;http://api키:1234@레드마인서버주소/redmine/projects/프로젝트id/issues.csv&#34; csv에서 이슈번호 추출 JDK1.8에서 쓸 수 있는 Javascript 인터프리터 jjs가 있어서 사용해봤다. (이런 간단한 작업을 하는데 class 컴파일까지 하는건 과한 듯)</description>
     </item>
     <item>
       <title>엑셀 데이터를 레드마인 테이블로 변환하는 Javascript</title>
-      <link>https://bluedskim.github.io/posts/tech/excel-to-redmine-table/</link>
+      <link>https://bluedskim.github.io/posts/tech/excel-to-redmine-table/index.html</link>
       <pubDate>Thu, 21 Mar 2019 20:38:28 +0900</pubDate>
-      <guid>https://bluedskim.github.io/posts/tech/excel-to-redmine-table/</guid>
-      <description>&lt;p&gt;레드마인에 테이블로 데이터를 보여줄 경우가 점점 많아지는데 수작업으로 하려니 너무 힘들어서 만들었다&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://jsfiddle.net/shed/pxc93nz6/&#34;&gt;https://jsfiddle.net/shed/pxc93nz6/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;엑셀에서 셀들을 복사한 후 위쪽 textarea에 붙히면 알아서 변환되고 redmine 태그가 복사되는데&#xA;첫번째 줄은 header로 인식해서 bold처리 한다&lt;/p&gt;&#xA;&lt;p&gt;엑셀(혹은 구글 시트)에서 복사하고&#xA;[![터미널 스크린샷](/images/Screenshot 2019-03-21 at 10.29.32 PM.png)](/images/Screenshot 2019-03-21 at 10.29.32 PM.png)&lt;/p&gt;&#xA;&lt;p&gt;변환한 후 redmine에 붙히면 이렇게 나온다&#xA;[![터미널 스크린샷](/images/Screenshot 2019-03-21 at 10.29.14 PM.png)](/images/Screenshot 2019-03-21 at 10.29.14 PM.png)&lt;/p&gt;</description>
+      <guid>https://bluedskim.github.io/posts/tech/excel-to-redmine-table/index.html</guid>
+      <description>레드마인에 테이블로 데이터를 보여줄 경우가 점점 많아지는데 수작업으로 하려니 너무 힘들어서 만들었다&#xA;https://jsfiddle.net/shed/pxc93nz6/&#xA;엑셀에서 셀들을 복사한 후 위쪽 textarea에 붙히면 알아서 변환되고 redmine 태그가 복사되는데 첫번째 줄은 header로 인식해서 bold처리 한다&#xA;엑셀(혹은 구글 시트)에서 복사하고 [![터미널 스크린샷](/images/Screenshot 2019-03-21 at 10.29.32 PM.png)](/images/Screenshot 2019-03-21 at 10.29.32 PM.png)&#xA;변환한 후 redmine에 붙히면 이렇게 나온다 [![터미널 스크린샷](/images/Screenshot 2019-03-21 at 10.29.14 PM.png)](/images/Screenshot 2019-03-21 at 10.29.14 PM.png)</description>
     </item>
   </channel>
 </rss>

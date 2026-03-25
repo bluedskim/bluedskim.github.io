@@ -1,0 +1,2014 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=7001&amp;path=livereload" data-no-instant defer></script>
+  
+
+  
+  
+
+
+  <meta charset="utf-8">
+
+
+  <meta name="robots" content="noindex, nofollow, noarchive">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  
+    
+      <meta name="description" content="bluedskim@gmail.com">
+    
+  
+
+
+<meta name="color-scheme" content="light dark">
+
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.152.2">
+  <title>Do What You Want | Do What You Want To Do</title>
+  <link href="//localhost:7001/" rel="canonical">
+
+
+
+
+  <link href="alternate" rel="/feed.xml" type="application/rss+xml">
+
+  
+
+
+
+
+  
+  
+    
+    
+  
+  
+
+
+
+
+
+  
+
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+
+
+  
+    <link href="/css/base.css" rel="stylesheet">
+
+    <link href="/css/syntax.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+  <nav class="u-background">
+  <div class="u-wrapper">
+    <ul class="Banner">
+      <li class="Banner-item Banner-item--title">
+        
+          <a class="Banner-link u-clickable" href="/">Do What You Want To Do</a>
+        
+      </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/categories/tech/">Tech</a>
+        </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/tags/samba/">Samba</a>
+        </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/categories/%EC%9D%8C%EC%95%85/">음악</a>
+        </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/categories/%EC%9D%BC%EC%83%81%EC%82%AC/">일상사</a>
+        </li>
+      
+        
+        
+          
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/feed.xml">RSS</a>
+        </li>
+      
+    </ul>
+  </div>
+</nav>
+
+  <main>
+    <div class="u-wrapper">
+      <div class="u-padding">
+        
+
+  
+    
+    <header class="Heading">
+  <h1 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/" rel="bookmark">Do What You Want</a>
+  </h1>
+  
+</header>
+  
+
+  
+
+
+
+<h1 id="do-what-you-want">
+  <a class="Heading-link u-clickable" href="/#do-what-you-want">Do What You Want</a>
+</h1>
+<p>잡다한 것들을 기록합니다.</p>
+
+
+  
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/tech/javadesignpattern-04.iterators/" rel="bookmark">Java 디자인 패턴-04.Iterators</a>
+  </h2>
+  
+    
+      <time datetime="2021-05-14T08:57:45&#43;09:00">May 14, 2021</time>
+    
+  
+</header>
+      
+        
+          
+            <p>(<em>Java 디자인 패턴 스터디 모집 중 : <a href="https://github.com/bluedskim/javaDesignPatterns">https://github.com/bluedskim/javaDesignPatterns</a></em>)</p>
+
+
+
+
+<h3 id="패턴-다이어그램">
+  <a class="Heading-link u-clickable" href="/posts/tech/javadesignpattern-04.iterators/#%ed%8c%a8%ed%84%b4-%eb%8b%a4%ec%9d%b4%ec%96%b4%ea%b7%b8%eb%9e%a8">패턴 다이어그램</a>
+</h3>
+<p><img src="https://refactoring.guru/images/patterns/diagrams/iterator/solution1-2x.png" alt="Iterators implement various traversal algorithms. Several iterator objects can traverse the same collection at the same time." title="Iterators implement various traversal algorithms. Several iterator objects can traverse the same collection at the same time."></p>
+<p>&ldquo;하나의 집합Collection의 모든 요소를 모두 접근하는 방법은 여러가지가 있을 수 있다&rdquo;
+(출처:<a href="https://refactoring.guru/design-patterns/iterator">https://refactoring.guru/design-patterns/iterator</a>)</p>
+
+
+
+
+<h3 id="해결하려는-문제">
+  <a class="Heading-link u-clickable" href="/posts/tech/javadesignpattern-04.iterators/#%ed%95%b4%ea%b2%b0%ed%95%98%eb%a0%a4%eb%8a%94-%eb%ac%b8%ec%a0%9c">해결하려는 문제</a>
+</h3>
+<ol>
+<li>집합collection의 각각 항목 모두를 접근할 수 있는 일관된 방법을 제공.</li>
+</ol>
+
+
+
+
+<h3 id="특징용도">
+  <a class="Heading-link u-clickable" href="/posts/tech/javadesignpattern-04.iterators/#%ed%8a%b9%ec%a7%95%ec%9a%a9%eb%8f%84">특징/용도</a>
+</h3>
+<ol>
+<li>behavioral design patterns의 하나</li>
+<li>iterator는 해당 집합의 실제 구현과는 무관하다(Information Hiding, Separation of concerns).</li>
+</ol>
+
+
+
+
+<h3 id="고려사항">
+  <a class="Heading-link u-clickable" href="/posts/tech/javadesignpattern-04.iterators/#%ea%b3%a0%eb%a0%a4%ec%82%ac%ed%95%ad">고려사항</a>
+</h3>
+<ol>
+<li>Java 1.2 부터 Iterable, Iterator 인터페이스가 포함되어 있으므로 직접 만들 필요가 없다.</li>
+</ol>
+
+
+
+
+<h3 id="클래스-다이어그램">
+  <a class="Heading-link u-clickable" href="/posts/tech/javadesignpattern-04.iterators/#%ed%81%b4%eb%9e%98%ec%8a%a4-%eb%8b%a4%ec%9d%b4%ec%96%b4%ea%b7%b8%eb%9e%a8">클래스 다이어그램</a>
+</h3>
+<p><img src="https://www.plantuml.com/plantuml/png/ZPAnIWD148Rhx5CC0J4fSh7M61GDn29gOISMUxUJtEhjRhYT4uCA2kaKn59GQqi56ryfdk_WdcSk5q5ngzcP_V_vPjWrIpocH4MmHHXpCZ5yN3zzZ5zhaxUBzvkxTFnGPooK0W7La4QWKFaOs_aKXKPOnaXIX7yPXSW5nX0I3UroipcG52Q-5nZLzAC4XJsIgdd8Z_acMZdGkvoSbRQiRumB87syJSSlwTNzvFaI5WGdh5L7xdYzdYV48YnskyjALHqlaze9-ZoOqRGwRJXbbM7YHp80tvW8kOQGssqyeLfzfIXrGEUP2ZjdB8YujR0UntnKpFKlcnt_40EQUh5AVjy_09vvkOH31Aa5di0gBAralNv0-n6szihGtBSKSsUQhSXBI4PUCPrxAB_ZhDqy-ORHnAN6CdgXpC7Ayfbw-cWFBMNQOoD5Fa2vaYkcpD0wQpH-z6N5xcR5QOgnkIwDHhiO_vVAbsWDjN3VzXC0" alt="Iterator 패턴(김동석)" title="Iterator 패턴(김동석)"></p>
+
+
+
+
+<h3 id="소스">
+  <a class="Heading-link u-clickable" href="/posts/tech/javadesignpattern-04.iterators/#%ec%86%8c%ec%8a%a4">소스</a>
+</h3>
+<ol>
+<li>target
+<ul>
+<li>MyIterable.java : 컨테이너가 구현해야하는 인터페이스
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nn">net.dskim.desingpattern.iterator</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Iterator</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">interface</span> <span class="nc">MyIterable</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">Iterable</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="n">Iterator</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;</span><span class="w"> </span><span class="nf">reverseIterator</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>ArrayContainer.java : 배열을 가지고 있는 객체
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nn">net.dskim.desingpattern.iterator</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Iterator</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="cm">/***
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * 배열을 위한 컨테이너
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">ArrayContainer</span><span class="w"> </span><span class="kd">implements</span><span class="w"> </span><span class="n">MyIterable</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">Iterator</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;</span><span class="w"> </span><span class="n">arrayIterator</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">Iterator</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;</span><span class="w"> </span><span class="n">reverseArrayIterator</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="nf">ArrayContainer</span><span class="p">(</span><span class="n">Object</span><span class="o">[]</span><span class="w"> </span><span class="n">array</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">arrayIterator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayIterator</span><span class="p">(</span><span class="n">array</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">reverseArrayIterator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ReverseArrayIterator</span><span class="p">(</span><span class="n">array</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="nd">@Override</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="n">Iterator</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;</span><span class="w"> </span><span class="nf">iterator</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="k">return</span><span class="w"> </span><span class="n">arrayIterator</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="nd">@Override</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="n">Iterator</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;</span><span class="w"> </span><span class="nf">reverseIterator</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="k">return</span><span class="w"> </span><span class="n">reverseArrayIterator</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>ArrayIterator.java : 배열학목을 순서대로 접근하기 위한 iterator
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nn">net.dskim.desingpattern.iterator</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Iterator</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.NoSuchElementException</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">lombok.extern.slf4j.Slf4j</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="cm">/***
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * 배열을 위한 iterator
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nd">@Slf4j</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">ArrayIterator</span><span class="w"> </span><span class="kd">implements</span><span class="w"> </span><span class="n">Iterator</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;</span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">Object</span><span class="o">[]</span><span class="w"> </span><span class="n">array</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">index</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">0</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="nf">ArrayIterator</span><span class="p">(</span><span class="n">Object</span><span class="o">[]</span><span class="w"> </span><span class="n">array</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="k">this</span><span class="p">.</span><span class="na">array</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">array</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="nd">@Override</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="nf">hasNext</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="k">return</span><span class="w"> </span><span class="n">index</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">array</span><span class="p">.</span><span class="na">length</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">1</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="nd">@Override</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="n">Object</span><span class="w"> </span><span class="nf">next</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">hasNext</span><span class="p">())</span><span class="w"> </span><span class="k">throw</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">NoSuchElementException</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="k">return</span><span class="w"> </span><span class="n">array</span><span class="o">[</span><span class="n">index</span><span class="o">++]</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>ReverseArrayIterator.java : 배열학목을 역순으로 접근하기 위한 iterator
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nn">net.dskim.desingpattern.iterator</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Iterator</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.NoSuchElementException</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="cm">/***
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * 배열 index가 높은 항목에서 낮은 항목으로 탐색하는 iterator
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">ReverseArrayIterator</span><span class="w"> </span><span class="kd">implements</span><span class="w"> </span><span class="n">Iterator</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;</span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">Object</span><span class="o">[]</span><span class="w"> </span><span class="n">reverseArray</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">nextIndex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">0</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="nf">ReverseArrayIterator</span><span class="p">(</span><span class="n">Object</span><span class="o">[]</span><span class="w"> </span><span class="n">originalArray</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">reverseArray</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Object</span><span class="o">[</span><span class="n">originalArray</span><span class="p">.</span><span class="na">length</span><span class="o">]</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">reverseArrayIndex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">0</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">reverseArrayIndex</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">reverseArray</span><span class="p">.</span><span class="na">length</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">reverseArrayIndex</span><span class="o">++</span><span class="p">){</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">			</span><span class="n">reverseArray</span><span class="o">[</span><span class="n">reverseArrayIndex</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">originalArray</span><span class="o">[</span><span class="n">originalArray</span><span class="p">.</span><span class="na">length</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">reverseArrayIndex</span><span class="o">]</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="nd">@Override</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="nf">hasNext</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="k">return</span><span class="w"> </span><span class="n">nextIndex</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">reverseArray</span><span class="p">.</span><span class="na">length</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">1</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="nd">@Override</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="n">Object</span><span class="w"> </span><span class="nf">next</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">hasNext</span><span class="p">())</span><span class="w"> </span><span class="k">throw</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">NoSuchElementException</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="k">return</span><span class="w"> </span><span class="n">reverseArray</span><span class="o">[</span><span class="n">nextIndex</span><span class="o">++]</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+<li>client : IteratorTest.java
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nn">net.dskim.desingpattern.iterator</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import static</span><span class="w"> </span><span class="nn">org.junit.jupiter.api.Assertions.assertEquals</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.ArrayList</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Iterator</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.List</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">org.junit.jupiter.api.Test</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">lombok.extern.slf4j.Slf4j</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nd">@Slf4j</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">IteratorTest</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">	 * java.util.List의 iterator테스트
+</span></span></span><span class="line"><span class="cl"><span class="cm">	 */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="nd">@Test</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kt">void</span><span class="w"> </span><span class="nf">listIteratorTest</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">names</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&#34;Ajay&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">names</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&#34;Vijay&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">names</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&#34;Martin&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">names</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&#34;Racheal&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">names</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&#34;Kim&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">Iterator</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">namesIterator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">names</span><span class="p">.</span><span class="na">iterator</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">0</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">namesIterator</span><span class="p">.</span><span class="na">hasNext</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">			</span><span class="n">assertEquals</span><span class="p">(</span><span class="n">names</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">i</span><span class="o">++</span><span class="p">),</span><span class="w"> </span><span class="n">namesIterator</span><span class="p">.</span><span class="na">next</span><span class="p">());</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="nd">@Test</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kt">void</span><span class="w"> </span><span class="nf">arrayIteratorTest</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">			</span><span class="s">&#34;Ajay&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">			</span><span class="p">,</span><span class="s">&#34;Vijay&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">			</span><span class="p">,</span><span class="s">&#34;Martin&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">			</span><span class="p">,</span><span class="s">&#34;Racheal&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">			</span><span class="p">,</span><span class="s">&#34;Kim&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="p">};</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">MyIterable</span><span class="w"> </span><span class="n">arrayContainer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayContainer</span><span class="p">(</span><span class="n">names</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">0</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">Iterator</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;</span><span class="w"> </span><span class="n">arrayIterator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">arrayContainer</span><span class="p">.</span><span class="na">iterator</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">arrayIterator</span><span class="p">.</span><span class="na">hasNext</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">			</span><span class="n">assertEquals</span><span class="p">(</span><span class="n">names</span><span class="o">[</span><span class="n">i</span><span class="o">++]</span><span class="p">,</span><span class="w"> </span><span class="n">arrayIterator</span><span class="p">.</span><span class="na">next</span><span class="p">());</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">0</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">Iterator</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;</span><span class="w"> </span><span class="n">reverseArrayIterator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">arrayContainer</span><span class="p">.</span><span class="na">reverseIterator</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">reverseArrayIterator</span><span class="p">.</span><span class="na">hasNext</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">			</span><span class="n">assertEquals</span><span class="p">(</span><span class="n">names</span><span class="o">[</span><span class="n">names</span><span class="p">.</span><span class="na">length</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="p">(</span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="o">]</span><span class="p">,</span><span class="w"> </span><span class="n">reverseArrayIterator</span><span class="p">.</span><span class="na">next</span><span class="p">());</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">	
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+
+
+
+
+<h3 id="참고">
+  <a class="Heading-link u-clickable" href="/posts/tech/javadesignpattern-04.iterators/#%ec%b0%b8%ea%b3%a0">참고</a>
+</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Iterator_pattern">wikipedia : Iterator pattern</a></li>
+<li><a href="https://www.tutorialspoint.com/design_pattern/iterator_pattern.htm">tutorialspoint : Design Patterns - Iterator Pattern</a></li>
+<li><a href="https://dzone.com/articles/iterator-design-pattern-in-java">dzone : Iterator Design Pattern In Java</a></li>
+<li><a href="https://refactoring.guru/design-patterns/iterator">refactoring.guru : Design Patterns / Behavioral Patterns / Iterator</a></li>
+</ul>
+
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/tech/" rel="tag">Tech</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/java/" rel="tag">Java</a>
+            </li>
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/design-pattern/" rel="tag">Design Pattern</a>
+            </li>
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/tech/javadesignpattern-03.command/" rel="bookmark">Java 디자인 패턴-03.Command</a>
+  </h2>
+  
+    
+      <time datetime="2021-05-12T00:48:24&#43;09:00">May 12, 2021</time>
+    
+  
+</header>
+      
+        
+          
+            <p>(<em>Java 디자인 패턴 스터디 모집 중 : <a href="https://github.com/bluedskim/javaDesignPatterns">https://github.com/bluedskim/javaDesignPatterns</a></em>)</p>
+<p><img src="https://refactoring.guru/images/patterns/content/command/command-comic-1-2x.png?id=47b3c00b2cfbda7157a1" alt="Command Pattern : Real-World Analogy" title="Command Pattern : Real-World Analogy">
+(<a href="https://refactoring.guru/design-patterns/command">출처:https://refactoring.guru/design-patterns/command</a>)</p>
+
+
+
+
+<h3 id="해결하려는-문제">
+  <a class="Heading-link u-clickable" href="/posts/tech/javadesignpattern-03.command/#%ed%95%b4%ea%b2%b0%ed%95%98%eb%a0%a4%eb%8a%94-%eb%ac%b8%ec%a0%9c">해결하려는 문제</a>
+</h3>
+<ol>
+<li>view(presentation)과 비즈니스 로직의 직접 연관을 제거(행위가 소스에 하드코딩되어 있다면 런타임에 추가/변경이 불가능)</li>
+</ol>
+
+
+
+
+<h3 id="용도목적">
+  <a class="Heading-link u-clickable" href="/posts/tech/javadesignpattern-03.command/#%ec%9a%a9%eb%8f%84%eb%aa%a9%ec%a0%81">용도/목적</a>
+</h3>
+<ol>
+<li>조건문이 많은 복잡한 로직을 간단하게</li>
+<li>invoker와 receiver 사이에 command를 두어 직접 연관을 제거하여 새로운 command가 추가되더라도 invoker를 수정할 필요가 없음</li>
+</ol>
+
+
+
+
+<h3 id="특징">
+  <a class="Heading-link u-clickable" href="/posts/tech/javadesignpattern-03.command/#%ed%8a%b9%ec%a7%95">특징</a>
+</h3>
+<ol>
+<li>행위behavioral 패턴</li>
+<li>눈에 보이지 않는 무형의 개념(행위)도 객체화 할 수 있다.</li>
+</ol>
+
+
+
+
+<h3 id="고려사항">
+  <a class="Heading-link u-clickable" href="/posts/tech/javadesignpattern-03.command/#%ea%b3%a0%eb%a0%a4%ec%82%ac%ed%95%ad">고려사항</a>
+</h3>
+<ol>
+<li>command용 interface(TextFileOperation.java)는 @FunctionalInterface로 할 수 있다.</li>
+</ol>
+
+
+
+
+<h3 id="클래스-다이어그램">
+  <a class="Heading-link u-clickable" href="/posts/tech/javadesignpattern-03.command/#%ed%81%b4%eb%9e%98%ec%8a%a4-%eb%8b%a4%ec%9d%b4%ec%96%b4%ea%b7%b8%eb%9e%a8">클래스 다이어그램</a>
+</h3>
+<p><img src="https://www.plantuml.com/plantuml/png/bLFFIyCm63sRlo8CPErXxNs83Fp1BaDXWkUq-RP6cwGqNyU62WgxAOX7GJrxLF3YlpIx_y4uPzri7PfJykMzxxsyZxGCiXGp6TCjBILJd7O08ytfzEfnEdvn9g_dRzUt-VZU9IGI72Z814TKWWmWDSkb3vuX10N6KBGhzuc0SKXfX9YOfk_t1KPPu8LQ-a6S0JV7Glf7RC2smOY-scU8a2f3UbhR3SqVRlBnStvvDtcweEkS8JYraLrUf-DnNgVrThifPStQ3MDc33s08UuAQ-Y4h7Kn5QfFTGBASOkZOGEmnpD2XB8AFHP2mTfB86Kej5gWmn323EUKJn4BKvMK90jY4LRVEuKrd6_SLHfTQtELHkNzFpLA_9qPHgU7TaXV4oqbKLRxzeS_ApErCcxZrFEgO_eDNFbUGgf7qMXi5eyZrKakGSYVabYaB5XeWUBsHxq3" alt="Command Method 패턴(김동석)" title="Command Method 패턴(김동석)"></p>
+
+
+
+
+<h3 id="소스">
+  <a class="Heading-link u-clickable" href="/posts/tech/javadesignpattern-03.command/#%ec%86%8c%ec%8a%a4">소스</a>
+</h3>
+<ol>
+<li>
+<p>client : command를 초기화하고 invoker를 호출</p>
+<ul>
+<li>TextFileOperationExecutorWithoutCommandTest.java : command를 사용하지 않은 샘플 테스트용
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nn">net.dskim.desingpattern.command</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import static</span><span class="w"> </span><span class="nn">org.junit.jupiter.api.Assertions.assertEquals</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">org.junit.jupiter.api.Test</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">lombok.extern.slf4j.Slf4j</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nd">@Slf4j</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">TextFileOperationExecutorWithoutCommandTest</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="nd">@Test</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">executeOperationTest</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">TextFileOperationExceutorWithoutCommand</span><span class="w"> </span><span class="n">textFileOperationExecutor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">TextFileOperationExceutorWithoutCommand</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">String</span><span class="w"> </span><span class="n">openTextFileResult</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">textFileOperationExecutor</span><span class="p">.</span><span class="na">execute</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">TextFile</span><span class="p">(</span><span class="s">&#34;file1.txt&#34;</span><span class="p">),</span><span class="w"> </span><span class="s">&#34;open&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">log</span><span class="p">.</span><span class="na">info</span><span class="p">(</span><span class="s">&#34;openTextFileResult={}&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">openTextFileResult</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">assertEquals</span><span class="p">(</span><span class="s">&#34;Opening file file1.txt&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">openTextFileResult</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">String</span><span class="w"> </span><span class="n">saveTextFileResult</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">textFileOperationExecutor</span><span class="p">.</span><span class="na">execute</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">TextFile</span><span class="p">(</span><span class="s">&#34;file2.txt&#34;</span><span class="p">),</span><span class="w"> </span><span class="s">&#34;save&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">log</span><span class="p">.</span><span class="na">info</span><span class="p">(</span><span class="s">&#34;saveTextFileResult={}&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">saveTextFileResult</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">assertEquals</span><span class="p">(</span><span class="s">&#34;Saving file file2.txt&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">saveTextFileResult</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>TextFileOperationExecutorWithCommandTest.java : command를 사용한 샘플 테스트용
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nn">net.dskim.desingpattern.command</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import static</span><span class="w"> </span><span class="nn">org.junit.jupiter.api.Assertions.assertEquals</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">org.junit.jupiter.api.Test</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">lombok.extern.slf4j.Slf4j</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nd">@Slf4j</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">TextFileOperationExecutorWithCommandTest</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="nd">@Test</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">executeOperationTest</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">TextFileOperationExecutorWithCommand</span><span class="w"> </span><span class="n">textFileOperationExecutor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">TextFileOperationExecutorWithCommand</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">String</span><span class="w"> </span><span class="n">openTextFileOperationResult</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">textFileOperationExecutor</span><span class="p">.</span><span class="na">executeOperation</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">OpenTextFileOperation</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">TextFile</span><span class="p">(</span><span class="s">&#34;file1.txt&#34;</span><span class="p">)));</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">log</span><span class="p">.</span><span class="na">info</span><span class="p">(</span><span class="s">&#34;openTextFileOperationResult={}&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">openTextFileOperationResult</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">assertEquals</span><span class="p">(</span><span class="s">&#34;Opening file file1.txt&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">openTextFileOperationResult</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">String</span><span class="w"> </span><span class="n">saveTextFileOperation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">textFileOperationExecutor</span><span class="p">.</span><span class="na">executeOperation</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">SaveTextFileOperation</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">TextFile</span><span class="p">(</span><span class="s">&#34;file2.txt&#34;</span><span class="p">)));</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">log</span><span class="p">.</span><span class="na">info</span><span class="p">(</span><span class="s">&#34;saveTextFileOperation={}&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">saveTextFileOperation</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">assertEquals</span><span class="p">(</span><span class="s">&#34;Saving file file2.txt&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">saveTextFileOperation</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">String</span><span class="w"> </span><span class="n">udateTextFileOperation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">textFileOperationExecutor</span><span class="p">.</span><span class="na">executeOperation</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">UpdateTextFileOperation</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">TextFile</span><span class="p">(</span><span class="s">&#34;file2.txt&#34;</span><span class="p">)));</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">log</span><span class="p">.</span><span class="na">info</span><span class="p">(</span><span class="s">&#34;udateTextFileOperation={}&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">udateTextFileOperation</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">assertEquals</span><span class="p">(</span><span class="s">&#34;Updating file file2.txt&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">udateTextFileOperation</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+<li>
+<p>invoker : command를 받아 interface에 정의된 메소드를 호출하고 필요 시 이력 저장용 list에 저장</p>
+<ul>
+<li>TextFileOperationExecutorWithCommand.java
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nn">net.dskim.desingpattern.command</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.ArrayList</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.List</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * command 패턴 샘플 invoker 클래스
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * 새로운 처리가 추가 되더라도 이 소스를 수정할 필요 없음
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">TextFileOperationExecutorWithCommand</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">	 * 실행 이력 저장용. 이 샘플에서는 불필요
+</span></span></span><span class="line"><span class="cl"><span class="cm">	 */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">private</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">List</span><span class="o">&lt;</span><span class="n">TextFileOperation</span><span class="o">&gt;</span><span class="w"> </span><span class="n">textFileOperations</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">executeOperation</span><span class="p">(</span><span class="n">TextFileOperation</span><span class="w"> </span><span class="n">textFileOperation</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">textFileOperations</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">textFileOperation</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="k">return</span><span class="w"> </span><span class="n">textFileOperation</span><span class="p">.</span><span class="na">execute</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+<li>
+<p>receiver : 실제 로직이 정의된 클래스</p>
+<ul>
+<li>TextFile.java
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nn">net.dskim.desingpattern.command</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">TextFile</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">private</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="nf">TextFile</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="k">this</span><span class="p">.</span><span class="na">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">name</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">open</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="k">return</span><span class="w"> </span><span class="s">&#34;Opening file &#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">name</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">save</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="k">return</span><span class="w"> </span><span class="s">&#34;Saving file &#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">name</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">update</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="k">return</span><span class="w"> </span><span class="s">&#34;Updating file &#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">name</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+<li>
+<p>command : command 객체</p>
+<ul>
+<li>TextFileOperation.java : command용 interface
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nn">net.dskim.desingpattern.command</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * command용 interface
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nd">@FunctionalInterface</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">interface</span> <span class="nc">TextFileOperation</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">String</span><span class="w"> </span><span class="nf">execute</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>OpenTextFileOperation.java : 파일 open하기 command
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nn">net.dskim.desingpattern.command</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * 파일열기 command
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">OpenTextFileOperation</span><span class="w"> </span><span class="kd">implements</span><span class="w"> </span><span class="n">TextFileOperation</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">private</span><span class="w"> </span><span class="n">TextFile</span><span class="w"> </span><span class="n">textFile</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="nf">OpenTextFileOperation</span><span class="p">(</span><span class="n">TextFile</span><span class="w"> </span><span class="n">textFile</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="k">this</span><span class="p">.</span><span class="na">textFile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">textFile</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="nd">@Override</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">execute</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="k">return</span><span class="w"> </span><span class="n">textFile</span><span class="p">.</span><span class="na">open</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>SaveTextFileOperation.java : 파일 save하기 command
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nn">net.dskim.desingpattern.command</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * 파일저장 command
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">SaveTextFileOperation</span><span class="w"> </span><span class="kd">implements</span><span class="w"> </span><span class="n">TextFileOperation</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">private</span><span class="w"> </span><span class="n">TextFile</span><span class="w"> </span><span class="n">textFile</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="nf">SaveTextFileOperation</span><span class="p">(</span><span class="n">TextFile</span><span class="w"> </span><span class="n">textFile</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="k">this</span><span class="p">.</span><span class="na">textFile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">textFile</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="nd">@Override</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">execute</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="k">return</span><span class="w"> </span><span class="n">textFile</span><span class="p">.</span><span class="na">save</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+</ol>
+
+
+
+
+<h3 id="참고">
+  <a class="Heading-link u-clickable" href="/posts/tech/javadesignpattern-03.command/#%ec%b0%b8%ea%b3%a0">참고</a>
+</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Command_pattern">wikipedia : Command pattern</a></li>
+<li><a href="https://www.baeldung.com/java-command-pattern">baeldung : The Command Pattern in Java</a></li>
+<li><a href="https://alvinalexander.com/java/java-command-design-pattern-in-java-examples/">Alvin Alexander : A Java Command Design Pattern example</a>
+<ul>
+<li><a href="https://alvinalexander.com/java/java-action-abstractaction-actionlistener">A Java Action, ActionListener, and AbstractAction example</a></li>
+</ul>
+</li>
+</ul>
+
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/tech/" rel="tag">Tech</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/java/" rel="tag">Java</a>
+            </li>
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/design-pattern/" rel="tag">Design Pattern</a>
+            </li>
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/tech/javadesignpattern-factory/" rel="bookmark">Java 디자인 패턴-02.Factory Method</a>
+  </h2>
+  
+    
+      <time datetime="2021-05-11T00:00:00&#43;09:00">May 11, 2021</time>
+    
+  
+</header>
+      
+        
+          
+            <p>(<em>Java 디자인 패턴 스터디 모집 중 : <a href="https://github.com/bluedskim/javaDesignPatterns">https://github.com/bluedskim/javaDesignPatterns</a></em>)</p>
+<p><img src="https://dotnettutorials.net/wp-content/uploads/2018/11/word-image-103.png" alt="Factory design Pattern in Java – with examples" title="Factory design Pattern in Java – with examples"></p>
+<p>(출처:<a href="https://dotnettutorials.net/lesson/abstract-factory-design-pattern-csharp/">Abstract Factory Design Pattern in C#</a>)</p>
+
+
+
+
+<h3 id="해결하려는-문제">
+  <a class="Heading-link u-clickable" href="/posts/tech/javadesignpattern-factory/#%ed%95%b4%ea%b2%b0%ed%95%98%eb%a0%a4%eb%8a%94-%eb%ac%b8%ec%a0%9c">해결하려는 문제</a>
+</h3>
+<ol>
+<li>생성자를 직접 호출해서 객체를 생성하는 경우 해당 객체와 클라이언트가 강하게 결합되게 되어 확정성이 떨어진다.</li>
+</ol>
+
+
+
+
+<h3 id="개요">
+  <a class="Heading-link u-clickable" href="/posts/tech/javadesignpattern-factory/#%ea%b0%9c%ec%9a%94">개요</a>
+</h3>
+<ul>
+<li>생성자를 호출하지 않고 생성하기 위한 패턴(생성될 클래스를 지정하지 않는다)</li>
+<li>해당 클래스를 사용하는 클래스에 하드코딩을 없앨 수 있다.</li>
+</ul>
+
+
+
+
+<h3 id="클래스-다이어그램">
+  <a class="Heading-link u-clickable" href="/posts/tech/javadesignpattern-factory/#%ed%81%b4%eb%9e%98%ec%8a%a4-%eb%8b%a4%ec%9d%b4%ec%96%b4%ea%b7%b8%eb%9e%a8">클래스 다이어그램</a>
+</h3>
+<p><img src="https://www.plantuml.com/plantuml/png/XPBFIm915CVFpL_n4CBre7kN2A48BqAa_y2uyzpTsb_Dl2sM2WhtPc0T10FrtB508lybtVqVsbKplTWmXpTVFjzvN-PDJH6N5BeEd763V1b10ydo1QJFxsayrUQpnqN_BOd79SOiMo2W6r04Bhfjb6fNodsACRB9mV-liv0Bb60H1QggwwPDLjYk6BwhjvqGXRgoNVsIt_1JLBRfdNCYb9vY7T_F2aWchqdycVH6yuydE1ISK2j4sQeq6XKXYb2irwkkMyXIsrx6TxY1qBHuW7373feaRSy48VcjLc8FZ1aELmfER6au-u0BD8XxvbwcUHrokHV8K_o-JeujKvb8oq9RkrH-Q4K1BfqhvkY-N5w7t5OsgRR5LGp6rerMKsYX8YYNZtSpLF-QB_fnEXpakpigiHrgOyluT31Tz6QmeY7fZlDHJ5uW7NudNoDMGqzaF-e7" alt="Factory Method 패턴(김동석)" title="Factory Method 패턴(김동석)"></p>
+
+
+
+
+<h3 id="소스">
+  <a class="Heading-link u-clickable" href="/posts/tech/javadesignpattern-factory/#%ec%86%8c%ec%8a%a4">소스</a>
+</h3>
+<ul>
+<li>Shape.java : 도형(인터페이스)
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nn">net.dskim.desingpattern.factorymethod</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">interface</span> <span class="nc">Shape</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">String</span><span class="w"> </span><span class="nf">draw</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>도형 객체들 : Shape.java 를 implement
+<ul>
+<li>Rectangle.java : 사각형
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nn">net.dskim.desingpattern.factorymethod</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Rectangle</span><span class="w"> </span><span class="kd">implements</span><span class="w"> </span><span class="n">Shape</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="nd">@Override</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">draw</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="k">return</span><span class="w"> </span><span class="s">&#34;draw Rectangle&#34;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>Circle.java : 원
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nn">net.dskim.desingpattern.factorymethod</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Circle</span><span class="w"> </span><span class="kd">implements</span><span class="w"> </span><span class="n">Shape</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="nd">@Override</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">draw</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="k">return</span><span class="w"> </span><span class="s">&#34;draw Circle&#34;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>Square.java : 정사각형
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nn">net.dskim.desingpattern.factorymethod</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Square</span><span class="w"> </span><span class="kd">implements</span><span class="w"> </span><span class="n">Shape</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="nd">@Override</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">draw</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="k">return</span><span class="w"> </span><span class="s">&#34;draw Square&#34;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+<li>ShapeFactory.java : 도형 팩토리(Virtual Constructor)
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nn">net.dskim.desingpattern.factorymethod</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">ShapeFactory</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="c1">// use getShape method to get object of type shape</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="n">Shape</span><span class="w"> </span><span class="nf">getShape</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">shapeType</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">shapeType</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">			</span><span class="k">return</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">shapeType</span><span class="p">.</span><span class="na">equalsIgnoreCase</span><span class="p">(</span><span class="s">&#34;CIRCLE&#34;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">			</span><span class="k">return</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Circle</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">shapeType</span><span class="p">.</span><span class="na">equalsIgnoreCase</span><span class="p">(</span><span class="s">&#34;RECTANGLE&#34;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">			</span><span class="k">return</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Rectangle</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">shapeType</span><span class="p">.</span><span class="na">equalsIgnoreCase</span><span class="p">(</span><span class="s">&#34;SQUARE&#34;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">			</span><span class="k">return</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Square</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="k">return</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>클라이언트 : FactoryMethodTest.java
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nn">net.dskim.desingpattern.factorymethod</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import static</span><span class="w"> </span><span class="nn">org.junit.jupiter.api.Assertions.assertEquals</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">org.junit.jupiter.api.Test</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">lombok.extern.slf4j.Slf4j</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nd">@Slf4j</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">FactoryMethodTest</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="nd">@Test</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">decoratorTest</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">ShapeFactory</span><span class="w"> </span><span class="n">shapeFactory</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ShapeFactory</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="c1">// get an object of Circle and call its draw method.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">Shape</span><span class="w"> </span><span class="n">shape1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">shapeFactory</span><span class="p">.</span><span class="na">getShape</span><span class="p">(</span><span class="s">&#34;CIRCLE&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="c1">// call draw method of Circle</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">String</span><span class="w"> </span><span class="n">drawResult</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">shape1</span><span class="p">.</span><span class="na">draw</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">log</span><span class="p">.</span><span class="na">info</span><span class="p">(</span><span class="s">&#34;className={}, drawResult={}&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">shape1</span><span class="p">.</span><span class="na">getClass</span><span class="p">().</span><span class="na">getSimpleName</span><span class="p">(),</span><span class="w"> </span><span class="n">drawResult</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">assertEquals</span><span class="p">(</span><span class="s">&#34;draw Circle&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">drawResult</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="c1">// get an object of Rectangle and call its draw method.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">Shape</span><span class="w"> </span><span class="n">shape2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">shapeFactory</span><span class="p">.</span><span class="na">getShape</span><span class="p">(</span><span class="s">&#34;RECTANGLE&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="c1">// call draw method of Rectangle</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">drawResult</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">shape2</span><span class="p">.</span><span class="na">draw</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">log</span><span class="p">.</span><span class="na">info</span><span class="p">(</span><span class="s">&#34;className={}, drawResult={}&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">shape2</span><span class="p">.</span><span class="na">getClass</span><span class="p">().</span><span class="na">getSimpleName</span><span class="p">(),</span><span class="w"> </span><span class="n">drawResult</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">assertEquals</span><span class="p">(</span><span class="s">&#34;draw Rectangle&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">drawResult</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="c1">// get an object of Square and call its draw method.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">Shape</span><span class="w"> </span><span class="n">shape3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">shapeFactory</span><span class="p">.</span><span class="na">getShape</span><span class="p">(</span><span class="s">&#34;SQUARE&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="c1">// call draw method of square</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">drawResult</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">shape3</span><span class="p">.</span><span class="na">draw</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">log</span><span class="p">.</span><span class="na">info</span><span class="p">(</span><span class="s">&#34;className={}, drawResult={}&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">shape3</span><span class="p">.</span><span class="na">getClass</span><span class="p">().</span><span class="na">getSimpleName</span><span class="p">(),</span><span class="w"> </span><span class="n">drawResult</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">assertEquals</span><span class="p">(</span><span class="s">&#34;draw Square&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">drawResult</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+
+
+
+
+<h3 id="참고">
+  <a class="Heading-link u-clickable" href="/posts/tech/javadesignpattern-factory/#%ec%b0%b8%ea%b3%a0">참고</a>
+</h3>
+<ul>
+<li><a href="https://refactoring.guru/design-patterns/factory-method">refactoring.guru : Factory Method</a></li>
+<li><a href="https://www.tutorialspoint.com/design_pattern/factory_pattern.htm">tutorialspoint : Design Pattern - Factory Pattern</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Factory_method_pattern#Java">wikipedia : Factory method pattern</a></li>
+<li><a href="https://www.tutorialspoint.com/design_pattern/factory_pattern.htm">baeldung : Introduction to Creational Design Patterns</a></li>
+</ul>
+
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/tech/" rel="tag">Tech</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/java/" rel="tag">Java</a>
+            </li>
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/design-pattern/" rel="tag">Design Pattern</a>
+            </li>
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/tech/javadesignpattern-singleton/" rel="bookmark">Java 디자인 패턴-01.Singleton</a>
+  </h2>
+  
+    
+      <time datetime="2021-05-07T12:13:37&#43;09:00">May 7, 2021</time>
+    
+  
+</header>
+      
+        
+          
+            <p>(<em>Java 디자인 패턴 스터디 모집 중 : <a href="https://github.com/bluedskim/javaDesignPatterns">https://github.com/bluedskim/javaDesignPatterns</a></em>)</p>
+<p><img src="https://refactoring.guru/images/patterns/content/singleton/singleton-comic-1-en-2x.png?id=05678e879d13f7f6a377" alt="singleton 일러스트" title="singleton 일러스트">
+(출처 : <a href="https://refactoring.guru/design-patterns/singleton">refactoring.guru : Singleton pattern</a>)</p>
+
+
+
+
+<h3 id="해결하려는-문제">
+  <a class="Heading-link u-clickable" href="/posts/tech/javadesignpattern-singleton/#%ed%95%b4%ea%b2%b0%ed%95%98%eb%a0%a4%eb%8a%94-%eb%ac%b8%ec%a0%9c">해결하려는 문제</a>
+</h3>
+<ol>
+<li>공유된 자원은 대체로 한정적이다. 이 자원을 무분별하게 사용하는 경우 쉽게 고갈될 수 있다.</li>
+</ol>
+
+
+
+
+<h3 id="용도">
+  <a class="Heading-link u-clickable" href="/posts/tech/javadesignpattern-singleton/#%ec%9a%a9%eb%8f%84">용도</a>
+</h3>
+<ol>
+<li>어플리케이션을 통틀어 한 개의 인스턴스만 필요할 때</li>
+<li>그 한 개의 인스턴스를 쉽게 접근하고자 할 때</li>
+<li>어플리케이션의 전체 영역에서 사용할 수 있는 전역변수가 필요할 때</li>
+</ol>
+
+
+
+
+<h3 id="특징">
+  <a class="Heading-link u-clickable" href="/posts/tech/javadesignpattern-singleton/#%ed%8a%b9%ec%a7%95">특징</a>
+</h3>
+<ol>
+<li>해당 클래스의 생성자는 직접 호출할 수 없음</li>
+<li>대신 해당 객체를 반환하는 public static 메소드를 만든다</li>
+</ol>
+
+
+
+
+<h3 id="고려사항">
+  <a class="Heading-link u-clickable" href="/posts/tech/javadesignpattern-singleton/#%ea%b3%a0%eb%a0%a4%ec%82%ac%ed%95%ad">고려사항</a>
+</h3>
+<ol>
+<li>객체지향 설계원칙에 위배
+<ul>
+<li>singleton 클래스는 상속 불가</li>
+</ul>
+</li>
+<li>&ldquo;No control over creation&rdquo;</li>
+<li>singleton 클래스에 dependency injection 불가</li>
+<li>spring bean은 기본적으로 singleton으로 동작한다(<a href="https://www.baeldung.com/spring-bean-scopes">https://www.baeldung.com/spring-bean-scopes</a>)</li>
+</ol>
+
+
+
+
+<h3 id="클래스-다이어그램">
+  <a class="Heading-link u-clickable" href="/posts/tech/javadesignpattern-singleton/#%ed%81%b4%eb%9e%98%ec%8a%a4-%eb%8b%a4%ec%9d%b4%ec%96%b4%ea%b7%b8%eb%9e%a8">클래스 다이어그램</a>
+</h3>
+<p><img src="https://www.plantuml.com/plantuml/png/VP71IiD048RFxbCC1MbwQ7FFGGhnK0y1GLzWancJrUnkoKuAHGI5tXJ4ew2UFIfuyPNQz1tSscfZ3yvfvly_vbzcXuvbnRKkuKIPl2Is1fPthylPHp3_l5xSFpQpvvuGXK82qcEUWYQTKkN-IbnOT4AmufB-tLIGHAgWO1wxA0npnKMT3ZAhmxIi2Ts5qk6vdCX3SYetnvAPAkF4cRM-WURbePczDxTFyxSRs4V957IclWP9Ca3iGdSqYhJk-0TdfNGEOgiCN8gzSQKc7WPb63AlnROsl9Nz3LXbQrePFvcCjkvA3df-hjFIKsqu9pxQy2rYbUAT-2UePKsiGf28YQreP--tXOHrnXldIeZVKvwIO-Zt3zQvqKxoa0pwF_m2" alt="Singleton 패턴(김동석)" title="Singleton 패턴(김동석)"></p>
+
+
+
+
+<h3 id="소스">
+  <a class="Heading-link u-clickable" href="/posts/tech/javadesignpattern-singleton/#%ec%86%8c%ec%8a%a4">소스</a>
+</h3>
+<ul>
+<li>
+<p>소스 다운로드 : <a href="https://github.com/bluedskim/javaDesignPatterns/tree/master/01.Singleton/dskim_singleton">https://github.com/bluedskim/javaDesignPatterns/tree/master/01.Singleton/dskim_singleton</a></p>
+</li>
+<li>
+<p>싱글톤 클래스 : Coin.java
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="hl"><span class="lnt"> 6
+</span></span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nn">net.dskim.desingpattern.singleton</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Coin</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">ADD_MORE_COIN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">10</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">private</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">coinCount</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line hl"><span class="cl"><span class="w">	</span><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="n">Coin</span><span class="w"> </span><span class="n">instance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Coin</span><span class="p">();</span><span class="w"> </span><span class="c1">// Eagerly Loading of singleton instance</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">private</span><span class="w"> </span><span class="nf">Coin</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="c1">// private to prevent anyone else from instantiating</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="n">Coin</span><span class="w"> </span><span class="nf">getInstance</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="k">return</span><span class="w"> </span><span class="n">instance</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">getCoinCount</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="k">return</span><span class="w"> </span><span class="n">coinCount</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">addMoreCoin</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">coinCount</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">ADD_MORE_COIN</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">deductCoin</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">coinCount</span><span class="o">--</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+</li>
+<li>
+<p>클라이언트 : SingletonTest.java
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="hl"><span class="lnt">26
+</span></span><span class="lnt">27
+</span><span class="lnt">28
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nn">net.dskim.desingpattern.singleton</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import static</span><span class="w"> </span><span class="nn">org.junit.jupiter.api.Assertions.assertEquals</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">org.junit.jupiter.api.Test</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">lombok.extern.slf4j.Slf4j</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nd">@Slf4j</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">SingletonTest</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="nd">@Test</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">singletonTest</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">Coin</span><span class="w"> </span><span class="n">coin1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Coin</span><span class="p">.</span><span class="na">getInstance</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">Coin</span><span class="w"> </span><span class="n">coin2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Coin</span><span class="p">.</span><span class="na">getInstance</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">log</span><span class="p">.</span><span class="na">info</span><span class="p">(</span><span class="s">&#34;coin1={}, coin2={}&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">coin1</span><span class="p">,</span><span class="w"> </span><span class="n">coin2</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">assertEquals</span><span class="p">(</span><span class="n">coin1</span><span class="p">,</span><span class="w"> </span><span class="n">coin2</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">coin1</span><span class="p">.</span><span class="na">addMoreCoin</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">log</span><span class="p">.</span><span class="na">info</span><span class="p">(</span><span class="s">&#34;coin1.getCoinCount()={}, coin2.getCoinCount()={}&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">coin1</span><span class="p">.</span><span class="na">getCoinCount</span><span class="p">(),</span><span class="w"> </span><span class="n">coin2</span><span class="p">.</span><span class="na">getCoinCount</span><span class="p">());</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">assertEquals</span><span class="p">(</span><span class="n">10</span><span class="p">,</span><span class="w"> </span><span class="n">coin2</span><span class="p">.</span><span class="na">getCoinCount</span><span class="p">());</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">coin2</span><span class="p">.</span><span class="na">deductCoin</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">log</span><span class="p">.</span><span class="na">info</span><span class="p">(</span><span class="s">&#34;coin1.getCoinCount()={}, coin2.getCoinCount()={}&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">coin1</span><span class="p">.</span><span class="na">getCoinCount</span><span class="p">(),</span><span class="w"> </span><span class="n">coin2</span><span class="p">.</span><span class="na">getCoinCount</span><span class="p">());</span><span class="w">
+</span></span></span><span class="line hl"><span class="cl"><span class="w">		</span><span class="n">assertEquals</span><span class="p">(</span><span class="n">9</span><span class="p">,</span><span class="w"> </span><span class="n">coin1</span><span class="p">.</span><span class="na">getCoinCount</span><span class="p">());</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+</li>
+</ul>
+
+
+
+
+<h3 id="참고">
+  <a class="Heading-link u-clickable" href="/posts/tech/javadesignpattern-singleton/#%ec%b0%b8%ea%b3%a0">참고</a>
+</h3>
+<ul>
+<li><a href="https://refactoring.guru/design-patterns/singleton">refactoring.guru : Singleton pattern</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Singleton_pattern#Java_Implementation_%5B7%5D">wikipedia : Singleton pattern</a></li>
+</ul>
+<p>(<em>Java 디자인 패턴 스터디 모집 중 : <a href="https://github.com/bluedskim/javaDesignPatterns">https://github.com/bluedskim/javaDesignPatterns</a></em>)</p>
+
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/tech/" rel="tag">Tech</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/java/" rel="tag">Java</a>
+            </li>
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/design-pattern/" rel="tag">Design Pattern</a>
+            </li>
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/tech/taurus-%EB%B6%80%ED%95%98-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%88%B4-%EB%8D%B0%EB%AA%A8/" rel="bookmark">Taurus 부하 테스트 툴 데모</a>
+  </h2>
+  
+    
+      <time datetime="2021-02-15T00:16:55&#43;09:00">February 15, 2021</time>
+    
+  
+</header>
+      
+        
+          
+            <p>간단하게 사용할 수 있는 RESTful API 부하 테스트 툴을 찾던 중 괜찮은 툴을 발견해서 테스트해본 기록을 남긴다.</p>
+
+
+
+
+<h4 id="부하-테스트-툴-선정-기준">
+  <a class="Heading-link u-clickable" href="/posts/tech/taurus-%EB%B6%80%ED%95%98-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%88%B4-%EB%8D%B0%EB%AA%A8/#%eb%b6%80%ed%95%98-%ed%85%8c%ec%8a%a4%ed%8a%b8-%ed%88%b4-%ec%84%a0%ec%a0%95-%ea%b8%b0%ec%a4%80">부하 테스트 툴 선정 기준</a>
+</h4>
+<ol>
+<li>쉬운 설정</li>
+<li>가벼운 실행환경</li>
+<li>확장성, 다양한 플러그인</li>
+</ol>
+
+
+
+
+<h4 id="taurus-의-특징">
+  <a class="Heading-link u-clickable" href="/posts/tech/taurus-%EB%B6%80%ED%95%98-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%88%B4-%EB%8D%B0%EB%AA%A8/#taurus-%ec%9d%98-%ed%8a%b9%ec%a7%95">Taurus 의 특징</a>
+</h4>
+<ol>
+<li>온라인 기반 테스팅 플랫폼 BlazeMeter에서 공개한 오픈소스 프로젝트. 그래서 BlazeMeter와 통합이 되어 있음. 하지만 독립적으로도 사용가능하다.</li>
+<li>python3 기반 터미널 cli</li>
+<li>쉬운 설정(다른 툴들에 비해서)</li>
+<li>다양한 테스트 툴 연동 지원(기본 Executor로 Jmeter를 내부적으로 사용).
+<ul>
+<li>지원 Executor목록 👉 <a href="https://gettaurus.org/docs/ExecutionSettings/#Executor-Types">https://gettaurus.org/docs/ExecutionSettings/#Executor-Types</a></li>
+</ul>
+</li>
+</ol>
+
+
+
+
+<h4 id="taurus-사용">
+  <a class="Heading-link u-clickable" href="/posts/tech/taurus-%EB%B6%80%ED%95%98-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%88%B4-%EB%8D%B0%EB%AA%A8/#taurus-%ec%82%ac%ec%9a%a9">Taurus 사용</a>
+</h4>
+<p>Docker를 이용하면 설치 없이 사용가능하다</p>
+<ul>
+<li>Docker image : <a href="https://hub.docker.com/r/blazemeter/taurus">https://hub.docker.com/r/blazemeter/taurus</a>)</li>
+</ul>
+<p>혹은 아래를 참고하여 설치를 진행한다.</p>
+
+
+
+
+<h5 id="구동-환경">
+  <a class="Heading-link u-clickable" href="/posts/tech/taurus-%EB%B6%80%ED%95%98-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%88%B4-%EB%8D%B0%EB%AA%A8/#%ea%b5%ac%eb%8f%99-%ed%99%98%ea%b2%bd">구동 환경</a>
+</h5>
+<ol>
+<li>python3(추가로 pip 필요)</li>
+<li>Java8 이상(내부적으로 Jmeter를 자동으로 다운로드 하여 실행 함)</li>
+</ol>
+<p>윈도우 환경에서는 WSL(Windows Subsystem for Linux)로 Ubuntu를 설치하여 사용하는 것으로 가정한다.</p>
+<p>(윈도우에서 파이썬 설치 후 사용하려면 &lsquo;Microsoft Visual C++&lsquo;이 필요한데 설치에 2GB 정도 추가 공간이 필요. 그래서 WSL + Ubuntu로 사용할 것을 추천)</p>
+
+
+
+
+<h5 id="설치">
+  <a class="Heading-link u-clickable" href="/posts/tech/taurus-%EB%B6%80%ED%95%98-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%88%B4-%EB%8D%B0%EB%AA%A8/#%ec%84%a4%ec%b9%98">설치</a>
+</h5>
+<p>아래 명령들로 파이썬과 필요 dependency 그리고 taurus를 설치한다.</p>
+<pre><code>sudo apt update
+sudo apt install python3 default-jre-headless python3-tk python3-pip python3-dev \
+  libxml2-dev libxslt-dev zlib1g-dev net-tools
+sudo python3 -m pip install bzt
+</code></pre>
+
+
+
+
+<h5 id="설치-확인">
+  <a class="Heading-link u-clickable" href="/posts/tech/taurus-%EB%B6%80%ED%95%98-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%88%B4-%EB%8D%B0%EB%AA%A8/#%ec%84%a4%ec%b9%98-%ed%99%95%ec%9d%b8">설치 확인</a>
+</h5>
+<p>아래 명령을 실행하여 blazedemo.com 에 대해서 부하테스트 실행해본다. 진행 상황은 터미널 혹은 자동으로 뜨는 브라우저에서 확인 가능하다. 아무 옵션 없이 실행하게 되면 기본 설정 값들로 테스트가 진행 된다.
+(blazedemo.com 은 부하테스트용으로 blazemeter에서 만든 사이트이다. 맘껏 테스트 해도 된다. 아마도&hellip;)</p>
+<pre><code>bzt http://blazedemo.com/ -report
+</code></pre>
+
+
+
+
+<h5 id="설정-파일-샘플">
+  <a class="Heading-link u-clickable" href="/posts/tech/taurus-%EB%B6%80%ED%95%98-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%88%B4-%EB%8D%B0%EB%AA%A8/#%ec%84%a4%ec%a0%95-%ed%8c%8c%ec%9d%bc-%ec%83%98%ed%94%8c">설정 파일 샘플</a>
+</h5>
+<p>아래 설정파일은 yml형식이지만 JSON 포맷도 지원한다. 👉 <a href="https://gettaurus.org/docs/ConfigSyntax/#YAML-JSON-Format-for-Config-Files">https://gettaurus.org/docs/ConfigSyntax/#YAML-JSON-Format-for-Config-Files</a></p>
+<pre><code>---
+execution:
+# 시나리오별로 프로파일을 다르게 설정할 수 있습니다.
+- scenario: webViewTests
+  # 동시 사용자 수
+  concurrency: 50
+  #ramp-up: 1m
+  #동시 사용자 수 수치까지 증가하는데 소요될 시간
+  ramp-up: 10s
+  #hold-for: 1m30s
+  # 동시 사용자 수 유지 시간
+  hold-for: 10s  
+- scenario: apiTests
+  concurrency: 50
+  #동시 사용자 수 수치까지 증가하는데 소요될 시간
+  #ramp-up: 1m
+  ramp-up: 10s
+  #hold-for: 1m30s
+  # 동시 사용자 수 유지 시간
+  hold-for: 10s
+
+scenarios:
+  # 화면 테스트 시나리오
+  webViewTests:
+    #요청 사이의 시간간격
+    think-time: 0.75
+    #브라우저 캐시 흉내내기. 기본값은 true
+    store-cache: true
+    #브라우저 쿠키 저장기능 흉내내기 . 기본값은 true
+    store-cookie: true
+    default-address: http://localhost:9090
+    #화면에 삽입된 리소스를 모두 로드 할 것인지 여부. true로 했을 때는 외부 리소스의 로딩시간에 영향을 받습니다.
+    retrieve-resources: true
+    requests:
+      - url: '/'
+      - url: '/board/list'
+      - url: '/event/search'
+  # api 테스트 시나리오
+  apiTests:
+    timeout: 5s
+    default-address: http://localhost:9090
+    #해당 시나리오 전체에 적용될 헤더
+    headers:
+      User-Agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36'
+      Accept-Encoding: 'gzip, deflate, sdch'
+    requests:
+       # 신규 구인 목록
+      - url: '/newHire'
+       # 탐색
+      - url: '/board/boards'
+       # 신규 사용자 등록
+      - url: '/employees'
+        method: POST
+        #해당 리퀘스트에 적용될 헤더
+        headers:
+          Content-Type: application/json
+        body:
+          name: 'userName'
+          email: '1@2.com'
+          phoneNumber: '010-1234-5678'
+</code></pre>
+<p>(<strong><em>시나리오나 리퀘스트가 순차적으로 진행되지 않고 동시에 진행된다. 즉, 시나리오기반 기능테스트 용도로는 부적합하다</em></strong>)</p>
+<p>설정파일을 test.yml로 저장하고 터미널에서 다음 명령을 실행한다.</p>
+<pre><code>bzt test.yml -report
+</code></pre>
+<p>시스템의 기본 브라우저에 자동으로 보고서 웹화면이 뜬다.</p>
+<p><img src="https://i.ibb.co/Fq9QzhJ/Execution.png" alt=""></p>
+<p>(<strong><em>이 화면은 7일 후 자동 삭제 된다. 유지하려면 BlazeMeter에 회원가입을 해야 한다</em></strong>)</p>
+<p>테스트 중 터미널 화면</p>
+<img src="https://i.ibb.co/Z1PgnD6/Screenshot-from-2021-01-09-14-45-10.png">
+<p>완료 후  터미널 화면</p>
+<p><img src="https://i.ibb.co/Rcz659m/Screenshot-from-2021-01-09-14-45-58.png" alt=""></p>
+
+
+
+
+<h4 id="결론">
+  <a class="Heading-link u-clickable" href="/posts/tech/taurus-%EB%B6%80%ED%95%98-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%88%B4-%EB%8D%B0%EB%AA%A8/#%ea%b2%b0%eb%a1%a0">결론</a>
+</h4>
+<ul>
+<li>쉽게 사용할 수 있어 진입장벽(?)을 낮은 부하 테스트 툴</li>
+<li>Jmeter를 기반으로 하고 있기 때문에 세밀한 설정도 가능</li>
+<li>웹기반 리포트는 blazemeter의 기능을 사용하기 때문에 무료계정의 경우 기능제약이 있다.</li>
+</ul>
+
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/tech/" rel="tag">Tech</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/" rel="tag">프로그래밍</a>
+            </li>
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/taurus/" rel="tag">Taurus</a>
+            </li>
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+  
+
+  
+  <nav>
+    
+      <a class="Pagination u-clickable" href="/page/7/" rel="prev">« Previous</a>
+    
+    
+      <a class="Pagination Pagination--right u-clickable" href="/page/5/" rel="next">Next »</a>
+    
+  </nav>
+
+
+
+
+      </div>
+    </div>
+  </main>
+  
+  <footer class="Footer">
+    <div class="u-wrapper">
+      <div class="u-padding u-noboosting">
+        Do What You Want To Do
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

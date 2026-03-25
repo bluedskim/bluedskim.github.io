@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html id="R-html" lang="ko-KR" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.152.2">
+    <meta name="generator" content="Relearn 9.0.3+36307e4ed23582638ab689240ac7b427217803ee">
+    <meta name="description" content="CompreFace 얼굴인식(Facial Detection), 얼굴식별(Facial Recognition), 동일인 판별(Facial Validation) 그 외 분석 속성 : 나이, 성별, 인종, 시선, landmark, 마스크 착용 여부 웹GUI, API 제공 GPU없이 CPU만 쓰는데도 OpenFace에 비해 처리 속도가 빠르다. 악수하는 손을 인물로 인식하는 경우 해당 인물이 아닌 다른 인물로 인식하는 경우도 많은데 그럼에도 산출된 유사도가 90%가 넘는다. 반면 몇몇 인물은 아주 잘 인식하기도 하는 것으르 보면 이는 샘플 이미지의 문제인 것 같다. 이 블로그와 이 블로그에서 학습시킬 얼굴 이미지들을 전처리하는 것처럼 하면 인식율이 높아질 것 같기는 한데 노가다작업이라 할 엄두가 나지 않는다.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="얼굴인식 오픈소스 간단 비교 OpenFace, CompreFace & 뉴스에서 정치인 얼굴 검색 데모 :: Do What You Want To Do">
+    <meta name="twitter:description" content="CompreFace 얼굴인식(Facial Detection), 얼굴식별(Facial Recognition), 동일인 판별(Facial Validation) 그 외 분석 속성 : 나이, 성별, 인종, 시선, landmark, 마스크 착용 여부 웹GUI, API 제공 GPU없이 CPU만 쓰는데도 OpenFace에 비해 처리 속도가 빠르다. 악수하는 손을 인물로 인식하는 경우 해당 인물이 아닌 다른 인물로 인식하는 경우도 많은데 그럼에도 산출된 유사도가 90%가 넘는다. 반면 몇몇 인물은 아주 잘 인식하기도 하는 것으르 보면 이는 샘플 이미지의 문제인 것 같다. 이 블로그와 이 블로그에서 학습시킬 얼굴 이미지들을 전처리하는 것처럼 하면 인식율이 높아질 것 같기는 한데 노가다작업이라 할 엄두가 나지 않는다.">
+    <meta property="og:url" content="https://bluedskim.github.io/posts/tech/%EC%96%BC%EA%B5%B4%EC%9D%B8%EC%8B%9D_%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EB%B9%84%EA%B5%90-openface-compreface/index.html">
+    <meta property="og:site_name" content="Do What You Want To Do">
+    <meta property="og:title" content="얼굴인식 오픈소스 간단 비교 OpenFace, CompreFace & 뉴스에서 정치인 얼굴 검색 데모 :: Do What You Want To Do">
+    <meta property="og:description" content="CompreFace 얼굴인식(Facial Detection), 얼굴식별(Facial Recognition), 동일인 판별(Facial Validation) 그 외 분석 속성 : 나이, 성별, 인종, 시선, landmark, 마스크 착용 여부 웹GUI, API 제공 GPU없이 CPU만 쓰는데도 OpenFace에 비해 처리 속도가 빠르다. 악수하는 손을 인물로 인식하는 경우 해당 인물이 아닌 다른 인물로 인식하는 경우도 많은데 그럼에도 산출된 유사도가 90%가 넘는다. 반면 몇몇 인물은 아주 잘 인식하기도 하는 것으르 보면 이는 샘플 이미지의 문제인 것 같다. 이 블로그와 이 블로그에서 학습시킬 얼굴 이미지들을 전처리하는 것처럼 하면 인식율이 높아질 것 같기는 한데 노가다작업이라 할 엄두가 나지 않는다.">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Posts">
+    <meta property="article:published_time" content="2023-11-30T13:20:48+09:00">
+    <meta property="article:modified_time" content="2023-11-30T13:20:48+09:00">
+    <meta itemprop="name" content="얼굴인식 오픈소스 간단 비교 OpenFace, CompreFace & 뉴스에서 정치인 얼굴 검색 데모 :: Do What You Want To Do">
+    <meta itemprop="description" content="CompreFace 얼굴인식(Facial Detection), 얼굴식별(Facial Recognition), 동일인 판별(Facial Validation) 그 외 분석 속성 : 나이, 성별, 인종, 시선, landmark, 마스크 착용 여부 웹GUI, API 제공 GPU없이 CPU만 쓰는데도 OpenFace에 비해 처리 속도가 빠르다. 악수하는 손을 인물로 인식하는 경우 해당 인물이 아닌 다른 인물로 인식하는 경우도 많은데 그럼에도 산출된 유사도가 90%가 넘는다. 반면 몇몇 인물은 아주 잘 인식하기도 하는 것으르 보면 이는 샘플 이미지의 문제인 것 같다. 이 블로그와 이 블로그에서 학습시킬 얼굴 이미지들을 전처리하는 것처럼 하면 인식율이 높아질 것 같기는 한데 노가다작업이라 할 엄두가 나지 않는다.">
+    <meta itemprop="datePublished" content="2023-11-30T13:20:48+09:00">
+    <meta itemprop="dateModified" content="2023-11-30T13:20:48+09:00">
+    <meta itemprop="wordCount" content="165">
+    <title>얼굴인식 오픈소스 간단 비교 OpenFace, CompreFace &amp; 뉴스에서 정치인 얼굴 검색 데모 :: Do What You Want To Do</title>
+    <link href="https://bluedskim.github.io/posts/tech/%EC%96%BC%EA%B5%B4%EC%9D%B8%EC%8B%9D_%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EB%B9%84%EA%B5%90-openface-compreface/index.html" rel="canonical" type="text/html" title="얼굴인식 오픈소스 간단 비교 OpenFace, CompreFace &amp; 뉴스에서 정치인 얼굴 검색 데모 :: Do What You Want To Do">
+    <link href="/css/auto-complete/auto-complete.min.css?1774431351" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1774431351" defer></script>
+    <script src="/js/search-lunr.min.js?1774431351" defer></script>
+    <script src="/js/search.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/searchindex.en.js?1774431351";
+    </script>
+    <script src="/js/lunr/lunr.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.ko.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['ko'];
+    </script>
+    <link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1774431351" rel="stylesheet">
+    <link href="/css/theme.min.css?1774431351" rel="stylesheet">
+    <link href="/css/format-print.min.css?1774431351" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/posts\/tech\/%EC%96%BC%EA%B5%B4%EC%9D%B8%EC%8B%9D_%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EB%B9%84%EA%B5%90-openface-compreface\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/bluedskim.github.io';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'relearn-auto', 'learn' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+  </head>
+  <body class="mobile-support print" data-origin="/posts/tech/%EC%96%BC%EA%B5%B4%EC%9D%B8%EC%8B%9D_%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EB%B9%84%EA%B5%90-openface-compreface/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#compreface">CompreFace</a>
+      <ul>
+        <li><a href="#데모--뉴스에서-정치인-얼굴-검색">데모 : 뉴스에서 정치인 얼굴 검색</a></li>
+      </ul>
+    </li>
+    <li><a href="#openface">OpenFace</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Do What You Want</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/posts/index.html"><span itemprop="name">Posts</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">얼굴인식 오픈소스 간단 비교 OpenFace, CompreFace &amp; 뉴스에서 정치인 얼굴 검색 데모</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/%EC%96%BC%EA%B5%B4%EC%9D%B8%EC%8B%9D_%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EB%B9%84%EA%B5%90-openface-compreface/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/llamafile-%EC%9E%A0%EA%B9%90-%ED%85%8C%EC%8A%A4%ED%8A%B8/index.html" title="로컬에서 Llamafile 돌려보기 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/plantuml-%ED%85%8D%EC%8A%A4%ED%8A%B8-%EA%B8%B0%EB%B0%98-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8-%EB%93%9C%EB%A1%9C%EC%9E%89-%ED%88%B4/index.html" title="PLANTUML - 텍스트 기반 다이어그램 드로잉 툴 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable posts" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="얼굴인식-오픈소스-간단-비교-openface-compreface--뉴스에서-정치인-얼굴-검색-데모">얼굴인식 오픈소스 간단 비교 OpenFace, CompreFace &amp; 뉴스에서 정치인 얼굴 검색 데모</h1>
+
+<h2 id="compreface"><a href="https://github.com/exadel-inc/CompreFace" rel="external">CompreFace</a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<ul>
+<li>얼굴인식(Facial Detection), 얼굴식별(Facial Recognition), 동일인 판별(Facial Validation)</li>
+<li>그 외 분석 속성 : 나이, 성별, 인종, 시선, landmark, 마스크 착용 여부</li>
+<li>웹GUI, API 제공</li>
+<li>GPU없이 CPU만 쓰는데도 OpenFace에 비해 처리 속도가 빠르다.</li>
+<li>악수하는 손을 인물로 인식하는 경우
+<a href="#R-image-f9cad22467a5be8466c9974344927cd6" class="lightbox-link"><img alt="초기화면" class="lazy lightbox figure-image" loading="lazy" src="../../images/%ED%99%8D%EC%A4%80%ED%91%9C%EB%9D%BC%EB%8B%88.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f9cad22467a5be8466c9974344927cd6"><img alt="초기화면" class="lazy lightbox lightbox-image" loading="lazy" src="../../images/%ED%99%8D%EC%A4%80%ED%91%9C%EB%9D%BC%EB%8B%88.png"></a></li>
+</ul>
+<p>해당 인물이 아닌 다른 인물로 인식하는 경우도 많은데 그럼에도 산출된 유사도가 90%가 넘는다.
+반면 몇몇 인물은 아주 잘 인식하기도 하는 것으르 보면 이는 샘플 이미지의 문제인 것 같다.
+이 <a href="https://hyunah-home.tistory.com/entry/%EA%B8%B0%EC%A1%B4%EC%9D%98-%EC%96%BC%EA%B5%B4-%EC%9D%B8%EC%8B%9D-%EB%AA%A8%EB%8D%B8%EB%93%A4FaceNet-VGG-Face%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-%ED%95%9C%EA%B5%AD%EC%9D%B8-%EC%96%BC%EA%B5%B4-%EC%9D%B8%EC%8B%9D%ED%95%B4%EB%B3%B4%EA%B8%B0?category=1019729" rel="external">블로그</a>와 이 <a href="https://brunch.co.kr/@tobesoft-ai/6" rel="external">블로그</a>에서 학습시킬 얼굴 이미지들을 전처리하는 것처럼 하면 인식율이 높아질 것 같기는 한데
+노가다작업이라 할 엄두가 나지 않는다.</p>
+<h3 id="데모--뉴스에서-정치인-얼굴-검색">데모 : 뉴스에서 정치인 얼굴 검색<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>주소 : <a href="http://bossa.iptime.org:8005/" rel="external">http://bossa.iptime.org:8005/</a></li>
+<li>대표적인 정치인들의 사진으로 학습(3692명 7379장의 사진)</li>
+<li>미디어 다음 &gt; 정치뉴스의 사진에서 정치인을 찾아서 태깅</li>
+<li>웹ui에서 정치인 이름으로 해당 정치인이 등장한 사진이 있는 기사 검색(AND 검색 지원)</li>
+</ul>
+<h2 id="openface"><a href="https://github.com/serengil/deepface" rel="external">OpenFace</a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<ul>
+<li>파이썬 라이브러리(간단한 웹API도 제공)</li>
+<li>얼굴인식(Facial Detection), 얼굴식별(Facial Recognition), 동일인 판별(Facial Validation)</li>
+<li>그 외 분석 속성 : 나이, 성별, 감정, 인종</li>
+<li>CompreFace에 비해 인식 속도는 느리지만 인식율이 좋고 평가된 유사도가 더 정확한 듯</li>
+<li>이 라이브러리를 &lsquo;뉴스에서 정치인 얼굴 검색&rsquo;에서 사용하려면 해줘야 할게 너무 많다 -.-</li>
+</ul>
+
+  <footer class="footline">
+              <i class='fa-fw fas fa-calendar'></i> 2023-11-30
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1774431351" defer></script>
+    <script src="/js/theme.min.js?1774431351" defer></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-3QTEZE6PDE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3QTEZE6PDE');
+</script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

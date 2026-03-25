@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>DS03 on Do What You Want To Do</title>
-    <link>https://bluedskim.github.io/tags/ds03/</link>
-    <description>Recent content in DS03 on Do What You Want To Do</description>
+    <title>DS03 :: Tag :: Do What You Want To Do</title>
+    <link>https://bluedskim.github.io/tags/ds03/index.html</link>
+    <description></description>
     <generator>Hugo</generator>
     <language>ko-KR</language>
     <lastBuildDate>Sun, 22 Oct 2017 22:38:28 +0900</lastBuildDate>
     <atom:link href="https://bluedskim.github.io/tags/ds03/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ASUS Chromebook Flip C100PA DS03</title>
-      <link>https://bluedskim.github.io/posts/asuschrombookflipc100pads03/</link>
+      <link>https://bluedskim.github.io/posts/asuschrombookflipc100pads03/index.html</link>
       <pubDate>Sun, 22 Oct 2017 22:38:28 +0900</pubDate>
-      <guid>https://bluedskim.github.io/posts/asuschrombookflipc100pads03/</guid>
-      <description>&lt;h3 id=&#34;장점&#34;&gt;장점&lt;/h3&gt;&#xA;&lt;p&gt;리눅스&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;싸다&lt;/li&gt;&#xA;&lt;li&gt;안드로이드 앱 구동&lt;/li&gt;&#xA;&lt;li&gt;긴 구동시간&lt;/li&gt;&#xA;&lt;li&gt;크롬브라우저의 사용성을 극대화 시켜주는 키보드&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../images/IMG_20170123_230218.jpg&#34; alt=&#34;Example image&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;단점&#34;&gt;단점&lt;/h3&gt;&#xA;&lt;h4 id=&#34;arm-cortex-a17-의-한계&#34;&gt;ARM Cortex-A17 의 한계&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Crouton + Linux 조합으로 x86 프로그램 구동 불가능.&lt;/li&gt;&#xA;&lt;li&gt;Docker 설치 불가&#xA;최신 Raspberry Pi에서는 사용가능 한듯&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <guid>https://bluedskim.github.io/posts/asuschrombookflipc100pads03/index.html</guid>
+      <description>ASUS Chromebook Flip C100PA 장점과 단점</description>
     </item>
   </channel>
 </rss>

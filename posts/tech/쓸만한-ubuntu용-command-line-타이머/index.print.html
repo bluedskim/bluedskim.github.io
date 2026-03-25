@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html id="R-html" lang="ko-KR" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.152.2">
+    <meta name="generator" content="Relearn 9.0.3+36307e4ed23582638ab689240ac7b427217803ee">
+    <meta name="description" content="간단하게 터미널에서 작업 소요 시간을 체크 할 수 있는 방법들을 찾아봤는데
+https://superuser.com/questions/611538/is-there-a-way-to-display-a-countdown-or-stopwatch-timer-in-a-terminal
+terdon 이라는 분이 알려준 방법은 잘 동작하였지만 https://superuser.com/questions/611538/is-there-a-way-to-display-a-countdown-or-stopwatch-timer-in-a-terminal?answertab=active#tab-top
+~/.bashrc 파일에 함수를 추가하고 터미널에서 바로 호출해서 쓰는 방법이라 프로그램 추가 설치가 필요없다는 장점이 있다.
+countdown(){ date1=$((`date &#43;%s` &#43; $1)); while [ &#34;$date1&#34; -ge `date &#43;%s` ]; do ## Is this more than 24h away? days=$(($(($(( $date1 - $(date &#43;%s))) * 1 ))/86400)) echo -ne &#34;$days day(s) and $(date -u --date @$(($date1 - `date &#43;%s`)) &#43;%H:%M:%S)\r&#34;; sleep 0.1 done } function stopwatch(){ date1=`date &#43;%s`; while true; do echo -ne &#34;$(date -u --date @$((`date &#43;%s` - $date1)) &#43;%H:%M:%S)\r&#34;; sleep 0.1 done } 현재 터미널에서 바로 사용하려면 source 명렁어로 .bashrc를 다시 읽어와야 한다">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="각종 작업 소요시간 체크용 우분투용 command line stopwatch :: Do What You Want To Do">
+    <meta name="twitter:description" content="간단하게 터미널에서 작업 소요 시간을 체크 할 수 있는 방법들을 찾아봤는데
+https://superuser.com/questions/611538/is-there-a-way-to-display-a-countdown-or-stopwatch-timer-in-a-terminal
+terdon 이라는 분이 알려준 방법은 잘 동작하였지만 https://superuser.com/questions/611538/is-there-a-way-to-display-a-countdown-or-stopwatch-timer-in-a-terminal?answertab=active#tab-top
+~/.bashrc 파일에 함수를 추가하고 터미널에서 바로 호출해서 쓰는 방법이라 프로그램 추가 설치가 필요없다는 장점이 있다.
+countdown(){ date1=$((`date &#43;%s` &#43; $1)); while [ &#34;$date1&#34; -ge `date &#43;%s` ]; do ## Is this more than 24h away? days=$(($(($(( $date1 - $(date &#43;%s))) * 1 ))/86400)) echo -ne &#34;$days day(s) and $(date -u --date @$(($date1 - `date &#43;%s`)) &#43;%H:%M:%S)\r&#34;; sleep 0.1 done } function stopwatch(){ date1=`date &#43;%s`; while true; do echo -ne &#34;$(date -u --date @$((`date &#43;%s` - $date1)) &#43;%H:%M:%S)\r&#34;; sleep 0.1 done } 현재 터미널에서 바로 사용하려면 source 명렁어로 .bashrc를 다시 읽어와야 한다">
+    <meta property="og:url" content="https://bluedskim.github.io/posts/tech/%EC%93%B8%EB%A7%8C%ED%95%9C-ubuntu%EC%9A%A9-command-line-%ED%83%80%EC%9D%B4%EB%A8%B8/index.html">
+    <meta property="og:site_name" content="Do What You Want To Do">
+    <meta property="og:title" content="각종 작업 소요시간 체크용 우분투용 command line stopwatch :: Do What You Want To Do">
+    <meta property="og:description" content="간단하게 터미널에서 작업 소요 시간을 체크 할 수 있는 방법들을 찾아봤는데
+https://superuser.com/questions/611538/is-there-a-way-to-display-a-countdown-or-stopwatch-timer-in-a-terminal
+terdon 이라는 분이 알려준 방법은 잘 동작하였지만 https://superuser.com/questions/611538/is-there-a-way-to-display-a-countdown-or-stopwatch-timer-in-a-terminal?answertab=active#tab-top
+~/.bashrc 파일에 함수를 추가하고 터미널에서 바로 호출해서 쓰는 방법이라 프로그램 추가 설치가 필요없다는 장점이 있다.
+countdown(){ date1=$((`date &#43;%s` &#43; $1)); while [ &#34;$date1&#34; -ge `date &#43;%s` ]; do ## Is this more than 24h away? days=$(($(($(( $date1 - $(date &#43;%s))) * 1 ))/86400)) echo -ne &#34;$days day(s) and $(date -u --date @$(($date1 - `date &#43;%s`)) &#43;%H:%M:%S)\r&#34;; sleep 0.1 done } function stopwatch(){ date1=`date &#43;%s`; while true; do echo -ne &#34;$(date -u --date @$((`date &#43;%s` - $date1)) &#43;%H:%M:%S)\r&#34;; sleep 0.1 done } 현재 터미널에서 바로 사용하려면 source 명렁어로 .bashrc를 다시 읽어와야 한다">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Posts">
+    <meta property="article:published_time" content="2019-03-24T10:38:28+09:00">
+    <meta property="article:modified_time" content="2019-03-24T10:38:28+09:00">
+    <meta property="article:tag" content="Pixelbook">
+    <meta property="article:tag" content="Termdown">
+    <meta itemprop="name" content="각종 작업 소요시간 체크용 우분투용 command line stopwatch :: Do What You Want To Do">
+    <meta itemprop="description" content="간단하게 터미널에서 작업 소요 시간을 체크 할 수 있는 방법들을 찾아봤는데
+https://superuser.com/questions/611538/is-there-a-way-to-display-a-countdown-or-stopwatch-timer-in-a-terminal
+terdon 이라는 분이 알려준 방법은 잘 동작하였지만 https://superuser.com/questions/611538/is-there-a-way-to-display-a-countdown-or-stopwatch-timer-in-a-terminal?answertab=active#tab-top
+~/.bashrc 파일에 함수를 추가하고 터미널에서 바로 호출해서 쓰는 방법이라 프로그램 추가 설치가 필요없다는 장점이 있다.
+countdown(){ date1=$((`date &#43;%s` &#43; $1)); while [ &#34;$date1&#34; -ge `date &#43;%s` ]; do ## Is this more than 24h away? days=$(($(($(( $date1 - $(date &#43;%s))) * 1 ))/86400)) echo -ne &#34;$days day(s) and $(date -u --date @$(($date1 - `date &#43;%s`)) &#43;%H:%M:%S)\r&#34;; sleep 0.1 done } function stopwatch(){ date1=`date &#43;%s`; while true; do echo -ne &#34;$(date -u --date @$((`date &#43;%s` - $date1)) &#43;%H:%M:%S)\r&#34;; sleep 0.1 done } 현재 터미널에서 바로 사용하려면 source 명렁어로 .bashrc를 다시 읽어와야 한다">
+    <meta itemprop="datePublished" content="2019-03-24T10:38:28+09:00">
+    <meta itemprop="dateModified" content="2019-03-24T10:38:28+09:00">
+    <meta itemprop="wordCount" content="342">
+    <meta itemprop="keywords" content="Pixelbook,Termdown">
+    <title>각종 작업 소요시간 체크용 우분투용 command line stopwatch :: Do What You Want To Do</title>
+    <link href="https://bluedskim.github.io/posts/tech/%EC%93%B8%EB%A7%8C%ED%95%9C-ubuntu%EC%9A%A9-command-line-%ED%83%80%EC%9D%B4%EB%A8%B8/index.html" rel="canonical" type="text/html" title="각종 작업 소요시간 체크용 우분투용 command line stopwatch :: Do What You Want To Do">
+    <link href="/css/auto-complete/auto-complete.min.css?1774431351" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1774431351" defer></script>
+    <script src="/js/search-lunr.min.js?1774431351" defer></script>
+    <script src="/js/search.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/searchindex.en.js?1774431351";
+    </script>
+    <script src="/js/lunr/lunr.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.ko.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['ko'];
+    </script>
+    <link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1774431351" rel="stylesheet">
+    <link href="/css/theme.min.css?1774431351" rel="stylesheet">
+    <link href="/css/format-print.min.css?1774431351" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/posts\/tech\/%EC%93%B8%EB%A7%8C%ED%95%9C-ubuntu%EC%9A%A9-command-line-%ED%83%80%EC%9D%B4%EB%A8%B8\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/bluedskim.github.io';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'relearn-auto', 'learn' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+  </head>
+  <body class="mobile-support print" data-origin="/posts/tech/%EC%93%B8%EB%A7%8C%ED%95%9C-ubuntu%EC%9A%A9-command-line-%ED%83%80%EC%9D%B4%EB%A8%B8/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Do What You Want</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/posts/index.html"><span itemprop="name">Posts</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">각종 작업 소요시간 체크용 우분투용 command line stopwatch</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/%EC%93%B8%EB%A7%8C%ED%95%9C-ubuntu%EC%9A%A9-command-line-%ED%83%80%EC%9D%B4%EB%A8%B8/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/pixelbook%EC%97%90-docker%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/index.html" title="pixelbook에 Docker설치하기 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/excel-to-redmine-table/index.html" title="엑셀 데이터를 레드마인 테이블로 변환하는 Javascript (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable posts" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/tags/pixelbook/index.html">Pixelbook</a></li>
+    <li><a class="term-link" href="/tags/termdown/index.html">Termdown</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="각종-작업-소요시간-체크용-우분투용-command-line-stopwatch">각종 작업 소요시간 체크용 우분투용 command line stopwatch</h1>
+
+<p>간단하게 터미널에서 작업 소요 시간을 체크 할 수 있는 방법들을 찾아봤는데</p>
+<p><a href="https://superuser.com/questions/611538/is-there-a-way-to-display-a-countdown-or-stopwatch-timer-in-a-terminal" rel="external">https://superuser.com/questions/611538/is-there-a-way-to-display-a-countdown-or-stopwatch-timer-in-a-terminal</a></p>
+<p>terdon 이라는 분이 알려준 방법은 잘 동작하였지만
+<a href="https://superuser.com/questions/611538/is-there-a-way-to-display-a-countdown-or-stopwatch-timer-in-a-terminal?answertab=active#tab-top" rel="external">https://superuser.com/questions/611538/is-there-a-way-to-display-a-countdown-or-stopwatch-timer-in-a-terminal?answertab=active#tab-top</a></p>
+<p>~/.bashrc 파일에 함수를 추가하고 터미널에서 바로 호출해서 쓰는 방법이라 프로그램 추가 설치가 필요없다는 장점이 있다.</p>
+<pre><code>countdown(){
+	date1=$((`date +%s` + $1));
+	while [ &quot;$date1&quot; -ge `date +%s` ]; do 
+	## Is this more than 24h away?
+	days=$(($(($(( $date1 - $(date +%s))) * 1 ))/86400))
+	echo -ne &quot;$days day(s) and $(date -u --date @$(($date1 - `date +%s`)) +%H:%M:%S)\r&quot;; 
+	sleep 0.1
+	done
+}
+
+function stopwatch(){
+  date1=`date +%s`; 
+   while true; do 
+	echo -ne &quot;$(date -u --date @$((`date +%s` - $date1)) +%H:%M:%S)\r&quot;; 
+	sleep 0.1
+   done
+}
+</code></pre>
+<p>현재 터미널에서 바로 사용하려면 source 명렁어로 .bashrc를 다시 읽어와야 한다</p>
+<pre><code>source ~/.bashrc
+</code></pre>
+<p>터미널에서 stopwatch라고만 입력하면 stopwatch 가 동작한다</p>
+<pre><code>$ stopwatch
+00:00:01
+</code></pre>
+<p>countdown 을 실행하려면 몇 초 후 정지할지 인수를 넘겨줘야 한다</p>
+<pre><code>$ countdown 60*10
+0 days(s) and 00:10:00
+</code></pre>
+<p>하지만 이 방법은 한가지 단점이 있는데 백그라운드에서 동작시킬 수 없다는 점이다.
+그래서 위의 2개 함수를 shell 로 만들어 해결했지만 다른 문제가 발생했는데 백그라운드 작업을 정지시킬 수가 없다는 점이다.</p>
+<pre><code>bluedskim@penguin:~$ ps -ef|grep sleep
+bluedsk+ 28554 25506  0 11:26 pts/2    00:00:00 sleep 0.1
+bluedsk+ 28559 12585  0 11:26 pts/2    00:00:00 sleep 0.1
+bluedsk+ 28561   887  0 11:26 pts/0    00:00:00 grep sleep
+bluedskim@penguin:~$ kill -9 28554
+bash: kill: (28554) - No such process
+</code></pre>
+<p>이것은 당연해 보인다. loop를 돌면서 계속해서 새로 프로세스가 생성되기 때문이다.</p>
+<p>그래서 sw라는 스크립트를 시도해봤는데</p>
+<p><a href="https://github.com/coryfklein/sw" rel="external">https://github.com/coryfklein/sw</a></p>
+<p>무한루프에 빠진다 -.-</p>
+<pre><code>date: invalid option -- 'v'
+Try 'date --help' for more information.
+</code></pre>
+<p>마지막에 시도했던 termdown을 쓰려고 한다.
+하지만 termdown 은 python기반이기 때문에 컴퓨터에 python이 설치되어 있어야 하고 설치를 위해서는 pip도 있어야 한다는 제약사항이 있다</p>
+<p>pip는 pip3를 설치</p>
+<pre><code>$ sudo apt update
+$ sudo apt install python3-pip
+</code></pre>
+<p>termdown 설치</p>
+<pre><code>$ pip3 install termdown
+</code></pre>
+<p>그런데 설치하고 바로 실행이 되지 않는다. 왜?</p>
+<pre><code>$ termdown
+bash: termdown: command not found
+</code></pre>
+<p>pip3로 설치한 라이브러리를 찾지 못한다고 -.-
+그래서 라이브러리를 찾을 수 있도록 ~/.bashrc에 아래를 추가한다</p>
+<pre><code>export PY_USER_BIN=$(python3 -c 'import site; print(site.USER_BASE + &quot;/bin&quot;)')
+export PATH=$PY_USER_BIN:$PATH
+</code></pre>
+<p>.bashrc를 수정했으니 source 명렁어로 .bashrc를 다시 읽어와야 한다</p>
+<pre><code>source ~/.bashrc
+</code></pre>
+<p>옵션 없이 termdown을 실행하면 stopwatch로 동작한다</p>
+<p>[![termdown 스크린샷](/images/Screenshot 2019-03-24 at 11.55.46 AM.png)](/images/Screenshot 2019-03-24 at 11.55.46 AM.png)</p>
+
+  <footer class="footline">
+              <i class='fa-fw fas fa-calendar'></i> 2019-03-24
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1774431351" defer></script>
+    <script src="/js/theme.min.js?1774431351" defer></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-3QTEZE6PDE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3QTEZE6PDE');
+</script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

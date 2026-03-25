@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html id="R-html" lang="ko-KR" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.152.2">
+    <meta name="generator" content="Relearn 9.0.3+36307e4ed23582638ab689240ac7b427217803ee">
+    <meta name="description" content="Bootstrap &#43; ReactJS 기반 예쁜 템플리트도 많지만 실제 업무에서 사용하려면 힘든 경우가 많다. 이런 템플리트류들은 기능성보다는 시각적 만족에 촛점을 맞추기 때문이라 생각. 막상 코딩(로직)을 넣으려면 해야 할 일들이 산더미다.
+덜 예쁘더라도(?) 개발하는 입장에서 쓰기 쉬운 템플리트를 알아보던 중 발견한 Material-UI(https://material-ui.com/).
+ReactJS 를 이미 경험해서인지 그렇게 어렵지는 않았다. 본격적으로 사용하게 되면 어쩔지는 아직 미지수.
+Back-End : Spring Boot &#43; JPA &#43; REST Front-End : ReactJS &#43; Material-UI 주소 : https://samba.iptime.org:8082/villaNameGen">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="ReactJS & Material UI를 이용한 빌라 이름 생성기 :: Do What You Want To Do">
+    <meta name="twitter:description" content="Bootstrap &#43; ReactJS 기반 예쁜 템플리트도 많지만 실제 업무에서 사용하려면 힘든 경우가 많다. 이런 템플리트류들은 기능성보다는 시각적 만족에 촛점을 맞추기 때문이라 생각. 막상 코딩(로직)을 넣으려면 해야 할 일들이 산더미다.
+덜 예쁘더라도(?) 개발하는 입장에서 쓰기 쉬운 템플리트를 알아보던 중 발견한 Material-UI(https://material-ui.com/).
+ReactJS 를 이미 경험해서인지 그렇게 어렵지는 않았다. 본격적으로 사용하게 되면 어쩔지는 아직 미지수.
+Back-End : Spring Boot &#43; JPA &#43; REST Front-End : ReactJS &#43; Material-UI 주소 : https://samba.iptime.org:8082/villaNameGen">
+    <meta property="og:url" content="https://bluedskim.github.io/posts/tech/reactjs--material-ui%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%B9%8C%EB%9D%BC%EC%9D%B4%EB%A6%84-%EC%83%9D%EC%84%B1%EA%B8%B0/index.html">
+    <meta property="og:site_name" content="Do What You Want To Do">
+    <meta property="og:title" content="ReactJS & Material UI를 이용한 빌라 이름 생성기 :: Do What You Want To Do">
+    <meta property="og:description" content="Bootstrap &#43; ReactJS 기반 예쁜 템플리트도 많지만 실제 업무에서 사용하려면 힘든 경우가 많다. 이런 템플리트류들은 기능성보다는 시각적 만족에 촛점을 맞추기 때문이라 생각. 막상 코딩(로직)을 넣으려면 해야 할 일들이 산더미다.
+덜 예쁘더라도(?) 개발하는 입장에서 쓰기 쉬운 템플리트를 알아보던 중 발견한 Material-UI(https://material-ui.com/).
+ReactJS 를 이미 경험해서인지 그렇게 어렵지는 않았다. 본격적으로 사용하게 되면 어쩔지는 아직 미지수.
+Back-End : Spring Boot &#43; JPA &#43; REST Front-End : ReactJS &#43; Material-UI 주소 : https://samba.iptime.org:8082/villaNameGen">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Posts">
+    <meta property="article:published_time" content="2020-05-05T21:58:18+09:00">
+    <meta property="article:modified_time" content="2020-05-05T21:58:18+09:00">
+    <meta property="article:tag" content="ReactJS">
+    <meta property="article:tag" content="Material-UI">
+    <meta property="article:tag" content="Spring Boot">
+    <meta itemprop="name" content="ReactJS & Material UI를 이용한 빌라 이름 생성기 :: Do What You Want To Do">
+    <meta itemprop="description" content="Bootstrap &#43; ReactJS 기반 예쁜 템플리트도 많지만 실제 업무에서 사용하려면 힘든 경우가 많다. 이런 템플리트류들은 기능성보다는 시각적 만족에 촛점을 맞추기 때문이라 생각. 막상 코딩(로직)을 넣으려면 해야 할 일들이 산더미다.
+덜 예쁘더라도(?) 개발하는 입장에서 쓰기 쉬운 템플리트를 알아보던 중 발견한 Material-UI(https://material-ui.com/).
+ReactJS 를 이미 경험해서인지 그렇게 어렵지는 않았다. 본격적으로 사용하게 되면 어쩔지는 아직 미지수.
+Back-End : Spring Boot &#43; JPA &#43; REST Front-End : ReactJS &#43; Material-UI 주소 : https://samba.iptime.org:8082/villaNameGen">
+    <meta itemprop="datePublished" content="2020-05-05T21:58:18+09:00">
+    <meta itemprop="dateModified" content="2020-05-05T21:58:18+09:00">
+    <meta itemprop="wordCount" content="69">
+    <meta itemprop="keywords" content="ReactJS,Material-UI,Spring Boot">
+    <title>ReactJS &amp; Material UI를 이용한 빌라 이름 생성기 :: Do What You Want To Do</title>
+    <link href="https://bluedskim.github.io/posts/tech/reactjs--material-ui%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%B9%8C%EB%9D%BC%EC%9D%B4%EB%A6%84-%EC%83%9D%EC%84%B1%EA%B8%B0/index.html" rel="canonical" type="text/html" title="ReactJS &amp; Material UI를 이용한 빌라 이름 생성기 :: Do What You Want To Do">
+    <link href="/css/auto-complete/auto-complete.min.css?1774431351" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1774431351" defer></script>
+    <script src="/js/search-lunr.min.js?1774431351" defer></script>
+    <script src="/js/search.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/searchindex.en.js?1774431351";
+    </script>
+    <script src="/js/lunr/lunr.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.ko.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['ko'];
+    </script>
+    <link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1774431351" rel="stylesheet">
+    <link href="/css/theme.min.css?1774431351" rel="stylesheet">
+    <link href="/css/format-print.min.css?1774431351" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/posts\/tech\/reactjs--material-ui%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%B9%8C%EB%9D%BC%EC%9D%B4%EB%A6%84-%EC%83%9D%EC%84%B1%EA%B8%B0\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/bluedskim.github.io';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'relearn-auto', 'learn' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+  </head>
+  <body class="mobile-support print" data-origin="/posts/tech/reactjs--material-ui%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%B9%8C%EB%9D%BC%EC%9D%B4%EB%A6%84-%EC%83%9D%EC%84%B1%EA%B8%B0/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Do What You Want</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/posts/index.html"><span itemprop="name">Posts</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">ReactJS &amp; Material UI를 이용한 빌라 이름 생성기</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/reactjs--material-ui%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%B9%8C%EB%9D%BC%EC%9D%B4%EB%A6%84-%EC%83%9D%EC%84%B1%EA%B8%B0/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/certbot%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-iptime-ddns-%EB%8F%84%EB%A9%94%EC%9D%B8%EC%9A%A9-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EB%B0%9C%EA%B8%89/index.html" title="Certbot을 이용해 Iptime DDNS 도메인용 인증서 발급 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/sony-xperia-proiyokan-2011-%EB%B6%80%ED%99%9C/index.html" title="Sony Xperia Pro(iyokan) 2011 부활 프로젝트 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable posts" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/tags/material-ui/index.html">Material-UI</a></li>
+    <li><a class="term-link" href="/tags/reactjs/index.html">ReactJS</a></li>
+    <li><a class="term-link" href="/tags/spring-boot/index.html">Spring Boot</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="reactjs--material-ui를-이용한-빌라-이름-생성기">ReactJS &amp; Material UI를 이용한 빌라 이름 생성기</h1>
+
+<p>Bootstrap + ReactJS 기반 예쁜 템플리트도 많지만 실제 업무에서 사용하려면 힘든 경우가 많다. 이런 템플리트류들은 기능성보다는 시각적 만족에 촛점을 맞추기 때문이라 생각. 막상 코딩(로직)을 넣으려면 해야 할 일들이 산더미다.</p>
+<p>덜 예쁘더라도(?) 개발하는 입장에서 쓰기 쉬운 템플리트를 알아보던 중 발견한 Material-UI(<a href="https://material-ui.com/)" rel="external">https://material-ui.com/)</a>.</p>
+<p>ReactJS 를 이미 경험해서인지 그렇게 어렵지는 않았다. 본격적으로 사용하게 되면 어쩔지는 아직 미지수.</p>
+<ul>
+<li>Back-End : Spring Boot + JPA + REST</li>
+<li>Front-End : ReactJS + Material-UI</li>
+<li>주소 : <a href="https://samba.iptime.org:8082/villaNameGen" rel="external">https://samba.iptime.org:8082/villaNameGen</a></li>
+</ul>
+
+  <footer class="footline">
+              <i class='fa-fw fas fa-calendar'></i> 2020-05-05
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1774431351" defer></script>
+    <script src="/js/theme.min.js?1774431351" defer></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-3QTEZE6PDE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3QTEZE6PDE');
+</script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

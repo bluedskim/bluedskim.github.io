@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>프로그래밍 on Do What You Want To Do</title>
-    <link>https://bluedskim.github.io/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/</link>
-    <description>Recent content in 프로그래밍 on Do What You Want To Do</description>
+    <title>프로그래밍 :: Tag :: Do What You Want To Do</title>
+    <link>https://bluedskim.github.io/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/index.html</link>
+    <description></description>
     <generator>Hugo</generator>
     <language>ko-KR</language>
     <lastBuildDate>Mon, 15 Feb 2021 00:16:55 +0900</lastBuildDate>
     <atom:link href="https://bluedskim.github.io/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Taurus 부하 테스트 툴 데모</title>
-      <link>https://bluedskim.github.io/posts/tech/taurus-%EB%B6%80%ED%95%98-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%88%B4-%EB%8D%B0%EB%AA%A8/</link>
+      <link>https://bluedskim.github.io/posts/tech/taurus-%EB%B6%80%ED%95%98-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%88%B4-%EB%8D%B0%EB%AA%A8/index.html</link>
       <pubDate>Mon, 15 Feb 2021 00:16:55 +0900</pubDate>
-      <guid>https://bluedskim.github.io/posts/tech/taurus-%EB%B6%80%ED%95%98-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%88%B4-%EB%8D%B0%EB%AA%A8/</guid>
-      <description>&lt;p&gt;간단하게 사용할 수 있는 RESTful API 부하 테스트 툴을 찾던 중 괜찮은 툴을 발견해서 테스트해본 기록을 남긴다.&lt;/p&gt;&#xA;&lt;h3 id=&#34;부하-테스트-툴-선정-기준&#34;&gt;부하 테스트 툴 선정 기준&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;쉬운 설정&lt;/li&gt;&#xA;&lt;li&gt;가벼운 실행환경&lt;/li&gt;&#xA;&lt;li&gt;확장성, 다양한 플러그인&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;taurus-의-특징&#34;&gt;Taurus 의 특징&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;온라인 기반 테스팅 플랫폼 BlazeMeter에서 공개한 오픈소스 프로젝트. 그래서 BlazeMeter와 통합이 되어 있음. 하지만 독립적으로도 사용가능하다.&lt;/li&gt;&#xA;&lt;li&gt;python3 기반 터미널 cli&lt;/li&gt;&#xA;&lt;li&gt;쉬운 설정(다른 툴들에 비해서)&lt;/li&gt;&#xA;&lt;li&gt;다양한 테스트 툴 연동 지원(기본 Executor로 Jmeter를 내부적으로 사용).&#xA;&lt;ul&gt;&#xA;&lt;li&gt;지원 Executor목록 👉 &lt;a href=&#34;https://gettaurus.org/docs/ExecutionSettings/#Executor-Types&#34;&gt;https://gettaurus.org/docs/ExecutionSettings/#Executor-Types&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;taurus-사용&#34;&gt;Taurus 사용&lt;/h3&gt;&#xA;&lt;p&gt;Docker를 이용하면 설치 없이 사용가능하다&lt;/p&gt;</description>
+      <guid>https://bluedskim.github.io/posts/tech/taurus-%EB%B6%80%ED%95%98-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%88%B4-%EB%8D%B0%EB%AA%A8/index.html</guid>
+      <description>간단하게 사용할 수 있는 RESTful API 부하 테스트 툴을 찾던 중 괜찮은 툴을 발견해서 테스트해본 기록을 남긴다.&#xA;부하 테스트 툴 선정 기준 쉬운 설정 가벼운 실행환경 확장성, 다양한 플러그인 Taurus 의 특징 온라인 기반 테스팅 플랫폼 BlazeMeter에서 공개한 오픈소스 프로젝트. 그래서 BlazeMeter와 통합이 되어 있음. 하지만 독립적으로도 사용가능하다. python3 기반 터미널 cli 쉬운 설정(다른 툴들에 비해서) 다양한 테스트 툴 연동 지원(기본 Executor로 Jmeter를 내부적으로 사용). 지원 Executor목록 👉 https://gettaurus.org/docs/ExecutionSettings/#Executor-Types Taurus 사용 Docker를 이용하면 설치 없이 사용가능하다</description>
     </item>
     <item>
       <title>Karate, RESTful API 시나리오기반 자동화 테스트 데모</title>
-      <link>https://bluedskim.github.io/posts/tech/karate-restful-api-%EC%8B%9C%EB%82%98%EB%A6%AC%EC%98%A4%EA%B8%B0%EB%B0%98-%EC%9E%90%EB%8F%99%ED%99%94-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%8D%B0%EB%AA%A8/</link>
+      <link>https://bluedskim.github.io/posts/tech/karate-restful-api-%EC%8B%9C%EB%82%98%EB%A6%AC%EC%98%A4%EA%B8%B0%EB%B0%98-%EC%9E%90%EB%8F%99%ED%99%94-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%8D%B0%EB%AA%A8/index.html</link>
       <pubDate>Sat, 09 Jan 2021 22:59:55 +0900</pubDate>
-      <guid>https://bluedskim.github.io/posts/tech/karate-restful-api-%EC%8B%9C%EB%82%98%EB%A6%AC%EC%98%A4%EA%B8%B0%EB%B0%98-%EC%9E%90%EB%8F%99%ED%99%94-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%8D%B0%EB%AA%A8/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://zdnet.co.kr/view/?no=20210108154359&#34;&gt;&amp;ldquo;美 IT업계서 45년 일한 어느 개발자의 여섯가지 조언&amp;rdquo;&lt;/a&gt;이라는 기사의 다섯번째 조언은 바로 &amp;lsquo;테스트 자동화&amp;rsquo;다.&#xA;그대로 인용하자면 &amp;ldquo;테스트를 자동화 하면 충분히 시험된 코드를 사용할 수 있어 자신감과 속도감을 가진 개발 작업에 몰두할 수 있다&amp;quot;는 주장이다.&lt;/p&gt;&#xA;&lt;p&gt;자동화 테스트를 적극적으로 개발에 활용한 방법론이 바로 TDD(Test-Driven-Development)다. TDD의 테스트는 단위 테스트(Unit Test)이며 모든 기능에 대한 단위테스트를 먼저 작성한 후 개발하도록 하고 있다.&lt;/p&gt;&#xA;&lt;p&gt;하지만 개발을 진행하다보면 현실적으로 단위테스트를 모두 먼저 만들고 코딩을 진행하는 것이 불가능할 때가 많다.&#xA;그래서 단위 테스트 없이 개발하고 사후에 중요한 로직부터 단위 테스트를 개발하는 방식을 많이 쓰게 된다.&#xA;하지만 필수 단위 테스트마저 만들기 힘들 때도 있다.&#xA;그렇다 하더라 최소한 주요한 워크플로우에 대한 자동화 테스트는 필요하다.&lt;/p&gt;</description>
+      <guid>https://bluedskim.github.io/posts/tech/karate-restful-api-%EC%8B%9C%EB%82%98%EB%A6%AC%EC%98%A4%EA%B8%B0%EB%B0%98-%EC%9E%90%EB%8F%99%ED%99%94-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%8D%B0%EB%AA%A8/index.html</guid>
+      <description>“美 IT업계서 45년 일한 어느 개발자의 여섯가지 조언”이라는 기사의 다섯번째 조언은 바로 ‘테스트 자동화’다. 그대로 인용하자면 “테스트를 자동화 하면 충분히 시험된 코드를 사용할 수 있어 자신감과 속도감을 가진 개발 작업에 몰두할 수 있다&#34;는 주장이다.&#xA;자동화 테스트를 적극적으로 개발에 활용한 방법론이 바로 TDD(Test-Driven-Development)다. TDD의 테스트는 단위 테스트(Unit Test)이며 모든 기능에 대한 단위테스트를 먼저 작성한 후 개발하도록 하고 있다.&#xA;하지만 개발을 진행하다보면 현실적으로 단위테스트를 모두 먼저 만들고 코딩을 진행하는 것이 불가능할 때가 많다. 그래서 단위 테스트 없이 개발하고 사후에 중요한 로직부터 단위 테스트를 개발하는 방식을 많이 쓰게 된다. 하지만 필수 단위 테스트마저 만들기 힘들 때도 있다. 그렇다 하더라 최소한 주요한 워크플로우에 대한 자동화 테스트는 필요하다.</description>
     </item>
   </channel>
 </rss>

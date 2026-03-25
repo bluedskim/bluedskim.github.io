@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=7001&amp;path=livereload" data-no-instant defer></script>
+  
+
+  
+  
+
+
+  <meta charset="utf-8">
+
+
+  <meta name="robots" content="noindex, nofollow, noarchive">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  
+    
+      <meta name="description" content="bluedskim@gmail.com">
+    
+  
+
+
+<meta name="color-scheme" content="light dark">
+
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.152.2">
+  <title>Do What You Want | Do What You Want To Do</title>
+  <link href="//localhost:7001/" rel="canonical">
+
+
+
+
+  <link href="alternate" rel="/feed.xml" type="application/rss+xml">
+
+  
+
+
+
+
+  
+  
+    
+    
+  
+  
+
+
+
+
+
+  
+
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+
+
+  
+    <link href="/css/base.css" rel="stylesheet">
+
+    <link href="/css/syntax.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+  <nav class="u-background">
+  <div class="u-wrapper">
+    <ul class="Banner">
+      <li class="Banner-item Banner-item--title">
+        
+          <a class="Banner-link u-clickable" href="/">Do What You Want To Do</a>
+        
+      </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/categories/tech/">Tech</a>
+        </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/tags/samba/">Samba</a>
+        </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/categories/%EC%9D%8C%EC%95%85/">음악</a>
+        </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/categories/%EC%9D%BC%EC%83%81%EC%82%AC/">일상사</a>
+        </li>
+      
+        
+        
+          
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/feed.xml">RSS</a>
+        </li>
+      
+    </ul>
+  </div>
+</nav>
+
+  <main>
+    <div class="u-wrapper">
+      <div class="u-padding">
+        
+
+  
+    
+    <header class="Heading">
+  <h1 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/" rel="bookmark">Do What You Want</a>
+  </h1>
+  
+</header>
+  
+
+  
+
+
+
+<h1 id="do-what-you-want">
+  <a class="Heading-link u-clickable" href="/#do-what-you-want">Do What You Want</a>
+</h1>
+<p>잡다한 것들을 기록합니다.</p>
+
+
+  
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/tech/pm2-production-process-manager-for-node.js/" rel="bookmark">PM2 - Production Process Manager for Node</a>
+  </h2>
+  
+    
+      <time datetime="2020-09-30T12:37:16&#43;09:00">September 30, 2020</time>
+    
+  
+</header>
+      
+        
+          
+            <p>ReactJS 로 Single-page application을 개발한다면 일반적으로 build를 하고 build를 deploy하는 방식을 사용한다.</p>
+<p>최근 진행했던 프로젝트에서도 역시 이런 방식으로 deploy를 해왔는데, deploy후 레이아웃이 깨지는 경우를 발견하게 되었다.</p>
+<p>뭔가 CSS 충돌이 발생한 상황인 듯 한데 소스레벨에서는 해결할 수도 피해갈 수도 없는 상황이었다.</p>
+<p>방법은 단 하나, 리소스 낭비를 감수하면서 운영환경에서도 npm start 형태로 구동하여 서비스할 수 밖에 없었다.</p>
+<p>하지만 리소스 낭비보다 더 심각한 문제가 있었으니.</p>
+<p>npm start로 구동하는 경우 nohup 을 이용한 background 프로세스로 구동하여야 하는데 리로드가 아닌 프로세스 리스타트가 필요한 경우(모듈이 추가된다던지 하는 이유로) 해당 프로세스를 ps명령으로 찾아서 kill해야 했다.</p>
+<p>만약 여러 서비스를 한개 서버에서 동시에 서비스 해야하는 경우라면 더 심각해진다.</p>
+<p>왜냐하면 node 프로세스를 다수 띄워야 하기 때문에 ps명령으로 해당 서비스의 프로세스를 찾는 것이 쉽지않고 자칫 실수하면 다른 프로세스를 kill하는 경우도 발생하기 때문이다.</p>
+<p>이런 시나리오에 유용한 툴이 있으니 바로 PM2(<a href="https://pm2.keymetrics.io">https://pm2.keymetrics.io</a>) 이다.</p>
+<p>PM2를 이용하면 여러 node 프로세스를 쉽게 모니터링하고 관리(정지, 재기동)할 수 있다.</p>
+<p>npm 기반이기 때문에 설치도 간단하다. 아래의 명령으로 설치한다.</p>
+<pre><code>npm install pm2 -g
+</code></pre>
+<p>실행은 해당 폴더에서 아래의 명령으로 띄운다(&lsquo;서비스명&rsquo; 은 다른 서비스와 구별할수 있는 고유 식별자를 사용).</p>
+<pre><code>pm2 start npm --name 서비스명 -- start
+</code></pre>
+<p>상태를 모니터링 할 때는 &lsquo;pm2 monit&rsquo; 명령을 실행한다.</p>
+<pre><code>pm2 monit
+┌─ Process List ────┐┌──  rnd Logs  ──────────────────────────────────┐
+│[ 0] 서비스명  Mem:  ││                                                │
+│                   ││                                                │
+│                   ││                                                │
+│                   ││                                                │
+│                   ││                                                │
+│                   ││                                                │
+│                   ││                                                │
+└───────────────────┘└────────────────────────────────────────────────┘
+┌─ Custom Metrics ──┐┌─ Metadata ─────────────────────────────────────┐
+│ Heap Size         ││ App Name              서비스명                   │
+│ Heap Usage        ││ Namespace             default                  │
+│ Used Heap Size    ││ Version               N/A                      │
+│ Active requests   ││ Restarts              0                        │
+│ Active handles    ││ Uptime                3m                       │
+│ Event Loop        ││ Script path           /usr/bin/npm             │
+└───────────────────┘└────────────────────────────────────────────────┘
+</code></pre>
+<p>어플리케이션 정지</p>
+<pre><code>pm2 stop 서비스명
+</code></pre>
+<p>어플리케이션 삭제(파일을 삭제하는 것이 아니고 pm2 관리 대상에서 삭제한다는 의미)</p>
+<pre><code>pm2 delete 서비스명
+</code></pre>
+<p>아래처럼 어플리케이션의 포트를 지정할 수 있다고 하나 기동자체가 되지 않았다</p>
+<pre><code>pm2 start npm --name 서비스명 -- --port 1520 -- start
+</code></pre>
+<p>이 때는 아래처럼 package.json 를 수정 후 기동하면 가능하기는 하지만,</p>
+<pre><code>sed -i &quot;s/npm-run-all -p build:css watch:\*/PORT=1520 npm-run-all -p build:css watch:\*/g&quot; ./package.json
+</code></pre>
+<p>왠간하면 빌드해서 반영하자. pm2는 최후의 수단이다.</p>
+
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/tech/" rel="tag">Tech</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/node/" rel="tag">Node</a>
+            </li>
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/reactjs/" rel="tag">ReactJS</a>
+            </li>
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/tech/chromebook%EC%97%90-ssh%EC%A0%91%EC%86%8D%ED%95%98%EA%B8%B0/" rel="bookmark">Chromebook crostini에 SSH접속하기</a>
+  </h2>
+  
+    
+      <time datetime="2020-05-16T17:49:41&#43;09:00">May 16, 2020</time>
+    
+  
+</header>
+      
+        
+          
+            <p>&lsquo;굳이 뭐 이런것까지&rsquo; 라고 생각할 사람도 있을지 모르겠지만 요긴할 때가 있다(sftp로 파일 전송, 부하 모니터링 등등&hellip;)</p>
+<p>이 방법의 핵심은 <strong>Connection Forwarder</strong> 라고 하는 port forwarding 앱에 있다.</p>
+<p>이 앱이 없다면 다른 기기에서 ssh접속은 불가능하다.</p>
+<ul>
+<li>sshd 설치 설명은 생략한다. debian에서 sshd설치 가이드는 인터넷상의 다른 자료를 참조하길 바란다</li>
+<li>암호 로그인 대신 키파일 로그인을 하도록 한다. crostini 의 기본 계정의 암호를 알아내는 방법은 없다. 암호를 변경할 수는 있겠지만 이렇게 했을 때 어떤 문제가 발생할지 알 수 없어 키파일 방식 인증을 하도록 하겠다</li>
+</ul>
+
+
+
+
+<h5 id="키-생성">
+  <a class="Heading-link u-clickable" href="/posts/tech/chromebook%EC%97%90-ssh%EC%A0%91%EC%86%8D%ED%95%98%EA%B8%B0/#%ed%82%a4-%ec%83%9d%ec%84%b1">키 생성</a>
+</h5>
+<p>크롬북의 터미널에서 아래 명령을 실행한다.</p>
+<pre><code>$ mkdir ~/.ssh
+$ chmod 700 ~/.ssh
+$ cd ~/.ssh
+$ ssh-keygen -t rsa
+$ cat id_rsa.pub &gt;&gt; authorized_keys
+$ chmod 600 authorized_keys
+</code></pre>
+<p>일단 crostini 내에서 자기 자신으로 ssh접속이 되는지 확인해보자</p>
+<pre><code>본인아이디@penguin:~$ ssh 본인아이디@localhost -i ~/.ssh/id_rsa
+Linux penguin 4.19.98-08076-g24ab33fb8e14 #1 SMP PREEMPT Wed Apr 1 17:14:27 PDT 2020 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Sat May 16 20:46:05 2020 from ::1
+본인아이디@penguin:~$	
+</code></pre>
+
+
+
+
+<h5 id="port-forwarding">
+  <a class="Heading-link u-clickable" href="/posts/tech/chromebook%EC%97%90-ssh%EC%A0%91%EC%86%8D%ED%95%98%EA%B8%B0/#port-forwarding">port forwarding</a>
+</h5>
+<p>아래 주소에서 connection-forwarder 를 설치하고 기동한다
+<a href="https://chrome.google.com/webstore/detail/connection-forwarder/ahaijnonphgkgnkbklchdhclailflinn">https://chrome.google.com/webstore/detail/connection-forwarder/ahaijnonphgkgnkbklchdhclailflinn</a></p>
+<p>다음과 같이 포워딩 규칙을 생성한다</p>
+<ul>
+<li>Source Address : 0.0.0.0(anywhere)</li>
+<li>Source Port : 22를 제외한 적당한 숫자를 입력한다(22번은 ssh의 기본 포트인데 해커들이 좋아하는 포트이니 가능하면 피하는 것이 좋다)</li>
+<li>Destination Address : penguin.termina.linux.test (이 host명은 chromebook 시스템내에서 crostini 를 가리킨다)</li>
+<li>Destination Port : 22</li>
+</ul>
+<p>[<img src="/images/connection_forwarder.png" alt="connection_forwarder.png">](/images/크롬북 아이피 알아내기.png)</p>
+
+
+
+
+<h5 id="다른-기기에서-접속하기">
+  <a class="Heading-link u-clickable" href="/posts/tech/chromebook%EC%97%90-ssh%EC%A0%91%EC%86%8D%ED%95%98%EA%B8%B0/#%eb%8b%a4%eb%a5%b8-%ea%b8%b0%ea%b8%b0%ec%97%90%ec%84%9c-%ec%a0%91%ec%86%8d%ed%95%98%ea%b8%b0">다른 기기에서 접속하기</a>
+</h5>
+<p>리눅스 컴퓨터에서 접속하는 것으로 예를 들어보자.</p>
+<ol>
+<li>
+<p>크롬북의 아이피 알아내기 : crostini의 아이피가 아니라 <strong>크롬북의 아이피</strong>를 알아내야 한다. &lsquo;설정&rsquo; 에서 현재 접속한 AP를 선택하면 확인할 수 있다
+[![크롬북 아이피 알아내기.png](/images/크롬북 아이피 알아내기.png)](/images/크롬북 아이피 알아내기.png)</p>
+</li>
+<li>
+<p>생성된 키를 클라이언트로 복사</p>
+</li>
+<li>
+<p>다른 키와 구별하기 위해 이름을 변경</p>
+<pre><code> mv id_rsa id_rsa_chrome
+</code></pre>
+</li>
+<li>
+<p>키  권한을 수정</p>
+<pre><code> chmod 600 id_rsa_chrome
+</code></pre>
+</li>
+<li>
+<p>접속</p>
+<pre><code> ssh 본인아이디@크롬북아이피 -i id_rsa_chromebook -p 소스포트번호
+</code></pre>
+</li>
+</ol>
+<p>이런 방법으로 crostini내의 모든 서비스에 다른 기기에서 접속가능하다.</p>
+
+
+
+
+<h5 id="trouble-shoot">
+  <a class="Heading-link u-clickable" href="/posts/tech/chromebook%EC%97%90-ssh%EC%A0%91%EC%86%8D%ED%95%98%EA%B8%B0/#trouble-shoot">Trouble shoot</a>
+</h5>
+<p>픽셀북을 초기화 하고 다시 sshd를 설치했는데 ssh 접속이 불가능하였다. 그래서  ssh status를 확인해 봤더니</p>
+<pre><code>penguin:~/.ssh$ sudo service ssh status
+● ssh.service - OpenBSD Secure Shell server
+   Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enabled)
+   Active: inactive (dead)
+Condition: start condition failed at Sat 2020-09-12 13:14:45 KST; 14s ago
+		   └─ ConditionPathExists=!/etc/ssh/sshd_not_to_be_run was not met
+	 Docs: man:sshd(8)
+		   man:sshd_config(5)
+
+Sep 12 12:23:07 penguin systemd[1]: Condition check resulted in OpenBSD Secure Shell server being skipped.
+Sep 12 13:11:09 penguin systemd[1]: Condition check resulted in OpenBSD Secure Shell server being skipped.
+Sep 12 13:14:45 penguin systemd[1]: Condition check resulted in OpenBSD Secure Shell server being skipped.
+</code></pre>
+<p>이런 문제가 있다고 알려준다.</p>
+<pre><code>ConditionPathExists=!/etc/ssh/sshd_not_to_be_run was not met
+</code></pre>
+<p>이 때는 /etc/ssh/sshd_not_to_be_run 파일을 삭제하고 다시 기동하면 된다.</p>
+<pre><code>penguin:~$ sudo rm /etc/ssh/sshd_not_to_be_run
+penguin:~$ sudo service ssh restart
+</code></pre>
+
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/chromebook/" rel="tag">Chromebook</a>
+            </li>
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/linux/" rel="tag">Linux</a>
+            </li>
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/tech/certbot%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-iptime-ddns-%EB%8F%84%EB%A9%94%EC%9D%B8%EC%9A%A9-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EB%B0%9C%EA%B8%89/" rel="bookmark">Certbot을 이용해 Iptime DDNS 도메인용 인증서 발급</a>
+  </h2>
+  
+    
+      <time datetime="2020-05-10T21:23:09&#43;09:00">May 10, 2020</time>
+    
+  
+</header>
+      
+        
+          
+            <p>발급될지 잠시 의심했었지만 발급 안될 이유가 없더라.</p>
+<p>환경은 다음과 같다.</p>
+<ul>
+<li>iptime 공유기 A104(version 10.03.8) : 80포트는 외부에서 접속가능하도록 반드시 <strong>port forwarding</strong>해야 한다.</li>
+<li>ODROID-U3(Ubuntu 14.04) : Spring Boot2 어플리케이션이 기동될 서버
+<ul>
+<li>python 2.7 : 혹자는 3.6 이상 버전이 필요하다고 하지만 2.7에서도 정상 동작하였다</li>
+<li>Spring Boot 2</li>
+</ul>
+</li>
+</ul>
+
+
+
+
+<h6 id="certbot-설치">
+  <a class="Heading-link u-clickable" href="/posts/tech/certbot%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-iptime-ddns-%EB%8F%84%EB%A9%94%EC%9D%B8%EC%9A%A9-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EB%B0%9C%EA%B8%89/#certbot-%ec%84%a4%ec%b9%98">certbot 설치</a>
+</h6>
+<pre><code>$ git clone https://github.com/certbot/certbot
+</code></pre>
+
+
+
+
+<h6 id="certbot-인증서-발행">
+  <a class="Heading-link u-clickable" href="/posts/tech/certbot%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-iptime-ddns-%EB%8F%84%EB%A9%94%EC%9D%B8%EC%9A%A9-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EB%B0%9C%EA%B8%89/#certbot-%ec%9d%b8%ec%a6%9d%ec%84%9c-%eb%b0%9c%ed%96%89">certbot 인증서 발행</a>
+</h6>
+<p>이 때 80 port에 서비스가 있다면 잠시 내려두자. 인증을 위해 certbot이 잠시 이 포트를 사용할 것이기 때문이다(인증서 갱신시에는 80포트가 불필요 하다)</p>
+<pre><code>$ sudo ./certbot-auto certonly \
+-a standalone -d samba.iptime.org
+
+...(중요하지 않은 메시지는 skip)...
+
+IMPORTANT NOTES:
+- Congratulations! Your certificate and chain have been saved at:
+	/etc/letsencrypt/live/samba.iptime.org/fullchain.pem
+	Your key file has been saved at:
+	/etc/letsencrypt/live/samba.iptime.org/privkey.pem
+	Your cert will expire on 2020-08-08. To obtain a new or tweaked
+	version of this certificate in the future, simply run certbot-auto
+	again. To non-interactively renew *all* of your certificates, run
+	&quot;certbot-auto renew&quot;
+- If you like Certbot, please consider supporting our work by:
+
+	Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
+	Donating to EFF:                    https://eff.org/donate-le 
+</code></pre>
+<p>여기 경로에(/etc/letsencrypt/live/samba.iptime.org) 인증서 파일이 잘 생성되었다.</p>
+
+
+
+
+<h5 id="pkcs12-생성">
+  <a class="Heading-link u-clickable" href="/posts/tech/certbot%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-iptime-ddns-%EB%8F%84%EB%A9%94%EC%9D%B8%EC%9A%A9-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EB%B0%9C%EA%B8%89/#pkcs12-%ec%83%9d%ec%84%b1">PKCS12 생성</a>
+</h5>
+<p>Spring Boot2 Backe-end 에서는 pkcs12 형식의 인증서가 필요하다(고 한다. 보안쪽은 잘 모르므로 패스 -.-)
+여기서 지정한 암호는 SpringBoot설정파일에 넣을 것이므로 잘 메모해 두자.</p>
+<pre><code>$ sudo openssl pkcs12 -export \
+-in /etc/letsencrypt/live/samba.iptime.org/fullchain.pem \
+-inkey /etc/letsencrypt/live/samba.iptime.org/privkey.pem \
+-out sambando.p12 -name bootalias \
+-CAfile /etc/letsencrypt/live/samba.iptime.org/chain.pem \
+-caname root -password pass:암호를지정하셔요
+</code></pre>
+
+
+
+
+<h6 id="springboot2-설정yaml파일">
+  <a class="Heading-link u-clickable" href="/posts/tech/certbot%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-iptime-ddns-%EB%8F%84%EB%A9%94%EC%9D%B8%EC%9A%A9-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EB%B0%9C%EA%B8%89/#springboot2-%ec%84%a4%ec%a0%95yaml%ed%8c%8c%ec%9d%bc">SpringBoot2 설정(yaml파일)</a>
+</h6>
+<pre><code>server:
+  port: 8082
+  ssl:
+	key-store: classpath:sambando.p12
+	key-store-password: 지정한_암호를_넣는다
+	keyStoreType: PKCS12 
+</code></pre>
+<p>SpringBoot을 기동한 후 인증서 정보를 확인해보자</p>
+<p>[![Certbot을 이용해 Iptime DDNS 도메인용 인증서 발급.png](/images/Certbot을 이용해 Iptime DDNS 도메인용 인증서 발급.png)](/images/Certbot을 이용해 Iptime DDNS 도메인용 인증서 발급.png)</p>
+<p>만세! iptime의 top level domain 이지만 뭔가 신뢰가 간다.</p>
+
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/certbot/" rel="tag">Certbot</a>
+            </li>
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/spring-boot/" rel="tag">Spring Boot</a>
+            </li>
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/tech/reactjs--material-ui%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%B9%8C%EB%9D%BC%EC%9D%B4%EB%A6%84-%EC%83%9D%EC%84%B1%EA%B8%B0/" rel="bookmark">ReactJS &amp; Material UI를 이용한 빌라 이름 생성기</a>
+  </h2>
+  
+    
+      <time datetime="2020-05-05T21:58:18&#43;09:00">May 5, 2020</time>
+    
+  
+</header>
+      
+        
+          
+            <p>Bootstrap + ReactJS 기반 예쁜 템플리트도 많지만 실제 업무에서 사용하려면 힘든 경우가 많다. 이런 템플리트류들은 기능성보다는 시각적 만족에 촛점을 맞추기 때문이라 생각. 막상 코딩(로직)을 넣으려면 해야 할 일들이 산더미다.</p>
+<p>덜 예쁘더라도(?) 개발하는 입장에서 쓰기 쉬운 템플리트를 알아보던 중 발견한 Material-UI(<a href="https://material-ui.com/)">https://material-ui.com/)</a>.</p>
+<p>ReactJS 를 이미 경험해서인지 그렇게 어렵지는 않았다. 본격적으로 사용하게 되면 어쩔지는 아직 미지수.</p>
+<ul>
+<li>Back-End : Spring Boot + JPA + REST</li>
+<li>Front-End : ReactJS + Material-UI</li>
+<li>주소 : <a href="https://samba.iptime.org:8082/villaNameGen">https://samba.iptime.org:8082/villaNameGen</a></li>
+</ul>
+
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/reactjs/" rel="tag">ReactJS</a>
+            </li>
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/material-ui/" rel="tag">Material-UI</a>
+            </li>
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/spring-boot/" rel="tag">Spring Boot</a>
+            </li>
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/tech/sony-xperia-proiyokan-2011-%EB%B6%80%ED%99%9C/" rel="bookmark">Sony Xperia Pro(iyokan) 2011 부활 프로젝트</a>
+  </h2>
+  
+    
+      <time datetime="2020-05-01T12:03:18&#43;09:00">May 1, 2020</time>
+    
+  
+</header>
+      
+        
+          
+            <p>미니 slide out qwerty 디바이스에 대한 로망은 식지 않는다. 하지만 대세는 터치 인터페이스라 더 이상 이런 스타일의 기기는 구할래야 구할 수가 없다. 그렇다면 서랍속에서 곤히 잠자는 그때 그 기기에게 새 생명을 불어넣어 보자.</p>
+
+
+
+
+<h5 id="sony-xperia-pro2011-코드명-iyokan">
+  <a class="Heading-link u-clickable" href="/posts/tech/sony-xperia-proiyokan-2011-%EB%B6%80%ED%99%9C/#sony-xperia-pro2011-%ec%bd%94%eb%93%9c%eb%aa%85-iyokan">Sony Xperia Pro(2011) 코드명 &lsquo;iyokan&rsquo;</a>
+</h5>
+<p>적당한 사이즈의 slide out qwerty android phone. 하지만 치명적 약점이 있는데</p>
+<ul>
+<li>사용자 앱 설치 공간이 500메가 정도 밖에 되지 않는다.</li>
+<li>RAM도 역시 500메가 정도라 큰 프로그램을 돌릴 수 없다.</li>
+<li>cpu가 1core 1Ghz라서 무거운 프로그램을 돌릴 수 없다.</li>
+<li>공식 지원 안드로이드 버전이 4.0.4 아이스크림 샌드위치(Ice Cream Sandwich) 로 상당히 낮다. 카카오톡도 설치되지 않는다(확인 결과 Kitkat에도 설치되기는 하는데 최신판으로 업그레이드 하라고 메시지가 뜬다. 최신판은 android 5 이상만 지원한다 -.- 텔레그램 씁시다)</li>
+</ul>
+<figure><img src="/images/IMG_0731.JPG"
+    alt="(Xperia Pro의 공식 마지막 안드로이드 버전 4.0.4 Ice Cream Sandwich)"><figcaption>
+      <p>(Xperia Pro의 공식 마지막 안드로이드 버전 4.0.4 Ice Cream Sandwich)</p>
+    </figcaption>
+</figure>
+
+<p>하지만 다행히도 능력자들이 마시멜로(Marshmallow)-Android 6.0 까지 커스텀 롬을 만들었다! 하지만 롤리팝(Lollipop)-Android 5.0 이후로는  512RAM 기기의 경우 최적화가 되어 있지 않아 쾌적하게 사용할 수 없다고 한다.
+(<a href="https://github.com/LegacyXperia/Wiki/wiki/Installing-LegacyXperia-for-Dummies">https://github.com/LegacyXperia/Wiki/wiki/Installing-LegacyXperia-for-Dummies</a>)</p>
+<p>그래서 Android 4.4 Kitkat으로 업그레이드를 하였다.</p>
+
+
+
+
+<h5 id="공개된-롬-목록">
+  <a class="Heading-link u-clickable" href="/posts/tech/sony-xperia-proiyokan-2011-%EB%B6%80%ED%99%9C/#%ea%b3%b5%ea%b0%9c%eb%90%9c-%eb%a1%ac-%eb%aa%a9%eb%a1%9d">공개된 롬 목록</a>
+</h5>
+<p>여기 <a href="https://forum.xda-developers.com/showthread.php?t=1642480">https://forum.xda-developers.com/showthread.php?t=1642480</a> 에 사용가능한  ROM 목록들이 있다.</p>
+<ul>
+<li><strong>LegacyXperia</strong> : 가장 유명한 프로젝트인 듯. 롬파일을 다운로드 할 수가 없다. 사이트 다운 된 듯 -.- 구글링하여 예전 버전 롬을 찾아 설치는 성공했지만 호환되는 Gapps를 찾지 못해 무용 지물.</li>
+<li>Unofficial Carbon Rom : 다운로드 불가</li>
+<li><em><strong>AOSB Project</strong></em> : 사이트는 사라졌지만 롬파일은 구할 수 있음. 설치 성공
+<ul>
+<li><a href="https://www.mediafire.com/folder/bqea4oqt4wmc1/AOSB">https://www.mediafire.com/folder/bqea4oqt4wmc1/AOSB</a></li>
+<li><a href="http://www.mediafire.com/file/67ey3nkl5s28pky/Slim_AIO_gapps.4.4.2.zip/file">http://www.mediafire.com/file/67ey3nkl5s28pky/Slim_AIO_gapps.4.4.2.zip/file</a></li>
+</ul>
+</li>
+<li><strong>VanirAOSP</strong> : 사이트 접속 불가. 롬 다운로드 불가</li>
+<li><strong>Resurrection Remix</strong> : 설치 성공하였으나 호환 가능한 Gapps를 찾지 못함. 반응 속도가 느림
+<ul>
+<li>안드로이드 버전 4.4.2</li>
+<li>사이트도 살아있음</li>
+<li>롬 다운로드 가능 <a href="https://androidfilehost.com/?w=files&amp;flid=14317">https://androidfilehost.com/?w=files&amp;flid=14317</a></li>
+</ul>
+</li>
+<li>PHD Rom : 개인 작업인 듯. 별로 믿음이 안감 -.-</li>
+<li>iyokanLX : 개인 작업인 듯. 호환가능한 GApps 찾지 못함
+<ul>
+<li>롬 다운로드 <a href="https://androidfilehost.com/?fid=95747613655046171">https://androidfilehost.com/?fid=95747613655046171</a></li>
+</ul>
+</li>
+<li>AOKP : 롬 다운로드 불가</li>
+</ul>
+
+
+
+
+<h5 id="aosb-설치">
+  <a class="Heading-link u-clickable" href="/posts/tech/sony-xperia-proiyokan-2011-%EB%B6%80%ED%99%9C/#aosb-%ec%84%a4%ec%b9%98">AOSB 설치</a>
+</h5>
+<p>위의 롬들 중 AOSB 롬이 Gapps까지 깔끔하게 설치 가능하고 반응속도도 제일 빠르다.</p>
+<ol>
+<li>
+<p>준비물</p>
+<ol>
+<li>Xperia Pro(배터리를 100% 충전 후 진행! 가능하면 컴퓨터에 연결해서 충전하면서 진행하는게 좋음)</li>
+<li>USB케이블</li>
+<li>컴퓨터 : fastboot에서 kernel 설치 시 필요</li>
+<li>SD카드 : 설치한 앱들을 SD카드로 옮길 예정이므로 속도가 빠를수록 좋다. 최소 2G는 되어야 할 듯</li>
+</ol>
+</li>
+<li>
+<p>다운로드</p>
+<ol>
+<li>ROM : <a href="http://www.mediafire.com/file/w9kbvhw97dklnja/20140224-UNOFFICIAL-AOSB-iyokan.zip/file">http://www.mediafire.com/file/w9kbvhw97dklnja/20140224-UNOFFICIAL-AOSB-iyokan.zip/file</a></li>
+<li>Gapps : <a href="http://www.mediafire.com/file/67ey3nkl5s28pky/Slim_AIO_gapps.4.4.2.zip/file">http://www.mediafire.com/file/67ey3nkl5s28pky/Slim_AIO_gapps.4.4.2.zip/file</a></li>
+</ol>
+</li>
+<li>
+<p>ROM 압축해제(커널 플래싱 할 때 사용예정)</p>
+</li>
+<li>
+<p>sd카드에 ROM 과 Gapps복사(압축된 상태로)한 후 전화기에 꼽는다.</p>
+</li>
+<li>
+<p>unlock 코드 받기</p>
+<ol>
+<li>unlock 코드를 발급받아서 이후에 사용할 것이므로 잘 복사해둔다</li>
+<li>발급 주소 : <a href="https://developer.sony.com/develop/open-devices/get-started/unlock-bootloader/#unlock-code">https://developer.sony.com/develop/open-devices/get-started/unlock-bootloader/#unlock-code</a></li>
+</ol>
+</li>
+<li>
+<p>unlock 하기 : android 툴을 설치해야 한다(아래는 모두 pixelbook에서 진행했으며 윈도우즈에서는 다운받아 설치해야 한다)</p>
+<ul>
+<li>다운로드 주소 : <a href="https://developer.android.com/studio/releases/platform-tools">https://developer.android.com/studio/releases/platform-tools</a></li>
+</ul>
+<ol>
+<li>
+<p>툴 설치</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo apt install android-tools-fastboot
+</span></span><span class="line"><span class="cl">$ sudo apt install android-sdk-platform-tools-common</span></span></code></pre></div>
+</li>
+<li>
+<p>fastboot으로 폰 시작하기</p>
+<ol>
+<li>
+<p>전원을 끈다</p>
+</li>
+<li>
+<p>메뉴 키를 누른 상태에서 usb를 연결한다. 이 때 상태 LED는 파란색으로 켜진다</p>
+</li>
+<li>
+<p>fastboot으로 연결되었는지 확인. &ldquo;fastboot devices&rdquo; 명령을 입력했을 때 아래처럼 기기명이 출력되어야 한다</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ fastboot devices
+</span></span><span class="line"><span class="cl">CB5A1GSVH8<span class="p">&amp;</span>ZLP	fastboot</span></span></code></pre></div>
+</li>
+</ol>
+</li>
+<li>
+<p>unlock 하기</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ fastboot oem unlock 0x발급받은unlock코드
+</span></span><span class="line"><span class="cl">...
+</span></span><span class="line"><span class="cl"><span class="o">(</span>bootloader<span class="o">)</span> Unlock phone requested
+</span></span><span class="line"><span class="cl"><span class="o">(</span>bootloader<span class="o">)</span> Erasing block 0x00001300
+</span></span><span class="line"><span class="cl">...
+</span></span><span class="line"><span class="cl"><span class="o">(</span>bootloader<span class="o">)</span> Erasing block 0x00001f00
+</span></span><span class="line"><span class="cl">OKAY <span class="o">[</span>  4.461s<span class="o">]</span>
+</span></span><span class="line"><span class="cl">finished. total time: 4.461s</span></span></code></pre></div>
+</li>
+</ol>
+</li>
+<li>
+<p>커널 플래싱</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ fastboot flash boot ROM압축을_해제한_경로/boot.img
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">target didn<span class="s1">&#39;t report max-download-size
+</span></span></span><span class="line"><span class="cl"><span class="s1">sending &#39;</span>boot<span class="s1">&#39; (8576 KB)...
+</span></span></span><span class="line"><span class="cl"><span class="s1">(bootloader) USB download speed was 148844kB/s
+</span></span></span><span class="line"><span class="cl"><span class="s1">OKAY [  1.000s]
+</span></span></span><span class="line"><span class="cl"><span class="s1">writing &#39;</span>boot<span class="s1">&#39;...
+</span></span></span><span class="line"><span class="cl"><span class="s1">(bootloader) Download buffer format: boot IMG
+</span></span></span><span class="line"><span class="cl"><span class="s1">(bootloader) Flash of partition &#39;</span>boot<span class="err">&#39;</span> requested
+</span></span><span class="line"><span class="cl"><span class="o">(</span>bootloader<span class="o">)</span> S1 partID 0x00000003, block 0x00000280-0x000002e3
+</span></span><span class="line"><span class="cl"><span class="o">(</span>bootloader<span class="o">)</span> Erase operation complete, <span class="m">0</span> bad blocks encountered
+</span></span><span class="line"><span class="cl"><span class="o">(</span>bootloader<span class="o">)</span> Flashing...
+</span></span><span class="line"><span class="cl"><span class="o">(</span>bootloader<span class="o">)</span> Flash operation <span class="nb">complete</span>
+</span></span><span class="line"><span class="cl">OKAY <span class="o">[</span>  1.681s<span class="o">]</span>
+</span></span><span class="line"><span class="cl">finished. total time: 2.681s</span></span></code></pre></div>
+</li>
+<li>
+<p>롬 &amp; GApps 설치</p>
+<ol>
+<li>
+<p>리커버리 모드로  부팅</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ fastboot reboot
+</span></span><span class="line"><span class="cl">rebooting...
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">finished. total time: 0.317s</span></span></code></pre></div>
+</li>
+<li>
+<p>기기가 리부팅 되면서 로고가 뜬다. 이 때 1초에 한번 씩 볼륨다운 버튼을 눌러주면 리커버리 모드로 진입된다.</p>
+<figure><img src="/images/IMG_0733.JPG">
+		</figure>
+
+<p>메뉴 이동은 볼륨 키, 선택은 home 키, 상위 메뉴로 이동은 back 키</p>
+</li>
+<li>
+<p>초기화</p>
+<ol>
+<li>
+<p>선택 : mounts and storage</p>
+<ul>
+<li>Format /system
+<figure><img src="/images/IMG_0734.JPG">
+				</figure>
+</li>
+<li>Format /data</li>
+<li>Format /cache</li>
+</ul>
+</li>
+<li>
+<p>Wipe Data / Factory Reset</p>
+</li>
+</ol>
+</li>
+<li>
+<p>롬 설치</p>
+<ul>
+<li>선택 : Install .zip</li>
+<li>/Storage/SDcard0 에서 20140224-UNOFFICIAL-AOSB-iyokan.zip 선택</li>
+</ul>
+</li>
+<li>
+<p>GApps 설치 설치</p>
+<ul>
+<li>선택 : Install .zip</li>
+<li>/Storage/SDcard0 에서 Slim_AIO_gapps.4.4.2.zip 선택</li>
+</ul>
+</li>
+<li>
+<p>리부팅 : 메인 메뉴로 돌아가서 Reboot system now 선택</p>
+</li>
+</ol>
+</li>
+</ol>
+
+
+
+
+<h5 id="필수-앱">
+  <a class="Heading-link u-clickable" href="/posts/tech/sony-xperia-proiyokan-2011-%EB%B6%80%ED%99%9C/#%ed%95%84%ec%88%98-%ec%95%b1">필수 앱</a>
+</h5>
+<p>리부팅하면 기기가 다시 시작되는데 부팅 로고가 뜬 후 몇 분 정도 걸린다. 초기 세팅을 마치면 필수앱을 바로 설치하자.</p>
+<figure><img src="/images/IMG_E0738.JPG"
+    alt="(설치된 안드로이드 버전은 4.4.2 Kitkat이다)"><figcaption>
+      <p>(설치된 안드로이드 버전은 4.4.2 Kitkat이다)</p>
+    </figcaption>
+</figure>
+
+<ol>
+<li>Link2SD
+<ul>
+<li>가장 먼저 설치해야 하는 앱이다. xperia pro는 저장 공간이 500 메가 정도 밖에 안되기 때문에 프로그램 설치 후 SD 카드로 옮겨줘야 한다.</li>
+<li>다운로드 주소 :  <a href="https://play.google.com/store/apps/details?id=com.buak.Link2SD">https://play.google.com/store/apps/details?id=com.buak.Link2SD</a></li>
+</ul>
+</li>
+<li>도돌 키보드
+<ul>
+<li>물리 키보드에서 한글을 입력하기 위해 필요. 다른 키보드를 사용해도 한글 입력은 할 수 있지만 한영 전환을 쉽게 하기 위해서 필수다(1.67 버전만 정상 동작하는 듯 하다)</li>
+<li>다운로드 주소 : <a href="https://play.google.com/store/apps/details?id=com.fiberthemax.OpQ2keyboard">https://play.google.com/store/apps/details?id=com.fiberthemax.OpQ2keyboard</a></li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>그 외에 필요한 앱이 있다면 사이즈가 큰 것부터 설치하고 Link2SD 로 SD카드로 옮겨준다.</li>
+</ul>
+
+
+
+
+<h5 id="오버클럭-하기">
+  <a class="Heading-link u-clickable" href="/posts/tech/sony-xperia-proiyokan-2011-%EB%B6%80%ED%99%9C/#%ec%98%a4%eb%b2%84%ed%81%b4%eb%9f%ad-%ed%95%98%ea%b8%b0">오버클럭 하기</a>
+</h5>
+<ul>
+<li>장착된 CPU 원래의 클럭 속도 1Ghz에서 1.4Ghz까지 오버클럭 가능하다. 배터리 소모는 좀 있지만 쾌적한 사용을 위해 시도해볼 만하다.</li>
+<li>설정 &gt; Performance 에서 Profile을 &lsquo;Performance&rsquo;로 선택한다.</li>
+</ul>
+
+
+
+
+<h5 id="사용-후기">
+  <a class="Heading-link u-clickable" href="/posts/tech/sony-xperia-proiyokan-2011-%EB%B6%80%ED%99%9C/#%ec%82%ac%ec%9a%a9-%ed%9b%84%ea%b8%b0">사용 후기</a>
+</h5>
+<p>Kitkat 업그레이드 &amp; 오버클럭 후 체감 속도는 2배 이상 빨라졌다.</p>
+<p>이런 폼팩터에 램1G, 듀얼코어 CPU만 장착 되었어도 정말 쓸만한  기기가 되었을 텐데 하는 아쉬움이 있다. 하지만  텔레그램 채팅과 터미널 접속용으로는 최상이다.</p>
+<figure><img src="/images/IMG_E0736.JPG"
+    alt="텔레그램"><figcaption>
+      <p>텔레그램</p>
+    </figcaption>
+</figure>
+
+<figure><img src="/images/IMG_E0735.JPG"
+    alt="Juice SSH 터미널 앱"><figcaption>
+      <p>Juice SSH 터미널 앱</p>
+    </figcaption>
+</figure>
+
+<figure><img src="/images/nibbles.JPG"
+    alt="지렁이 게임 Nibbles"><figcaption>
+      <p>지렁이 게임 Nibbles</p>
+    </figcaption>
+</figure>
+
+<figure><img src="/images/bastet.JPG"
+    alt="Juice SSH 터미널 앱으로 서버 접속 후 터미널용 tetris clon인 bastet 실행"><figcaption>
+      <p>Juice SSH 터미널 앱으로 서버 접속 후 터미널용 tetris clon인 bastet 실행</p>
+    </figcaption>
+</figure>
+
+
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/tech/" rel="tag">Tech</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/android/" rel="tag">Android</a>
+            </li>
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/sony-xperia-pro/" rel="tag">Sony Xperia Pro</a>
+            </li>
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/qwerty-phone/" rel="tag">Qwerty Phone</a>
+            </li>
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+  
+
+  
+  <nav>
+    
+      <a class="Pagination u-clickable" href="/page/9/" rel="prev">« Previous</a>
+    
+    
+      <a class="Pagination Pagination--right u-clickable" href="/page/7/" rel="next">Next »</a>
+    
+  </nav>
+
+
+
+
+      </div>
+    </div>
+  </main>
+  
+  <footer class="Footer">
+    <div class="u-wrapper">
+      <div class="u-padding u-noboosting">
+        Do What You Want To Do
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

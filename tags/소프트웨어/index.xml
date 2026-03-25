@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>소프트웨어 on Do What You Want To Do</title>
-    <link>https://bluedskim.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4/</link>
-    <description>Recent content in 소프트웨어 on Do What You Want To Do</description>
+    <title>소프트웨어 :: Tag :: Do What You Want To Do</title>
+    <link>https://bluedskim.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4/index.html</link>
+    <description></description>
     <generator>Hugo</generator>
     <language>ko-KR</language>
     <lastBuildDate>Sun, 19 Apr 2020 21:44:58 +0900</lastBuildDate>
     <atom:link href="https://bluedskim.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>소프트웨어 프로젝트  &#39;구현&#39; 단계 Overview</title>
-      <link>https://bluedskim.github.io/posts/tech/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8---%EA%B5%AC%ED%98%84-%EB%8B%A8%EA%B3%84-overview/</link>
+      <link>https://bluedskim.github.io/posts/tech/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8---%EA%B5%AC%ED%98%84-%EB%8B%A8%EA%B3%84-overview/index.html</link>
       <pubDate>Sun, 19 Apr 2020 21:44:58 +0900</pubDate>
-      <guid>https://bluedskim.github.io/posts/tech/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8---%EA%B5%AC%ED%98%84-%EB%8B%A8%EA%B3%84-overview/</guid>
-      <description>&lt;p&gt;모 대학 문헌정보학과 학생들을 위한 특강 자료.&lt;/p&gt;&#xA;&lt;p&gt;소프트웨어 프로젝트의 단계 중 가장 중요한 단계라고 할 수 있는 &amp;lsquo;구현&amp;rsquo; 단계에 대한 흥미위주의 개괄적 설명이다.&lt;/p&gt;&#xA;&lt;p&gt;소프트웨어 프로젝트   구현 단계 Overview (1/2)&lt;/p&gt;&#xA;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/t4Eal2t8geE&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;p&gt;소프트웨어 프로젝트   구현 단계 Overview (2/2)&lt;/p&gt;&#xA;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/GOXR7e_9fgo&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;</description>
+      <guid>https://bluedskim.github.io/posts/tech/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8---%EA%B5%AC%ED%98%84-%EB%8B%A8%EA%B3%84-overview/index.html</guid>
+      <description>모 대학 문헌정보학과 학생들을 위한 특강 자료.&#xA;소프트웨어 프로젝트의 단계 중 가장 중요한 단계라고 할 수 있는 ‘구현’ 단계에 대한 흥미위주의 개괄적 설명이다.&#xA;소프트웨어 프로젝트 구현 단계 Overview (1/2)&#xA;소프트웨어 프로젝트 구현 단계 Overview (2/2)</description>
     </item>
   </channel>
 </rss>

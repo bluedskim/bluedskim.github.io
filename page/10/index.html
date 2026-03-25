@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=7001&amp;path=livereload" data-no-instant defer></script>
+  
+
+  
+  
+
+
+  <meta charset="utf-8">
+
+
+  <meta name="robots" content="noindex, nofollow, noarchive">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  
+    
+      <meta name="description" content="bluedskim@gmail.com">
+    
+  
+
+
+<meta name="color-scheme" content="light dark">
+
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.152.2">
+  <title>Do What You Want | Do What You Want To Do</title>
+  <link href="//localhost:7001/" rel="canonical">
+
+
+
+
+  <link href="alternate" rel="/feed.xml" type="application/rss+xml">
+
+  
+
+
+
+
+  
+  
+    
+    
+  
+  
+
+
+
+
+
+  
+
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+
+
+  
+    <link href="/css/base.css" rel="stylesheet">
+
+    <link href="/css/syntax.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+  <nav class="u-background">
+  <div class="u-wrapper">
+    <ul class="Banner">
+      <li class="Banner-item Banner-item--title">
+        
+          <a class="Banner-link u-clickable" href="/">Do What You Want To Do</a>
+        
+      </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/categories/tech/">Tech</a>
+        </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/tags/samba/">Samba</a>
+        </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/categories/%EC%9D%8C%EC%95%85/">음악</a>
+        </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/categories/%EC%9D%BC%EC%83%81%EC%82%AC/">일상사</a>
+        </li>
+      
+        
+        
+          
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/feed.xml">RSS</a>
+        </li>
+      
+    </ul>
+  </div>
+</nav>
+
+  <main>
+    <div class="u-wrapper">
+      <div class="u-padding">
+        
+
+  
+    
+    <header class="Heading">
+  <h1 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/" rel="bookmark">Do What You Want</a>
+  </h1>
+  
+</header>
+  
+
+  
+
+
+
+<h1 id="do-what-you-want">
+  <a class="Heading-link u-clickable" href="/#do-what-you-want">Do What You Want</a>
+</h1>
+<p>잡다한 것들을 기록합니다.</p>
+
+
+  
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/tech/%EC%A0%80%EC%82%AC%EC%96%91-pc%EC%97%90-%EA%B0%95%EC%B6%94-%EB%A6%AC%EB%88%85%EC%8A%A4-sparky-linux/" rel="bookmark">저사양 Pc에 강추 리눅스 Sparky Linux</a>
+  </h2>
+  
+    
+      <time datetime="2019-11-02T02:14:20&#43;09:00">November 2, 2019</time>
+    
+  
+</header>
+      
+        
+          
+            
+
+
+
+<h3 id="32bit-노트북에-sparkylinux-설치">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%A0%80%EC%82%AC%EC%96%91-pc%EC%97%90-%EA%B0%95%EC%B6%94-%EB%A6%AC%EB%88%85%EC%8A%A4-sparky-linux/#32bit-%eb%85%b8%ed%8a%b8%eb%b6%81%ec%97%90-sparkylinux-%ec%84%a4%ec%b9%98">32bit 노트북에 SparkyLinux 설치</a>
+</h3>
+<p>설치한 모델은 MSI vr420x이다. 2008년에 구입한 모델</p>
+<ul>
+<li>Intel Pentium Dual Core T2330 (1.6GHz / 1MB / FSB 533MHz)</li>
+<li>2GB DDR2 667Mhz</li>
+</ul>
+<p>이 노트북에 설치한 리눅스  OS중에 가장 쾌적하다.</p>
+<p><a href="/images/screenShootvr420.png"><img src="/images/screenShootvr420.png" alt="screenShootvr420.png"></a></p>
+
+
+
+
+<h4 id="hibernate-후-resume-안될-때-참고">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%A0%80%EC%82%AC%EC%96%91-pc%EC%97%90-%EA%B0%95%EC%B6%94-%EB%A6%AC%EB%88%85%EC%8A%A4-sparky-linux/#hibernate-%ed%9b%84-resume-%ec%95%88%eb%90%a0-%eb%95%8c-%ec%b0%b8%ea%b3%a0">hibernate 후 resume 안될 때 참고</a>
+</h4>
+<p><a href="https://unix.stackexchange.com/a/410971/380108">https://unix.stackexchange.com/a/410971/380108</a></p>
+<p>하여 GRUB_CMDLINE_LINUX_DEFAULT 의 제일 마지막에 nokaslr 옵션을 추가하고</p>
+<pre><code>#GRUB_CMDLINE_LINUX_DEFAULT=&quot;quiet splash resume=UUID=9449b1a5-f2c1-4116-a1f3-6b10e63728ef&quot;
+GRUB_CMDLINE_LINUX_DEFAULT=&quot;quiet splash resume=UUID=9449b1a5-f2c1-4116-a1f3-6b10e63728ef nokaslr&quot;
+</code></pre>
+<p>update-grub 하면 잘 된다.</p>
+<pre><code>sudo update-grub 
+</code></pre>
+
+
+
+
+<h3 id="winbook-tw801에-sparkylinux-설치">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%A0%80%EC%82%AC%EC%96%91-pc%EC%97%90-%EA%B0%95%EC%B6%94-%EB%A6%AC%EB%88%85%EC%8A%A4-sparky-linux/#winbook-tw801%ec%97%90-sparkylinux-%ec%84%a4%ec%b9%98">Winbook TW801에 SparkyLinux 설치</a>
+</h3>
+<p>노트북에 설치할 때와 방식은 동일하다.</p>
+<ul>
+<li>usb에 설치 성공</li>
+<li>SD카드에 설치 후 부팅 실패.</li>
+<li>내장 MMC에 설치하려 했으나 파티션 생성 실패 -.- 윈도우 설치 파티션을 줄이고 리눅스파티션을 만드려고 했으나 2.7g 밖에 확보 못했다.
+다른 툴을 쓰면 가능하다고 하는데 굳이 그렇게까지 하고싶지는 않아서</li>
+</ul>
+<p>안되는 것들</p>
+<ul>
+<li>bluetooth 안됨</li>
+<li>battery 상태 확인 불가</li>
+<li>hibernate 안됨</li>
+<li>화면에서 터치로 마우스 오른쪽 클릭 안됨. 왼쪽 클릭, 드래그는 됨</li>
+</ul>
+<p><a href="/images/screenShotTW801.png"><img src="/images/screenShotTW801.png" alt="screenShotTW801.png"></a></p>
+
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/tech/" rel="tag">Tech</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/sparkylinux/" rel="tag">Sparkylinux</a>
+            </li>
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/linux/" rel="tag">Linux</a>
+            </li>
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/tech/hamonikr-me%EB%A5%BC-%EA%B0%9C%EB%B0%9Cpc%EC%97%90%EC%84%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-%EC%9C%84%ED%95%B4-%ED%85%8C%EC%8A%A4%ED%8A%B8/" rel="bookmark">HamoniKR ME를 개발pc에서 사용하기 위해 테스트</a>
+  </h2>
+  
+    
+      <time datetime="2019-10-31T13:42:17&#43;09:00">October 31, 2019</time>
+    
+  
+</header>
+      
+        
+          
+            <p>swap 영역이 너무 작게 잡혀 1G -.- swap 하느라 다운 될 지경
+cinnamon이 cpu를 많이 잡아 먹는다</p>
+<p>XFCE는 상당히 가볍다</p>
+
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/tech/trying_puppy_linux/" rel="bookmark">2007년 컴퓨터에 Puppy linux설치하기</a>
+  </h2>
+  
+    
+      <time datetime="2019-10-30T23:18:04&#43;09:00">October 30, 2019</time>
+    
+  
+</header>
+      
+        
+          
+            <p>집에 컴퓨터가 꽤 있지만  DVD가 달려 있는 컴퓨터는 2007년산 MSI노트북 뿐이라 DVD ripping 을 위해 세팅을 하기로 했다.</p>
+<p>Core duo cpu에 2G ram 이라 최신 배포판들은 힘들게 뻔해서 가벼운 배포판들을 테스트 해보고 있다.</p>
+<p>Puppy 리눅스는 속도도 빠르고 아기자기한것 다 좋은데 한글 세팅이 쉽지 않다.</p>
+<p>Ubuntu계열이라고 소개되어 있는데  뭔가 많이 다른 듯 -.- 아무래도 포기해야 할 듯 하다.</p>
+<p>이런 저런 방법으로 한글 입출력에 성공했다는 포스팅들이 있기는 한데 그 과정이 만만치 않은 듯 -.-</p>
+<p><a href="/images/puppy_language_pack_needed.png"><img src="/images/puppy_language_pack_needed.png" alt="puppy_language_pack_needed.png"></a></p>
+<p><a href="/images/puppy_browser.png"><img src="/images/puppy_browser.png" alt="puppy_browser.png"></a></p>
+
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/tech/special-thanks-to-ubuntu/" rel="bookmark">Special Thanks to Ubuntu</a>
+  </h2>
+  
+    
+      <time datetime="2019-10-29T22:53:26&#43;09:00">October 29, 2019</time>
+    
+  
+</header>
+      
+        
+          
+            <p>고맙다 우분투. 내 너를 반드시 업데이트 한다.</p>
+<pre><code>Welcome to Ubuntu 14.04.5 LTS (GNU/Linux 3.8.13.16 armv7l)
+
+ * Documentation:  https://help.ubuntu.com/
+
+564 packages can be updated.
+500 updates are security updates.
+
+New release '16.04.6 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+Last login: Tue Oct 29 22:49:04 2019 from 8f30cba7c16415127f3b667a5db841d3.local
+</code></pre>
+
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/tech/" rel="tag">Tech</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/ubuntu/" rel="tag">Ubuntu</a>
+            </li>
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/linux/" rel="tag">Linux</a>
+            </li>
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/tech/mirroring-with-wget/" rel="bookmark">Mirroring With Wget</a>
+  </h2>
+  
+    
+      <time datetime="2019-10-29T21:42:39&#43;09:00">October 29, 2019</time>
+    
+  
+</header>
+      
+        
+          
+            <p>볼만한 하둡 pdf 자료가 없어서 공식 홈페이지의 document를 다운받기로 했다.</p>
+<p>웹사이트 미러링에는 wget 관련 자료가 가장 많다.</p>
+<p>사용한 옵션을 정리해보자</p>
+<p>&ndash;mirror : 해당 사이트의 link를 follow하면서 미러링을 한다.<br/>
+&ndash;convert-links : 링크가 로컬에서도 동작하도록 변환한다.<br/>
+&ndash;html-extension : 디렉토리 형태의 주소를 저장할 때 html 확장자를 붙혀준다. 로컬에서 조회할 때 필수~!<br/>
+&ndash;wait=2 : 서버 부하를 줄여주기 위해 2초간 쉰다.<br/>
+&ndash;no-parent : 상위 경로는 받아오지 않는다.<br/>
+-o log : log라는 이름으로 로그를 저장한다.</p>
+<pre><code>wget --mirror            \
+	 --convert-links     \
+	 --html-extension    \
+	 --wait=2            \
+	 --no-parent         \
+	 -o log              \
+https://hadoop.apache.org/docs/stable/index.html
+</code></pre>
+
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/tech/" rel="tag">Tech</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/mirroring/" rel="tag">Mirroring</a>
+            </li>
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/wget/" rel="tag">Wget</a>
+            </li>
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+  
+
+  
+  <nav>
+    
+      <a class="Pagination u-clickable" href="/page/11/" rel="prev">« Previous</a>
+    
+    
+      <a class="Pagination Pagination--right u-clickable" href="/page/9/" rel="next">Next »</a>
+    
+  </nav>
+
+
+
+
+      </div>
+    </div>
+  </main>
+  
+  <footer class="Footer">
+    <div class="u-wrapper">
+      <div class="u-padding u-noboosting">
+        Do What You Want To Do
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=7001&amp;path=livereload" data-no-instant defer></script>
+  
+
+  
+  
+
+
+  <meta charset="utf-8">
+
+
+  <meta name="robots" content="noindex, nofollow, noarchive">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  
+    
+      <meta name="description" content="bluedskim@gmail.com">
+    
+  
+
+
+<meta name="color-scheme" content="light dark">
+
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.152.2">
+  <title>Do What You Want | Do What You Want To Do</title>
+  <link href="//localhost:7001/" rel="canonical">
+
+
+
+
+  <link href="alternate" rel="/feed.xml" type="application/rss+xml">
+
+  
+
+
+
+
+  
+  
+    
+    
+  
+  
+
+
+
+
+
+  
+
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+
+
+  
+    <link href="/css/base.css" rel="stylesheet">
+
+    <link href="/css/syntax.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+  <nav class="u-background">
+  <div class="u-wrapper">
+    <ul class="Banner">
+      <li class="Banner-item Banner-item--title">
+        
+          <a class="Banner-link u-clickable" href="/">Do What You Want To Do</a>
+        
+      </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/categories/tech/">Tech</a>
+        </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/tags/samba/">Samba</a>
+        </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/categories/%EC%9D%8C%EC%95%85/">음악</a>
+        </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/categories/%EC%9D%BC%EC%83%81%EC%82%AC/">일상사</a>
+        </li>
+      
+        
+        
+          
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/feed.xml">RSS</a>
+        </li>
+      
+    </ul>
+  </div>
+</nav>
+
+  <main>
+    <div class="u-wrapper">
+      <div class="u-padding">
+        
+
+  
+    
+    <header class="Heading">
+  <h1 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/" rel="bookmark">Do What You Want</a>
+  </h1>
+  
+</header>
+  
+
+  
+
+
+
+<h1 id="do-what-you-want">
+  <a class="Heading-link u-clickable" href="/#do-what-you-want">Do What You Want</a>
+</h1>
+<p>잡다한 것들을 기록합니다.</p>
+
+
+  
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/software-engineering/mysql-%EC%9D%98-%ED%95%84%EB%93%9C-type-%EB%B3%80%ED%99%98%ED%95%A8%EC%88%98-cast/" rel="bookmark">MySQL 의 필드 type 변환함수 CAST</a>
+  </h2>
+  
+    
+      <time datetime="2008-11-13T00:38:00&#43;09:00">November 13, 2008</time>
+    
+  
+</header>
+      
+        
+          
+            <p><span class="copyright_entry" style="display:block;" title="MySQL 의 필드 type 변환함수 CAST@@**@@http://shed.egloos.com/1835243"></span>text 유형 필드에 들어있는 값들을 숫자값 기준으로 정렬하고자 한다면
+<br>
+<br>반드시 해당 필드를 CAST함수를 이용해서 변환해야 한다.
+<br>
+<br>다음 2개의 쿼리를 비교해 보자
+<br>
+<br>* 쿼리 : select * from
+<span class="syntax"><span class="syntax_alpha syntax_alpha_identifier">prices order by </span></span>price;
+<br>* 결과 :
+<br>1420
+<br>1590
+<br>1990
+<br>220
+<br>2390
+<br>2660
+<br>280
+<br>2990
+<br>3420
+<br>380
+<br>3990
+<br>4270
+<br>450
+<br>570
+<br>5700
+<br>760
+<br>850
+<br>이건 원하는 결과가 아니다. ㅠㅠ&hellip;. (애초에 테이블을 만들 때 필드를 숫자 형태로 만들었어야 한다&hellip;)
+<br>
+<br>
+<span class="syntax"><span class="syntax_alpha syntax_alpha_identifier">CAST함수를 사용한다면,</span></span>
+<br>* 쿼리 : select * from
+<span class="syntax"><span class="syntax_alpha syntax_alpha_identifier">prices order by CAST(</span></span>price AS UNSIGNED);
+<br>* 결과 :
+<br>220
+<br>280
+<br>380
+<br>450
+<br>570
+<br>760
+<br>850
+<br>1060
+<br>1420
+<br>1590
+<br>1990
+<br>2390
+<br>2660
+<br>2990
+<br>3420
+<br>3990
+<br>4270
+<br>5700
+<br>
+<br>제대로 나온다.
+<br>
+<br>더 자세한 API는 여기에
+<a title="" href="http://dev.mysql.com/doc/refman/5.0/en/cast-functions.html"><a href="http://dev.mysql.com/doc/refman/5.0/en/cast-functions.html">http://dev.mysql.com/doc/refman/5.0/en/cast-functions.html</a></a></p>
+<!--
+       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		    xmlns:dc="http://purl.org/dc/elements/1.1/"
+		    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+       <rdf:Description
+	        rdf:about="http://shed.egloos.com/1835243"
+	        dc:identifier="http://shed.egloos.com/1835243"
+	        dc:title="MySQL 의 필드 type 변환함수 CAST"
+	        trackback:ping="http://shed.egloos.com/tb/1835243"/>
+       </rdf:RDF>
+       -->
+<ul></ul>
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/software-engineering/" rel="tag">Software Engineering</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/mysql/" rel="tag">MySQL</a>
+            </li>
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/software-engineering/%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%9D%98-%EC%9E%90%EC%A7%88%EC%9D%B4%EB%9D%BC%EA%B3%A0-%ED%95%9C%EB%8B%A4./" rel="bookmark">개발자의 자질이라고 한다.</a>
+  </h2>
+  
+    
+      <time datetime="2008-11-12T04:07:00&#43;09:00">November 12, 2008</time>
+    
+  
+</header>
+      
+        
+          
+            <p><span class="copyright_entry" style="display:block;" title="개발자의 자질이라고 한다.@@**@@http://shed.egloos.com/1834815"></span>해외의 어떤 회사의 구인광고에서 따왔다.
+<br>
+<br>리크루터가 &lsquo;당신의 장점을 말해보세요&rsquo; 라 하면 다음 단어를 잘 조합하면 되겠다.
+<br>
+<br>* Accurate
+<br>
+<br>* Eye for quality/details
+<br>
+<br>* Client focused
+<br>
+<br>* Team player
+<br>
+<br>* Entrepreneurial mentality
+<br>
+<br>* Analytical
+<br>
+<br>* Independent
+<br>
+<br>* Problem solving
+<br>
+<br>* Self starting
+<br>
+<br>* Fast learning</p>
+<!--
+       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		    xmlns:dc="http://purl.org/dc/elements/1.1/"
+		    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+       <rdf:Description
+	        rdf:about="http://shed.egloos.com/1834815"
+	        dc:identifier="http://shed.egloos.com/1834815"
+	        dc:title="개발자의 자질이라고 한다."
+	        trackback:ping="http://shed.egloos.com/tb/1834815"/>
+       </rdf:RDF>
+       -->
+<ul></ul>
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/software-engineering/" rel="tag">Software Engineering</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90/" rel="tag">개발자</a>
+            </li>
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/software-engineering/%EC%95%84%EC%9D%BC%EB%9E%9C%EB%93%9C%EC%9D%98-%EB%8C%80%ED%91%9C%EC%A0%81-isp%EC%9D%B8-%EC%97%90%EC%9D%B4%EB%A0%88%EC%BD%A4%EC%9D%98-wep-%ED%82%A4-%EC%A0%9C%EB%84%88%EB%A0%88%EC%9D%B4%ED%84%B0/" rel="bookmark">아일랜드의 대표적 ISP인 에이레콤의 WEP 키 제너레이터</a>
+  </h2>
+  
+    
+      <time datetime="2008-11-11T18:38:00&#43;09:00">November 11, 2008</time>
+    
+  
+</header>
+      
+        
+          
+            <p><span class="copyright_entry" style="display:block;" title="아일랜드의 대표적 ISP인 에이레콤의 WEP 키 제너레이터@@**@@http://shed.egloos.com/1828330"></span>아일랜드의 대표적 ISP인 에이레콤 의 경우
+<br>무선공유기에 디폴트로 세팅된 SSID를 통해서 WEP키를 해킹할수 있는 어이없는 경우가 있다.
+<br>해킹툴은 java로 만들어졌다.
+<br>
+<br>
+<a href="http://pds11.egloos.com/pds/200810/28/82/WEP_MIDP.zip">WEP_MIDP.zip</a> -&gt;  MIDP 플랫폼용
+<br>
+<a href="http://pds10.egloos.com/pds/200810/28/82/WEP_platformIndependent.zip">WEP_platformIndependent.zip</a> -&gt; 플랫폼 인디펜던트(그러나 Swing package필요)
+<br></p>
+<!--
+       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		    xmlns:dc="http://purl.org/dc/elements/1.1/"
+		    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+       <rdf:Description
+	        rdf:about="http://shed.egloos.com/1828330"
+	        dc:identifier="http://shed.egloos.com/1828330"
+	        dc:title="아일랜드의 대표적 ISP인 에이레콤의 WEP 키 제너레이터"
+	        trackback:ping="http://shed.egloos.com/tb/1828330"/>
+       </rdf:RDF>
+       -->
+<ul></ul>
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/software-engineering/" rel="tag">Software Engineering</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/java/" rel="tag">Java</a>
+            </li>
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/myworks/how-deep-is-your-love---the-bird-and-the-bee%EB%A6%AC%EB%AF%B9%EC%8A%A4/" rel="bookmark">How deep is your love - The Bird and The Bee(리믹스)</a>
+  </h2>
+  
+    
+      <time datetime="2008-11-10T02:53:00&#43;09:00">November 10, 2008</time>
+    
+  
+</header>
+      
+        
+          
+            <p>How deep is your love를 리믹스해봤다. 리믹스라 하기는 뭐하지만…</p>
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/73624652&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+<p>아래는 원곡이다.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/O8DAP_zl9Cw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/myworks/" rel="tag">MyWorks</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/%EC%9D%8C%EC%95%85/%EA%B3%B5%EC%A7%9C-%EB%A9%80%ED%8B%B0%ED%8A%B8%EB%9E%99-%EC%82%AC%EC%9A%B4%EB%93%9C-%EC%97%90%EB%94%94%ED%84%B0--vsti/" rel="bookmark">공짜 멀티트랙 사운드 에디터 &amp; VSTi</a>
+  </h2>
+  
+    
+      <time datetime="2008-11-09T20:36:00&#43;09:00">November 9, 2008</time>
+    
+  
+</header>
+      
+        
+          
+            <p><span class="copyright_entry" style="display:block;" title="공짜 멀티트랙 사운드 에디터 &amp; VSTi@@**@@http://shed.egloos.com/1833724"></span>
+<span style="font-weight: bold;">Reaper - 멀티트랙 사운드 에디터</span>
+<br>정확히는 공짜가 아니다.shareware이지만 기능제한, 기간제한이 없다.
+<br>일단 설치파일 크기가 3메가 정도 밖에 되지 않고 USB스틱에 담아서 사용할 수도 있다.
+<br>미디에디터도 있고 VSTi를 지원한다. 사용법도 상당히 쉽다.
+<br><a href="http://www.cockos.com/reaper/">http://www.cockos.com/reaper/</a>
+<br>
+<br>
+<span style="font-weight: bold;">공짜 VSTi 정보들</span>
+<br></p>
+<ol>
+ <li><a href="http://www.dskmusic.com/blog/?page_id=3">http://www.dskmusic.com/blog/?page_id=3</a></li>
+ <li><a href="http://www.freesoundeditor.com/VSTSyntheng.htm">http://www.freesoundeditor.com/VSTSyntheng.htm</a></li>
+ <li><a href="http://gall.dcinside.com/list.php?id=elec&amp;no=30810">http://gall.dcinside.com/list.php?id=elec&amp;no=30810</a></li>
+</ol> 
+<!--
+       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		    xmlns:dc="http://purl.org/dc/elements/1.1/"
+		    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+       <rdf:Description
+	        rdf:about="http://shed.egloos.com/1833724"
+	        dc:identifier="http://shed.egloos.com/1833724"
+	        dc:title="공짜 멀티트랙 사운드 에디터 &amp; VSTi"
+	        trackback:ping="http://shed.egloos.com/tb/1833724"/>
+       </rdf:RDF>
+       -->
+<ul></ul>
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/%EC%9D%8C%EC%95%85/" rel="tag">음악</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+  
+
+  
+  <nav>
+    
+      <a class="Pagination u-clickable" href="/page/72/" rel="prev">« Previous</a>
+    
+    
+      <a class="Pagination Pagination--right u-clickable" href="/page/70/" rel="next">Next »</a>
+    
+  </nav>
+
+
+
+
+      </div>
+    </div>
+  </main>
+  
+  <footer class="Footer">
+    <div class="u-wrapper">
+      <div class="u-padding u-noboosting">
+        Do What You Want To Do
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

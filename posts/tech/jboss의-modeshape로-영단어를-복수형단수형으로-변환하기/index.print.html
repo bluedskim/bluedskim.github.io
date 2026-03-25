@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html id="R-html" lang="ko-KR" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.152.2">
+    <meta name="generator" content="Relearn 9.0.3+36307e4ed23582638ab689240ac7b427217803ee">
+    <meta name="description" content="java 프로젝트를 진행할 때 단수 영단어를 복수로 변환하거나 반대로 복수 영단어를 단수로 변환해야 하는 경우가 있다.
+Jboss에서 제공하는 Modeshape의 Inflector 라이브러리를 쓰면 쉽게 구현이 가능하다.
+Modeshape(https://modeshape.wordpress.com) 는 오픈소스 JCR(Java Content Repository)이라고 한다.
+하지만 나의 관심사는 영단어 단수/복수 변환이었기에 JCR에 대해서는 더 이상 알아보지는 않기로 했다(그래서 이 라이브러리를 단복수 변환에만 쓰기 위해 사용하는 것은 overkill일 것 같기는 하다).
+Gradle로 최신판을 의존성에 추가한다(아쉽게도 2017년 이후로 버전업 되고 있지 않다)
+compile group: &#39;org.modeshape&#39;, name: &#39;modeshape-common&#39;, version: &#39;5.4.1.Final&#39; 사용법은 아주 쉽다.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Jboss의 Modeshape로 영단어를 복수형 혹은 단수형으로 변환하기 :: Do What You Want To Do">
+    <meta name="twitter:description" content="java 프로젝트를 진행할 때 단수 영단어를 복수로 변환하거나 반대로 복수 영단어를 단수로 변환해야 하는 경우가 있다.
+Jboss에서 제공하는 Modeshape의 Inflector 라이브러리를 쓰면 쉽게 구현이 가능하다.
+Modeshape(https://modeshape.wordpress.com) 는 오픈소스 JCR(Java Content Repository)이라고 한다.
+하지만 나의 관심사는 영단어 단수/복수 변환이었기에 JCR에 대해서는 더 이상 알아보지는 않기로 했다(그래서 이 라이브러리를 단복수 변환에만 쓰기 위해 사용하는 것은 overkill일 것 같기는 하다).
+Gradle로 최신판을 의존성에 추가한다(아쉽게도 2017년 이후로 버전업 되고 있지 않다)
+compile group: &#39;org.modeshape&#39;, name: &#39;modeshape-common&#39;, version: &#39;5.4.1.Final&#39; 사용법은 아주 쉽다.">
+    <meta property="og:url" content="https://bluedskim.github.io/posts/tech/jboss%EC%9D%98-modeshape%EB%A1%9C-%EC%98%81%EB%8B%A8%EC%96%B4%EB%A5%BC-%EB%B3%B5%EC%88%98%ED%98%95%EB%8B%A8%EC%88%98%ED%98%95%EC%9C%BC%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/index.html">
+    <meta property="og:site_name" content="Do What You Want To Do">
+    <meta property="og:title" content="Jboss의 Modeshape로 영단어를 복수형 혹은 단수형으로 변환하기 :: Do What You Want To Do">
+    <meta property="og:description" content="java 프로젝트를 진행할 때 단수 영단어를 복수로 변환하거나 반대로 복수 영단어를 단수로 변환해야 하는 경우가 있다.
+Jboss에서 제공하는 Modeshape의 Inflector 라이브러리를 쓰면 쉽게 구현이 가능하다.
+Modeshape(https://modeshape.wordpress.com) 는 오픈소스 JCR(Java Content Repository)이라고 한다.
+하지만 나의 관심사는 영단어 단수/복수 변환이었기에 JCR에 대해서는 더 이상 알아보지는 않기로 했다(그래서 이 라이브러리를 단복수 변환에만 쓰기 위해 사용하는 것은 overkill일 것 같기는 하다).
+Gradle로 최신판을 의존성에 추가한다(아쉽게도 2017년 이후로 버전업 되고 있지 않다)
+compile group: &#39;org.modeshape&#39;, name: &#39;modeshape-common&#39;, version: &#39;5.4.1.Final&#39; 사용법은 아주 쉽다.">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Posts">
+    <meta property="article:published_time" content="2020-10-11T21:39:37+09:00">
+    <meta property="article:modified_time" content="2020-10-11T21:39:37+09:00">
+    <meta property="article:tag" content="Java">
+    <meta itemprop="name" content="Jboss의 Modeshape로 영단어를 복수형 혹은 단수형으로 변환하기 :: Do What You Want To Do">
+    <meta itemprop="description" content="java 프로젝트를 진행할 때 단수 영단어를 복수로 변환하거나 반대로 복수 영단어를 단수로 변환해야 하는 경우가 있다.
+Jboss에서 제공하는 Modeshape의 Inflector 라이브러리를 쓰면 쉽게 구현이 가능하다.
+Modeshape(https://modeshape.wordpress.com) 는 오픈소스 JCR(Java Content Repository)이라고 한다.
+하지만 나의 관심사는 영단어 단수/복수 변환이었기에 JCR에 대해서는 더 이상 알아보지는 않기로 했다(그래서 이 라이브러리를 단복수 변환에만 쓰기 위해 사용하는 것은 overkill일 것 같기는 하다).
+Gradle로 최신판을 의존성에 추가한다(아쉽게도 2017년 이후로 버전업 되고 있지 않다)
+compile group: &#39;org.modeshape&#39;, name: &#39;modeshape-common&#39;, version: &#39;5.4.1.Final&#39; 사용법은 아주 쉽다.">
+    <meta itemprop="datePublished" content="2020-10-11T21:39:37+09:00">
+    <meta itemprop="dateModified" content="2020-10-11T21:39:37+09:00">
+    <meta itemprop="wordCount" content="232">
+    <meta itemprop="keywords" content="Java">
+    <title>Jboss의 Modeshape로 영단어를 복수형 혹은 단수형으로 변환하기 :: Do What You Want To Do</title>
+    <link href="https://bluedskim.github.io/posts/tech/jboss%EC%9D%98-modeshape%EB%A1%9C-%EC%98%81%EB%8B%A8%EC%96%B4%EB%A5%BC-%EB%B3%B5%EC%88%98%ED%98%95%EB%8B%A8%EC%88%98%ED%98%95%EC%9C%BC%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/index.html" rel="canonical" type="text/html" title="Jboss의 Modeshape로 영단어를 복수형 혹은 단수형으로 변환하기 :: Do What You Want To Do">
+    <link href="/css/auto-complete/auto-complete.min.css?1774431351" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1774431351" defer></script>
+    <script src="/js/search-lunr.min.js?1774431351" defer></script>
+    <script src="/js/search.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/searchindex.en.js?1774431351";
+    </script>
+    <script src="/js/lunr/lunr.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.ko.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['ko'];
+    </script>
+    <link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1774431351" rel="stylesheet">
+    <link href="/css/theme.min.css?1774431351" rel="stylesheet">
+    <link href="/css/format-print.min.css?1774431351" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/posts\/tech\/jboss%EC%9D%98-modeshape%EB%A1%9C-%EC%98%81%EB%8B%A8%EC%96%B4%EB%A5%BC-%EB%B3%B5%EC%88%98%ED%98%95%EB%8B%A8%EC%88%98%ED%98%95%EC%9C%BC%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/bluedskim.github.io';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'relearn-auto', 'learn' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+  </head>
+  <body class="mobile-support print" data-origin="/posts/tech/jboss%EC%9D%98-modeshape%EB%A1%9C-%EC%98%81%EB%8B%A8%EC%96%B4%EB%A5%BC-%EB%B3%B5%EC%88%98%ED%98%95%EB%8B%A8%EC%88%98%ED%98%95%EC%9C%BC%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Do What You Want</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/posts/index.html"><span itemprop="name">Posts</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Jboss의 Modeshape로 영단어를 복수형 혹은 단수형으로 변환하기</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/jboss%EC%9D%98-modeshape%EB%A1%9C-%EC%98%81%EB%8B%A8%EC%96%B4%EB%A5%BC-%EB%B3%B5%EC%88%98%ED%98%95%EB%8B%A8%EC%88%98%ED%98%95%EC%9C%BC%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/karate-restful-api-%EC%8B%9C%EB%82%98%EB%A6%AC%EC%98%A4%EA%B8%B0%EB%B0%98-%EC%9E%90%EB%8F%99%ED%99%94-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%8D%B0%EB%AA%A8/index.html" title="Karate, RESTful API 시나리오기반 자동화 테스트 데모 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/vs-code-spring-java-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A6%AC%ED%94%84%EB%A0%88%EC%8B%9C-%ED%95%98%EA%B8%B0/index.html" title="VS Code에서 Spring Java + Gradle 프로젝트 리프레시 하기 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable posts" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/tags/java/index.html">Java</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="jboss의-modeshape로-영단어를-복수형-혹은-단수형으로-변환하기">Jboss의 Modeshape로 영단어를 복수형 혹은 단수형으로 변환하기</h1>
+
+<p>java 프로젝트를 진행할 때 단수 영단어를 복수로 변환하거나 반대로 복수 영단어를 단수로 변환해야 하는 경우가 있다.</p>
+<p>Jboss에서 제공하는 Modeshape의 Inflector 라이브러리를 쓰면 쉽게 구현이 가능하다.</p>
+<p>Modeshape(<a href="https://modeshape.wordpress.com" rel="external">https://modeshape.wordpress.com</a>) 는 오픈소스 JCR(Java Content
+Repository)이라고 한다.</p>
+<p>하지만 나의 관심사는 영단어 단수/복수 변환이었기에 JCR에 대해서는 더 이상 알아보지는 않기로 했다(그래서 이 라이브러리를 단복수 변환에만 쓰기 위해 사용하는 것은 overkill일 것 같기는 하다).</p>
+<p>Gradle로 최신판을 의존성에 추가한다(아쉽게도 2017년 이후로 버전업 되고 있지 않다)</p>
+<pre><code>compile group: 'org.modeshape', name: 'modeshape-common', version: '5.4.1.Final'
+</code></pre>
+<p>사용법은 아주 쉽다.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#a6e22e">org</span>.<span style="color:#a6e22e">modeshape</span>.<span style="color:#a6e22e">common</span>.<span style="color:#a6e22e">text</span>.<span style="color:#a6e22e">Inflector</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">public</span> <span style="color:#a6e22e">class</span> <span style="color:#a6e22e">App</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">public</span> <span style="color:#a6e22e">static</span> <span style="color:#a6e22e">void</span> <span style="color:#a6e22e">main</span>(<span style="color:#a6e22e">String</span>[] <span style="color:#a6e22e">args</span>) {
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">Inflector</span> <span style="color:#a6e22e">inflector</span> = <span style="color:#a6e22e">new</span> <span style="color:#a6e22e">Inflector</span>();
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">System</span>.<span style="color:#a6e22e">out</span>.println(<span style="color:#e6db74">&#34;cat:&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">inflector</span>.<span style="color:#a6e22e">pluralize</span>(<span style="color:#e6db74">&#34;cat&#34;</span>) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">inflector</span>.<span style="color:#a6e22e">singularize</span>(<span style="color:#e6db74">&#34;cats&#34;</span>));
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">System</span>.<span style="color:#a6e22e">out</span>.println(<span style="color:#e6db74">&#34;asdf:&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">inflector</span>.<span style="color:#a6e22e">pluralize</span>(<span style="color:#e6db74">&#34;asdf&#34;</span>) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">inflector</span>.<span style="color:#a6e22e">singularize</span>(<span style="color:#e6db74">&#34;asdfs&#34;</span>));
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">System</span>.<span style="color:#a6e22e">out</span>.println(<span style="color:#e6db74">&#34;bus:&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">inflector</span>.<span style="color:#a6e22e">pluralize</span>(<span style="color:#e6db74">&#34;bus&#34;</span>) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">inflector</span>.<span style="color:#a6e22e">singularize</span>(<span style="color:#e6db74">&#34;buses&#34;</span>));
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">System</span>.<span style="color:#a6e22e">out</span>.println(<span style="color:#e6db74">&#34;penny:&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">inflector</span>.<span style="color:#a6e22e">pluralize</span>(<span style="color:#e6db74">&#34;penny&#34;</span>) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">inflector</span>.<span style="color:#a6e22e">singularize</span>(<span style="color:#e6db74">&#34;pennies&#34;</span>));
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">System</span>.<span style="color:#a6e22e">out</span>.println(<span style="color:#e6db74">&#34;child:&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">inflector</span>.<span style="color:#a6e22e">pluralize</span>(<span style="color:#e6db74">&#34;child&#34;</span>) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">inflector</span>.<span style="color:#a6e22e">singularize</span>(<span style="color:#e6db74">&#34;children&#34;</span>));
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">System</span>.<span style="color:#a6e22e">out</span>.println(<span style="color:#e6db74">&#34;fungus:&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">inflector</span>.<span style="color:#a6e22e">pluralize</span>(<span style="color:#e6db74">&#34;fungus&#34;</span>) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">inflector</span>.<span style="color:#a6e22e">singularize</span>(<span style="color:#e6db74">&#34;fungi&#34;</span>));
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">System</span>.<span style="color:#a6e22e">out</span>.println(<span style="color:#e6db74">&#34;datum:&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">inflector</span>.<span style="color:#a6e22e">pluralize</span>(<span style="color:#e6db74">&#34;datum&#34;</span>) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">inflector</span>.<span style="color:#a6e22e">singularize</span>(<span style="color:#e6db74">&#34;data&#34;</span>));
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">System</span>.<span style="color:#a6e22e">out</span>.println(<span style="color:#e6db74">&#34;sheep:&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">inflector</span>.<span style="color:#a6e22e">pluralize</span>(<span style="color:#e6db74">&#34;sheep&#34;</span>) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">inflector</span>.<span style="color:#a6e22e">singularize</span>(<span style="color:#e6db74">&#34;sheep&#34;</span>));
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">System</span>.<span style="color:#a6e22e">out</span>.println(<span style="color:#e6db74">&#34;knife:&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">inflector</span>.<span style="color:#a6e22e">pluralize</span>(<span style="color:#e6db74">&#34;knife&#34;</span>) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">inflector</span>.<span style="color:#a6e22e">singularize</span>(<span style="color:#e6db74">&#34;knives&#34;</span>));
+</span></span><span style="display:flex; background-color:#3c3d38"><span>		<span style="color:#75715e">// 오류! criterion의 복수형은 criteria이다. </span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span>		<span style="color:#a6e22e">System</span>.<span style="color:#a6e22e">out</span>.println(<span style="color:#e6db74">&#34;criterion:&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">inflector</span>.<span style="color:#a6e22e">pluralize</span>(<span style="color:#e6db74">&#34;criterion&#34;</span>) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">inflector</span>.<span style="color:#a6e22e">singularize</span>(<span style="color:#e6db74">&#34;criteria&#34;</span>));
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">System</span>.<span style="color:#a6e22e">out</span>.println(<span style="color:#e6db74">&#34;bacterium:&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">inflector</span>.<span style="color:#a6e22e">pluralize</span>(<span style="color:#e6db74">&#34;bacterium&#34;</span>) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">inflector</span>.<span style="color:#a6e22e">singularize</span>(<span style="color:#e6db74">&#34;bacteria&#34;</span>));
+</span></span><span style="display:flex;"><span>		
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p>위의 코드는 규칙 단복수형의 경우 잘 동작하지만 일부 불규칙 단복수형의 경우 오동작하는 경우가 있다.</p>
+<p>가령 criterion의 복수형은 criteria 이지만 criterions이라고 출력되었고 criteria를 단수형으로 변환 했을 때 criterium이라고 출력되었다.</p>
+<p>github에 소스가 공개되어있으니(<a href="https://github.com/ModeShape/modeshape" rel="external">https://github.com/ModeShape/modeshape</a>) 직접 고쳐쓰는것도 방법이다.</p>
+
+  <footer class="footline">
+              <i class='fa-fw fas fa-calendar'></i> 2020-10-11
+<div class="R-taxonomy taxonomy-categories cstyle" title="Categories" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/categories/tech/index.html">Tech</a></li>
+  </ul>
+</div>
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1774431351" defer></script>
+    <script src="/js/theme.min.js?1774431351" defer></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-3QTEZE6PDE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3QTEZE6PDE');
+</script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

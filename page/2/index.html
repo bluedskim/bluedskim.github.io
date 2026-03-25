@@ -1,0 +1,2024 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=7001&amp;path=livereload" data-no-instant defer></script>
+  
+
+  
+  
+
+
+  <meta charset="utf-8">
+
+
+  <meta name="robots" content="noindex, nofollow, noarchive">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  
+    
+      <meta name="description" content="bluedskim@gmail.com">
+    
+  
+
+
+<meta name="color-scheme" content="light dark">
+
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.152.2">
+  <title>Do What You Want | Do What You Want To Do</title>
+  <link href="//localhost:7001/" rel="canonical">
+
+
+
+
+  <link href="alternate" rel="/feed.xml" type="application/rss+xml">
+
+  
+
+
+
+
+  
+  
+    
+    
+  
+  
+
+
+
+
+
+  
+
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+
+
+  
+    <link href="/css/base.css" rel="stylesheet">
+
+    <link href="/css/syntax.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+  <nav class="u-background">
+  <div class="u-wrapper">
+    <ul class="Banner">
+      <li class="Banner-item Banner-item--title">
+        
+          <a class="Banner-link u-clickable" href="/">Do What You Want To Do</a>
+        
+      </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/categories/tech/">Tech</a>
+        </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/tags/samba/">Samba</a>
+        </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/categories/%EC%9D%8C%EC%95%85/">음악</a>
+        </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/categories/%EC%9D%BC%EC%83%81%EC%82%AC/">일상사</a>
+        </li>
+      
+        
+        
+          
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/feed.xml">RSS</a>
+        </li>
+      
+    </ul>
+  </div>
+</nav>
+
+  <main>
+    <div class="u-wrapper">
+      <div class="u-padding">
+        
+
+  
+    
+    <header class="Heading">
+  <h1 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/" rel="bookmark">Do What You Want</a>
+  </h1>
+  
+</header>
+  
+
+  
+
+
+
+<h1 id="do-what-you-want">
+  <a class="Heading-link u-clickable" href="/#do-what-you-want">Do What You Want</a>
+</h1>
+<p>잡다한 것들을 기록합니다.</p>
+
+
+  
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/tech/%EC%9C%A0%EC%9A%A9%ED%95%9C-linux-cli%EB%AA%85%EB%A0%B9%EC%96%B4%EC%99%80-%ED%88%B4%EB%93%A4/" rel="bookmark">유용한 LINUX CLI명령어와 쉡스크립트들</a>
+  </h2>
+  
+    
+      <time datetime="2023-11-16T18:15:11&#43;09:00">November 16, 2023</time>
+    
+  
+</header>
+      
+        
+          
+            
+
+
+
+<h3 id="ffmpeg">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9C%A0%EC%9A%A9%ED%95%9C-linux-cli%EB%AA%85%EB%A0%B9%EC%96%B4%EC%99%80-%ED%88%B4%EB%93%A4/#ffmpeg">ffmpeg</a>
+</h3>
+<p>범용 미디어 변환 프로그램</p>
+<ul>
+<li>
+<p>오디오 파일을 avi동영상으로 변환하기</p>
+
+  
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">ffmpeg -i inputFile.mp4 -q:v <span class="m">6</span> outputFile.avi</span></span></code></pre></div>
+</li>
+<li>
+<p>특정 폴더의 mp3 파일들을 합친 후 사진을 삽입하여 유튜브 업로드용 동영상으로 변환하기</p>
+
+  
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">find -name <span class="s2">&#34;*.mp3&#34;</span> -exec ffmpeg -loop <span class="m">1</span> -framerate <span class="m">2</span> -i 사진.jpg -i <span class="o">{}</span> -tune stillimage -crf <span class="m">18</span> -c:a copy -shortest <span class="o">{}</span>.mkv <span class="se">\;</span></span></span></code></pre></div>
+</li>
+<li>
+<p>동영상 파일에서 특정 구간 복사하기</p>
+
+  
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1">#10초부터 20초 분량의 동영상 추출</span>
+</span></span><span class="line"><span class="cl">ffmpeg -ss 00:00:10 -i <span class="s2">&#34;원본.MP4&#34;</span> -t 00:00:20 -vcodec copy -acodec copy <span class="s2">&#34;10초부터_20초까지.MP4&#34;</span></span></span></code></pre></div>
+</li>
+<li>
+<p>rtsp 스트리밍 동영상을 캡쳐하여 mp4로 저장</p>
+
+  
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">ffmpeg -i rtsp://서버주소 -vcodec copy -acodec copy -f mp4 -y 저장파일명.mp4    </span></span></code></pre></div>
+</li>
+</ul>
+
+
+
+
+<h3 id="uvccapture">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9C%A0%EC%9A%A9%ED%95%9C-linux-cli%EB%AA%85%EB%A0%B9%EC%96%B4%EC%99%80-%ED%88%B4%EB%93%A4/#uvccapture">uvccapture</a>
+</h3>
+<p>웹캠 캡쳐 유틸</p>
+<ul>
+<li>
+<p>YUYV포맷으로 캡쳐하여 파일명.jpg로 저장하기</p>
+
+  
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">uvccapture -m -o파일명.jpg</span></span></code></pre></div>
+</li>
+</ul>
+
+
+
+
+<h3 id="lshw">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9C%A0%EC%9A%A9%ED%95%9C-linux-cli%EB%AA%85%EB%A0%B9%EC%96%B4%EC%99%80-%ED%88%B4%EB%93%A4/#lshw">lshw</a>
+</h3>
+<p>하드웨어 정보 출력</p>
+<ul>
+<li>
+<p>하드웨어 정보를 html 포맷으로 생성하고 파이어폭스에서 열기</p>
+
+  
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">lshw -html &gt; ~/hardware_info.html <span class="o">&amp;&amp;</span> firefox ~/hardware_info.html</span></span></code></pre></div>
+</li>
+</ul>
+
+
+
+
+<h3 id="curl">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9C%A0%EC%9A%A9%ED%95%9C-linux-cli%EB%AA%85%EB%A0%B9%EC%96%B4%EC%99%80-%ED%88%B4%EB%93%A4/#curl">curl</a>
+</h3>
+<p>각종 인터넷 프로토콜 클라이언트</p>
+<ul>
+<li>http응답 코드 출력
+
+  
+
+<pre tabindex="0"><code>curl -Is https://www.google.com/  | grep HTTP | cut -d &#39; &#39; -f2</code></pre>
+</li>
+</ul>
+
+
+
+
+<h3 id="xdotool">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9C%A0%EC%9A%A9%ED%95%9C-linux-cli%EB%AA%85%EB%A0%B9%EC%96%B4%EC%99%80-%ED%88%B4%EB%93%A4/#xdotool">xdotool</a>
+</h3>
+<p>명령행 x11자동화 툴</p>
+<ul>
+<li>마우스 위치 출력하기
+
+  
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="k">while</span> true<span class="p">;</span> <span class="k">do</span> xdotool getmouselocation<span class="p">;</span> sleep 0.2<span class="p">;</span> clear<span class="p">;</span> <span class="k">done</span></span></span></code></pre></div>
+</li>
+</ul>
+
+
+
+
+<h3 id="ctronome">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9C%A0%EC%9A%A9%ED%95%9C-linux-cli%EB%AA%85%EB%A0%B9%EC%96%B4%EC%99%80-%ED%88%B4%EB%93%A4/#ctronome">ctronome</a>
+</h3>
+<p>메트로놈 유틸리티</p>
+<ul>
+<li><a href="https://github.com/bivanbi/ctronome">https://github.com/bivanbi/ctronome</a>에서 소스를 받아서 컴파일해야 함</li>
+<li>구동 스크립트 샘플
+
+  
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="cp">#!/bin/sh
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>killall ctronome
+</span></span><span class="line"><span class="cl"><span class="nv">bpm</span><span class="o">=</span><span class="s2">&#34;100&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">baseDir</span><span class="o">=</span><span class="s2">&#34;메트로놈_사운드_wav파일_디렉토리&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="nv">$#</span><span class="s2">&#34;</span> -eq  <span class="s2">&#34;0&#34;</span> <span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="k">then</span>	
+</span></span><span class="line"><span class="cl">    <span class="nv">bpm</span><span class="o">=</span><span class="s2">&#34;100&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">echo</span> <span class="s2">&#34;No arugments supplied&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">echo</span> bpm : <span class="nv">$bpm</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">bpm</span><span class="o">=</span><span class="nv">$1</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">echo</span> bpm : <span class="nv">$bpm</span>
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl">padsp ctronome -b <span class="nv">$bpm</span> -t <span class="m">2</span> -w1 <span class="nv">$baseDir</span>/a5.wav -w2 <span class="nv">$baseDir</span>/a4.wav</span></span></code></pre></div>
+</li>
+</ul>
+
+
+
+
+<h3 id="웹서버">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9C%A0%EC%9A%A9%ED%95%9C-linux-cli%EB%AA%85%EB%A0%B9%EC%96%B4%EC%99%80-%ED%88%B4%EB%93%A4/#%ec%9b%b9%ec%84%9c%eb%b2%84">웹서버</a>
+</h3>
+<ul>
+<li>
+<p><a href="https://manpages.ubuntu.com/manpages/trusty/en/man8/mini-httpd.8.html">mini-httpd</a> : 가벼운 설치형 웹서버. CGI, SSL지원. Apache웹서버 성능의 90% 성능을 보인다고</p>
+</li>
+<li>
+<p><a href="https://github.com/emikulic/darkhttpd">darkhttpd</a> : 직접 컴파일이 필요한 가벼운 웹서버</p>
+</li>
+<li>
+<p>python3 내장 웹서버 : python3에는 웹서버가 내장되어 있다. 터미널에서 아래 명령어를 입력하여 실행한다.</p>
+
+  
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">python3 -m http.server</span></span></code></pre></div>
+</li>
+</ul>
+
+
+
+
+<h3 id="csv를-xlsx로-변환">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9C%A0%EC%9A%A9%ED%95%9C-linux-cli%EB%AA%85%EB%A0%B9%EC%96%B4%EC%99%80-%ED%88%B4%EB%93%A4/#csv%eb%a5%bc-xlsx%eb%a1%9c-%eb%b3%80%ed%99%98">csv를 xlsx로 변환</a>
+</h3>
+<ul>
+<li>libreoffice
+
+  
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">soffice --headless --convert-to xlsx:<span class="s2">&#34;Calc MS Excel 2007 XML&#34;</span> file.csv</span></span></code></pre></div>
+</li>
+<li><a href="https://github.com/mentax/csv2xlsx">csv2xlsx</a>
+
+  
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">    csv2xlsx --output 변환후.xlsx 변환전.csv</span></span></code></pre></div>
+</li>
+</ul>
+
+
+
+
+<h3 id="yewtube">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9C%A0%EC%9A%A9%ED%95%9C-linux-cli%EB%AA%85%EB%A0%B9%EC%96%B4%EC%99%80-%ED%88%B4%EB%93%A4/#yewtube"><a href="https://github.com/mps-youtube/yewtube">yewtube</a></a>
+</h3>
+<ul>
+<li>터미널 유튜브 클라이언트</li>
+<li>유튜브 계정없이 사용가능</li>
+<li>유튜브 광고 없음</li>
+<li>동영상 다운로드 가능</li>
+</ul>
+
+
+
+
+<h3 id="yt-dlp">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9C%A0%EC%9A%A9%ED%95%9C-linux-cli%EB%AA%85%EB%A0%B9%EC%96%B4%EC%99%80-%ED%88%B4%EB%93%A4/#yt-dlp"><a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a></a>
+</h3>
+<p>유튜브 다운로더</p>
+<ul>
+<li>
+<p>동영상 다운로드</p>
+
+  
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">yt-dlp https://www.youtube.com/watch?v<span class="o">=</span>^CaN5ZCaiQI</span></span></code></pre></div>
+</li>
+<li>
+<p>mp3로 다운로드</p>
+
+  
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">yt-dlp https://www.youtube.com/watch?v<span class="o">=</span>^CaN5ZCaiQI -x --audio-format mp3</span></span></code></pre></div>
+</li>
+</ul>
+
+
+
+
+<h3 id="쉘-스크립트">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9C%A0%EC%9A%A9%ED%95%9C-linux-cli%EB%AA%85%EB%A0%B9%EC%96%B4%EC%99%80-%ED%88%B4%EB%93%A4/#%ec%89%98-%ec%8a%a4%ed%81%ac%eb%a6%bd%ed%8a%b8">쉘 스크립트</a>
+</h3>
+<ul>
+<li>
+<p>특정 폴더내의 특정 확장자 파일내의 탭문자를 스페이스 4개로 바꾸기</p>
+
+  
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>find 해당디랙토리 -name <span class="s1">&#39;*.java&#39;</span> ! -type d -exec bash -c <span class="s1">&#39;expand -i -t 4 &#34;$0&#34; &gt; /tmp/e &amp;&amp; mv /tmp/e &#34;$0&#34;&#39;</span> <span class="o">{}</span> <span class="se">\;</span>    </span></span></code></pre></div>
+</li>
+<li>
+<p>카운트 다운</p>
+
+  
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="cp">#!/bin/sh
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="c1"># ex) ./countdown.sh 60 : 1분 동안 카운트 다운</span>
+</span></span><span class="line"><span class="cl">clear
+</span></span><span class="line"><span class="cl"><span class="nv">date1</span><span class="o">=</span><span class="k">$((</span><span class="sb">`</span>date +%s<span class="sb">`</span> <span class="o">+</span> <span class="nv">$1</span><span class="k">))</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="nv">$date1</span><span class="s2">&#34;</span> -ge <span class="sb">`</span>date +%s<span class="sb">`</span> <span class="o">]</span><span class="p">;</span> <span class="k">do</span>
+</span></span><span class="line"><span class="cl"><span class="c1">## Is this more than 24h away?</span>
+</span></span><span class="line"><span class="cl"><span class="nv">days</span><span class="o">=</span><span class="k">$(($(($((</span> <span class="nv">$date1</span> <span class="o">-</span> <span class="k">$(</span>date +%s<span class="k">)))</span> <span class="o">*</span> <span class="m">1</span> <span class="k">))</span><span class="o">/</span><span class="m">86400</span><span class="k">))</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;\033[H</span><span class="nv">$days</span><span class="s2"> day(s) and </span><span class="k">$(</span>date -u --date @<span class="k">$((</span><span class="nv">$date1</span> <span class="o">-</span> <span class="sb">`</span>date +%s<span class="sb">`</span><span class="k">))</span> +%H:%M:%S<span class="k">)</span><span class="s2">\r&#34;</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl">sleep 0.1
+</span></span><span class="line"><span class="cl"><span class="k">done</span></span></span></code></pre></div>
+</li>
+<li>
+<p>스탑와치</p>
+
+  
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nv">date1</span><span class="o">=</span><span class="sb">`</span>date +%s<span class="sb">`</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span> true<span class="p">;</span> <span class="k">do</span>
+</span></span><span class="line"><span class="cl"><span class="nv">days</span><span class="o">=</span><span class="k">$((</span> <span class="k">$(($(</span>date +%s<span class="k">)</span> <span class="o">-</span> date1<span class="k">))</span> <span class="o">/</span> <span class="m">86400</span> <span class="k">))</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> -ne <span class="s2">&#34;</span><span class="nv">$days</span><span class="s2"> day(s) and </span><span class="k">$(</span>date -u --date @<span class="k">$((</span><span class="sb">`</span>date +%s<span class="sb">`</span> <span class="o">-</span> <span class="nv">$date1</span><span class="k">))</span> +%H:%M:%S<span class="k">)</span><span class="s2">\r&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">sleep 0.1
+</span></span><span class="line"><span class="cl"><span class="k">done</span></span></span></code></pre></div>
+</li>
+</ul>
+
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/tech/%EB%A6%AC%EB%88%85%EC%8A%A4-%ED%84%B0%EB%AF%B8%EB%84%90-%EC%9E%85%EC%B6%9C%EB%A0%A5%EC%9D%84-%EB%85%B9%ED%99%94%ED%95%98%EA%B8%B0/" rel="bookmark">리눅스 터미널 입출력을 녹화하기</a>
+  </h2>
+  
+    
+      <time datetime="2023-11-16T11:33:25&#43;09:00">November 16, 2023</time>
+    
+  
+</header>
+      
+        
+          
+            <p>파이썬 기반의 CLI로 asciicinema가 있다.</p>
+
+
+
+
+<h3 id="설치">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EB%A6%AC%EB%88%85%EC%8A%A4-%ED%84%B0%EB%AF%B8%EB%84%90-%EC%9E%85%EC%B6%9C%EB%A0%A5%EC%9D%84-%EB%85%B9%ED%99%94%ED%95%98%EA%B8%B0/#%ec%84%a4%ec%b9%98">설치</a>
+</h3>
+<pre><code>python3 -m pip install asciinema
+</code></pre>
+<p>​
+만약 python3가 설치되어 있지 않다면 먼저 설치해야 한다.
+(비단 코딩 목적뿐만이 아니라 여러 유용한 유틸리티를 사용하려면 리눅스에서 파이썬은 필수)</p>
+<p>설치 후 해당 바이너리를 찾지 못하는 문제가 있을 수 있는데 이는 경로 문제 때문이다. pip으로 설치하는 바이너리들은 ~/.local/bin에 설치된다. 이 경로를 path에 추가해줘야 한다.</p>
+
+
+
+
+<h3 id="녹화">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EB%A6%AC%EB%88%85%EC%8A%A4-%ED%84%B0%EB%AF%B8%EB%84%90-%EC%9E%85%EC%B6%9C%EB%A0%A5%EC%9D%84-%EB%85%B9%ED%99%94%ED%95%98%EA%B8%B0/#%eb%85%b9%ed%99%94">녹화</a>
+</h3>
+<p>녹화는 간단하다. 명령을 입력할 때 rec 아규먼트만 추가하면 된다.</p>
+<pre><code>asciinema rec 해당파일명.cast
+</code></pre>
+<p>​
+이 다음부터 입출력되는 모든 텍스트는 녹화되며 &lt;ctrl-d&gt; 혹은 &ldquo;exit”를 입력하면 녹화가 중지된다.</p>
+
+
+
+
+<h3 id="재생하기">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EB%A6%AC%EB%88%85%EC%8A%A4-%ED%84%B0%EB%AF%B8%EB%84%90-%EC%9E%85%EC%B6%9C%EB%A0%A5%EC%9D%84-%EB%85%B9%ED%99%94%ED%95%98%EA%B8%B0/#%ec%9e%ac%ec%83%9d%ed%95%98%ea%b8%b0">재생하기</a>
+</h3>
+<p>재생도 간단하다. 명령을 입력할 때 play 아규먼트와 파일명만 추가하면 된다.</p>
+<pre><code>asciinema play 해당파일명.cast
+</code></pre>
+<p>​</p>
+
+
+
+
+<h3 id="부록---녹화-파일을-gif로-변환하기">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EB%A6%AC%EB%88%85%EC%8A%A4-%ED%84%B0%EB%AF%B8%EB%84%90-%EC%9E%85%EC%B6%9C%EB%A0%A5%EC%9D%84-%EB%85%B9%ED%99%94%ED%95%98%EA%B8%B0/#%eb%b6%80%eb%a1%9d---%eb%85%b9%ed%99%94-%ed%8c%8c%ec%9d%bc%ec%9d%84-gif%eb%a1%9c-%eb%b3%80%ed%99%98%ed%95%98%ea%b8%b0">부록 - 녹화 파일을 gif로 변환하기</a>
+</h3>
+<p>agg - asciinema gif generator를 사용하면 쉽게 gif로 변환 가능하다</p>
+
+
+
+
+<h4 id="설치-1">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EB%A6%AC%EB%88%85%EC%8A%A4-%ED%84%B0%EB%AF%B8%EB%84%90-%EC%9E%85%EC%B6%9C%EB%A0%A5%EC%9D%84-%EB%85%B9%ED%99%94%ED%95%98%EA%B8%B0/#%ec%84%a4%ec%b9%98-1">설치</a>
+</h4>
+<p>agg 깃헙의 <a href="https://github.com/asciinema/agg/releases">release</a>에서 본인 아키텍쳐에 맞는 실행 바이너리를 다운로드한다.
+(리눅스용은 agg-x86_64-unknown-linux-gnu이다)</p>
+
+
+
+
+<h4 id="실행">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EB%A6%AC%EB%88%85%EC%8A%A4-%ED%84%B0%EB%AF%B8%EB%84%90-%EC%9E%85%EC%B6%9C%EB%A0%A5%EC%9D%84-%EB%85%B9%ED%99%94%ED%95%98%EA%B8%B0/#%ec%8b%a4%ed%96%89">실행</a>
+</h4>
+<p>해당 명령어의 아규먼트로 입력 파일명과 출력파일명만 넘겨주면 변환된다.</p>
+<pre><code>agg 해당파일명.cast 해당파일명.gif 
+</code></pre>
+<p>​</p>
+
+
+
+
+<h3 id="샘플">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EB%A6%AC%EB%88%85%EC%8A%A4-%ED%84%B0%EB%AF%B8%EB%84%90-%EC%9E%85%EC%B6%9C%EB%A0%A5%EC%9D%84-%EB%85%B9%ED%99%94%ED%95%98%EA%B8%B0/#%ec%83%98%ed%94%8c">샘플</a>
+</h3>
+<p><img src="../../images/htop.gif" alt="htop">
+<img src="../../images/btop.gif" alt="btop"></p>
+
+
+
+
+<h3 id="부록의-부록">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EB%A6%AC%EB%88%85%EC%8A%A4-%ED%84%B0%EB%AF%B8%EB%84%90-%EC%9E%85%EC%B6%9C%EB%A0%A5%EC%9D%84-%EB%85%B9%ED%99%94%ED%95%98%EA%B8%B0/#%eb%b6%80%eb%a1%9d%ec%9d%98-%eb%b6%80%eb%a1%9d">부록의 부록</a>
+</h3>
+<ul>
+<li><a href="https://ezgif.com/crop">https://ezgif.com/crop</a> : 애니메이션 gif의 시작과 끝의 불필요한 녹화내용을 제거할 때 유용하다</li>
+</ul>
+
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/tech/cpu%EC%99%80-%EB%A9%94%EB%AA%A8%EB%A6%AC%EA%B0%80-%EC%97%B4%EC%9D%BC%ED%95%98%EA%B3%A0-%EC%9E%88%EB%8A%94%EC%A7%80-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/" rel="bookmark">CPU와 메모리가 열일하고 있는지 확인하기</a>
+  </h2>
+  
+    
+      <time datetime="2023-11-14T19:25:01&#43;09:00">November 14, 2023</time>
+    
+  
+</header>
+      
+        
+          
+            <div class="layout-content layout-editor" style="min-height: 170px;">
+    <div class="notion-page-content" style="flex-shrink: 0; flex-grow: 1; max-width: 100%; display: flex; align-items: flex-start; flex-direction: column; font-size: 16px; line-height: 1.5; width: 100%; z-index: 4; padding-bottom: 0px; padding-left: 0px; padding-right: 0px;">
+        <div data-block-id="9fd38760-3402-4687-8aa5-bc29a2d10aa1" class="notion-selectable notion-text-block" style="width: 100%; max-width: 919px; margin-top: 2px; margin-bottom: 1px;">
+            <div style="color: inherit; fill: inherit;">
+                <div style="display: flex;">
+                    <div spellcheck="true" placeholder=" " data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px;">리눅스 CLI용 모니터링 툴을 비교해보자</div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="474b5831-1589-45c5-822c-3f7bf98b9ac7" class="notion-selectable notion-sub_header-block" style="width: 100%; max-width: 919px; margin-top: 1.4em; margin-bottom: 1px;">
+            <div style="display: flex; width: 100%; color: inherit; fill: inherit;">
+                <h3 spellcheck="true" placeholder="제목2" data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px; font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 600; font-size: 1.5em; line-height: 1.3; margin: 0px;">테스트 환경</h3></div>
+        </div>
+        <div data-block-id="a4d412a4-a501-4557-b0fe-6f9f0a62ecc6" class="notion-selectable notion-numbered_list-block" style="width: 100%; max-width: 919px; margin-top: 1px; margin-bottom: 1px;">
+            <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 2px; color: inherit; fill: inherit;">
+                <div contenteditable="false" class="pseudoSelection" data-content-editable-void="true" data-text-edit-side="start" style="user-select: none; --pseudoSelection--background: transparent; margin-right: 2px; width: unset; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc(1.5em + 3px + 3px);"><span class="pseudoBefore" style="--pseudoBefore--content: &quot;1.&quot;; text-align: center; white-space: nowrap; width: 24px;">1.</span></div>
+                <div style="flex: 1 1 0px; min-width: 1px; display: flex; flex-direction: column;">
+                    <div style="display: flex;">
+                        <div spellcheck="true" placeholder="리스트" data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px; text-align: left;">CPU : Intel(R) Core(TM) i5-6600 4core</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="bbaaa604-6329-42bd-8eb1-203f3198782a" class="notion-selectable notion-numbered_list-block" style="width: 100%; max-width: 919px; margin-top: 1px; margin-bottom: 1px;">
+            <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 2px; color: inherit; fill: inherit;">
+                <div contenteditable="false" class="pseudoSelection" data-content-editable-void="true" data-text-edit-side="start" style="user-select: none; --pseudoSelection--background: transparent; margin-right: 2px; width: unset; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc(1.5em + 3px + 3px);"><span class="pseudoBefore" style="--pseudoBefore--content: &quot;2.&quot;; text-align: center; white-space: nowrap; width: 24px;">2.</span></div>
+                <div style="flex: 1 1 0px; min-width: 1px; display: flex; flex-direction: column;">
+                    <div style="display: flex;">
+                        <div spellcheck="true" placeholder="리스트" data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px; text-align: left;">memory : 32GB</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="67ce4a58-1861-43f6-9a57-46d542b3ffe6" class="notion-selectable notion-header-block" style="width: 100%; max-width: 919px; margin-top: 2em; margin-bottom: 4px;">
+            <div style="display: flex; width: 100%; color: inherit; fill: inherit;">
+                <h2 spellcheck="true" placeholder="제목1" data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px; font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 600; font-size: 1.875em; line-height: 1.3; margin: 0px;"><a href="https://man7.org/linux/man-pages/man1/top.1.html" style="cursor:pointer;color:inherit;word-wrap:break-word;text-decoration:inherit" class="notion-link-token notion-focusable-token notion-enable-hover highlight" rel="noopener noreferrer" data-token-index="0" tabindex="0"><span style="border-bottom:0.05em solid;border-color:rgba(255, 255, 255, 0.283);opacity:0.7" class="link-annotation-67ce4a58-1861-43f6-9a57-46d542b3ffe6--1038192525">top</span></a>(<span style="color:rgba(223, 84, 82, 1);fill:rgba(223, 84, 82, 1)" data-token-index="2" class="notion-enable-hover">T</span>able <span style="color:rgba(223, 84, 82, 1);fill:rgba(223, 84, 82, 1)" data-token-index="4" class="notion-enable-hover">O</span>f <span style="color:rgba(223, 84, 82, 1);fill:rgba(223, 84, 82, 1)" data-token-index="6" class="notion-enable-hover">P</span>rocesses)</h2></div>
+        </div>
+        <div data-block-id="402055ed-e2cb-4535-b019-55e07dd424b8" class="notion-selectable notion-text-block" style="width: 100%; max-width: 919px; margin-top: 1px; margin-bottom: 1px;">
+            <div style="color: inherit; fill: inherit;">
+                <div style="display: flex;">
+                    <div spellcheck="true" placeholder=" " data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px;">왠간한 리눅스 배포판에는 기본으로 있다</div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="90df65f3-6e20-47e7-a390-675fcd132f72" class="notion-selectable notion-image-block" style="width: 100%; max-width: 1111px; align-self: center; margin-top: 4px; margin-bottom: 4px;">
+            <div contenteditable="false" data-content-editable-void="true" role="figure" aria-labelledby="id_1">
+                <div style="display: flex;">
+                    <div class="notion-cursor-default" style="position: relative; overflow: hidden; flex-grow: 1;">
+                        <div style="position: relative;">
+                            <div>
+                                <div style="height: 100%; width: 100%;"><a href="../../images/top.gif" data-featherlight="image"><img loading="lazy" src="../../images/top.gif" referrerpolicy="same-origin" style="display: block; object-fit: cover; border-radius: 1px; pointer-events: auto; width: auto; height: auto;"></a></div>
+                            </div>
+                        </div>
+                        <div style="position: absolute; top: 4px; right: 4px; border-radius: 4px; color: white; fill: white; font-size: 11.5px; background: rgba(0, 0, 0, 0.6); display: flex; white-space: nowrap; height: 26px; max-width: calc(100% - 16px); overflow: hidden; pointer-events: none; opacity: 0; transition: opacity 300ms ease-in 0s; font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; z-index: 2;">
+                            <div role="button" tabindex="0" style="user-select: none; transition: background 20ms ease-in 0s; cursor: pointer; display: flex; align-items: center; justify-content: center; padding: 4px 6px; border-right: 1px solid rgba(255, 255, 255, 0.2);">
+                                <svg role="graphics-symbol" viewBox="0 0 16 16" class="download" style="width: 14px; height: 14px; display: block; fill: white; flex-shrink: 0; margin-right: 0px;">
+                                    <path d="M8.215 15.126c3.862 0 7.061-3.192 7.061-7.062 0-3.862-3.199-7.061-7.068-7.061-3.862 0-7.055 3.2-7.055 7.061 0 3.87 3.2 7.062 7.062 7.062zm0-1.388a5.654 5.654 0 01-5.667-5.674 5.642 5.642 0 015.66-5.667 5.66 5.66 0 015.68 5.667 5.66 5.66 0 01-5.673 5.674zm0-9.174c-.342 0-.602.247-.602.588v3.234l.062 1.401-.622-.766-.766-.8a.557.557 0 00-.41-.177.54.54 0 00-.56.547c0 .164.054.3.163.41l2.256 2.283c.15.157.294.226.479.226.191 0 .335-.075.485-.226l2.256-2.283a.557.557 0 00.164-.41.539.539 0 00-.56-.547.523.523 0 00-.41.178l-.766.793-.622.779.054-1.408V5.152c0-.341-.253-.588-.601-.588z"></path>
+                                </svg>
+                            </div>
+                            <div role="button" tabindex="0" style="user-select: none; transition: opacity 200ms ease-in 0s; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; width: 24px; height: 24px; border-radius: 4px; fill: rgba(255, 255, 255, 0.443);">
+                                <svg role="graphics-symbol" viewBox="0 0 13 3" class="dots" style="width: 14px; height: 14px; display: block; fill: white; flex-shrink: 0;">
+                                    <g>
+                                        <path d="M3,1.5A1.5,1.5,0,1,1,1.5,0,1.5,1.5,0,0,1,3,1.5Z"></path>
+                                        <path d="M8,1.5A1.5,1.5,0,1,1,6.5,0,1.5,1.5,0,0,1,8,1.5Z"></path>
+                                        <path d="M13,1.5A1.5,1.5,0,1,1,11.5,0,1.5,1.5,0,0,1,13,1.5Z"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="3eb73cde-817c-4dbe-a9a1-c20b648ac7b7" class="notion-selectable notion-text-block" style="width: 100%; max-width: 919px; margin-top: 1px; margin-bottom: 1px;">
+            <div style="color: inherit; fill: inherit;">
+                <div style="display: flex;">
+                    <div spellcheck="true" placeholder=" " data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px;">시스템 요약 정보 뿐만 아니라 현재 리눅스 커널이 관리하고 있는 프로세스와 쓰레드 목록도 같이 보여주는데 무었을 어떻게 보여줄지는 사용자가 설정 가능하다. 설정을 저장해서 다음에 명령어를 실행할 때도 사용할 수 있다.</div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="721fe03c-b475-4b8c-b0cf-9e2b4229b1cb" class="notion-selectable notion-text-block" style="width: 100%; max-width: 919px; margin-top: 1px; margin-bottom: 1px;">
+            <div style="color: inherit; fill: inherit;">
+                <div style="display: flex;">
+                    <div spellcheck="true" placeholder=" " data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px;">하지만 나는 이 명령어를 잘 사용하지 않는다. 못생겼기 때문이다 -.-</div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="d03db6ae-50d6-4b0c-9e54-853743303ae1" class="notion-selectable notion-header-block" style="width: 100%; max-width: 919px; margin-top: 2em; margin-bottom: 4px;">
+            <div style="display: flex; width: 100%; color: inherit; fill: inherit;">
+                <h2 spellcheck="true" placeholder="제목1" data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px; font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 600; font-size: 1.875em; line-height: 1.3; margin: 0px;"><a href="https://linux.die.net/man/1/htop" style="cursor:pointer;color:inherit;word-wrap:break-word;text-decoration:inherit" class="notion-link-token notion-focusable-token notion-enable-hover highlight" rel="noopener noreferrer" data-token-index="0" tabindex="0"><span style="border-bottom:0.05em solid;border-color:rgba(255, 255, 255, 0.283);opacity:0.7" class="link-annotation-d03db6ae-50d6-4b0c-9e54-853743303ae1--1478383287">htop</span></a></h2></div>
+        </div>
+        <div data-block-id="e23d54df-9f52-4a15-8744-1def95f463a1" class="notion-selectable notion-text-block" style="width: 100%; max-width: 919px; margin-top: 1px; margin-bottom: 1px;">
+            <div style="color: inherit; fill: inherit;">
+                <div style="display: flex;">
+                    <div spellcheck="true" placeholder=" " data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px;">일단 top보다 훨씬 예쁘다.</div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="26fd49ed-6f82-4032-b77e-e409d5d0866a" class="notion-selectable notion-image-block" style="width: 100%; max-width: 1111px; align-self: center; margin-top: 4px; margin-bottom: 4px;">
+            <div contenteditable="false" data-content-editable-void="true" role="figure" aria-labelledby="id_2">
+                <div style="display: flex;">
+                    <div class="notion-cursor-default" style="position: relative; overflow: hidden; flex-grow: 1;">
+                        <div style="position: relative;">
+                            <div>
+                                <div style="height: 100%; width: 100%;"><a href="../../images/htop.gif" data-featherlight="image"><img loading="lazy" src="../../images/htop.gif" referrerpolicy="same-origin" style="display: block; object-fit: cover; border-radius: 1px; pointer-events: auto; width: auto; height: auto;"></a></div>
+                            </div>
+                        </div>
+                        <div style="position: absolute; top: 4px; right: 4px; border-radius: 4px; color: white; fill: white; font-size: 11.5px; background: rgba(0, 0, 0, 0.6); display: flex; white-space: nowrap; height: 26px; max-width: calc(100% - 16px); overflow: hidden; pointer-events: none; opacity: 0; transition: opacity 300ms ease-in 0s; font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; z-index: 2;">
+                            <div role="button" tabindex="0" style="user-select: none; transition: background 20ms ease-in 0s; cursor: pointer; display: flex; align-items: center; justify-content: center; padding: 4px 6px; border-right: 1px solid rgba(255, 255, 255, 0.2);">
+                                <svg role="graphics-symbol" viewBox="0 0 16 16" class="download" style="width: 14px; height: 14px; display: block; fill: white; flex-shrink: 0; margin-right: 0px;">
+                                    <path d="M8.215 15.126c3.862 0 7.061-3.192 7.061-7.062 0-3.862-3.199-7.061-7.068-7.061-3.862 0-7.055 3.2-7.055 7.061 0 3.87 3.2 7.062 7.062 7.062zm0-1.388a5.654 5.654 0 01-5.667-5.674 5.642 5.642 0 015.66-5.667 5.66 5.66 0 015.68 5.667 5.66 5.66 0 01-5.673 5.674zm0-9.174c-.342 0-.602.247-.602.588v3.234l.062 1.401-.622-.766-.766-.8a.557.557 0 00-.41-.177.54.54 0 00-.56.547c0 .164.054.3.163.41l2.256 2.283c.15.157.294.226.479.226.191 0 .335-.075.485-.226l2.256-2.283a.557.557 0 00.164-.41.539.539 0 00-.56-.547.523.523 0 00-.41.178l-.766.793-.622.779.054-1.408V5.152c0-.341-.253-.588-.601-.588z"></path>
+                                </svg>
+                            </div>
+                            <div role="button" tabindex="0" style="user-select: none; transition: opacity 200ms ease-in 0s; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; width: 24px; height: 24px; border-radius: 4px; fill: rgba(255, 255, 255, 0.443);">
+                                <svg role="graphics-symbol" viewBox="0 0 13 3" class="dots" style="width: 14px; height: 14px; display: block; fill: white; flex-shrink: 0;">
+                                    <g>
+                                        <path d="M3,1.5A1.5,1.5,0,1,1,1.5,0,1.5,1.5,0,0,1,3,1.5Z"></path>
+                                        <path d="M8,1.5A1.5,1.5,0,1,1,6.5,0,1.5,1.5,0,0,1,8,1.5Z"></path>
+                                        <path d="M13,1.5A1.5,1.5,0,1,1,11.5,0,1.5,1.5,0,0,1,13,1.5Z"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="53318821-6d6d-49f1-b4f2-398b3b5faf57" class="notion-selectable notion-bulleted_list-block" style="width: 100%; max-width: 919px; margin-top: 1px; margin-bottom: 1px;">
+            <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 2px; color: inherit; fill: inherit;">
+                <div contenteditable="false" class="pseudoSelection" data-content-editable-void="true" data-text-edit-side="start" style="user-select: none; --pseudoSelection--background: transparent; margin-right: 2px; width: 24px; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc(1.5em + 3px + 3px);">
+                    <div class="pseudoBefore" style="font-size: 1.5em; line-height: 1; margin-bottom: 0px; --pseudoBefore--fontFamily: Arial; --pseudoBefore--content: &quot;•&quot;;">•</div>
+                </div>
+                <div style="flex: 1 1 0px; min-width: 1px; display: flex; flex-direction: column;">
+                    <div style="display: flex;">
+                        <div spellcheck="true" placeholder="리스트" data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px; text-align: left;">cpu코어별로 bar차트를 제공하므로 부하를 쉽게 확인 가능</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="0e2f2eef-41cd-4cec-b686-b0b9eed5e020" class="notion-selectable notion-bulleted_list-block" style="width: 100%; max-width: 919px; margin-top: 1px; margin-bottom: 1px;">
+            <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 2px; color: inherit; fill: inherit;">
+                <div contenteditable="false" class="pseudoSelection" data-content-editable-void="true" data-text-edit-side="start" style="user-select: none; --pseudoSelection--background: transparent; margin-right: 2px; width: 24px; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc(1.5em + 3px + 3px);">
+                    <div class="pseudoBefore" style="font-size: 1.5em; line-height: 1; margin-bottom: 0px; --pseudoBefore--fontFamily: Arial; --pseudoBefore--content: &quot;•&quot;;">•</div>
+                </div>
+                <div style="flex: 1 1 0px; min-width: 1px; display: flex; flex-direction: column;">
+                    <div style="display: flex;">
+                        <div spellcheck="true" placeholder="리스트" data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px; text-align: left;">ncurses 기반이라 top보다 다양한 기능 제공(가로 혹은 세로로 스크롤하기 등)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="953291b6-2ca4-405e-b9e7-87d2e7824674" class="notion-selectable notion-bulleted_list-block" style="width: 100%; max-width: 919px; margin-top: 1px; margin-bottom: 1px;">
+            <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 2px; color: inherit; fill: inherit;">
+                <div contenteditable="false" class="pseudoSelection" data-content-editable-void="true" data-text-edit-side="start" style="user-select: none; --pseudoSelection--background: transparent; margin-right: 2px; width: 24px; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc(1.5em + 3px + 3px);">
+                    <div class="pseudoBefore" style="font-size: 1.5em; line-height: 1; margin-bottom: 0px; --pseudoBefore--fontFamily: Arial; --pseudoBefore--content: &quot;•&quot;;">•</div>
+                </div>
+                <div style="flex: 1 1 0px; min-width: 1px; display: flex; flex-direction: column;">
+                    <div style="display: flex;">
+                        <div spellcheck="true" placeholder="리스트" data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px; text-align: left;">프로세스 죽이기, 우선순위 변경하기 등을 바로 수행가능함</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="5d4b09b8-9979-4949-a192-502569e8d8c6" class="notion-selectable notion-bulleted_list-block" style="width: 100%; max-width: 919px; margin-top: 1px; margin-bottom: 1px;">
+            <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 2px; color: inherit; fill: inherit;">
+                <div contenteditable="false" class="pseudoSelection" data-content-editable-void="true" data-text-edit-side="start" style="user-select: none; --pseudoSelection--background: transparent; margin-right: 2px; width: 24px; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc(1.5em + 3px + 3px);">
+                    <div class="pseudoBefore" style="font-size: 1.5em; line-height: 1; margin-bottom: 0px; --pseudoBefore--fontFamily: Arial; --pseudoBefore--content: &quot;•&quot;;">•</div>
+                </div>
+                <div style="flex: 1 1 0px; min-width: 1px; display: flex; flex-direction: column;">
+                    <div style="display: flex;">
+                        <div spellcheck="true" placeholder="리스트" data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px; text-align: left;">적당한 cpu 사용량</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="57975441-56e1-4982-92ff-21e99af49646" class="notion-selectable notion-text-block" style="width: 100%; max-width: 919px; margin-top: 1px; margin-bottom: 1px;">
+            <div style="color: inherit; fill: inherit;">
+                <div style="display: flex;">
+                    <div spellcheck="true" placeholder=" " data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px;">(유틸리티의 저자 이름이 Hisham라서 htop이라고…)</div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="361c0305-79af-4552-a3d9-2a447e9548fe" class="notion-selectable notion-sub_header-block" style="width: 100%; max-width: 919px; margin-top: 1.4em; margin-bottom: 1px;">
+            <div style="display: flex; width: 100%; color: inherit; fill: inherit;">
+                <h3 spellcheck="true" placeholder="제목2" data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px; font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 600; font-size: 1.5em; line-height: 1.3; margin: 0px;">atop</h3></div>
+        </div>
+        <div data-block-id="34417b10-fa57-4f87-b1d9-50a1137e2d1a" class="notion-selectable notion-text-block" style="width: 100%; max-width: 919px; margin-top: 1px; margin-bottom: 1px;">
+            <div style="color: inherit; fill: inherit;">
+                <div style="display: flex;">
+                    <div spellcheck="true" placeholder=" " data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px;">모두 다 보여줄게. 하지만 가독성이 떨어짐</div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="f286ba44-9d02-4ec9-8e61-c84c48cf57ae" class="notion-selectable notion-image-block" style="width: 100%; max-width: 1111px; align-self: center; margin-top: 4px; margin-bottom: 4px;">
+            <div contenteditable="false" data-content-editable-void="true" role="figure" aria-labelledby="id_3">
+                <div style="display: flex;">
+                    <div class="notion-cursor-default" style="position: relative; overflow: hidden; flex-grow: 1;">
+                        <div style="position: relative;">
+                            <div>
+                                <div style="height: 100%; width: 100%;"><a href="../../images/atop.gif" data-featherlight="image"><img loading="lazy" src="../../images/atop.gif" referrerpolicy="same-origin" style="display: block; object-fit: cover; border-radius: 1px; pointer-events: auto; width: auto; height: auto;"></a></div>
+                            </div>
+                        </div>
+                        <div style="position: absolute; top: 4px; right: 4px; border-radius: 4px; color: white; fill: white; font-size: 11.5px; background: rgba(0, 0, 0, 0.6); display: flex; white-space: nowrap; height: 26px; max-width: calc(100% - 16px); overflow: hidden; pointer-events: none; opacity: 0; transition: opacity 300ms ease-in 0s; font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; z-index: 2;">
+                            <div role="button" tabindex="0" style="user-select: none; transition: background 20ms ease-in 0s; cursor: pointer; display: flex; align-items: center; justify-content: center; padding: 4px 6px; border-right: 1px solid rgba(255, 255, 255, 0.2);">
+                                <svg role="graphics-symbol" viewBox="0 0 16 16" class="download" style="width: 14px; height: 14px; display: block; fill: white; flex-shrink: 0; margin-right: 0px;">
+                                    <path d="M8.215 15.126c3.862 0 7.061-3.192 7.061-7.062 0-3.862-3.199-7.061-7.068-7.061-3.862 0-7.055 3.2-7.055 7.061 0 3.87 3.2 7.062 7.062 7.062zm0-1.388a5.654 5.654 0 01-5.667-5.674 5.642 5.642 0 015.66-5.667 5.66 5.66 0 015.68 5.667 5.66 5.66 0 01-5.673 5.674zm0-9.174c-.342 0-.602.247-.602.588v3.234l.062 1.401-.622-.766-.766-.8a.557.557 0 00-.41-.177.54.54 0 00-.56.547c0 .164.054.3.163.41l2.256 2.283c.15.157.294.226.479.226.191 0 .335-.075.485-.226l2.256-2.283a.557.557 0 00.164-.41.539.539 0 00-.56-.547.523.523 0 00-.41.178l-.766.793-.622.779.054-1.408V5.152c0-.341-.253-.588-.601-.588z"></path>
+                                </svg>
+                            </div>
+                            <div role="button" tabindex="0" style="user-select: none; transition: opacity 200ms ease-in 0s; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; width: 24px; height: 24px; border-radius: 4px; fill: rgba(255, 255, 255, 0.443);">
+                                <svg role="graphics-symbol" viewBox="0 0 13 3" class="dots" style="width: 14px; height: 14px; display: block; fill: white; flex-shrink: 0;">
+                                    <g>
+                                        <path d="M3,1.5A1.5,1.5,0,1,1,1.5,0,1.5,1.5,0,0,1,3,1.5Z"></path>
+                                        <path d="M8,1.5A1.5,1.5,0,1,1,6.5,0,1.5,1.5,0,0,1,8,1.5Z"></path>
+                                        <path d="M13,1.5A1.5,1.5,0,1,1,11.5,0,1.5,1.5,0,0,1,13,1.5Z"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="1276f362-0b0e-4bcd-b96c-2f70da34afa1" class="notion-selectable notion-bulleted_list-block" style="width: 100%; max-width: 919px; margin-top: 1px; margin-bottom: 1px;">
+            <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 2px; color: inherit; fill: inherit;">
+                <div contenteditable="false" class="pseudoSelection" data-content-editable-void="true" data-text-edit-side="start" style="user-select: none; --pseudoSelection--background: transparent; margin-right: 2px; width: 24px; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc(1.5em + 3px + 3px);">
+                    <div class="pseudoBefore" style="font-size: 1.5em; line-height: 1; margin-bottom: 0px; --pseudoBefore--fontFamily: Arial; --pseudoBefore--content: &quot;•&quot;;">•</div>
+                </div>
+                <div style="flex: 1 1 0px; min-width: 1px; display: flex; flex-direction: column;">
+                    <div style="display: flex;">
+                        <div spellcheck="true" placeholder="리스트" data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px; text-align: left;">거의 모든 시스템 리소스(CPU, memory, disk, network)를 퍼포먼스 관점에서 모니터링</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="fb14787a-487e-4d35-9121-bf2a19f4aec8" class="notion-selectable notion-bulleted_list-block" style="width: 100%; max-width: 919px; margin-top: 1px; margin-bottom: 1px;">
+            <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 2px; color: inherit; fill: inherit;">
+                <div contenteditable="false" class="pseudoSelection" data-content-editable-void="true" data-text-edit-side="start" style="user-select: none; --pseudoSelection--background: transparent; margin-right: 2px; width: 24px; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc(1.5em + 3px + 3px);">
+                    <div class="pseudoBefore" style="font-size: 1.5em; line-height: 1; margin-bottom: 0px; --pseudoBefore--fontFamily: Arial; --pseudoBefore--content: &quot;•&quot;;">•</div>
+                </div>
+                <div style="flex: 1 1 0px; min-width: 1px; display: flex; flex-direction: column;">
+                    <div style="display: flex;">
+                        <div spellcheck="true" placeholder="리스트" data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px; text-align: left;">윈도우 가로 사이즈가 어느정도 이상 되어야 함</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="aceef484-bd47-414f-a2b2-d694ae8a4c06" class="notion-selectable notion-bulleted_list-block" style="width: 100%; max-width: 919px; margin-top: 1px; margin-bottom: 1px;">
+            <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 2px; color: inherit; fill: inherit;">
+                <div contenteditable="false" class="pseudoSelection" data-content-editable-void="true" data-text-edit-side="start" style="user-select: none; --pseudoSelection--background: transparent; margin-right: 2px; width: 24px; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc(1.5em + 3px + 3px);">
+                    <div class="pseudoBefore" style="font-size: 1.5em; line-height: 1; margin-bottom: 0px; --pseudoBefore--fontFamily: Arial; --pseudoBefore--content: &quot;•&quot;;">•</div>
+                </div>
+                <div style="flex: 1 1 0px; min-width: 1px; display: flex; flex-direction: column;">
+                    <div style="display: flex;">
+                        <div spellcheck="true" placeholder="리스트" data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px; text-align: left;">프로세스별로 디스크 IO 모니터링 가능</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="8ffc2db7-98ee-4f7e-bef6-1e98c5858e90" class="notion-selectable notion-bulleted_list-block" style="width: 100%; max-width: 919px; margin-top: 1px; margin-bottom: 1px;">
+            <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 2px; color: inherit; fill: inherit;">
+                <div contenteditable="false" class="pseudoSelection" data-content-editable-void="true" data-text-edit-side="start" style="user-select: none; --pseudoSelection--background: transparent; margin-right: 2px; width: 24px; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc(1.5em + 3px + 3px);">
+                    <div class="pseudoBefore" style="font-size: 1.5em; line-height: 1; margin-bottom: 0px; --pseudoBefore--fontFamily: Arial; --pseudoBefore--content: &quot;•&quot;;">•</div>
+                </div>
+                <div style="flex: 1 1 0px; min-width: 1px; display: flex; flex-direction: column;">
+                    <div style="display: flex;">
+                        <div spellcheck="true" placeholder="리스트" data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px; text-align: left;">cpu코어를 최대한 많이 사용하는 듯. 각 코어별 사용량을 합쳐도 전체 사용량은 적은 편</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="0d578fcd-2010-47bf-a207-6f4db59b92ca" class="notion-selectable notion-sub_header-block" style="width: 100%; max-width: 919px; margin-top: 1.4em; margin-bottom: 1px;">
+            <div style="display: flex; width: 100%; color: inherit; fill: inherit;">
+                <h3 spellcheck="true" placeholder="제목2" data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px; font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 600; font-size: 1.5em; line-height: 1.3; margin: 0px;">vtop</h3></div>
+        </div>
+        <div data-block-id="52c91f38-5424-4e40-9a93-d886e254b053" class="notion-selectable notion-text-block" style="width: 100%; max-width: 919px; margin-top: 1px; margin-bottom: 1px;">
+            <div style="color: inherit; fill: inherit;">
+                <div style="display: flex;">
+                    <div spellcheck="true" placeholder=" " data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px;">nodejs 기반</div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="a42223c5-f77a-4336-a11e-87b0c37670b9" class="notion-selectable notion-image-block" style="width: 100%; max-width: 1111px; align-self: center; margin-top: 4px; margin-bottom: 4px;">
+            <div contenteditable="false" data-content-editable-void="true" role="figure" aria-labelledby="id_4">
+                <div style="display: flex;">
+                    <div class="notion-cursor-default" style="position: relative; overflow: hidden; flex-grow: 1;">
+                        <div style="position: relative;">
+                            <div>
+                                <div style="height: 100%; width: 100%;"><a href="../../images/vtop.gif" data-featherlight="image"><img loading="lazy" src="../../images/vtop.gif" referrerpolicy="same-origin" style="display: block; object-fit: cover; border-radius: 1px; pointer-events: auto; width: auto; height: auto;"></a></div>
+                            </div>
+                        </div>
+                        <div style="position: absolute; top: 4px; right: 4px; border-radius: 4px; color: white; fill: white; font-size: 11.5px; background: rgba(0, 0, 0, 0.6); display: flex; white-space: nowrap; height: 26px; max-width: calc(100% - 16px); overflow: hidden; pointer-events: none; opacity: 0; transition: opacity 300ms ease-in 0s; font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; z-index: 2;">
+                            <div role="button" tabindex="0" style="user-select: none; transition: background 20ms ease-in 0s; cursor: pointer; display: flex; align-items: center; justify-content: center; padding: 4px 6px; border-right: 1px solid rgba(255, 255, 255, 0.2);">
+                                <svg role="graphics-symbol" viewBox="0 0 16 16" class="download" style="width: 14px; height: 14px; display: block; fill: white; flex-shrink: 0; margin-right: 0px;">
+                                    <path d="M8.215 15.126c3.862 0 7.061-3.192 7.061-7.062 0-3.862-3.199-7.061-7.068-7.061-3.862 0-7.055 3.2-7.055 7.061 0 3.87 3.2 7.062 7.062 7.062zm0-1.388a5.654 5.654 0 01-5.667-5.674 5.642 5.642 0 015.66-5.667 5.66 5.66 0 015.68 5.667 5.66 5.66 0 01-5.673 5.674zm0-9.174c-.342 0-.602.247-.602.588v3.234l.062 1.401-.622-.766-.766-.8a.557.557 0 00-.41-.177.54.54 0 00-.56.547c0 .164.054.3.163.41l2.256 2.283c.15.157.294.226.479.226.191 0 .335-.075.485-.226l2.256-2.283a.557.557 0 00.164-.41.539.539 0 00-.56-.547.523.523 0 00-.41.178l-.766.793-.622.779.054-1.408V5.152c0-.341-.253-.588-.601-.588z"></path>
+                                </svg>
+                            </div>
+                            <div role="button" tabindex="0" style="user-select: none; transition: opacity 200ms ease-in 0s; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; width: 24px; height: 24px; border-radius: 4px; fill: rgba(255, 255, 255, 0.443);">
+                                <svg role="graphics-symbol" viewBox="0 0 13 3" class="dots" style="width: 14px; height: 14px; display: block; fill: white; flex-shrink: 0;">
+                                    <g>
+                                        <path d="M3,1.5A1.5,1.5,0,1,1,1.5,0,1.5,1.5,0,0,1,3,1.5Z"></path>
+                                        <path d="M8,1.5A1.5,1.5,0,1,1,6.5,0,1.5,1.5,0,0,1,8,1.5Z"></path>
+                                        <path d="M13,1.5A1.5,1.5,0,1,1,11.5,0,1.5,1.5,0,0,1,13,1.5Z"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="619bf59f-4b2a-49c0-bcd1-ac6bcf92a603" class="notion-selectable notion-numbered_list-block" style="width: 100%; max-width: 919px; margin-top: 1px; margin-bottom: 1px;">
+            <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 2px; color: inherit; fill: inherit;">
+                <div contenteditable="false" class="pseudoSelection" data-content-editable-void="true" data-text-edit-side="start" style="user-select: none; --pseudoSelection--background: transparent; margin-right: 2px; width: unset; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc(1.5em + 3px + 3px);"><span class="pseudoBefore" style="--pseudoBefore--content: &quot;1.&quot;; text-align: center; white-space: nowrap; width: 24px;">1.</span></div>
+                <div style="flex: 1 1 0px; min-width: 1px; display: flex; flex-direction: column;">
+                    <div style="display: flex;">
+                        <div spellcheck="true" placeholder="리스트" data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px; text-align: left;">장점</div>
+                    </div>
+                    <div data-block-id="7fd85e61-d1fe-4899-b65e-8f381a55be4c" class="notion-selectable notion-numbered_list-block" style="width: 100%; max-width: 100%; margin-top: 2px; margin-bottom: 1px;">
+                        <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 2px; color: inherit; fill: inherit;">
+                            <div contenteditable="false" class="pseudoSelection" data-content-editable-void="true" data-text-edit-side="start" style="user-select: none; --pseudoSelection--background: transparent; margin-right: 2px; width: unset; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc(1.5em + 3px + 3px);"><span class="pseudoBefore" style="--pseudoBefore--content: &quot;a.&quot;; text-align: center; white-space: nowrap; width: 24px;">•</span></div>
+                            <div style="flex: 1 1 0px; min-width: 1px; display: flex; flex-direction: column;">
+                                <div style="display: flex;">
+                                    <div spellcheck="true" placeholder="리스트" data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px; text-align: left;">심플</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-block-id="a9205082-f482-40d6-b279-238df413d0ba" class="notion-selectable notion-numbered_list-block" style="width: 100%; max-width: 100%; margin-top: 1px; margin-bottom: 0px;">
+                        <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 2px; color: inherit; fill: inherit;">
+                            <div contenteditable="false" class="pseudoSelection" data-content-editable-void="true" data-text-edit-side="start" style="user-select: none; --pseudoSelection--background: transparent; margin-right: 2px; width: unset; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc(1.5em + 3px + 3px);"><span class="pseudoBefore" style="--pseudoBefore--content: &quot;b.&quot;; text-align: center; white-space: nowrap; width: 24px;">•</span></div>
+                            <div style="flex: 1 1 0px; min-width: 1px; display: flex; flex-direction: column;">
+                                <div style="display: flex;">
+                                    <div spellcheck="true" placeholder="리스트" data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px; text-align: left;">CPU와 메모리 사용량 추이를 쉽게 알 수 있음 </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="b95ff514-da91-42b2-bb6e-2dd50720baac" class="notion-selectable notion-numbered_list-block" style="width: 100%; max-width: 919px; margin-top: 1px; margin-bottom: 1px;">
+            <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 2px; color: inherit; fill: inherit;">
+                <div contenteditable="false" class="pseudoSelection" data-content-editable-void="true" data-text-edit-side="start" style="user-select: none; --pseudoSelection--background: transparent; margin-right: 2px; width: unset; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc(1.5em + 3px + 3px);"><span class="pseudoBefore" style="--pseudoBefore--content: &quot;2.&quot;; text-align: center; white-space: nowrap; width: 24px;">2.</span></div>
+                <div style="flex: 1 1 0px; min-width: 1px; display: flex; flex-direction: column;">
+                    <div style="display: flex;">
+                        <div spellcheck="true" placeholder="리스트" data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px; text-align: left;">단점</div>
+                    </div>
+                    <div data-block-id="6b23274a-248e-4d80-ac43-758a8b832407" class="notion-selectable notion-numbered_list-block" style="width: 100%; max-width: 100%; margin-top: 2px; margin-bottom: 1px;">
+                        <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 2px; color: inherit; fill: inherit;">
+                            <div contenteditable="false" class="pseudoSelection" data-content-editable-void="true" data-text-edit-side="start" style="user-select: none; --pseudoSelection--background: transparent; margin-right: 2px; width: unset; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc(1.5em + 3px + 3px);"><span class="pseudoBefore" style="--pseudoBefore--content: &quot;a.&quot;; text-align: center; white-space: nowrap; width: 24px;">•</span></div>
+                            <div style="flex: 1 1 0px; min-width: 1px; display: flex; flex-direction: column;">
+                                <div style="display: flex;">
+                                    <div spellcheck="true" placeholder="리스트" data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px; text-align: left;">다른 모니터링 툴보다 CPU와 메모리를 가장 많이 사용</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-block-id="f14833cf-555a-4043-84b3-d0f279932af4" class="notion-selectable notion-numbered_list-block" style="width: 100%; max-width: 100%; margin-top: 1px; margin-bottom: 0px;">
+                        <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 2px; color: inherit; fill: inherit;">
+                            <div contenteditable="false" class="pseudoSelection" data-content-editable-void="true" data-text-edit-side="start" style="user-select: none; --pseudoSelection--background: transparent; margin-right: 2px; width: unset; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc(1.5em + 3px + 3px);"><span class="pseudoBefore" style="--pseudoBefore--content: &quot;b.&quot;; text-align: center; white-space: nowrap; width: 24px;">•</span></div>
+                            <div style="flex: 1 1 0px; min-width: 1px; display: flex; flex-direction: column;">
+                                <div style="display: flex;">
+                                    <div spellcheck="true" placeholder="리스트" data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px; text-align: left;">nodejs기반이라 프로세스 식별이 힘듬</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="4dd24e06-2261-4b25-8dcc-fe71d6d80cbb" class="notion-selectable notion-sub_header-block" style="width: 100%; max-width: 919px; margin-top: 1.4em; margin-bottom: 1px;">
+            <div style="display: flex; width: 100%; color: inherit; fill: inherit;">
+                <h3 spellcheck="true" placeholder="제목2" data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px; font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 600; font-size: 1.5em; line-height: 1.3; margin: 0px;">btop</h3></div>
+        </div>
+        <div data-block-id="9426344b-2485-4989-9f58-6cbdbdae459b" class="notion-selectable notion-text-block" style="width: 100%; max-width: 919px; margin-top: 1px; margin-bottom: 1px;">
+            <div style="color: inherit; fill: inherit;">
+                <div style="display: flex;">
+                    <div spellcheck="true" placeholder=" " data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px;">가장 아름다운 ui</div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="cc49e8c6-9c2b-4f44-b0ee-941e08f2a3fd" class="notion-selectable notion-image-block" style="width: 100%; max-width: 1111px; align-self: center; margin-top: 4px; margin-bottom: 4px;">
+            <div contenteditable="false" data-content-editable-void="true" role="figure" aria-labelledby="id_5">
+                <div style="display: flex;">
+                    <div class="notion-cursor-default" style="position: relative; overflow: hidden; flex-grow: 1;">
+                        <div style="position: relative;">
+                            <div>
+                                <div style="height: 100%; width: 100%;"><a href="../../images/btop.gif" data-featherlight="image"><img loading="lazy" src="../../images/btop.gif" referrerpolicy="same-origin" style="display: block; object-fit: cover; border-radius: 1px; pointer-events: auto; width: auto; height: auto;"></a></div>
+                            </div>
+                        </div>
+                        <div style="position: absolute; top: 4px; right: 4px; border-radius: 4px; color: white; fill: white; font-size: 11.5px; background: rgba(0, 0, 0, 0.6); display: flex; white-space: nowrap; height: 26px; max-width: calc(100% - 16px); overflow: hidden; pointer-events: none; opacity: 0; transition: opacity 300ms ease-in 0s; font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; z-index: 2;">
+                            <div role="button" tabindex="0" style="user-select: none; transition: background 20ms ease-in 0s; cursor: pointer; display: flex; align-items: center; justify-content: center; padding: 4px 6px; border-right: 1px solid rgba(255, 255, 255, 0.2);">
+                                <svg role="graphics-symbol" viewBox="0 0 16 16" class="download" style="width: 14px; height: 14px; display: block; fill: white; flex-shrink: 0; margin-right: 0px;">
+                                    <path d="M8.215 15.126c3.862 0 7.061-3.192 7.061-7.062 0-3.862-3.199-7.061-7.068-7.061-3.862 0-7.055 3.2-7.055 7.061 0 3.87 3.2 7.062 7.062 7.062zm0-1.388a5.654 5.654 0 01-5.667-5.674 5.642 5.642 0 015.66-5.667 5.66 5.66 0 015.68 5.667 5.66 5.66 0 01-5.673 5.674zm0-9.174c-.342 0-.602.247-.602.588v3.234l.062 1.401-.622-.766-.766-.8a.557.557 0 00-.41-.177.54.54 0 00-.56.547c0 .164.054.3.163.41l2.256 2.283c.15.157.294.226.479.226.191 0 .335-.075.485-.226l2.256-2.283a.557.557 0 00.164-.41.539.539 0 00-.56-.547.523.523 0 00-.41.178l-.766.793-.622.779.054-1.408V5.152c0-.341-.253-.588-.601-.588z"></path>
+                                </svg>
+                            </div>
+                            <div role="button" tabindex="0" style="user-select: none; transition: opacity 200ms ease-in 0s; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; width: 24px; height: 24px; border-radius: 4px; fill: rgba(255, 255, 255, 0.443);">
+                                <svg role="graphics-symbol" viewBox="0 0 13 3" class="dots" style="width: 14px; height: 14px; display: block; fill: white; flex-shrink: 0;">
+                                    <g>
+                                        <path d="M3,1.5A1.5,1.5,0,1,1,1.5,0,1.5,1.5,0,0,1,3,1.5Z"></path>
+                                        <path d="M8,1.5A1.5,1.5,0,1,1,6.5,0,1.5,1.5,0,0,1,8,1.5Z"></path>
+                                        <path d="M13,1.5A1.5,1.5,0,1,1,11.5,0,1.5,1.5,0,0,1,13,1.5Z"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="8682f78e-0681-470d-b21c-804902315d8f" class="notion-selectable notion-bulleted_list-block" style="width: 100%; max-width: 919px; margin-top: 1px; margin-bottom: 1px;">
+            <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 2px; color: inherit; fill: inherit;">
+                <div contenteditable="false" class="pseudoSelection" data-content-editable-void="true" data-text-edit-side="start" style="user-select: none; --pseudoSelection--background: transparent; margin-right: 2px; width: 24px; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc(1.5em + 3px + 3px);">
+                    <div class="pseudoBefore" style="font-size: 1.5em; line-height: 1; margin-bottom: 0px; --pseudoBefore--fontFamily: Arial; --pseudoBefore--content: &quot;•&quot;;">•</div>
+                </div>
+                <div style="flex: 1 1 0px; min-width: 1px; display: flex; flex-direction: column;">
+                    <div style="display: flex;">
+                        <div spellcheck="true" placeholder="리스트" data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px; text-align: left;">cpu코어를 최대한 많이 사용하는 듯. 각 코어별 사용량을 합치면 전체 사용량은 꽤 된다.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="97d0945a-ac83-47f6-b573-1d5e3b333d7a" class="notion-selectable notion-bulleted_list-block" style="width: 100%; max-width: 919px; margin-top: 1px; margin-bottom: 1px;">
+            <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 2px; color: inherit; fill: inherit;">
+                <div contenteditable="false" class="pseudoSelection" data-content-editable-void="true" data-text-edit-side="start" style="user-select: none; --pseudoSelection--background: transparent; margin-right: 2px; width: 24px; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc(1.5em + 3px + 3px);">
+                    <div class="pseudoBefore" style="font-size: 1.5em; line-height: 1; margin-bottom: 0px; --pseudoBefore--fontFamily: Arial; --pseudoBefore--content: &quot;•&quot;;">•</div>
+                </div>
+                <div style="flex: 1 1 0px; min-width: 1px; display: flex; flex-direction: column;">
+                    <div style="display: flex;">
+                        <div spellcheck="true" placeholder="리스트" data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px; text-align: left;">터미널 사이즈가 최소 가로 80, 세로 24가 되어야 띄울 수 있다(최소치 미달일 때 경고가 뜸)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="990c921f-c727-495b-b80c-31a08f2a7a78" class="notion-selectable notion-bulleted_list-block" style="width: 100%; max-width: 919px; margin-top: 1px; margin-bottom: 1px;">
+            <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 2px; color: inherit; fill: inherit;">
+                <div contenteditable="false" class="pseudoSelection" data-content-editable-void="true" data-text-edit-side="start" style="user-select: none; --pseudoSelection--background: transparent; margin-right: 2px; width: 24px; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc(1.5em + 3px + 3px);">
+                    <div class="pseudoBefore" style="font-size: 1.5em; line-height: 1; margin-bottom: 0px; --pseudoBefore--fontFamily: Arial; --pseudoBefore--content: &quot;•&quot;;">•</div>
+                </div>
+                <div style="flex: 1 1 0px; min-width: 1px; display: flex; flex-direction: column;">
+                    <div style="display: flex;">
+                        <div spellcheck="true" placeholder="리스트" data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px; text-align: left;">프로세스별 상세보기 지원</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="b478d2f2-3982-4e6c-a4b2-b7a850e512c5" class="notion-selectable notion-sub_header-block" style="width: 100%; max-width: 919px; margin-top: 1.4em; margin-bottom: 1px;">
+            <div style="display: flex; width: 100%; color: inherit; fill: inherit;">
+                <h3 spellcheck="true" placeholder="제목2" data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px; font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 600; font-size: 1.5em; line-height: 1.3; margin: 0px;">glances</h3></div>
+        </div>
+        <div data-block-id="0fe0ce44-5310-4ab7-a74e-40542124d07d" class="notion-selectable notion-text-block" style="width: 100%; max-width: 919px; margin-top: 1px; margin-bottom: 1px;">
+            <div style="color: inherit; fill: inherit;">
+                <div style="display: flex;">
+                    <div spellcheck="true" placeholder=" " data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px;">python기반</div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="052f57f2-dcf2-4794-abbf-982f39841c17" class="notion-selectable notion-image-block" style="width: 100%; max-width: 1111px; align-self: center; margin-top: 4px; margin-bottom: 4px;">
+            <div contenteditable="false" data-content-editable-void="true" role="figure" aria-labelledby="id_6">
+                <div style="display: flex;">
+                    <div class="notion-cursor-default" style="position: relative; overflow: hidden; flex-grow: 1;">
+                        <div style="position: relative;">
+                            <div>
+                                <div style="height: 100%; width: 100%;"><a href="../../images/glances.gif" data-featherlight="image"><img loading="lazy" src="../../images/glances.gif" referrerpolicy="same-origin" style="display: block; object-fit: cover; border-radius: 1px; pointer-events: auto; width: auto; height: auto;"></a></div>
+                            </div>
+                        </div>
+                        <div style="position: absolute; top: 4px; right: 4px; border-radius: 4px; color: white; fill: white; font-size: 11.5px; background: rgba(0, 0, 0, 0.6); display: flex; white-space: nowrap; height: 26px; max-width: calc(100% - 16px); overflow: hidden; pointer-events: none; opacity: 0; transition: opacity 300ms ease-in 0s; font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; z-index: 2;">
+                            <div role="button" tabindex="0" style="user-select: none; transition: background 20ms ease-in 0s; cursor: pointer; display: flex; align-items: center; justify-content: center; padding: 4px 6px; border-right: 1px solid rgba(255, 255, 255, 0.2);">
+                                <svg role="graphics-symbol" viewBox="0 0 16 16" class="download" style="width: 14px; height: 14px; display: block; fill: white; flex-shrink: 0; margin-right: 0px;">
+                                    <path d="M8.215 15.126c3.862 0 7.061-3.192 7.061-7.062 0-3.862-3.199-7.061-7.068-7.061-3.862 0-7.055 3.2-7.055 7.061 0 3.87 3.2 7.062 7.062 7.062zm0-1.388a5.654 5.654 0 01-5.667-5.674 5.642 5.642 0 015.66-5.667 5.66 5.66 0 015.68 5.667 5.66 5.66 0 01-5.673 5.674zm0-9.174c-.342 0-.602.247-.602.588v3.234l.062 1.401-.622-.766-.766-.8a.557.557 0 00-.41-.177.54.54 0 00-.56.547c0 .164.054.3.163.41l2.256 2.283c.15.157.294.226.479.226.191 0 .335-.075.485-.226l2.256-2.283a.557.557 0 00.164-.41.539.539 0 00-.56-.547.523.523 0 00-.41.178l-.766.793-.622.779.054-1.408V5.152c0-.341-.253-.588-.601-.588z"></path>
+                                </svg>
+                            </div>
+                            <div role="button" tabindex="0" style="user-select: none; transition: opacity 200ms ease-in 0s; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; width: 24px; height: 24px; border-radius: 4px; fill: rgba(255, 255, 255, 0.443);">
+                                <svg role="graphics-symbol" viewBox="0 0 13 3" class="dots" style="width: 14px; height: 14px; display: block; fill: white; flex-shrink: 0;">
+                                    <g>
+                                        <path d="M3,1.5A1.5,1.5,0,1,1,1.5,0,1.5,1.5,0,0,1,3,1.5Z"></path>
+                                        <path d="M8,1.5A1.5,1.5,0,1,1,6.5,0,1.5,1.5,0,0,1,8,1.5Z"></path>
+                                        <path d="M13,1.5A1.5,1.5,0,1,1,11.5,0,1.5,1.5,0,0,1,13,1.5Z"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="683ac7f6-ca31-48d0-8cb5-435322f99ac6" class="notion-selectable notion-bulleted_list-block" style="width: 100%; max-width: 919px; margin-top: 1px; margin-bottom: 1px;">
+            <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 2px; color: inherit; fill: inherit;">
+                <div contenteditable="false" class="pseudoSelection" data-content-editable-void="true" data-text-edit-side="start" style="user-select: none; --pseudoSelection--background: transparent; margin-right: 2px; width: 24px; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc(1.5em + 3px + 3px);">
+                    <div class="pseudoBefore" style="font-size: 1.5em; line-height: 1; margin-bottom: 0px; --pseudoBefore--fontFamily: Arial; --pseudoBefore--content: &quot;•&quot;;">•</div>
+                </div>
+                <div style="flex: 1 1 0px; min-width: 1px; display: flex; flex-direction: column;">
+                    <div style="display: flex;">
+                        <div spellcheck="true" placeholder="리스트" data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px; text-align: left;">python기반이라 자체 프로세스 식별이 힘듬</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="253cc0a1-8c18-4608-a78d-d4a9ea0f89a8" class="notion-selectable notion-bulleted_list-block" style="width: 100%; max-width: 919px; margin-top: 1px; margin-bottom: 1px;">
+            <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 2px; color: inherit; fill: inherit;">
+                <div contenteditable="false" class="pseudoSelection" data-content-editable-void="true" data-text-edit-side="start" style="user-select: none; --pseudoSelection--background: transparent; margin-right: 2px; width: 24px; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc(1.5em + 3px + 3px);">
+                    <div class="pseudoBefore" style="font-size: 1.5em; line-height: 1; margin-bottom: 0px; --pseudoBefore--fontFamily: Arial; --pseudoBefore--content: &quot;•&quot;;">•</div>
+                </div>
+                <div style="flex: 1 1 0px; min-width: 1px; display: flex; flex-direction: column;">
+                    <div style="display: flex;">
+                        <div spellcheck="true" placeholder="리스트" data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px; text-align: left;">파티션별 IO 모니터링</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="2b149e6a-0325-4ca7-858e-46202483bf05" class="notion-selectable notion-bulleted_list-block" style="width: 100%; max-width: 919px; margin-top: 1px; margin-bottom: 1px;">
+            <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 2px; color: inherit; fill: inherit;">
+                <div contenteditable="false" class="pseudoSelection" data-content-editable-void="true" data-text-edit-side="start" style="user-select: none; --pseudoSelection--background: transparent; margin-right: 2px; width: 24px; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc(1.5em + 3px + 3px);">
+                    <div class="pseudoBefore" style="font-size: 1.5em; line-height: 1; margin-bottom: 0px; --pseudoBefore--fontFamily: Arial; --pseudoBefore--content: &quot;•&quot;;">•</div>
+                </div>
+                <div style="flex: 1 1 0px; min-width: 1px; display: flex; flex-direction: column;">
+                    <div style="display: flex;">
+                        <div spellcheck="true" placeholder="리스트" data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px; text-align: left;">메모리를 상당히 많이 사용(46MB) 하지만 CPU코어는 한 개만 사용하도록 개발한듯</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="7be2aefc-bace-4890-b0fe-9edee0cbbcaa" class="notion-selectable notion-bulleted_list-block" style="width: 100%; max-width: 919px; margin-top: 1px; margin-bottom: 1px;">
+            <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 2px; color: inherit; fill: inherit;">
+                <div contenteditable="false" class="pseudoSelection" data-content-editable-void="true" data-text-edit-side="start" style="user-select: none; --pseudoSelection--background: transparent; margin-right: 2px; width: 24px; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc(1.5em + 3px + 3px);">
+                    <div class="pseudoBefore" style="font-size: 1.5em; line-height: 1; margin-bottom: 0px; --pseudoBefore--fontFamily: Arial; --pseudoBefore--content: &quot;•&quot;;">•</div>
+                </div>
+                <div style="flex: 1 1 0px; min-width: 1px; display: flex; flex-direction: column;">
+                    <div style="display: flex;">
+                        <div spellcheck="true" placeholder="리스트" data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px; text-align: left;">high load 발생 시 경고 출력</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="3a6a33f3-22b5-41ff-8a3b-92f0cf610a07" class="notion-selectable notion-header-block" style="width: 100%; max-width: 919px; margin-top: 2em; margin-bottom: 4px;">
+            <div style="display: flex; width: 100%; color: inherit; fill: inherit;">
+                <h2 spellcheck="true" placeholder="제목1" data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px; font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 600; font-size: 1.875em; line-height: 1.3; margin: 0px;">총평</h2></div>
+        </div>
+        <div data-block-id="2ca5e489-e865-436d-b5f2-cac4dd1b96b9" class="notion-selectable notion-text-block" style="width: 100%; max-width: 919px; margin-top: 1px; margin-bottom: 1px;">
+            <div style="color: inherit; fill: inherit;">
+                <div style="display: flex;">
+                    <div spellcheck="true" placeholder=" " data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px;"><span style="font-weight:600" data-token-index="0" class="notion-enable-hover">어플리케이션 개발자라면 btop을, 시스템 관리자라면 glances를 추천</span></div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="04d468f2-618b-41d2-8b46-a8226fb8d6aa" class="notion-selectable notion-bulleted_list-block" style="width: 100%; max-width: 919px; margin-top: 1px; margin-bottom: 1px;">
+            <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 2px; color: inherit; fill: inherit;">
+                <div contenteditable="false" class="pseudoSelection" data-content-editable-void="true" data-text-edit-side="start" style="user-select: none; --pseudoSelection--background: transparent; margin-right: 2px; width: 24px; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc(1.5em + 3px + 3px);">
+                    <div class="pseudoBefore" style="font-size: 1.5em; line-height: 1; margin-bottom: 0px; --pseudoBefore--fontFamily: Arial; --pseudoBefore--content: &quot;•&quot;;">•</div>
+                </div>
+                <div style="flex: 1 1 0px; min-width: 1px; display: flex; flex-direction: column;">
+                    <div style="display: flex;">
+                        <div spellcheck="true" placeholder="리스트" data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px; text-align: left;">가장 가벼운 툴 : top</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="66e0c824-1506-4241-b474-3321dc6ee534" class="notion-selectable notion-bulleted_list-block" style="width: 100%; max-width: 919px; margin-top: 1px; margin-bottom: 1px;">
+            <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 2px; color: inherit; fill: inherit;">
+                <div contenteditable="false" class="pseudoSelection" data-content-editable-void="true" data-text-edit-side="start" style="user-select: none; --pseudoSelection--background: transparent; margin-right: 2px; width: 24px; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc(1.5em + 3px + 3px);">
+                    <div class="pseudoBefore" style="font-size: 1.5em; line-height: 1; margin-bottom: 0px; --pseudoBefore--fontFamily: Arial; --pseudoBefore--content: &quot;•&quot;;">•</div>
+                </div>
+                <div style="flex: 1 1 0px; min-width: 1px; display: flex; flex-direction: column;">
+                    <div style="display: flex;">
+                        <div spellcheck="true" placeholder="리스트" data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px; text-align: left;">CPU 로드 추이 시각화 : vtop, <span style="font-weight:600" data-token-index="1" class="notion-enable-hover">btop</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="86b23a87-5938-45b6-befb-e1274e39168e" class="notion-selectable notion-bulleted_list-block" style="width: 100%; max-width: 919px; margin-top: 1px; margin-bottom: 1px;">
+            <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 2px; color: inherit; fill: inherit;">
+                <div contenteditable="false" class="pseudoSelection" data-content-editable-void="true" data-text-edit-side="start" style="user-select: none; --pseudoSelection--background: transparent; margin-right: 2px; width: 24px; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc(1.5em + 3px + 3px);">
+                    <div class="pseudoBefore" style="font-size: 1.5em; line-height: 1; margin-bottom: 0px; --pseudoBefore--fontFamily: Arial; --pseudoBefore--content: &quot;•&quot;;">•</div>
+                </div>
+                <div style="flex: 1 1 0px; min-width: 1px; display: flex; flex-direction: column;">
+                    <div style="display: flex;">
+                        <div spellcheck="true" placeholder="리스트" data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px; text-align: left;">CPU 코어별 로드 모니터링 : atop, <span style="font-weight:600" data-token-index="1" class="notion-enable-hover">btop</span>, htop(바 차트)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="d09167bc-9d59-4f06-8ccd-c7acc415037b" class="notion-selectable notion-bulleted_list-block" style="width: 100%; max-width: 919px; margin-top: 1px; margin-bottom: 1px;">
+            <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 2px; color: inherit; fill: inherit;">
+                <div contenteditable="false" class="pseudoSelection" data-content-editable-void="true" data-text-edit-side="start" style="user-select: none; --pseudoSelection--background: transparent; margin-right: 2px; width: 24px; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc(1.5em + 3px + 3px);">
+                    <div class="pseudoBefore" style="font-size: 1.5em; line-height: 1; margin-bottom: 0px; --pseudoBefore--fontFamily: Arial; --pseudoBefore--content: &quot;•&quot;;">•</div>
+                </div>
+                <div style="flex: 1 1 0px; min-width: 1px; display: flex; flex-direction: column;">
+                    <div style="display: flex;">
+                        <div spellcheck="true" placeholder="리스트" data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px; text-align: left;">CPU 코어별 온도(그 외 각종 센서들) : <b>btop</b>, glances</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="5914cb0d-5269-44c9-a02b-d521620fa032" class="notion-selectable notion-bulleted_list-block" style="width: 100%; max-width: 919px; margin-top: 1px; margin-bottom: 1px;">
+            <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 2px; color: inherit; fill: inherit;">
+                <div contenteditable="false" class="pseudoSelection" data-content-editable-void="true" data-text-edit-side="start" style="user-select: none; --pseudoSelection--background: transparent; margin-right: 2px; width: 24px; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc(1.5em + 3px + 3px);">
+                    <div class="pseudoBefore" style="font-size: 1.5em; line-height: 1; margin-bottom: 0px; --pseudoBefore--fontFamily: Arial; --pseudoBefore--content: &quot;•&quot;;">•</div>
+                </div>
+                <div style="flex: 1 1 0px; min-width: 1px; display: flex; flex-direction: column;">
+                    <div style="display: flex;">
+                        <div spellcheck="true" placeholder="리스트" data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px; text-align: left;">디스크 IO : atop(프로세스별로도 가능), glances(파티션 별), <span style="font-weight:600" data-token-index="1" class="notion-enable-hover">btop</span>(프로세스별)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="f21577db-f18a-4102-ba6f-bb616ef302e5" class="notion-selectable notion-bulleted_list-block" style="width: 100%; max-width: 919px; margin-top: 1px; margin-bottom: 1px;">
+            <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 2px; color: inherit; fill: inherit;">
+                <div contenteditable="false" class="pseudoSelection" data-content-editable-void="true" data-text-edit-side="start" style="user-select: none; --pseudoSelection--background: transparent; margin-right: 2px; width: 24px; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc(1.5em + 3px + 3px);">
+                    <div class="pseudoBefore" style="font-size: 1.5em; line-height: 1; margin-bottom: 0px; --pseudoBefore--fontFamily: Arial; --pseudoBefore--content: &quot;•&quot;;">•</div>
+                </div>
+                <div style="flex: 1 1 0px; min-width: 1px; display: flex; flex-direction: column;">
+                    <div style="display: flex;">
+                        <div spellcheck="true" placeholder="리스트" data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px; text-align: left;">네트워크 IO : <span style="font-weight:600" data-token-index="1" class="notion-enable-hover">btop</span>(추이 보기), glances</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="93bd4fd9-f6ce-4dbc-802f-092452aa8384" class="notion-selectable notion-bulleted_list-block" style="width: 100%; max-width: 919px; margin-top: 1px; margin-bottom: 1px;">
+            <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 2px; color: inherit; fill: inherit;">
+                <div contenteditable="false" class="pseudoSelection" data-content-editable-void="true" data-text-edit-side="start" style="user-select: none; --pseudoSelection--background: transparent; margin-right: 2px; width: 24px; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc(1.5em + 3px + 3px);">
+                    <div class="pseudoBefore" style="font-size: 1.5em; line-height: 1; margin-bottom: 0px; --pseudoBefore--fontFamily: Arial; --pseudoBefore--content: &quot;•&quot;;">•</div>
+                </div>
+                <div style="flex: 1 1 0px; min-width: 1px; display: flex; flex-direction: column;">
+                    <div style="display: flex;">
+                        <div spellcheck="true" placeholder="리스트" data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px; text-align: left;">프로세스별 상세 보기 : <span style="font-weight:600" data-token-index="1" class="notion-enable-hover">btop</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-block-id="dee9cf4c-dc7f-4759-9c57-e936f8e62c9f" class="notion-selectable notion-text-block" style="width: 100%; max-width: 919px; margin-top: 1px; margin-bottom: 0px;">
+            <div style="color: inherit; fill: inherit;">
+                <div style="display: flex;">
+                    <div spellcheck="true" placeholder=" " data-content-editable-leaf="true" contenteditable="false" style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px; min-height: 1em; color: rgba(255, 255, 255, 0.81); -webkit-text-fill-color: rgba(255, 255, 255, 0.282);"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_8%EC%9E%A5.-%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/" rel="bookmark">자바의 정석 8장. 예외처리</a>
+  </h2>
+  
+    
+      <time datetime="2021-12-17T22:31:51&#43;09:00">December 17, 2021</time>
+    
+  
+</header>
+      
+        
+          
+            
+
+
+
+<h4 id="8장-예외처리">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_8%EC%9E%A5.-%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/#8%ec%9e%a5-%ec%98%88%ec%99%b8%ec%b2%98%eb%a6%ac">8장. 예외처리</a>
+</h4>
+<aside>
+💡 [요청하는 자 : "나는 이 작업을 어떻게 하는지 몰라. 하지만 너는 알고 있지. 나 대신 이 일을 해줄래?"
+요청받는 자 : "나도 도와 주고 싶어. 그래서 시도해봤지. 하지만 이러한 문제가 있어서 작업을 마칠 수 없었어." 👉 이 때 예외를 던진다](https://softwareengineering.stackexchange.com/a/323507)
+</aside>
+<aside>
+💡 [Exception이 없던 시절 어떻게 예외처리를 했을까? 반환값을 일일이 체크하는 수 밖에 없었다. 예를 들어 개수를 구하는 함수에서 음수가 반환된다면 예외로 한다던지, 정수를 반환하는 경우라면 가장 큰 정수(혹은 가장 작은 정수)를 반환하기로 약속을 한다던지](https://softwareengineering.stackexchange.com/a/323507)
+</aside>
+
+
+
+
+<h5 id="11-프로그램-오류-p414">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_8%EC%9E%A5.-%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/#11-%ed%94%84%eb%a1%9c%ea%b7%b8%eb%9e%a8-%ec%98%a4%eb%a5%98-p414">1.1 프로그램 오류 p.414</a>
+</h5>
+<blockquote>
+<p>컴파일 에러 : 컴파일 시에 발생하는 에러
+런타임 에러 : 실행 시에 발생하는 에러
+논리적 에러 : 실행은 되지만 의도와 다르게 동작하는 것</p>
+</blockquote>
+<ul>
+<li>처리 가능 여부에 따라</li>
+</ul>
+<blockquote>
+<p>에러(error) : 프로그램 코드에 의해서 수습될 수 없는 심각한 오류
+예외(exception) : 프로그램 코드에 의해 수습될 수 있는 다소 미약한 오류</p>
+</blockquote>
+
+
+
+
+<h5 id="12-예외-클래스의-계층구조-p415">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_8%EC%9E%A5.-%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/#12-%ec%98%88%ec%99%b8-%ed%81%b4%eb%9e%98%ec%8a%a4%ec%9d%98-%ea%b3%84%ec%b8%b5%ea%b5%ac%ec%a1%b0-p415">1.2 예외 클래스의 계층구조 p.415</a>
+</h5>
+<ul>
+<li>Throwable</li>
+</ul>
+<p><img src="http://www.plantuml.com/plantuml/png/SoWkIImgAKygLb3oJIpAJialprFYqb88oIZABqzCoadbujHISAr8JYqeoSpFu-84ye9AyqeoSrDH1VNqzC2qfpzS7Aopg2Y_24M1Vsc9VvflQcv-KIL4qY4rBoKt4uWJ2m00" alt="http://www.plantuml.com/plantuml/png/SoWkIImgAKygLb3oJIpAJialprFYqb88oIZABqzCoadbujHISAr8JYqeoSpFu-84ye9AyqeoSrDH1VNqzC2qfpzS7Aopg2Y_24M1Vsc9VvflQcv-KIL4qY4rBoKt4uWJ2m00"></p>
+<ul>
+<li>Exception</li>
+</ul>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F9045cf63-a81c-4e91-a2df-7a6f59a9ea00%2FUntitled.png?table=block&amp;id=15976be8-705f-41e6-9c2c-b0cd6b5ad2ac&amp;spaceId=e61b686e-d1af-4c3a-9777-c12e83dc3275&amp;width=1900&amp;userId=eb87f607-930d-4f18-83f2-eaab20fcf33d&amp;cache=v2" alt="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F9045cf63-a81c-4e91-a2df-7a6f59a9ea00%2FUntitled.png?table=block&amp;id=15976be8-705f-41e6-9c2c-b0cd6b5ad2ac&amp;spaceId=e61b686e-d1af-4c3a-9777-c12e83dc3275&amp;width=1900&amp;userId=eb87f607-930d-4f18-83f2-eaab20fcf33d&amp;cache=v2"></p>
+<blockquote>
+<p><strong>Excetion클래스들</strong> : 사용자의 실수와 같은 외적인 요인에 의해 발생하는 예외
+<strong>RuntimeException클래스들</strong> : 프로그래머의 실수로 발생하는 예외</p>
+</blockquote>
+<aside>
+💡 catch 구문은 다형성의 좋은 샘플.
+</aside>
+
+
+
+
+<h6 id="catch-순서-p421">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_8%EC%9E%A5.-%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/#catch-%ec%88%9c%ec%84%9c-p421">catch 순서 p.421</a>
+</h6>
+
+  
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nn">chap8</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">ExceptionEx7</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">args</span><span class="o">[]</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="k">try</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">			</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">1</span><span class="o">/</span><span class="n">0</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">Exception</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">ArithmeticException</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">			</span><span class="c1">//&#34;Unreachable catch block for ArithmeticException. It is already handled by the catch block for Exception&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></div>
+
+
+
+
+<h6 id="exceptionprintstacktrace-vs-slf4j-loggererror-p422-httpsstackoverflowcoma104776464766882">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_8%EC%9E%A5.-%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/#exceptionprintstacktrace-vs-slf4j-loggererror-p422-httpsstackoverflowcoma104776464766882">Exception.printStackTrace() vs @Slf4j logger.error() p.422 <a href="https://stackoverflow.com/a/10477646/4766882">https://stackoverflow.com/a/10477646/4766882</a></a>
+</h6>
+<blockquote>
+<p>printStackTrace()는 단순히 오류를 어딘가에 출력하는데 그치지만 Slf4j를 쓰면 출력을 할지 말지 부터 어디에 출력할지를 소스 수정없이 조절가능. 출력은 시스템 런타임 성능을 저하시키는 주요 요인</p>
+</blockquote>
+
+
+
+
+<h6 id="예외의-종류--컴파일러가-체크할-수-있는가">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_8%EC%9E%A5.-%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/#%ec%98%88%ec%99%b8%ec%9d%98-%ec%a2%85%eb%a5%98--%ec%bb%b4%ed%8c%8c%ec%9d%bc%eb%9f%ac%ea%b0%80-%ec%b2%b4%ed%81%ac%ed%95%a0-%ec%88%98-%ec%9e%88%eb%8a%94%ea%b0%80">예외의 종류 : <em>컴파일러가 체크할 수 있는가</em></a>
+</h6>
+<ol>
+<li>checked : 컴파일러가 체크 가능. 컴파일 에러 발생(소스를 수정해야 컴파일 될 것이므로 코딩 시에 excetion에 대한 대처가 가능)</li>
+<li>unchecked : 컴파일러가 체크 불가능. 컴파일 에러 발생하지 않음</li>
+</ol>
+
+
+
+
+<h4 id="언제-exception을-사용할까-가능한-안써야-한다-특히-제어로직에-예외를-사용하지-마라">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_8%EC%9E%A5.-%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/#%ec%96%b8%ec%a0%9c-exception%ec%9d%84-%ec%82%ac%ec%9a%a9%ed%95%a0%ea%b9%8c-%ea%b0%80%eb%8a%a5%ed%95%9c-%ec%95%88%ec%8d%a8%ec%95%bc-%ed%95%9c%eb%8b%a4-%ed%8a%b9%ed%9e%88-%ec%a0%9c%ec%96%b4%eb%a1%9c%ec%a7%81%ec%97%90-%ec%98%88%ec%99%b8%eb%a5%bc-%ec%82%ac%ec%9a%a9%ed%95%98%ec%a7%80-%eb%a7%88%eb%9d%bc">언제 Exception을 사용할까? 가능한 안써야 한다. 특히 &lsquo;<em>제어로직에 예외를 사용하지 마라&rsquo;</em></a>
+</h4>
+<ol>
+<li>소스 가독성 저하(goto문이랑 동일함)</li>
+<li>런타임의 속도저하</li>
+</ol>
+
+
+
+
+<h4 id="언제-exceptionthrows을-사용할까">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_8%EC%9E%A5.-%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/#%ec%96%b8%ec%a0%9c-exceptionthrows%ec%9d%84-%ec%82%ac%ec%9a%a9%ed%95%a0%ea%b9%8c">언제 Exception(throws)을 사용할까?</a>
+</h4>
+<p>호출stack이 깊을 때 예외 상황을 우아하게 처리하기 위해. &lsquo;<em>예외를 마지막에 처리하는 쪽은 최초 call을 발생시킨 객체다&rsquo;</em></p>
+
+
+
+
+<h5 id="19-자동-자원-반환---try-with-resources">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_8%EC%9E%A5.-%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/#19-%ec%9e%90%eb%8f%99-%ec%9e%90%ec%9b%90-%eb%b0%98%ed%99%98---try-with-resources">1.9 자동 자원 반환 - try-with-resources</a>
+</h5>
+<ol>
+<li>소스가 많이 짧아져서 가독성이 좋아졌다.</li>
+<li>해당 리소스는 AutoCloseable인터페이스를 구현해야 한다.</li>
+</ol>
+<ul>
+<li>before</li>
+</ul>
+
+  
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">Scanner</span><span class="w"> </span><span class="n">scanner</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">try</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">scanner</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">File</span><span class="p">(</span><span class="s">&#34;test.txt&#34;</span><span class="p">));</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">scanner</span><span class="p">.</span><span class="na">hasNext</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">scanner</span><span class="p">.</span><span class="na">nextLine</span><span class="p">());</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">FileNotFoundException</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">e</span><span class="p">.</span><span class="na">printStackTrace</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w"> </span><span class="k">finally</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">scanner</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">scanner</span><span class="p">.</span><span class="na">close</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></div>
+<ul>
+<li>after</li>
+</ul>
+
+  
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="k">try</span><span class="w"> </span><span class="p">(</span><span class="n">Scanner</span><span class="w"> </span><span class="n">scanner</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">File</span><span class="p">(</span><span class="s">&#34;test.txt&#34;</span><span class="p">)))</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">scanner</span><span class="p">.</span><span class="na">hasNext</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">scanner</span><span class="p">.</span><span class="na">nextLine</span><span class="p">());</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">FileNotFoundException</span><span class="w"> </span><span class="n">fnfe</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">fnfe</span><span class="p">.</span><span class="na">printStackTrace</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></div>
+
+
+
+
+<h5 id="110-사용자정의-예외-만들기">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_8%EC%9E%A5.-%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/#110-%ec%82%ac%ec%9a%a9%ec%9e%90%ec%a0%95%ec%9d%98-%ec%98%88%ec%99%b8-%eb%a7%8c%eb%93%a4%ea%b8%b0">1.10 사용자정의 예외 만들기</a>
+</h5>
+<blockquote>
+<p>필요에 따라 예외처리의 여부를 선택할 수 있는 &lsquo;unchecked&rsquo;예외가 강제적인 &lsquo;checked예외&rsquo;보다 더 환영받고 있다 👉 하지만 예외처리를 강제하기 위해서는 checked예외가 필요</p>
+</blockquote>
+
+
+
+
+<h5 id="112-연결된-예외chained-exception">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_8%EC%9E%A5.-%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/#112-%ec%97%b0%ea%b2%b0%eb%90%9c-%ec%98%88%ec%99%b8chained-exception">1.12 연결된 예외(chained exception)</a>
+</h5>
+<blockquote>
+<p>여러가지 예외(원인과 결과)를 하나의 큰 분류의 예외로 묶어서 다루기 위해</p>
+</blockquote>
+<ul>
+<li>
+<p>exception-handling-for-rest-with-spring :
+<a href="https://github.com/eugenp/tutorials/tree/master/spring-boot-rest">tutorials/spring-boot-rest at master · eugenp/tutorials</a></p>
+</li>
+<li>
+<p>Exception Handling in Spring MVC : <a href="https://github.com/paulc4/mvc-exceptions">https://github.com/paulc4/mvc-exceptions</a></p>
+</li>
+</ul>
+
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/tech/" rel="tag">Tech</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/java/" rel="tag">Java</a>
+            </li>
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D%EB%82%A8%EA%B6%81%EC%84%B1/" rel="tag">자바의 정석(남궁성)</a>
+            </li>
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/" rel="bookmark">자바의 정석 7장. 객체지향 프로그래밍 II</a>
+  </h2>
+  
+    
+      <time datetime="2021-12-07T23:11:03&#43;09:00">December 7, 2021</time>
+    
+  
+</header>
+      
+        
+          
+            <p><em>자바의 정석(남궁성) 독후감 형식의 글입니다</em></p>
+
+
+
+
+<h4 id="7장-객체지향-프로그래밍-ii">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/#7%ec%9e%a5-%ea%b0%9d%ec%b2%b4%ec%a7%80%ed%96%a5-%ed%94%84%eb%a1%9c%ea%b7%b8%eb%9e%98%eb%b0%8d-ii">7장. 객체지향 프로그래밍 II</a>
+</h4>
+
+
+
+
+<h5 id="11상속의-정의와-장점">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/#11%ec%83%81%ec%86%8d%ec%9d%98-%ec%a0%95%ec%9d%98%ec%99%80-%ec%9e%a5%ec%a0%90">1.1상속의 정의와 장점</a>
+</h5>
+<ol>
+<li>재사용성을 높히고</li>
+<li>코드의 중복을 제거하여</li>
+<li>생산성과 유지보수성을 높힌다.</li>
+</ol>
+
+
+
+
+<h6 id="왜-상속에-해당하는-키워드가-inherit이-아니고-extends인가">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/#%ec%99%9c-%ec%83%81%ec%86%8d%ec%97%90-%ed%95%b4%eb%8b%b9%ed%95%98%eb%8a%94-%ed%82%a4%ec%9b%8c%eb%93%9c%ea%b0%80-inherit%ec%9d%b4-%ec%95%84%eb%8b%88%ea%b3%a0-extends%ec%9d%b8%ea%b0%80">왜 상속에 해당하는 키워드가 inherit이 아니고 extends인가</a>
+</h6>
+<blockquote>
+<p>상속을 거듭할수록 상속받는 클래스의 멤버 개수가 점점 늘어나기 때문</p>
+</blockquote>
+<aside>
+💡 inherit은 무언가를 물려받는 의미일 뿐이다 하지만 OOP에서 상속을 하는 이유는 무언가를 물려받는(상속)데에서 그치는 것이 아니라 확장extend하기 위해서이다.
+</aside>
+<aside>
+💡 inherit과 extend 둘 다 '상속'으로 번역하기 때문에 상속의 의미를 좁게 인식하게 만들 수 있다.
+</aside>
+
+
+
+
+<h6 id="jpa의-최상위-모델객체-예제">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/#jpa%ec%9d%98-%ec%b5%9c%ec%83%81%ec%9c%84-%eb%aa%a8%eb%8d%b8%ea%b0%9d%ec%b2%b4-%ec%98%88%ec%a0%9c">JPA의 최상위 모델객체 예제</a>
+</h6>
+
+  
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nd">@MappedSuperclass</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nd">@EntityListeners</span><span class="p">(</span><span class="n">AuditingEntityListener</span><span class="p">.</span><span class="na">class</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">BaseEntity</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nd">@Id</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nd">@GeneratedValue</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">Long</span><span class="w"> </span><span class="n">id</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="nd">@CreatedBy</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">regUserId</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="nd">@LastModifiedBy</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">modUserId</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="nd">@CreatedDate</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">Date</span><span class="w"> </span><span class="n">regDate</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="nd">@LastModifiedDate</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">Date</span><span class="w"> </span><span class="n">modDate</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nd">@Version</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">Integer</span><span class="w"> </span><span class="n">version</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nd">@Entity</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">File</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">BaseEntity</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">content</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></div>
+
+
+
+
+<h5 id="12-클래스간의-관계---포함관계">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/#12-%ed%81%b4%eb%9e%98%ec%8a%a4%ea%b0%84%ec%9d%98-%ea%b4%80%ea%b3%84---%ed%8f%ac%ed%95%a8%ea%b4%80%ea%b3%84">1.2 클래스간의 관계 - 포함관계</a>
+</h5>
+
+
+
+
+<h6 id="언제-포함관계를-사용하는가">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/#%ec%96%b8%ec%a0%9c-%ed%8f%ac%ed%95%a8%ea%b4%80%ea%b3%84%eb%a5%bc-%ec%82%ac%ec%9a%a9%ed%95%98%eb%8a%94%ea%b0%80">언제 포함관계를 사용하는가?</a>
+</h6>
+<p><a href="https://stackoverflow.com/a/37624298/4766882">https://stackoverflow.com/a/37624298/4766882</a></p>
+<p>언제나 상속 대신 포함관계 사용이 가능하다.</p>
+
+
+
+
+<h6 id="언제-상속관계를-사용하는가">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/#%ec%96%b8%ec%a0%9c-%ec%83%81%ec%86%8d%ea%b4%80%ea%b3%84%eb%a5%bc-%ec%82%ac%ec%9a%a9%ed%95%98%eb%8a%94%ea%b0%80">언제 상속관계를 사용하는가</a>
+</h6>
+<ol>
+<li>자식이 부모에 대해 &lsquo;is a&rsquo; 관계인 동시에 자식이 부모의 모든 기능을 다 가지고 있을 때</li>
+<li>다중상속을 할 수 없으므로(?) : &ldquo;VCR클래스는 TVCR클래스에 포함&rdquo; p.325</li>
+</ol>
+
+
+
+
+<h6 id="ex-사각형과-정사각형-문제">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/#ex-%ec%82%ac%ea%b0%81%ed%98%95%ea%b3%bc-%ec%a0%95%ec%82%ac%ea%b0%81%ed%98%95-%eb%ac%b8%ec%a0%9c">ex) 사각형과 정사각형 문제</a>
+</h6>
+<ol>
+<li>사각형 클래스에 가로길이_늘리기()가 정의되어 있다고 하자.</li>
+<li>정사각형 클래스는 사각형 클래스를 상속했다.</li>
+<li>정사각형 객체에서 사각형 클래스의 가로길이_늘리기()를 호출하는 순간 정사각형은 더 이상 정사각형이 아니게 된다.</li>
+</ol>
+<aside>
+💡  이 문제를 해결하기 위해 인터페이스를 도입?
+</aside>
+
+
+
+
+<h5 id="23-오버로딩-vs-오버라이딩">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/#23-%ec%98%a4%eb%b2%84%eb%a1%9c%eb%94%a9-vs-%ec%98%a4%eb%b2%84%eb%9d%bc%ec%9d%b4%eb%94%a9">2.3 오버로딩 vs 오버라이딩</a>
+</h5>
+<ul>
+<li>
+<p>오버로딩 : 과적(하면 할 수록 갯수가 늘어남)</p>
+<ul>
+<li>
+<p><a href="https://www.google.com/search?q=overloaded+vehicles">https://www.google.com/search?q=overloaded+vehicles</a></p>
+</li>
+<li>
+<p>한때 유명했던 귀여운 동물사진 블로그</p>
+<p><img src="https://images-na.ssl-images-amazon.com/images/I/516qJv+yDTL._SY486_BO1,204,203,200_.jpg" alt="Untitled"></p>
+</li>
+</ul>
+</li>
+<li>
+<p>오버라이딩 : 덮어씌우기(아무리 많이 해도 갯수가 늘어나지 않는다)</p>
+<ul>
+<li>overwrite와 유사함 <a href="https://stackoverflow.com/a/34036684/4766882">https://stackoverflow.com/a/34036684/4766882</a></li>
+</ul>
+</li>
+</ul>
+
+
+
+
+<h5 id="24-super">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/#24-super">2.4 super</a>
+</h5>
+<ul>
+<li>메소드 체이닝 샘플 p.331</li>
+</ul>
+
+
+
+
+<h5 id="33-import문">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/#33-import%eb%ac%b8">3.3 import문</a>
+</h5>
+<blockquote>
+<p>한 패키지에서 여러 클래스를 사용하는 경우 클래스의 이름을 일일이 지정해주는 것보다 패키지명.*과 같이 하는것이 편리하다 ☛ IDE의 import정리기능을 써서 사용할 클래스들을 명시적으로 import 것이 좋다. import만 보면 어떤 클래스들을 쓰는지(dependency)를 쉽게 파악할 수 있기 때문.</p>
+</blockquote>
+
+
+
+
+<h5 id="42-static---클래스의-공통적인-p344">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/#42-static---%ed%81%b4%eb%9e%98%ec%8a%a4%ec%9d%98-%ea%b3%b5%ed%86%b5%ec%a0%81%ec%9d%b8-p344">4.2 static - <del>클래스의, 공통적인</del> p.344</a>
+</h5>
+
+
+
+
+<h6 id="static의-사전적-의미--정적인-변하지-않는">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/#static%ec%9d%98-%ec%82%ac%ec%a0%84%ec%a0%81-%ec%9d%98%eb%af%b8--%ec%a0%95%ec%a0%81%ec%9d%b8-%eb%b3%80%ed%95%98%ec%a7%80-%ec%95%8a%eb%8a%94">static의 사전적 의미 : 정적인, 변하지 않는</a>
+</h6>
+<blockquote>
+<p><em>Nothing is static. Everything is evolving.</em>(Chuck Palahniuk, Fight Club)</p>
+</blockquote>
+
+
+
+
+<h5 id="43-final---마지막의-변경될-수-없는">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/#43-final---%eb%a7%88%ec%a7%80%eb%a7%89%ec%9d%98-%eb%b3%80%ea%b2%bd%eb%90%a0-%ec%88%98-%ec%97%86%eb%8a%94">4.3 final - 마지막의, 변경될 수 없는</a>
+</h5>
+<blockquote>
+<p>모든 private 메소드는 final이다 하지만 모든 final 메소드가 private인 것은 아니다. p.353</p>
+</blockquote>
+
+
+
+
+<h5 id="44-abstract---추상의-미완성의">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/#44-abstract---%ec%b6%94%ec%83%81%ec%9d%98-%eb%af%b8%ec%99%84%ec%84%b1%ec%9d%98">4.4 abstract - 추상의, 미완성의</a>
+</h5>
+<blockquote>
+<p>추상 클래스를 상속extend하는 구상 클래스는 모두 abstract 메소드를 override해야 한다</p>
+</blockquote>
+<p>VS</p>
+<blockquote>
+<p>인터페이스를 구현implement하는 클래스는 모두 메소드를 override해야 한다</p>
+</blockquote>
+
+
+
+
+<h6 id="언제-abstract를-써야-하는가">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/#%ec%96%b8%ec%a0%9c-abstract%eb%a5%bc-%ec%8d%a8%ec%95%bc-%ed%95%98%eb%8a%94%ea%b0%80">언제 abstract를 써야 하는가?</a>
+</h6>
+
+
+
+
+<h6 id="언제-interface를-써야-하는가">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/#%ec%96%b8%ec%a0%9c-interface%eb%a5%bc-%ec%8d%a8%ec%95%bc-%ed%95%98%eb%8a%94%ea%b0%80">언제 interface를 써야 하는가?</a>
+</h6>
+<p>composition over inheritance vs inheritance over composition</p>
+
+
+
+
+<h5 id="46-제어자modifier의-조합">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/#46-%ec%a0%9c%ec%96%b4%ec%9e%90modifier%ec%9d%98-%ec%a1%b0%ed%95%a9">4.6 제어자(modifier)의 조합</a>
+</h5>
+<blockquote>
+<p>메서드에 private와 final을 같이 사용할 필요는 없다. (중략) 이 둘 중 하나만 사용해도 의미가 충분하다 ☛ private 메소드에 final 제어자를 쓸 필요는 없다. 하지만 final 메소드에 접근 제어자를 지정하지 않는다면 접근 제어자는 default가 된다. 즉 private가 아니다.</p>
+</blockquote>
+
+
+
+
+<h4 id="5-다형성">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/#5-%eb%8b%a4%ed%98%95%ec%84%b1">5. 다형성</a>
+</h4>
+
+
+
+
+<h5 id="51-다형성이란">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/#51-%eb%8b%a4%ed%98%95%ec%84%b1%ec%9d%b4%eb%9e%80">5.1 다형성이란?</a>
+</h5>
+
+
+
+
+<h5 id="52-참조변수의-형변환">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/#52-%ec%b0%b8%ec%a1%b0%eb%b3%80%ec%88%98%ec%9d%98-%ed%98%95%eb%b3%80%ed%99%98">5.2 참조변수의 형변환</a>
+</h5>
+
+
+
+
+<h5 id="53-instanceof-연산자">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/#53-instanceof-%ec%97%b0%ec%82%b0%ec%9e%90">5.3 instanceof 연산자</a>
+</h5>
+
+
+
+
+<h5 id="54-참조변수와-인스턴스의-연결">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/#54-%ec%b0%b8%ec%a1%b0%eb%b3%80%ec%88%98%ec%99%80-%ec%9d%b8%ec%8a%a4%ed%84%b4%ec%8a%a4%ec%9d%98-%ec%97%b0%ea%b2%b0">5.4 참조변수와 인스턴스의 연결</a>
+</h5>
+<blockquote>
+<p>메서드의 경우 조상 클래스의 메소드를 자손의 클래스에서 오버라이딩한 경우에도 참조변수의 타입에 관계없이 항상 실제 인스턴스의 메서드(오버라이딩된 메서드)가 호출되지만, <strong>멤버변수의 경우 참조변수의 타입에 따라 달라진다.</strong></p>
+</blockquote>
+<p><a href="https://github.com/bluedskim/java_standard_study/blob/master/src/test/java/chap7/AnimalShopperTest.java">https://github.com/bluedskim/java_standard_study/blob/master/src/test/java/chap7/AnimalShopperTest.java</a></p>
+<blockquote>
+<p>다운캐스팅은 지양해야 한다 <a href="https://stackoverflow.com/a/30659861/4766882">https://stackoverflow.com/a/30659861/4766882</a></p>
+</blockquote>
+<aside>
+💡 왜 다운캐스팅은 명시적으로 해야 하는가 ☛ [https://stackoverflow.com/a/36383210/4766882](https://stackoverflow.com/a/36383210/4766882) Or you just assume that you got a Dog?
+</aside>
+
+
+
+
+<h4 id="6-추상-클래스">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/#6-%ec%b6%94%ec%83%81-%ed%81%b4%eb%9e%98%ec%8a%a4">6. 추상 클래스</a>
+</h4>
+
+
+
+
+<h5 id="61-추상-클래스란">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/#61-%ec%b6%94%ec%83%81-%ed%81%b4%eb%9e%98%ec%8a%a4%eb%9e%80">6.1 추상 클래스란?</a>
+</h5>
+<ol>
+<li>클래스 = 설계도</li>
+<li>추상 클래스 = 미완성 설계도</li>
+<li>인터페이스 = 기본 설계도</li>
+</ol>
+<blockquote>
+<p>추상 클래스로 인스턴스 생성 불가</p>
+</blockquote>
+
+
+
+
+<h4 id="7-인터페이스">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/#7-%ec%9d%b8%ed%84%b0%ed%8e%98%ec%9d%b4%ec%8a%a4">7. 인터페이스</a>
+</h4>
+
+
+
+
+<h5 id="71-인터페이스란">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/#71-%ec%9d%b8%ed%84%b0%ed%8e%98%ec%9d%b4%ec%8a%a4%eb%9e%80">7.1 인터페이스란?</a>
+</h5>
+<ul>
+<li>인터페이스는 일종의 추상 &lsquo;클래스&rsquo;이다. ☛ 자식이 인스턴스를 만들 수 있으므로 추상클래스는 클래스다. 하지만 인터페이스는 자식이 인스턴스를 만들 수 없으므로 클래스가 아니다.</li>
+<li>인터페이스는 명세서(specfication)다. <em>&ldquo;인터페이스의 이름에는 주로 Fightable과 같이 &lsquo;~을 할 수 있는&rsquo;의 의미인 able로 끝나는 것들이 많은데, 그 이유는 어떠한 기능 또는 행위를 하는데 필요한 메서드를 제공한다는 의미를 강조하기 위해서이다.&rdquo;</em></li>
+<li>인터페이스는 구현체에 대한 관점이다.</li>
+</ul>
+<aside>
+💡 다형성 : 어떤 경우 상속을 써야 하는 지 혹은 인터페이스를 써야 하는지 -.-
+</aside>
+
+
+
+
+<h5 id="73-인터페이스의-상속">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/#73-%ec%9d%b8%ed%84%b0%ed%8e%98%ec%9d%b4%ec%8a%a4%ec%9d%98-%ec%83%81%ec%86%8d">7.3 인터페이스의 상속</a>
+</h5>
+<p>다중 상속이 가능하다</p>
+
+
+
+
+<h5 id="74-인터페이스의-구현">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/#74-%ec%9d%b8%ed%84%b0%ed%8e%98%ec%9d%b4%ec%8a%a4%ec%9d%98-%ea%b5%ac%ed%98%84">7.4 인터페이스의 구현</a>
+</h5>
+<p>&lsquo;implements&rsquo; 구문이 상속을 의미하지 않는다. extends구문은 생략 가능</p>
+
+
+
+
+<h5 id="75-인터페이스를-이용한-다중상속">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/#75-%ec%9d%b8%ed%84%b0%ed%8e%98%ec%9d%b4%ec%8a%a4%eb%a5%bc-%ec%9d%b4%ec%9a%a9%ed%95%9c-%eb%8b%a4%ec%a4%91%ec%83%81%ec%86%8d">7.5 인터페이스를 이용한 다중상속</a>
+</h5>
+<aside>
+💡 인터페이스는 상속되는 것이 아니고 구현되는 것이다
+</aside>
+
+
+
+
+<h5 id="76-인터페이스를-이용한-다형성">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/#76-%ec%9d%b8%ed%84%b0%ed%8e%98%ec%9d%b4%ec%8a%a4%eb%a5%bc-%ec%9d%b4%ec%9a%a9%ed%95%9c-%eb%8b%a4%ed%98%95%ec%84%b1">7.6 인터페이스를 이용한 다형성</a>
+</h5>
+<p><a href="https://github.com/bluedskim/java_standard_study/blob/master/src/test/java/chap7/PolymorphismTest.java">https://github.com/bluedskim/java_standard_study/blob/master/src/test/java/chap7/PolymorphismTest.java</a></p>
+
+
+
+
+<h5 id="77-인터페이스의-장점">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/#77-%ec%9d%b8%ed%84%b0%ed%8e%98%ec%9d%b4%ec%8a%a4%ec%9d%98-%ec%9e%a5%ec%a0%90">7.7 인터페이스의 장점</a>
+</h5>
+<ul>
+<li>표준화가 가능하다</li>
+<li>독립적인 프로그래밍이 가능하다</li>
+<li>개발시간을 단축시킬 수 있다</li>
+<li>서로 관계없는 클래스들에게 관계를 맺어 줄 수 있다</li>
+</ul>
+
+
+
+
+<h6 id="liskov-substitution-principle-해결-p395">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/#liskov-substitution-principle-%ed%95%b4%ea%b2%b0-p395">Liskov Substitution Principle 해결 p.395</a>
+</h6>
+<p><img src="https://miro.medium.com/max/1400/1*iV_TeHoEDE0TwhQEFj2fxA.png" alt="Untitled"></p>
+<ul>
+<li><a href="https://www.baeldung.com/cs/liskov-substitution-principle">https://www.baeldung.com/cs/liskov-substitution-principle</a></li>
+<li><a href="https://www.infragistics.com/community/blogs/b/dhananjay_kumar/posts/simplifying-the-liskov-substitution-principle-of-solid-in-c">https://www.infragistics.com/community/blogs/b/dhananjay_kumar/posts/simplifying-the-liskov-substitution-principle-of-solid-in-c</a></li>
+<li><a href="https://www.javabrahman.com/programming-principles/liskov-substitution-principal-java-example/">https://www.javabrahman.com/programming-principles/liskov-substitution-principal-java-example/</a></li>
+</ul>
+
+
+
+
+<h5 id="78-인터페이스의-이해">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/#78-%ec%9d%b8%ed%84%b0%ed%8e%98%ec%9d%b4%ec%8a%a4%ec%9d%98-%ec%9d%b4%ed%95%b4">7.8 인터페이스의 이해</a>
+</h5>
+<ul>
+<li>클래스를 사용하는 쪽(User)과 클래스를 제공하는 쪽(Provider)이 있다.</li>
+<li>메소드를 사용(호출)하는 쪽(User)에서는 사용하려는 메서드(Provider)의 선언부만 알면 된다(Open-Close Principal)</li>
+</ul>
+
+
+
+
+<h5 id="79-디폴트-메서드와-static메서드">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/#79-%eb%94%94%ed%8f%b4%ed%8a%b8-%eb%a9%94%ec%84%9c%eb%93%9c%ec%99%80-static%eb%a9%94%ec%84%9c%eb%93%9c">7.9 디폴트 메서드와 static메서드</a>
+</h5>
+<p>Java8부터 인터페이스에 구상 메소드 사용가능</p>
+
+
+
+
+<h5 id="8-내부-클래스inner-class">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/#8-%eb%82%b4%eb%b6%80-%ed%81%b4%eb%9e%98%ec%8a%a4inner-class">8. 내부 클래스(inner class)</a>
+</h5>
+<ul>
+<li>테스트 : <a href="https://github.com/bluedskim/java_standard_study/blob/b3f9ccc40a6e0a3683748bb51e228a076dfffff1/src/test/java/chap7/PublicFinalInnerMethodTest.java">https://github.com/bluedskim/java_standard_study/blob/b3f9ccc40a6e0a3683748bb51e228a076dfffff1/src/test/java/chap7/PublicFinalInnerMethodTest.java</a></li>
+</ul>
+
+
+
+
+<h5 id="85-익명-클래스anonymous-class">
+  <a class="Heading-link u-clickable" href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/#85-%ec%9d%b5%eb%aa%85-%ed%81%b4%eb%9e%98%ec%8a%a4anonymous-class">8.5 익명 클래스(anonymous class)</a>
+</h5>
+<p>임시 클래스. 주로 인수 생성용</p>
+
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/tech/" rel="tag">Tech</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/java/" rel="tag">Java</a>
+            </li>
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D%EB%82%A8%EA%B6%81%EC%84%B1/" rel="tag">자바의 정석(남궁성)</a>
+            </li>
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+  
+
+  
+  <nav>
+    
+      <a class="Pagination u-clickable" href="/page/3/" rel="prev">« Previous</a>
+    
+    
+      <a class="Pagination Pagination--right u-clickable" href="/" rel="next">Next »</a>
+    
+  </nav>
+
+
+
+
+      </div>
+    </div>
+  </main>
+  
+  <footer class="Footer">
+    <div class="u-wrapper">
+      <div class="u-padding u-noboosting">
+        Do What You Want To Do
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

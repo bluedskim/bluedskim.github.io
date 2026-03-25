@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=7001&amp;path=livereload" data-no-instant defer></script>
+  
+
+  
+  
+
+
+  <meta charset="utf-8">
+
+
+  <meta name="robots" content="noindex, nofollow, noarchive">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  
+    
+      <meta name="description" content="bluedskim@gmail.com">
+    
+  
+
+
+<meta name="color-scheme" content="light dark">
+
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.152.2">
+  <title>Do What You Want | Do What You Want To Do</title>
+  <link href="//localhost:7001/" rel="canonical">
+
+
+
+
+  <link href="alternate" rel="/feed.xml" type="application/rss+xml">
+
+  
+
+
+
+
+  
+  
+    
+    
+  
+  
+
+
+
+
+
+  
+
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+    
+    
+    
+      
+      
+    
+    
+    
+  
+
+
+  
+    <link href="/css/base.css" rel="stylesheet">
+
+    <link href="/css/syntax.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+  <nav class="u-background">
+  <div class="u-wrapper">
+    <ul class="Banner">
+      <li class="Banner-item Banner-item--title">
+        
+          <a class="Banner-link u-clickable" href="/">Do What You Want To Do</a>
+        
+      </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/categories/tech/">Tech</a>
+        </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/tags/samba/">Samba</a>
+        </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/categories/%EC%9D%8C%EC%95%85/">음악</a>
+        </li>
+      
+        
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/categories/%EC%9D%BC%EC%83%81%EC%82%AC/">일상사</a>
+        </li>
+      
+        
+        
+          
+        
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/feed.xml">RSS</a>
+        </li>
+      
+    </ul>
+  </div>
+</nav>
+
+  <main>
+    <div class="u-wrapper">
+      <div class="u-padding">
+        
+
+  
+    
+    <header class="Heading">
+  <h1 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/" rel="bookmark">Do What You Want</a>
+  </h1>
+  
+</header>
+  
+
+  
+
+
+
+<h1 id="do-what-you-want">
+  <a class="Heading-link u-clickable" href="/#do-what-you-want">Do What You Want</a>
+</h1>
+<p>잡다한 것들을 기록합니다.</p>
+
+
+  
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/software-engineering/ora-01653-the_table_name-%ED%85%8C%EC%9D%B4%EB%B8%94%EC%9D%84-4%EC%9C%BC%EB%A1%9C-pf_dat-%ED%85%8C%EC%9D%B4%EB%B8%94%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%97%90%EC%84%9C-%ED%99%95%EC%9E%A5%ED%95%A0-%EC%88%98-%EC%97%86%EC%8A%B5%EB%8B%88%EB%8B%A4/" rel="bookmark">ORA-01653: THE_TABLE_NAME 테이블을 4(으)로 PF_DAT 테이블스페이스에서 확장할 수 없습니다</a>
+  </h2>
+  
+    
+      <time datetime="2007-07-23T09:00:00&#43;09:00">July 23, 2007</time>
+    
+  
+</header>
+      
+        
+          
+            <p><span class="copyright_entry" style="display:block;" title="ORA-01653: THE_TABLE_NAME 테이블을 4(으)로 PF_DAT 테이블스페이스에서 확장할 수 없습니다@@**@@http://shed.egloos.com/1606832"></span>ORA-01653: THE_TABLE_NAME 테이블을 4(으)로 PF_DAT 테이블스페이스에서 확장할 수 없습니다
+<br>
+<br>1. 테이블 스페이스를 늘려준다.
+<br>
+<br>alter database datafile &lsquo;c:\oracle\oradata\ora92\test_02.dbf&rsquo; resize 5M;
+<br>
+<br>2. 테이블 스페이스를 자동으로 사이즈가 늘어날 수 있도록 한다.
+<br>alter database datafile &lsquo;c:\oracle\oradata\ora92\test_02.dbf&rsquo; autoextend on next 1M
+<br></p>
+<!--
+       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		    xmlns:dc="http://purl.org/dc/elements/1.1/"
+		    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+       <rdf:Description
+	        rdf:about="http://shed.egloos.com/1606832"
+	        dc:identifier="http://shed.egloos.com/1606832"
+	        dc:title="ORA-01653: THE_TABLE_NAME 테이블을 4(으)로 PF_DAT 테이블스페이스에서 확장할 수 없습니다"
+	        trackback:ping="http://shed.egloos.com/tb/1606832"/>
+       </rdf:RDF>
+       -->
+<ul></ul>
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/software-engineering/" rel="tag">Software Engineering</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%B0%A9%EA%B5%AC%EC%84%9D%EC%98%81%ED%99%94%EC%A0%9C-%EC%8A%A4%ED%85%8C%EC%9D%B4/" rel="bookmark">[방구석영화제] 스테이</a>
+  </h2>
+  
+    
+      <time datetime="2007-07-18T22:50:00&#43;09:00">July 18, 2007</time>
+    
+  
+</header>
+      
+        
+          
+            <p><span class="copyright_entry" style="display:block;" title="[방구석영화제] 스테이@@**@@http://shed.egloos.com/1604539"></span>반드시 다시 보리라~
+<br>
+<br>
+<br>
+<img style="width: 582px; height: 832px;" src="http://imgmovie.naver.com/mdi/mi/0436/D3608-00.jpg"></p>
+<!--
+       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		    xmlns:dc="http://purl.org/dc/elements/1.1/"
+		    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+       <rdf:Description
+	        rdf:about="http://shed.egloos.com/1604539"
+	        dc:identifier="http://shed.egloos.com/1604539"
+	        dc:title="[방구석영화제] 스테이"
+	        trackback:ping="http://shed.egloos.com/tb/1604539"/>
+       </rdf:RDF>
+       -->
+<ul></ul>
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/%EC%9D%BC%EC%83%81%EC%82%AC/" rel="tag">일상사</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/software-engineering/html-%EC%9D%98-form-%EC%9D%98-enctype%EC%9D%84-javascript%EB%A1%9C-%EB%B3%80%EA%B2%BD/" rel="bookmark">html 의 form 의 enctype을 javascript로 변경</a>
+  </h2>
+  
+    
+      <time datetime="2007-07-05T07:54:00&#43;09:00">July 5, 2007</time>
+    
+  
+</header>
+      
+        
+          
+            <p><span class="copyright_entry" style="display:block;" title="html 의 form 의 enctype을 javascript로 변경@@**@@http://shed.egloos.com/1597101"></span>html 의 form 의 enctype을 명시적으로 지정하지 않으면 기본은 application/x-www-form-urlencoded 이다.
+<br>
+<br>이것을 javascrtip로 변경하는 샘플이다.
+<br>
+<br>주의할 점은 javascript로 참조할 때는
+<span style="background-color: rgb(102, 204, 204);">enctype</span>이 아니라
+<span style="background-color: rgb(255, 153, 0);">encoding</span> 이라는 점이다.
+<br>
+<br>&lt;html&gt;
+<br>&lt;script&gt;
+<br>
+<br>function changeEnctype() {
+<br>    myform = document.form1;
+<br>    
+<br>    alert(&lsquo;원래의 enctype: &rsquo; + myform.
+<span style="background-color: rgb(255, 153, 0);">encoding</span>);
+<br>    
+<br>    myform.
+<span style="background-color: rgb(255, 153, 0);">encoding</span>=&ldquo;application/x-www-form-urlencoded&rdquo;;    
+<br>    alert(&lsquo;디폴트로 변경 enctype: &rsquo; + myform.
+<span style="background-color: rgb(255, 153, 0);">encoding</span>);
+<br>    
+<br>    myform.
+<span style="background-color: rgb(255, 153, 0);">encoding</span>=&ldquo;multipart/form-data&rdquo;;
+<br>    alert(&lsquo;원래대로 변경 enctype: &rsquo; + myform.
+<span style="background-color: rgb(255, 153, 0);">encoding</span>);
+<br>}
+<br>&lt;/script&gt;
+<br>&lt;body&gt;
+<br>&lt;form name=form1 method=&ldquo;post&rdquo;
+<span style="background-color: rgb(102, 204, 204);">enctype</span>=&ldquo;multipart/form-data&rdquo;&gt;
+<br>&lt;input type=&ldquo;button&rdquo; value=&ldquo;enctype확인&rdquo; onClick=&ldquo;changeEnctype()&quot;&gt;
+<br>&lt;/form&gt;
+<br>&lt;/body&gt;
+<br>&lt;/html&gt;
+<br>
+<br></p>
+<!--
+       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		    xmlns:dc="http://purl.org/dc/elements/1.1/"
+		    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+       <rdf:Description
+	        rdf:about="http://shed.egloos.com/1597101"
+	        dc:identifier="http://shed.egloos.com/1597101"
+	        dc:title="html 의 form 의 enctype을 javascript로 변경"
+	        trackback:ping="http://shed.egloos.com/tb/1597101"/>
+       </rdf:RDF>
+       -->
+<ul></ul>
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/software-engineering/" rel="tag">Software Engineering</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/%EC%9D%8C%EC%95%85/all-blues-band-live/" rel="bookmark">All Blues Band Live</a>
+  </h2>
+  
+    
+      <time datetime="2007-06-30T12:11:00&#43;09:00">June 30, 2007</time>
+    
+  
+</header>
+      
+        
+          
+            <p><span class="copyright_entry" style="display:block;" title="All Blues Band Live @@**@@http://shed.egloos.com/1594367"></span>첫사랑 - 신촌 블루스 (2001년 10월 13일)
+<br>
+<embed src="http://babyoilband.com/allblues/ablive_firstlove_20011013.asf" autostart="0" loop="0">
+<br>
+<br>Red house (2001년 10월 13일)
+<br>
+<embed src="http://babyoilband.com/allblues/ablive_redhouse_20011013.asf" autostart="0" loop="0">
+<br>
+<br>Dust my broom (2002년 12월 27일)
+<br>
+<embed src="http://babyoilband.com/allblues/ablive-1-dust_my_broom_20021227.asf" autostart="0" loop="0">
+<br>
+<br>The sky is crying (2002년 12월 27일)
+<br>
+<embed src="http://babyoilband.com/allblues/ablive-2-the_sky_is_crying_20021227.asf" autostart="0" loop="0">
+<br>
+<br>Hoochi coochie man (2002년 12월 27일)
+<br>
+<embed src="http://babyoilband.com/allblues/ablive-3-hoochie_coochie_man_20021227.asf" autostart="0" loop="0">
+<br>
+<br>I feel so good (2002년 12월 27일)
+<br>
+<embed src="http://babyoilband.com/allblues/ablive-4-i_feel_so_good_20021227.asf" autostart="0" loop="0">
+<br></p>
+<!--
+       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		    xmlns:dc="http://purl.org/dc/elements/1.1/"
+		    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+       <rdf:Description
+	        rdf:about="http://shed.egloos.com/1594367"
+	        dc:identifier="http://shed.egloos.com/1594367"
+	        dc:title="All Blues Band Live "
+	        trackback:ping="http://shed.egloos.com/tb/1594367"/>
+       </rdf:RDF>
+       -->
+<ul></ul>
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/%EC%9D%8C%EC%95%85/" rel="tag">음악</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+      <div class="Divider"></div>
+    
+  
+    <article>
+      
+      <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/posts/%EC%9D%8C%EC%95%85/nirvana---territorial-pissings/" rel="bookmark">Nirvana - Territorial Pissings</a>
+  </h2>
+  
+    
+      <time datetime="2007-06-30T11:16:00&#43;09:00">June 30, 2007</time>
+    
+  
+</header>
+      
+        
+          
+            <p><span class="copyright_entry" style="display:block;" title="Nirvana - Territorial Pissings@@**@@http://shed.egloos.com/1594345"></span>굵고 짧게.
+<br>
+<br>
+<object height="350" width="425"><param name="movie" value="http://www.youtube.com/v/2C8tsgH0ZEA"><embed src="http://www.youtube.com/v/2C8tsgH0ZEA" type="application/x-shockwave-flash" wmode="transparent" height="350" width="425"></object>
+<br>
+<br>
+<br>&ldquo;Come on people now smile on your brother everybody get together, try love one another right now&rdquo;
+<br>
+<br>When I was an alien
+<br>Cultures weren&rsquo;t opinions
+<br>
+<br>Gotta find a way ,a better way, when I&rsquo;m there
+<br>Gotta find a way ,a better way, a better way
+<br>
+<br>Never met a wise man
+<br>If so it&rsquo;s a woman
+<br>
+<br>Gotta find a way ,a better way, when I&rsquo;m there
+<br>Gotta find a way ,a better way, a better way (x2)
+<br>
+<br>Just because you&rsquo;re paranoid
+<br>Don’t mean they&rsquo;re not after you
+<br>
+<br>Gotta find a way ,a better way, when I&rsquo;m there
+<br>Gotta find a way ,a better way, a better way (x2)
+<br>(x3)</p>
+<!--
+       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		    xmlns:dc="http://purl.org/dc/elements/1.1/"
+		    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+       <rdf:Description
+	        rdf:about="http://shed.egloos.com/1594345"
+	        dc:identifier="http://shed.egloos.com/1594345"
+	        dc:title="Nirvana - Territorial Pissings"
+	        trackback:ping="http://shed.egloos.com/tb/1594345"/>
+       </rdf:RDF>
+       -->
+<ul></ul>
+          
+        
+      
+      
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/categories/%EC%9D%8C%EC%95%85/" rel="tag">음악</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+        <ul class="Tags">
+          
+        </ul>
+      
+    
+  </footer>
+
+    </article>
+    
+  
+
+  
+  <nav>
+    
+      <a class="Pagination u-clickable" href="/page/97/" rel="prev">« Previous</a>
+    
+    
+      <a class="Pagination Pagination--right u-clickable" href="/page/95/" rel="next">Next »</a>
+    
+  </nav>
+
+
+
+
+      </div>
+    </div>
+  </main>
+  
+  <footer class="Footer">
+    <div class="u-wrapper">
+      <div class="u-padding u-noboosting">
+        Do What You Want To Do
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

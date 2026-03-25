@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Node on Do What You Want To Do</title>
-    <link>https://bluedskim.github.io/tags/node/</link>
-    <description>Recent content in Node on Do What You Want To Do</description>
+    <title>Node :: Tag :: Do What You Want To Do</title>
+    <link>https://bluedskim.github.io/tags/node/index.html</link>
+    <description></description>
     <generator>Hugo</generator>
     <language>ko-KR</language>
     <lastBuildDate>Wed, 30 Sep 2020 12:37:16 +0900</lastBuildDate>
     <atom:link href="https://bluedskim.github.io/tags/node/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PM2 - Production Process Manager for Node</title>
-      <link>https://bluedskim.github.io/posts/tech/pm2-production-process-manager-for-node.js/</link>
+      <link>https://bluedskim.github.io/posts/tech/pm2-production-process-manager-for-node.js/index.html</link>
       <pubDate>Wed, 30 Sep 2020 12:37:16 +0900</pubDate>
-      <guid>https://bluedskim.github.io/posts/tech/pm2-production-process-manager-for-node.js/</guid>
-      <description>&lt;p&gt;ReactJS 로 Single-page application을 개발한다면 일반적으로 build를 하고 build를 deploy하는 방식을 사용한다.&lt;/p&gt;&#xA;&lt;p&gt;최근 진행했던 프로젝트에서도 역시 이런 방식으로 deploy를 해왔는데, deploy후 레이아웃이 깨지는 경우를 발견하게 되었다.&lt;/p&gt;&#xA;&lt;p&gt;뭔가 CSS 충돌이 발생한 상황인 듯 한데 소스레벨에서는 해결할 수도 피해갈 수도 없는 상황이었다.&lt;/p&gt;&#xA;&lt;p&gt;방법은 단 하나, 리소스 낭비를 감수하면서 운영환경에서도 npm start 형태로 구동하여 서비스할 수 밖에 없었다.&lt;/p&gt;&#xA;&lt;p&gt;하지만 리소스 낭비보다 더 심각한 문제가 있었으니.&lt;/p&gt;&#xA;&lt;p&gt;npm start로 구동하는 경우 nohup 을 이용한 background 프로세스로 구동하여야 하는데 리로드가 아닌 프로세스 리스타트가 필요한 경우(모듈이 추가된다던지 하는 이유로) 해당 프로세스를 ps명령으로 찾아서 kill해야 했다.&lt;/p&gt;</description>
+      <guid>https://bluedskim.github.io/posts/tech/pm2-production-process-manager-for-node.js/index.html</guid>
+      <description>ReactJS 로 Single-page application을 개발한다면 일반적으로 build를 하고 build를 deploy하는 방식을 사용한다.&#xA;최근 진행했던 프로젝트에서도 역시 이런 방식으로 deploy를 해왔는데, deploy후 레이아웃이 깨지는 경우를 발견하게 되었다.&#xA;뭔가 CSS 충돌이 발생한 상황인 듯 한데 소스레벨에서는 해결할 수도 피해갈 수도 없는 상황이었다.&#xA;방법은 단 하나, 리소스 낭비를 감수하면서 운영환경에서도 npm start 형태로 구동하여 서비스할 수 밖에 없었다.&#xA;하지만 리소스 낭비보다 더 심각한 문제가 있었으니.&#xA;npm start로 구동하는 경우 nohup 을 이용한 background 프로세스로 구동하여야 하는데 리로드가 아닌 프로세스 리스타트가 필요한 경우(모듈이 추가된다던지 하는 이유로) 해당 프로세스를 ps명령으로 찾아서 kill해야 했다.</description>
     </item>
   </channel>
 </rss>

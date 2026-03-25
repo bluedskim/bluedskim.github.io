@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html id="R-html" lang="ko-KR" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.152.2">
+    <meta name="generator" content="Relearn 9.0.3+36307e4ed23582638ab689240ac7b427217803ee">
+    <meta name="description" content="자바의 정석(남궁성) 독후감 형식의 글입니다
+7장. 객체지향 프로그래밍 II 1.1상속의 정의와 장점 재사용성을 높히고 코드의 중복을 제거하여 생산성과 유지보수성을 높힌다. 왜 상속에 해당하는 키워드가 inherit이 아니고 extends인가 상속을 거듭할수록 상속받는 클래스의 멤버 개수가 점점 늘어나기 때문">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="자바의 정석 7장. 객체지향 프로그래밍 II :: Do What You Want To Do">
+    <meta name="twitter:description" content="자바의 정석(남궁성) 독후감 형식의 글입니다
+7장. 객체지향 프로그래밍 II 1.1상속의 정의와 장점 재사용성을 높히고 코드의 중복을 제거하여 생산성과 유지보수성을 높힌다. 왜 상속에 해당하는 키워드가 inherit이 아니고 extends인가 상속을 거듭할수록 상속받는 클래스의 멤버 개수가 점점 늘어나기 때문">
+    <meta property="og:url" content="https://bluedskim.github.io/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/index.html">
+    <meta property="og:site_name" content="Do What You Want To Do">
+    <meta property="og:title" content="자바의 정석 7장. 객체지향 프로그래밍 II :: Do What You Want To Do">
+    <meta property="og:description" content="자바의 정석(남궁성) 독후감 형식의 글입니다
+7장. 객체지향 프로그래밍 II 1.1상속의 정의와 장점 재사용성을 높히고 코드의 중복을 제거하여 생산성과 유지보수성을 높힌다. 왜 상속에 해당하는 키워드가 inherit이 아니고 extends인가 상속을 거듭할수록 상속받는 클래스의 멤버 개수가 점점 늘어나기 때문">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Posts">
+    <meta property="article:published_time" content="2021-12-07T23:11:03+09:00">
+    <meta property="article:modified_time" content="2021-12-07T23:11:03+09:00">
+    <meta property="article:tag" content="Java">
+    <meta property="article:tag" content="자바의 정석(남궁성)">
+    <meta itemprop="name" content="자바의 정석 7장. 객체지향 프로그래밍 II :: Do What You Want To Do">
+    <meta itemprop="description" content="자바의 정석(남궁성) 독후감 형식의 글입니다
+7장. 객체지향 프로그래밍 II 1.1상속의 정의와 장점 재사용성을 높히고 코드의 중복을 제거하여 생산성과 유지보수성을 높힌다. 왜 상속에 해당하는 키워드가 inherit이 아니고 extends인가 상속을 거듭할수록 상속받는 클래스의 멤버 개수가 점점 늘어나기 때문">
+    <meta itemprop="datePublished" content="2021-12-07T23:11:03+09:00">
+    <meta itemprop="dateModified" content="2021-12-07T23:11:03+09:00">
+    <meta itemprop="wordCount" content="646">
+    <meta itemprop="keywords" content="Java,자바의 정석(남궁성)">
+    <title>자바의 정석 7장. 객체지향 프로그래밍 II :: Do What You Want To Do</title>
+    <link href="https://bluedskim.github.io/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/index.html" rel="canonical" type="text/html" title="자바의 정석 7장. 객체지향 프로그래밍 II :: Do What You Want To Do">
+    <link href="/css/auto-complete/auto-complete.min.css?1774431351" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1774431351" defer></script>
+    <script src="/js/search-lunr.min.js?1774431351" defer></script>
+    <script src="/js/search.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/searchindex.en.js?1774431351";
+    </script>
+    <script src="/js/lunr/lunr.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.ko.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['ko'];
+    </script>
+    <link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1774431351" rel="stylesheet">
+    <link href="/css/theme.min.css?1774431351" rel="stylesheet">
+    <link href="/css/format-print.min.css?1774431351" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/posts\/tech\/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/bluedskim.github.io';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'relearn-auto', 'learn' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+  </head>
+  <body class="mobile-support print" data-origin="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#7장-객체지향-프로그래밍-ii">7장. 객체지향 프로그래밍 II</a></li>
+        <li><a href="#5-다형성">5. 다형성</a></li>
+        <li><a href="#6-추상-클래스">6. 추상 클래스</a></li>
+        <li><a href="#7-인터페이스">7. 인터페이스</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Do What You Want</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/posts/index.html"><span itemprop="name">Posts</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">자바의 정석 7장. 객체지향 프로그래밍 II</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_7.7%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-ii/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_8%EC%9E%A5.-%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/index.html" title="자바의 정석 8장. 예외처리 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D_6.6%EC%9E%A5.-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-i/index.html" title="자바의 정석 6장. 객체지향 프로그래밍 I (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable posts" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/tags/java/index.html">Java</a></li>
+    <li><a class="term-link" href="/tags/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D%EB%82%A8%EA%B6%81%EC%84%B1/index.html">자바의 정석(남궁성)</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="자바의-정석-7장-객체지향-프로그래밍-ii">자바의 정석 7장. 객체지향 프로그래밍 II</h1>
+
+<p><em>자바의 정석(남궁성) 독후감 형식의 글입니다</em></p>
+<h3 id="7장-객체지향-프로그래밍-ii">7장. 객체지향 프로그래밍 II<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h4 id="11상속의-정의와-장점">1.1상속의 정의와 장점<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<ol>
+<li>재사용성을 높히고</li>
+<li>코드의 중복을 제거하여</li>
+<li>생산성과 유지보수성을 높힌다.</li>
+</ol>
+<h5 id="왜-상속에-해당하는-키워드가-inherit이-아니고-extends인가">왜 상속에 해당하는 키워드가 inherit이 아니고 extends인가<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h5>
+<blockquote>
+<p>상속을 거듭할수록 상속받는 클래스의 멤버 개수가 점점 늘어나기 때문</p>
+</blockquote>
+<aside>
+💡 inherit은 무언가를 물려받는 의미일 뿐이다 하지만 OOP에서 상속을 하는 이유는 무언가를 물려받는(상속)데에서 그치는 것이 아니라 확장extend하기 위해서이다.
+</aside>
+<aside>
+💡 inherit과 extend 둘 다 '상속'으로 번역하기 때문에 상속의 의미를 좁게 인식하게 만들 수 있다.
+</aside>
+<h5 id="jpa의-최상위-모델객체-예제">JPA의 최상위 모델객체 예제<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h5>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@MappedSuperclass</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@EntityListeners</span>(AuditingEntityListener.<span style="color:#a6e22e">class</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BaseEntity</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@Id</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@GeneratedValue</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> Long id;
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">@CreatedBy</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> String regUserId;
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">@LastModifiedBy</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> String modUserId;
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">@CreatedDate</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> Date regDate;
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">@LastModifiedDate</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> Date modDate;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@Version</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> Integer version;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@Entity</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">File</span> <span style="color:#66d9ef">extends</span> BaseEntity {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> String name;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> String content;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<h4 id="12-클래스간의-관계---포함관계">1.2 클래스간의 관계 - 포함관계<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<h5 id="언제-포함관계를-사용하는가">언제 포함관계를 사용하는가?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h5>
+<p><a href="https://stackoverflow.com/a/37624298/4766882" rel="external">https://stackoverflow.com/a/37624298/4766882</a></p>
+<p>언제나 상속 대신 포함관계 사용이 가능하다.</p>
+<h5 id="언제-상속관계를-사용하는가">언제 상속관계를 사용하는가<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h5>
+<ol>
+<li>자식이 부모에 대해 &lsquo;is a&rsquo; 관계인 동시에 자식이 부모의 모든 기능을 다 가지고 있을 때</li>
+<li>다중상속을 할 수 없으므로(?) : &ldquo;VCR클래스는 TVCR클래스에 포함&rdquo; p.325</li>
+</ol>
+<h5 id="ex-사각형과-정사각형-문제">ex) 사각형과 정사각형 문제<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h5>
+<ol>
+<li>사각형 클래스에 가로길이_늘리기()가 정의되어 있다고 하자.</li>
+<li>정사각형 클래스는 사각형 클래스를 상속했다.</li>
+<li>정사각형 객체에서 사각형 클래스의 가로길이_늘리기()를 호출하는 순간 정사각형은 더 이상 정사각형이 아니게 된다.</li>
+</ol>
+<aside>
+💡  이 문제를 해결하기 위해 인터페이스를 도입?
+</aside>
+<h4 id="23-오버로딩-vs-오버라이딩">2.3 오버로딩 vs 오버라이딩<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<ul>
+<li>
+<p>오버로딩 : 과적(하면 할 수록 갯수가 늘어남)</p>
+<ul>
+<li>
+<p><a href="https://www.google.com/search?q=overloaded+vehicles" rel="external">https://www.google.com/search?q=overloaded+vehicles</a></p>
+</li>
+<li>
+<p>한때 유명했던 귀여운 동물사진 블로그</p>
+<p><a href="#R-image-b61ca1ddb9b94ab503780d956ff18d05" class="lightbox-link"><img alt="Untitled" class="lazy lightbox figure-image" loading="lazy" src="https://images-na.ssl-images-amazon.com/images/I/516qJv+yDTL._SY486_BO1,204,203,200_.jpg" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b61ca1ddb9b94ab503780d956ff18d05"><img alt="Untitled" class="lazy lightbox lightbox-image" loading="lazy" src="https://images-na.ssl-images-amazon.com/images/I/516qJv+yDTL._SY486_BO1,204,203,200_.jpg"></a></p>
+</li>
+</ul>
+</li>
+<li>
+<p>오버라이딩 : 덮어씌우기(아무리 많이 해도 갯수가 늘어나지 않는다)</p>
+<ul>
+<li>overwrite와 유사함 <a href="https://stackoverflow.com/a/34036684/4766882" rel="external">https://stackoverflow.com/a/34036684/4766882</a></li>
+</ul>
+</li>
+</ul>
+<h4 id="24-super">2.4 super<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<ul>
+<li>메소드 체이닝 샘플 p.331</li>
+</ul>
+<h4 id="33-import문">3.3 import문<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<blockquote>
+<p>한 패키지에서 여러 클래스를 사용하는 경우 클래스의 이름을 일일이 지정해주는 것보다 패키지명.*과 같이 하는것이 편리하다 ☛ IDE의 import정리기능을 써서 사용할 클래스들을 명시적으로 import 것이 좋다. import만 보면 어떤 클래스들을 쓰는지(dependency)를 쉽게 파악할 수 있기 때문.</p>
+</blockquote>
+<h4 id="42-static---클래스의-공통적인-p344">4.2 static - <del>클래스의, 공통적인</del> p.344<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<h5 id="static의-사전적-의미--정적인-변하지-않는">static의 사전적 의미 : 정적인, 변하지 않는<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h5>
+<blockquote>
+<p><em>Nothing is static. Everything is evolving.</em>(Chuck Palahniuk, Fight Club)</p>
+</blockquote>
+<h4 id="43-final---마지막의-변경될-수-없는">4.3 final - 마지막의, 변경될 수 없는<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<blockquote>
+<p>모든 private 메소드는 final이다 하지만 모든 final 메소드가 private인 것은 아니다. p.353</p>
+</blockquote>
+<h4 id="44-abstract---추상의-미완성의">4.4 abstract - 추상의, 미완성의<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<blockquote>
+<p>추상 클래스를 상속extend하는 구상 클래스는 모두 abstract 메소드를 override해야 한다</p>
+</blockquote>
+<p>VS</p>
+<blockquote>
+<p>인터페이스를 구현implement하는 클래스는 모두 메소드를 override해야 한다</p>
+</blockquote>
+<h5 id="언제-abstract를-써야-하는가">언제 abstract를 써야 하는가?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h5>
+<h5 id="언제-interface를-써야-하는가">언제 interface를 써야 하는가?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h5>
+<p>composition over inheritance vs inheritance over composition</p>
+<h4 id="46-제어자modifier의-조합">4.6 제어자(modifier)의 조합<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<blockquote>
+<p>메서드에 private와 final을 같이 사용할 필요는 없다. (중략) 이 둘 중 하나만 사용해도 의미가 충분하다 ☛ private 메소드에 final 제어자를 쓸 필요는 없다. 하지만 final 메소드에 접근 제어자를 지정하지 않는다면 접근 제어자는 default가 된다. 즉 private가 아니다.</p>
+</blockquote>
+<h3 id="5-다형성">5. 다형성<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h4 id="51-다형성이란">5.1 다형성이란?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<h4 id="52-참조변수의-형변환">5.2 참조변수의 형변환<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<h4 id="53-instanceof-연산자">5.3 instanceof 연산자<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<h4 id="54-참조변수와-인스턴스의-연결">5.4 참조변수와 인스턴스의 연결<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<blockquote>
+<p>메서드의 경우 조상 클래스의 메소드를 자손의 클래스에서 오버라이딩한 경우에도 참조변수의 타입에 관계없이 항상 실제 인스턴스의 메서드(오버라이딩된 메서드)가 호출되지만, <strong>멤버변수의 경우 참조변수의 타입에 따라 달라진다.</strong></p>
+</blockquote>
+<p><a href="https://github.com/bluedskim/java_standard_study/blob/master/src/test/java/chap7/AnimalShopperTest.java" rel="external">https://github.com/bluedskim/java_standard_study/blob/master/src/test/java/chap7/AnimalShopperTest.java</a></p>
+<blockquote>
+<p>다운캐스팅은 지양해야 한다 <a href="https://stackoverflow.com/a/30659861/4766882" rel="external">https://stackoverflow.com/a/30659861/4766882</a></p>
+</blockquote>
+<aside>
+💡 왜 다운캐스팅은 명시적으로 해야 하는가 ☛ [https://stackoverflow.com/a/36383210/4766882](https://stackoverflow.com/a/36383210/4766882) Or you just assume that you got a Dog?
+</aside>
+<h3 id="6-추상-클래스">6. 추상 클래스<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h4 id="61-추상-클래스란">6.1 추상 클래스란?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<ol>
+<li>클래스 = 설계도</li>
+<li>추상 클래스 = 미완성 설계도</li>
+<li>인터페이스 = 기본 설계도</li>
+</ol>
+<blockquote>
+<p>추상 클래스로 인스턴스 생성 불가</p>
+</blockquote>
+<h3 id="7-인터페이스">7. 인터페이스<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h4 id="71-인터페이스란">7.1 인터페이스란?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<ul>
+<li>인터페이스는 일종의 추상 &lsquo;클래스&rsquo;이다. ☛ 자식이 인스턴스를 만들 수 있으므로 추상클래스는 클래스다. 하지만 인터페이스는 자식이 인스턴스를 만들 수 없으므로 클래스가 아니다.</li>
+<li>인터페이스는 명세서(specfication)다. <em>&ldquo;인터페이스의 이름에는 주로 Fightable과 같이 &lsquo;~을 할 수 있는&rsquo;의 의미인 able로 끝나는 것들이 많은데, 그 이유는 어떠한 기능 또는 행위를 하는데 필요한 메서드를 제공한다는 의미를 강조하기 위해서이다.&rdquo;</em></li>
+<li>인터페이스는 구현체에 대한 관점이다.</li>
+</ul>
+<aside>
+💡 다형성 : 어떤 경우 상속을 써야 하는 지 혹은 인터페이스를 써야 하는지 -.-
+</aside>
+<h4 id="73-인터페이스의-상속">7.3 인터페이스의 상속<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p>다중 상속이 가능하다</p>
+<h4 id="74-인터페이스의-구현">7.4 인터페이스의 구현<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p>&lsquo;implements&rsquo; 구문이 상속을 의미하지 않는다. extends구문은 생략 가능</p>
+<h4 id="75-인터페이스를-이용한-다중상속">7.5 인터페이스를 이용한 다중상속<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<aside>
+💡 인터페이스는 상속되는 것이 아니고 구현되는 것이다
+</aside>
+<h4 id="76-인터페이스를-이용한-다형성">7.6 인터페이스를 이용한 다형성<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p><a href="https://github.com/bluedskim/java_standard_study/blob/master/src/test/java/chap7/PolymorphismTest.java" rel="external">https://github.com/bluedskim/java_standard_study/blob/master/src/test/java/chap7/PolymorphismTest.java</a></p>
+<h4 id="77-인터페이스의-장점">7.7 인터페이스의 장점<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<ul>
+<li>표준화가 가능하다</li>
+<li>독립적인 프로그래밍이 가능하다</li>
+<li>개발시간을 단축시킬 수 있다</li>
+<li>서로 관계없는 클래스들에게 관계를 맺어 줄 수 있다</li>
+</ul>
+<h5 id="liskov-substitution-principle-해결-p395">Liskov Substitution Principle 해결 p.395<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h5>
+<p><a href="#R-image-1e54ad3c765f1ec5b8285f0c6e9efcca" class="lightbox-link"><img alt="Untitled" class="lazy lightbox figure-image" loading="lazy" src="https://miro.medium.com/max/1400/1*iV_TeHoEDE0TwhQEFj2fxA.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1e54ad3c765f1ec5b8285f0c6e9efcca"><img alt="Untitled" class="lazy lightbox lightbox-image" loading="lazy" src="https://miro.medium.com/max/1400/1*iV_TeHoEDE0TwhQEFj2fxA.png"></a></p>
+<ul>
+<li><a href="https://www.baeldung.com/cs/liskov-substitution-principle" rel="external">https://www.baeldung.com/cs/liskov-substitution-principle</a></li>
+<li><a href="https://www.infragistics.com/community/blogs/b/dhananjay_kumar/posts/simplifying-the-liskov-substitution-principle-of-solid-in-c" rel="external">https://www.infragistics.com/community/blogs/b/dhananjay_kumar/posts/simplifying-the-liskov-substitution-principle-of-solid-in-c</a></li>
+<li><a href="https://www.javabrahman.com/programming-principles/liskov-substitution-principal-java-example/" rel="external">https://www.javabrahman.com/programming-principles/liskov-substitution-principal-java-example/</a></li>
+</ul>
+<h4 id="78-인터페이스의-이해">7.8 인터페이스의 이해<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<ul>
+<li>클래스를 사용하는 쪽(User)과 클래스를 제공하는 쪽(Provider)이 있다.</li>
+<li>메소드를 사용(호출)하는 쪽(User)에서는 사용하려는 메서드(Provider)의 선언부만 알면 된다(Open-Close Principal)</li>
+</ul>
+<h4 id="79-디폴트-메서드와-static메서드">7.9 디폴트 메서드와 static메서드<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p>Java8부터 인터페이스에 구상 메소드 사용가능</p>
+<h4 id="8-내부-클래스inner-class">8. 내부 클래스(inner class)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<ul>
+<li>테스트 : <a href="https://github.com/bluedskim/java_standard_study/blob/b3f9ccc40a6e0a3683748bb51e228a076dfffff1/src/test/java/chap7/PublicFinalInnerMethodTest.java" rel="external">https://github.com/bluedskim/java_standard_study/blob/b3f9ccc40a6e0a3683748bb51e228a076dfffff1/src/test/java/chap7/PublicFinalInnerMethodTest.java</a></li>
+</ul>
+<h4 id="85-익명-클래스anonymous-class">8.5 익명 클래스(anonymous class)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p>임시 클래스. 주로 인수 생성용</p>
+
+  <footer class="footline">
+              <i class='fa-fw fas fa-calendar'></i> 2021-12-07
+<div class="R-taxonomy taxonomy-categories cstyle" title="Categories" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/categories/tech/index.html">Tech</a></li>
+  </ul>
+</div>
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1774431351" defer></script>
+    <script src="/js/theme.min.js?1774431351" defer></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-3QTEZE6PDE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3QTEZE6PDE');
+</script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

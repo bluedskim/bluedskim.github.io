@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Architecture on Do What You Want To Do</title>
-    <link>https://bluedskim.github.io/tags/architecture/</link>
-    <description>Recent content in Architecture on Do What You Want To Do</description>
+    <title>Architecture :: Tag :: Do What You Want To Do</title>
+    <link>https://bluedskim.github.io/tags/architecture/index.html</link>
+    <description></description>
     <generator>Hugo</generator>
     <language>ko-KR</language>
     <lastBuildDate>Wed, 11 Aug 2021 10:05:20 +0900</lastBuildDate>
     <atom:link href="https://bluedskim.github.io/tags/architecture/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>&#39;Back Office&#39; vs &#39;Back End&#39;</title>
-      <link>https://bluedskim.github.io/posts/tech/back-office-vs-back-end/</link>
+      <link>https://bluedskim.github.io/posts/tech/back-office-vs-back-end/index.html</link>
       <pubDate>Wed, 11 Aug 2021 10:05:20 +0900</pubDate>
-      <guid>https://bluedskim.github.io/posts/tech/back-office-vs-back-end/</guid>
-      <description>&lt;p&gt;IT프로젝트에서 back office와 back end를 혼용하면 망할 수 있다.&#xA;front office와 front end도 마찬가지.&lt;/p&gt;&#xA;&lt;p&gt;다음 두 문장을 비교해보자&lt;/p&gt;&#xA;&lt;p&gt;&amp;lsquo;&lt;em&gt;백 &lt;strong&gt;오피스&lt;/strong&gt;와 프론트 &lt;strong&gt;오피스&lt;/strong&gt;를 별도의 인스턴스로 구성합시다&lt;/em&gt;&amp;rsquo;&lt;/p&gt;&#xA;&lt;p&gt;와&lt;/p&gt;&#xA;&lt;p&gt;&amp;lsquo;&lt;em&gt;백 &lt;strong&gt;엔드&lt;/strong&gt;와 프론트 &lt;strong&gt;엔드&lt;/strong&gt;를 별도의 인스턴스로 구성합시다.&lt;/em&gt;&amp;rsquo;&#xA;는 전혀 다른 말이다.&lt;/p&gt;&#xA;&lt;p&gt;back office는 운영자 화면(사이트)을 지칭한다고 보면 되고 front office는 사용자 화면이라고 생각하면 된다(front office는 한국 IT에서는 잘 쓰지 않는 용어).&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.webopedia.com/definitions/back-office/&#34;&gt;https://www.webopedia.com/definitions/back-office/&lt;/a&gt;에서 언급한 &amp;ldquo;&lt;em&gt;백 오피스는 백엔드의 지원을 받는다The back office is supported by a back end system.&lt;/em&gt;&amp;ldquo;는 말이 틀린것은 아니지만 오해를 불러올 수 있다. 백 오피스만 백엔드의 지원을 받는 것은 아니다.  당연히 &amp;lsquo;백 오피스와 프론트 오피스 모두 백엔드의 지원을 받는다&amp;rsquo;&lt;/p&gt;</description>
+      <guid>https://bluedskim.github.io/posts/tech/back-office-vs-back-end/index.html</guid>
+      <description>IT프로젝트에서 back office와 back end를 혼용하면 망할 수 있다. front office와 front end도 마찬가지.&#xA;다음 두 문장을 비교해보자&#xA;‘백 오피스와 프론트 오피스를 별도의 인스턴스로 구성합시다’&#xA;와&#xA;‘백 엔드와 프론트 엔드를 별도의 인스턴스로 구성합시다.’ 는 전혀 다른 말이다.&#xA;back office는 운영자 화면(사이트)을 지칭한다고 보면 되고 front office는 사용자 화면이라고 생각하면 된다(front office는 한국 IT에서는 잘 쓰지 않는 용어).&#xA;https://www.webopedia.com/definitions/back-office/에서 언급한 “백 오피스는 백엔드의 지원을 받는다The back office is supported by a back end system.“는 말이 틀린것은 아니지만 오해를 불러올 수 있다. 백 오피스만 백엔드의 지원을 받는 것은 아니다. 당연히 ‘백 오피스와 프론트 오피스 모두 백엔드의 지원을 받는다’</description>
     </item>
   </channel>
 </rss>

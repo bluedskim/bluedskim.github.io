@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Certbot on Do What You Want To Do</title>
-    <link>https://bluedskim.github.io/tags/certbot/</link>
-    <description>Recent content in Certbot on Do What You Want To Do</description>
+    <title>Certbot :: Tag :: Do What You Want To Do</title>
+    <link>https://bluedskim.github.io/tags/certbot/index.html</link>
+    <description></description>
     <generator>Hugo</generator>
     <language>ko-KR</language>
     <lastBuildDate>Sun, 10 May 2020 21:23:09 +0900</lastBuildDate>
     <atom:link href="https://bluedskim.github.io/tags/certbot/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Certbot을 이용해 Iptime DDNS 도메인용 인증서 발급</title>
-      <link>https://bluedskim.github.io/posts/tech/certbot%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-iptime-ddns-%EB%8F%84%EB%A9%94%EC%9D%B8%EC%9A%A9-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EB%B0%9C%EA%B8%89/</link>
+      <link>https://bluedskim.github.io/posts/tech/certbot%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-iptime-ddns-%EB%8F%84%EB%A9%94%EC%9D%B8%EC%9A%A9-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EB%B0%9C%EA%B8%89/index.html</link>
       <pubDate>Sun, 10 May 2020 21:23:09 +0900</pubDate>
-      <guid>https://bluedskim.github.io/posts/tech/certbot%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-iptime-ddns-%EB%8F%84%EB%A9%94%EC%9D%B8%EC%9A%A9-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EB%B0%9C%EA%B8%89/</guid>
-      <description>&lt;p&gt;발급될지 잠시 의심했었지만 발급 안될 이유가 없더라.&lt;/p&gt;&#xA;&lt;p&gt;환경은 다음과 같다.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;iptime 공유기 A104(version 10.03.8) : 80포트는 외부에서 접속가능하도록 반드시 &lt;strong&gt;port forwarding&lt;/strong&gt;해야 한다.&lt;/li&gt;&#xA;&lt;li&gt;ODROID-U3(Ubuntu 14.04) : Spring Boot2 어플리케이션이 기동될 서버&#xA;&lt;ul&gt;&#xA;&lt;li&gt;python 2.7 : 혹자는 3.6 이상 버전이 필요하다고 하지만 2.7에서도 정상 동작하였다&lt;/li&gt;&#xA;&lt;li&gt;Spring Boot 2&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h5 id=&#34;certbot-설치&#34;&gt;certbot 설치&lt;/h5&gt;&#xA;&lt;pre&gt;&lt;code&gt;$ git clone https://github.com/certbot/certbot&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h5 id=&#34;certbot-인증서-발행&#34;&gt;certbot 인증서 발행&lt;/h5&gt;&#xA;&lt;p&gt;이 때 80 port에 서비스가 있다면 잠시 내려두자. 인증을 위해 certbot이 잠시 이 포트를 사용할 것이기 때문이다(인증서 갱신시에는 80포트가 불필요 하다)&lt;/p&gt;</description>
+      <guid>https://bluedskim.github.io/posts/tech/certbot%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-iptime-ddns-%EB%8F%84%EB%A9%94%EC%9D%B8%EC%9A%A9-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EB%B0%9C%EA%B8%89/index.html</guid>
+      <description>발급될지 잠시 의심했었지만 발급 안될 이유가 없더라.&#xA;환경은 다음과 같다.&#xA;iptime 공유기 A104(version 10.03.8) : 80포트는 외부에서 접속가능하도록 반드시 port forwarding해야 한다. ODROID-U3(Ubuntu 14.04) : Spring Boot2 어플리케이션이 기동될 서버 python 2.7 : 혹자는 3.6 이상 버전이 필요하다고 하지만 2.7에서도 정상 동작하였다 Spring Boot 2 certbot 설치 $ git clone https://github.com/certbot/certbot certbot 인증서 발행 이 때 80 port에 서비스가 있다면 잠시 내려두자. 인증을 위해 certbot이 잠시 이 포트를 사용할 것이기 때문이다(인증서 갱신시에는 80포트가 불필요 하다)</description>
     </item>
   </channel>
 </rss>

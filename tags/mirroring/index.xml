@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mirroring on Do What You Want To Do</title>
-    <link>https://bluedskim.github.io/tags/mirroring/</link>
-    <description>Recent content in Mirroring on Do What You Want To Do</description>
+    <title>Mirroring :: Tag :: Do What You Want To Do</title>
+    <link>https://bluedskim.github.io/tags/mirroring/index.html</link>
+    <description></description>
     <generator>Hugo</generator>
     <language>ko-KR</language>
     <lastBuildDate>Tue, 29 Oct 2019 21:42:39 +0900</lastBuildDate>
     <atom:link href="https://bluedskim.github.io/tags/mirroring/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mirroring With Wget</title>
-      <link>https://bluedskim.github.io/posts/tech/mirroring-with-wget/</link>
+      <link>https://bluedskim.github.io/posts/tech/mirroring-with-wget/index.html</link>
       <pubDate>Tue, 29 Oct 2019 21:42:39 +0900</pubDate>
-      <guid>https://bluedskim.github.io/posts/tech/mirroring-with-wget/</guid>
-      <description>&lt;p&gt;볼만한 하둡 pdf 자료가 없어서 공식 홈페이지의 document를 다운받기로 했다.&lt;/p&gt;&#xA;&lt;p&gt;웹사이트 미러링에는 wget 관련 자료가 가장 많다.&lt;/p&gt;&#xA;&lt;p&gt;사용한 옵션을 정리해보자&lt;/p&gt;&#xA;&lt;p&gt;&amp;ndash;mirror : 해당 사이트의 link를 follow하면서 미러링을 한다.&lt;br/&gt;&#xA;&amp;ndash;convert-links : 링크가 로컬에서도 동작하도록 변환한다.&lt;br/&gt;&#xA;&amp;ndash;html-extension : 디렉토리 형태의 주소를 저장할 때 html 확장자를 붙혀준다. 로컬에서 조회할 때 필수~!&lt;br/&gt;&#xA;&amp;ndash;wait=2 : 서버 부하를 줄여주기 위해 2초간 쉰다.&lt;br/&gt;&#xA;&amp;ndash;no-parent : 상위 경로는 받아오지 않는다.&lt;br/&gt;&#xA;-o log : log라는 이름으로 로그를 저장한다.&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;wget --mirror            \&#xA;&#x9; --convert-links     \&#xA;&#x9; --html-extension    \&#xA;&#x9; --wait=2            \&#xA;&#x9; --no-parent         \&#xA;&#x9; -o log              \&#xA;https://hadoop.apache.org/docs/stable/index.html&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+      <guid>https://bluedskim.github.io/posts/tech/mirroring-with-wget/index.html</guid>
+      <description>볼만한 하둡 pdf 자료가 없어서 공식 홈페이지의 document를 다운받기로 했다.&#xA;웹사이트 미러링에는 wget 관련 자료가 가장 많다.&#xA;사용한 옵션을 정리해보자&#xA;–mirror : 해당 사이트의 link를 follow하면서 미러링을 한다. –convert-links : 링크가 로컬에서도 동작하도록 변환한다. –html-extension : 디렉토리 형태의 주소를 저장할 때 html 확장자를 붙혀준다. 로컬에서 조회할 때 필수~! –wait=2 : 서버 부하를 줄여주기 위해 2초간 쉰다. –no-parent : 상위 경로는 받아오지 않는다. -o log : log라는 이름으로 로그를 저장한다.&#xA;wget --mirror \ --convert-links \ --html-extension \ --wait=2 \ --no-parent \ -o log \ https://hadoop.apache.org/docs/stable/index.html</description>
     </item>
   </channel>
 </rss>

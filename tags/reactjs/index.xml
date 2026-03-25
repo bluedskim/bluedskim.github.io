@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ReactJS on Do What You Want To Do</title>
-    <link>https://bluedskim.github.io/tags/reactjs/</link>
-    <description>Recent content in ReactJS on Do What You Want To Do</description>
+    <title>ReactJS :: Tag :: Do What You Want To Do</title>
+    <link>https://bluedskim.github.io/tags/reactjs/index.html</link>
+    <description></description>
     <generator>Hugo</generator>
     <language>ko-KR</language>
     <lastBuildDate>Wed, 30 Sep 2020 12:37:16 +0900</lastBuildDate>
     <atom:link href="https://bluedskim.github.io/tags/reactjs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PM2 - Production Process Manager for Node</title>
-      <link>https://bluedskim.github.io/posts/tech/pm2-production-process-manager-for-node.js/</link>
+      <link>https://bluedskim.github.io/posts/tech/pm2-production-process-manager-for-node.js/index.html</link>
       <pubDate>Wed, 30 Sep 2020 12:37:16 +0900</pubDate>
-      <guid>https://bluedskim.github.io/posts/tech/pm2-production-process-manager-for-node.js/</guid>
-      <description>&lt;p&gt;ReactJS 로 Single-page application을 개발한다면 일반적으로 build를 하고 build를 deploy하는 방식을 사용한다.&lt;/p&gt;&#xA;&lt;p&gt;최근 진행했던 프로젝트에서도 역시 이런 방식으로 deploy를 해왔는데, deploy후 레이아웃이 깨지는 경우를 발견하게 되었다.&lt;/p&gt;&#xA;&lt;p&gt;뭔가 CSS 충돌이 발생한 상황인 듯 한데 소스레벨에서는 해결할 수도 피해갈 수도 없는 상황이었다.&lt;/p&gt;&#xA;&lt;p&gt;방법은 단 하나, 리소스 낭비를 감수하면서 운영환경에서도 npm start 형태로 구동하여 서비스할 수 밖에 없었다.&lt;/p&gt;&#xA;&lt;p&gt;하지만 리소스 낭비보다 더 심각한 문제가 있었으니.&lt;/p&gt;&#xA;&lt;p&gt;npm start로 구동하는 경우 nohup 을 이용한 background 프로세스로 구동하여야 하는데 리로드가 아닌 프로세스 리스타트가 필요한 경우(모듈이 추가된다던지 하는 이유로) 해당 프로세스를 ps명령으로 찾아서 kill해야 했다.&lt;/p&gt;</description>
+      <guid>https://bluedskim.github.io/posts/tech/pm2-production-process-manager-for-node.js/index.html</guid>
+      <description>ReactJS 로 Single-page application을 개발한다면 일반적으로 build를 하고 build를 deploy하는 방식을 사용한다.&#xA;최근 진행했던 프로젝트에서도 역시 이런 방식으로 deploy를 해왔는데, deploy후 레이아웃이 깨지는 경우를 발견하게 되었다.&#xA;뭔가 CSS 충돌이 발생한 상황인 듯 한데 소스레벨에서는 해결할 수도 피해갈 수도 없는 상황이었다.&#xA;방법은 단 하나, 리소스 낭비를 감수하면서 운영환경에서도 npm start 형태로 구동하여 서비스할 수 밖에 없었다.&#xA;하지만 리소스 낭비보다 더 심각한 문제가 있었으니.&#xA;npm start로 구동하는 경우 nohup 을 이용한 background 프로세스로 구동하여야 하는데 리로드가 아닌 프로세스 리스타트가 필요한 경우(모듈이 추가된다던지 하는 이유로) 해당 프로세스를 ps명령으로 찾아서 kill해야 했다.</description>
     </item>
     <item>
       <title>ReactJS &amp; Material UI를 이용한 빌라 이름 생성기</title>
-      <link>https://bluedskim.github.io/posts/tech/reactjs--material-ui%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%B9%8C%EB%9D%BC%EC%9D%B4%EB%A6%84-%EC%83%9D%EC%84%B1%EA%B8%B0/</link>
+      <link>https://bluedskim.github.io/posts/tech/reactjs--material-ui%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%B9%8C%EB%9D%BC%EC%9D%B4%EB%A6%84-%EC%83%9D%EC%84%B1%EA%B8%B0/index.html</link>
       <pubDate>Tue, 05 May 2020 21:58:18 +0900</pubDate>
-      <guid>https://bluedskim.github.io/posts/tech/reactjs--material-ui%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%B9%8C%EB%9D%BC%EC%9D%B4%EB%A6%84-%EC%83%9D%EC%84%B1%EA%B8%B0/</guid>
-      <description>&lt;p&gt;Bootstrap + ReactJS 기반 예쁜 템플리트도 많지만 실제 업무에서 사용하려면 힘든 경우가 많다. 이런 템플리트류들은 기능성보다는 시각적 만족에 촛점을 맞추기 때문이라 생각. 막상 코딩(로직)을 넣으려면 해야 할 일들이 산더미다.&lt;/p&gt;&#xA;&lt;p&gt;덜 예쁘더라도(?) 개발하는 입장에서 쓰기 쉬운 템플리트를 알아보던 중 발견한 Material-UI(&lt;a href=&#34;https://material-ui.com/)&#34;&gt;https://material-ui.com/)&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;ReactJS 를 이미 경험해서인지 그렇게 어렵지는 않았다. 본격적으로 사용하게 되면 어쩔지는 아직 미지수.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Back-End : Spring Boot + JPA + REST&lt;/li&gt;&#xA;&lt;li&gt;Front-End : ReactJS + Material-UI&lt;/li&gt;&#xA;&lt;li&gt;주소 : &lt;a href=&#34;https://samba.iptime.org:8082/villaNameGen&#34;&gt;https://samba.iptime.org:8082/villaNameGen&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <guid>https://bluedskim.github.io/posts/tech/reactjs--material-ui%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%B9%8C%EB%9D%BC%EC%9D%B4%EB%A6%84-%EC%83%9D%EC%84%B1%EA%B8%B0/index.html</guid>
+      <description>Bootstrap + ReactJS 기반 예쁜 템플리트도 많지만 실제 업무에서 사용하려면 힘든 경우가 많다. 이런 템플리트류들은 기능성보다는 시각적 만족에 촛점을 맞추기 때문이라 생각. 막상 코딩(로직)을 넣으려면 해야 할 일들이 산더미다.&#xA;덜 예쁘더라도(?) 개발하는 입장에서 쓰기 쉬운 템플리트를 알아보던 중 발견한 Material-UI(https://material-ui.com/).&#xA;ReactJS 를 이미 경험해서인지 그렇게 어렵지는 않았다. 본격적으로 사용하게 되면 어쩔지는 아직 미지수.&#xA;Back-End : Spring Boot + JPA + REST Front-End : ReactJS + Material-UI 주소 : https://samba.iptime.org:8082/villaNameGen</description>
     </item>
   </channel>
 </rss>

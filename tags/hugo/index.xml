@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo on Do What You Want To Do</title>
-    <link>https://bluedskim.github.io/tags/hugo/</link>
-    <description>Recent content in Hugo on Do What You Want To Do</description>
+    <title>Hugo :: Tag :: Do What You Want To Do</title>
+    <link>https://bluedskim.github.io/tags/hugo/index.html</link>
+    <description></description>
     <generator>Hugo</generator>
     <language>ko-KR</language>
     <lastBuildDate>Fri, 15 Mar 2019 22:38:28 +0900</lastBuildDate>
     <atom:link href="https://bluedskim.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pixelbook에서 hugo 설치</title>
-      <link>https://bluedskim.github.io/posts/tech/hugoonpixelbook/</link>
+      <link>https://bluedskim.github.io/posts/tech/hugoonpixelbook/index.html</link>
       <pubDate>Fri, 15 Mar 2019 22:38:28 +0900</pubDate>
-      <guid>https://bluedskim.github.io/posts/tech/hugoonpixelbook/</guid>
-      <description>&lt;h1 id=&#34;설치&#34;&gt;설치&lt;/h1&gt;&#xA;&lt;p&gt;ASUS Chromebook C100PA-DS03 에 설치할 때와 마찬가지로 최신버전을 설치하려면 deb 파일을 다운 받아야 한다. 현재 최신 버전은 hugo_0.54.0-1_amd64.deb 이다.&#xA;하지만 libsass1이 필요하다고 하니 먼저 설치한다.&lt;/p&gt;&#xA;&lt;p&gt;다운로드 경로 &lt;a href=&#34;https://packages.debian.org/sid/amd64/libsass1/download&#34;&gt;https://packages.debian.org/sid/amd64/libsass1/download&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;다운 받은 후 설치&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;$ sudo dpkg -i libsass1_3.5.5-2_amd64.deb&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;다운로드 경로 &lt;a href=&#34;https://packages.debian.org/sid/amd64/hugo/download&#34;&gt;https://packages.debian.org/sid/amd64/hugo/download&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;다운 받은 후 설치&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;$ sudo dpkg -i hugo_0.54.0-1_amd64.deb &#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h1 id=&#34;구동&#34;&gt;구동&lt;/h1&gt;&#xA;&lt;p&gt;pixelbook에서는 hugo 기본 포트인 1313 으로 띄울 수 없으니 아래를 참고하고&#xA;&lt;a href=&#34;https://www.reddit.com/r/Crostini/comments/aewwhf/cannot_access_penguinlinuxtestport/&#34;&gt;https://www.reddit.com/r/Crostini/comments/aewwhf/cannot_access_penguinlinuxtestport/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;서버 띄울 때 포트 변경해줘야 한다. 제일 유명한 포트 중에 하나인 8080을 사용하면 잘 뜬다&lt;/p&gt;</description>
+      <guid>https://bluedskim.github.io/posts/tech/hugoonpixelbook/index.html</guid>
+      <description>설치 ASUS Chromebook C100PA-DS03 에 설치할 때와 마찬가지로 최신버전을 설치하려면 deb 파일을 다운 받아야 한다. 현재 최신 버전은 hugo_0.54.0-1_amd64.deb 이다. 하지만 libsass1이 필요하다고 하니 먼저 설치한다.&#xA;다운로드 경로 https://packages.debian.org/sid/amd64/libsass1/download&#xA;다운 받은 후 설치&#xA;$ sudo dpkg -i libsass1_3.5.5-2_amd64.deb 다운로드 경로 https://packages.debian.org/sid/amd64/hugo/download&#xA;다운 받은 후 설치&#xA;$ sudo dpkg -i hugo_0.54.0-1_amd64.deb 구동 pixelbook에서는 hugo 기본 포트인 1313 으로 띄울 수 없으니 아래를 참고하고 https://www.reddit.com/r/Crostini/comments/aewwhf/cannot_access_penguinlinuxtestport/</description>
     </item>
     <item>
       <title>Hugo Theme 변경 테스트</title>
-      <link>https://bluedskim.github.io/posts/tech/post-title/</link>
+      <link>https://bluedskim.github.io/posts/tech/post-title/index.html</link>
       <pubDate>Sat, 23 Jun 2018 10:54:24 +0200</pubDate>
-      <guid>https://bluedskim.github.io/posts/tech/post-title/</guid>
-      <description>&lt;p&gt;원래 사용하던 theme이 좀 평범한 듯 하여 다른 theme 을 테스트 하고 있다.&#xA;지금 현재 쓰는 theme 은 bleak 라는 것인데 메인화면에서 compact 하게 공간 낭비가 없다는게 좋다.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/Zenithar/hugo-theme-bleak&#34;&gt;https://github.com/Zenithar/hugo-theme-bleak&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;한가지 마음에 안드는게 있는데 상세화면에서 소스 코드 보기(code태그) 가 눈에 잘 안띈다는 건데. 그래서  아래처럼 main.css를 좀 바꿨더니 볼만해졌다.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;code,pre,tt{&#xD;&#xA;&#x9;font-family:Inconsolata,monospace;&#xD;&#xA;&#x9;background-color:white&#xD;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;하지만 bleak를 쓰지 않기로 함.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;code line numbering 된다고 했는데 안되고 &lt;a href=&#34;https://bleak.zutrinken.com/demo/&#34;&gt;https://bleak.zutrinken.com/demo/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;google analytics 동작 안되고(세팅을 잘못했을 수도)&lt;/li&gt;&#xA;&lt;li&gt;업데이트가 활발하지 않은 듯&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;그래서 &lt;a href=&#34;https://themes.gohugo.io/gohugo-theme-ananke/&#34;&gt;ananke&lt;/a&gt; 로 다시 돌아감&lt;/p&gt;</description>
+      <guid>https://bluedskim.github.io/posts/tech/post-title/index.html</guid>
+      <description>Hugo Theme 변경 테스트</description>
     </item>
   </channel>
 </rss>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html id="R-html" lang="ko-KR" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.152.2">
+    <meta name="generator" content="Relearn 9.0.3+36307e4ed23582638ab689240ac7b427217803ee">
+    <meta name="description" content="파이썬 기반의 CLI로 asciicinema가 있다.
+설치 python3 -m pip install asciinema ​ 만약 python3가 설치되어 있지 않다면 먼저 설치해야 한다. (비단 코딩 목적뿐만이 아니라 여러 유용한 유틸리티를 사용하려면 리눅스에서 파이썬은 필수)
+설치 후 해당 바이너리를 찾지 못하는 문제가 있을 수 있는데 이는 경로 문제 때문이다. pip으로 설치하는 바이너리들은 ~/.local/bin에 설치된다. 이 경로를 path에 추가해줘야 한다.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="리눅스 터미널 입출력을 녹화하기 :: Do What You Want To Do">
+    <meta name="twitter:description" content="파이썬 기반의 CLI로 asciicinema가 있다.
+설치 python3 -m pip install asciinema ​ 만약 python3가 설치되어 있지 않다면 먼저 설치해야 한다. (비단 코딩 목적뿐만이 아니라 여러 유용한 유틸리티를 사용하려면 리눅스에서 파이썬은 필수)
+설치 후 해당 바이너리를 찾지 못하는 문제가 있을 수 있는데 이는 경로 문제 때문이다. pip으로 설치하는 바이너리들은 ~/.local/bin에 설치된다. 이 경로를 path에 추가해줘야 한다.">
+    <meta property="og:url" content="https://bluedskim.github.io/posts/tech/%EB%A6%AC%EB%88%85%EC%8A%A4-%ED%84%B0%EB%AF%B8%EB%84%90-%EC%9E%85%EC%B6%9C%EB%A0%A5%EC%9D%84-%EB%85%B9%ED%99%94%ED%95%98%EA%B8%B0/index.html">
+    <meta property="og:site_name" content="Do What You Want To Do">
+    <meta property="og:title" content="리눅스 터미널 입출력을 녹화하기 :: Do What You Want To Do">
+    <meta property="og:description" content="파이썬 기반의 CLI로 asciicinema가 있다.
+설치 python3 -m pip install asciinema ​ 만약 python3가 설치되어 있지 않다면 먼저 설치해야 한다. (비단 코딩 목적뿐만이 아니라 여러 유용한 유틸리티를 사용하려면 리눅스에서 파이썬은 필수)
+설치 후 해당 바이너리를 찾지 못하는 문제가 있을 수 있는데 이는 경로 문제 때문이다. pip으로 설치하는 바이너리들은 ~/.local/bin에 설치된다. 이 경로를 path에 추가해줘야 한다.">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Posts">
+    <meta property="article:published_time" content="2023-11-16T11:33:25+09:00">
+    <meta property="article:modified_time" content="2023-11-16T11:33:25+09:00">
+    <meta itemprop="name" content="리눅스 터미널 입출력을 녹화하기 :: Do What You Want To Do">
+    <meta itemprop="description" content="파이썬 기반의 CLI로 asciicinema가 있다.
+설치 python3 -m pip install asciinema ​ 만약 python3가 설치되어 있지 않다면 먼저 설치해야 한다. (비단 코딩 목적뿐만이 아니라 여러 유용한 유틸리티를 사용하려면 리눅스에서 파이썬은 필수)
+설치 후 해당 바이너리를 찾지 못하는 문제가 있을 수 있는데 이는 경로 문제 때문이다. pip으로 설치하는 바이너리들은 ~/.local/bin에 설치된다. 이 경로를 path에 추가해줘야 한다.">
+    <meta itemprop="datePublished" content="2023-11-16T11:33:25+09:00">
+    <meta itemprop="dateModified" content="2023-11-16T11:33:25+09:00">
+    <meta itemprop="wordCount" content="151">
+    <title>리눅스 터미널 입출력을 녹화하기 :: Do What You Want To Do</title>
+    <link href="https://bluedskim.github.io/posts/tech/%EB%A6%AC%EB%88%85%EC%8A%A4-%ED%84%B0%EB%AF%B8%EB%84%90-%EC%9E%85%EC%B6%9C%EB%A0%A5%EC%9D%84-%EB%85%B9%ED%99%94%ED%95%98%EA%B8%B0/index.html" rel="canonical" type="text/html" title="리눅스 터미널 입출력을 녹화하기 :: Do What You Want To Do">
+    <link href="/css/auto-complete/auto-complete.min.css?1774431351" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1774431351" defer></script>
+    <script src="/js/search-lunr.min.js?1774431351" defer></script>
+    <script src="/js/search.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/searchindex.en.js?1774431351";
+    </script>
+    <script src="/js/lunr/lunr.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.ko.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['ko'];
+    </script>
+    <link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1774431351" rel="stylesheet">
+    <link href="/css/theme.min.css?1774431351" rel="stylesheet">
+    <link href="/css/format-print.min.css?1774431351" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/posts\/tech\/%EB%A6%AC%EB%88%85%EC%8A%A4-%ED%84%B0%EB%AF%B8%EB%84%90-%EC%9E%85%EC%B6%9C%EB%A0%A5%EC%9D%84-%EB%85%B9%ED%99%94%ED%95%98%EA%B8%B0\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/bluedskim.github.io';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'relearn-auto', 'learn' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+  </head>
+  <body class="mobile-support print" data-origin="/posts/tech/%EB%A6%AC%EB%88%85%EC%8A%A4-%ED%84%B0%EB%AF%B8%EB%84%90-%EC%9E%85%EC%B6%9C%EB%A0%A5%EC%9D%84-%EB%85%B9%ED%99%94%ED%95%98%EA%B8%B0/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#설치">설치</a></li>
+    <li><a href="#녹화">녹화</a></li>
+    <li><a href="#재생하기">재생하기</a></li>
+    <li><a href="#부록---녹화-파일을-gif로-변환하기">부록 - 녹화 파일을 gif로 변환하기</a>
+      <ul>
+        <li><a href="#설치-1">설치</a></li>
+        <li><a href="#실행">실행</a></li>
+      </ul>
+    </li>
+    <li><a href="#샘플">샘플</a></li>
+    <li><a href="#부록의-부록">부록의 부록</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Do What You Want</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/posts/index.html"><span itemprop="name">Posts</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">리눅스 터미널 입출력을 녹화하기</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/%EB%A6%AC%EB%88%85%EC%8A%A4-%ED%84%B0%EB%AF%B8%EB%84%90-%EC%9E%85%EC%B6%9C%EB%A0%A5%EC%9D%84-%EB%85%B9%ED%99%94%ED%95%98%EA%B8%B0/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/%EC%9C%A0%EC%9A%A9%ED%95%9C-linux-cli%EB%AA%85%EB%A0%B9%EC%96%B4%EC%99%80-%ED%88%B4%EB%93%A4/index.html" title="유용한 LINUX CLI명령어와 쉡스크립트들 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/tech/cpu%EC%99%80-%EB%A9%94%EB%AA%A8%EB%A6%AC%EA%B0%80-%EC%97%B4%EC%9D%BC%ED%95%98%EA%B3%A0-%EC%9E%88%EB%8A%94%EC%A7%80-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/index.html" title="CPU와 메모리가 열일하고 있는지 확인하기 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable posts" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="리눅스-터미널-입출력을-녹화하기">리눅스 터미널 입출력을 녹화하기</h1>
+
+<p>파이썬 기반의 CLI로 asciicinema가 있다.</p>
+<h2 id="설치">설치<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<pre><code>python3 -m pip install asciinema
+</code></pre>
+<p>​
+만약 python3가 설치되어 있지 않다면 먼저 설치해야 한다.
+(비단 코딩 목적뿐만이 아니라 여러 유용한 유틸리티를 사용하려면 리눅스에서 파이썬은 필수)</p>
+<p>설치 후 해당 바이너리를 찾지 못하는 문제가 있을 수 있는데 이는 경로 문제 때문이다. pip으로 설치하는 바이너리들은 ~/.local/bin에 설치된다. 이 경로를 path에 추가해줘야 한다.</p>
+<h2 id="녹화">녹화<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>녹화는 간단하다. 명령을 입력할 때 rec 아규먼트만 추가하면 된다.</p>
+<pre><code>asciinema rec 해당파일명.cast
+</code></pre>
+<p>​
+이 다음부터 입출력되는 모든 텍스트는 녹화되며 &lt;ctrl-d&gt; 혹은 &ldquo;exit”를 입력하면 녹화가 중지된다.</p>
+<h2 id="재생하기">재생하기<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>재생도 간단하다. 명령을 입력할 때 play 아규먼트와 파일명만 추가하면 된다.</p>
+<pre><code>asciinema play 해당파일명.cast
+</code></pre>
+<p>​</p>
+<h2 id="부록---녹화-파일을-gif로-변환하기">부록 - 녹화 파일을 gif로 변환하기<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>agg - asciinema gif generator를 사용하면 쉽게 gif로 변환 가능하다</p>
+<h3 id="설치-1">설치<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>agg 깃헙의 <a href="https://github.com/asciinema/agg/releases" rel="external">release</a>에서 본인 아키텍쳐에 맞는 실행 바이너리를 다운로드한다.
+(리눅스용은 agg-x86_64-unknown-linux-gnu이다)</p>
+<h3 id="실행">실행<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>해당 명령어의 아규먼트로 입력 파일명과 출력파일명만 넘겨주면 변환된다.</p>
+<pre><code>agg 해당파일명.cast 해당파일명.gif 
+</code></pre>
+<p>​</p>
+<h2 id="샘플">샘플<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p><a href="#R-image-a327156d96d25077abdf7f9573fc1f00" class="lightbox-link"><img alt="htop" class="lazy lightbox figure-image" loading="lazy" src="../../images/htop.gif" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a327156d96d25077abdf7f9573fc1f00"><img alt="htop" class="lazy lightbox lightbox-image" loading="lazy" src="../../images/htop.gif"></a>
+<a href="#R-image-48307787343652b5991a7c77e8ab1235" class="lightbox-link"><img alt="btop" class="lazy lightbox figure-image" loading="lazy" src="../../images/btop.gif" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-48307787343652b5991a7c77e8ab1235"><img alt="btop" class="lazy lightbox lightbox-image" loading="lazy" src="../../images/btop.gif"></a></p>
+<h2 id="부록의-부록">부록의 부록<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<ul>
+<li><a href="https://ezgif.com/crop" rel="external">https://ezgif.com/crop</a> : 애니메이션 gif의 시작과 끝의 불필요한 녹화내용을 제거할 때 유용하다</li>
+</ul>
+
+  <footer class="footline">
+              <i class='fa-fw fas fa-calendar'></i> 2023-11-16
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1774431351" defer></script>
+    <script src="/js/theme.min.js?1774431351" defer></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-3QTEZE6PDE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3QTEZE6PDE');
+</script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

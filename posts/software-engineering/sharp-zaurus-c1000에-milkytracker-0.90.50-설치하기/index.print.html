@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html id="R-html" lang="ko-KR" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.152.2">
+    <meta name="generator" content="Relearn 9.0.3+36307e4ed23582638ab689240ac7b427217803ee">
+    <meta name="description" content="음악 신디사이저, 샘플러, 작곡 프로그램인 milky tracker 설치법입니다. (자세한 정보는 tracker.net/?ABOUT) target=_blank&gt;http://www.milkytracker.net/?ABOUT) www.milky tracker.net 에서 다운로드 받은 ipk만 설치해서는 동작하지 않습니다. (SL5500용이라서 그렇다고 하는데 5500에서도 동작하지 않더군요) 문제는 1. 화면이 뒤집혀서 실행됨 : 강제로 rotation 시켜 해결 2. 화면이 뜨는 순간 자우루스 다운됨 : 설치시 같이 제공되는 libSDL 문제인듯. Dosbox(zaurus 용) 설치시 같이 제공되는 libSDL 사용하여 해결. &lt;설치환경&gt; - Rom : NYMPH Zaurus Qtopia ROM 060801600 - Zaurus C1000 &lt;설치 순서&gt; 1. 첨부한 milky tracker_0.90.50_arm.ipk 를 설치합니다. ‘Applications’ 탭에 Milky tracker 아이콘이 생깁니다. 2. Milky tracker 아이콘을 꾹 누르고 있으면 세부옵션 창이 뜹니다. ‘어플리케이션을 qvga(320x240)에 최적화 시켜서 실행합니다’ 를 선택합니다. 3. /home/QtPalmtop/bin/milky tracker_execute.sh 를 아래와 같이 편집합니다. #!/bin/bash /home/milky tracker.net/bin/Milky tracker -bpp 16 -orientation ROTATE90CW (잘 보시면 원본 파일에서 ROTATE 부분만 수정하시면 됩니다. 이걸 수정하지 않으면 화면이 뒤집혀서 보입니다.) 4. /home/milky tracker.net/lib/libSDL-1.2.so.0 을 삭제합니다. 5. 첨부한 libSDL-1.2.so.0.7.1 를 /home/milky tracker.net/lib/ 아래에 넣습니다. 6. 터미널에서 아래와 같이 입력해서 링크를 걸어줍니다. ln -s /home/milky tracker.net/lib/libSDL-1.2.so.0.7.1 /home/milky tracker.net/lib/libSDL-1.2.so.0 ※ 여기에 모듈음악파일 많네요 ftp://wuarchive.wustl.edu/pub/aminet/mods/ [뱀꼬리] 몇년전 5500을 사용하던 때부터 zaurus용 작곡 프로그램을 많이 찾아헤멨었는데 없더군요. 리눅스용 tracker 포팅은 내공이 없어 힘들고… M tracker2 (www.geocities.jp/uirozaurus/mt2_multi.html) 같은 tracker 형태의 미디 시퀀서가 있지만 설치할 것도 많을 뿐더러 일본어 인터페이스라. OTL 자울용 Milky tracker를 발견하고 부푼마음에 설치했지만 동작이 안되서 좌절하던 중. 도스용 tracker를 사용해볼까 해서 Dosbox를 설치하고 테스트 해보던 중. Dosbox 설치시 전용 libSDL가 따로 설치되는것을 보고 그놈을 Milky tracker에서 사용해보니 잘 되는군요. ㅋㅋ [첨부파일] milkytracker_0.90.50_arm.ipk libSDL_1.2.so.0.7.1">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Sharp Zaurus C1000에 Milkytracker 0.90.50 설치하기 :: Do What You Want To Do">
+    <meta name="twitter:description" content="음악 신디사이저, 샘플러, 작곡 프로그램인 milky tracker 설치법입니다. (자세한 정보는 tracker.net/?ABOUT) target=_blank&gt;http://www.milkytracker.net/?ABOUT) www.milky tracker.net 에서 다운로드 받은 ipk만 설치해서는 동작하지 않습니다. (SL5500용이라서 그렇다고 하는데 5500에서도 동작하지 않더군요) 문제는 1. 화면이 뒤집혀서 실행됨 : 강제로 rotation 시켜 해결 2. 화면이 뜨는 순간 자우루스 다운됨 : 설치시 같이 제공되는 libSDL 문제인듯. Dosbox(zaurus 용) 설치시 같이 제공되는 libSDL 사용하여 해결. &lt;설치환경&gt; - Rom : NYMPH Zaurus Qtopia ROM 060801600 - Zaurus C1000 &lt;설치 순서&gt; 1. 첨부한 milky tracker_0.90.50_arm.ipk 를 설치합니다. ‘Applications’ 탭에 Milky tracker 아이콘이 생깁니다. 2. Milky tracker 아이콘을 꾹 누르고 있으면 세부옵션 창이 뜹니다. ‘어플리케이션을 qvga(320x240)에 최적화 시켜서 실행합니다’ 를 선택합니다. 3. /home/QtPalmtop/bin/milky tracker_execute.sh 를 아래와 같이 편집합니다. #!/bin/bash /home/milky tracker.net/bin/Milky tracker -bpp 16 -orientation ROTATE90CW (잘 보시면 원본 파일에서 ROTATE 부분만 수정하시면 됩니다. 이걸 수정하지 않으면 화면이 뒤집혀서 보입니다.) 4. /home/milky tracker.net/lib/libSDL-1.2.so.0 을 삭제합니다. 5. 첨부한 libSDL-1.2.so.0.7.1 를 /home/milky tracker.net/lib/ 아래에 넣습니다. 6. 터미널에서 아래와 같이 입력해서 링크를 걸어줍니다. ln -s /home/milky tracker.net/lib/libSDL-1.2.so.0.7.1 /home/milky tracker.net/lib/libSDL-1.2.so.0 ※ 여기에 모듈음악파일 많네요 ftp://wuarchive.wustl.edu/pub/aminet/mods/ [뱀꼬리] 몇년전 5500을 사용하던 때부터 zaurus용 작곡 프로그램을 많이 찾아헤멨었는데 없더군요. 리눅스용 tracker 포팅은 내공이 없어 힘들고… M tracker2 (www.geocities.jp/uirozaurus/mt2_multi.html) 같은 tracker 형태의 미디 시퀀서가 있지만 설치할 것도 많을 뿐더러 일본어 인터페이스라. OTL 자울용 Milky tracker를 발견하고 부푼마음에 설치했지만 동작이 안되서 좌절하던 중. 도스용 tracker를 사용해볼까 해서 Dosbox를 설치하고 테스트 해보던 중. Dosbox 설치시 전용 libSDL가 따로 설치되는것을 보고 그놈을 Milky tracker에서 사용해보니 잘 되는군요. ㅋㅋ [첨부파일] milkytracker_0.90.50_arm.ipk libSDL_1.2.so.0.7.1">
+    <meta property="og:url" content="https://bluedskim.github.io/posts/software-engineering/sharp-zaurus-c1000%EC%97%90-milkytracker-0.90.50-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/index.html">
+    <meta property="og:site_name" content="Do What You Want To Do">
+    <meta property="og:title" content="Sharp Zaurus C1000에 Milkytracker 0.90.50 설치하기 :: Do What You Want To Do">
+    <meta property="og:description" content="음악 신디사이저, 샘플러, 작곡 프로그램인 milky tracker 설치법입니다. (자세한 정보는 tracker.net/?ABOUT) target=_blank&gt;http://www.milkytracker.net/?ABOUT) www.milky tracker.net 에서 다운로드 받은 ipk만 설치해서는 동작하지 않습니다. (SL5500용이라서 그렇다고 하는데 5500에서도 동작하지 않더군요) 문제는 1. 화면이 뒤집혀서 실행됨 : 강제로 rotation 시켜 해결 2. 화면이 뜨는 순간 자우루스 다운됨 : 설치시 같이 제공되는 libSDL 문제인듯. Dosbox(zaurus 용) 설치시 같이 제공되는 libSDL 사용하여 해결. &lt;설치환경&gt; - Rom : NYMPH Zaurus Qtopia ROM 060801600 - Zaurus C1000 &lt;설치 순서&gt; 1. 첨부한 milky tracker_0.90.50_arm.ipk 를 설치합니다. ‘Applications’ 탭에 Milky tracker 아이콘이 생깁니다. 2. Milky tracker 아이콘을 꾹 누르고 있으면 세부옵션 창이 뜹니다. ‘어플리케이션을 qvga(320x240)에 최적화 시켜서 실행합니다’ 를 선택합니다. 3. /home/QtPalmtop/bin/milky tracker_execute.sh 를 아래와 같이 편집합니다. #!/bin/bash /home/milky tracker.net/bin/Milky tracker -bpp 16 -orientation ROTATE90CW (잘 보시면 원본 파일에서 ROTATE 부분만 수정하시면 됩니다. 이걸 수정하지 않으면 화면이 뒤집혀서 보입니다.) 4. /home/milky tracker.net/lib/libSDL-1.2.so.0 을 삭제합니다. 5. 첨부한 libSDL-1.2.so.0.7.1 를 /home/milky tracker.net/lib/ 아래에 넣습니다. 6. 터미널에서 아래와 같이 입력해서 링크를 걸어줍니다. ln -s /home/milky tracker.net/lib/libSDL-1.2.so.0.7.1 /home/milky tracker.net/lib/libSDL-1.2.so.0 ※ 여기에 모듈음악파일 많네요 ftp://wuarchive.wustl.edu/pub/aminet/mods/ [뱀꼬리] 몇년전 5500을 사용하던 때부터 zaurus용 작곡 프로그램을 많이 찾아헤멨었는데 없더군요. 리눅스용 tracker 포팅은 내공이 없어 힘들고… M tracker2 (www.geocities.jp/uirozaurus/mt2_multi.html) 같은 tracker 형태의 미디 시퀀서가 있지만 설치할 것도 많을 뿐더러 일본어 인터페이스라. OTL 자울용 Milky tracker를 발견하고 부푼마음에 설치했지만 동작이 안되서 좌절하던 중. 도스용 tracker를 사용해볼까 해서 Dosbox를 설치하고 테스트 해보던 중. Dosbox 설치시 전용 libSDL가 따로 설치되는것을 보고 그놈을 Milky tracker에서 사용해보니 잘 되는군요. ㅋㅋ [첨부파일] milkytracker_0.90.50_arm.ipk libSDL_1.2.so.0.7.1">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Posts">
+    <meta property="article:published_time" content="2008-02-23T14:03:00+09:00">
+    <meta property="article:modified_time" content="2008-02-23T14:03:00+09:00">
+    <meta itemprop="name" content="Sharp Zaurus C1000에 Milkytracker 0.90.50 설치하기 :: Do What You Want To Do">
+    <meta itemprop="description" content="음악 신디사이저, 샘플러, 작곡 프로그램인 milky tracker 설치법입니다. (자세한 정보는 tracker.net/?ABOUT) target=_blank&gt;http://www.milkytracker.net/?ABOUT) www.milky tracker.net 에서 다운로드 받은 ipk만 설치해서는 동작하지 않습니다. (SL5500용이라서 그렇다고 하는데 5500에서도 동작하지 않더군요) 문제는 1. 화면이 뒤집혀서 실행됨 : 강제로 rotation 시켜 해결 2. 화면이 뜨는 순간 자우루스 다운됨 : 설치시 같이 제공되는 libSDL 문제인듯. Dosbox(zaurus 용) 설치시 같이 제공되는 libSDL 사용하여 해결. &lt;설치환경&gt; - Rom : NYMPH Zaurus Qtopia ROM 060801600 - Zaurus C1000 &lt;설치 순서&gt; 1. 첨부한 milky tracker_0.90.50_arm.ipk 를 설치합니다. ‘Applications’ 탭에 Milky tracker 아이콘이 생깁니다. 2. Milky tracker 아이콘을 꾹 누르고 있으면 세부옵션 창이 뜹니다. ‘어플리케이션을 qvga(320x240)에 최적화 시켜서 실행합니다’ 를 선택합니다. 3. /home/QtPalmtop/bin/milky tracker_execute.sh 를 아래와 같이 편집합니다. #!/bin/bash /home/milky tracker.net/bin/Milky tracker -bpp 16 -orientation ROTATE90CW (잘 보시면 원본 파일에서 ROTATE 부분만 수정하시면 됩니다. 이걸 수정하지 않으면 화면이 뒤집혀서 보입니다.) 4. /home/milky tracker.net/lib/libSDL-1.2.so.0 을 삭제합니다. 5. 첨부한 libSDL-1.2.so.0.7.1 를 /home/milky tracker.net/lib/ 아래에 넣습니다. 6. 터미널에서 아래와 같이 입력해서 링크를 걸어줍니다. ln -s /home/milky tracker.net/lib/libSDL-1.2.so.0.7.1 /home/milky tracker.net/lib/libSDL-1.2.so.0 ※ 여기에 모듈음악파일 많네요 ftp://wuarchive.wustl.edu/pub/aminet/mods/ [뱀꼬리] 몇년전 5500을 사용하던 때부터 zaurus용 작곡 프로그램을 많이 찾아헤멨었는데 없더군요. 리눅스용 tracker 포팅은 내공이 없어 힘들고… M tracker2 (www.geocities.jp/uirozaurus/mt2_multi.html) 같은 tracker 형태의 미디 시퀀서가 있지만 설치할 것도 많을 뿐더러 일본어 인터페이스라. OTL 자울용 Milky tracker를 발견하고 부푼마음에 설치했지만 동작이 안되서 좌절하던 중. 도스용 tracker를 사용해볼까 해서 Dosbox를 설치하고 테스트 해보던 중. Dosbox 설치시 전용 libSDL가 따로 설치되는것을 보고 그놈을 Milky tracker에서 사용해보니 잘 되는군요. ㅋㅋ [첨부파일] milkytracker_0.90.50_arm.ipk libSDL_1.2.so.0.7.1">
+    <meta itemprop="datePublished" content="2008-02-23T14:03:00+09:00">
+    <meta itemprop="dateModified" content="2008-02-23T14:03:00+09:00">
+    <meta itemprop="wordCount" content="258">
+    <meta itemprop="keywords" content="Software Engineering">
+    <title>Sharp Zaurus C1000에 Milkytracker 0.90.50 설치하기 :: Do What You Want To Do</title>
+    <link href="https://bluedskim.github.io/posts/software-engineering/sharp-zaurus-c1000%EC%97%90-milkytracker-0.90.50-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/index.html" rel="canonical" type="text/html" title="Sharp Zaurus C1000에 Milkytracker 0.90.50 설치하기 :: Do What You Want To Do">
+    <link href="/css/auto-complete/auto-complete.min.css?1774431351" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1774431351" defer></script>
+    <script src="/js/search-lunr.min.js?1774431351" defer></script>
+    <script src="/js/search.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/searchindex.en.js?1774431351";
+    </script>
+    <script src="/js/lunr/lunr.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1774431351" defer></script>
+    <script src="/js/lunr/lunr.ko.min.js?1774431351" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['ko'];
+    </script>
+    <link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1774431351" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1774431351" rel="stylesheet">
+    <link href="/css/theme.min.css?1774431351" rel="stylesheet">
+    <link href="/css/format-print.min.css?1774431351" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/posts\/software-engineering\/sharp-zaurus-c1000%EC%97%90-milkytracker-0.90.50-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/bluedskim.github.io';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'relearn-auto', 'learn' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+  </head>
+  <body class="mobile-support print" data-origin="/posts/software-engineering/sharp-zaurus-c1000%EC%97%90-milkytracker-0.90.50-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Do What You Want</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/posts/index.html"><span itemprop="name">Posts</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Sharp Zaurus C1000에 Milkytracker 0.90.50 설치하기</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/software-engineering/sharp-zaurus-c1000%EC%97%90-milkytracker-0.90.50-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/%EB%B0%A9%EB%AA%85%EB%A1%9D/%EB%B0%A9%EB%AA%85%EB%A1%9D%EC%9D%84-%EB%8D%A7%EA%B8%80%EB%A1%9C-%EB%8B%AC%EC%95%84%EC%A3%BC%EC%85%94%EC%9A%94./index.html" title="방명록을 덧글로 달아주셔요. (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/posts/%EC%9D%BC%EC%83%81%EC%82%AC/%EB%A7%88%EC%A7%80%EB%A7%89%ED%86%A0%EC%9A%94%EC%9D%BC%EB%B0%A4%EC%9D%98-%EC%97%B4%EA%B8%B0/index.html" title="(마지막)토요일밤의 열기 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable posts" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="sharp-zaurus-c1000에-milkytracker-09050-설치하기">Sharp Zaurus C1000에 Milkytracker 0.90.50 설치하기</h1>
+
+<p><span class="copyright_entry" style="display:block;" title="Sharp Zaurus C1000에 Milkytracker 0.90.50 설치하기@@**@@http://shed.egloos.com/1716505"></span> 음악 신디사이저, 샘플러, 작곡 프로그램인
+<br>
+<br>milky
+<span style="color: rgb(255, 0, 30); background-color: rgb(255, 240, 0);">tracker</span> 설치법입니다. (자세한 정보는
+<a href="http://www.milky%3cspan/" style="color: rgb(255, 0, 30); background-color: rgb(255, 240, 0);">tracker.net/?ABOUT) target=_blank&gt;http://www.milky<span style="color: rgb(255, 0, 30); background-color: rgb(255, 240, 0);">tracker</span>.net/?ABOUT)</a>
+<br>
+<br>www.milky
+<span style="color: rgb(255, 0, 30); background-color: rgb(255, 240, 0);">tracker</span>.net 에서 다운로드 받은 ipk만 설치해서는 동작하지 않습니다.
+<br>(SL5500용이라서 그렇다고 하는데 5500에서도 동작하지 않더군요)
+<br>
+<br>문제는
+<br>
+<br>1. 화면이 뒤집혀서 실행됨 : 강제로 rotation 시켜 해결
+<br>2. 화면이 뜨는 순간 자우루스 다운됨 : 설치시 같이 제공되는 libSDL 문제인듯. Dosbox(zaurus 용) 설치시 같이 제공되는 libSDL 사용하여 해결.
+<br>
+<br>
+<br>&lt;설치환경&gt;
+<br>
+<br>- Rom : NYMPH Zaurus Qtopia ROM 060801600
+<br>
+<br>- Zaurus C1000
+<br>
+<br>
+<br>&lt;설치 순서&gt;
+<br>
+<br>1. 첨부한 milky
+<span style="color: rgb(255, 0, 30); background-color: rgb(255, 240, 0);">tracker</span>_0.90.50_arm.ipk 를 설치합니다. &lsquo;Applications&rsquo; 탭에 Milky
+<span style="color: rgb(255, 0, 30); background-color: rgb(255, 240, 0);">tracker</span> 아이콘이 생깁니다.
+<br>
+<br>2. Milky
+<span style="color: rgb(255, 0, 30); background-color: rgb(255, 240, 0);">tracker</span> 아이콘을 꾹 누르고 있으면 세부옵션 창이 뜹니다. &lsquo;어플리케이션을 qvga(320x240)에 최적화 시켜서 실행합니다&rsquo; 를 선택합니다.
+<br>
+<br>3. /home/QtPalmtop/bin/milky
+<span style="color: rgb(255, 0, 30); background-color: rgb(255, 240, 0);">tracker</span>_execute.sh 를 아래와 같이 편집합니다.
+<br>
+<br>#!/bin/bash
+<br>/home/milky
+<span style="color: rgb(255, 0, 30); background-color: rgb(255, 240, 0);">tracker</span>.net/bin/Milky
+<span style="color: rgb(255, 0, 30); background-color: rgb(255, 240, 0);">tracker</span> -bpp 16 -orientation ROTATE90CW
+<br>
+<br>(잘 보시면 원본 파일에서 ROTATE 부분만 수정하시면 됩니다. 이걸 수정하지 않으면 화면이 뒤집혀서 보입니다.)
+<br>
+<br>4. /home/milky
+<span style="color: rgb(255, 0, 30); background-color: rgb(255, 240, 0);">tracker</span>.net/lib/libSDL-1.2.so.0 을 삭제합니다.
+<br>
+<br>5. 첨부한 libSDL-1.2.so.0.7.1 를 /home/milky
+<span style="color: rgb(255, 0, 30); background-color: rgb(255, 240, 0);">tracker</span>.net/lib/ 아래에 넣습니다.
+<br>
+<br>6. 터미널에서 아래와 같이 입력해서 링크를 걸어줍니다.
+<br>
+<br>ln  -s  /home/milky
+<span style="color: rgb(255, 0, 30); background-color: rgb(255, 240, 0);">tracker</span>.net/lib/libSDL-1.2.so.0.7.1  /home/milky
+<span style="color: rgb(255, 0, 30); background-color: rgb(255, 240, 0);">tracker</span>.net/lib/libSDL-1.2.so.0
+<br>
+<br>
+<br>※ 여기에 모듈음악파일 많네요
+<a href="ftp://wuarchive.wustl.edu/pub/aminet/mods/" target="_blank"><a href="ftp://wuarchive.wustl.edu/pub/aminet/mods/" rel="external">ftp://wuarchive.wustl.edu/pub/aminet/mods/</a></a>
+<br>
+<br>
+<br>[뱀꼬리]
+<br>
+<br>몇년전 5500을 사용하던 때부터 zaurus용 작곡 프로그램을 많이 찾아헤멨었는데 없더군요.
+<br>
+<br>리눅스용
+<span style="color: rgb(255, 0, 30); background-color: rgb(255, 240, 0);">tracker</span> 포팅은 내공이 없어 힘들고&hellip;
+<br>
+<br>M
+<span style="color: rgb(255, 0, 30); background-color: rgb(255, 240, 0);">tracker</span>2 (<a href="https://www.geocities.jp/uirozaurus/mt2_multi.html" rel="external">www.geocities.jp/uirozaurus/mt2_multi.html</a>) 같은
+<span style="color: rgb(255, 0, 30); background-color: rgb(255, 240, 0);">tracker</span> 형태의 미디 시퀀서가 있지만 설치할 것도 많을 뿐더러 일본어 인터페이스라. OTL
+<br>
+<br>자울용 Milky
+<span style="color: rgb(255, 0, 30); background-color: rgb(255, 240, 0);">tracker</span>를 발견하고 부푼마음에 설치했지만 동작이 안되서 좌절하던 중.
+<br>
+<br>도스용
+<span style="color: rgb(255, 0, 30); background-color: rgb(255, 240, 0);">tracker</span>를 사용해볼까 해서 Dosbox를 설치하고 테스트 해보던 중. Dosbox 설치시 전용 libSDL가 따로 설치되는것을 보고 그놈을 Milky
+<span style="color: rgb(255, 0, 30); background-color: rgb(255, 240, 0);">tracker</span>에서 사용해보니 잘 되는군요. ㅋㅋ
+<br>
+<br>[첨부파일]
+<br>
+<a href="http://pds8.egloos.com/pds/200802/23/82/milkytracker_0.90.50_arm.ipk">milkytracker_0.90.50_arm.ipk</a>
+<br>
+<a href="http://pds8.egloos.com/pds/200802/23/82/libSDL_1.2.so.0.7.1">libSDL_1.2.so.0.7.1</a>
+<br></p>
+<!--
+       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		    xmlns:dc="http://purl.org/dc/elements/1.1/"
+		    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+       <rdf:Description
+	        rdf:about="http://shed.egloos.com/1716505"
+	        dc:identifier="http://shed.egloos.com/1716505"
+	        dc:title="Sharp Zaurus C1000에 Milkytracker 0.90.50 설치하기"
+	        trackback:ping="http://shed.egloos.com/tb/1716505"/>
+       </rdf:RDF>
+       -->
+<ul><li class="comment_item"> <h4 class="comment_writer_info"> <span class="comment_gravatar"><img src="http://md.egloos.com/img/eg/profile_anonymous.jpg" alt=""></span> <span class="comment_writer"><a href="http://plan9.co.kr/tt2" title="http://plan9.co.kr/tt2" target="_blank">주성치</a></span> <span class="comment_datetime" title="2008/02/28 13:46">2008/02/28 13:46</span> <span class="comment_link"><a name="6625076" href="http://shed.egloos.com/1716505#6625076" title="#">#</a> </span> <span class="comment_admin"> <a href="#" onclick="delComment_view('a0003782','1716505','6625076','','','0'); return false;">삭제</a> <a href="javascript:;" onclick="replyComment('replyform1716505','1716505','6625076',5,'','http://', '', 'http://shed.egloos.com/1716505#cmt','','0'); return false;" title="답글">답글</a> </span> <span class="comment_security"></span> </h4>
+ <div id="comment_6625076">
+  방명록이 없는 것 같애서 여기 올립니다. 
+  <br>
+  <br>자원봉사자별로 30명정도씩 미리 블로그를 둘러보고 가려고
+  <br>한번 들려봤습니다. 내일 뵐께요. ^^
+  <br>제 블로그에 사진도 있으니 오시면 아는척해주세요~
+ </div> 
+ <div id="reply1716505_6625076" class="comment_write reply_write" style="display:none;"></div> </li></ul>
+  <footer class="footline">
+              <i class='fa-fw fas fa-calendar'></i> 2008-02-23
+<div class="R-taxonomy taxonomy-categories cstyle" title="Categories" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/categories/software-engineering/index.html">Software Engineering</a></li>
+  </ul>
+</div>
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1774431351" defer></script>
+    <script src="/js/theme.min.js?1774431351" defer></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-3QTEZE6PDE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3QTEZE6PDE');
+</script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>
