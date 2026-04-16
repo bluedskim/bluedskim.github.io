@@ -37,26 +37,26 @@
     <meta itemprop="keywords" content="Java,Design Pattern">
     <title>Java 디자인 패턴-05.Proxy :: Do What You Want To Do</title>
     <link href="/posts/tech/javadesignpattern-05.proxy/index.print.html" rel="alternate" type="text/html" title="Java 디자인 패턴-05.Proxy :: Do What You Want To Do">
-    <link href="/css/auto-complete/auto-complete.min.css?1774431308" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1774431308" defer></script>
-    <script src="/js/search-lunr.min.js?1774431308" defer></script>
-    <script src="/js/search.min.js?1774431308" defer></script>
+    <link href="/css/auto-complete/auto-complete.min.css?1776377370" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1776377370" defer></script>
+    <script src="/js/search-lunr.min.js?1776377370" defer></script>
+    <script src="/js/search.min.js?1776377370" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1774431308";
+      window.relearn.index_js_url="/searchindex.en.js?1776377370";
     </script>
-    <script src="/js/lunr/lunr.min.js?1774431308" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1774431308" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1774431308" defer></script>
-    <script src="/js/lunr/lunr.ko.min.js?1774431308" defer></script>
+    <script src="/js/lunr/lunr.min.js?1776377370" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1776377370" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1776377370" defer></script>
+    <script src="/js/lunr/lunr.ko.min.js?1776377370" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['ko'];
     </script>
-    <link href="/fonts/fontawesome/css/all.min.css?1774431308" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1774431308" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1774431308" rel="stylesheet">
-    <link href="/css/theme.min.css?1774431308" rel="stylesheet">
-    <link href="/css/format-html.min.css?1774431308" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/all.min.css?1776377370" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1776377370" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1776377370" rel="stylesheet">
+    <link href="/css/theme.min.css?1776377370" rel="stylesheet">
+    <link href="/css/format-html.min.css?1776377370" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -177,8 +177,8 @@
 
 <p>(<em>Java 디자인 패턴 스터디 모집 중 : <a href="https://github.com/bluedskim/javaDesignPatterns" rel="external">https://github.com/bluedskim/javaDesignPatterns</a></em>)</p>
 <h2 id="패턴-다이어그램">패턴 다이어그램<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-8f8d234d952e46d2c37e725dd0c14f37" class="lightbox-link"><img alt="Proxy" class="lazy lightbox figure-image" loading="lazy" src="https://refactoring.guru/images/patterns/content/proxy/proxy-2x.png?id=fb3d14e21c210a758d47" style="height: auto;width: auto;" title="Proxy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8f8d234d952e46d2c37e725dd0c14f37"><img alt="Proxy" class="lazy lightbox lightbox-image" loading="lazy" src="https://refactoring.guru/images/patterns/content/proxy/proxy-2x.png?id=fb3d14e21c210a758d47" title="Proxy"></a></p>
+<p><a href="#R-image-7bbaac89356315ea715ec90db1f0d389" class="lightbox-link"><img alt="Proxy" class="lazy lightbox figure-image" loading="lazy" src="https://refactoring.guru/images/patterns/content/proxy/proxy-2x.png?id=fb3d14e21c210a758d47" style="height: auto;width: auto;" title="Proxy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7bbaac89356315ea715ec90db1f0d389"><img alt="Proxy" class="lazy lightbox lightbox-image" loading="lazy" src="https://refactoring.guru/images/patterns/content/proxy/proxy-2x.png?id=fb3d14e21c210a758d47" title="Proxy"></a></p>
 <p>&ldquo;특정 클래스 대신 그 클래스와 동일한 인터페이스를 구현한 래퍼 <em>wrapper</em> 클래스 <em>Proxy</em> 를 이용한다&rdquo; (<a href="https://refactoring.guru/design-patterns/proxy" rel="external">출처:https://refactoring.guru/design-patterns/proxy</a>)</p>
 <h2 id="해결하려는-문제">해결하려는 문제<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ol>
@@ -203,8 +203,8 @@
 <li>Proxy내에서 클라이언트 목록을 관리할 수도 있다. 사용하는 클라이언트가 없다면 리소스를 해제하는 등의 처리작업 수행하고자 할 때 유용하다.</li>
 </ol>
 <h2 id="클래스-다이어그램">클래스 다이어그램<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-d842e1f6eaf94c0cb76ec0785592234c" class="lightbox-link"><img alt="Proxy 패턴(김동석)" class="lazy lightbox figure-image" loading="lazy" src="https://www.plantuml.com/plantuml/png/bP71IiD048RFxbCC1MbxQ78l8ZruwALGr1VOPAVDQZORTYR1e892RWhYKL3F7XMy-4erVGUt1Ymj23gduPzlvfzXHiJISM5Ic3fxLi7ozcLPl_SM7rUVTmzD_TGN8j4A0KtE5HWq4JhQb3YnYeHWpId-EYL1gT11mfpJC0pdcfCY2c9hmYWjKD6fDk69BEK1afvdKycCBYCnizOdq3pVD_LRS_EuUBs6NIKPUvtAHp2P14freJiU3utf-6M5pdp3JCO8XqYsS3uv5pjv4QKwXYDsEfj3xcoCHBs-k1GYJYKHZ56MrRywsal_J1uZyOekhLOhg5LQxCTtxo88DbVPgdsF4gtrO7yB5MkZWI-kzH5coh_u2m00" style="height: auto;width: auto;" title="Proxy 패턴(김동석)"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d842e1f6eaf94c0cb76ec0785592234c"><img alt="Proxy 패턴(김동석)" class="lazy lightbox lightbox-image" loading="lazy" src="https://www.plantuml.com/plantuml/png/bP71IiD048RFxbCC1MbxQ78l8ZruwALGr1VOPAVDQZORTYR1e892RWhYKL3F7XMy-4erVGUt1Ymj23gduPzlvfzXHiJISM5Ic3fxLi7ozcLPl_SM7rUVTmzD_TGN8j4A0KtE5HWq4JhQb3YnYeHWpId-EYL1gT11mfpJC0pdcfCY2c9hmYWjKD6fDk69BEK1afvdKycCBYCnizOdq3pVD_LRS_EuUBs6NIKPUvtAHp2P14freJiU3utf-6M5pdp3JCO8XqYsS3uv5pjv4QKwXYDsEfj3xcoCHBs-k1GYJYKHZ56MrRywsal_J1uZyOekhLOhg5LQxCTtxo88DbVPgdsF4gtrO7yB5MkZWI-kzH5coh_u2m00" title="Proxy 패턴(김동석)"></a></p>
+<p><a href="#R-image-d24cdc77c91f91a30f92c87f076ed47f" class="lightbox-link"><img alt="Proxy 패턴(김동석)" class="lazy lightbox figure-image" loading="lazy" src="https://www.plantuml.com/plantuml/png/bP71IiD048RFxbCC1MbxQ78l8ZruwALGr1VOPAVDQZORTYR1e892RWhYKL3F7XMy-4erVGUt1Ymj23gduPzlvfzXHiJISM5Ic3fxLi7ozcLPl_SM7rUVTmzD_TGN8j4A0KtE5HWq4JhQb3YnYeHWpId-EYL1gT11mfpJC0pdcfCY2c9hmYWjKD6fDk69BEK1afvdKycCBYCnizOdq3pVD_LRS_EuUBs6NIKPUvtAHp2P14freJiU3utf-6M5pdp3JCO8XqYsS3uv5pjv4QKwXYDsEfj3xcoCHBs-k1GYJYKHZ56MrRywsal_J1uZyOekhLOhg5LQxCTtxo88DbVPgdsF4gtrO7yB5MkZWI-kzH5coh_u2m00" style="height: auto;width: auto;" title="Proxy 패턴(김동석)"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d24cdc77c91f91a30f92c87f076ed47f"><img alt="Proxy 패턴(김동석)" class="lazy lightbox lightbox-image" loading="lazy" src="https://www.plantuml.com/plantuml/png/bP71IiD048RFxbCC1MbxQ78l8ZruwALGr1VOPAVDQZORTYR1e892RWhYKL3F7XMy-4erVGUt1Ymj23gduPzlvfzXHiJISM5Ic3fxLi7ozcLPl_SM7rUVTmzD_TGN8j4A0KtE5HWq4JhQb3YnYeHWpId-EYL1gT11mfpJC0pdcfCY2c9hmYWjKD6fDk69BEK1afvdKycCBYCnizOdq3pVD_LRS_EuUBs6NIKPUvtAHp2P14freJiU3utf-6M5pdp3JCO8XqYsS3uv5pjv4QKwXYDsEfj3xcoCHBs-k1GYJYKHZ56MrRywsal_J1uZyOekhLOhg5LQxCTtxo88DbVPgdsF4gtrO7yB5MkZWI-kzH5coh_u2m00" title="Proxy 패턴(김동석)"></a></p>
 <h2 id="소스">소스<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ol>
 <li>Proxy : Subject를 대체하고자 하는 객체(Proxy.java)
@@ -434,6 +434,7 @@
         <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
           <ul class="enlarge morespace collapsible-menu">
             <li class="parent " data-nav-id="/posts/index.html"><input type="checkbox" id="R-section-b4e55eb7e39db1aee6d02808a2267090" aria-controls="R-subsections-b4e55eb7e39db1aee6d02808a2267090" checked><label for="R-section-b4e55eb7e39db1aee6d02808a2267090"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Posts</span></label><a class="padding default-animation" href="/posts/index.html">Posts<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-b4e55eb7e39db1aee6d02808a2267090" class="collapsible-menu">
+            <li class="" data-nav-id="/posts/tech/mlrbinder-miller%EB%A5%BC-java%EC%97%90%EC%84%9C/index.html"><a class="padding" href="/posts/tech/mlrbinder-miller%EB%A5%BC-java%EC%97%90%EC%84%9C/index.html">mlrBinder 소개 — Java에서 Miller를 간단하게 부르기<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/posts/tech/llamafile-%EC%9E%A0%EA%B9%90-%ED%85%8C%EC%8A%A4%ED%8A%B8/index.html"><a class="padding" href="/posts/tech/llamafile-%EC%9E%A0%EA%B9%90-%ED%85%8C%EC%8A%A4%ED%8A%B8/index.html">로컬에서 Llamafile 돌려보기<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/posts/tech/%EC%96%BC%EA%B5%B4%EC%9D%B8%EC%8B%9D_%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EB%B9%84%EA%B5%90-openface-compreface/index.html"><a class="padding" href="/posts/tech/%EC%96%BC%EA%B5%B4%EC%9D%B8%EC%8B%9D_%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EB%B9%84%EA%B5%90-openface-compreface/index.html">얼굴인식 오픈소스 간단 비교 OpenFace, CompreFace &amp; 뉴스에서 정치인 얼굴 검색 데모<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/posts/tech/plantuml-%ED%85%8D%EC%8A%A4%ED%8A%B8-%EA%B8%B0%EB%B0%98-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8-%EB%93%9C%EB%A1%9C%EC%9E%89-%ED%88%B4/index.html"><a class="padding" href="/posts/tech/plantuml-%ED%85%8D%EC%8A%A4%ED%8A%B8-%EA%B8%B0%EB%B0%98-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8-%EB%93%9C%EB%A1%9C%EC%9E%89-%ED%88%B4/index.html">PLANTUML - 텍스트 기반 다이어그램 드로잉 툴<i class="fa-fw fas fa-check read-icon"></i></a></li>
@@ -1117,8 +1118,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1774431309" defer></script>
-    <script src="/js/theme.min.js?1774431309" defer></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-3QTEZE6PDE"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1776377371" defer></script>
+    <script src="/js/theme.min.js?1776377371" defer></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-3QTEZE6PDE"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}

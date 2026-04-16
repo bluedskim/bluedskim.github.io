@@ -29,26 +29,26 @@
     <meta itemprop="keywords" content="Java,Design Pattern">
     <title>Java 디자인 패턴-12.Composite :: Do What You Want To Do</title>
     <link href="/posts/tech/javadesignpattern-12.composite/index.print.html" rel="alternate" type="text/html" title="Java 디자인 패턴-12.Composite :: Do What You Want To Do">
-    <link href="/css/auto-complete/auto-complete.min.css?1774431309" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1774431309" defer></script>
-    <script src="/js/search-lunr.min.js?1774431309" defer></script>
-    <script src="/js/search.min.js?1774431309" defer></script>
+    <link href="/css/auto-complete/auto-complete.min.css?1776377371" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1776377371" defer></script>
+    <script src="/js/search-lunr.min.js?1776377371" defer></script>
+    <script src="/js/search.min.js?1776377371" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1774431309";
+      window.relearn.index_js_url="/searchindex.en.js?1776377371";
     </script>
-    <script src="/js/lunr/lunr.min.js?1774431309" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1774431309" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1774431309" defer></script>
-    <script src="/js/lunr/lunr.ko.min.js?1774431309" defer></script>
+    <script src="/js/lunr/lunr.min.js?1776377371" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1776377371" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1776377371" defer></script>
+    <script src="/js/lunr/lunr.ko.min.js?1776377371" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['ko'];
     </script>
-    <link href="/fonts/fontawesome/css/all.min.css?1774431309" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1774431309" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1774431309" rel="stylesheet">
-    <link href="/css/theme.min.css?1774431309" rel="stylesheet">
-    <link href="/css/format-html.min.css?1774431309" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/all.min.css?1776377371" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1776377371" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1776377371" rel="stylesheet">
+    <link href="/css/theme.min.css?1776377371" rel="stylesheet">
+    <link href="/css/format-html.min.css?1776377371" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -167,8 +167,8 @@
 <h1 id="java-디자인-패턴-12composite">Java 디자인 패턴-12.Composite</h1>
 
 <h2 id="composite-패턴">Composite 패턴<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-7a91273b91535d202aa6cf91239276d6" class="lightbox-link"><img alt="n order might comprise various products, packaged in boxes, which are packaged in bigger boxes and so on. The whole structure looks like an upside down tree." class="lazy lightbox figure-image" loading="lazy" src="https://refactoring.guru/images/patterns/diagrams/composite/problem-en-2x.png?id=5c7d443ccce3e46c4308" style="height: auto;width: auto;" title="n order might comprise various products, packaged in boxes, which are packaged in bigger boxes and so on. The whole structure looks like an upside down tree."></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7a91273b91535d202aa6cf91239276d6"><img alt="n order might comprise various products, packaged in boxes, which are packaged in bigger boxes and so on. The whole structure looks like an upside down tree." class="lazy lightbox lightbox-image" loading="lazy" src="https://refactoring.guru/images/patterns/diagrams/composite/problem-en-2x.png?id=5c7d443ccce3e46c4308" title="n order might comprise various products, packaged in boxes, which are packaged in bigger boxes and so on. The whole structure looks like an upside down tree."></a></p>
+<p><a href="#R-image-127abbf9d7eef25bd461d19462b7d254" class="lightbox-link"><img alt="n order might comprise various products, packaged in boxes, which are packaged in bigger boxes and so on. The whole structure looks like an upside down tree." class="lazy lightbox figure-image" loading="lazy" src="https://refactoring.guru/images/patterns/diagrams/composite/problem-en-2x.png?id=5c7d443ccce3e46c4308" style="height: auto;width: auto;" title="n order might comprise various products, packaged in boxes, which are packaged in bigger boxes and so on. The whole structure looks like an upside down tree."></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-127abbf9d7eef25bd461d19462b7d254"><img alt="n order might comprise various products, packaged in boxes, which are packaged in bigger boxes and so on. The whole structure looks like an upside down tree." class="lazy lightbox lightbox-image" loading="lazy" src="https://refactoring.guru/images/patterns/diagrams/composite/problem-en-2x.png?id=5c7d443ccce3e46c4308" title="n order might comprise various products, packaged in boxes, which are packaged in bigger boxes and so on. The whole structure looks like an upside down tree."></a></p>
 <p>&ldquo;하나의 주문은 여러 상품으로 구성될 수 있다. 이 상품들은 여러 개의 다른 박스에 담길 수 있으며 이 박스들 역시 더 큰 박스에 담길 수 있다. 이런 구조는 뒤집힌 트리형태와 같다.&rdquo;
 (출처:<a href="https://refactoring.guru/design-patterns/composite" rel="external">https://refactoring.guru/design-patterns/composite</a>)</p>
 <h2 id="해결하려는-문제">해결하려는 문제<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
@@ -181,8 +181,8 @@
 <li>Composite 객체는 요청을 자식객체들에게 순차적으로 전달forward한다.</li>
 </ol>
 <h2 id="클래스-다이어그램">클래스 다이어그램<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-5614db93738ae285e21e6a803072d54d" class="lightbox-link"><img alt="Iterator 패턴(김동석)" class="lazy lightbox figure-image" loading="lazy" src="https://www.plantuml.com/plantuml/png/ZL9DIyCm63wRNn46ikxGzZw7JFGmmSbG_q3Ql6kZJLEIjuEXWi9k2k9HKCyU5RpubsRt7qox3LQ_M0uXUV8yx_D-f6kGQSnbGlSHD4EbwUpsPJPvTwOVLvzt3yNagKL8B3XGa1cEgGGPW3Pr26F53I4eC06wgsIcZ43u9L8CZ8EcCM9cshuV2Oppm0kLz8Ca1sxEXFHFsOZjWH5HEc1eaqeD6Ifb3xHulYycRyNDu_JrccvoXk0qndPv_Rx7UPCsUxssb0sRC16f5GnP2BGFQKxFoKQM1ua8gNsW4U10Yn2SrXQvNENkH966oCRz9XefmIdZl8ITwatQRQuE4sOCFLIAszh_zPapZoom3kyOS9d5WJ3OAI_RbQ_vKxn-lijfdu31qg9IX8l92PMMkDCg-PMyS-6wzUuiSSzRrBu2b2MIUYyhV54I8JLtrzskXlGJhHkIBgJS_jGl" style="height: auto;width: auto;" title="Iterator 패턴(김동석)"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5614db93738ae285e21e6a803072d54d"><img alt="Iterator 패턴(김동석)" class="lazy lightbox lightbox-image" loading="lazy" src="https://www.plantuml.com/plantuml/png/ZL9DIyCm63wRNn46ikxGzZw7JFGmmSbG_q3Ql6kZJLEIjuEXWi9k2k9HKCyU5RpubsRt7qox3LQ_M0uXUV8yx_D-f6kGQSnbGlSHD4EbwUpsPJPvTwOVLvzt3yNagKL8B3XGa1cEgGGPW3Pr26F53I4eC06wgsIcZ43u9L8CZ8EcCM9cshuV2Oppm0kLz8Ca1sxEXFHFsOZjWH5HEc1eaqeD6Ifb3xHulYycRyNDu_JrccvoXk0qndPv_Rx7UPCsUxssb0sRC16f5GnP2BGFQKxFoKQM1ua8gNsW4U10Yn2SrXQvNENkH966oCRz9XefmIdZl8ITwatQRQuE4sOCFLIAszh_zPapZoom3kyOS9d5WJ3OAI_RbQ_vKxn-lijfdu31qg9IX8l92PMMkDCg-PMyS-6wzUuiSSzRrBu2b2MIUYyhV54I8JLtrzskXlGJhHkIBgJS_jGl" title="Iterator 패턴(김동석)"></a></p>
+<p><a href="#R-image-0f68dec011c1d280a515fe27d1627d03" class="lightbox-link"><img alt="Iterator 패턴(김동석)" class="lazy lightbox figure-image" loading="lazy" src="https://www.plantuml.com/plantuml/png/ZL9DIyCm63wRNn46ikxGzZw7JFGmmSbG_q3Ql6kZJLEIjuEXWi9k2k9HKCyU5RpubsRt7qox3LQ_M0uXUV8yx_D-f6kGQSnbGlSHD4EbwUpsPJPvTwOVLvzt3yNagKL8B3XGa1cEgGGPW3Pr26F53I4eC06wgsIcZ43u9L8CZ8EcCM9cshuV2Oppm0kLz8Ca1sxEXFHFsOZjWH5HEc1eaqeD6Ifb3xHulYycRyNDu_JrccvoXk0qndPv_Rx7UPCsUxssb0sRC16f5GnP2BGFQKxFoKQM1ua8gNsW4U10Yn2SrXQvNENkH966oCRz9XefmIdZl8ITwatQRQuE4sOCFLIAszh_zPapZoom3kyOS9d5WJ3OAI_RbQ_vKxn-lijfdu31qg9IX8l92PMMkDCg-PMyS-6wzUuiSSzRrBu2b2MIUYyhV54I8JLtrzskXlGJhHkIBgJS_jGl" style="height: auto;width: auto;" title="Iterator 패턴(김동석)"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0f68dec011c1d280a515fe27d1627d03"><img alt="Iterator 패턴(김동석)" class="lazy lightbox lightbox-image" loading="lazy" src="https://www.plantuml.com/plantuml/png/ZL9DIyCm63wRNn46ikxGzZw7JFGmmSbG_q3Ql6kZJLEIjuEXWi9k2k9HKCyU5RpubsRt7qox3LQ_M0uXUV8yx_D-f6kGQSnbGlSHD4EbwUpsPJPvTwOVLvzt3yNagKL8B3XGa1cEgGGPW3Pr26F53I4eC06wgsIcZ43u9L8CZ8EcCM9cshuV2Oppm0kLz8Ca1sxEXFHFsOZjWH5HEc1eaqeD6Ifb3xHulYycRyNDu_JrccvoXk0qndPv_Rx7UPCsUxssb0sRC16f5GnP2BGFQKxFoKQM1ua8gNsW4U10Yn2SrXQvNENkH966oCRz9XefmIdZl8ITwatQRQuE4sOCFLIAszh_zPapZoom3kyOS9d5WJ3OAI_RbQ_vKxn-lijfdu31qg9IX8l92PMMkDCg-PMyS-6wzUuiSSzRrBu2b2MIUYyhV54I8JLtrzskXlGJhHkIBgJS_jGl" title="Iterator 패턴(김동석)"></a></p>
 <h2 id="소스">소스<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ol>
 <li>Component : 공통 인터페이스로 leaf와 composition이 구현해야 할 메소드가 선언되어 있음
@@ -448,6 +448,7 @@
         <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
           <ul class="enlarge morespace collapsible-menu">
             <li class="parent " data-nav-id="/posts/index.html"><input type="checkbox" id="R-section-b4e55eb7e39db1aee6d02808a2267090" aria-controls="R-subsections-b4e55eb7e39db1aee6d02808a2267090" checked><label for="R-section-b4e55eb7e39db1aee6d02808a2267090"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Posts</span></label><a class="padding default-animation" href="/posts/index.html">Posts<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-b4e55eb7e39db1aee6d02808a2267090" class="collapsible-menu">
+            <li class="" data-nav-id="/posts/tech/mlrbinder-miller%EB%A5%BC-java%EC%97%90%EC%84%9C/index.html"><a class="padding" href="/posts/tech/mlrbinder-miller%EB%A5%BC-java%EC%97%90%EC%84%9C/index.html">mlrBinder 소개 — Java에서 Miller를 간단하게 부르기<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/posts/tech/llamafile-%EC%9E%A0%EA%B9%90-%ED%85%8C%EC%8A%A4%ED%8A%B8/index.html"><a class="padding" href="/posts/tech/llamafile-%EC%9E%A0%EA%B9%90-%ED%85%8C%EC%8A%A4%ED%8A%B8/index.html">로컬에서 Llamafile 돌려보기<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/posts/tech/%EC%96%BC%EA%B5%B4%EC%9D%B8%EC%8B%9D_%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EB%B9%84%EA%B5%90-openface-compreface/index.html"><a class="padding" href="/posts/tech/%EC%96%BC%EA%B5%B4%EC%9D%B8%EC%8B%9D_%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EB%B9%84%EA%B5%90-openface-compreface/index.html">얼굴인식 오픈소스 간단 비교 OpenFace, CompreFace &amp; 뉴스에서 정치인 얼굴 검색 데모<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/posts/tech/plantuml-%ED%85%8D%EC%8A%A4%ED%8A%B8-%EA%B8%B0%EB%B0%98-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8-%EB%93%9C%EB%A1%9C%EC%9E%89-%ED%88%B4/index.html"><a class="padding" href="/posts/tech/plantuml-%ED%85%8D%EC%8A%A4%ED%8A%B8-%EA%B8%B0%EB%B0%98-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8-%EB%93%9C%EB%A1%9C%EC%9E%89-%ED%88%B4/index.html">PLANTUML - 텍스트 기반 다이어그램 드로잉 툴<i class="fa-fw fas fa-check read-icon"></i></a></li>
@@ -1131,8 +1132,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1774431309" defer></script>
-    <script src="/js/theme.min.js?1774431309" defer></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-3QTEZE6PDE"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1776377372" defer></script>
+    <script src="/js/theme.min.js?1776377372" defer></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-3QTEZE6PDE"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}

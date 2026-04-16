@@ -45,26 +45,26 @@ vscode의 github에 issue를 올린지 3달이 넘어서 개발자가 이슈를 
     <meta itemprop="keywords" content="Ubuntu,Vs Code">
     <title>Ubuntu 20.04 &#43; VS Code 1.56.2에서 한글 입력 문제 해결하기 :: Do What You Want To Do</title>
     <link href="/posts/tech/ubuntu_vs-code-%EC%97%90%EC%84%9C-%ED%95%9C%EA%B8%80-%EC%9E%85%EB%A0%A5-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/index.print.html" rel="alternate" type="text/html" title="Ubuntu 20.04 + VS Code 1.56.2에서 한글 입력 문제 해결하기 :: Do What You Want To Do">
-    <link href="/css/auto-complete/auto-complete.min.css?1774431311" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1774431311" defer></script>
-    <script src="/js/search-lunr.min.js?1774431311" defer></script>
-    <script src="/js/search.min.js?1774431311" defer></script>
+    <link href="/css/auto-complete/auto-complete.min.css?1776377373" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1776377373" defer></script>
+    <script src="/js/search-lunr.min.js?1776377373" defer></script>
+    <script src="/js/search.min.js?1776377373" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1774431311";
+      window.relearn.index_js_url="/searchindex.en.js?1776377373";
     </script>
-    <script src="/js/lunr/lunr.min.js?1774431311" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1774431311" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1774431311" defer></script>
-    <script src="/js/lunr/lunr.ko.min.js?1774431311" defer></script>
+    <script src="/js/lunr/lunr.min.js?1776377373" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1776377373" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1776377373" defer></script>
+    <script src="/js/lunr/lunr.ko.min.js?1776377373" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['ko'];
     </script>
-    <link href="/fonts/fontawesome/css/all.min.css?1774431311" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1774431311" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1774431311" rel="stylesheet">
-    <link href="/css/theme.min.css?1774431311" rel="stylesheet">
-    <link href="/css/format-html.min.css?1774431311" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/all.min.css?1776377373" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1776377373" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1776377373" rel="stylesheet">
+    <link href="/css/theme.min.css?1776377373" rel="stylesheet">
+    <link href="/css/format-html.min.css?1776377373" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -173,8 +173,8 @@ vscode의 github에 issue를 올린지 3달이 넘어서 개발자가 이슈를 
 <h1 id="ubuntu-2004--vs-code-1562에서-한글-입력-문제-해결하기">Ubuntu 20.04 &#43; VS Code 1.56.2에서 한글 입력 문제 해결하기</h1>
 
 <p>Ubuntu 20.04 환경에서 VS Code를 사용할 때 한글입력 시 기역으로 시작하는 글자에 받침이 붙으면 깨진다.</p>
-<p><a href="#R-image-8b63b60ed3901a01577ec3aa97934436" class="lightbox-link"><img alt="Ubuntu_20.04 환경에서 VS Code를 사용할 때 한글입력 시 문제" class="lazy lightbox figure-image" loading="lazy" src="https://user-images.githubusercontent.com/1418601/110890295-198a5900-8333-11eb-8afd-be34fca6d8c2.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8b63b60ed3901a01577ec3aa97934436"><img alt="Ubuntu_20.04 환경에서 VS Code를 사용할 때 한글입력 시 문제" class="lazy lightbox lightbox-image" loading="lazy" src="https://user-images.githubusercontent.com/1418601/110890295-198a5900-8333-11eb-8afd-be34fca6d8c2.png"></a></p>
+<p><a href="#R-image-958e62c4bd57fce09895574281938cbe" class="lightbox-link"><img alt="Ubuntu_20.04 환경에서 VS Code를 사용할 때 한글입력 시 문제" class="lazy lightbox figure-image" loading="lazy" src="https://user-images.githubusercontent.com/1418601/110890295-198a5900-8333-11eb-8afd-be34fca6d8c2.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-958e62c4bd57fce09895574281938cbe"><img alt="Ubuntu_20.04 환경에서 VS Code를 사용할 때 한글입력 시 문제" class="lazy lightbox lightbox-image" loading="lazy" src="https://user-images.githubusercontent.com/1418601/110890295-198a5900-8333-11eb-8afd-be34fca6d8c2.png"></a></p>
 <p>위의 이미지를 보면 타이틀바의 한글은 깨지지 않지만 편집기 내부의 한글이 깨진다.</p>
 <p>vscode의 github에 issue를 올린지 3달이 넘어서 개발자가 이슈를 해결해주었다.</p>
 <p><a href="https://github.com/microsoft/vscode/issues/118788" rel="external">👈 이슈 내용 보기</a></p>
@@ -238,6 +238,7 @@ vscode의 github에 issue를 올린지 3달이 넘어서 개발자가 이슈를 
         <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
           <ul class="enlarge morespace collapsible-menu">
             <li class="parent " data-nav-id="/posts/index.html"><input type="checkbox" id="R-section-b4e55eb7e39db1aee6d02808a2267090" aria-controls="R-subsections-b4e55eb7e39db1aee6d02808a2267090" checked><label for="R-section-b4e55eb7e39db1aee6d02808a2267090"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Posts</span></label><a class="padding default-animation" href="/posts/index.html">Posts<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-b4e55eb7e39db1aee6d02808a2267090" class="collapsible-menu">
+            <li class="" data-nav-id="/posts/tech/mlrbinder-miller%EB%A5%BC-java%EC%97%90%EC%84%9C/index.html"><a class="padding" href="/posts/tech/mlrbinder-miller%EB%A5%BC-java%EC%97%90%EC%84%9C/index.html">mlrBinder 소개 — Java에서 Miller를 간단하게 부르기<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/posts/tech/llamafile-%EC%9E%A0%EA%B9%90-%ED%85%8C%EC%8A%A4%ED%8A%B8/index.html"><a class="padding" href="/posts/tech/llamafile-%EC%9E%A0%EA%B9%90-%ED%85%8C%EC%8A%A4%ED%8A%B8/index.html">로컬에서 Llamafile 돌려보기<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/posts/tech/%EC%96%BC%EA%B5%B4%EC%9D%B8%EC%8B%9D_%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EB%B9%84%EA%B5%90-openface-compreface/index.html"><a class="padding" href="/posts/tech/%EC%96%BC%EA%B5%B4%EC%9D%B8%EC%8B%9D_%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EB%B9%84%EA%B5%90-openface-compreface/index.html">얼굴인식 오픈소스 간단 비교 OpenFace, CompreFace &amp; 뉴스에서 정치인 얼굴 검색 데모<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/posts/tech/plantuml-%ED%85%8D%EC%8A%A4%ED%8A%B8-%EA%B8%B0%EB%B0%98-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8-%EB%93%9C%EB%A1%9C%EC%9E%89-%ED%88%B4/index.html"><a class="padding" href="/posts/tech/plantuml-%ED%85%8D%EC%8A%A4%ED%8A%B8-%EA%B8%B0%EB%B0%98-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8-%EB%93%9C%EB%A1%9C%EC%9E%89-%ED%88%B4/index.html">PLANTUML - 텍스트 기반 다이어그램 드로잉 툴<i class="fa-fw fas fa-check read-icon"></i></a></li>
@@ -921,8 +922,8 @@ vscode의 github에 issue를 올린지 3달이 넘어서 개발자가 이슈를 
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1774431311" defer></script>
-    <script src="/js/theme.min.js?1774431311" defer></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-3QTEZE6PDE"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1776377374" defer></script>
+    <script src="/js/theme.min.js?1776377374" defer></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-3QTEZE6PDE"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
