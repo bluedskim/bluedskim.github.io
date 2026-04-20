@@ -37,26 +37,26 @@ Decorator 패턴 (출처:https://stefanhenneken.net/2019/02/16/iec-61131-3-the-d
     <meta itemprop="keywords" content="Java,Design Pattern">
     <title>Java 디자인 패턴-11.Decorator :: Do What You Want To Do</title>
     <link href="/posts/tech/javadesignpattern-11.decorator/index.print.html" rel="alternate" type="text/html" title="Java 디자인 패턴-11.Decorator :: Do What You Want To Do">
-    <link href="/css/auto-complete/auto-complete.min.css?1776377371" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1776377371" defer></script>
-    <script src="/js/search-lunr.min.js?1776377371" defer></script>
-    <script src="/js/search.min.js?1776377371" defer></script>
+    <link href="/css/auto-complete/auto-complete.min.css?1776724197" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1776724197" defer></script>
+    <script src="/js/search-lunr.min.js?1776724197" defer></script>
+    <script src="/js/search.min.js?1776724197" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1776377371";
+      window.relearn.index_js_url="/searchindex.en.js?1776724197";
     </script>
-    <script src="/js/lunr/lunr.min.js?1776377371" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1776377371" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1776377371" defer></script>
-    <script src="/js/lunr/lunr.ko.min.js?1776377371" defer></script>
+    <script src="/js/lunr/lunr.min.js?1776724197" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1776724197" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1776724197" defer></script>
+    <script src="/js/lunr/lunr.ko.min.js?1776724197" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['ko'];
     </script>
-    <link href="/fonts/fontawesome/css/all.min.css?1776377371" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1776377371" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1776377371" rel="stylesheet">
-    <link href="/css/theme.min.css?1776377371" rel="stylesheet">
-    <link href="/css/format-html.min.css?1776377371" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/all.min.css?1776724197" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1776724197" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1776724197" rel="stylesheet">
+    <link href="/css/theme.min.css?1776724197" rel="stylesheet">
+    <link href="/css/format-html.min.css?1776724197" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -177,8 +177,8 @@ Decorator 패턴 (출처:https://stefanhenneken.net/2019/02/16/iec-61131-3-the-d
 
 <p>(<em>Java 디자인 패턴 스터디 모집 중 : <a href="https://github.com/bluedskim/javaDesignPatterns" rel="external">https://github.com/bluedskim/javaDesignPatterns</a></em>)</p>
 <h2 id="decorator-패턴">Decorator 패턴<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-c474f8244e58534c7e6a4c6bb831d75c" class="lightbox-link"><img alt="IEC 61131-3: The Decorator Pattern" class="lazy lightbox figure-image" loading="lazy" src="https://stefanhenneken.files.wordpress.com/2019/02/picture03.png" style="height: auto;width: auto;" title="IEC 61131-3: The Decorator Pattern"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c474f8244e58534c7e6a4c6bb831d75c"><img alt="IEC 61131-3: The Decorator Pattern" class="lazy lightbox lightbox-image" loading="lazy" src="https://stefanhenneken.files.wordpress.com/2019/02/picture03.png" title="IEC 61131-3: The Decorator Pattern"></a></p>
+<p><a href="#R-image-c92b30cd2fe97741181ccb045e33c9ff" class="lightbox-link"><img alt="IEC 61131-3: The Decorator Pattern" class="lazy lightbox figure-image" loading="lazy" src="https://stefanhenneken.files.wordpress.com/2019/02/picture03.png" style="height: auto;width: auto;" title="IEC 61131-3: The Decorator Pattern"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c92b30cd2fe97741181ccb045e33c9ff"><img alt="IEC 61131-3: The Decorator Pattern" class="lazy lightbox lightbox-image" loading="lazy" src="https://stefanhenneken.files.wordpress.com/2019/02/picture03.png" title="IEC 61131-3: The Decorator Pattern"></a></p>
 <p>(출처:<a href="https://stefanhenneken.net/2019/02/16/iec-61131-3-the-decorator-pattern" rel="external">https://stefanhenneken.net/2019/02/16/iec-61131-3-the-decorator-pattern</a>)</p>
 <h2 id="해결하려는-문제">해결하려는 문제<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <h2 id="특징용도">특징/용도<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
@@ -190,8 +190,8 @@ Decorator 패턴 (출처:https://stefanhenneken.net/2019/02/16/iec-61131-3-the-d
 </ol>
 <h2 id="고려사항">고려사항<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <h2 id="클래스-다이어그램">클래스 다이어그램<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-b7b2ab2fdaae8061b65cfef157b8ab88" class="lightbox-link"><img alt="Decorator 패턴(김동석)" class="lazy lightbox figure-image" loading="lazy" src="https://www.plantuml.com/plantuml/png/dLJ1IWCn53oRhmW5QNjeUoyUYgtefI3e3sIJvsxiPhFalHL41ONU5CIZe9uzAdZnbshz1wEsMxVTLd5FksycCybCs0wIS9IPcFT0MYV8Elv-zVW-VAcDNi_Vhc_7m_iwOv5MmC6aTCmDc00S5aSKMOMCaQOOLYf581Gu7X6bs6wrGarH5ZIbDQqWpa3XG9lMeJWIFK0T9hk225o2xC1Q_yB73pVZuVFuycxqTC7NbI2eLOxzq-ptcqfLUNLdfsrCnMzO14XEIE8o5eXy4ux0YH0s1G8_OMkfytgIGF4zSZe9kGAKJgUaRUBHB8Yrd48XK6-6rkevddiewmVmIUnQ9CyuOspY6mivs0VnvVczQZbv2rC7YFPFv6q7aFokF9T3roPA6qW8yv8M8oc45Km-PixTo4eR--npiHzxM0HhfNBrFnonh-D1cKTX_d_vlImKhao_2Fp7eB1auxJHo2z22JIjlGIQbbm2BMboZhc2o9RTXM_vXHvNymkThAOMusKTI9J__tm0" style="height: auto;width: auto;" title="Decorator 패턴(김동석)"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b7b2ab2fdaae8061b65cfef157b8ab88"><img alt="Decorator 패턴(김동석)" class="lazy lightbox lightbox-image" loading="lazy" src="https://www.plantuml.com/plantuml/png/dLJ1IWCn53oRhmW5QNjeUoyUYgtefI3e3sIJvsxiPhFalHL41ONU5CIZe9uzAdZnbshz1wEsMxVTLd5FksycCybCs0wIS9IPcFT0MYV8Elv-zVW-VAcDNi_Vhc_7m_iwOv5MmC6aTCmDc00S5aSKMOMCaQOOLYf581Gu7X6bs6wrGarH5ZIbDQqWpa3XG9lMeJWIFK0T9hk225o2xC1Q_yB73pVZuVFuycxqTC7NbI2eLOxzq-ptcqfLUNLdfsrCnMzO14XEIE8o5eXy4ux0YH0s1G8_OMkfytgIGF4zSZe9kGAKJgUaRUBHB8Yrd48XK6-6rkevddiewmVmIUnQ9CyuOspY6mivs0VnvVczQZbv2rC7YFPFv6q7aFokF9T3roPA6qW8yv8M8oc45Km-PixTo4eR--npiHzxM0HhfNBrFnonh-D1cKTX_d_vlImKhao_2Fp7eB1auxJHo2z22JIjlGIQbbm2BMboZhc2o9RTXM_vXHvNymkThAOMusKTI9J__tm0" title="Decorator 패턴(김동석)"></a></p>
+<p><a href="#R-image-4314240f8dfb608a75161454675e575c" class="lightbox-link"><img alt="Decorator 패턴(김동석)" class="lazy lightbox figure-image" loading="lazy" src="https://www.plantuml.com/plantuml/png/dLJ1IWCn53oRhmW5QNjeUoyUYgtefI3e3sIJvsxiPhFalHL41ONU5CIZe9uzAdZnbshz1wEsMxVTLd5FksycCybCs0wIS9IPcFT0MYV8Elv-zVW-VAcDNi_Vhc_7m_iwOv5MmC6aTCmDc00S5aSKMOMCaQOOLYf581Gu7X6bs6wrGarH5ZIbDQqWpa3XG9lMeJWIFK0T9hk225o2xC1Q_yB73pVZuVFuycxqTC7NbI2eLOxzq-ptcqfLUNLdfsrCnMzO14XEIE8o5eXy4ux0YH0s1G8_OMkfytgIGF4zSZe9kGAKJgUaRUBHB8Yrd48XK6-6rkevddiewmVmIUnQ9CyuOspY6mivs0VnvVczQZbv2rC7YFPFv6q7aFokF9T3roPA6qW8yv8M8oc45Km-PixTo4eR--npiHzxM0HhfNBrFnonh-D1cKTX_d_vlImKhao_2Fp7eB1auxJHo2z22JIjlGIQbbm2BMboZhc2o9RTXM_vXHvNymkThAOMusKTI9J__tm0" style="height: auto;width: auto;" title="Decorator 패턴(김동석)"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4314240f8dfb608a75161454675e575c"><img alt="Decorator 패턴(김동석)" class="lazy lightbox lightbox-image" loading="lazy" src="https://www.plantuml.com/plantuml/png/dLJ1IWCn53oRhmW5QNjeUoyUYgtefI3e3sIJvsxiPhFalHL41ONU5CIZe9uzAdZnbshz1wEsMxVTLd5FksycCybCs0wIS9IPcFT0MYV8Elv-zVW-VAcDNi_Vhc_7m_iwOv5MmC6aTCmDc00S5aSKMOMCaQOOLYf581Gu7X6bs6wrGarH5ZIbDQqWpa3XG9lMeJWIFK0T9hk225o2xC1Q_yB73pVZuVFuycxqTC7NbI2eLOxzq-ptcqfLUNLdfsrCnMzO14XEIE8o5eXy4ux0YH0s1G8_OMkfytgIGF4zSZe9kGAKJgUaRUBHB8Yrd48XK6-6rkevddiewmVmIUnQ9CyuOspY6mivs0VnvVczQZbv2rC7YFPFv6q7aFokF9T3roPA6qW8yv8M8oc45Km-PixTo4eR--npiHzxM0HhfNBrFnonh-D1cKTX_d_vlImKhao_2Fp7eB1auxJHo2z22JIjlGIQbbm2BMboZhc2o9RTXM_vXHvNymkThAOMusKTI9J__tm0" title="Decorator 패턴(김동석)"></a></p>
 <h2 id="소스">소스<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ul>
 <li>꾸며질decorated 객체
@@ -1239,8 +1239,8 @@ Decorator 패턴 (출처:https://stefanhenneken.net/2019/02/16/iec-61131-3-the-d
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1776377372" defer></script>
-    <script src="/js/theme.min.js?1776377372" defer></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-3QTEZE6PDE"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1776724197" defer></script>
+    <script src="/js/theme.min.js?1776724197" defer></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-3QTEZE6PDE"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}

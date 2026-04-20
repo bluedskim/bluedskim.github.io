@@ -37,26 +37,26 @@ Adapter(적응) 패턴 (출처:https://educationinaction.org/water-rocks-vocabul
     <meta itemprop="keywords" content="Java,Design Pattern">
     <title>Java 디자인 패턴-10.Adapter :: Do What You Want To Do</title>
     <link href="https://bluedskim.github.io/posts/tech/javadesignpattern-10.adapter/index.html" rel="canonical" type="text/html" title="Java 디자인 패턴-10.Adapter :: Do What You Want To Do">
-    <link href="/css/auto-complete/auto-complete.min.css?1776377432" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1776377432" defer></script>
-    <script src="/js/search-lunr.min.js?1776377432" defer></script>
-    <script src="/js/search.min.js?1776377432" defer></script>
+    <link href="/css/auto-complete/auto-complete.min.css?1776724197" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1776724197" defer></script>
+    <script src="/js/search-lunr.min.js?1776724197" defer></script>
+    <script src="/js/search.min.js?1776724197" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1776377432";
+      window.relearn.index_js_url="/searchindex.en.js?1776724197";
     </script>
-    <script src="/js/lunr/lunr.min.js?1776377432" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1776377432" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1776377432" defer></script>
-    <script src="/js/lunr/lunr.ko.min.js?1776377432" defer></script>
+    <script src="/js/lunr/lunr.min.js?1776724197" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1776724197" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1776724197" defer></script>
+    <script src="/js/lunr/lunr.ko.min.js?1776724197" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['ko'];
     </script>
-    <link href="/fonts/fontawesome/css/all.min.css?1776377432" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1776377432" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1776377432" rel="stylesheet">
-    <link href="/css/theme.min.css?1776377432" rel="stylesheet">
-    <link href="/css/format-print.min.css?1776377432" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/all.min.css?1776724197" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1776724197" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1776724197" rel="stylesheet">
+    <link href="/css/theme.min.css?1776724197" rel="stylesheet">
+    <link href="/css/format-print.min.css?1776724197" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -178,8 +178,8 @@ Adapter(적응) 패턴 (출처:https://educationinaction.org/water-rocks-vocabul
 
 <p>(<em>Java 디자인 패턴 스터디 모집 중 : <a href="https://github.com/bluedskim/javaDesignPatterns" rel="external">https://github.com/bluedskim/javaDesignPatterns</a></em>)</p>
 <h2 id="adapter적응-패턴">Adapter(적응) 패턴<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-ad93255c11511bd735e311eb85a26da9" class="lightbox-link"><img alt="숲속의 곰이 북극에 적응하기" class="lazy lightbox figure-image" loading="lazy" src="https://static.spacecrafted.com/b849f747e16744a5be3537c67cbb5770/i/f4d8c0d7559a4f02861ae4d67e55ceb2/1/GCuCv726gZycFxatRCb7iU/Adaptation.jpg" style="height: auto;width: auto;" title="숲속의 곰이 북극에 적응하기"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ad93255c11511bd735e311eb85a26da9"><img alt="숲속의 곰이 북극에 적응하기" class="lazy lightbox lightbox-image" loading="lazy" src="https://static.spacecrafted.com/b849f747e16744a5be3537c67cbb5770/i/f4d8c0d7559a4f02861ae4d67e55ceb2/1/GCuCv726gZycFxatRCb7iU/Adaptation.jpg" title="숲속의 곰이 북극에 적응하기"></a></p>
+<p><a href="#R-image-6277e0b0732ad80960e23bddf279378e" class="lightbox-link"><img alt="숲속의 곰이 북극에 적응하기" class="lazy lightbox figure-image" loading="lazy" src="https://static.spacecrafted.com/b849f747e16744a5be3537c67cbb5770/i/f4d8c0d7559a4f02861ae4d67e55ceb2/1/GCuCv726gZycFxatRCb7iU/Adaptation.jpg" style="height: auto;width: auto;" title="숲속의 곰이 북극에 적응하기"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6277e0b0732ad80960e23bddf279378e"><img alt="숲속의 곰이 북극에 적응하기" class="lazy lightbox lightbox-image" loading="lazy" src="https://static.spacecrafted.com/b849f747e16744a5be3537c67cbb5770/i/f4d8c0d7559a4f02861ae4d67e55ceb2/1/GCuCv726gZycFxatRCb7iU/Adaptation.jpg" title="숲속의 곰이 북극에 적응하기"></a></p>
 <p>(출처:<a href="https://educationinaction.org/water-rocks-vocabulary/adaptation" rel="external">https://educationinaction.org/water-rocks-vocabulary/adaptation</a>)</p>
 <h2 id="해결하려는-문제">해결하려는 문제<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ol>
@@ -206,8 +206,8 @@ Adapter(적응) 패턴 (출처:https://educationinaction.org/water-rocks-vocabul
 <li>Facade : 단순화된 인터페이스 제공</li>
 </ol>
 <h2 id="클래스-다이어그램">클래스 다이어그램<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-5777365bbd20d8eff239dbc5bf147c5d" class="lightbox-link"><img alt="Adapter 패턴(김동석)" class="lazy lightbox figure-image" loading="lazy" src="https://www.plantuml.com/plantuml/png/hLFBIWCn55qtNn4AqkcYC_iYOi551Gi5wmTa9hUJw2GPaaoXgA3GdOAu5DIrImKt_bAT_eFfaqvjYmMpkxdtd7Dp3ZaqbcYRYGGtA4ajQ3owVniDFhtXryttmrC-UAaYn3W532ArVIn0XA1DySeoHGr2bji4jl0m8DGrcBMfgGT1p2tBGZzI8WYJ3AYvu28u9pro18R7iasiev46TPKQy-MlZ_dW8xzx7hxVuZrAB7ZblZj-g-LJMi6LPhCkHDcjYxXqW2w909_mc5d9PTncIWA-HALJgrs9DKICw1YyAYhr5ASuCx0OTfVNoomj7cbrPiA_aCndfnnHGep1n-dkwbDaGr8zxk-kkQ3hg7bxdemZIpNlEGTnbqkIhBgK54fKsapbRKLM_t7f3XYxneL2Cbun9x5SJKHMjjs_ylrPDgW8dNGsBxDkUfRKaiXluskrWnMljurFdZo65DGGEWH9tOVz0G00" style="height: auto;width: auto;" title="Adapter 패턴(김동석)"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5777365bbd20d8eff239dbc5bf147c5d"><img alt="Adapter 패턴(김동석)" class="lazy lightbox lightbox-image" loading="lazy" src="https://www.plantuml.com/plantuml/png/hLFBIWCn55qtNn4AqkcYC_iYOi551Gi5wmTa9hUJw2GPaaoXgA3GdOAu5DIrImKt_bAT_eFfaqvjYmMpkxdtd7Dp3ZaqbcYRYGGtA4ajQ3owVniDFhtXryttmrC-UAaYn3W532ArVIn0XA1DySeoHGr2bji4jl0m8DGrcBMfgGT1p2tBGZzI8WYJ3AYvu28u9pro18R7iasiev46TPKQy-MlZ_dW8xzx7hxVuZrAB7ZblZj-g-LJMi6LPhCkHDcjYxXqW2w909_mc5d9PTncIWA-HALJgrs9DKICw1YyAYhr5ASuCx0OTfVNoomj7cbrPiA_aCndfnnHGep1n-dkwbDaGr8zxk-kkQ3hg7bxdemZIpNlEGTnbqkIhBgK54fKsapbRKLM_t7f3XYxneL2Cbun9x5SJKHMjjs_ylrPDgW8dNGsBxDkUfRKaiXluskrWnMljurFdZo65DGGEWH9tOVz0G00" title="Adapter 패턴(김동석)"></a></p>
+<p><a href="#R-image-575ca27cadeea5548795a5c86b334de0" class="lightbox-link"><img alt="Adapter 패턴(김동석)" class="lazy lightbox figure-image" loading="lazy" src="https://www.plantuml.com/plantuml/png/hLFBIWCn55qtNn4AqkcYC_iYOi551Gi5wmTa9hUJw2GPaaoXgA3GdOAu5DIrImKt_bAT_eFfaqvjYmMpkxdtd7Dp3ZaqbcYRYGGtA4ajQ3owVniDFhtXryttmrC-UAaYn3W532ArVIn0XA1DySeoHGr2bji4jl0m8DGrcBMfgGT1p2tBGZzI8WYJ3AYvu28u9pro18R7iasiev46TPKQy-MlZ_dW8xzx7hxVuZrAB7ZblZj-g-LJMi6LPhCkHDcjYxXqW2w909_mc5d9PTncIWA-HALJgrs9DKICw1YyAYhr5ASuCx0OTfVNoomj7cbrPiA_aCndfnnHGep1n-dkwbDaGr8zxk-kkQ3hg7bxdemZIpNlEGTnbqkIhBgK54fKsapbRKLM_t7f3XYxneL2Cbun9x5SJKHMjjs_ylrPDgW8dNGsBxDkUfRKaiXluskrWnMljurFdZo65DGGEWH9tOVz0G00" style="height: auto;width: auto;" title="Adapter 패턴(김동석)"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-575ca27cadeea5548795a5c86b334de0"><img alt="Adapter 패턴(김동석)" class="lazy lightbox lightbox-image" loading="lazy" src="https://www.plantuml.com/plantuml/png/hLFBIWCn55qtNn4AqkcYC_iYOi551Gi5wmTa9hUJw2GPaaoXgA3GdOAu5DIrImKt_bAT_eFfaqvjYmMpkxdtd7Dp3ZaqbcYRYGGtA4ajQ3owVniDFhtXryttmrC-UAaYn3W532ArVIn0XA1DySeoHGr2bji4jl0m8DGrcBMfgGT1p2tBGZzI8WYJ3AYvu28u9pro18R7iasiev46TPKQy-MlZ_dW8xzx7hxVuZrAB7ZblZj-g-LJMi6LPhCkHDcjYxXqW2w909_mc5d9PTncIWA-HALJgrs9DKICw1YyAYhr5ASuCx0OTfVNoomj7cbrPiA_aCndfnnHGep1n-dkwbDaGr8zxk-kkQ3hg7bxdemZIpNlEGTnbqkIhBgK54fKsapbRKLM_t7f3XYxneL2Cbun9x5SJKHMjjs_ylrPDgW8dNGsBxDkUfRKaiXluskrWnMljurFdZo65DGGEWH9tOVz0G00" title="Adapter 패턴(김동석)"></a></p>
 <h2 id="소스">소스<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ol>
 <li>adapter : LightningToMicroUsbAdapter.java
@@ -393,8 +393,8 @@ Adapter(적응) 패턴 (출처:https://educationinaction.org/water-rocks-vocabul
         </div>
       </main>
     </div>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1776377432" defer></script>
-    <script src="/js/theme.min.js?1776377432" defer></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-3QTEZE6PDE"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1776724197" defer></script>
+    <script src="/js/theme.min.js?1776724197" defer></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-3QTEZE6PDE"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}

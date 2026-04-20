@@ -37,26 +37,26 @@
     <meta itemprop="keywords" content="Java,Design Pattern">
     <title>Java 디자인 패턴-05.Proxy :: Do What You Want To Do</title>
     <link href="/posts/tech/javadesignpattern-05.proxy/index.print.html" rel="alternate" type="text/html" title="Java 디자인 패턴-05.Proxy :: Do What You Want To Do">
-    <link href="/css/auto-complete/auto-complete.min.css?1776377370" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1776377370" defer></script>
-    <script src="/js/search-lunr.min.js?1776377370" defer></script>
-    <script src="/js/search.min.js?1776377370" defer></script>
+    <link href="/css/auto-complete/auto-complete.min.css?1776724197" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1776724197" defer></script>
+    <script src="/js/search-lunr.min.js?1776724197" defer></script>
+    <script src="/js/search.min.js?1776724197" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1776377370";
+      window.relearn.index_js_url="/searchindex.en.js?1776724197";
     </script>
-    <script src="/js/lunr/lunr.min.js?1776377370" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1776377370" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1776377370" defer></script>
-    <script src="/js/lunr/lunr.ko.min.js?1776377370" defer></script>
+    <script src="/js/lunr/lunr.min.js?1776724197" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1776724197" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1776724197" defer></script>
+    <script src="/js/lunr/lunr.ko.min.js?1776724197" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['ko'];
     </script>
-    <link href="/fonts/fontawesome/css/all.min.css?1776377370" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1776377370" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1776377370" rel="stylesheet">
-    <link href="/css/theme.min.css?1776377370" rel="stylesheet">
-    <link href="/css/format-html.min.css?1776377370" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/all.min.css?1776724197" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1776724197" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1776724197" rel="stylesheet">
+    <link href="/css/theme.min.css?1776724197" rel="stylesheet">
+    <link href="/css/format-html.min.css?1776724197" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -177,8 +177,8 @@
 
 <p>(<em>Java 디자인 패턴 스터디 모집 중 : <a href="https://github.com/bluedskim/javaDesignPatterns" rel="external">https://github.com/bluedskim/javaDesignPatterns</a></em>)</p>
 <h2 id="패턴-다이어그램">패턴 다이어그램<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-7bbaac89356315ea715ec90db1f0d389" class="lightbox-link"><img alt="Proxy" class="lazy lightbox figure-image" loading="lazy" src="https://refactoring.guru/images/patterns/content/proxy/proxy-2x.png?id=fb3d14e21c210a758d47" style="height: auto;width: auto;" title="Proxy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7bbaac89356315ea715ec90db1f0d389"><img alt="Proxy" class="lazy lightbox lightbox-image" loading="lazy" src="https://refactoring.guru/images/patterns/content/proxy/proxy-2x.png?id=fb3d14e21c210a758d47" title="Proxy"></a></p>
+<p><a href="#R-image-7fcd0ba57f909f6646199b178c943bb8" class="lightbox-link"><img alt="Proxy" class="lazy lightbox figure-image" loading="lazy" src="https://refactoring.guru/images/patterns/content/proxy/proxy-2x.png?id=fb3d14e21c210a758d47" style="height: auto;width: auto;" title="Proxy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7fcd0ba57f909f6646199b178c943bb8"><img alt="Proxy" class="lazy lightbox lightbox-image" loading="lazy" src="https://refactoring.guru/images/patterns/content/proxy/proxy-2x.png?id=fb3d14e21c210a758d47" title="Proxy"></a></p>
 <p>&ldquo;특정 클래스 대신 그 클래스와 동일한 인터페이스를 구현한 래퍼 <em>wrapper</em> 클래스 <em>Proxy</em> 를 이용한다&rdquo; (<a href="https://refactoring.guru/design-patterns/proxy" rel="external">출처:https://refactoring.guru/design-patterns/proxy</a>)</p>
 <h2 id="해결하려는-문제">해결하려는 문제<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ol>
@@ -203,8 +203,8 @@
 <li>Proxy내에서 클라이언트 목록을 관리할 수도 있다. 사용하는 클라이언트가 없다면 리소스를 해제하는 등의 처리작업 수행하고자 할 때 유용하다.</li>
 </ol>
 <h2 id="클래스-다이어그램">클래스 다이어그램<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-d24cdc77c91f91a30f92c87f076ed47f" class="lightbox-link"><img alt="Proxy 패턴(김동석)" class="lazy lightbox figure-image" loading="lazy" src="https://www.plantuml.com/plantuml/png/bP71IiD048RFxbCC1MbxQ78l8ZruwALGr1VOPAVDQZORTYR1e892RWhYKL3F7XMy-4erVGUt1Ymj23gduPzlvfzXHiJISM5Ic3fxLi7ozcLPl_SM7rUVTmzD_TGN8j4A0KtE5HWq4JhQb3YnYeHWpId-EYL1gT11mfpJC0pdcfCY2c9hmYWjKD6fDk69BEK1afvdKycCBYCnizOdq3pVD_LRS_EuUBs6NIKPUvtAHp2P14freJiU3utf-6M5pdp3JCO8XqYsS3uv5pjv4QKwXYDsEfj3xcoCHBs-k1GYJYKHZ56MrRywsal_J1uZyOekhLOhg5LQxCTtxo88DbVPgdsF4gtrO7yB5MkZWI-kzH5coh_u2m00" style="height: auto;width: auto;" title="Proxy 패턴(김동석)"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d24cdc77c91f91a30f92c87f076ed47f"><img alt="Proxy 패턴(김동석)" class="lazy lightbox lightbox-image" loading="lazy" src="https://www.plantuml.com/plantuml/png/bP71IiD048RFxbCC1MbxQ78l8ZruwALGr1VOPAVDQZORTYR1e892RWhYKL3F7XMy-4erVGUt1Ymj23gduPzlvfzXHiJISM5Ic3fxLi7ozcLPl_SM7rUVTmzD_TGN8j4A0KtE5HWq4JhQb3YnYeHWpId-EYL1gT11mfpJC0pdcfCY2c9hmYWjKD6fDk69BEK1afvdKycCBYCnizOdq3pVD_LRS_EuUBs6NIKPUvtAHp2P14freJiU3utf-6M5pdp3JCO8XqYsS3uv5pjv4QKwXYDsEfj3xcoCHBs-k1GYJYKHZ56MrRywsal_J1uZyOekhLOhg5LQxCTtxo88DbVPgdsF4gtrO7yB5MkZWI-kzH5coh_u2m00" title="Proxy 패턴(김동석)"></a></p>
+<p><a href="#R-image-673cd2c7cb2d93f4d080153b7bdeb679" class="lightbox-link"><img alt="Proxy 패턴(김동석)" class="lazy lightbox figure-image" loading="lazy" src="https://www.plantuml.com/plantuml/png/bP71IiD048RFxbCC1MbxQ78l8ZruwALGr1VOPAVDQZORTYR1e892RWhYKL3F7XMy-4erVGUt1Ymj23gduPzlvfzXHiJISM5Ic3fxLi7ozcLPl_SM7rUVTmzD_TGN8j4A0KtE5HWq4JhQb3YnYeHWpId-EYL1gT11mfpJC0pdcfCY2c9hmYWjKD6fDk69BEK1afvdKycCBYCnizOdq3pVD_LRS_EuUBs6NIKPUvtAHp2P14freJiU3utf-6M5pdp3JCO8XqYsS3uv5pjv4QKwXYDsEfj3xcoCHBs-k1GYJYKHZ56MrRywsal_J1uZyOekhLOhg5LQxCTtxo88DbVPgdsF4gtrO7yB5MkZWI-kzH5coh_u2m00" style="height: auto;width: auto;" title="Proxy 패턴(김동석)"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-673cd2c7cb2d93f4d080153b7bdeb679"><img alt="Proxy 패턴(김동석)" class="lazy lightbox lightbox-image" loading="lazy" src="https://www.plantuml.com/plantuml/png/bP71IiD048RFxbCC1MbxQ78l8ZruwALGr1VOPAVDQZORTYR1e892RWhYKL3F7XMy-4erVGUt1Ymj23gduPzlvfzXHiJISM5Ic3fxLi7ozcLPl_SM7rUVTmzD_TGN8j4A0KtE5HWq4JhQb3YnYeHWpId-EYL1gT11mfpJC0pdcfCY2c9hmYWjKD6fDk69BEK1afvdKycCBYCnizOdq3pVD_LRS_EuUBs6NIKPUvtAHp2P14freJiU3utf-6M5pdp3JCO8XqYsS3uv5pjv4QKwXYDsEfj3xcoCHBs-k1GYJYKHZ56MrRywsal_J1uZyOekhLOhg5LQxCTtxo88DbVPgdsF4gtrO7yB5MkZWI-kzH5coh_u2m00" title="Proxy 패턴(김동석)"></a></p>
 <h2 id="소스">소스<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ol>
 <li>Proxy : Subject를 대체하고자 하는 객체(Proxy.java)
@@ -1118,8 +1118,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1776377371" defer></script>
-    <script src="/js/theme.min.js?1776377371" defer></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-3QTEZE6PDE"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1776724197" defer></script>
+    <script src="/js/theme.min.js?1776724197" defer></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-3QTEZE6PDE"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}

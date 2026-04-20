@@ -45,26 +45,26 @@ vscode의 github에 issue를 올린지 3달이 넘어서 개발자가 이슈를 
     <meta itemprop="keywords" content="Ubuntu,Vs Code">
     <title>Ubuntu 20.04 &#43; VS Code 1.56.2에서 한글 입력 문제 해결하기 :: Do What You Want To Do</title>
     <link href="https://bluedskim.github.io/posts/tech/ubuntu_vs-code-%EC%97%90%EC%84%9C-%ED%95%9C%EA%B8%80-%EC%9E%85%EB%A0%A5-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/index.html" rel="canonical" type="text/html" title="Ubuntu 20.04 + VS Code 1.56.2에서 한글 입력 문제 해결하기 :: Do What You Want To Do">
-    <link href="/css/auto-complete/auto-complete.min.css?1776377432" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1776377432" defer></script>
-    <script src="/js/search-lunr.min.js?1776377432" defer></script>
-    <script src="/js/search.min.js?1776377432" defer></script>
+    <link href="/css/auto-complete/auto-complete.min.css?1776724197" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1776724197" defer></script>
+    <script src="/js/search-lunr.min.js?1776724197" defer></script>
+    <script src="/js/search.min.js?1776724197" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1776377432";
+      window.relearn.index_js_url="/searchindex.en.js?1776724197";
     </script>
-    <script src="/js/lunr/lunr.min.js?1776377432" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1776377432" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1776377432" defer></script>
-    <script src="/js/lunr/lunr.ko.min.js?1776377432" defer></script>
+    <script src="/js/lunr/lunr.min.js?1776724197" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1776724197" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1776724197" defer></script>
+    <script src="/js/lunr/lunr.ko.min.js?1776724197" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['ko'];
     </script>
-    <link href="/fonts/fontawesome/css/all.min.css?1776377432" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1776377432" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1776377432" rel="stylesheet">
-    <link href="/css/theme.min.css?1776377432" rel="stylesheet">
-    <link href="/css/format-print.min.css?1776377432" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/all.min.css?1776724197" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1776724197" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1776724197" rel="stylesheet">
+    <link href="/css/theme.min.css?1776724197" rel="stylesheet">
+    <link href="/css/format-print.min.css?1776724197" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -173,8 +173,8 @@ vscode의 github에 issue를 올린지 3달이 넘어서 개발자가 이슈를 
 <h1 id="ubuntu-2004--vs-code-1562에서-한글-입력-문제-해결하기">Ubuntu 20.04 &#43; VS Code 1.56.2에서 한글 입력 문제 해결하기</h1>
 
 <p>Ubuntu 20.04 환경에서 VS Code를 사용할 때 한글입력 시 기역으로 시작하는 글자에 받침이 붙으면 깨진다.</p>
-<p><a href="#R-image-958e62c4bd57fce09895574281938cbe" class="lightbox-link"><img alt="Ubuntu_20.04 환경에서 VS Code를 사용할 때 한글입력 시 문제" class="lazy lightbox figure-image" loading="lazy" src="https://user-images.githubusercontent.com/1418601/110890295-198a5900-8333-11eb-8afd-be34fca6d8c2.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-958e62c4bd57fce09895574281938cbe"><img alt="Ubuntu_20.04 환경에서 VS Code를 사용할 때 한글입력 시 문제" class="lazy lightbox lightbox-image" loading="lazy" src="https://user-images.githubusercontent.com/1418601/110890295-198a5900-8333-11eb-8afd-be34fca6d8c2.png"></a></p>
+<p><a href="#R-image-234a02c1e3c23f962815d616d14ef552" class="lightbox-link"><img alt="Ubuntu_20.04 환경에서 VS Code를 사용할 때 한글입력 시 문제" class="lazy lightbox figure-image" loading="lazy" src="https://user-images.githubusercontent.com/1418601/110890295-198a5900-8333-11eb-8afd-be34fca6d8c2.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-234a02c1e3c23f962815d616d14ef552"><img alt="Ubuntu_20.04 환경에서 VS Code를 사용할 때 한글입력 시 문제" class="lazy lightbox lightbox-image" loading="lazy" src="https://user-images.githubusercontent.com/1418601/110890295-198a5900-8333-11eb-8afd-be34fca6d8c2.png"></a></p>
 <p>위의 이미지를 보면 타이틀바의 한글은 깨지지 않지만 편집기 내부의 한글이 깨진다.</p>
 <p>vscode의 github에 issue를 올린지 3달이 넘어서 개발자가 이슈를 해결해주었다.</p>
 <p><a href="https://github.com/microsoft/vscode/issues/118788" rel="external">👈 이슈 내용 보기</a></p>
@@ -199,8 +199,8 @@ vscode의 github에 issue를 올린지 3달이 넘어서 개발자가 이슈를 
         </div>
       </main>
     </div>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1776377432" defer></script>
-    <script src="/js/theme.min.js?1776377432" defer></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-3QTEZE6PDE"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1776724197" defer></script>
+    <script src="/js/theme.min.js?1776724197" defer></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-3QTEZE6PDE"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
